@@ -1,0 +1,12 @@
+node_modules
+
+
+bin/
+obj/
+Debug/
+Release/
+
+.DS_Store
+Icon
+
+Icon

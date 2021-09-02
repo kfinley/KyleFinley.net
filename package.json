@@ -1,0 +1,16 @@
+{
+  "name": "kylefinley.net",
+  "version": "0.0.1",
+  "description": "KyleFinley.net site and backend system",  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Kyle Finley",
+    "email": "kyle@kylefinley.net"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "lerna": "^4.0.0"
+  }
+}
