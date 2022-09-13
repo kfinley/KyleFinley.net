@@ -1,0 +1,82 @@
+{
+  "title": "There Is No Done",
+
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Software is never &quot;Done&quot; there is always more to do. Thoughts on the common misconception that you can be &quot;Finished&quot; with systems software development."
+    },
+    {
+      "itemprop": "name",
+      "content": "There Is No Done"
+    },
+    {
+      "itemprop": "description",
+      "content": "Software is never &quot;Done&quot; there is always more to do. Thoughts on the common misconception that you can be &quot;Finished&quot; with systems software development."
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:title",
+      "content": "There Is No Done"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Software is never &quot;Done&quot; there is always more to do. Thoughts on the common misconception that you can be &quot;Finished&quot; with systems software development."
+    },
+    {
+      "name": "twitter:image:src",
+      "content": "/img/articles/timewarp.jpg"
+    },
+    {
+      "property": "twitter:account_id",
+      "content": "1530436921"
+    },
+    {
+      "property": "og:title",
+      "content": "There Is No Done"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/there-is-no-done"
+    },
+    {
+      "property": "og:image",
+      "content": "https://KyleFinley.net/img/articles/timewarp.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "Software is never &quot;Done&quot; there is always more to do. Thoughts on the common misconception that you can be &quot;Finished&quot; with systems software development."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    },
+    {
+      "property": "article:published_time",
+      "content": "5/10/2015 7:02:07 AM"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "6/12/2015 1:33:10 PM"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}

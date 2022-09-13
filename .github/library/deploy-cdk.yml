@@ -1,0 +1,56 @@
+name: "Deploy System"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    name: "Deployment"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Bootstrap repo
+        run: |
+          npm i
+          npm run bootstrap
+
+      #  - name: Run Tests
+      #       run: |
+      #         npm run lerna run test
+
+      - name: Build Front-End Site
+        run: |
+          npm run build:client
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: "Bootstrap CDK"
+        working-directory: ./infrastructure
+        env:
+          AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT_ID }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: |
+          npm run cdk bootstrap aws://${{ secrets.AWS_ACCOUNT_ID }}/${{ secrets.AWS_REGION }}
+
+      - name: Deploy CDK Infrastructure
+        working-directory: ./infrastructure
+        env:
+          AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT_ID }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: |
+          npm run deploy

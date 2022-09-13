@@ -1,0 +1,72 @@
+{
+  "title": "Create Google Analytics Filter using Apps Script",
+  "metaTags": [{
+      "name": "description",
+      "content": "Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters."
+    },
+    {
+      "itemprop": "name",
+      "content": "Create Google Analytics Filter using Apps Script"
+    },
+    {
+      "itemprop": "description",
+      "content": "Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters."
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Create Google Analytics Filter using Apps Script"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters."
+    },
+    {
+      "property": "twitter:account_id",
+      "content": "1530436921"
+    },
+    {
+      "property": "og:title",
+      "content": "Create Google Analytics Filter using Apps Script"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "http://KyleFinley.net/create-google-analytics-filters-using-apps-script"
+    },
+    {
+      "property": "og:description",
+      "content": "Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    },
+    {
+      "property": "article:published_time",
+      "content": "8/3/2015 8:03:07 AM"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "8/13/2015 9:11:51 AM"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Software | Music | Kiteboarding | Photography | Cars | Life",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+    },
+    {
+      "itemprop": "name",
+      "content": "Software | Music | Kiteboarding | Photography | Cars | Life"
+    },
+    {
+      "itemprop": "description",
+      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Software | Music | Kiteboarding | Photography | Cars | Life"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+    },
+    {
+      "name": "twitter:image:src",
+      "content": "http://KyleFinley.net/img/KyleFinley.net-Luckys-Boston.jpg"
+    },
+    {
+      "property": "twitter:account_id",
+      "content": "1530436921"
+    },
+    {
+      "property": "og:title",
+      "content": "Software | Music | Kiteboarding | Photography | Cars | Life"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "http://KyleFinley.net/"
+    },
+    {
+      "property": "og:image",
+      "content": "http://KyleFinley.net/img/KyleFinley.net-Luckys-Boston.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    }
+  ]
+}

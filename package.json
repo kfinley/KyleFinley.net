@@ -1,16 +1,24 @@
 {
   "name": "kylefinley.net",
-  "version": "0.0.1",
-  "description": "KyleFinley.net site and backend system",  
+  "version": "3.0.1",
+  "description": "Source for KyleFinley.net. Vue2 front-end serving markdown posts.",
+  "main": "index.js",
   "scripts": {
+    "lerna": "lerna",
+    "bootstrap": "lerna bootstrap --concurrency=2",
+    "clean": "lerna clean --yes",
+    "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
+    "build:client": "lerna run build --stream --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
+    "post-build:fix-img-paths": "./infrastructure/scripts/fix-img-paths.sh",
+    "super-clean": "rm -rf node_modules && rm -rf package-lock.json && npm run clean && lerna exec -- rm package-lock.json || true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
     "name": "Kyle Finley",
     "email": "kyle@kylefinley.net"
   },
+  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^14.14.25",
-    "lerna": "^4.0.0"
+    "lerna": "^5.4.3"
   }
 }

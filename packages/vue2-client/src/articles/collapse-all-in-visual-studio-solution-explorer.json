@@ -1,0 +1,72 @@
+{
+  "title": "Collapse All Folders in VS Solution Explorer",
+  "metaTags": [{
+      "name": "description",
+      "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
+    },
+    {
+      "itemprop": "name",
+      "content": "Collapse All Folders in VS Solution Explorer"
+    },
+    {
+      "itemprop": "description",
+      "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Collapse All Folders in VS Solution Explorer"
+    },
+    {
+      "name": "twitter:description",
+      "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
+    },
+    {
+      "property": "twitter:account_id",
+      "content": "1530436921"
+    },
+    {
+      "property": "og:title",
+      "content": "Collapse All Folders in VS Solution Explorer"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "http://KyleFinley.net/collapse-all-in-visual-studio-solution-explorer"
+    },
+    {
+      "property": "og:description",
+      "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    },
+    {
+      "property": "article:published_time",
+      "content": "2/2/2006 7:34:00 PM"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "8/20/2015 12:37:59 PM"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}

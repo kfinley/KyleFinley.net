@@ -1,0 +1,70 @@
+{
+  "title": "Articles & Ramblings",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "The writings and ramblings on software, music, board sports, travel, camping, photography, life, and more by Kyle Finley."
+    },
+    {
+      "itemprop": "name",
+      "content": "Articles & Ramblings - KyleFinley.net"
+    },
+    {
+      "itemprop": "description",
+      "content": "The writings and ramblings on software, music, board sports, travel, camping, photography, and more by Kyle Finley."
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Articles & Ramblings - KyleFinley.net"
+    },
+    {
+      "name": "twitter:description",
+      "content": "The writings and ramblings on software, music, board sports, travel, camping, photography, and more by Kyle Finley."
+    },
+    {
+      "name": "twitter:image:src",
+      "content": "http://KyleFinley.net/img/KyleFinley.net-Luckys-Boston.jpg"
+    },
+    {
+      "property": "twitter:account_id",
+      "content": "1530436921"
+    },
+    {
+      "property": "og:title",
+      "content": "Articles & Ramblings - KyleFinley.net"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "http://KyleFinley.net/articles"
+    },
+    {
+      "property": "og:image",
+      "content": "http://KyleFinley.net/img/copyrighted/©-Kyle-Finley_2015.04.10_IMG_8825.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "The writings and ramblings on software, music, board sports, travel, camping, photography, and more by Kyle Finley."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    }
+  ]
+}

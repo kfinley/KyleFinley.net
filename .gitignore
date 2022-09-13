@@ -1,12 +1,52 @@
 node_modules
 
+# lerna files
+lerna-debug.log
+package.json.lerna_backup
 
-bin/
-obj/
-Debug/
-Release/
+# .net install script that's downloaded as part of setup
+dotnet-install.sh
 
+# VS Debugger
+.devcontainer/vsdbg
+
+# Storybooks
+packages/*/storybooks
+storybooks/*
+
+# Serverless directories
+.build
+.lambda-build
+.serverless
+.webpack
+
+## Serverless offline plugin files
+.devcontainer/.cognito/db/*_local.json
+.devcontainer/.cognito/db/local.json
+.devcontainer/.db/**
+.devcontainer/.s3/**
+.devcontainer/.ses/**
+
+# git submodules
+submodules/aws-ses-local/**
+submodules/cognito-local/**
+submodules/serverless-offline/**
+submodules/serverless-offline-step-functions/**
+
+sitemap.xml
+
+# Mono crash files
+mono_crash.*
+
+# macOS
 .DS_Store
-Icon
 
-Icon
+# CDK
+cdk.out
+cdk.out.yaml
+
+registration.json
+
+.env
+
+

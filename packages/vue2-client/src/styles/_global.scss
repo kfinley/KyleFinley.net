@@ -1,0 +1,133 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: $body-color;
+  line-height: 1.6;
+  background-color: $body-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+}
+
+.primary-gradient {
+  color: $light;
+  background-image: $primary-button-background;
+}
+
+.primary-gradient:hover {
+  color: $light;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-lighter {
+  font-weight: lighter !important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+
+.font-weight-bolder {
+  font-weight: 700 !important;
+}
+
+.font-italic {
+  font-style: italic !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+}
+
+.text-xl {
+  font-size: 1.5rem !important;
+}
+
+.text-sm {
+  line-height: 1.5;
+  font-size: 0.875rem !important;
+}
+
+.text-xs {
+  font-size: 0.75rem !important;
+}
+
+.text-xxs {
+  font-size: 0.65rem !important;
+}
+
+.text-light {
+  color: $light !important;
+}
+
+.text-dark {
+  color: $dark !important;
+}
+
+// Skip the first li (header) and stripe every other row
+.striped-list li ~ li:nth-of-type(odd) {
+  background: $stripe-color;
+}
+
+.striped-list-no-header li:nth-of-type(even){
+  background: $stripe-color;
+}
+
+.striped {
+  background: $stripe-color;
+}
+
+.list-header {
+  background: $light;
+  border-bottom: 1px solid $header-border !important;
+}
+
+.tiled-list {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  list-style-type: none;  
+}
+
+.clickable {
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  &:active {
+    transform: translateY(3px);
+  }
+}

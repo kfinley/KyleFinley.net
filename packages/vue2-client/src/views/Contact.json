@@ -1,0 +1,18 @@
+{
+  "title": "Contact",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Contact me"
+    },
+    {
+      "itemprop": "name",
+      "content": "Contact - KyleFinley.net"
+    },
+    {
+      "itemprop": "description",
+      "content": "Contact KyleFinley.net"
+    }
+  ]
+}

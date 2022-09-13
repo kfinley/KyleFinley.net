@@ -1,0 +1,80 @@
+{
+  "title": "Exclude Internal Traffic from Google Analytics for Shopify",
+  "metaTags": [{
+      "name": "description",
+      "content": "How to exclude traffic from Google Analytics for a Shopify store for users based on a custom Cookie. Best option for remote users with changing IP Addresses."
+    },
+    {
+      "itemprop": "name",
+      "content": "Exclude Internal Traffic from Google Analytics for Shopify"
+    },
+    {
+      "itemprop": "description",
+      "content": "How to exclude traffic from Google Analytics for a Shopify store for users based on a custom Cookie. Best option for remote users with changing IP Addresses."
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@kfinley"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Exclude Internal Traffic from Google Analytics for Shopify"
+    },
+    {
+      "name": "twitter:description",
+      "content": "How to exclude traffic from Google Analytics for a Shopify store for users based on a custom Cookie. Best option for remote users with changing IP Addresses."
+    },
+    {
+      "name": "twitter:image:src",
+      "content": "http://KyleFinley.net/img/articles/shopify-exclude-internal-traffic-from-google-analytics.jpg"
+    },
+    {
+      "property": "twitter:account_id",
+      "content": "1530436921"
+    },
+    {
+      "property": "og:title",
+      "content": "Exclude Internal Traffic from Google Analytics for Shopify"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "http://KyleFinley.net/exclude-internal-traffic-for-shopify-store"
+    },
+    {
+      "property": "og:image",
+      "content": "http://KyleFinley.net/img/articles/shopify-exclude-internal-traffic-from-google-analytics.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "How to exclude traffic from Google Analytics for a Shopify store for users based on a custom Cookie. Best option for remote users with changing IP Addresses."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    },
+    {
+      "property": "article:published_time",
+      "content": "8/25/2015 11:55:46 AM"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "8/25/2015 8:44:22 PM"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}
