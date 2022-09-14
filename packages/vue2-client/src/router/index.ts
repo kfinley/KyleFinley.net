@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "@/views/Home.vue";
-import Articles from "@/articles";
+import Home from "../views/Home.vue";
+import Articles from "../articles";
 import { createRouterLayout } from 'vue-router-layout'
 import { RouteNames } from './RouteNames';
 
