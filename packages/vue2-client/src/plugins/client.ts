@@ -36,8 +36,6 @@ const plugin = {
       // setupValidation(extend);
       setupModules(options.store);
 
-      getModule(ArticlesModule, options.store).loadArticles();
-
       // router provided to add any plugin routes.
       // i.e. options.router.addRoutes(routes);
 

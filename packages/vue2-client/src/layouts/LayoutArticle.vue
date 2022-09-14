@@ -12,12 +12,16 @@ import csharp from 'highlight.js/lib/languages/csharp'
 import javascript from 'highlight.js/lib/languages/javascript'
 import json from 'highlight.js/lib/languages/json'
 import html from 'highlight.js/lib/languages/vbscript-html'
+import { metaFiles } from '../articles'
 
 import 'highlight.js/styles/github-dark-dimmed.css'
 
 @Component()
 export default class ArticleLayout extends Vue {
-  mounted() {
+
+  async mounted() {
+   
+    this.setTitleAndMetaTags()
     this.handleHighlight()
     this.handlePTags()
   }
@@ -70,6 +74,26 @@ export default class ArticleLayout extends Vue {
       }
     })
   }
+
+  setTitleAndMetaTags() {
+    // console.log(metaFiles)
+    this.getMetaData(this.$route.name).then((meta) => {
+      document.title = meta.title
+
+      for (const tag of meta.metaTags) {
+        console.log(tag)
+
+        const tagEl = document.createElement('meta')
+        tagEl.setAttribute(Object.values(tag)[0], Object.values(tag)[1])
+
+        // We use this to track which meta tags we create so we don't interfere with other ones.
+        tagEl.setAttribute('data-vue-router-controlled', '')
+        document.head.appendChild(tagEl)
+      }
+    })
+  }
+
+  getMetaData = async (file: string) => (await import(`../articles/${file}.json`)).default
 }
 </script>
 

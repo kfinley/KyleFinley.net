@@ -2,7 +2,6 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Articles from "../articles";
-import { metaFiles } from '../articles';
 import { createRouterLayout } from 'vue-router-layout'
 import { RouteNames } from './RouteNames';
 import { defineAsyncComponent } from 'vue'
@@ -106,14 +105,6 @@ export const createRouter = async () => {
     },
   ];
 
-  //TODO: This works but is pretty dumb b/c it downloads each file just to load the site
-
-  // const articlesMeta = import.meta.glob('../articles/*.json')
-
-  const getMetaData = async (file: string) => {
-    return (await metaFiles[file]() as any).default
-  }
-
   for (const article of Object.keys(Articles)) {
     try {
       // console.log(article);
@@ -131,7 +122,6 @@ export const createRouter = async () => {
                 component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`))
               }
             ],
-            meta: await getMetaData(`../articles/${article}.json`),
           }
         ],
         meta: { allowAnonymous: true },

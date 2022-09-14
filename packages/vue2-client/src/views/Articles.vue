@@ -13,9 +13,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { ArticlesState } from '../store/state'
 import { State } from 'vuex-class'
+import { getArticlesModule } from '../store/articles-module'
 
 @Component()
 export default class Articles extends Vue {
   @State('Articles') articlesState!: ArticlesState
+
+  async created() {
+    await getArticlesModule(this).loadArticles()
+  }
 }
 </script>
