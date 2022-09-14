@@ -86,7 +86,7 @@ export class InfrastructureStack extends Stack {
       ),
     });
 
-    new route53.ARecord(this 'FTPRecord', {
+    new route53.ARecord(this, 'FTPRecord', {
       recordName: `ftp.${domainName}`,
       zone: hostedZone,
       target: route53.RecordTarget.fromIpAddresses('143.95.251.45')
