@@ -68,6 +68,17 @@ export const createRouter = async () => {
       ],
     },
     {
+      path: "/login",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: 'Login',
+          component: () => import(/* webpackChunkName: "contact" */ '../views/Login.vue'),
+        }
+      ],
+    },
+    {
       path: "/contact",
       component: RouterLayout,
       children: [

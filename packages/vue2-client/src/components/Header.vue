@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 import BurgerNav from './BurgerNav.vue'
 import BurgerNavItem from './BurgerNavItem.vue'
 import { RouteNames } from '../router/RouteNames'
