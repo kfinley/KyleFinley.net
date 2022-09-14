@@ -1,4 +1,4 @@
-import { Component } from "vue";
+const metaFiles = import.meta.glob('../articles/*.json');
 
 function buildArticles() {
 
@@ -6,14 +6,18 @@ function buildArticles() {
 
   const articles: Record<string, string> = {};
 
-  const files = import.meta.glob('../articles/*.json');
-
-  for (let file in files) {
+  for (let file in metaFiles) {
     const article = file.split('/')[2].split('.')[0];
-    articles[article] = file.replace('json', 'md');
+    articles[article] = file.replace('.json', '');
   }
 
   return articles
 };
 
-export default buildArticles();
+const articles = buildArticles();
+
+export {
+  metaFiles
+};
+
+export default articles;
