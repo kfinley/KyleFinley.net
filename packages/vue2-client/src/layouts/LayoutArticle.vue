@@ -81,7 +81,7 @@ export default class ArticleLayout extends Vue {
       document.title = meta.title
 
       for (const tag of meta.metaTags) {
-        console.log(tag)
+        // console.log(tag)
 
         const tagEl = document.createElement('meta')
         tagEl.setAttribute(Object.values(tag)[0], Object.values(tag)[1])
