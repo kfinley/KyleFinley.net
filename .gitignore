@@ -33,8 +33,6 @@ submodules/cognito-local/**
 submodules/serverless-offline/**
 submodules/serverless-offline-step-functions/**
 
-sitemap.xml
-
 # Mono crash files
 mono_crash.*
 

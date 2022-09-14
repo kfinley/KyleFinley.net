@@ -140,12 +140,8 @@ export const createRouter = async () => {
         ],
         meta: { allowAnonymous: true },
       })
-
       // console.log("Created route for article:  " + article.split('_')[1].split('.')[0] + ' at path ' + `/${article.split('_')[1].split('.')[0]}`)
     } catch (e) {
-      // squash on errors thrown from split based on bad file names.
-      // If a file name starts with a date then that means it's published and it will be included in routes
-      // If a file name does not start with a date then that means it's not published and it won't be included in routes
       console.log(e)
     }
   }
@@ -207,24 +203,3 @@ export const createRouter = async () => {
   return router;
 
 }
-
-
-// function getRoutesList(routes: any, pre: any) {
-//   return routes.reduce((array: any, route: any) => {
-//     const path = `${pre}${route.path}`;
-
-//     if (route.path !== '*') {
-//       array.push(path);
-//     }
-
-//     if (route.children) {
-//       array.push(...getRoutesList(route.children, `${path}/`));
-//     }
-
-//     return array;
-//   }, []);
-// }
-
-// const routeList = getRoutesList(router.options.routes, 'https://kylefinley.net');
-
-// console.log(routeList);

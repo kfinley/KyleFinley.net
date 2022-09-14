@@ -23,16 +23,7 @@ export default class ArticleLayout extends Vue {
   
   created() {
     this.handlePTags()
-
-    // this.handleImages();
   }
-
-  // handleImages() {
-  //   Array.from(document.querySelectorAll('.article-wrapper > div > div > p > img')).map((i) => {
-  //     i.src = i.src.replace('/public', '')
-  //     console.log(i.src)
-  //   });
-  // }
 
   handleHighlight() {
     let shouldHighlight: boolean = false
