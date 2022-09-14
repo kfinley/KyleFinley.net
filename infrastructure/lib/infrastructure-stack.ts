@@ -78,7 +78,7 @@ export class InfrastructureStack extends Stack {
       enableIpv6: true,
     });
 
-    new route53.ARecord(this, 'KyleFinleyNetARecord', {
+    new route53.ARecord(this, 'ARecord', {
       recordName: domainName,
       zone: hostedZone,
       target: route53.RecordTarget.fromAlias(
@@ -86,7 +86,7 @@ export class InfrastructureStack extends Stack {
       ),
     });
 
-    new route53.MxRecord(this, 'KyleFinleyNetMXRecord1', {
+    new route53.MxRecord(this, 'MXRecords', {
       recordName: domainName,
       zone: hostedZone,
       values: [{
@@ -116,17 +116,17 @@ export class InfrastructureStack extends Stack {
       ]
     });
 
-    new route53.CnameRecord(this, 'KyleFinleyNetMailCNameRecord', {
+    new route53.CnameRecord(this, 'MailCNameRecord', {
       recordName: `mail.${domainName}`,
       zone: hostedZone,
       domainName: 'ghs.google.com'
     })
 
-    new route53.TxtRecord(this, 'KyleFinleyNetTxtRecord', {
+    new route53.TxtRecord(this, 'TxtRecord', {
       recordName: domainName,
       zone: hostedZone,
       values: [
-        'v=spf1 include:aspmx.googlemail.com ~all'
+        'v=spf1 include:aspmx.googlemail.com ~all' //TODO: research this... ~all is probably to wide here. This was pulled from old DNS records.
       ]
     })
 
