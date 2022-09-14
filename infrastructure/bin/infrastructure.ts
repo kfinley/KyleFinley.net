@@ -9,7 +9,7 @@ config();
 
 const app = new cdk.App();
 
-new InfrastructureStack(app, 'FrontEndStack', {
+new InfrastructureStack(app, `KyleFinley.net-InfrastructureStack`, {
   env: {
     account: process.env.AWS_ACCOUNT,
     region: process.env.AWS_REGION
