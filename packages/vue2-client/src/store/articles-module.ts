@@ -7,7 +7,7 @@ import { ArticlesState, Status } from './state'
 export class ArticlesModule extends BaseModule implements ArticlesState {
 
     articles: Record<string, string> = {}
-    status: any;
+    status: Status = Status.None
 
     @Action
     async loadArticles() {
