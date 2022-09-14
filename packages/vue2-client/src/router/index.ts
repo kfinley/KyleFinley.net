@@ -5,6 +5,7 @@ import Articles from "../articles";
 import { metaFiles } from '../articles';
 import { createRouterLayout } from 'vue-router-layout'
 import { RouteNames } from './RouteNames';
+import { defineAsyncComponent } from 'vue'
 
 // Setup Layouts
 const RouterLayout = createRouterLayout(layout => {
@@ -129,7 +130,7 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: () => import(/* @vite-ignore webpackChunkName: "[request]" */ `${file}.md`)
+                component: defineAsyncComponent(() => import(/* @vite-ignore webpackChunkName: "[request]" */ `${file}.md`))
               }
             ],
             meta: await getMetaData(`../articles/${article}.json`),
