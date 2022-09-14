@@ -116,7 +116,7 @@ export const createRouter = async () => {
 
   for (const article of Object.keys(Articles)) {
     try {
-      console.log(article);
+      // console.log(article);
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
