@@ -11,7 +11,7 @@ First release of the new site is done. Some bugs remain but the content is migra
 
 GitHub Actions CI/CD Pipeline in place. Migrated DNS from Arvixe to AWS Route53 using CDK.
 
-Going camping and will clone the repo and may launch a dedicated camping personal log site.
+I'm Going camping and may clone this repo and launch a dedicated camping personal journal site.
 
 :beer:<br>
 :)
