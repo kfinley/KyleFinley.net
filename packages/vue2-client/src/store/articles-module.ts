@@ -23,10 +23,9 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
 
             for (let file in articlesMeta) {
                 const meta = file.split('/')[2]
-                console.log(meta)
                 const article = meta.split('.')[0]
                 const title = ((await articlesMeta[file]()) as any).default.title
-                console.log({ article, title })
+                //console.log({ article, title })
                 articleList[article] = title
             }
 

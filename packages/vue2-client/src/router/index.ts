@@ -104,7 +104,7 @@ export const createRouter = async () => {
     },
   ];
 
-  //TODO: Explore moving this to a plugin...
+  //TODO: This works but is pretty dumb b/c it downloads each file just to load the site
 
   const articlesMeta = import.meta.glob('../articles/*.json')
 
@@ -115,8 +115,9 @@ export const createRouter = async () => {
   for (const article of Object.keys(Articles)) {
     try {
 
-      const meta = await getMetaData(articlesMeta, `../articles/${article}.json`);
-
+      // const getMeta = getMetaData(articlesMeta, `../articles/${article}.json`);
+      
+      console.log(Articles[article])
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
@@ -128,10 +129,10 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: Articles[article]
+                component: () => import(/* webpackChunkName: "[request]" */ Articles[article]) 
               }
             ],
-            meta,
+            meta: await getMetaData(articlesMeta, `../articles/${article}.json`),
           }
         ],
         meta: { allowAnonymous: true },
