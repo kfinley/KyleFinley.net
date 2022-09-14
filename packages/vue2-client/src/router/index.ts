@@ -114,6 +114,7 @@ export const createRouter = async () => {
 
   for (const article of Object.keys(Articles)) {
     try {
+      const file = Articles[article];
 
       // console.log(Articles[article])
       routes.push({
@@ -127,7 +128,7 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: () => import(/* webpackChunkName: "[request]" */ Articles[article] as string)
+                component: () => import(/* @vite-ignore webpackChunkName: "[request]" */ file)
               }
             ],
             meta: await getMetaData(articlesMeta, `../articles/${article}.json`),
