@@ -1,4 +1,4 @@
-# Kite The Coast - Charleston, SC : May 31 to June 2nd, 2008
+# Kite the Coast - Charleston, SC : May 31 to June 2nd, 2008
 ### Journal Entry: South Carolina 2008 road trip around the Gulf of Mexico and up the Eastern Coast. Kiteboarding, Camping, Couchsurfing, & new friends.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="6/2/2008 5:00:00 AM">Monday, June 2, 2008</time></div>*

@@ -116,9 +116,7 @@ export const createRouter = async () => {
 
   for (const article of Object.keys(Articles)) {
     try {
-      const file = Articles[article];
-
-      // console.log(Articles[article])
+      console.log(article);
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
@@ -130,7 +128,7 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: defineAsyncComponent(() => import(/* @vite-ignore webpackChunkName: "[request]" */ `${file}.md`))
+                component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`))
               }
             ],
             meta: await getMetaData(`../articles/${article}.json`),
