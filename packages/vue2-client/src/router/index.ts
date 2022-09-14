@@ -114,6 +114,8 @@ export const createRouter = async () => {
     return (await metaFiles[file]() as any).default
   }
 
+  console.log(Articles);
+  
   for (let article in articles) {
 
     try {

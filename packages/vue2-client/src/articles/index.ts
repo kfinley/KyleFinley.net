@@ -8,7 +8,7 @@ function buildArticles() {
 
   for (let file in files) {
     const article = file.split('/')[2].split('.')[0];
-    articles[article] = () => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ file);
+    articles[article] = () => import(/* webpackChunkName: "content" */ file);
   }
 
   return articles
