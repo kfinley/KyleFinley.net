@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
-import Articles from "../articles";
+import Home from "@/views/Home.vue";
+import Articles from "@/articles";
 import { createRouterLayout } from 'vue-router-layout'
 import { RouteNames } from './RouteNames';
 
@@ -106,25 +106,19 @@ export const createRouter = async () => {
 
   //TODO: Explore moving this to a plugin...
 
-  const articles = import.meta.glob('../articles/*.md')
-
   const articlesMeta = import.meta.glob('../articles/*.json')
 
   const getMetaData = async (metaFiles: any, file: string) => {
     return (await metaFiles[file]() as any).default
   }
 
-  console.log(Articles);
-  
-  for (let article in articles) {
-
+  for (const article of Object.keys(Articles)) {
     try {
 
-      const articleFileName = article.split('/')[2].split('.')[0];
-      const meta = await getMetaData(articlesMeta, `../articles/${articleFileName}.json`);
+      const meta = await getMetaData(articlesMeta, `../articles/${article}.json`);
 
       routes.push({
-        path: `/${articleFileName}`,
+        path: `/${article}`,
         component: RouterLayout,
         children: [
           {
@@ -133,8 +127,8 @@ export const createRouter = async () => {
             children: [
               {
                 path: '',
-                name: articleFileName,
-                component: Articles[articleFileName]
+                name: article,
+                component: Articles[article]
               }
             ],
             meta,

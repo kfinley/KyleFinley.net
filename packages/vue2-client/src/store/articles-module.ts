@@ -19,15 +19,14 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
 
             const articlesMeta = import.meta.glob('../articles/*.json')
 
-            const files = import.meta.glob('../articles/*.md')
-
             const articleList: Record<string, string> = {};
 
-            for (let file in files) {
-                const article = file.split('/')[2].split('.')[0]
-                const meta = `${file.split('.md')[0]}.json`
-                const title = ((await articlesMeta[meta]()) as any).default.title
-                // console.log({ article, title })
+            for (let file in articlesMeta) {
+                const meta = file.split('/')[2]
+                console.log(meta)
+                const article = meta.split('.')[0]
+                const title = ((await articlesMeta[file]()) as any).default.title
+                console.log({ article, title })
                 articleList[article] = title
             }
 
@@ -35,11 +34,15 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
                 (state: ArticlesState) => {
                     state.articles = articleList
                 })
+            
+            this.context.commit('mutate',
+                (state: ArticlesState) => state.status = Status.Loaded);
+                
         } catch (error) {
             this.context.commit('mutate',
                 (state: ArticlesState) => state.status = Status.Failed);
 
-            console.log(error); ``
+            console.log(error);
         }
     }
 }
