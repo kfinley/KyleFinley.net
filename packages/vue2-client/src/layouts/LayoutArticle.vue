@@ -20,7 +20,7 @@ export default class ArticleLayout extends Vue {
   mounted() {
     this.handleHighlight()
   }
-  
+
   created() {
     this.handlePTags()
   }
@@ -30,16 +30,20 @@ export default class ArticleLayout extends Vue {
 
     Array.from(document.querySelectorAll('code')).map((code) => {
       Array.from(code.classList).map((c) => {
+        // console.log(c)
         shouldHighlight =
-          this.registerLanguageIfIncluded('vbscript', vbscript, c) || shouldHighlight
+          this.registerLanguageIfIncluded('vb', 'vbscript', vbscript, c) ||
+          shouldHighlight
         shouldHighlight =
-          this.registerLanguageIfIncluded('csharp', csharp, c) || shouldHighlight
+          this.registerLanguageIfIncluded('csharp', 'csharp', csharp, c) ||
+          shouldHighlight
         shouldHighlight =
-          this.registerLanguageIfIncluded('javascript', javascript, c) || shouldHighlight
+          this.registerLanguageIfIncluded('javascript', 'javascript', javascript, c) ||
+          shouldHighlight
         shouldHighlight =
-          this.registerLanguageIfIncluded('json', json, c) || shouldHighlight
+          this.registerLanguageIfIncluded('json', 'json', json, c) || shouldHighlight
         shouldHighlight =
-          this.registerLanguageIfIncluded('html', html, c) || shouldHighlight
+          this.registerLanguageIfIncluded('html', 'html', html, c) || shouldHighlight
       })
     })
 
@@ -48,14 +52,15 @@ export default class ArticleLayout extends Vue {
     }
   }
 
-  registerLanguageIfIncluded(lang, langRef, c) {
-    if (c.includes(lang)) {
-      hljs.registerLanguage(lang, langRef)
+  registerLanguageIfIncluded(langSlug, lang, langRef, c) {
+    if (c.includes(langSlug)) {
+      // console.log(`Registering ${lang} for ${c}`)
+      hljs.registerLanguage(langSlug, langRef)
       return true
     }
     return false
   }
-  
+
   handlePTags() {
     Array.from(document.querySelectorAll('.article-wrapper > div > p')).map((p) => {
       // Remove indent for any paragraphs that are 2 lines or less.

@@ -115,9 +115,7 @@ export const createRouter = async () => {
   for (const article of Object.keys(Articles)) {
     try {
 
-      // const getMeta = getMetaData(articlesMeta, `../articles/${article}.json`);
-      
-      console.log(Articles[article])
+      // console.log(Articles[article])
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
@@ -129,7 +127,7 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: () => import(/* webpackChunkName: "[request]" */ Articles[article]) 
+                component: () => import(/* webpackChunkName: "[request]" */ Articles[article] as string)
               }
             ],
             meta: await getMetaData(articlesMeta, `../articles/${article}.json`),
@@ -137,7 +135,7 @@ export const createRouter = async () => {
         ],
         meta: { allowAnonymous: true },
       })
-      // console.log("Created route for article:  " + article.split('_')[1].split('.')[0] + ' at path ' + `/${article.split('_')[1].split('.')[0]}`)
+      // console.log(`Created route for article at path /${article}`)
     } catch (e) {
       console.log(e)
     }

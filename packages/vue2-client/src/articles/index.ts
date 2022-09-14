@@ -10,7 +10,6 @@ function buildArticles() {
 
   for (let file in files) {
     const article = file.split('/')[2].split('.')[0];
-    //const foo = () => import(/* webpackChunkName: "[request]" */ file.replace('json', 'md'));
     articles[article] = file.replace('json', 'md');
   }
 
