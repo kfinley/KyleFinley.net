@@ -25,12 +25,12 @@ export class InfrastructureStack extends Stack {
       comment: `Hosted zone for ${domainName}`
     });
 
-    const certificateManagerCertificate = new acm.DnsValidatedCertificate(this, 'CertificateManagerCertificate', {
-      domainName,
-      hostedZone,
-      region: region,
-      validation: acm.CertificateValidation.fromDns(),
-    });
+    // const certificateManagerCertificate = new acm.DnsValidatedCertificate(this, 'CertificateManagerCertificate', {
+    //   domainName,
+    //   hostedZone,
+    //   region: region,
+    //   validation: acm.CertificateValidation.fromDns(),
+    // });
 
     const s3Bucket = new s3.Bucket(this, 'S3Bucket', {
       bucketName: domainName,
@@ -71,7 +71,7 @@ export class InfrastructureStack extends Stack {
       ],
       priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL,
       enabled: true,
-      certificate: certificateManagerCertificate,
+      // certificate: certificateManagerCertificate,
       minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2021,
       httpVersion: cloudfront.HttpVersion.HTTP2,
       defaultRootObject: 'index.html',
