@@ -101,7 +101,7 @@
             <p>
               I'm happy to say that I've rescued two older cars from the junk yard and
               have done repairs and maintenance myself. One is my 20 year old Boxer 6cyl
-              Beast Wagon Subie and the other is a 20 year old Sedan version of the same
+              Beast Wagon Subie and the other is a 20 year old sedan version of the same
               car (both bought on CL for a combined $2,600). I've driven the wagon halfway
               across the country 5 times and about to roll over a quarter of a million
               miles (on my way to 1 million!).
