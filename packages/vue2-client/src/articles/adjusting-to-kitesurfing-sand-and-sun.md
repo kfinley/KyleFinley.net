@@ -1,5 +1,5 @@
 # St. Lucia @ The Reef: Adjusting to Kitesurfing, Sand, & Sun
-### First writing from my two week stay in St. Lucia at The Reef Kitesurf Center and Beach Cafe with Guest Huts. Getting my sea legs back!
+#### First writing from my two week stay in St. Lucia at The Reef Kitesurf Center and Beach Cafe with Guest Huts. Getting my sea legs back!
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="4/24/2008 5:00:00 AM">Thursday, April 24, 2008</time></div>*
 

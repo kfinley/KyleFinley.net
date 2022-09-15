@@ -1,5 +1,5 @@
 # Sheets to Tweets Apps Script Details
-### Details on the Apps Script that runs behind the Sheets To Tweets Google Spreadsheet based Twitter Scheduler.
+#### Details on the Apps Script that runs behind the Sheets To Tweets Google Spreadsheet based Twitter Scheduler.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/3/2015 11:24:00 PM">Friday, July 3, 2015</time></div>*
 

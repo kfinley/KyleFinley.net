@@ -1,5 +1,5 @@
 # Exclude Internal Traffic from Google Analytics for Shopify
-### How to exclude traffic from Google Analytics for a Shopify store for users based on a custom Cookie. Best option for remote users with changing IP Addresses.
+#### How to exclude traffic from Google Analytics for a Shopify store for users based on a custom Cookie. Best option for remote users with changing IP Addresses.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="8/25/2015 4:55:46 PM">Tuesday, August 25, 2015</time></div>*
 

@@ -1,5 +1,5 @@
 # Twitter Scheduler with Images uploaded from Google Sheets
-### Twitter Scheduler that supports Native Images using Google Sheets & images stored in Google Drive via Apps Script and theTwitter API.
+#### Twitter Scheduler that supports Native Images using Google Sheets & images stored in Google Drive via Apps Script and theTwitter API.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/3/2015 6:40:00 PM">Friday, July 3, 2015</time></div>*
 

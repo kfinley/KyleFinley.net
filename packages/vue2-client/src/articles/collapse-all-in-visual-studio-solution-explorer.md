@@ -1,5 +1,5 @@
 # Collapse All Folders in VS Solution Explorer
-### This is a Macro for Visual Studio that will collapse all the folders in the solution explorer.
+#### This is a Macro for Visual Studio that will collapse all the folders in the solution explorer.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/3/2006 1:34:00 AM">Thursday, February 2, 2006</time></div>*
 

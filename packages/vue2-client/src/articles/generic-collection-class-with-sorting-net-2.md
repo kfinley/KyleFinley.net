@@ -1,5 +1,5 @@
 # Generic Collection Class with Sorting Support in C# .NET
-### Create a Generic Collection with Sorting Support using C# in .net 2.0.
+#### Create a Generic Collection with Sorting Support using C# in .net 2.0.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/8/2006 6:00:00 AM">Wednesday, February 8, 2006</time></div>*
 

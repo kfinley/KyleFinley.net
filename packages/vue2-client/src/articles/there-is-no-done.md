@@ -1,5 +1,5 @@
 # There Is No Done
-### Software is never "Done" there is always more to do. Thoughts on the common misconception that you can be "Finished" with systems software development.
+#### Software is never "Done" there is always more to do. Thoughts on the common misconception that you can be "Finished" with systems software development.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="5/10/2015 12:02:07 PM">Sunday, May 10, 2015</time></div>*
 

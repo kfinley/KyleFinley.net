@@ -1,5 +1,5 @@
 # Save Space Installing Visual Studio 2005 with SP1
-### Steps for installing Visual Studio 2005 with SP1 (including the TFS Client) with minimal free hard drive space.
+#### Steps for installing Visual Studio 2005 with SP1 (including the TFS Client) with minimal free hard drive space.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="12/11/2007 5:44:00 PM">Tuesday, December 11, 2007</time></div>*
 

@@ -1,5 +1,5 @@
 # Slipstream Visual Studio 2008 Service Pack 1
-### Step by Step guide for how to slipstream Visual Studio 2008 Service Pack 1.
+#### Step by Step guide for how to slipstream Visual Studio 2008 Service Pack 1.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="4/3/2009 8:26:00 PM">Friday, April 3, 2009</time></div>*
 

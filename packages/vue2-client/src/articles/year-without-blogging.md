@@ -1,5 +1,5 @@
 # A Year Without Blogging
-### I realized it's been almost a full year since my last blog post.I would say I'm disappointed in myself for not posting in the last year but I'm not.
+#### I realized it's been almost a full year since my last blog post.I would say I'm disappointed in myself for not posting in the last year but I'm not.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/10/2009 6:40:00 PM">Tuesday, February 10, 2009</time></div>*
 

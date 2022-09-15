@@ -1,5 +1,5 @@
 # 5 Days Kitesurfing in St. Lucia
-### Journal entry after 5 Amazing days of kiteboarding and hanging out with new friends in St. Lucia at The Reef.
+#### Journal entry after 5 Amazing days of kiteboarding and hanging out with new friends in St. Lucia at The Reef.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="4/27/2008 5:00:00 AM">Sunday, April 27, 2008</time></div>*
 

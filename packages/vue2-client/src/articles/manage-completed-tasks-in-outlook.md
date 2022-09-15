@@ -1,5 +1,5 @@
 # Managing Completed Tasks in Outlook
-### Keep your tasks in Outlook organized. Here is a simple Macro for moving completed Outlook Tasks to a separate folder.
+#### Keep your tasks in Outlook organized. Here is a simple Macro for moving completed Outlook Tasks to a separate folder.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="9/30/2005 12:00:00 AM">Thursday, September 29, 2005</time></div>*
 

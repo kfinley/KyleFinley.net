@@ -1,5 +1,5 @@
 # Store value for a selected label using Typeahead.js & jQuery
-### jQuery & Twitter Typeahead.js solution that doesn't require additional maps for label text and value. Store id for a selected label in jQuery Data Collection.
+#### jQuery & Twitter Typeahead.js solution that doesn't require additional maps for label text and value. Store id for a selected label in jQuery Data Collection.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/30/2014 3:54:38 PM">Wednesday, July 30, 2014</time></div>*
 

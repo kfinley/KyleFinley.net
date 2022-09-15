@@ -1,5 +1,5 @@
 # Rainbows over JFK Library in Boston
-### Photos of rainbows over the JFK Library in Boston. Taken from my roof deck in South Boston overlooking Old Harbor (Boston Harbor).
+#### Photos of rainbows over the JFK Library in Boston. Taken from my roof deck in South Boston overlooking Old Harbor (Boston Harbor).
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/25/2014 3:39:07 PM">Friday, July 25, 2014</time></div>*
 

@@ -1,5 +1,5 @@
 # Kite the Coast - Chasing Wind in Fort Walton, FL : May 2008
-### Journal Entry from the Florida Panhandle. Chasing wind and driving on closed beach roads with the guys from XLKites in Fort Walton, FL.
+#### Journal Entry from the Florida Panhandle. Chasing wind and driving on closed beach roads with the guys from XLKites in Fort Walton, FL.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="5/22/2008 5:00:00 AM">Thursday, May 22, 2008</time></div>*
 

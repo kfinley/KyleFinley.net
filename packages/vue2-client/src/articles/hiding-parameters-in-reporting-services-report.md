@@ -1,5 +1,5 @@
 # Hiding Specific Parameters in a Reporting Services Report
-### How to hide a parameter on a Reporting Services Report while still being able to pass the report the parameter via the URL or Form Post.
+#### How to hide a parameter on a Reporting Services Report while still being able to pass the report the parameter via the URL or Form Post.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/24/2006 4:03:00 PM">Friday, February 24, 2006</time></div>*
 

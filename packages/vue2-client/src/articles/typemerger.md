@@ -1,5 +1,5 @@
 # TypeMerger - Merge Objects into an Anonymous Type in C#
-### TypeMerger allows you to combine two objects into a new object using C#. Includes the option to ignore properties so they are not included in the final object.
+#### TypeMerger allows you to combine two objects into a new object using C#. Includes the option to ignore properties so they are not included in the final object.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="10/15/2009 5:00:00 AM">Thursday, October 15, 2009</time></div>*
 

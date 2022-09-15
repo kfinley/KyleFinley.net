@@ -1,5 +1,5 @@
 # Kite the Coast - Arriving in Cape Hatteras, NC : June 2008
-### Journal Entry from first day on Cape Hatteras, NC. Making my way onto the Outer Banks islands in North Carolina for 3 days of kiteboarding and camping.
+#### Journal Entry from first day on Cape Hatteras, NC. Making my way onto the Outer Banks islands in North Carolina for 3 days of kiteboarding and camping.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="6/10/2008 5:00:00 AM">Tuesday, June 10, 2008</time></div>*
 

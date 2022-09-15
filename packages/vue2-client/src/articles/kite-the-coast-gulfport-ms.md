@@ -1,5 +1,5 @@
 # Kite the Coast - Great Conditions in Gulfport, MS : May 2008
-### Journal Entry from Gulfport MS. Perfect Sun, Sand, and Side-Shore wind conditions for kitesurfing the Mississippi Coast. Great locals too!
+#### Journal Entry from Gulfport MS. Perfect Sun, Sand, and Side-Shore wind conditions for kitesurfing the Mississippi Coast. Great locals too!
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="5/20/2008 5:00:00 AM">Tuesday, May 20, 2008</time></div>*
 

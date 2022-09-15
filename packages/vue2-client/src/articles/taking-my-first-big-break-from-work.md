@@ -1,5 +1,5 @@
 # Taking a Bit of a Break From Work
-### I decided to take a 4 Month Leave of Absence so I could Travel, Snowboard, Kiteboard, Camp, Photo, and explore the US coast along the Gulf and East coast.
+#### I decided to take a 4 Month Leave of Absence so I could Travel, Snowboard, Kiteboard, Camp, Photo, and explore the US coast along the Gulf and East coast.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/26/2008 6:00:00 AM">Tuesday, February 26, 2008</time></div>*
 

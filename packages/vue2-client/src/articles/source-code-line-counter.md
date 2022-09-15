@@ -1,5 +1,5 @@
 # Simple ASP.NET Source Code Line Counter
-### Here's a vbscript that will give you a line count for source code in a directory. This script allows you to count all the lines in a given system.
+#### Here's a vbscript that will give you a line count for source code in a directory. This script allows you to count all the lines in a given system.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="10/3/2005 7:36:00 PM">Monday, October 3, 2005</time></div>*
 

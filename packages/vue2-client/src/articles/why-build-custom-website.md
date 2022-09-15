@@ -1,6 +1,5 @@
 # Why I Built a Custom Site
-### Should you build a custom site or use a packaged system like WordPress or Drupal? Details on why I custom built my website and why you should too!
-
+#### Should you build a custom site or use a packaged system like WordPress or Drupal? Details on why I custom built my website and why you should too!
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/1/2014 12:50:53 AM">Monday, June 30, 2014</time></div>*
 

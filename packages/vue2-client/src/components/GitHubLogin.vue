@@ -19,7 +19,7 @@ export default class GitHubLogin extends Vue {
     // Sign-up an account to get one
     window.OAuth.initialize('01811fceddc77dd32903') //TODO: MOVE THIS!!
 
-    // Popup facebook and ask for authorization
+    // Popup and ask for authorization
     window.OAuth.popup('github').then((github) => {
       console.log('github:', github)
       // Prompts 'welcome' message with User's name on successful login

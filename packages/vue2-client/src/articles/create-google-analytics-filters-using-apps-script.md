@@ -1,5 +1,5 @@
 # Create Google Analytics Filter using Apps Script
-### Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters.
+#### Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters.
 
 *<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="8/3/2015 1:03:07 PM">Monday, August 3, 2015</time></div>*
 
