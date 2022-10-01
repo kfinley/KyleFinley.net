@@ -15,13 +15,13 @@ Now let's get to it and configure this for a Shopify Store.
 ---
 First you'll create a Custom Dimension at the Property level in Google Analytics and name it "GeneralExclude" (or any other name you'd like as long as you use it consistently throughout the rest of the setup in place of GeneralExclude). ***Note the index value for the Custom Dimension after you create it. The index will be needed in the next step.***
 
-![Google Analytics Custom Dimension](../../public/img/articles/google-analytics-custom-dimension.jpg)
+![Google Analytics Custom Dimension](../../../../media/images/articles/google-analytics-custom-dimension.jpg)
 
 ## Create Google Analytics View Filter Based on Custom Dimension
 ---
 Now that we have our Custom Dimension created we can create a Filter for our View using the Custom Dimension. This should be done on the View level and not the Account otherwise you won't see the new Custom Dimension you created because it's at the Property Level.
 
-![Google Analytics Custom Dimension](../../public/img/articles/google-analytics-filter-based-on-custom-dimension.jpg)
+![Google Analytics Custom Dimension](../../../../media/images/articles/google-analytics-filter-based-on-custom-dimension.jpg)
 
 ## Configure Shopify to Exclude Internal Traffic based on Cookie Value
 ---
@@ -60,7 +60,7 @@ Now everything is in place to work but we want to make sure that this page is no
 
 <div style="text-align: center;">
 
-![Google Analytics Custom Dimension](../../public/img/articles/shopify-edit-theme.jpg)
+![Google Analytics Custom Dimension](../../../../media/images/articles/shopify-edit-theme.jpg)
 
 </div>
 

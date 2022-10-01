@@ -54,3 +54,8 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
           npm run deploy
+
+      - name: Sync media with S3 Bucket
+        working-directory: ./media
+        run: |
+          aws s3 sync . s3://images.kylefinley.net

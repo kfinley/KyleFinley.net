@@ -28,7 +28,7 @@ This at least gave me a bit of a spark to push me to see if I could come up with
 
 <div style="text-align: center;">
 
-![Hootsuite RSS Options Dialog](../../public/img/articles/Hootsuite_RSS_Options_Dialog.jpg)
+![Hootsuite RSS Options Dialog](../../../../media/images/articles/Hootsuite_RSS_Options_Dialog.jpg)
 
 </div>
 
@@ -36,7 +36,7 @@ So Hootsuite is out. See ya!! I tried another scheduler, Twitterfeed.com, and it
 
 <div style="text-align: center;">
 
-![Twitterfeed Advanced Settings](../../public/img//articles/Twitterfeed_Advanced_Settings.jpg)
+![Twitterfeed Advanced Settings](../../../../media/images/articles/Twitterfeed_Advanced_Settings.jpg)
 
 </div>
 
@@ -70,7 +70,7 @@ Replacing ```<YOUR PROJECT KEY HERE>``` with the Script Project Key from the Set
 
 <div style="text-align: center;">
 
-![SheetsToTweets Twitter Application Details](../../public/img/articles/SheetsToTweets_Twitter_Application_Details.jpg)
+![SheetsToTweets Twitter Application Details](../../../../media/images/articles/SheetsToTweets_Twitter_Application_Details.jpg)
 
 </div>
 
@@ -80,7 +80,7 @@ Go to the Keys and Access Tokens tab in the App you just created and click the g
 
 <div style="text-align: center;">
 
-![Twitter App Create Access Token](../../public/img/articles/Twitter_App_Create_Access_Token.jpg)
+![Twitter App Create Access Token](../../../../media/images/articles/Twitter_App_Create_Access_Token.jpg)
 
 </div>
 
@@ -101,7 +101,7 @@ The Apps Script code that runs you'll need to grant Authorization. Select "Autho
 
 <div style="text-align: center;">
 
-![Google Apps Authorization Required](../../public/img/articles/Google_Apps_Authorization_Required.jpg)
+![Google Apps Authorization Required](../../../../media/images/articles/Google_Apps_Authorization_Required.jpg)
 
 </div>
 
@@ -110,7 +110,7 @@ Then Click Accept on the list of things the Script will need to authorize.
 
 <div style="text-align: center;">
 
-![SheetsToTweets Google Apps Script Authorization](../../public/img/articles/SheetsToTweets_Google_Apps_Script_Authorization.jpg)
+![SheetsToTweets Google Apps Script Authorization](../../../../media/images/articles/SheetsToTweets_Google_Apps_Script_Authorization.jpg)
 
 </div>
 
@@ -120,7 +120,7 @@ At this point we can test that the sheet is authorized to sent Tweets. Select "S
 
 <div style="text-align: center;">
 
-![Test Tweet](../../public/img/articles/SheetsToTweets_Test_Tweet.jpg)
+![Test Tweet](../../../../media/images/articles/SheetsToTweets_Test_Tweet.jpg)
 
 </div>
 
@@ -130,7 +130,7 @@ In order for the Google URL Shortener to work you'll need to enable the URL Shor
 
 <div style="text-align: center;">
 
-![Script Editor Menu](../../public/img/articles/SheetsToTweets_Google_Script_Editor.jpg)
+![Script Editor Menu](../../../../media/images/articles/SheetsToTweets_Google_Script_Editor.jpg)
 
 </div>
 
@@ -138,7 +138,7 @@ Once you're in the Script Editor select "Developers Console Project" from the Re
 
 <div style="text-align: center;">
 
-![Developers Console Project Menu](../../public/img/articles/SheetsToTweets_Developers_Console_Project_Menu.jpg)
+![Developers Console Project Menu](../../../../media/images/articles/SheetsToTweets_Developers_Console_Project_Menu.jpg)
 
 </div>
 
@@ -146,7 +146,7 @@ Once you're in the Developers Console click on "Enable Google APIs for use in yo
 
 <div style="text-align: center;">
 
-![Enable Google APIs](../../public/img/articles/SheetsToTweets_Enable_Google_APIs.jpg)
+![Enable Google APIs](../../../../media/images/articles/SheetsToTweets_Enable_Google_APIs.jpg)
 
 </div>
 
@@ -154,7 +154,7 @@ Select URL Shortener API from the Other popular APIs list.
 
 <div style="text-align: center;">
 
-![Other Popular APIs](../../public/img/articles/SheetsToTweets_Other_Popular_APIs.jpg)
+![Other Popular APIs](../../../../media/images/articles/SheetsToTweets_Other_Popular_APIs.jpg)
 
 </div>
 
@@ -162,7 +162,7 @@ Now click Enable API.
 
 <div style="text-align: center;">
 
-![Enable URL Shortener API](../../public/img/articles/SheetsToTweets_Enable_URL_Shortener_API.jpg)
+![Enable URL Shortener API](../../../../media/images/articles/SheetsToTweets_Enable_URL_Shortener_API.jpg)
 
 </div>
 
@@ -195,7 +195,7 @@ Something to remember is that when you click on an image in Google Drive you get
 
 <div style="text-align: center;">
 
-![Google Drive Pop-out](../../public/img/articles/Google-Drive-Pop-Out.jpg)
+![Google Drive Pop-out](../../../../media/images/articles/Google-Drive-Pop-Out.jpg)
 
 </div>
 
@@ -203,7 +203,7 @@ You can include up to 4 images for a Tweet. Each should be followed by a return 
 
 <div style="text-align: center;">
 
-![SheetsToTweets Scheduled Tweet with Images](../../public/img/articles/SheetsToTweets_Scheduled_Tweet_with_Images.jpg)
+![SheetsToTweets Scheduled Tweet with Images](../../../../media/images/articles/SheetsToTweets_Scheduled_Tweet_with_Images.jpg)
 
 </div>
 
@@ -215,7 +215,7 @@ Length Column: This column shows you how long the final Tweet Content will be. T
 
 <div style="text-align: center;">
 
-![SheetsToTweets Conditional Formatting](../../public/img/articles/SheetsToTweets_Conditional_Formatting.jpg)
+![SheetsToTweets Conditional Formatting](../../../../media/images/articles/SheetsToTweets_Conditional_Formatting.jpg)
 
 </div>
 
@@ -237,7 +237,7 @@ You control the schedular by selecting Start or Stop Scheduler in the Schedular 
 
 <div style="text-align: center;">
 
-![SheetsToTweets Start Scheduler](../../public/img/articles/SheetsToTweets_Start_Scheduler.jpg)
+![SheetsToTweets Start Scheduler](../../../../media/images/articles/SheetsToTweets_Start_Scheduler.jpg)
 
 </div>
 
@@ -247,7 +247,7 @@ You control the schedular by selecting Start or Stop Scheduler in the Schedular 
 
 <div style="text-align: center;">
 
-![SheetsToTweets Project Properties](../../public/img/articles/SheetsToTweets_Project_Properties.jpg)
+![SheetsToTweets Project Properties](../../../../media/images/articles/SheetsToTweets_Project_Properties.jpg)
 
 </div>
 
@@ -260,7 +260,7 @@ When the trigger is created for the schedule the Execution failure notifications
 
 <div style="text-align: center;">
 
-![Google Script Editor Triggers](../../public/img/articles/Google_Script_Editor_Triggers.jpg)
+![Google Script Editor Triggers](../../../../media/images/articles/Google_Script_Editor_Triggers.jpg)
 
 </div>
 
@@ -268,7 +268,7 @@ When the trigger is created for the schedule the Execution failure notifications
 
 <div style="text-align: center;">
 
-![SheetsToTweets Trigger Failure Notifications](../../public/img/articles/SheetsToTweets_Trigger_Failuer_Notifications.jpg)
+![SheetsToTweets Trigger Failure Notifications](../../../../media/images/articles/SheetsToTweets_Trigger_Failuer_Notifications.jpg)
 
 </div>
 

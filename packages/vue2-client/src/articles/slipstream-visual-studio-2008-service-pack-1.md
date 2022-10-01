@@ -13,7 +13,7 @@ As a starting point I looked back at [Richard Rudek's](http://richardrudek.space
 
 <div style="text-align: center;">
 
-![Error 1308. Source file not found:](../../public/img//articles/SlipstreamVisualStudio2008ServicePack1.png)
+![Error 1308. Source file not found:](../../../../media/images//articles/SlipstreamVisualStudio2008ServicePack1.png)
 
 </div>
 

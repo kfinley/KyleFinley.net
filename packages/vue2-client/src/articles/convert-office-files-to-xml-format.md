@@ -62,7 +62,7 @@ Don't worry about selecting Use DDE, it will get selected automatically for you.
 
 <div style="text-align: center;">
 
-![Edit File Type](../../public/img/articles/edit-file-type.png)
+![Edit File Type](../../../../media/images/articles/edit-file-type.png)
 
 </div>
 
@@ -73,7 +73,7 @@ Once you have performed all the steps you will now see a 'Convert to docx' optio
 
 <div style="text-align: center;">
 
-![Convert to docx context menu](../../public/img/articles/convert-to-docx.png)
+![Convert to docx context menu](../../../../media/images/articles/convert-to-docx.png)
 
 </div>
 

@@ -13,11 +13,11 @@ Here's a great post from Bradley on the the [latest version of Twitter Lib](http
 
 Here's the Google Scripts page for Twitter Lib.
 
-The project has 4 script files included. 
+The project has 4 script files included.
 
 <div style="text-align: center;">
 
-![SheetsToTweets Project Files](../../public/img/articles/SheetsToTweets_Project_Files.jpg)
+![SheetsToTweets Project Files](../../../../media/images/articles/SheetsToTweets_Project_Files.jpg)
 
 </div/>
 

@@ -14,49 +14,49 @@ Here are some pictures I got of the guys during a break from riding.
 
 <div style="text-align: center;">
 
-![Tyler Scholl Woo Crew Cinco de Mayo Dude](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2889.jpg)
+![Tyler Scholl Woo Crew Cinco de Mayo Dude](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2889.jpg)
 
-![Tyler Scholl](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2955.jpg)
+![Tyler Scholl](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2955.jpg)
 
-![](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3016.jpg)
+![](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3016.jpg)
 
-![](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3280.jpg)
+![](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3280.jpg)
 
-![](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2968.jpg)
+![](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2968.jpg)
 
-![](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2969.jpg)
+![](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2969.jpg)
 
-![](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2970.jpg)
+![](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2970.jpg)
 
-![Kirk Anderson - Kitelooping the throwdown zone](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3254.jpg)
+![Kirk Anderson - Kitelooping the throwdown zone](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3254.jpg)
 
-![Kirk Anderson](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3327.jpg)
+![Kirk Anderson](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3327.jpg)
 
-![Leo Koenig - Woo Sports Co-Founder & CEO](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2974.jpg)
+![Leo Koenig - Woo Sports Co-Founder & CEO](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2974.jpg)
 
-![Johnny Hugol - Woo Sports Co-Founder & Brains behind the Woo algorithm](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2946.jpg)
+![Johnny Hugol - Woo Sports Co-Founder & Brains behind the Woo algorithm](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2946.jpg)
 
-![Jeremy Reger](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3300.jpg)
+![Jeremy Reger](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3300.jpg)
 
-![Jeremy Reger](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3126.jpg)
+![Jeremy Reger](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3126.jpg)
 
-![Jeremy Reger](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3227.jpg)
+![Jeremy Reger](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3227.jpg)
 
-![Sam](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3060.jpg)
+![Sam](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3060.jpg)
 
-![Sam](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3114.jpg)
+![Sam](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3114.jpg)
 
-![](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3202.jpg)
+![](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3202.jpg)
 
-![Woo Sports Marketing Behind the Scenes](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2942.jpg)
-
-
+![Woo Sports Marketing Behind the Scenes](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2942.jpg)
 
 
 
 
 
-![Woo Marketing Behind The Scenes](../../public/img/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2963.jpg)
+
+
+![Woo Marketing Behind The Scenes](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2963.jpg)
 
 </div>
 

@@ -6,6 +6,7 @@
   "scripts": {
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap --concurrency=2",
+    "cdk": "cd infrastructure && npm run cdk",
     "clean": "lerna clean --yes",
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
     "build:client": "lerna run build --stream --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",

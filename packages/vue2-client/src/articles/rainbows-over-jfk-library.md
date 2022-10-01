@@ -10,8 +10,8 @@ I have a great roof deck in South Boston with a view of the Boston Harbor and th
 
 <div style="text-align: center;">
 
-![](../../public/img/photos/rainbow-over-jfk-july-2014-1.jpg)
+![](../../../../media/images/photos/rainbow-over-jfk-july-2014-1.jpg)
 
-![](../../public/img/photos/rainbow-over-jfk-july-2014-2.jpg)
+![](../../../../media/images/photos/rainbow-over-jfk-july-2014-2.jpg)
 
 </div>
