@@ -11,7 +11,7 @@ The script isn't accurate because it counts all lines within a file, including c
 
 Enjoy.
 
-```vbscript
+```vb
 ' Kyle Finley, kyle@kylefinley.net
 ' 2005
 ' http://kylefinley.net
