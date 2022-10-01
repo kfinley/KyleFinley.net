@@ -18,7 +18,18 @@ import { Header, Footer } from '../components/'
     Footer,
   },
 })
-export default class LayoutDefault extends Vue {}
+export default class LayoutDefault extends Vue {
+  async mounted() {
+    this.rewriteImagesForLocalDev()
+  }
+
+  rewriteImagesForLocalDev() {
+    //silly hack to be able to run local. Should compile this out...
+    document.querySelectorAll('img').forEach((i) => {
+      i.src = i.src.replace('media', 'img/media')
+    })
+  }
+}
 </script>
 
 <style lang="scss">
@@ -35,7 +46,7 @@ export default class LayoutDefault extends Vue {}
     padding-top: 3.8em;
     padding-bottom: 4em;
   }
-  
+
   &__main > div {
     padding: 2em;
   }

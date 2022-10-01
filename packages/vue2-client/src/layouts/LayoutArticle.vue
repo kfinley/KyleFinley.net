@@ -20,10 +20,11 @@ import 'highlight.js/styles/github-dark-dimmed.css'
 export default class ArticleLayout extends Vue {
 
   async mounted() {
-   
+
     this.setTitleAndMetaTags()
     this.handleHighlight()
     this.handlePTags()
+    this.rewriteImagesForLocalDev()
   }
 
   handleHighlight() {
@@ -91,6 +92,13 @@ export default class ArticleLayout extends Vue {
         document.head.appendChild(tagEl)
       }
     })
+  }
+
+  rewriteImagesForLocalDev() {
+    //silly hack to be able to run local. Should compile this out...
+    document.querySelectorAll('img').forEach(i => {
+      i.src = i.src.replace('media', 'img/media');
+    });
   }
 
   getMetaData = async (file: string) => (await import(`../articles/${file}.json`)).default

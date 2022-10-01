@@ -12,19 +12,19 @@
               polishing fiber then moving into the installing and managing large multi
               site Windows Active Directory domains before moving full time into software
               and systems development in college. These days I build cloud based software
-              systems and enjoy the software product creation processes the most.
+              systems and enjoy the software product creation process the most.
             </p>
           </div>
           <div class="col-md-4">
-            <h2 class="text-center section-header">Startup Life</h2>
+            <h2 class="text-center section-header">Work & Startup Life</h2>
             <p>
-              I've worked mostly for small to medium sized startups for the last 10+
-              years. For many years I was hired by small startups to help implement Agile
-              and Lean processes. I've trained teams on Agile as well as lead teams
-              through the software delivery process. I've worked with successful teams as
-              well as teams that have failed miserably. I have many thoughts on the
-              business side of tech startups and hope to share more articles in the coming
-              months/years.
+              I spent 5 years as a consultant for a major business/tech firm then moved
+              into working for startups. For many years I was hired by small startups to
+              help implement Agile and Lean processes. I've trained teams and execs on
+              Agile as well as lead teams using a DevOps driven software delivery process.
+              I've worked with successful teams as well as teams that have failed
+              miserably. My advice on Agile is simple, do what works for you and avoid
+              waterfall / gated processes at all costs (Also... don't use Jira).
             </p>
           </div>
           <div class="col-md-4">
@@ -34,10 +34,9 @@
               different things and I have many unfinished projects and more ideas than I
               have time to even attempt to complete. These days I've been reworking lots
               of my cloud system architecture and Lean Software Product Development
-              System. Active work includes a simple GitHub
-              sourced markdown based article/blog/marketing engine, various
-              activity trackers, a sports/activity coaching platform,
-              and a live streaming/recording platform.
+              System. Active work includes a simple GitHub sourced markdown based
+              article/blog/marketing engine, various activity trackers, a sports/activity
+              coaching platform, and a live streaming/recording platform.
             </p>
           </div>
           <div class="col-md-4">
