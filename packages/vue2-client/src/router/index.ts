@@ -130,12 +130,13 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`))
+                component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`)),
+                meta: viewsMeta[`../articles/${article}.json`] ? (await viewsMeta[`../articles/${article}.json`]() as any).default : { allowAnonymous: true }
               }
             ],
           }
         ],
-        meta: { allowAnonymous: true },
+        // meta: { allowAnonymous: true },
       })
       // console.log(`Created route for article at path /${article}`)
     } catch (e) {
