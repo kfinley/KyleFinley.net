@@ -58,13 +58,13 @@ export class InfrastructureStack extends Stack {
       errorResponses: [
         {
           httpStatus: 403,
-          responsePagePath: '/index.html',
+          responsePagePath: '/index.html', //TODO: fix this...
           responseHttpStatus: 200,
           ttl: cdk.Duration.minutes(0),
         },
         {
           httpStatus: 404,
-          responsePagePath: '/index.html',
+          responsePagePath: '/index.html', //TODO: fix this...
           responseHttpStatus: 200,
           ttl: cdk.Duration.minutes(0),
         },
@@ -75,6 +75,52 @@ export class InfrastructureStack extends Stack {
       minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2021,
       httpVersion: cloudfront.HttpVersion.HTTP2,
       defaultRootObject: 'index.html',
+      enableIpv6: true,
+    });
+
+    const imagesBucket = new s3.Bucket(this, 'imagesBucket', {
+      bucketName: `images.${domainName}`,
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
+
+    const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
+      comment: `images.${domainName} Domain Hosting Environment`,
+    });
+
+    const imagesCloudFrontDistribution = new cloudfront.Distribution(this, 'Images-CloudFrontDistribution', {
+      // domainNames: [domainName], //TODO: could use an images. subdomain here
+      defaultBehavior: {
+        origin: new origins.S3Origin(imagesBucket, {
+          originAccessIdentity: imagesCloudFrontOAI
+        }),
+        compress: true,
+        allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
+        cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+      },
+      errorResponses: [
+        {
+          httpStatus: 403,
+          responsePagePath: '/index.html', //TODO: fix this...
+          responseHttpStatus: 200,
+          ttl: cdk.Duration.minutes(0),
+        },
+        {
+          httpStatus: 404,
+          responsePagePath: '/index.html', //TODO: fix this...
+          responseHttpStatus: 200,
+          ttl: cdk.Duration.minutes(0),
+        },
+      ],
+      priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL,
+      enabled: true,
+      // certificate: certificateManagerCertificate,
+      minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2021,
+      httpVersion: cloudfront.HttpVersion.HTTP2,
+      // defaultRootObject: 'index.html',
       enableIpv6: true,
     });
 
