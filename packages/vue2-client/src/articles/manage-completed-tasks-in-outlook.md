@@ -13,7 +13,7 @@ Last week I decided to fix my biggest complaints, which how to deal with Task It
 
 One thing I'm not happy with is that the macro must be run by hand.  I would prefer to hook into some type of event, such as a task item chaged event, but I haven't been able to do that.  If anyone knows how let me know and I'll update the macro.
 
-```vbscript
+```vb
 Sub Move_Completed_Tasks()
 
     ' Kyle Finley, rkfinley@hotmail.com

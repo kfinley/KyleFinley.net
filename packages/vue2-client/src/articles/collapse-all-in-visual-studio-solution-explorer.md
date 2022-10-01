@@ -15,7 +15,7 @@ Unfortunately the code doesn't work with the new solution folders in Visual Stud
 
 Update:  There is a bug in Visual Studio 2005 around solution folders that prevents the Expanded property from retaining the value you give it.  In order to get it to work correctly I had to add a block to the CollapseMe method.  I got the tip from the MSDN forum.  Funny how many of these macros are floating around the web.
 
-```vbscript
+```vb
 Imports EnvDTE
 Imports System.Diagnostics
 
