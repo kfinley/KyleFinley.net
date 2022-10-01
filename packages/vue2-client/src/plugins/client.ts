@@ -9,12 +9,14 @@ import { getModule } from 'vuex-module-decorators';
 import { extend } from 'vee-validate';
 // import { RouteNames } from "../router";
 import { ArticlesModule } from '../store/articles-module'
+import { AuthModule } from '../store/auth-module'
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
 
 export const setupModules = (store: Store<any>): void => {
-  store.registerModule("Articles", ArticlesModule)  
+  store.registerModule("Articles", ArticlesModule)
+  store.registerModule("Auth", AuthModule)
 };
 
 export interface ClientPlugin extends PluginObject<ClientPluginOptions> {

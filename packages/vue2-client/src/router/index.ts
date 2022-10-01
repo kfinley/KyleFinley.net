@@ -74,7 +74,18 @@ export const createRouter = async () => {
         {
           path: '',
           name: 'Login',
-          component: () => import(/* webpackChunkName: "contact" */ '../views/Login.vue'),
+          component: () => import(/* webpackChunkName: "auth" */ '../views/Login.vue'),
+        }
+      ],
+    },
+    {
+      path: "/github_auth_callback",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: 'github_auth_callback',
+          component: () => import(/* webpackChunkName: "auth" */ '../views/GitHubAuthCallback.vue'),
         }
       ],
     },
