@@ -37,6 +37,15 @@ export class InfrastructureStack extends Stack {
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       removalPolicy: RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
+      cors: [
+        {
+          allowedMethods: [
+            s3.HttpMethods.GET,
+          ],
+          allowedOrigins: ['https://github.com'],
+          allowedHeaders: ['*'],
+        },
+      ],
     });
 
     const cloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'CloudFrontOriginAccessIdentity', {

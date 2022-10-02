@@ -28,6 +28,7 @@ jobs:
       #       run: |
       #         npm run lerna run test
 
+      # TODO: Do this right....
       - name: Generate .env file
         working-directory: ./packages/vue2-client
         run: |
