@@ -28,6 +28,13 @@ jobs:
       #       run: |
       #         npm run lerna run test
 
+      - name: Generate .env file
+        working-directory: ./packages/vue2-client
+        run: |
+          echo 'VITE_GITHUB_OAUTH_CLIENT_ID=01811fceddc77dd32903' > .env
+          echo 'VITE_GITHUB_OAUTH_CLIENT_SECRET=1d7127dd05627ba306e286e160a8899b589df21c' >> .env
+          echo 'VITE_GITHUB_OAUTH_REDIRECT_URL=https://kylefinley.net/github_auth_callback' >> .env
+
       - name: Build Front-End Site
         run: |
           npm run build:client
