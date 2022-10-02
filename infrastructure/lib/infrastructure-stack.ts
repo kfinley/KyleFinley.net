@@ -42,7 +42,7 @@ export class InfrastructureStack extends Stack {
           allowedMethods: [
             s3.HttpMethods.GET,
           ],
-          allowedOrigins: ['https://github.com'],
+          allowedOrigins: ['*'],
           allowedHeaders: ['*'],
         },
       ],
