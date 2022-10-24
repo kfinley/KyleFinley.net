@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Serverless",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "sls:debug"],
+      "sourceMaps": true,
+      "attachSimplePort": 9229,
+      "sourceMapPathOverrides": {
+        "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+        "webpack://?:*/*": "${workspaceFolder}/.webpack/*",
+        // "webpack://?:*/*": "${workspaceFolder}/services/*",
+      }
+    },
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Debug",
+    //   "program": "/usr/local/bin/serverless",
+    //   "args": ["offline", "start", "--lazy"],
+    //   "env": {
+    //     "NODE_ENV": "development"
+    //   },
+    //   "outFiles": ["${workspaceRoot}/.webpack/service/*"],
+    //   "sourceMaps": true,
+    //   "cwd": "${workspaceRoot}",
+    //   "localRoot": "${workspaceRoot}",
+    //   "smartStep": true
+    //   //  "protocol": "inspector",
+    // },
+    // {
+    //   "name": "Current TS File",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "args": ["${relativeFile}"],
+    //   "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+    //   "sourceMaps": true,
+    //   "cwd": "${workspaceRoot}"
+    // }
+  ]
+}

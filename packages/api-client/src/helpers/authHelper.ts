@@ -1,14 +1,3 @@
-export function addUrlParam(url: string, param: string, value: any): string {
-  let returnUrl = url;
-  if (url.indexOf('?') === -1) {
-    returnUrl = `${returnUrl}?`;
-  } else {
-    returnUrl = `${returnUrl}&`;
-  }
-  returnUrl = `${returnUrl}${param}=${value}`;
-  return returnUrl;
-}
-
 export const authHelper = {
 
   authToken: () => '',

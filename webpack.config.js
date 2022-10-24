@@ -8,8 +8,9 @@ module.exports = {
   mode: slsw.lib.webpack.isLocal ? 'development' : 'production',
   entry: slsw.lib.entries,
   devtool: slsw.lib.webpack.isLocal ? 'eval-cheap-module-source-map' : 'source-map',
+  // devtool: slsw.lib.webpack.isLocal ? 'source-map' : 'cheap-source-map',
   resolve: {
-    extensions: ['.mjs', '.json', '.ts'],
+    extensions: ['.mjs', '.js', '.json', '.ts'],
     symlinks: true,
     cacheWithContext: false,
     plugins: [
@@ -19,6 +20,7 @@ module.exports = {
     ],
   },
   output: {
+    devtoolModuleFilenameTemplate: '[absolute-resource-path]',
     libraryTarget: 'commonjs',
     path: path.join(__dirname, '.webpack'),
     filename: '[name].js',
@@ -32,7 +34,7 @@ module.exports = {
     rules: [
       // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
       {
-        test: /\.(tsx?)$/,
+        test: /\.ts(x?)$/,
         loader: 'ts-loader',
         exclude: [
           [

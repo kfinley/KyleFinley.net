@@ -19,6 +19,7 @@ storybooks/*
 .lambda-build
 .serverless
 .webpack
+dist
 
 ## Serverless offline plugin files
 .devcontainer/.cognito/db/*_local.json

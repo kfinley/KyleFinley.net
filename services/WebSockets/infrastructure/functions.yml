@@ -1,0 +1,45 @@
+auth:
+  handler: auth/function.handler
+  environment:
+    WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID}
+    WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET}
+  # cors:
+  #   origin: ${self:custom.corsOrigin}
+
+connect:
+  events:
+    - websocket:
+        route: $connect
+        authorizer:
+          name: ${self:service}-auth #TODO: fix loadFunctions.js to handle this...
+  handler: connect/function.handler
+  environment:
+    WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID}
+    WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET}
+
+default:
+  events:
+    - websocket:
+        route: $default
+  handler: default/function.handler
+
+disconnect:
+  events:
+    - websocket:
+        route: $disconnect
+  handler: disconnect/function.handler
+
+StartSendMessageNotification:
+  handler: startSendMessageNotification/function.handler
+
+GetConnection:
+  handler: getConnection/function.handler
+
+SendMessage:
+  handler: sendMessage/function.handler
+
+# broadcast:
+#   events:
+#     - websocket:
+#         route: broadcast
+#   handler: broadcast/function.handler

@@ -1,0 +1,3 @@
+[submodule ".devcontainer/serverless-offline"]
+	path = .devcontainer/serverless-offline
+	url = https://github.com/kfinley/serverless-offline.git

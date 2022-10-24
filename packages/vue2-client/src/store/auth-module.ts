@@ -2,28 +2,28 @@ import { getModule } from "vuex-module-decorators";
 import { Module, Action } from 'vuex-module-decorators';
 import BaseModule from './base-module'
 import { AuthState, Status } from './state'
-import { ApiClient, apiClient } from "@/utils/apiClient";
+import { getWSModule } from "@/store/ws-module";
 
 @Module({ namespaced: true, name: 'Auth' })
 export class AuthModule extends BaseModule implements AuthState {
   status: Status = Status.None
-  client: ApiClient = new apiClient();
+  access_token!: string
 
   @Action
-  async codeForTokens(code: string) {
+  async authWithCode(params: { code: string, vue: Vue }) {
 
-    console.log('codeForTokens')
+    const wsModule = getWSModule(params.vue); // Hack...
+    wsModule.connect(params.code);
 
-    const api = new URL('/login/oauth/access_token', 'https://github.com')
+  }
 
-    api.searchParams.set('client_id', import.meta.env.VITE_GITHUB_OAUTH_CLIENT_ID)
-    api.searchParams.set('client_secret', import.meta.env.VITE_GITHUB_OAUTH_CLIENT_SECRET)
-    api.searchParams.set('code', code)
-
-    var response = await this.client.postAsync(api.toString(), {})
-
-    console.log(response);
-
+  @Action
+  token(params: { access_token: string }) {
+    this.context.commit('mutate',
+      (state: AuthState) => {
+        state.access_token = params.access_token,
+          state.status = Status.Authenticated
+      });
   }
 }
 

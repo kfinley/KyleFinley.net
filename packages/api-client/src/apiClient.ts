@@ -1,22 +1,15 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { addUrlParam, authHelper, } from './helpers';
+import { addUrlParam, authHelper,  } from './helpers';
 import { injectable } from 'inversify-props';
-
-export interface ApiResponse<T = any> {
-  data: T;
-  status: number;
-  statusText: string;
-  headers: any;
-  request?: any;
-}
+import { ApiResponse } from './types';
 
 export interface ApiClient {
-  getAsync<T>(url: string): Promise<ApiResponse<T>>;
+  getAsync<T>(url: string, headers?: Record<string, unknown>): Promise<ApiResponse<T>>;
   getWithAsync<T>(url: string, params: any): Promise<ApiResponse<T>>;
   postAsync<T>(url: string, data: unknown, headers?: Record<string, unknown>): Promise<ApiResponse<T>>;
 }
 
-// const protocol = `${process.env.NODE_ENV === 'production' ? 'https://' : 'http://'}`;
+const protocol = `${process.env.NODE_ENV === 'production' ? 'https://' : 'http://'}`;
 
 @injectable()
 export class apiClient implements ApiClient {
@@ -69,20 +62,19 @@ export class apiClient implements ApiClient {
     }
   }
 
-  public async postAsync<T>(url: string, data: unknown, headers?: Record<string, string>): Promise<ApiResponse<T>> {
+  public async postAsync<T>(url: string, data: unknown, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
     return this.requestAsync<T>({
-      // url: `${protocol}${url}`,
-      url,
+      url: url.indexOf('https') > -1 ? url : `${protocol}${url}`,
       data,
       headers,
       method: 'POST',
     });
   }
 
-  public async getAsync<T>(url: string): Promise<ApiResponse<T>> {
+  public async getAsync<T>(url: string, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
     return this.requestAsync<T>({
-      // url: `${protocol}${url}`,
-      url,
+      url: url.indexOf('https') > -1 ? url : `${protocol}${url}`,
+      headers,
       method: 'GET',
     });
   }
@@ -93,8 +85,7 @@ export class apiClient implements ApiClient {
     );
     console.log(url);
     return this.requestAsync<T>({
-      // url: `${protocol}${url}`,
-      url,
+      url: `${protocol}${url}`,
       method: 'GET',
     });
   }
