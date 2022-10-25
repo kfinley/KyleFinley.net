@@ -10,14 +10,14 @@ export class WebSocketsModule extends BaseModule implements WebSocketsState {
   status: WebSocketsStatus = WebSocketsStatus.None;
 
   socket!: Socket;
-  url: string = 'localhost:3001';
+  url: string = 'localhost:3001'; //TODO: Fix this...
 
   protocol = `${process.env.NODE_ENV === 'production' ? 'wss' : 'ws'}`;
 
   @Action
   handleSocketMessage(ev: MessageEvent) {
     const { subject, message } = JSON.parse(ev.data);
-    this.context.dispatch(subject, JSON.parse(message), { root: true });
+    this.context.dispatch(subject, message, { root: true });
   };
 
   @Action

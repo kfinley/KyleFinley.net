@@ -25,12 +25,14 @@ export const handler = async (event: SNSEvent, context: Context) => {
       stateMachineName: 'WebSockets-SendMessage'
     });
 
+    // console.log('response', response);
+
     return {
       status_code: response.statusCode
     };
 
   } catch (error) {
-    console.log(error);
+    console.log("error", error);
     return {
       status_code: 500,
       body: error

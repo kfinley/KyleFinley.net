@@ -15,9 +15,10 @@ export const handler: APIGatewayProxyHandler = async (event) => {
   try {
     const { Authorization } = event.headers;
 
-    //console.log(`Authorization: ${Authorization}`);
+    // console.log(`Authorization: ${Authorization}`);
 
-    // We're tucking the GitHub auth code in the protocol header b/c it's available...
+    // Overloading the Sec-WebSocket-Protocol header
+    // We're tucking the GitHub auth code in the protocol header to pass it through the WS connect call
     const code = event.headers["Sec-WebSocket-Protocol"];
 
     //console.log(`code: ${code}`);

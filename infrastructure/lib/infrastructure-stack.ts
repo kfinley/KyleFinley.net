@@ -87,6 +87,7 @@ export class InfrastructureStack extends Stack {
       enableIpv6: true,
     });
 
+    //TODO: rename to media
     const imagesBucket = new s3.Bucket(this, 'imagesBucket', {
       bucketName: `images.${domainName}`,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,

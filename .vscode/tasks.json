@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "restart containers",
+      "command": "npm run containers:restart",
+      "type": "shell",
+      "problemMatcher": []
+    }
+  ]
+}

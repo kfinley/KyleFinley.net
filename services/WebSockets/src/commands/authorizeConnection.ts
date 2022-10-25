@@ -55,7 +55,7 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
   private authorizeCommand!: AuthorizeCommand;
 
   async runAsync(params: AuthorizeConnectionRequest): Promise<AuthorizeConnectionResponse> {
-    
+
     try {
       let authResult,
         authRequest: AuthorizeRequest = {
@@ -72,9 +72,11 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
 
       if (authResult && authResult.data !== undefined) {
 
-        
+
         const authResponse = generateAuthResponse(authResult, params.resource ? params.resource : "*");
 
+        // thought about publishing SNS message here but the connection isn't established yet so it should fail.
+        // test it later to see..
         authResponse.context = {
           access_token: (<GitHubAuthData>authResult.data).access_token
         };

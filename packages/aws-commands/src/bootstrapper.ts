@@ -15,14 +15,14 @@ export default function bootstrapper(container: Container) {
     container.bind<SNSClient>("SNSClient")
       .toDynamicValue(() => new SNSClient({
         region: "us-east-1",
-        endpoint: "http://localhost:4002"
+        endpoint: "http://localhost:4002" //TODO: Deal with this
       }));
   }
 
   if (!container.isBound("SFNClient")) {
     container.bind<SFNClient>("SFNClient")
       .toDynamicValue(() => new SFNClient({
-        endpoint: "http://cloud-platform.sfn:8083"
+        endpoint: "http://kylefinley.sfn:8083" //TODO: Deal with this
       }));
   }
 
@@ -30,9 +30,9 @@ export default function bootstrapper(container: Container) {
     container.bind<S3Client>("S3Client")
       .toDynamicValue(() => new S3Client({
         region: "us-east-1",
-        endpoint: "http://localhost:4569",
+        endpoint: "http://localhost:4569", //TODO: Deal with this
         forcePathStyle: true,
-        credentials: {
+        credentials: { //TODO: Deal with this
           accessKeyId: 'S3RVER',
           secretAccessKey: 'S3RVER',
         }

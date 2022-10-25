@@ -19,6 +19,7 @@ RUN apt-get install -y powershell
 
 VOLUME /sls-offline
 
+EXPOSE 3001
 EXPOSE 3002
 EXPOSE 4002
 EXPOSE 4569

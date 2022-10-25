@@ -58,9 +58,11 @@ services:
 
   kylefinley.sls:
     container_name: kylefinley.sls
-    build:
-      context: .
-      dockerfile: ./.devcontainer/sls-local.Dockerfile
+    image: node:14
+    # Custom docker build that will run dotnet support branch of serverless-offline
+    # build:
+    # context: .
+    # dockerfile: ./.devcontainer/sls-local.Dockerfile
     tty: true
     stdin_open: true
     ports:
@@ -73,7 +75,8 @@ services:
       AWS_REGION: us-east-1
       AWS_ACCESS_KEY_ID: S3RVER
       AWS_SECRET_ACCESS_KEY: S3RVER
-    command: sh -c "npm run dev:sls"
+    working_dir: /sls-offline
+    command: sh -c "npm run sls:start"
     volumes:
       - .:/sls-offline
 

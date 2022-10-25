@@ -21,6 +21,8 @@ export class GetConnectionByUserIdCommand implements Command<GetConnectionReques
 
   async runAsync(params: GetConnectionRequest): Promise<GetConnectionResponse> {
 
+    console.log(`Getting connection for ${params.userId}`);
+
     const query = {
       TableName: CONNECTION_TABLE,
       ExpressionAttributeValues: marshall({

@@ -5,13 +5,9 @@ import Vue, { PluginFunction, PluginObject } from "vue";
 import { Store } from "vuex";
 import router from "vue-router";
 // import VuexPersist from "vuex-persist";
-import { getModule } from 'vuex-module-decorators';
-import { extend } from 'vee-validate';
-// import { RouteNames } from "../router";
 import { ArticlesModule } from '../store/articles-module'
 import { AuthModule } from '../store/auth-module'
 import { WebSocketsModule } from "@/store/ws-module";
-// import { initializeModules } from "@/store";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";

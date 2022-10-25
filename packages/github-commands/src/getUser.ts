@@ -25,13 +25,9 @@ export class GetUserCommand implements Command<GetUserRequest, GetUserResponse> 
       Authorization: `Bearer ${params.access_token}`
     });
 
-    // console.log(data);
-
     return {
       name: data.name,
       email: data.email
     }
-
   }
-
 }

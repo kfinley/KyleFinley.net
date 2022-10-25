@@ -11,7 +11,8 @@ export interface ArticlesState {
 }
 
 export interface AuthState {
-  status: Status
+  status: Status;
+  user: string;
   access_token: string;
 }
 
@@ -22,4 +23,8 @@ export enum WebSocketsStatus {
 export interface WebSocketsState {
   status: WebSocketsStatus;
   socket?: Socket;
+}
+
+export interface GitHubState {
+  
 }

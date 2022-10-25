@@ -9,9 +9,9 @@ const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetC
 
 export const handler: Handler = async (event: any, context: Context) => {
 
-  const { userId } = JSON.parse(event.message);
+  // console.log(`getConnection`, event);
 
-  console.log(userId);
+  const { userId } = JSON.parse(event.message);
 
   const response = await getConnectionCmd().runAsync({
     userId

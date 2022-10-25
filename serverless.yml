@@ -1,5 +1,6 @@
-
 service: kylefinley
+
+frameworkVersion: ^2.72.3
 
 useDotenv: true
 
@@ -36,14 +37,12 @@ custom:
 
   serverless-offline:
     host: kylefinley.sls
-    # host: localhost
     dotnetRunnerScript: .devcontainer/scripts/serverless-offline/invoke.ps1
 
   s3:
     serviceEndpoint: kylefinley.sls
     address: 0.0.0.0
     host: kylefinley.sls
-    # host: localhost
     directory: ./.devcontainer/.s3
     port: 4569
 

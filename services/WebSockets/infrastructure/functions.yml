@@ -31,6 +31,9 @@ disconnect:
 
 StartSendMessageNotification:
   handler: startSendMessageNotification/function.handler
+  events:
+    - sns:
+        arn: arn:aws:sns:us-east-1:101010101010:AuthProcessedTopic #TODO: Deal with arn
 
 GetConnection:
   handler: getConnection/function.handler
