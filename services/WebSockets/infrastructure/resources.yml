@@ -1,7 +1,7 @@
 ${self:service}ConnectionsTable:
   Type: AWS::DynamoDB::Table
   Properties:
-    TableName: ${self:service}-connections
+    TableName: ${self:service}-Connections
     KeySchema:
       - AttributeName: userId
         KeyType: HASH

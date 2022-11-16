@@ -3,7 +3,8 @@
         "/",
         "packages/*",
         "infrastructure",
-        "services/*"
+        "services/*",
+        "services/*/infrastructure/cdk"
     ],
     "version": "0.0.1"
 }

@@ -14,6 +14,7 @@
     "dev:init": "./.devcontainer/scripts/dev-init.sh",
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
     "build:client": "lerna run build --stream --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
+    "build:cdk": "lerna run build --stream --scope=@kylefinley.net/infrastructure",
     "dev:client:docker": "lerna run dev:docker --stream --scope=@kylefinley.net/vue2-client",
     "post-build:fix-img-paths": "./infrastructure/scripts/fix-img-paths.sh",
     "super-clean": "rm -rf node_modules && rm -rf package-lock.json && npm run clean && lerna exec -- rm package-lock.json || true",

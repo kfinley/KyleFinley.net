@@ -9,6 +9,8 @@ import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 
+// TODO: break this out  to /services/FrontEnd/Infrastructure?
+
 export class InfrastructureStack extends Stack {
 
   constructor(scope: Construct, id: string, props?: StackProps) {
