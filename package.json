@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lerna": "lerna",
-    "bootstrap": "lerna bootstrap --concurrency=2",
+    "bootstrap": "lerna bootstrap",
+    "bootstrap:2": "lerna bootstrap --concurrency=2",
     "cdk": "cd infrastructure && npm run cdk",
     "containers:restart": "./.devcontainer/scripts/local-containers.sh restart",
     "containers:start": "./.devcontainer/scripts/local-containers.sh start",

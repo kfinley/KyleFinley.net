@@ -36,7 +36,7 @@ export class WebSocketsStack extends Stack {
           // '@aws-lambda-powertools/metrics'
         ],
       },
-      depsLockFilePath: join(__dirname, '../../..', 'package-lock.json'), // Go up 3 directories to the services/WebSockets folder
+      depsLockFilePath: join(__dirname, '../../services/WebSockets', 'package-lock.json'), // Go up 3 directories to the services/WebSockets folder
       environment: {
         WEBSOCKETS_CONNECTION_TABLE: props?.connectionsTable.tableName!,
         WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: props?.gitHubClientId!,
@@ -48,7 +48,7 @@ export class WebSocketsStack extends Stack {
       tracing: Tracing.ACTIVE
     }
 
-    const functionsPath = '../../../src/functions';
+    const functionsPath = '../../services/WebSockets/src/functions';
 
     const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
       entry: join(__dirname, `${functionsPath}/auth/function.ts`),
