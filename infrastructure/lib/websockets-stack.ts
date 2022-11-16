@@ -51,7 +51,7 @@ export class WebSocketsStack extends Stack {
     const functionsPath = '../../../src/functions';
 
     const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
-      entry: join(__dirname, `${functionsPath}}/auth/function.ts`),
+      entry: join(__dirname, `${functionsPath}/auth/function.ts`),
       ...nodeJsFunctionProps
     });
 
