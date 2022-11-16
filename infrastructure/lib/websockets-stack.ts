@@ -1,5 +1,7 @@
-import { Stack, StackProps } from 'aws-cdk-lib';
+import * as cdk from 'aws-cdk-lib';
+import { Stack, StackProps, Duration } from 'aws-cdk-lib';
 import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
 // import { AnyPrincipal, Effect, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
 import { WebSocketLambdaAuthorizer } from '@aws-cdk/aws-apigatewayv2-authorizers-alpha';
@@ -16,7 +18,7 @@ export interface WebSocketsProps extends StackProps {
   logLevel: string;
 }
 
-export class WebSocketsStack extends Stack {
+export class WebSocketsStack extends cdk.Stack {
 
   public webSocketApi: WebSocketApi;
 
@@ -34,6 +36,7 @@ export class WebSocketsStack extends Stack {
           // '@aws-lambda-powertools/tracer',
           // 'aws-jwt-verify',
           // '@aws-lambda-powertools/metrics'
+          'reflect-metadata'
         ],
       },
       depsLockFilePath: join(__dirname, '../../services/WebSockets', 'package-lock.json'), // Go up 3 directories to the services/WebSockets folder
@@ -50,10 +53,24 @@ export class WebSocketsStack extends Stack {
 
     const functionsPath = '../../services/WebSockets/src/functions';
 
-    const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
-      entry: join(__dirname, `${functionsPath}/auth/function.ts`),
-      ...nodeJsFunctionProps
+    const authorizerHandler = new lambda.Function(this, 'AuthorizerHandler', {
+      runtime: lambda.Runtime.NODEJS_16_X,
+      memorySize: 1024,
+      timeout: Duration.seconds(5),
+      handler: 'function.main',
+      code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/connect/function.ts`)),
+      environment: {
+        REGION: Stack.of(this).region,
+        AVAILABILITY_ZONES: JSON.stringify(
+          Stack.of(this).availabilityZones,
+        ),
+      },
     });
+
+    // const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
+    //   entry: join(__dirname, `${functionsPath}/auth/function.ts`),
+    //   ...nodeJsFunctionProps
+    // });
 
     const onConnectHandler = new NodejsFunction(this, "OnConnectHandler", {
       entry: join(__dirname, `${functionsPath}/connect/function.ts`),

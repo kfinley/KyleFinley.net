@@ -28,7 +28,6 @@ jobs:
       #       run: |
       #         npm run lerna run test
 
-      # TODO: Do this right....
       - name: Generate .env file
         working-directory: ./packages/vue2-client
         run: |
@@ -63,7 +62,7 @@ jobs:
         run: |
           npm run deploy
 
-      - name: Sync media with S3 Bucket
+      - name: Sync media
         working-directory: ./media
         run: |
           aws s3 sync . s3://images.kylefinley.net
