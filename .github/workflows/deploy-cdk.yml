@@ -33,12 +33,12 @@ jobs:
 
         # && npm run sls:webpack
 
-      - name: link node_modules
+      - name: cp WebSockets package files for cdk lambda deploy
         working-directory: ./services/WebSockets
         run: |
           cp package.json src/functions/package.json
           cp package-lock.json src/functions/package-lock.json
-          cp -LRv node_modules/* src/functions/node_modules/
+          cp -LRv node_modules src/functions/node_modules
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
