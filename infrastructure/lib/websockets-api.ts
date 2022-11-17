@@ -63,7 +63,7 @@ export class WebSocketsApi extends Construct {
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [
-        'route.request.header.Authorization',
+        // 'route.request.header.Authorization',
         'route.request.header.Sec-WebSocket-Protocol']
     });
 
