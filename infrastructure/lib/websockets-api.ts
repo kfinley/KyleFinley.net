@@ -50,18 +50,11 @@ export class WebSocketsApi extends Construct {
 
       const nodeJsFunctionProps: NodejsFunctionProps = {
         bundling: {
+          assetHash: 'my-custom-hash',
           externalModules: [
             'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
           ],
-          // nodeModules: [
-          //   'axios@^1.1.3',
-          //   'inversify-props',
-          //   'reflect-metadata',
-          //   '@aws-sdk/client-dynamodb',
-          //   '@aws-sdk/client-apigatewaymanagementapi',
-          //   '@aws-sdk/client-s3',
-          //   '@aws-sdk/client-sns'
-          // ],
+          preCompilation: true,
           minify: true, // minify code, defaults to false
           sourceMap: true, // include source map, defaults to false
           sourceMapMode: SourceMapMode.INLINE, // defaults to SourceMapMode.DEFAULT
