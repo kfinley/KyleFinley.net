@@ -10,7 +10,7 @@ export class WebSocketsModule extends BaseModule implements WebSocketsState {
   status: WebSocketsStatus = WebSocketsStatus.None;
 
   socket!: Socket;
-  url: string = 'localhost:3001'; //TODO: Fix this...
+  url: string = `${process.env.NODE_ENV === 'production' ? 'kylefinley.net' : 'localhost:3001'}`;
 
   protocol = `${process.env.NODE_ENV === 'production' ? 'wss' : 'ws'}`;
 

@@ -25,32 +25,6 @@ export class WebSocketsStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: WebSocketsProps) {
     super(scope, id, props);
 
-
-    const nodeJsFunctionProps: NodejsFunctionProps = {
-      bundling: {
-        externalModules: [
-          'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
-        ],
-        nodeModules: [
-          // '@aws-lambda-powertools/logger',
-          // '@aws-lambda-powertools/tracer',
-          // 'aws-jwt-verify',
-          // '@aws-lambda-powertools/metrics'
-          'reflect-metadata'
-        ],
-      },
-      depsLockFilePath: join(__dirname, '../../services/WebSockets', 'package-lock.json'), // Go up 3 directories to the services/WebSockets folder
-      environment: {
-        WEBSOCKETS_CONNECTION_TABLE: props?.connectionsTable.tableName!,
-        WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: props?.gitHubClientId!,
-        WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: props?.gitHubClientSecret!,
-        LOG_LEVEL: props?.logLevel!
-      },
-      handler: "handler", // Name matches const in function.ts
-      runtime: Runtime.NODEJS_16_X,
-      tracing: Tracing.ACTIVE
-    }
-
     const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
 
     const authorizerHandler = new lambda.Function(this, 'AuthorizerHandler', {
@@ -66,16 +40,6 @@ export class WebSocketsStack extends cdk.Stack {
         ),
       },
     });
-
-    // const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
-    //   entry: join(__dirname, `${functionsPath}/auth/function.ts`),
-    //   ...nodeJsFunctionProps
-    // });
-
-    // const onConnectHandler = new NodejsFunction(this, "OnConnectHandler", {
-    //   entry: join(__dirname, `${functionsPath}/connect/function.ts`),
-    //   ...nodeJsFunctionProps
-    // });
 
     const onConnectHandler = new lambda.Function(this, 'OnConnectHandler', {
       runtime: lambda.Runtime.NODEJS_16_X,
@@ -125,8 +89,8 @@ export class WebSocketsStack extends cdk.Stack {
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, { identitySource: ['route.request.header.Sec-WebSocket-Protocol'] });
 
-    this.webSocketApi = new WebSocketApi(this, 'ServerlessChatWebsocketApi', {
-      apiName: 'Serverless Chat Websocket API',
+    this.webSocketApi = new WebSocketApi(this, 'KyleFinleyWebSocketApi', {
+      apiName: 'KyleFinley.net Websocket API',
       connectRouteOptions: { integration: new WebSocketLambdaIntegration("ConnectIntegration", onConnectHandler), authorizer },
       disconnectRouteOptions: { integration: new WebSocketLambdaIntegration("DisconnectIntegration", onDisconnectHandler) },
       defaultRouteOptions: { integration: new WebSocketLambdaIntegration("DefaultIntegration", onMessageHandler) },
