@@ -26,7 +26,8 @@
     "sls:start-debug": "export SLS_DEBUG=* && sls offline -s dev",
     "sls:plugin-template": "cd packages/sls-plugins && sls create --template plugin",
     "sls:debug": "export SLS_DEBUG=* && node --inspect node_modules/serverless/bin/serverless offline -s dev",
-    "sls:debug1": "export SLS_DEBUG=* && node --inspect-brk=5858 node_modules/serverless/bin/serverless offline start --skipCacheInvalidation"
+    "sls:debug1": "export SLS_DEBUG=* && node --inspect-brk=5858 node_modules/serverless/bin/serverless offline start --skipCacheInvalidation",
+    "sls:webpack": "serverless webpack"
   },
   "author": {
     "name": "Kyle Finley",
