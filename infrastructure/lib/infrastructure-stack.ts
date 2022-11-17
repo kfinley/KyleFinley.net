@@ -104,7 +104,7 @@ export class InfrastructureStack extends Stack {
       },
       additionalBehaviors: {
         'wss/*': {
-          origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('https://', '')),
+          origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('wss://', '')),
           allowedMethods: AllowedMethods.ALLOW_ALL,
           cachePolicy: CachePolicy.CACHING_DISABLED,
           compress: false,
