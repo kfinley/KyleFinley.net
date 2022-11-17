@@ -3,8 +3,8 @@ import 'source-map-support/register';
 // const { config } = require('dotenv');
 import 'dotenv/config'
 import * as cdk from 'aws-cdk-lib';
-import { WebSocketsStack, DatabaseStack, InfrastructureStack } from '../lib';
-import { Aspects } from 'aws-cdk-lib';
+import { DatabaseStack, InfrastructureStack } from '../lib';
+// import { Aspects } from 'aws-cdk-lib';
 // import { AwsSolutionsChecks } from 'cdk-nag';
 
 // config();
@@ -30,4 +30,4 @@ const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, 
 });
 
 infraStack.addDependency(databaseStack);
-infraStack.addDependency(webSocketsStack);
+// infraStack.addDependency(webSocketsStack);
