@@ -32,12 +32,12 @@ export class InfrastructureStack extends Stack {
 
     const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack');
 
-    const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
-      logLevel: props?.logLevel!,
-      connectionsTable: dataStores?.connectionsTable!,
-      gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
-      gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
-    });
+    // const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
+    //   logLevel: props?.logLevel!,
+    //   connectionsTable: dataStores?.connectionsTable!,
+    //   gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
+    //   gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
+    // });
 
     const {
       accountId,
