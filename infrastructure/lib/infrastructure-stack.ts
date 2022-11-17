@@ -11,13 +11,16 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { WebSocketApi } from '@aws-cdk/aws-apigatewayv2-alpha';
 import { HttpOrigin } from 'aws-cdk-lib/aws-cloudfront-origins';
 import { AllowedMethods, CachePolicy, OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront';
+import { Table } from 'aws-cdk-lib/aws-dynamodb';
+import { WebSocketsStack } from './websockets-stack';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
-
 export interface InfraStackProps extends StackProps {
-  logLevel: string;
-  webSocketApi: WebSocketApi;
+  logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
+  connectionsTable: Table;
+  gitHubClientId: string | undefined;
+  gitHubClientSecret: string | undefined;
 }
 
 export class InfrastructureStack extends Stack {
@@ -25,6 +28,13 @@ export class InfrastructureStack extends Stack {
   constructor(scope: Construct, id: string, props?: InfraStackProps) {
     super(scope, id, props);
     const domainName = this.node.tryGetContext('domainName');
+
+    const webSocketsStack = new WebSocketsStack(this, 'KyleFinleyNet-WebSocketsStack', {
+      logLevel: props?.logLevel!,
+      connectionsTable: props?.connectionsTable!,
+      gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
+      gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
+    });
 
     const {
       accountId,
@@ -83,7 +93,7 @@ export class InfrastructureStack extends Stack {
       },
       additionalBehaviors: {
         'wss/*': {
-          origin: new HttpOrigin(props!.webSocketApi.apiEndpoint.replace('https://', '')),
+          origin: new HttpOrigin(webSocketsStack.webSocketApi.apiEndpoint.replace('https://', '')),
           allowedMethods: AllowedMethods.ALLOW_ALL,
           cachePolicy: CachePolicy.CACHING_DISABLED,
           compress: false,

@@ -18,18 +18,11 @@ const app = new cdk.App();
 
 const databaseStack = new DatabaseStack(app, 'KyleFinleyNet-DatabaseStack', {} );
 
-const webSocketsStack = new WebSocketsStack(app, 'KyleFinleyNet-WebSocketsStack', {
+const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, {
   logLevel: LOG_LEVEL,
   connectionsTable: databaseStack.connectionsTable,
   gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
-  gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
-});
-
-webSocketsStack.addDependency(databaseStack);
-
-const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, {
-  webSocketApi: webSocketsStack.webSocketApi,
-  logLevel: LOG_LEVEL,
+  gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET,
   env: {
     account: process.env.AWS_ACCOUNT,
     region: process.env.AWS_REGION

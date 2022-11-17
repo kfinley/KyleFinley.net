@@ -15,7 +15,7 @@ export interface WebSocketsProps extends StackProps {
   connectionsTable: Table;
   gitHubClientId: string | undefined;
   gitHubClientSecret: string | undefined;
-  logLevel: string;
+  logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
 }
 
 export class WebSocketsStack extends cdk.Stack {
