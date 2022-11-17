@@ -27,8 +27,8 @@ export class InfrastructureStack extends Stack {
 
   constructor(scope: Construct, id: string, props?: InfraStackProps) {
     super(scope, id, props);
+    
     const domainName = this.node.tryGetContext('domainName');
-
 
     const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack');
 
@@ -78,16 +78,16 @@ export class InfrastructureStack extends Stack {
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
       },
-      additionalBehaviors: {
-        'wss/*': {
-          origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('https://', '')),
-          allowedMethods: AllowedMethods.ALLOW_ALL,
-          cachePolicy: CachePolicy.CACHING_DISABLED,
-          compress: false,
-          originRequestPolicy: apiOriginPolicy,
-          viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
-        }
-      },
+      // additionalBehaviors: {
+      //   'wss/*': {
+      //     origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('https://', '')),
+      //     allowedMethods: AllowedMethods.ALLOW_ALL,
+      //     cachePolicy: CachePolicy.CACHING_DISABLED,
+      //     compress: false,
+      //     originRequestPolicy: apiOriginPolicy,
+      //     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
+      //   }
+      // },
       errorResponses: [
         {
           httpStatus: 403,
