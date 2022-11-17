@@ -33,11 +33,11 @@ jobs:
 
         # && npm run sls:webpack
 
-      - name: link node_modules
-        working-directory: ./services/WebSockets
-        run: |
-          ln -s package.json src/functions/auth/package.json
-          cd src/functions/auth/ && npm i && cd ../../..
+      # - name: link node_modules
+      #   working-directory: ./services/WebSockets
+      #   run: |
+      #     ln -s package.json src/functions/auth/package.json
+      #     cd src/functions/auth/ && npm i && cd ../../..
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
