@@ -10,6 +10,8 @@ import { WebSocketLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integratio
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
 import { join } from 'path';
+import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
+import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 
 export interface WebSocketsApiProps {
   connectionsTable: Table;
@@ -44,7 +46,32 @@ export class WebSocketsApi extends Construct {
       });
     };
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'auth');
+    const nodeJsFunctionProps: NodejsFunctionProps = {
+      bundling: {
+        externalModules: [
+          'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
+        ],
+        nodeModules: [
+          'inversify-props'
+        ],
+      },
+      depsLockFilePath: join(__dirname, '../../services/WebSockets/', 'package-lock.json'),
+      environment: {
+        CONNECTIONS_TABLE_NAME: props?.connectionsTable.tableName!,
+        MESSAGES_TABLE_NAME: props?.connectionsTable.tableName!,
+        LOG_LEVEL: props?.logLevel!
+      },
+      handler: "handler",
+      runtime: Runtime.NODEJS_16_X,
+      tracing: Tracing.ACTIVE
+    }
+
+    const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
+      entry: join(__dirname, `../../.webpack/service/services/WebSockets/src/functions/auth`),
+      ...nodeJsFunctionProps
+    });
+
+    // const authorizerHandler = createLambda('AuthorizerHandler', 'auth');
 
     const onConnectHandler = createLambda('OnConnectHandler', 'connect');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
@@ -138,26 +165,4 @@ export class WebSocketsApi extends Construct {
 
   }
 
-  //   private enableLogging(api: apigw.HttpApi) {
-  //   const stage = api.defaultStage!.node.defaultChild as apigw.CfnStage;
-  //   const logGroup = new logs.LogGroup(api, 'AccessLogs', {
-  //     retention: 90, // Keep logs for 90 days
-  //   });
-
-  //   stage.accessLogSettings = {
-  //     destinationArn: logGroup.logGroupArn,
-  //     format: JSON.stringify({
-  //       requestId: '$context.requestId',
-  //       userAgent: '$context.identity.userAgent',
-  //       sourceIp: '$context.identity.sourceIp',
-  //       requestTime: '$context.requestTime',
-  //       httpMethod: '$context.httpMethod',
-  //       path: '$context.path',
-  //       status: '$context.status',
-  //       responseLength: '$context.responseLength',
-  //     }),
-  //   };
-
-  //   logGroup.grantWrite(new iam.ServicePrincipal('apigateway.amazonaws.com'));
-  // }
 }
