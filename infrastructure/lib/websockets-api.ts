@@ -67,7 +67,7 @@ export class WebSocketsApi extends Construct {
     }
 
     const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
-      entry: join(__dirname, `../../.webpack/service/services/WebSockets/src/functions/auth`),
+      entry: join(__dirname, `../../.webpack/service/services/WebSockets/src/functions/auth/index.js`),
       ...nodeJsFunctionProps
     });
 
