@@ -37,6 +37,12 @@ jobs:
         working-directory: ./services/WebSockets
         run: |
           ln -s node_modules src/functions/auth
+          ln -s node_modules src/functions/connect
+          ln -s node_modules src/functions/default
+          ln -s node_modules src/functions/disconnect
+          ln -s node_modules src/functions/getConnection
+          ln -s node_modules src/functions/sendMessage
+          ln -s node_modules src/functions/startSendMessageNotification
           
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16

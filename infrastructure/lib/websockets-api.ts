@@ -68,7 +68,7 @@ export class WebSocketsApi extends Construct {
           target: 'es2020', // target environment for the generated JavaScript code
         },
         depsLockFilePath: join(__dirname, '../../services/WebSockets/', 'package-lock.json'),
-        environment: {
+        environment: { //TODO: refactor this... pass in env vars
           CONNECTIONS_TABLE_NAME: props?.connectionsTable.tableName!,
           MESSAGES_TABLE_NAME: props?.connectionsTable.tableName!,
           LOG_LEVEL: props?.logLevel!
