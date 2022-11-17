@@ -14,6 +14,7 @@ import { AllowedMethods, CachePolicy, OriginRequestCookieBehavior, OriginRequest
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
+import { BlockPublicAccess, Bucket, HttpMethods } from 'aws-cdk-lib/aws-s3';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -27,7 +28,7 @@ export class InfrastructureStack extends Stack {
 
   constructor(scope: Construct, id: string, props?: InfraStackProps) {
     super(scope, id, props);
-    
+
     const domainName = this.node.tryGetContext('domainName');
 
     const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack');
@@ -38,6 +39,29 @@ export class InfrastructureStack extends Stack {
     //   gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
     //   gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
     // });
+
+    const mediaBucket = new Bucket(this, 'imagesBucket', {
+      bucketName: `images.${domainName}`,
+      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
+
+    const frontEndBucket = new Bucket(this, 'S3Bucket', {
+      bucketName: domainName,
+      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+      cors: [
+        {
+          allowedMethods: [
+            HttpMethods.GET,
+          ],
+          allowedOrigins: ['*'],
+          allowedHeaders: ['*'],
+        },
+      ],
+    });
 
     const {
       accountId,
@@ -69,7 +93,7 @@ export class InfrastructureStack extends Stack {
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
-        origin: new origins.S3Origin(dataStores.frontEndBucket, {
+        origin: new origins.S3Origin(frontEndBucket, {
           originAccessIdentity: cloudFrontOAI
         }),
         compress: true,
@@ -120,7 +144,7 @@ export class InfrastructureStack extends Stack {
     const imagesCloudFrontDistribution = new cloudfront.Distribution(this, 'Images-CloudFrontDistribution', {
       // domainNames: [domainName], //TODO: could use an images. subdomain here
       defaultBehavior: {
-        origin: new origins.S3Origin(dataStores.mediaBucket, {
+        origin: new origins.S3Origin(mediaBucket, {
           originAccessIdentity: imagesCloudFrontOAI
         }),
         compress: true,
@@ -212,7 +236,7 @@ export class InfrastructureStack extends Stack {
 
     new s3deploy.BucketDeployment(this, 'S3BucketDeploy', {
       sources: [s3deploy.Source.asset('../packages/vue2-client/dist')],
-      destinationBucket: dataStores.frontEndBucket,
+      destinationBucket: frontEndBucket,
       distribution: cloudFrontDistribution,
       distributionPaths: ['/*'],
     });
