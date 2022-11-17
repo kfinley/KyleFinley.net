@@ -27,7 +27,7 @@ export class WebSocketsApi extends Construct {
   constructor(scope: Construct, id: string, props?: WebSocketsApiProps) {
     super(scope, id);
 
-    const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
+    const functionsPath = '../../services/WebSockets/src/functions';
 
     const createLambda = (name: string, handler: string ) => {
       return new lambda.Function(this, name, {
