@@ -32,6 +32,7 @@ export class WebSocketsApi extends Construct {
         runtime: lambda.Runtime.NODEJS_16_X,
         memorySize: 1024,
         timeout: Duration.seconds(5),
+        functionName: `KyleFinleyNet-Infrastructure-${name}`,
         handler: 'index.handler',
         code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/${path}`)),
         environment: {
