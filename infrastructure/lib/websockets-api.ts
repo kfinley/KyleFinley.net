@@ -71,7 +71,7 @@ export class WebSocketsApi extends Construct {
 
     const stage = new WebSocketStage(this, 'Prod', {
       webSocketApi: this.webSocketApi,
-      stageName: 'wss',
+      stageName: 'v1',                                    // todo: ??
       autoDeploy: true,
     });
 

@@ -42,29 +42,6 @@ export class InfrastructureStack extends Stack {
       gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
     });
 
-    // const mediaBucket = new Bucket(this, 'imagesBucket', {
-    //   bucketName: `images.${domainName}`,
-    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-    //   removalPolicy: RemovalPolicy.DESTROY,
-    //   autoDeleteObjects: true,
-    // });
-
-    // const frontEndBucket = new Bucket(this, 'S3Bucket', {
-    //   bucketName: domainName,
-    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-    //   removalPolicy: RemovalPolicy.DESTROY,
-    //   autoDeleteObjects: true,
-    //   cors: [
-    //     {
-    //       allowedMethods: [
-    //         HttpMethods.GET,
-    //       ],
-    //       allowedOrigins: ['*'],
-    //       allowedHeaders: ['*'],
-    //     },
-    //   ],
-    // });
-
     const {
       accountId,
       region,
@@ -104,9 +81,11 @@ export class InfrastructureStack extends Stack {
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
       },
+      // example of how to put a REST api behind CF
+      // source: https://github.com/apoorvmote/cdk-examples/blob/master/http-api/lib/cloudfront-http-api-stack.ts
       // additionalBehaviors: {
-      //   'wss/*': {
-      //     origin: new origins.HttpOrigin(webSocketsApi.webSocketApi),
+      //   'api/*': {
+      //     origin: new HttpOrigin(api.apiEndpoint.replace('https://', '')),
       //     allowedMethods: AllowedMethods.ALLOW_ALL,
       //     cachePolicy: CachePolicy.CACHING_DISABLED,
       //     compress: false,
