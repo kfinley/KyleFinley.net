@@ -6,11 +6,10 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
 import { WebSocketLambdaAuthorizer } from '@aws-cdk/aws-apigatewayv2-authorizers-alpha';
 import { WebSocketLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integrations-alpha';
-import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
+// import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
 import { join } from 'path';
-import { StringAttributeProps } from 'aws-cdk-lib/aws-cognito';
 
 export interface WebSocketsProps extends StackProps {
   connectionsTable: Table;

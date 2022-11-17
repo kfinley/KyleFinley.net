@@ -28,6 +28,8 @@ const webSocketsStack = new WebSocketsStack(app, 'KyleFinleyNet-WebSocketsStack'
 webSocketsStack.addDependency(databaseStack);
 
 const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, {
+  webSocketApi: webSocketsStack.webSocketApi,
+  logLevel: LOG_LEVEL,
   env: {
     account: process.env.AWS_ACCOUNT,
     region: process.env.AWS_REGION

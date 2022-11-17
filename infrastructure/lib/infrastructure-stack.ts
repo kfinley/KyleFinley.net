@@ -8,12 +8,19 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
+import { WebSocketApi } from '@aws-cdk/aws-apigatewayv2-alpha';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
+
+export interface InfraStackProps extends StackProps {
+  logLevel: string;
+  webSocketApi: WebSocketApi;
+}
+
 export class InfrastructureStack extends Stack {
 
-  constructor(scope: Construct, id: string, props?: StackProps) {
+  constructor(scope: Construct, id: string, props?: InfraStackProps) {
     super(scope, id, props);
     const domainName = this.node.tryGetContext('domainName');
 
