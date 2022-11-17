@@ -47,6 +47,7 @@ export class WebSocketsApi extends Construct {
     };
 
     const createNodeJsFunction = (name: string, path: string) => {
+
       const nodeJsFunctionProps: NodejsFunctionProps = {
         bundling: {
           externalModules: [

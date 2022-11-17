@@ -36,13 +36,8 @@ jobs:
       - name: link node_modules
         working-directory: ./services/WebSockets
         run: |
-          ln -s node_modules src/functions/auth/node_modules
-          ln -s node_modules src/functions/connect/node_modules
-          ln -s node_modules src/functions/default/node_modules
-          ln -s node_modules src/functions/disconnect/node_modules
-          ln -s node_modules src/functions/getConnection/node_modules
-          ln -s node_modules src/functions/sendMessage/node_modules
-          ln -s node_modules src/functions/startSendMessageNotification/node_modules
+          ln -s package.json src/functions/auth/package.json
+          cd src/functions/auth/ && npm i && cd ../../..
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
