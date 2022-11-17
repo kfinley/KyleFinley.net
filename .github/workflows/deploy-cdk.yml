@@ -36,9 +36,9 @@ jobs:
       - name: link node_modules
         working-directory: ./services/WebSockets
         run: |
-          ln -s package.json src/functions/package.json
-          ln -s package-lock.json src/functions/package-lock.json
-          ln -s node_modules src/functions/node_modules
+          cp package.json src/functions/package.json
+          cp package-lock.json src/functions/package-lock.json
+          cp node_modules src/functions/node_modules
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
