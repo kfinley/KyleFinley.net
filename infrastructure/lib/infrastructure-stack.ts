@@ -102,16 +102,16 @@ export class InfrastructureStack extends Stack {
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
       },
-      additionalBehaviors: {
-        'wss/*': {
-          origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('wss://', '')),
-          allowedMethods: AllowedMethods.ALLOW_ALL,
-          cachePolicy: CachePolicy.CACHING_DISABLED,
-          compress: false,
-          originRequestPolicy: apiOriginPolicy,
-          viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
-        }
-      },
+      // additionalBehaviors: {
+      //   'wss/*': {
+      //     origin: new origins.HttpOrigin(webSocketsApi.webSocketApi),
+      //     allowedMethods: AllowedMethods.ALLOW_ALL,
+      //     cachePolicy: CachePolicy.CACHING_DISABLED,
+      //     compress: false,
+      //     originRequestPolicy: apiOriginPolicy,
+      //     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
+      //   }
+      // },
       errorResponses: [
         {
           httpStatus: 403,

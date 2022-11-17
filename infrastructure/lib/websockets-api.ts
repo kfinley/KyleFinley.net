@@ -69,7 +69,7 @@ export class WebSocketsApi extends Construct {
       defaultRouteOptions: { integration: new WebSocketLambdaIntegration("DefaultIntegration", onMessageHandler) },
     });
 
-    const devStage = new WebSocketStage(this, 'Prod', {
+    const stage = new WebSocketStage(this, 'Prod', {
       webSocketApi: this.webSocketApi,
       stageName: 'wss',
       autoDeploy: true,
@@ -79,6 +79,10 @@ export class WebSocketsApi extends Construct {
 
     new CfnOutput(this, 'webSocketApi.apiEndpoint', {
       value: this.webSocketApi.apiEndpoint
+    });
+
+    new CfnOutput(this, 'stage.url', {
+      value: stage.url
     });
 
     // taken from incomplete online example... https://aws.plainenglish.io/setup-api-gateway-websocket-api-with-cdk-c1e58cf3d2be
