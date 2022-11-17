@@ -29,7 +29,7 @@ export class WebSocketsStack extends cdk.Stack {
     const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
 
     const createLambda = (name: string, path: string) => {
-      return new lambda.Function(this, name, , {
+      return new lambda.Function(this, name, {
         runtime: lambda.Runtime.NODEJS_16_X,
         memorySize: 1024,
         timeout: Duration.seconds(5),
@@ -81,7 +81,7 @@ export class WebSocketsStack extends cdk.Stack {
     new CfnOutput(this, 'webSocketApi.apiEndpoint', {
       value: this.webSocketApi.apiEndpoint
     });
-    
+
     // taken from incomplete online example... https://aws.plainenglish.io/setup-api-gateway-websocket-api-with-cdk-c1e58cf3d2be
     // seems to be created off of this. https://github.com/aws-samples/websocket-chat-application
     // const webSocketApi = new WebSocketApi(this, 'TodosWebsocketApi', {
