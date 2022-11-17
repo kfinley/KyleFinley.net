@@ -29,14 +29,15 @@ export class WebSocketsApi extends Construct {
 
     const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
 
-    const createLambda = (name: string, path: string) => {
+    const createLambda = (name: string, path: string, handler: string ) => {
       return new lambda.Function(this, name, {
         runtime: lambda.Runtime.NODEJS_16_X,
         memorySize: 1024,
         timeout: Duration.seconds(5),
         functionName: `KyleFinleyNet-Infrastructure-${name}`,
-        handler: 'index.handler',
-        code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/${path}`)),
+        handler,
+        code: new lambda.AssetCode(join(__dirname, `${functionsPath}/${path}`)),
+        // lambda.Code.fromAsset(join(__dirname, `${functionsPath}/${path}`)),
         environment: {
           REGION: Stack.of(this).region,
           AVAILABILITY_ZONES: JSON.stringify(
@@ -49,53 +50,55 @@ export class WebSocketsApi extends Construct {
     const createNodeJsFunction = (name: string, path: string) => {
 
       const nodeJsFunctionProps: NodejsFunctionProps = {
+        functionName: `KyleFinleyNet-Infrastructure-${name}`,
+        projectRoot: join(__dirname, '../../services/WebSockets'),
+        entry: join(__dirname, `../../services/WebSockets/src/functions/${path}`),
         bundling: {
-          assetHash: 'my-custom-hash',
+          // assetHash: 'my-custom-hash',
           externalModules: [
             'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
           ],
-          preCompilation: true,
+          // preCompilation: true,
           minify: true, // minify code, defaults to false
           sourceMap: true, // include source map, defaults to false
           sourceMapMode: SourceMapMode.INLINE, // defaults to SourceMapMode.DEFAULT
           sourcesContent: false, // do not include original source into source map, defaults to true
-          target: 'es2020', // target environment for the generated JavaScript code
+          target: 'es2020', // target environment for the generated JavaScript code,
         },
-        depsLockFilePath: join(__dirname, '../../services/WebSockets/', 'package-lock.json'),
+        depsLockFilePath: join(__dirname, '../../services/WebSockets/package-lock.json'),
         environment: { //TODO: refactor this... pass in env vars
           CONNECTIONS_TABLE_NAME: props?.connectionsTable.tableName!,
           MESSAGES_TABLE_NAME: props?.connectionsTable.tableName!,
           LOG_LEVEL: props?.logLevel!
         },
         handler: "handler",
+        allowAllOutbound: true,
         runtime: Runtime.NODEJS_16_X,
         tracing: Tracing.ACTIVE
       }
 
       return new NodejsFunction(this, name, {
-        functionName: `KyleFinleyNet-Infrastructure-${name}`,
-        projectRoot: '../../services/WebSockets',
-        entry: join(__dirname, `../../services/WebSockets/src/functions/${path}`),
+
         ...nodeJsFunctionProps
       });
     }
 
-    const authorizerHandler = createNodeJsFunction('AuthorizerHandler', 'auth/index.ts');
+    const authorizerHandler = createLambda('AuthorizerHandler', 'auth', 'index.ts');
 
-    const onConnectHandler = createNodeJsFunction('OnConnectHandler', 'connect/function.ts');
+    const onConnectHandler = createLambda('OnConnectHandler', 'connect', 'function.ts');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createNodeJsFunction('OnDisconnectHandler', 'disconnect/function.ts');
+    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'disconnect', 'function.ts');
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createNodeJsFunction('OnMessageHandler', 'default/function.ts');
+    const onMessageHandler = createLambda('OnMessageHandler', 'default', 'function.ts');
     props?.connectionsTable.grantReadWriteData(onMessageHandler);
 
-    const getConnection = createNodeJsFunction('GetConnection', 'getConnection/function.ts');
+    const getConnection = createLambda('GetConnection', 'getConnection', 'function.ts');
 
-    const sendMessage = createNodeJsFunction('SendMessage', 'sendMessage/function.ts');
+    const sendMessage = createLambda('SendMessage', 'sendMessage', 'function.ts');
 
-    const startSendMessageNotification = createNodeJsFunction('StartSendMessageNotification', 'startSendMessageNotification/function.ts')
+    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'startSendMessageNotification', 'function.ts')
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [
