@@ -5,12 +5,11 @@
     "infrastructure": "bin/infrastructure.js"
   },
   "scripts": {
-    "build": "tsc && npm run build:webpack",
-    "build:webpack": "webpack --config webpack.config.js --display-error-details",
+    "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "npm run build && cdk deploy --all --require-approval never"
+    "deploy": "cdk deploy --all --require-approval never"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",

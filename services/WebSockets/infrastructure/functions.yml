@@ -1,5 +1,5 @@
 auth:
-  handler: auth/function.handler
+  handler: auth/index.handler
   environment:
     WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID}
     WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET}

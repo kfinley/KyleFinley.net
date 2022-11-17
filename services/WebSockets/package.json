@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "build:webpack": "webpack --config webpack.config.js ",
     "test:unit": "jest"
   },
   "dependencies": {

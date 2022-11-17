@@ -51,14 +51,14 @@ export class WebSocketsStack extends cdk.Stack {
       tracing: Tracing.ACTIVE
     }
 
-    const functionsPath = '../../services/WebSockets/src/functions';
+    const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
 
     const authorizerHandler = new lambda.Function(this, 'AuthorizerHandler', {
       runtime: lambda.Runtime.NODEJS_16_X,
       memorySize: 1024,
       timeout: Duration.seconds(5),
-      handler: 'function.main',
-      code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/connect/function.ts`)),
+      handler: 'index.handler',
+      code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/auth`)),
       environment: {
         REGION: Stack.of(this).region,
         AVAILABILITY_ZONES: JSON.stringify(
@@ -72,26 +72,58 @@ export class WebSocketsStack extends cdk.Stack {
     //   ...nodeJsFunctionProps
     // });
 
-    const onConnectHandler = new NodejsFunction(this, "OnConnectHandler", {
-      entry: join(__dirname, `${functionsPath}/connect/function.ts`),
-      ...nodeJsFunctionProps
+    // const onConnectHandler = new NodejsFunction(this, "OnConnectHandler", {
+    //   entry: join(__dirname, `${functionsPath}/connect/function.ts`),
+    //   ...nodeJsFunctionProps
+    // });
+
+    const onConnectHandler = new lambda.Function(this, 'OnConnectHandler', {
+      runtime: lambda.Runtime.NODEJS_16_X,
+      memorySize: 1024,
+      timeout: Duration.seconds(5),
+      handler: 'index.handler',
+      code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/connect`)),
+      environment: {
+        REGION: Stack.of(this).region,
+        AVAILABILITY_ZONES: JSON.stringify(
+          Stack.of(this).availabilityZones,
+        ),
+      },
     });
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = new NodejsFunction(this, "OnDisconnectHandler", {
-      entry: join(__dirname, `${functionsPath}/disconnect/function.ts`),
-      ...nodeJsFunctionProps
+    const onDisconnectHandler = new lambda.Function(this, 'OnDisconnectHandler', {
+      runtime: lambda.Runtime.NODEJS_16_X,
+      memorySize: 1024,
+      timeout: Duration.seconds(5),
+      handler: 'index.handler',
+      code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/disconnect`)),
+      environment: {
+        REGION: Stack.of(this).region,
+        AVAILABILITY_ZONES: JSON.stringify(
+          Stack.of(this).availabilityZones,
+        ),
+      },
     });
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = new NodejsFunction(this, "OnMessageHandler", {
-      entry: join(__dirname, `${functionsPath}/default/function.ts`),
-      ...nodeJsFunctionProps
+    const onMessageHandler = new lambda.Function(this, 'onMessageHandler', {
+      runtime: lambda.Runtime.NODEJS_16_X,
+      memorySize: 1024,
+      timeout: Duration.seconds(5),
+      handler: 'index.handler',
+      code: lambda.Code.fromAsset(join(__dirname, `${functionsPath}/default/`)),
+      environment: {
+        REGION: Stack.of(this).region,
+        AVAILABILITY_ZONES: JSON.stringify(
+          Stack.of(this).availabilityZones,
+        ),
+      },
     });
     props?.connectionsTable.grantReadWriteData(onMessageHandler);
 
 
-    const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, { identitySource: ['route.request.header.Cookie'] });
+    const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, { identitySource: ['route.request.header.Sec-WebSocket-Protocol'] });
     this.webSocketApi = new WebSocketApi(this, 'ServerlessChatWebsocketApi', {
       apiName: 'Serverless Chat Websocket API',
       connectRouteOptions: { integration: new WebSocketLambdaIntegration("ConnectIntegration", onConnectHandler), authorizer },
