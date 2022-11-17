@@ -25,12 +25,19 @@ jobs:
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
-          npm i && npm run bootstrap && npm run sls:webpack && cd ./packages/vue2-client
+          npm i && npm run bootstrap && cd ./packages/vue2-client
           echo 'VITE_GITHUB_OAUTH_CLIENT_ID=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}' > .env
           echo 'VITE_GITHUB_OAUTH_CLIENT_SECRET=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}' >> .env
           echo 'VITE_GITHUB_OAUTH_REDIRECT_URL=https://kylefinley.net/github_auth_callback' >> .env
           cd ../.. && npm run build:client
 
+        # && npm run sls:webpack
+
+      - name: link node_modules
+        working-directory: ./services/WebSockets
+        run: |
+          ln -s node_modules src/functions/auth
+          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -46,6 +53,7 @@ jobs:
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
+
           npm run cdk bootstrap aws://${{ secrets.AWS_ACCOUNT_ID }}/${{ secrets.AWS_REGION }}
           npm run deploy
           cd ../media && aws s3 sync . s3://images.kylefinley.net
