@@ -17,7 +17,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "16"
 
       - name: Bootstrap & Build
         env:
@@ -30,30 +30,8 @@ jobs:
           echo 'VITE_GITHUB_OAUTH_REDIRECT_URL=https://kylefinley.net/github_auth_callback' >> .env
           cd ../.. && npm run build:client
 
-      # - name: Build Lambdas using SLS webpack
-      #   env:
-      #     WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
-      #     WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
-      #   run: |
-      #     npm run sls:webpack
-
-      # #  - name: Run Tests
-      # #       run: |
-      # #         npm run lerna run test
-
-      # - name: Generate .env file
-      #   working-directory: ./packages/vue2-client
-      #   run: |
-      #     echo 'VITE_GITHUB_OAUTH_CLIENT_ID=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}' > .env
-      #     echo 'VITE_GITHUB_OAUTH_CLIENT_SECRET=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}' >> .env
-      #     echo 'VITE_GITHUB_OAUTH_REDIRECT_URL=https://kylefinley.net/github_auth_callback' >> .env
-
-      # - name: Build Front-End Site
-      #   run: |
-      #     npm run build:client
-
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -69,19 +47,4 @@ jobs:
         run: |
           npm run cdk bootstrap aws://${{ secrets.AWS_ACCOUNT_ID }}/${{ secrets.AWS_REGION }}
           npm run deploy
-          cd ./media && aws s3 sync . s3://images.kylefinley.net
-
-      # - name: Deploy CDK Infrastructure
-      #   working-directory: ./infrastructure
-      #   env:
-      #     AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT_ID }}
-      #     AWS_REGION: ${{ secrets.AWS_REGION }}
-      #     WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
-      #     WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
-      #   run: |
-      #     npm run deploy
-
-      # - name: Sync media
-      #   working-directory: ./media
-      #   run: |
-      #     aws s3 sync . s3://images.kylefinley.net
+          cd ../media && aws s3 sync . s3://images.kylefinley.net
