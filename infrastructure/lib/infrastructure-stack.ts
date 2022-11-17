@@ -9,6 +9,8 @@ import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { WebSocketApi } from '@aws-cdk/aws-apigatewayv2-alpha';
+import { HttpOrigin } from 'aws-cdk-lib/aws-cloudfront-origins';
+import { AllowedMethods, CachePolicy, OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -61,6 +63,12 @@ export class InfrastructureStack extends Stack {
       comment: `${domainName} Domain Hosting Environment`,
     });
 
+    const apiOriginPolicy = new OriginRequestPolicy(this, 'apiOriginPolicy', {
+      cookieBehavior: OriginRequestCookieBehavior.all(),
+      headerBehavior: OriginRequestHeaderBehavior.none(),
+      queryStringBehavior: OriginRequestQueryStringBehavior.all(),
+    });
+
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
@@ -72,6 +80,16 @@ export class InfrastructureStack extends Stack {
         cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+      },
+      additionalBehaviors: {
+        'wss/*': {
+          origin: new HttpOrigin(props!.webSocketApi.apiEndpoint.replace('https://', '')),
+          allowedMethods: AllowedMethods.ALLOW_ALL,
+          cachePolicy: CachePolicy.CACHING_DISABLED,
+          compress: false,
+          originRequestPolicy: apiOriginPolicy,
+          viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
+        }
       },
       errorResponses: [
         {
@@ -107,6 +125,7 @@ export class InfrastructureStack extends Stack {
     const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
       comment: `images.${domainName} Domain Hosting Environment`,
     });
+
 
     const imagesCloudFrontDistribution = new cloudfront.Distribution(this, 'Images-CloudFrontDistribution', {
       // domainNames: [domainName], //TODO: could use an images. subdomain here
