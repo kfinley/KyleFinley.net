@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Lambdas using SLS WebPack
         run: |
-          npm run sls:WebPack
+          npm run sls:webpack
 
       #  - name: Run Tests
       #       run: |
