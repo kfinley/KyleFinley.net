@@ -26,7 +26,7 @@ module.exports = {
     filename: '[name].js',
   },
   optimization: {
-    concatenateModules: false,
+    concatenateModules: true,
   },
   target: 'node',
   externals: [nodeExternals()],

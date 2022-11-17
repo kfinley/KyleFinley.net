@@ -10,7 +10,7 @@ import { WebSocketLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integratio
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
 import { join } from 'path';
-import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
+import { NodejsFunction, NodejsFunctionProps, SourceMapMode } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 
 export interface WebSocketsApiProps {
@@ -51,9 +51,21 @@ export class WebSocketsApi extends Construct {
         externalModules: [
           'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
         ],
-        nodeModules: [
-          'inversify-props'
-        ],
+        // nodeModules: [
+        //   'axios',
+        //   'inversify-props',
+        //   'reflect-metadata',
+        //   '@aws-sdk/client-dynamodb',
+        //   '@aws-sdk/client-apigatewaymanagementapi',
+        //   '@aws-sdk/client-s3',
+        //   '@aws-sdk/client-sns'
+
+        // ],
+        minify: true, // minify code, defaults to false
+        sourceMap: true, // include source map, defaults to false
+        sourceMapMode: SourceMapMode.INLINE, // defaults to SourceMapMode.DEFAULT
+        sourcesContent: false, // do not include original source into source map, defaults to true
+        target: 'es2020', // target environment for the generated JavaScript code
       },
       depsLockFilePath: join(__dirname, '../../services/WebSockets/', 'package-lock.json'),
       environment: {
@@ -65,8 +77,8 @@ export class WebSocketsApi extends Construct {
       runtime: Runtime.NODEJS_16_X,
       tracing: Tracing.ACTIVE
     }
-    //https://github.com/kfinley/KyleFinley.net/blob/main/.webpack/service/services/WebSockets/src/functions/auth/index.js
     const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
+      functionName: `KyleFinleyNet-Infrastructure-AuthorizerHandler`,
       entry: join(__dirname, `../../services/WebSockets/src/functions/auth/index.ts`),
       ...nodeJsFunctionProps
     });
