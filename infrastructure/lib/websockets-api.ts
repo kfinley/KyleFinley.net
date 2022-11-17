@@ -1,6 +1,6 @@
-import * as cdk from 'aws-cdk-lib';
-import { Stack, StackProps, Duration, CfnOutput } from 'aws-cdk-lib';
-import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
+// import * as cdk from 'aws-cdk-lib';
+import { Stack, Duration, CfnOutput } from 'aws-cdk-lib';
+// import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 // import { AnyPrincipal, Effect, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
@@ -61,7 +61,11 @@ export class WebSocketsApi extends Construct {
 
     const startSendMessageNotification = createLambda('StartSendMessageNotification', 'startSendMessageNotification')
 
-    const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, { identitySource: ['route.request.header.Sec-WebSocket-Protocol'] });
+    const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
+      identitySource: [
+        'route.request.header.Authorization',
+        'route.request.header.Sec-WebSocket-Protocol']
+    });
 
     this.webSocketApi = new WebSocketApi(this, 'KyleFinleyWebSocketApi', {
       apiName: 'KyleFinley.net Websocket API',
@@ -79,11 +83,11 @@ export class WebSocketsApi extends Construct {
     this.webSocketApi.grantManageConnections(onMessageHandler);
 
     new CfnOutput(this, 'webSocketApi.apiEndpoint', {
-      value: this.webSocketApi.apiEndpoint
+      value: `api endpoint: ${this.webSocketApi.apiEndpoint}`
     });
 
     new CfnOutput(this, 'stage.url', {
-      value: stage.url
+      value: `stage url: ${stage.url}`
     });
 
     // taken from incomplete online example... https://aws.plainenglish.io/setup-api-gateway-websocket-api-with-cdk-c1e58cf3d2be
@@ -133,4 +137,27 @@ export class WebSocketsApi extends Construct {
     // );
 
   }
+
+  //   private enableLogging(api: apigw.HttpApi) {
+  //   const stage = api.defaultStage!.node.defaultChild as apigw.CfnStage;
+  //   const logGroup = new logs.LogGroup(api, 'AccessLogs', {
+  //     retention: 90, // Keep logs for 90 days
+  //   });
+
+  //   stage.accessLogSettings = {
+  //     destinationArn: logGroup.logGroupArn,
+  //     format: JSON.stringify({
+  //       requestId: '$context.requestId',
+  //       userAgent: '$context.identity.userAgent',
+  //       sourceIp: '$context.identity.sourceIp',
+  //       requestTime: '$context.requestTime',
+  //       httpMethod: '$context.httpMethod',
+  //       path: '$context.path',
+  //       status: '$context.status',
+  //       responseLength: '$context.responseLength',
+  //     }),
+  //   };
+
+  //   logGroup.grantWrite(new iam.ServicePrincipal('apigateway.amazonaws.com'));
+  // }
 }
