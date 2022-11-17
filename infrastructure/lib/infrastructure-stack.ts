@@ -33,35 +33,35 @@ export class InfrastructureStack extends Stack {
 
     const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack');
 
-    // const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
-    //   logLevel: props?.logLevel!,
-    //   connectionsTable: dataStores?.connectionsTable!,
-    //   gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
-    //   gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
+    const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
+      logLevel: props?.logLevel!,
+      connectionsTable: dataStores?.connectionsTable!,
+      gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
+      gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
+    });
+
+    // const mediaBucket = new Bucket(this, 'imagesBucket', {
+    //   bucketName: `images.${domainName}`,
+    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+    //   removalPolicy: RemovalPolicy.DESTROY,
+    //   autoDeleteObjects: true,
     // });
 
-    const mediaBucket = new Bucket(this, 'imagesBucket', {
-      bucketName: `images.${domainName}`,
-      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-      removalPolicy: RemovalPolicy.DESTROY,
-      autoDeleteObjects: true,
-    });
-
-    const frontEndBucket = new Bucket(this, 'S3Bucket', {
-      bucketName: domainName,
-      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-      removalPolicy: RemovalPolicy.DESTROY,
-      autoDeleteObjects: true,
-      cors: [
-        {
-          allowedMethods: [
-            HttpMethods.GET,
-          ],
-          allowedOrigins: ['*'],
-          allowedHeaders: ['*'],
-        },
-      ],
-    });
+    // const frontEndBucket = new Bucket(this, 'S3Bucket', {
+    //   bucketName: domainName,
+    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+    //   removalPolicy: RemovalPolicy.DESTROY,
+    //   autoDeleteObjects: true,
+    //   cors: [
+    //     {
+    //       allowedMethods: [
+    //         HttpMethods.GET,
+    //       ],
+    //       allowedOrigins: ['*'],
+    //       allowedHeaders: ['*'],
+    //     },
+    //   ],
+    // });
 
     const {
       accountId,
@@ -93,7 +93,7 @@ export class InfrastructureStack extends Stack {
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
-        origin: new origins.S3Origin(frontEndBucket, {
+        origin: new origins.S3Origin(dataStores.frontEndBucket, {
           originAccessIdentity: cloudFrontOAI
         }),
         compress: true,
@@ -102,16 +102,16 @@ export class InfrastructureStack extends Stack {
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
       },
-      // additionalBehaviors: {
-      //   'wss/*': {
-      //     origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('https://', '')),
-      //     allowedMethods: AllowedMethods.ALLOW_ALL,
-      //     cachePolicy: CachePolicy.CACHING_DISABLED,
-      //     compress: false,
-      //     originRequestPolicy: apiOriginPolicy,
-      //     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
-      //   }
-      // },
+      additionalBehaviors: {
+        'wss/*': {
+          origin: new HttpOrigin(webSocketsApi.webSocketApi.apiEndpoint.replace('https://', '')),
+          allowedMethods: AllowedMethods.ALLOW_ALL,
+          cachePolicy: CachePolicy.CACHING_DISABLED,
+          compress: false,
+          originRequestPolicy: apiOriginPolicy,
+          viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
+        }
+      },
       errorResponses: [
         {
           httpStatus: 403,
@@ -144,7 +144,7 @@ export class InfrastructureStack extends Stack {
     const imagesCloudFrontDistribution = new cloudfront.Distribution(this, 'Images-CloudFrontDistribution', {
       // domainNames: [domainName], //TODO: could use an images. subdomain here
       defaultBehavior: {
-        origin: new origins.S3Origin(mediaBucket, {
+        origin: new origins.S3Origin(dataStores.mediaBucket, {
           originAccessIdentity: imagesCloudFrontOAI
         }),
         compress: true,
@@ -236,7 +236,7 @@ export class InfrastructureStack extends Stack {
 
     new s3deploy.BucketDeployment(this, 'S3BucketDeploy', {
       sources: [s3deploy.Source.asset('../packages/vue2-client/dist')],
-      destinationBucket: frontEndBucket,
+      destinationBucket: dataStores.frontEndBucket,
       distribution: cloudFrontDistribution,
       distributionPaths: ['/*'],
     });

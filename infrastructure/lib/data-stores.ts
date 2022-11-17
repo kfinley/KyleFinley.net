@@ -10,8 +10,8 @@ export interface DataStoresProps {
 export class DataStores extends Construct {
 
   readonly connectionsTable: Table;
-  // readonly frontEndBucket: Bucket;
-  // readonly mediaBucket: Bucket;
+  readonly frontEndBucket: Bucket;
+  readonly mediaBucket: Bucket;
 
   constructor(scope: Construct, id: string, props?: DataStoresProps) {
     super(scope, id);
@@ -25,28 +25,28 @@ export class DataStores extends Construct {
       pointInTimeRecovery: false // set to "true" to enable PITR
     });
 
-    // this.mediaBucket = new Bucket(this, 'imagesBucket', {
-    //   bucketName: `images.${props?.domainName}`,
-    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-    //   removalPolicy: RemovalPolicy.DESTROY,
-    //   autoDeleteObjects: true,
-    // });
+    this.mediaBucket = new Bucket(this, 'imagesBucket', {
+      bucketName: `images.${props?.domainName}`,
+      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
 
-    // this.frontEndBucket = new Bucket(this, 'S3Bucket', {
-    //   bucketName: props?.domainName,
-    //   blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
-    //   removalPolicy: RemovalPolicy.DESTROY,
-    //   autoDeleteObjects: true,
-    //   cors: [
-    //     {
-    //       allowedMethods: [
-    //         HttpMethods.GET,
-    //       ],
-    //       allowedOrigins: ['*'],
-    //       allowedHeaders: ['*'],
-    //     },
-    //   ],
-    // });
+    this.frontEndBucket = new Bucket(this, 'S3Bucket', {
+      bucketName: props?.domainName,
+      blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+      cors: [
+        {
+          allowedMethods: [
+            HttpMethods.GET,
+          ],
+          allowedOrigins: ['*'],
+          allowedHeaders: ['*'],
+        },
+      ],
+    });
 
   }
 
