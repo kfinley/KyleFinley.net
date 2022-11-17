@@ -124,6 +124,7 @@ export class WebSocketsStack extends cdk.Stack {
 
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, { identitySource: ['route.request.header.Sec-WebSocket-Protocol'] });
+
     this.webSocketApi = new WebSocketApi(this, 'ServerlessChatWebsocketApi', {
       apiName: 'Serverless Chat Websocket API',
       connectRouteOptions: { integration: new WebSocketLambdaIntegration("ConnectIntegration", onConnectHandler), authorizer },

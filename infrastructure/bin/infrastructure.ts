@@ -5,7 +5,7 @@ import 'dotenv/config'
 import * as cdk from 'aws-cdk-lib';
 import { WebSocketsStack, DatabaseStack, InfrastructureStack } from '../lib';
 import { Aspects } from 'aws-cdk-lib';
-import { AwsSolutionsChecks } from 'cdk-nag';
+// import { AwsSolutionsChecks } from 'cdk-nag';
 
 // config();
 
@@ -14,7 +14,7 @@ const LOG_LEVEL: "DEBUG" | "INFO" | "WARN" | "ERROR" = "ERROR";
 const app = new cdk.App();
 
 // CDK-NAG security checks
-Aspects.of(app).add(new AwsSolutionsChecks({ verbose: true }))
+//Aspects.of(app).add(new AwsSolutionsChecks({ verbose: true }))
 
 const databaseStack = new DatabaseStack(app, 'KyleFinleyNet-DatabaseStack', {} );
 
