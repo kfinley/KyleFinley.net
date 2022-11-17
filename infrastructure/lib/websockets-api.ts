@@ -46,58 +46,61 @@ export class WebSocketsApi extends Construct {
       });
     };
 
-    const nodeJsFunctionProps: NodejsFunctionProps = {
-      bundling: {
-        externalModules: [
-          'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
-        ],
-        // nodeModules: [
-        //   'axios@^1.1.3',
-        //   'inversify-props',
-        //   'reflect-metadata',
-        //   '@aws-sdk/client-dynamodb',
-        //   '@aws-sdk/client-apigatewaymanagementapi',
-        //   '@aws-sdk/client-s3',
-        //   '@aws-sdk/client-sns'
-        // ],
-        minify: true, // minify code, defaults to false
-        sourceMap: true, // include source map, defaults to false
-        sourceMapMode: SourceMapMode.INLINE, // defaults to SourceMapMode.DEFAULT
-        sourcesContent: false, // do not include original source into source map, defaults to true
-        target: 'es2020', // target environment for the generated JavaScript code
-      },
-      depsLockFilePath: join(__dirname, '../../services/WebSockets/', 'package-lock.json'),
-      environment: {
-        CONNECTIONS_TABLE_NAME: props?.connectionsTable.tableName!,
-        MESSAGES_TABLE_NAME: props?.connectionsTable.tableName!,
-        LOG_LEVEL: props?.logLevel!
-      },
-      handler: "handler",
-      runtime: Runtime.NODEJS_16_X,
-      tracing: Tracing.ACTIVE
+    const createNodeJsFunction = (name: string, path: string) => {
+      const nodeJsFunctionProps: NodejsFunctionProps = {
+        bundling: {
+          externalModules: [
+            'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
+          ],
+          // nodeModules: [
+          //   'axios@^1.1.3',
+          //   'inversify-props',
+          //   'reflect-metadata',
+          //   '@aws-sdk/client-dynamodb',
+          //   '@aws-sdk/client-apigatewaymanagementapi',
+          //   '@aws-sdk/client-s3',
+          //   '@aws-sdk/client-sns'
+          // ],
+          minify: true, // minify code, defaults to false
+          sourceMap: true, // include source map, defaults to false
+          sourceMapMode: SourceMapMode.INLINE, // defaults to SourceMapMode.DEFAULT
+          sourcesContent: false, // do not include original source into source map, defaults to true
+          target: 'es2020', // target environment for the generated JavaScript code
+        },
+        depsLockFilePath: join(__dirname, '../../services/WebSockets/', 'package-lock.json'),
+        environment: {
+          CONNECTIONS_TABLE_NAME: props?.connectionsTable.tableName!,
+          MESSAGES_TABLE_NAME: props?.connectionsTable.tableName!,
+          LOG_LEVEL: props?.logLevel!
+        },
+        handler: "handler",
+        runtime: Runtime.NODEJS_16_X,
+        tracing: Tracing.ACTIVE
+      }
+
+      return new NodejsFunction(this, name, {
+        functionName: `KyleFinleyNet-Infrastructure-${name}`,
+        entry: join(__dirname, `../../services/WebSockets/src/functions/${path}`),
+        ...nodeJsFunctionProps
+      });
     }
-    const authorizerHandler = new NodejsFunction(this, "AuthorizerHandler", {
-      functionName: `KyleFinleyNet-Infrastructure-AuthorizerHandler`,
-      entry: join(__dirname, `../../services/WebSockets/src/functions/auth/index.ts`),
-      ...nodeJsFunctionProps
-    });
 
-    // const authorizerHandler = createLambda('AuthorizerHandler', 'auth');
+    const authorizerHandler = createNodeJsFunction('AuthorizerHandler', 'auth/index.ts');
 
-    const onConnectHandler = createLambda('OnConnectHandler', 'connect');
+    const onConnectHandler = createNodeJsFunction('OnConnectHandler', 'connect/function.ts');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'disconnect');
+    const onDisconnectHandler = createNodeJsFunction('OnDisconnectHandler', 'disconnect/function.ts');
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createLambda('OnMessageHandler', 'default');
+    const onMessageHandler = createNodeJsFunction('OnMessageHandler', 'default/function.ts');
     props?.connectionsTable.grantReadWriteData(onMessageHandler);
 
-    const getConnection = createLambda('GetConnection', 'getConnection');
+    const getConnection = createNodeJsFunction('GetConnection', 'getConnection/function.ts');
 
-    const sendMessage = createLambda('SendMessage', 'sendMessage');
+    const sendMessage = createNodeJsFunction('SendMessage', 'sendMessage/function.ts');
 
-    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'startSendMessageNotification')
+    const startSendMessageNotification = createNodeJsFunction('StartSendMessageNotification', 'startSendMessageNotification/function.ts')
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [
