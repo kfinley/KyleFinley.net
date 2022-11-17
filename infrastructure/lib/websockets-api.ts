@@ -11,19 +11,19 @@ import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
 import { join } from 'path';
 
-export interface WebSocketsProps extends StackProps {
+export interface WebSocketsApiProps {
   connectionsTable: Table;
   gitHubClientId: string | undefined;
   gitHubClientSecret: string | undefined;
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
 }
 
-export class WebSocketsStack extends cdk.Stack {
+export class WebSocketsApi extends Construct {
 
   public webSocketApi: WebSocketApi;
 
-  constructor(scope: Construct, id: string, props?: WebSocketsProps) {
-    super(scope, id, props);
+  constructor(scope: Construct, id: string, props?: WebSocketsApiProps) {
+    super(scope, id);
 
     const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
 

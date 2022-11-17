@@ -3,7 +3,7 @@ import 'source-map-support/register';
 // const { config } = require('dotenv');
 import 'dotenv/config'
 import * as cdk from 'aws-cdk-lib';
-import { DatabaseStack, InfrastructureStack } from '../lib';
+import { DataStores, InfrastructureStack } from '../lib';
 // import { Aspects } from 'aws-cdk-lib';
 // import { AwsSolutionsChecks } from 'cdk-nag';
 
@@ -16,11 +16,9 @@ const app = new cdk.App();
 // CDK-NAG security checks
 //Aspects.of(app).add(new AwsSolutionsChecks({ verbose: true }))
 
-const databaseStack = new DatabaseStack(app, 'KyleFinleyNet-DatabaseStack', {} );
 
 const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, {
   logLevel: LOG_LEVEL,
-  connectionsTable: databaseStack.connectionsTable,
   gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
   gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET,
   env: {
@@ -29,5 +27,5 @@ const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, 
   },
 });
 
-infraStack.addDependency(databaseStack);
+// infraStack.addDependency(dataStores);
 // infraStack.addDependency(webSocketsStack);
