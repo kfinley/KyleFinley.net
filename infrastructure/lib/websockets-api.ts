@@ -29,15 +29,14 @@ export class WebSocketsApi extends Construct {
 
     const functionsPath = '../../.webpack/service/services/WebSockets/src/functions';
 
-    const createLambda = (name: string, path: string, handler: string ) => {
+    const createLambda = (name: string, handler: string ) => {
       return new lambda.Function(this, name, {
         runtime: lambda.Runtime.NODEJS_16_X,
         memorySize: 1024,
         timeout: Duration.seconds(5),
         functionName: `KyleFinleyNet-Infrastructure-${name}`,
         handler,
-        code: new lambda.AssetCode(join(__dirname, `${functionsPath}/${path}`)),
-        // lambda.Code.fromAsset(join(__dirname, `${functionsPath}/${path}`)),
+        code: new lambda.AssetCode(join(__dirname, `${functionsPath}`)),
         environment: {
           REGION: Stack.of(this).region,
           AVAILABILITY_ZONES: JSON.stringify(
@@ -83,22 +82,22 @@ export class WebSocketsApi extends Construct {
       });
     }
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'auth', 'index.ts');
+    const authorizerHandler = createLambda('AuthorizerHandler', 'auth.ts');
 
-    const onConnectHandler = createLambda('OnConnectHandler', 'connect', 'function.ts');
+    const onConnectHandler = createLambda('OnConnectHandler', 'connect.ts');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'disconnect', 'function.ts');
+    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'disconnect.ts');
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createLambda('OnMessageHandler', 'default', 'function.ts');
+    const onMessageHandler = createLambda('OnMessageHandler', 'default.ts');
     props?.connectionsTable.grantReadWriteData(onMessageHandler);
 
-    const getConnection = createLambda('GetConnection', 'getConnection', 'function.ts');
+    const getConnection = createLambda('GetConnection', 'getConnection.ts');
 
-    const sendMessage = createLambda('SendMessage', 'sendMessage', 'function.ts');
+    const sendMessage = createLambda('SendMessage', 'sendMessage.ts');
 
-    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'startSendMessageNotification', 'function.ts')
+    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'startSendMessageNotification.ts')
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [

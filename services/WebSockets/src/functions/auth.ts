@@ -1,8 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { container } from 'inversify-props';
-import { createResponse } from '../../createResponse';
-import bootstrapper from '../../bootstrapper';
-import { AuthorizeConnectionCommand } from '../../commands';
+import { createResponse } from '../createResponse';
+import bootstrapper from '../bootstrapper';
+import { AuthorizeConnectionCommand } from '../commands';
 
 bootstrapper();
 

@@ -4,9 +4,9 @@ import {
 } from 'aws-lambda';
 import 'source-map-support/register';
 import { container } from 'inversify-props';
-import bootstrapper from '../../bootstrapper';
-import { createResponse } from '../../createResponse';
-import { IMessageCommand } from './../../commands/messageCommand';
+import bootstrapper from '../bootstrapper';
+import { createResponse } from '../createResponse';
+import { IMessageCommand } from './../commands/messageCommand';
 
 bootstrapper();
 

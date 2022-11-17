@@ -1,8 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import { DeleteConnectionCommand } from '../../commands';
+import { DeleteConnectionCommand } from '../commands';
 import { container } from 'inversify-props';
-import bootstrapper from '../../bootstrapper';
-import { createResponse } from '../../createResponse';
+import bootstrapper from '../bootstrapper';
+import { createResponse } from '../createResponse';
 
 bootstrapper();
 

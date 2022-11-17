@@ -1,7 +1,7 @@
 import { container } from 'inversify-props';
 import { Context, Handler } from 'aws-lambda';
-import bootstrapper from './../../bootstrapper';
-import { GetConnectionByUserIdCommand } from '../../commands';
+import bootstrapper from './../bootstrapper';
+import { GetConnectionByUserIdCommand } from '../commands';
 
 bootstrapper();
 

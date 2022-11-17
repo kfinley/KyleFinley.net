@@ -1,7 +1,7 @@
 import { container } from 'inversify-props';
 import { Context, Handler } from 'aws-lambda';
-import bootstrapper from './../../bootstrapper';
-import { SendMessageCommand } from '../../commands';
+import bootstrapper from './../bootstrapper';
+import { SendMessageCommand } from '../commands';
 
 bootstrapper();
 

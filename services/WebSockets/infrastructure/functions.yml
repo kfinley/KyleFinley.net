@@ -1,5 +1,5 @@
 auth:
-  handler: auth/index.handler
+  handler: auth.handler
   environment:
     WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID}
     WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET}
@@ -12,7 +12,7 @@ connect:
         route: $connect
         authorizer:
           name: ${self:service}-auth #TODO: fix loadFunctions.js to handle this...
-  handler: connect/function.handler
+  handler: connect.handler
   environment:
     WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID}
     WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${env:WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET}
@@ -30,19 +30,19 @@ disconnect:
   handler: disconnect/function.handler
 
 StartSendMessageNotification:
-  handler: startSendMessageNotification/function.handler
+  handler: startSendMessageNotification.handler
   events:
     - sns:
         arn: arn:aws:sns:us-east-1:101010101010:AuthProcessedTopic #TODO: Deal with arn
 
 GetConnection:
-  handler: getConnection/function.handler
+  handler: getConnection.handler
 
 SendMessage:
-  handler: sendMessage/function.handler
+  handler: sendMessage.handler
 
 # broadcast:
 #   events:
 #     - websocket:
 #         route: broadcast
-#   handler: broadcast/function.handler
+#   handler: broadcast.handler

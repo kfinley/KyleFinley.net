@@ -2,7 +2,7 @@ import 'source-map-support/register';
 import { SNSEvent, Context } from 'aws-lambda';
 import { container } from 'inversify-props';
 import { StartStepFunctionCommand } from '@kylefinley.net/aws-commands/src';
-import bootstrapper from './../../bootstrapper';
+import bootstrapper from './../bootstrapper';
 
 bootstrapper();
 export const handler = async (event: SNSEvent, context: Context) => {
