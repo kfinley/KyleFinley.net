@@ -74,6 +74,7 @@ export class WebSocketsApi extends Construct {
 
       return new NodejsFunction(this, name, {
         functionName: `KyleFinleyNet-Infrastructure-${name}`,
+        projectRoot: '../../services/WebSockets',
         entry: join(__dirname, `../../services/WebSockets/src/functions/${path}`),
         ...nodeJsFunctionProps
       });
