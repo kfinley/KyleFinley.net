@@ -56,6 +56,8 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
 
   async runAsync(params: AuthorizeConnectionRequest): Promise<AuthorizeConnectionResponse> {
 
+    console.log(this.authorizeCommand);
+    
     try {
       let authResult,
         authRequest: AuthorizeRequest = {

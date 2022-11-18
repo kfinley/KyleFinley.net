@@ -5,6 +5,8 @@ import { GetUserCommand } from './getUser';
 
 export default function bootstrapper(container: Container) {
 
+  console.log('github-commands bootstrapper');
+  
   addTransientIfNeeded<ApiClient>(apiClient, 'ApiClient', container);
   addTransientIfNeeded<GetUserCommand>(GetUserCommand, "GetUserCommand", container);
 

@@ -9,7 +9,13 @@ import { AuthorizeCommand } from '@kylefinley.net/github-commands/src';
 import { PingMessageCommand } from './commands/pingMessage';
 import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src";
 
-export default function bootstrapper(container: Container) {
+
+export default function bootstrapper() {
+
+  const container = new Container({
+    autoBindInjectable: true,
+    skipBaseClassChecks: true,
+  });
 
   console.log('Bootstrapper');
 
@@ -41,7 +47,7 @@ export default function bootstrapper(container: Container) {
 
   addTransientIfNeeded<IMessageCommand>(PingMessageCommand, "PingMessageCommand", container);
 
-  console.log(container);
+  return container;
 }
 
 function addTransientIfNeeded<T>(constructor: any, id: string, container: Container) {
