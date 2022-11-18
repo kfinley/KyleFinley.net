@@ -82,7 +82,7 @@ export class WebSocketsApi extends Construct {
       });
     }
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'auth.handler');
+    const authorizerHandler = createLambda('AuthorizerHandler', 'src/functions/auth.handler');
 
     const onConnectHandler = createLambda('OnConnectHandler', 'src/functions/connect.ts');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
