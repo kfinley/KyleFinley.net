@@ -8,6 +8,7 @@
     "email": "kyle@kylefinley.net"
   },
   "scripts": {
+    "build": "tsc --build --clean && tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -8,7 +8,7 @@ const renameFunctions = (serviceName, basePath, funcs) => {
   keys.forEach((k) => {
     const func = funcs[k];
     if (func.handler.indexOf("::") === -1) {
-      func.handler = `${basePath}/src/functions/${func.handler}`;
+      func.handler = `${basePath}src/functions/${func.handler}`;
     }
     // TODO: Fix the authorizer bits...
     // if (func.events) {

@@ -21,13 +21,13 @@ default:
   events:
     - websocket:
         route: $default
-  handler: default/function.handler
+  handler: default.handler
 
 disconnect:
   events:
     - websocket:
         route: $disconnect
-  handler: disconnect/function.handler
+  handler: disconnect.handler
 
 StartSendMessageNotification:
   handler: startSendMessageNotification.handler
