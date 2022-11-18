@@ -16,7 +16,7 @@
     "super-clean": "rm -rf node_modules && rm -rf package-lock.json && npm run clean && lerna exec -- rm package-lock.json || true && rm -rf .webpack && rm -rf services/WebSockets/dist && rm -rf infrastructure/cdk.out",
     "dev:init": "./.devcontainer/scripts/dev-init.sh",
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
-    "build:client": "lerna run build --stream --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
+    "build:client": "lerna bootstrap --scope=@kylefinley.net/vue2-client && lerna run build --stream --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
     "build:cdk": "lerna run build --stream --scope=@kylefinley.net/infrastructure",
     "build:lambdas": "lerna run build --stream --scope=@kylefinley.net/aws-websockets && cp -LRv services/WebSockets/node_modules services/WebSockets/dist > /dev/null 2>&1",
     "dev:client:docker": "lerna run dev:docker --stream --scope=@kylefinley.net/vue2-client",
