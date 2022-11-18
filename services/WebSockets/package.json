@@ -2,6 +2,7 @@
   "name": "@kylefinley.net/aws-websockets",
   "version": "0.0.1",
   "private": "true",
+  "type": "module",
   "author": {
     "name": "Kyle Finley",
     "email": "kyle@kylefinley.net"
