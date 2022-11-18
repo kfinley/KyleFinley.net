@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "private": true,
-  "type": "module",
   "author": {
     "name": "Kyle Finley",
     "email": "kyle@kylefinley.net"
