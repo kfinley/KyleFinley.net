@@ -11,10 +11,12 @@ import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-c
 
 export default function bootstrapper() {
 
+  console.log('Bootstrapper');
+  
   awsCommandsBootstrapper(container);
 
   ghCommandsBootstrapper(container);
-  
+
   if (!container.isBound("DynamoDBClient")) {
     container.bind<DynamoDBClient>("DynamoDBClient")
       .toDynamicValue(() => new DynamoDBClient({
