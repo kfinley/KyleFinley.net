@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { Container, container } from 'inversify-props';
+import { Container } from 'inversify-props';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagementapi';
 import { bootstrapper as awsCommandsBootstrapper } from '@kylefinley.net/aws-commands/src';
@@ -9,10 +9,10 @@ import { AuthorizeCommand } from '@kylefinley.net/github-commands/src';
 import { PingMessageCommand } from './commands/pingMessage';
 import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src";
 
-export default function bootstrapper() {
+export default function bootstrapper(container: Container) {
 
   console.log('Bootstrapper');
-  
+
   awsCommandsBootstrapper(container);
 
   ghCommandsBootstrapper(container);

@@ -26,7 +26,7 @@ export interface AuthorizeResponse {
 
 export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResponse> {
 
-  @Inject('ApiClient')
+  @Inject("ApiClient")
   private apiClient!: ApiClient;
 
   @Inject("GetUserCommand")
