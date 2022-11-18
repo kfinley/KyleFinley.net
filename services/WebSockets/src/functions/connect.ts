@@ -3,17 +3,16 @@ import {
   APIGatewayProxyEvent,
 } from 'aws-lambda';
 import 'source-map-support/register';
-import { container } from 'inversify-props';
 import bootstrapper from '../bootstrapper';
 import { SaveConnectionCommand, SendMessageCommand } from '../commands';
 import { createResponse } from '../createResponse';
 import { PublishMessageCommand } from '@kylefinley.net/aws-commands/src';
 
-bootstrapper(container);
-
 export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEvent, context, callback) => {
 
   try {
+
+    const container = bootstrapper();
 
     //console.log('connect');
 

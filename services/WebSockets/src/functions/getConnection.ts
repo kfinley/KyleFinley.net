@@ -3,11 +3,12 @@ import { Context, Handler } from 'aws-lambda';
 import bootstrapper from './../bootstrapper';
 import { GetConnectionByUserIdCommand } from '../commands';
 
-bootstrapper(container);
-
-const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 
 export const handler: Handler = async (event: any, context: Context) => {
+
+  const container = bootstrapper();
+
+  const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 
   // console.log(`getConnection`, event);
 

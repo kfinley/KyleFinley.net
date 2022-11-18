@@ -1,14 +1,13 @@
 import 'source-map-support/register';
 import { SNSEvent, Context } from 'aws-lambda';
-import { container } from 'inversify-props';
 import { StartStepFunctionCommand } from '@kylefinley.net/aws-commands/src';
 import bootstrapper from './../bootstrapper';
-
-bootstrapper(container);
 
 export const handler = async (event: SNSEvent, context: Context) => {
 
   try {
+
+    const container = bootstrapper();
 
     console.log(`Send client message via SNS Event. Count: ${event.Records.length}`);
     const { userId } = JSON.parse(event.Records[0].Sns.Message);
