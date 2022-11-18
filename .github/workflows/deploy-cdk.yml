@@ -33,13 +33,6 @@ jobs:
 
         # && npm run sls:webpack
 
-      - name: cp WebSockets package files
-        working-directory: ./services/WebSockets
-        run: |
-          cp package.json src/functions/package.json
-          cp package-lock.json src/functions/package-lock.json
-          npm install --only=prod
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
@@ -55,7 +48,6 @@ jobs:
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
-
           npm run cdk bootstrap aws://${{ secrets.AWS_ACCOUNT_ID }}/${{ secrets.AWS_REGION }}
           npm run deploy
           cd ../media && aws s3 sync . s3://images.kylefinley.net
