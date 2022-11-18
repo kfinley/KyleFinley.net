@@ -27,7 +27,7 @@ export class WebSocketsApi extends Construct {
   constructor(scope: Construct, id: string, props?: WebSocketsApiProps) {
     super(scope, id);
 
-    const functionsPath = '../../services/WebSockets/src/functions';
+    const functionsPath = '../../services/WebSockets';
 
     const createLambda = (name: string, handler: string ) => {
       return new lambda.Function(this, name, {
@@ -82,22 +82,22 @@ export class WebSocketsApi extends Construct {
       });
     }
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'auth.ts');
+    const authorizerHandler = createLambda('AuthorizerHandler', 'src/functions/auth.ts');
 
-    const onConnectHandler = createLambda('OnConnectHandler', 'connect.ts');
+    const onConnectHandler = createLambda('OnConnectHandler', 'src/functions/connect.ts');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'disconnect.ts');
+    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'src/functions/disconnect.ts');
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createLambda('OnMessageHandler', 'default.ts');
+    const onMessageHandler = createLambda('OnMessageHandler', 'src/functions/default.ts');
     props?.connectionsTable.grantReadWriteData(onMessageHandler);
 
-    const getConnection = createLambda('GetConnection', 'getConnection.ts');
+    const getConnection = createLambda('GetConnection', 'src/functions/getConnection.ts');
 
-    const sendMessage = createLambda('SendMessage', 'sendMessage.ts');
+    const sendMessage = createLambda('SendMessage', 'src/functions/sendMessage.ts');
 
-    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'startSendMessageNotification.ts')
+    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'src/functions/startSendMessageNotification.ts')
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [
