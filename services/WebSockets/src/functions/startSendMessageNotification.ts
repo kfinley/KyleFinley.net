@@ -4,7 +4,8 @@ import { container } from 'inversify-props';
 import { StartStepFunctionCommand } from '@kylefinley.net/aws-commands/src';
 import bootstrapper from './../bootstrapper';
 
-bootstrapper();
+bootstrapper(container);
+
 export const handler = async (event: SNSEvent, context: Context) => {
 
   try {

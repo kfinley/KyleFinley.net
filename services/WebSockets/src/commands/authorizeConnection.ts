@@ -68,7 +68,7 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
 
       authResult = await this.authorizeCommand.runAsync(authRequest);
 
-      //console.log(authResult);
+      console.log(authResult);
 
       if (authResult && authResult.data !== undefined) {
 
@@ -81,7 +81,7 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
           access_token: (<GitHubAuthData>authResult.data).access_token
         };
 
-        // console.log(authResponse);
+        console.log(authResponse);
 
         return {
           authResponse: authResponse,

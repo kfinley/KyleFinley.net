@@ -3,7 +3,7 @@ import { Context, Handler } from 'aws-lambda';
 import bootstrapper from './../bootstrapper';
 import { GetConnectionByUserIdCommand } from '../commands';
 
-bootstrapper();
+bootstrapper(container);
 
 const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 

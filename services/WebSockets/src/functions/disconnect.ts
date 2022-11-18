@@ -4,7 +4,7 @@ import { container } from 'inversify-props';
 import bootstrapper from '../bootstrapper';
 import { createResponse } from '../createResponse';
 
-bootstrapper();
+bootstrapper(container);
 
 export const handler: APIGatewayProxyHandler = async (event) => {
   try {

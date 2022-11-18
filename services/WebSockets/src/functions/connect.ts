@@ -9,7 +9,7 @@ import { SaveConnectionCommand, SendMessageCommand } from '../commands';
 import { createResponse } from '../createResponse';
 import { PublishMessageCommand } from '@kylefinley.net/aws-commands/src';
 
-bootstrapper();
+bootstrapper(container);
 
 export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEvent, context, callback) => {
 

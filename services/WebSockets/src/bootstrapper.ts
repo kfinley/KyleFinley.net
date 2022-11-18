@@ -40,6 +40,8 @@ export default function bootstrapper(container: Container) {
   addTransientIfNeeded<SaveConnectionCommand>(SaveConnectionCommand, "SaveConnectionCommand", container);
 
   addTransientIfNeeded<IMessageCommand>(PingMessageCommand, "PingMessageCommand", container);
+
+  console.log(container);
 }
 
 function addTransientIfNeeded<T>(constructor: any, id: string, container: Container) {

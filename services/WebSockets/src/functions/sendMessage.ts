@@ -3,7 +3,7 @@ import { Context, Handler } from 'aws-lambda';
 import bootstrapper from './../bootstrapper';
 import { SendMessageCommand } from '../commands';
 
-bootstrapper();
+bootstrapper(container);
 
 const sendMessageCmd = () => container.get<SendMessageCommand>("SendMessageCommand");
 
