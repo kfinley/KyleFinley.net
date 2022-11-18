@@ -27,7 +27,7 @@ export class WebSocketsApi extends Construct {
   constructor(scope: Construct, id: string, props?: WebSocketsApiProps) {
     super(scope, id);
 
-    const functionsPath = '../../services/WebSockets';
+    const functionsPath = '../../services/WebSockets/dist';
 
     const createLambda = (name: string, handler: string ) => {
       return new lambda.Function(this, name, {
@@ -82,22 +82,22 @@ export class WebSocketsApi extends Construct {
       });
     }
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'src/functions/auth.handler');
+    const authorizerHandler = createLambda('AuthorizerHandler', 'functions/auth.handler');
 
-    const onConnectHandler = createLambda('OnConnectHandler', 'src/functions/connect.ts');
+    const onConnectHandler = createLambda('OnConnectHandler', 'functions/connect.handler');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'src/functions/disconnect.ts');
+    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'functions/disconnect.handler');
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createLambda('OnMessageHandler', 'src/functions/default.ts');
+    const onMessageHandler = createLambda('OnMessageHandler', 'functions/default.handler');
     props?.connectionsTable.grantReadWriteData(onMessageHandler);
 
-    const getConnection = createLambda('GetConnection', 'src/functions/getConnection.ts');
+    const getConnection = createLambda('GetConnection', 'functions/getConnection.handler');
 
-    const sendMessage = createLambda('SendMessage', 'src/functions/sendMessage.ts');
+    const sendMessage = createLambda('SendMessage', 'functions/sendMessage.handler');
 
-    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'src/functions/startSendMessageNotification.ts')
+    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'functions/startSendMessageNotification.handler')
 
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [
