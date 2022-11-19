@@ -1,5 +1,5 @@
-import { Inject } from 'inversify-props';
-import { PublishCommand, SNSClient,  } from "@aws-sdk/client-sns";
+import { Inject, injectable } from 'inversify-props';
+import { PublishCommand, SNSClient, } from "@aws-sdk/client-sns";
 import { Command } from '@kylefinley.net/commands/src';
 
 export interface PublishMessageRequest {
@@ -10,6 +10,7 @@ export interface PublishMessageRequest {
 
 export interface PublishMessageResponse { }
 
+@injectable()
 export class PublishMessageCommand implements Command<PublishMessageRequest, PublishMessageResponse> {
 
   @Inject("SNSClient")

@@ -1,7 +1,7 @@
 
 import { DynamoDBClient, PutItemCommand } from '@aws-sdk/client-dynamodb';
 import { Command } from '@kylefinley.net/commands/src';
-import { Inject } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 import { DeleteConnectionByUserIdCommand } from '.';
 import { convertRequestToItem } from './helpers';
 
@@ -16,6 +16,7 @@ export interface SaveConnectionResponse {
   success: boolean
 }
 
+@injectable()
 export class SaveConnectionCommand implements Command<SaveConnectionRequest, SaveConnectionResponse> {
 
   @Inject("DynamoDBClient")

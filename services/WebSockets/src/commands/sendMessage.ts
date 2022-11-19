@@ -1,7 +1,7 @@
 import { ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagementapi';
 import { PostToConnectionCommand } from '@aws-sdk/client-apigatewaymanagementapi';
 import { Command } from '@kylefinley.net/commands/src';
-import { Inject } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 
 export interface SendMessageRequest {
   connectionId: string;
@@ -12,6 +12,7 @@ export interface SendMessageResponse {
   statusCode?: number
 }
 
+@injectable()
 export class SendMessageCommand implements Command<SendMessageRequest, SendMessageResponse> {
 
   @Inject("ApiGatewayManagementApiClient")

@@ -1,4 +1,4 @@
-import { Inject } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import { ApiClient } from '@kylefinley.net/api-client/src';
 import { GitHubUser } from './types';
@@ -12,6 +12,7 @@ export interface GetUserResponse {
   email: string;
 }
 
+@injectable()
 export class GetUserCommand implements Command<GetUserRequest, GetUserResponse> {
 
   @Inject('ApiClient')

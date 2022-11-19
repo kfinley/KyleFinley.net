@@ -1,4 +1,4 @@
-import { Inject } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import { ApiClient } from '@kylefinley.net/api-client/src';
 import { GetUserCommand } from './getUser';
@@ -24,6 +24,7 @@ export interface AuthorizeResponse {
   authorized: boolean;
 }
 
+@injectable()
 export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResponse> {
 
   @Inject("ApiClient")

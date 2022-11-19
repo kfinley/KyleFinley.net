@@ -1,5 +1,5 @@
 import { Command } from '@kylefinley.net/commands/src';
-import { Inject } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 import { SendMessageCommand } from './sendMessage';
 
 export type PingMessageRequest = {
@@ -10,6 +10,7 @@ export type PingMessageResponse = {
   success: boolean;
 };
 
+@injectable()
 export class PingMessageCommand implements Command<PingMessageRequest, PingMessageResponse> {
 
   @Inject("SendMessageCommand")

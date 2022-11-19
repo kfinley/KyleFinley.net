@@ -1,5 +1,5 @@
-import { Inject } from 'inversify-props';
-import { SFNClient, StartExecutionCommand, StartExecutionCommandInput, ListStateMachinesCommand,  } from "@aws-sdk/client-sfn";
+import { Inject, injectable } from 'inversify-props';
+import { SFNClient, StartExecutionCommand, StartExecutionCommandInput, ListStateMachinesCommand, } from "@aws-sdk/client-sfn";
 import { Command } from '@kylefinley.net/commands/src';
 
 export interface StartStepFunctionRequest {
@@ -13,6 +13,7 @@ export interface StartStepFunctionResponse {
   executionArn?: string;
 }
 
+@injectable()
 export class StartStepFunctionCommand implements Command<StartStepFunctionRequest, StartStepFunctionResponse> {
 
   @Inject("SFNClient")

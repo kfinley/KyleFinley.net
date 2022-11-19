@@ -1,7 +1,7 @@
 import { DynamoDBClient, QueryCommand } from '@aws-sdk/client-dynamodb';
 import { marshall } from '@aws-sdk/util-dynamodb';
 import { Command } from '@kylefinley.net/commands/src';
-import { Inject } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 
 const CONNECTION_TABLE = process.env.WEBSOCKETS_CONNECTION_TABLE as string;
 
@@ -14,6 +14,7 @@ export interface GetConnectionResponse {
   success: boolean
 }
 
+@injectable()
 export class GetConnectionByUserIdCommand implements Command<GetConnectionRequest, GetConnectionResponse> {
 
   @Inject("DynamoDBClient")
