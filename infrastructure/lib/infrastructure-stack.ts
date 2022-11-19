@@ -17,6 +17,7 @@ export interface InfraStackProps extends StackProps {
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
   gitHubClientId: string;
   gitHubClientSecret: string;
+  node_env: string;
 }
 
 export class InfrastructureStack extends Stack {
@@ -34,7 +35,8 @@ export class InfrastructureStack extends Stack {
       logLevel: props?.logLevel!,
       connectionsTable: dataStores?.connectionsTable!,
       gitHubClientId: props!.gitHubClientId,
-      gitHubClientSecret: props!.gitHubClientSecret
+      gitHubClientSecret: props!.gitHubClientSecret,
+      node_env: props!.node_env
     });
 
     const {

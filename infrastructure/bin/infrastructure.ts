@@ -16,8 +16,10 @@ const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, 
   logLevel: LOG_LEVEL,
   gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID as string,
   gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET as string,
+  node_env: process.env.NODE_ENV as string,
   env: {
     account: process.env.AWS_ACCOUNT,
-    region: process.env.AWS_REGION
+    region: process.env.AWS_REGION,
+
   },
 });

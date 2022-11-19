@@ -19,6 +19,7 @@ export interface WebSocketsApiProps {
   connectionsTable: Table;
   gitHubClientId: string;
   gitHubClientSecret: string;
+  node_env: string;
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
 }
 
@@ -47,6 +48,7 @@ export class WebSocketsApi extends Construct {
           AVAILABILITY_ZONES: JSON.stringify(
             Stack.of(this).availabilityZones,
           ),
+          NODE_ENV: props!.node_env,
           ...env
         },
       });
