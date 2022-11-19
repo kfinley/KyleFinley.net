@@ -1,5 +1,6 @@
 import { Stack, Duration, CfnOutput } from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as iam from 'aws-cdk-lib/aws-iam';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
 import { WebSocketLambdaAuthorizer } from '@aws-cdk/aws-apigatewayv2-authorizers-alpha';
 import { WebSocketLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integrations-alpha';
@@ -12,6 +13,7 @@ import { Topic } from 'aws-cdk-lib/aws-sns';
 import { LambdaSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
 import { Chain, Choice, Condition, Fail, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
 import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
+//import { StateMachine } from '@matthewbonig/state-machine';
 
 export interface WebSocketsApiProps {
   connectionsTable: Table;
@@ -87,6 +89,7 @@ export class WebSocketsApi extends Construct {
     }
 
     // Lambda Functions....
+
     const authorizerHandler = createLambda('AuthorizerHandler', 'functions/auth.handler', {
       WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: props!.gitHubClientId,
       WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: props!.gitHubClientSecret
@@ -104,11 +107,28 @@ export class WebSocketsApi extends Construct {
 
     const onMessageHandler = createLambda('OnMessageHandler', 'functions/default.handler',);
 
-    const getConnection = createLambda('GetConnection', 'functions/getConnection.handler');
+    const getConnection = createLambda('GetConnection', 'functions/getConnection.handler', {
+      WEBSOCKETS_CONNECTION_TABLE: props!.connectionsTable.tableName
+    });
+    props?.connectionsTable.grantReadWriteData(getConnection);
 
     const sendMessage = createLambda('SendMessage', 'functions/sendMessage.handler');
 
     const startSendMessageNotification = createLambda('StartSendMessageNotification', 'functions/startSendMessageNotification.handler')
+
+    // 👇 create a policy statement
+    // const emptyPolicy = new iam.PolicyStatement({
+    //   effect: iam.Effect.ALLOW,
+    //   actions: [],
+    //   resources: [],
+    // });
+
+    // // 👇 attach the policy to the function's role
+    // startSendMessageNotification.role?.attachInlinePolicy(
+    //   new iam.Policy(this, 'policy', {
+    //     statements: [emptyPolicy],
+    //   }),
+    // );
 
     // Lambda Functions end...
 
@@ -117,37 +137,36 @@ export class WebSocketsApi extends Construct {
       displayName: 'AuthProcessedTopic',
     });
 
+    authProcessedTopic.grantPublish(onConnectHandler);
     authProcessedTopic.addSubscription(new LambdaSubscription(startSendMessageNotification));
 
     // SNS Topics & Subs end...
 
     // Step Functions...
 
-    const getConnectionInvocation = new LambdaInvoke(this, "GetConnection", {
+    const getConnectionInvocation = new LambdaInvoke(this, "GetConnectionInvocation", {
       lambdaFunction: getConnection,
       outputPath: '$.Payload',
     });
 
-    const sendMessageInvocation = new LambdaInvoke(this, "SendMessage", {
+    const sendMessageInvocation = new LambdaInvoke(this, "SendMessageInvocation", {
       lambdaFunction: sendMessage
     });
 
     const isConnected = new Choice(this, 'Has ConnectionId?');
 
-    const chain = Chain.start(getConnectionInvocation)
+    const chain = Chain
+      .start(getConnectionInvocation)
       .next(
         isConnected
-          .when(Condition.stringGreaterThan('$.connectionId', ''), sendMessageInvocation)
-          .otherwise(new Fail(this, "Fail", {
-            error: "No ConnectionId Found!"
-          }))
-      );
+          .when(Condition.stringEquals('$.connectionId', ''), new Fail(this, "Fail", { error: "No ConnectionId Found" }))
+          .otherwise(sendMessageInvocation.next(new Succeed(this, 'Done'))));
 
-    const stateMachine = new StateMachine(this, 'kylefinley.net-SendMessage', {
+    const stateMachine = new StateMachine(this, 'kylefinley.net-WebSockets-SendMessage', {
       definition: chain
     });
 
-    stateMachine.grantExecution(startSendMessageNotification);
+    // stateMachine.grantExecution(startSendMessageNotification);
 
     // Step Functions end...
 
@@ -173,6 +192,7 @@ export class WebSocketsApi extends Construct {
     });
 
     this.webSocketApi.grantManageConnections(onMessageHandler);
+    this.webSocketApi.grantManageConnections(sendMessage);
 
     new CfnOutput(this, 'webSocketApi.apiEndpoint', {
       value: `api endpoint: ${this.webSocketApi.apiEndpoint}`

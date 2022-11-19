@@ -21,7 +21,7 @@ export const handler = async (event: SNSEvent, context: Context) => {
         subject: event.Records[0].Sns.Subject,
         message: event.Records[0].Sns.Message
       }),
-      stateMachineName: 'WebSockets-SendMessage'
+      stateMachineName: 'kylefinley.net-WebSockets-SendMessage'
     });
 
     // console.log('response', response);
