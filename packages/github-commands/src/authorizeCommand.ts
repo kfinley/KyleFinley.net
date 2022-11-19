@@ -2,6 +2,7 @@ import { Inject, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import { ApiClient } from '@kylefinley.net/api-client/src';
 import { GetUserCommand } from './getUser';
+import { container } from 'inversify-props';
 
 export interface AuthorizeRequest {
   oauth: {
@@ -27,19 +28,23 @@ export interface AuthorizeResponse {
 @injectable()
 export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResponse> {
 
-  @Inject("ApiClient")
+  // @Inject("ApiClient")
   private apiClient!: ApiClient;
 
-  @Inject("GetUserCommand")
+  // @Inject("GetUserCommand")
   private getUserCommand!: GetUserCommand;
 
   async runAsync(params: AuthorizeRequest): Promise<AuthorizeResponse> {
 
     console.log('AuthorizeCommand');
     console.log(`code: ${params.code}`);
+
+    this.apiClient = container.get<ApiClient>("ApiClient");
+    this.getUserCommand = container.get<GetUserCommand>("GetUserCommand");
     console.log(this.apiClient);
     console.log(this.getUserCommand);
-    
+
+
     const api = new URL('/login/oauth/access_token', 'https://github.com')
 
     api.searchParams.set('client_id', params.oauth.clientId as string)

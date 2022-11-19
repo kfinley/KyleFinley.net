@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { Container } from 'inversify-props';
 import { ApiClient, apiClient } from '@kylefinley.net/api-client/src';
 import { GetUserCommand } from './getUser';

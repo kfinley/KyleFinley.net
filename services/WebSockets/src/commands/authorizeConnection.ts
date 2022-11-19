@@ -1,6 +1,7 @@
 import { Command } from '@kylefinley.net/commands/src';
 import { AuthorizeCommand, AuthorizeRequest, AuthorizeResponse, GitHubAuthData } from "@kylefinley.net/github-commands/src";
 import { Inject, injectable } from 'inversify-props';
+import { container } from '../inversify.config';
 
 export interface AuthorizeConnectionRequest {
   resource: string;
@@ -52,11 +53,12 @@ const generateAuthResponse = (authResponse: AuthorizeResponse, resource: string 
 @injectable()
 export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRequest, AuthorizeConnectionResponse> {
 
-  @Inject("AuthorizeCommand")
+  // @Inject("AuthorizeCommand")
   private authorizeCommand!: AuthorizeCommand;
 
   async runAsync(params: AuthorizeConnectionRequest): Promise<AuthorizeConnectionResponse> {
 
+    this.authorizeCommand = container.get<AuthorizeCommand>("AuthorizeCommand");
     console.log(this.authorizeCommand);
 
     try {

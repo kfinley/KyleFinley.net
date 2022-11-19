@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { S3Client } from '@aws-sdk/client-s3';
 import { SNSClient, } from "@aws-sdk/client-sns";
 import { SFNClient } from "@aws-sdk/client-sfn";
