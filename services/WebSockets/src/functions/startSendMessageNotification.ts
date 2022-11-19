@@ -8,7 +8,6 @@ export const handler = async (event: SNSEvent, context: Context) => {
 
   try {
 
-
     console.log(`Send client message via SNS Event. Count: ${event.Records.length}`);
     const { userId } = JSON.parse(event.Records[0].Sns.Message);
 

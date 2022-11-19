@@ -1,17 +1,17 @@
-// import * as cdk from 'aws-cdk-lib';
 import { Stack, Duration, CfnOutput } from 'aws-cdk-lib';
-// import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
-// import { AnyPrincipal, Effect, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
 import { WebSocketLambdaAuthorizer } from '@aws-cdk/aws-apigatewayv2-authorizers-alpha';
 import { WebSocketLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integrations-alpha';
-// import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
 import { join } from 'path';
 import { NodejsFunction, NodejsFunctionProps, SourceMapMode } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { LambdaSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
+import { Chain, Choice, Condition, Fail, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
+import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
 
 export interface WebSocketsApiProps {
   connectionsTable: Table;
@@ -86,19 +86,23 @@ export class WebSocketsApi extends Construct {
       });
     }
 
+    // Lambda Functions....
     const authorizerHandler = createLambda('AuthorizerHandler', 'functions/auth.handler', {
       WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: props!.gitHubClientId,
       WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: props!.gitHubClientSecret
     });
 
-    const onConnectHandler = createLambda('OnConnectHandler', 'functions/connect.handler');
+    const onConnectHandler = createLambda('OnConnectHandler', 'functions/connect.handler', {
+      WEBSOCKETS_CONNECTION_TABLE: props!.connectionsTable.tableName
+    });
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'functions/disconnect.handler');
+    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'functions/disconnect.handler', {
+      WEBSOCKETS_CONNECTION_TABLE: props!.connectionsTable.tableName
+    });
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createLambda('OnMessageHandler', 'functions/default.handler');
-    props?.connectionsTable.grantReadWriteData(onMessageHandler);
+    const onMessageHandler = createLambda('OnMessageHandler', 'functions/default.handler',);
 
     const getConnection = createLambda('GetConnection', 'functions/getConnection.handler');
 
@@ -106,9 +110,52 @@ export class WebSocketsApi extends Construct {
 
     const startSendMessageNotification = createLambda('StartSendMessageNotification', 'functions/startSendMessageNotification.handler')
 
+    // Lambda Functions end...
+
+    // SNS Topics & Subscriptions...
+    const authProcessedTopic = new Topic(this, 'sns-topic', {
+      displayName: 'AuthProcessedTopic',
+    });
+
+    authProcessedTopic.addSubscription(new LambdaSubscription(startSendMessageNotification));
+
+    // SNS Topics & Subs end...
+
+    // Step Functions...
+
+    const getConnectionInvocation = new LambdaInvoke(this, "GetConnection", {
+      lambdaFunction: getConnection,
+      outputPath: '$.Payload',
+    });
+
+    const sendMessageInvocation = new LambdaInvoke(this, "SendMessage", {
+      lambdaFunction: sendMessage
+    });
+
+    const isConnected = new Choice(this, 'Has ConnectionId?');
+
+    const chain = Chain.start(getConnectionInvocation)
+      .next(
+        isConnected
+          .when(Condition.stringGreaterThan('$.connectionId', ''), sendMessageInvocation)
+          .otherwise(new Fail(this, "Fail", {
+            error: "No ConnectionId Found!"
+          }))
+      );
+
+    const stateMachine = new StateMachine(this, 'kylefinley.net-SendMessage', {
+      definition: chain
+    });
+
+    stateMachine.grantExecution(startSendMessageNotification);
+
+    // Step Functions end...
+
+    // WebSockets...
+
     const authorizer = new WebSocketLambdaAuthorizer('Authorizer', authorizerHandler, {
       identitySource: [
-        // 'route.request.header.Authorization',
+        // 'route.request.header.Authorization',          // todo: ??
         'route.request.header.Sec-WebSocket-Protocol']
     });
 
@@ -135,32 +182,10 @@ export class WebSocketsApi extends Construct {
       value: `stage url: ${stage.url}`
     });
 
-    // taken from incomplete online example... https://aws.plainenglish.io/setup-api-gateway-websocket-api-with-cdk-c1e58cf3d2be
-    // seems to be created off of this. https://github.com/aws-samples/websocket-chat-application
-    // const webSocketApi = new WebSocketApi(this, 'TodosWebsocketApi', {
-    //   connectRouteOptions: { integration: new LambdaWebSocketIntegration({ handler: connectHandler }) },
-    //   disconnectRouteOptions: { integration: new LambdaWebSocketIntegration({ handler: disconnetHandler }) },
-    // });
 
-    // const apiStage = new WebSocketStage(this, 'DevStage', {
-    //   webSocketApi,
-    //   stageName: 'dev',
-    //   autoDeploy: true,
-    // });
+    // Review https://aws.plainenglish.io/setup-api-gateway-websocket-api-with-cdk-c1e58cf3d2be
 
-
-    // const connectHandler = new NodejsFunction(this, 'ConnectHandler', {
-    //   entry: 'lambdas/connectHandler.ts',
-    //   environment: {
-    //     TABLE_NAME: table.tableName,
-    //   },
-    // });
-
-    // const table = new dynamodb.Table(this, 'WebsocketConnections', {
-    //   partitionKey: { name: 'connectionId', type: dynamodb.AttributeType.STRING },
-    // });
-
-    // THIS!!!!!!!!!!!!!!!!!!!!!!!
+    // Add routes for commands sent from client
     //
     // addRoute allows messaged like {"action":"addTodo","data":"hello world"} to be passed to ws and it lands on the right handler
     // webSocketApi.addRoute('addTodo', {
@@ -169,17 +194,8 @@ export class WebSocketsApi extends Construct {
     //   }),
     // });
 
-    // table.grantReadWriteData(connectHandler);
 
-    // const connectionsArns = this.formatArn({
-    //   service: 'execute-api',
-    //   resourceName: `${apiStage.stageName}/POST/*`,
-    //   resource: webSocketApi.apiId,
-    // });
-
-    // addTodoHandler.addToRolePolicy(
-    //   new PolicyStatement({ actions: ['execute-api:ManageConnections'], resources: [connectionsArns] })
-    // );
+    // WebSockets end...
 
   }
 

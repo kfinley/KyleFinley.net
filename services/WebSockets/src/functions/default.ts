@@ -2,7 +2,6 @@ import {
   APIGatewayProxyHandler,
   APIGatewayProxyEvent,
 } from 'aws-lambda';
-import 'source-map-support/register';
 import bootstrapper from '../bootstrapper';
 import { createResponse } from '../createResponse';
 import { IMessageCommand } from './../commands/messageCommand';

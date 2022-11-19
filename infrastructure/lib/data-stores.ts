@@ -17,6 +17,7 @@ export class DataStores extends Construct {
     super(scope, id);
 
     this.connectionsTable = new Table(this, 'WebSockets-Connections', {
+      tableName: `kylefinley.net-WebSockets-Connections`,
       partitionKey: { name: 'userId', type: AttributeType.STRING },
       sortKey: { name: 'connectionId', type: AttributeType.STRING },
       billingMode: BillingMode.PAY_PER_REQUEST,

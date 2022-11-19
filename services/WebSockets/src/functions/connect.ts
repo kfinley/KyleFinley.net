@@ -2,9 +2,8 @@ import {
   APIGatewayProxyHandler,
   APIGatewayProxyEvent,
 } from 'aws-lambda';
-import 'source-map-support/register';
 import bootstrapper from '../bootstrapper';
-import { SaveConnectionCommand, SendMessageCommand } from '../commands';
+import { SaveConnectionCommand } from '../commands';
 import { createResponse } from '../createResponse';
 import { PublishMessageCommand } from '@kylefinley.net/aws-commands/src';
 
@@ -14,12 +13,14 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
 
   try {
 
-
-    //console.log('connect');
+    console.log('connect');
 
     let { authorizer } = event.requestContext
 
-    // console.log(`Authorizer: ${JSON.stringify(authorizer)}`);
+    console.log(`Authorizer: ${JSON.stringify(authorizer)}`);
+
+    console.log('event', event),
+    console.log('context', context);
 
     if (authorizer === null || authorizer === undefined) { // || authorizer.policyDocument === undefined
       return createResponse(event, 401, 'Unauthorized');
@@ -35,7 +36,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
       //TODO: Test to see if we can send this in authorizeConnection instead of here...
       await container.get<PublishMessageCommand>("PublishMessageCommand").runAsync({
         topic: 'AuthProcessedTopic',  // SNS Topic
-        subject: 'Auth/token',        // {Store_Module}/{actionName}
+        subject: 'Auth/token',        // {Store_Module}/{actionName} on client if message sent to client
         message: JSON.stringify({     // params sent to store action
           userId: authorizer.principalId,
           access_token: authorizer.access_token
