@@ -46,7 +46,7 @@ export default function bootstrapper() {
   return container;
 }
 
-function addTransientIfNeeded<T>(constructor: any, id: string, container: Container) {
+function addTransientIfNeeded<T>(constructor: any, id: string | symbol, container: Container) {
   if (!container.isBound(id)) {
     container.bind<T>(id).to(constructor);
     // container.addTransient<T>(constructor, id);

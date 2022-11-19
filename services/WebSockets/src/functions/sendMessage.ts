@@ -6,7 +6,7 @@ export const handler: Handler = async (event: any, context: Context) => {
 
   const container = bootstrapper();
 
-  const sendMessageCmd = () => container.get<SendMessageCommand>("SendMessageCommand");
+  const sendMessageCmd = () => container.get<SendMessageCommand>(Symbol.for("SendMessageCommand"));
 
   const { connectionId, subject, message } = event;
 

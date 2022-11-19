@@ -26,13 +26,13 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
 
     if ((authorizer !== null || authorizer === undefined)) { // && authorizer.policyDocument.Statement[0].Effect == "Allow"
 
-      await container.get<SaveConnectionCommand>("SaveConnectionCommand").runAsync({
+      await container.get<SaveConnectionCommand>(Symbol.for("SaveConnectionCommand")).runAsync({
         userId: authorizer.principalId,
         connectionId: event.requestContext.connectionId as string
       });
 
       //TODO: Test to see if we can send this in authorizeConnection instead of here...
-      await container.get<PublishMessageCommand>("PublishMessageCommand").runAsync({
+      await container.get<PublishMessageCommand>(Symbol.for("PublishMessageCommand")).runAsync({
         topic: 'AuthProcessedTopic',  // SNS Topic
         subject: 'Auth/token',        // {Store_Module}/{actionName}
         message: JSON.stringify({     // params sent to store action

@@ -38,15 +38,7 @@ export default function bootstrapper(container: Container) {
       }));
   }
 
-  addTransientIfNeeded<GetStoredObjectCommand>(GetStoredObjectCommand, "GetStoredObjectCommand", container);
-  addTransientIfNeeded<PublishMessageCommand>(PublishMessageCommand, "PublishMessageCommand", container);
-  addTransientIfNeeded<StartStepFunctionCommand>(StartStepFunctionCommand, "StartStepFunctionCommand", container);
+  container.bindTo<GetStoredObjectCommand>(GetStoredObjectCommand, Symbol.for("GetStoredObjectCommand"));
+  container.bindTo<PublishMessageCommand>(PublishMessageCommand, Symbol.for("PublishMessageCommand"));
+  container.bindTo<StartStepFunctionCommand>(StartStepFunctionCommand, Symbol.for("StartStepFunctionCommand"));
 }
-
-function addTransientIfNeeded<T>(constructor: any, id: string, container: Container) {
-  if (!container.isBound(id)) {
-    container.bindTo<T>(constructor, id);
-    // container.addTransient<T>(constructor, id);
-  }
-}
-

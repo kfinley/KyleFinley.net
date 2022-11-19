@@ -8,7 +8,7 @@ export const handler: Handler = async (event: any, context: Context) => {
 
   const container = bootstrapper();
 
-  const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
+  const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>(Symbol.for("GetConnectionByUserIdCommand"));
 
   // console.log(`getConnection`, event);
 

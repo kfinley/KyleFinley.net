@@ -9,7 +9,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
 
     const container = bootstrapper();
 
-    const response = await container.get<DeleteConnectionCommand>('DeleteConnectionCommand').runAsync({
+    const response = await container.get<DeleteConnectionCommand>(Symbol.for('DeleteConnectionCommand')).runAsync({
       connectionId: event.requestContext.connectionId
     });
 
