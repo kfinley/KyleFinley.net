@@ -68,7 +68,8 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
             clientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,  //TODO: DEAL WITH THIS
             clientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET //TODO: DEAL WITH THIS
           },
-          code: params.code
+          code: params.code,
+          container
         };
 
       authResult = await this.authorizeCommand.runAsync(authRequest);
