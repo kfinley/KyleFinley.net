@@ -1,5 +1,6 @@
 import 'reflect-metadata';
-import { Container, container } from 'inversify-props';
+import { Container } from 'inversify-props';
+import { container } from './inversify.config';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagementapi';
 import { bootstrapper as awsCommandsBootstrapper } from '@kylefinley.net/aws-commands/src';
@@ -11,11 +12,6 @@ import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-c
 
 
 export default function bootstrapper() {
-
-  // const container = new Container({
-  //   autoBindInjectable: true,
-  //   skipBaseClassChecks: true,
-  // });
 
   console.log('Bootstrapper');
 
@@ -52,7 +48,8 @@ export default function bootstrapper() {
 
 function addTransientIfNeeded<T>(constructor: any, id: string, container: Container) {
   if (!container.isBound(id)) {
-    container.addTransient<T>(constructor, id);
+    container.bind<T>(id).to(constructor);
+    // container.addTransient<T>(constructor, id);
   }
 }
 

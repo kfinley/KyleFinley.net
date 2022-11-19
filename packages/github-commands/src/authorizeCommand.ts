@@ -35,9 +35,11 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
 
   async runAsync(params: AuthorizeRequest): Promise<AuthorizeResponse> {
 
-    //console.log('AuthorizeCommand');
-    //console.log(`code: ${params.code}`);
-
+    console.log('AuthorizeCommand');
+    console.log(`code: ${params.code}`);
+    console.log(this.apiClient);
+    console.log(this.getUserCommand);
+    
     const api = new URL('/login/oauth/access_token', 'https://github.com')
 
     api.searchParams.set('client_id', params.oauth.clientId as string)

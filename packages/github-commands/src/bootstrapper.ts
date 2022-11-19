@@ -6,7 +6,7 @@ import { GetUserCommand } from './getUser';
 export default function bootstrapper(container: Container) {
 
   console.log('github-commands bootstrapper');
-  
+
   addTransientIfNeeded<ApiClient>(apiClient, 'ApiClient', container);
   addTransientIfNeeded<GetUserCommand>(GetUserCommand, "GetUserCommand", container);
 
@@ -14,6 +14,7 @@ export default function bootstrapper(container: Container) {
 
 function addTransientIfNeeded<T>(constructor: any, id: string, container: Container) {
   if (!container.isBound(id)) {
-    container.addTransient<T>(constructor, id);
+    container.bindTo<T>(constructor, id);
+    // container.addTransient<T>(constructor, id);
   }
 }

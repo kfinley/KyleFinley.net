@@ -5,6 +5,7 @@
     "sourceMap": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "paths": {

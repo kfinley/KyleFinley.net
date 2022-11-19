@@ -13,6 +13,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
     "isolatedModules": true,
     "baseUrl": ".",
     "types": ["node"],
