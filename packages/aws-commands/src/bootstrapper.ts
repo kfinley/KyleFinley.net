@@ -38,7 +38,7 @@ export default function bootstrapper(container: Container) {
       }));
   }
 
-  container.bindTo<GetStoredObjectCommand>(GetStoredObjectCommand, Symbol.for("GetStoredObjectCommand"));
-  container.bindTo<PublishMessageCommand>(PublishMessageCommand, Symbol.for("PublishMessageCommand"));
-  container.bindTo<StartStepFunctionCommand>(StartStepFunctionCommand, Symbol.for("StartStepFunctionCommand"));
+  container.bindTo<GetStoredObjectCommand>(GetStoredObjectCommand, "GetStoredObjectCommand");
+  container.bindTo<PublishMessageCommand>(PublishMessageCommand, "PublishMessageCommand");
+  container.bindTo<StartStepFunctionCommand>(StartStepFunctionCommand, "StartStepFunctionCommand");
 }

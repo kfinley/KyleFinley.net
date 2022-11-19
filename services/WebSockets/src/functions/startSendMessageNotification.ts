@@ -16,7 +16,7 @@ export const handler = async (event: SNSEvent, context: Context) => {
       throw new Error('userId must be provided in Message in order to send to client.');
     }
 
-    const cmd = container.get<StartStepFunctionCommand>(Symbol.for("StartStepFunctionCommand"));
+    const cmd = container.get<StartStepFunctionCommand>("StartStepFunctionCommand");
     const response = await cmd.runAsync({
       input: JSON.stringify({
         subject: event.Records[0].Sns.Subject,

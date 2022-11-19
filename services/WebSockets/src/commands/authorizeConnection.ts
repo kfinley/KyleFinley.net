@@ -58,7 +58,7 @@ export class AuthorizeConnectionCommand implements Command<AuthorizeConnectionRe
 
   async runAsync(params: AuthorizeConnectionRequest): Promise<AuthorizeConnectionResponse> {
 
-    this.authorizeCommand = container.get<AuthorizeCommand>(Symbol.for("AuthorizeCommand"));
+    this.authorizeCommand = container.get<AuthorizeCommand>("AuthorizeCommand");
     console.log(this.authorizeCommand);
 
     try {

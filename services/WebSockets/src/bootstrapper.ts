@@ -33,15 +33,17 @@ export default function bootstrapper() {
       }));
   }
 
-  container.bindTo<AuthorizeCommand>(Symbol.for("AuthorizeCommand"));
-  container.bindTo<AuthorizeConnectionCommand>(Symbol.for("AuthorizeConnectionCommand"));
-  container.bindTo<DeleteConnectionCommand>(Symbol.for("DeleteConnectionCommand"));
-  container.bindTo<DeleteConnectionByUserIdCommand>(Symbol.for("DeleteConnectionByUserIdCommand"));
-  container.bindTo<GetConnectionByUserIdCommand>(Symbol.for("GetConnectionByUserIdCommand"));
-  container.bindTo<SendMessageCommand>(Symbol.for("SendMessageCommand"));
-  container.bindTo<SaveConnectionCommand>(Symbol.for("SaveConnectionCommand"));
+  container.bindTo<AuthorizeCommand>("AuthorizeCommand");
+  container.bindTo<AuthorizeConnectionCommand>("AuthorizeConnectionCommand");
+  container.bindTo<DeleteConnectionCommand>("DeleteConnectionCommand");
+  container.bindTo<DeleteConnectionByUserIdCommand>("DeleteConnectionByUserIdCommand");
+  container.bindTo<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
+  container.bindTo<SendMessageCommand>("SendMessageCommand");
+  container.bindTo<SaveConnectionCommand>("SaveConnectionCommand");
 
-  container.bindTo<IMessageCommand>(Symbol.for("PingMessageCommand"));
+  container.bindTo<IMessageCommand>("PingMessageCommand");
+
+  console.log("Bootstrapper Done");
 
   return container;
 }

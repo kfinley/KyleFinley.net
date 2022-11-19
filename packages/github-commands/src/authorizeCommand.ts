@@ -40,8 +40,8 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
     console.log(`code: ${params.code}`);
     console.log('container', params.container);
 
-    this.apiClient = params.container.get<ApiClient>(Symbol.for("ApiClient"));
-    this.getUserCommand = params.container.get<GetUserCommand>(Symbol.for("GetUserCommand"));
+    this.apiClient = params.container.get<ApiClient>("ApiClient");
+    this.getUserCommand = params.container.get<GetUserCommand>("GetUserCommand");
 
     console.log(this.apiClient);
     console.log(this.getUserCommand);

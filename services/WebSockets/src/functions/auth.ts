@@ -7,7 +7,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
 
   const container = bootstrapper();
 
-  const authConnectionCmd = () => container.get<AuthorizeConnectionCommand>(Symbol.for("AuthorizeConnectionCommand"));
+  const authConnectionCmd = () => container.get<AuthorizeConnectionCommand>("AuthorizeConnectionCommand");
 
   console.log(container);
 

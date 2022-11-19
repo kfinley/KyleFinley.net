@@ -21,7 +21,7 @@ export class GetUserCommand implements Command<GetUserRequest, GetUserResponse> 
 
   async runAsync(params: GetUserRequest): Promise<GetUserResponse> {
 
-    this.apiClient = params.container.get<ApiClient>(Symbol.for("ApiClient"));
+    this.apiClient = params.container.get<ApiClient>("ApiClient");
     const api = new URL('/user', 'https://api.github.com');
 
     const { data } = await this.apiClient.getAsync<GitHubUser>(api.toString(), {
