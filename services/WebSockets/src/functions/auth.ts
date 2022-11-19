@@ -3,9 +3,9 @@ import { createResponse } from '../createResponse';
 import bootstrapper from '../bootstrapper';
 import { AuthorizeConnectionCommand } from '../commands';
 
-export const handler: APIGatewayProxyHandler = async (event) => {
+const container = bootstrapper();
 
-  const container = bootstrapper();
+export const handler: APIGatewayProxyHandler = async (event) => {
 
   const authConnectionCmd = () => container.get<AuthorizeConnectionCommand>("AuthorizeConnectionCommand");
 

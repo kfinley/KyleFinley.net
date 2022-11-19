@@ -15,8 +15,8 @@ import { DataStores } from './data-stores';
 
 export interface InfraStackProps extends StackProps {
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
-  gitHubClientId: string | undefined;
-  gitHubClientSecret: string | undefined;
+  gitHubClientId: string;
+  gitHubClientSecret: string;
 }
 
 export class InfrastructureStack extends Stack {
@@ -33,8 +33,8 @@ export class InfrastructureStack extends Stack {
     const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
       logLevel: props?.logLevel!,
       connectionsTable: dataStores?.connectionsTable!,
-      gitHubClientId: props?.gitHubClientId,
-      gitHubClientSecret: props?.gitHubClientSecret
+      gitHubClientId: props!.gitHubClientId,
+      gitHubClientSecret: props!.gitHubClientSecret
     });
 
     const {

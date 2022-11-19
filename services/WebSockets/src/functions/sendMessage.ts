@@ -2,9 +2,9 @@ import { Context, Handler } from 'aws-lambda';
 import bootstrapper from './../bootstrapper';
 import { SendMessageCommand } from '../commands';
 
-export const handler: Handler = async (event: any, context: Context) => {
+const container = bootstrapper();
 
-  const container = bootstrapper();
+export const handler: Handler = async (event: any, context: Context) => {
 
   const sendMessageCmd = () => container.get<SendMessageCommand>("SendMessageCommand");
 

@@ -15,8 +15,8 @@ import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 
 export interface WebSocketsApiProps {
   connectionsTable: Table;
-  gitHubClientId: string | undefined;
-  gitHubClientSecret: string | undefined;
+  gitHubClientId: string;
+  gitHubClientSecret: string;
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
 }
 
@@ -29,7 +29,10 @@ export class WebSocketsApi extends Construct {
 
     const functionsPath = '../../services/WebSockets/dist';
 
-    const createLambda = (name: string, handler: string ) => {
+    const createLambda = (name: string, handler: string, env?: {
+      [key: string]: string;
+    } | undefined) => {
+
       return new lambda.Function(this, name, {
         runtime: lambda.Runtime.NODEJS_16_X,
         memorySize: 1024,
@@ -42,6 +45,7 @@ export class WebSocketsApi extends Construct {
           AVAILABILITY_ZONES: JSON.stringify(
             Stack.of(this).availabilityZones,
           ),
+          ...env
         },
       });
     };
@@ -82,7 +86,10 @@ export class WebSocketsApi extends Construct {
       });
     }
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'functions/auth.handler');
+    const authorizerHandler = createLambda('AuthorizerHandler', 'functions/auth.handler', {
+      WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: props!.gitHubClientId,
+      WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: props!.gitHubClientSecret
+    });
 
     const onConnectHandler = createLambda('OnConnectHandler', 'functions/connect.handler');
     props?.connectionsTable.grantReadWriteData(onConnectHandler);

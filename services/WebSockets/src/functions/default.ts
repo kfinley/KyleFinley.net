@@ -7,12 +7,11 @@ import bootstrapper from '../bootstrapper';
 import { createResponse } from '../createResponse';
 import { IMessageCommand } from './../commands/messageCommand';
 
+const container = bootstrapper();
 
 export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEvent, context, callback) => {
 
   try {
-
-    const container = bootstrapper();
 
     console.log(event);
     console.log(event.body);

@@ -1,12 +1,10 @@
-import { container } from 'inversify-props';
 import { Context, Handler } from 'aws-lambda';
 import bootstrapper from './../bootstrapper';
 import { GetConnectionByUserIdCommand } from '../commands';
 
+const container = bootstrapper();
 
 export const handler: Handler = async (event: any, context: Context) => {
-
-  const container = bootstrapper();
 
   const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 

@@ -3,11 +3,11 @@ import { DeleteConnectionCommand } from '../commands';
 import bootstrapper from '../bootstrapper';
 import { createResponse } from '../createResponse';
 
+const container = bootstrapper();
+
 export const handler: APIGatewayProxyHandler = async (event) => {
+
   try {
-
-
-    const container = bootstrapper();
 
     const response = await container.get<DeleteConnectionCommand>('DeleteConnectionCommand').runAsync({
       connectionId: event.requestContext.connectionId

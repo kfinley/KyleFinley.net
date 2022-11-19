@@ -4,4 +4,6 @@ node_modules
 lerna-debug.log
 package.json.lerna_backup
 
+*.js
+
 .DS_Store
