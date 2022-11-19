@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { Container } from 'inversify-props';
+import { Container, container } from 'inversify-props';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagementapi';
 import { bootstrapper as awsCommandsBootstrapper } from '@kylefinley.net/aws-commands/src';
@@ -12,10 +12,10 @@ import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-c
 
 export default function bootstrapper() {
 
-  const container = new Container({
-    autoBindInjectable: true,
-    skipBaseClassChecks: true,
-  });
+  // const container = new Container({
+  //   autoBindInjectable: true,
+  //   skipBaseClassChecks: true,
+  // });
 
   console.log('Bootstrapper');
 

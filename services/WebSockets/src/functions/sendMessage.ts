@@ -1,8 +1,6 @@
-import { container } from 'inversify-props';
 import { Context, Handler } from 'aws-lambda';
 import bootstrapper from './../bootstrapper';
 import { SendMessageCommand } from '../commands';
-
 
 export const handler: Handler = async (event: any, context: Context) => {
 
