@@ -14,30 +14,42 @@ export default function bootstrapper(container: Container) {
 
   if (!container.isBound("SNSClient")) {
     container.bind<SNSClient>("SNSClient")
-      .toDynamicValue(() => new SNSClient({
-        region: "us-east-1",
-        endpoint: "http://localhost:4002" //TODO: Deal with this
-      }));
+      .toDynamicValue(() => process.env.NODE_ENV === 'production'
+        ?
+        new SNSClient({}) // Prod
+        :
+        new SNSClient({ // Local Dev
+          region: "us-east-1",
+          endpoint: "http://localhost:4002"
+        }));
   }
 
   if (!container.isBound("SFNClient")) {
     container.bind<SFNClient>("SFNClient")
-      .toDynamicValue(() => new SFNClient({
-        endpoint: "http://kylefinley.sfn:8083" //TODO: Deal with this
-      }));
+      .toDynamicValue(() => process.env.NODE_ENV === 'production'
+        ?
+        new SFNClient({}) // Prod
+        :
+        new SFNClient({ // Local Dev
+          endpoint: "http://kylefinley.sfn:8083"
+        }));
   }
 
   if (!container.isBound("S3Client")) {
     container.bind<S3Client>("S3Client")
-      .toDynamicValue(() => new S3Client({
-        region: "us-east-1",
-        endpoint: "http://localhost:4569", //TODO: Deal with this
-        forcePathStyle: true,
-        credentials: { //TODO: Deal with this
-          accessKeyId: 'S3RVER',
-          secretAccessKey: 'S3RVER',
-        }
-      }));
+      .toDynamicValue(() => process.env.NODE_ENV === 'production'
+        ?
+        new S3Client({}) // Prod
+        :
+        new S3Client({ // Local Dev
+          region: "us-east-1",
+          endpoint: "http://localhost:4569",
+          forcePathStyle: true,
+          credentials: {
+            accessKeyId: 'S3RVER',
+            secretAccessKey: 'S3RVER',
+          }
+        }));
   }
 
   container.bind<GetStoredObjectCommand>("GetStoredObjectCommand").to(GetStoredObjectCommand);
