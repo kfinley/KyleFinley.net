@@ -10,7 +10,7 @@ import { PingMessageCommand } from './commands/pingMessage';
 
 export default function bootstrapper() {
 
-  console.log('Bootstrapper');
+  console.log('Bootstrapper', process.env.NODE_ENV);
 
   awsCommandsBootstrapper(container);
 

@@ -22,6 +22,7 @@ jobs:
 
       - name: Bootstrap & Build
         env:
+          NODE_ENV: production
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
@@ -43,6 +44,7 @@ jobs:
         env:
           AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT_ID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
+          NODE_ENV: production
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
