@@ -160,7 +160,7 @@ export class WebSocketsApi extends Construct {
       .next(
         isConnected
           .when(Condition.stringEquals('$.connectionId', ''), new Fail(this, "Fail", { error: "No ConnectionId Found" }))
-          .otherwise(sendMessageInvocation.next(new Succeed(this, 'Done'))));
+          .otherwise(sendMessageInvocation));
 
     const stateMachine = new StateMachine(this, 'kylefinley.net-WebSockets-SendMessage', {
       definition: chain

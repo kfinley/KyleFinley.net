@@ -1,12 +1,13 @@
 import { Inject, injectable } from 'inversify-props';
 import { PublishCommand, SNSClient, } from "@aws-sdk/client-sns";
 import { Command } from '@kylefinley.net/commands/src';
+import { Container } from 'inversify-props';
 
 export interface PublishMessageRequest {
   subject?: string,
   message?: string,
   topic: string,
-  
+  container: Container
 }
 
 export interface PublishMessageResponse { }
@@ -14,10 +15,12 @@ export interface PublishMessageResponse { }
 @injectable()
 export class PublishMessageCommand implements Command<PublishMessageRequest, PublishMessageResponse> {
 
-  @Inject("SNSClient")
+  // @Inject("SNSClient")
   private snsClient!: SNSClient;
 
   async runAsync(params: PublishMessageRequest): Promise<any> {
+
+    this.snsClient = params.container.get<SNSClient>("SNSClient");
 
     var sendParams = {
       Subject: params.subject,

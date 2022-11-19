@@ -18,7 +18,8 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
       .get<IMessageCommand>(`${event.body}MessageCommand`)
       .runAsync({
         connectionId: event.requestContext.connectionId as string,
-        message: event.body
+        message: event.body,
+        container
       });
 
     return createResponse(event, 200, 'Success');

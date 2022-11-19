@@ -2,6 +2,7 @@ import { DynamoDBClient, QueryCommand } from '@aws-sdk/client-dynamodb';
 import { marshall } from '@aws-sdk/util-dynamodb';
 import { Command } from '@kylefinley.net/commands/src';
 import { Inject, injectable } from 'inversify-props';
+import { container } from '../inversify.config';
 
 const CONNECTION_TABLE = process.env.WEBSOCKETS_CONNECTION_TABLE as string;
 
@@ -17,10 +18,12 @@ export interface GetConnectionResponse {
 @injectable()
 export class GetConnectionByUserIdCommand implements Command<GetConnectionRequest, GetConnectionResponse> {
 
-  @Inject("DynamoDBClient")
+  // @Inject("DynamoDBClient")
   private ddbClient!: DynamoDBClient;
 
   async runAsync(params: GetConnectionRequest): Promise<GetConnectionResponse> {
+
+    this.ddbClient = container.get<DynamoDBClient>("DynamoDBClient");
 
     console.log(`Getting connection for ${params.userId}`);
 

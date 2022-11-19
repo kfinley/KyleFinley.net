@@ -3,16 +3,19 @@ import { DynamoDBClient, DeleteItemCommand, ScanCommand } from '@aws-sdk/client-
 import { Command } from '@kylefinley.net/commands/src';
 import { Inject, injectable } from 'inversify-props';
 import { DeleteConnectionRequest, DeleteConnectionResponse } from '../models';
+import { container } from '../inversify.config';
 
 const CONNECTION_TABLE = process.env.WEBSOCKETS_CONNECTION_TABLE as string;
 
 @injectable()
-export class DeleteConnectionCommand implements Command<DeleteConnectionRequest, DeleteConnectionResponse> {
+export class  DeleteConnectionCommand implements Command<DeleteConnectionRequest, DeleteConnectionResponse> {
 
-  @Inject("DynamoDBClient")
+  // @Inject("DynamoDBClient")
   private ddbClient!: DynamoDBClient;
 
   async runAsync(params: DeleteConnectionRequest): Promise<DeleteConnectionResponse> {
+
+    this.ddbClient = container.get<DynamoDBClient>("DynamoDBClient");
 
     let { userId, connectionId } = params;
 

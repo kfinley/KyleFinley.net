@@ -4,6 +4,7 @@ import { Command } from '@kylefinley.net/commands/src';
 import { Inject, injectable } from 'inversify-props';
 import { DeleteConnectionByUserIdCommand } from '.';
 import { convertRequestToItem } from './helpers';
+import { container } from '../inversify.config';
 
 const CONNECTION_TABLE = process.env.WEBSOCKETS_CONNECTION_TABLE as string;
 
@@ -19,13 +20,16 @@ export interface SaveConnectionResponse {
 @injectable()
 export class SaveConnectionCommand implements Command<SaveConnectionRequest, SaveConnectionResponse> {
 
-  @Inject("DynamoDBClient")
+  // @Inject("DynamoDBClient")
   private ddbClient!: DynamoDBClient;
 
-  @Inject("DeleteConnectionByUserIdCommand")
+  // @Inject("DeleteConnectionByUserIdCommand")
   private deleteConnectionByUserId!: DeleteConnectionByUserIdCommand;
 
   async runAsync(params: SaveConnectionRequest): Promise<SaveConnectionResponse> {
+
+    this.ddbClient = container.get<DynamoDBClient>("DynamoDBClient");
+    this.deleteConnectionByUserId = container.get<DeleteConnectionByUserIdCommand>("DeleteConnectionByUserIdCommand");
 
     // Delete any existing connection.
     //TODO: rework this to allow multi-device connections

@@ -8,7 +8,7 @@ export const handler: Handler = async (event: any, context: Context) => {
 
   const getConnectionCmd = () => container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 
-  // console.log(`getConnection`, event);
+  console.log(`getConnection`, event);
 
   const { userId } = JSON.parse(event.message);
 

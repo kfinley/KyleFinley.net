@@ -41,6 +41,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
           userId: authorizer.principalId,
           access_token: authorizer.access_token
         }),
+        container
       });
 
       // If we didn't want to send the access token through SNS and step functions (logs) then we could
