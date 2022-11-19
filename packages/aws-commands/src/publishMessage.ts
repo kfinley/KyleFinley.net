@@ -25,7 +25,7 @@ export class PublishMessageCommand implements Command<PublishMessageRequest, Pub
     var sendParams = {
       Subject: params.subject,
       Message: params.message,
-      TopicArn: `arn:aws:sns:us-east-1:101010101010:${params.topic}`        //TODO: Fix this...
+      TopicArn: `arn:aws:sns:us-east-1:146665891952:${params.topic}`        //TODO: Fix this...
     };
 
     const command = new PublishCommand(sendParams);

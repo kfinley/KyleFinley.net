@@ -32,7 +32,7 @@ custom:
 
   serverless-offline-sns:
     host: 0.0.0.0
-    accountId: 101010101010
+    accountId: 146665891952
     debug: false
 
   serverless-offline:
@@ -47,7 +47,7 @@ custom:
     port: 4569
 
   offlineStepFunctions:
-    accountId: 101010101010
+    accountId: 146665891952
     host: kylefinley.sfn
     port: 8083
     region: us-east-1

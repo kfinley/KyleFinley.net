@@ -18,7 +18,7 @@ services:
     ports:
       - "8083:8083"
     environment:
-      AWS_ACCOUNT_ID: 101010101010
+      AWS_ACCOUNT_ID: 146665891952
       AWS_DEFAULT_REGION: us-east-1
       AWS_ACCESS_KEY_ID: S3RVER
       AWS_SECRET_ACCESS_KEY: S3RVER
@@ -71,7 +71,7 @@ services:
       - "4002:4002"
       - "4569:4569"
     environment:
-      AWS_ACCOUNT_ID: 101010101010
+      AWS_ACCOUNT_ID: 146665891952
       AWS_REGION: us-east-1
       AWS_ACCESS_KEY_ID: S3RVER
       AWS_SECRET_ACCESS_KEY: S3RVER
