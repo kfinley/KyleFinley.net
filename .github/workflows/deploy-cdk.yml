@@ -22,7 +22,6 @@ jobs:
 
       - name: Bootstrap & Build
         env:
-          NODE_ENV: production
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
