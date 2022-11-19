@@ -10,6 +10,8 @@ import {
 
 export default function bootstrapper(container: Container) {
 
+  console.log('aws-commands bootstrapper');
+
   if (!container.isBound("SNSClient")) {
     container.bind<SNSClient>("SNSClient")
       .toDynamicValue(() => new SNSClient({
@@ -41,4 +43,7 @@ export default function bootstrapper(container: Container) {
   container.bindTo<GetStoredObjectCommand>(GetStoredObjectCommand, "GetStoredObjectCommand");
   container.bindTo<PublishMessageCommand>(PublishMessageCommand, "PublishMessageCommand");
   container.bindTo<StartStepFunctionCommand>(StartStepFunctionCommand, "StartStepFunctionCommand");
+
+  console.log('aws-commands bootstrapper done');
+
 }
