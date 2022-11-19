@@ -13,6 +13,7 @@ import { Topic } from 'aws-cdk-lib/aws-sns';
 import { LambdaSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
 import { Chain, Choice, Condition, Fail, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
 import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
+import { IRole } from 'aws-cdk-lib/aws-iam';
 //import { StateMachine } from '@matthewbonig/state-machine';
 
 export interface WebSocketsApiProps {
@@ -118,32 +119,19 @@ export class WebSocketsApi extends Construct {
 
     const startSendMessageNotification = createLambda('StartSendMessageNotification', 'functions/startSendMessageNotification.handler')
 
-    // 👇 create a policy statement
-    // const emptyPolicy = new iam.PolicyStatement({
-    //   effect: iam.Effect.ALLOW,
-    //   actions: [],
-    //   resources: [],
-    // });
-
-    // // 👇 attach the policy to the function's role
-    // startSendMessageNotification.role?.attachInlinePolicy(
-    //   new iam.Policy(this, 'policy', {
-    //     statements: [emptyPolicy],
-    //   }),
-    // );
-
     // Lambda Functions end...
 
     // SNS Topics & Subscriptions...
     const authProcessedTopic = new Topic(this, 'sns-topic', {
+      topicName: 'kylefinley.net-AuthProcessedTopic',
       displayName: 'AuthProcessedTopic',
     });
 
-    authProcessedTopic.grantPublish(onConnectHandler);
+    authProcessedTopic.grantPublish(onConnectHandler.role as IRole);
     authProcessedTopic.addSubscription(new LambdaSubscription(startSendMessageNotification));
 
-    new CfnOutput(this, 'authProcessedTopic', {
-      value: `arn: ${authProcessedTopic.topicArn}`
+    new CfnOutput(this, 'AuthProcessedTopic', {
+      value: `AuthProcessedTopic ARN: ${authProcessedTopic.topicArn}`
     });
 
     // SNS Topics & Subs end...

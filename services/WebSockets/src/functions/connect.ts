@@ -35,7 +35,7 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
 
       //TODO: Test to see if we can send this in authorizeConnection instead of here...
       await container.get<PublishMessageCommand>("PublishMessageCommand").runAsync({
-        topic: 'AuthProcessedTopic',  // SNS Topic
+        topic: 'kylefinley.net-AuthProcessedTopic',  // SNS Topic
         subject: 'Auth/token',        // {Store_Module}/{actionName} on client if message sent to client
         message: JSON.stringify({     // params sent to store action
           userId: authorizer.principalId,
