@@ -33,7 +33,7 @@ StartSendMessageNotification:
   handler: startSendMessageNotification.handler
   events:
     - sns:
-        arn: arn:aws:sns:us-east-1:146665891952:AuthProcessedTopic #TODO: Deal with arn
+        arn: arn:aws:sns:us-east-1:146665891952:KyleFinleyNet-AuthProcessedTopic #TODO: Deal with arn
 
 GetConnection:
   handler: getConnection.handler

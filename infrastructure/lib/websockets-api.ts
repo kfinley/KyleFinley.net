@@ -123,7 +123,7 @@ export class WebSocketsApi extends Construct {
 
     // SNS Topics & Subscriptions...
     const authProcessedTopic = new Topic(this, 'sns-topic', {
-      topicName: 'kylefinley.net_AuthProcessedTopic',
+      topicName: 'KyleFinleyNet-AuthProcessedTopic',
       displayName: 'AuthProcessedTopic',
     });
 
