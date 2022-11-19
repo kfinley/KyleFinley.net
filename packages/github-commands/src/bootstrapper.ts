@@ -6,8 +6,8 @@ export default function bootstrapper(container: Container) {
 
   console.log('github-commands bootstrapper');
 
-  container.bindTo<ApiClient>(apiClient, "ApiClient");
-  container.bindTo<GetUserCommand>(GetUserCommand, "GetUserCommand");
+  container.bind<apiClient>("ApiClient");
+  container.bind<GetUserCommand>("GetUserCommand");
 
   console.log('github-commands bootstrapper done')
 }
