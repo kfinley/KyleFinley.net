@@ -38,13 +38,13 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
 
     console.log('AuthorizeCommand');
     console.log(`code: ${params.code}`);
+    console.log('container', params.container);
 
     this.apiClient = params.container.get<ApiClient>(Symbol.for("ApiClient"));
     this.getUserCommand = params.container.get<GetUserCommand>(Symbol.for("GetUserCommand"));
 
     console.log(this.apiClient);
     console.log(this.getUserCommand);
-
 
     const api = new URL('/login/oauth/access_token', 'https://github.com')
 

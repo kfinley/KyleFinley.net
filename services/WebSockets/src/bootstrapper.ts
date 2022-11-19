@@ -33,23 +33,16 @@ export default function bootstrapper() {
       }));
   }
 
-  addTransientIfNeeded<AuthorizeCommand>(AuthorizeCommand, "AuthorizeCommand", container);
-  addTransientIfNeeded<AuthorizeConnectionCommand>(AuthorizeConnectionCommand, "AuthorizeConnectionCommand", container);
-  addTransientIfNeeded<DeleteConnectionCommand>(DeleteConnectionCommand, "DeleteConnectionCommand", container);
-  addTransientIfNeeded<DeleteConnectionByUserIdCommand>(DeleteConnectionByUserIdCommand, "DeleteConnectionByUserIdCommand", container);
-  addTransientIfNeeded<GetConnectionByUserIdCommand>(GetConnectionByUserIdCommand, "GetConnectionByUserIdCommand", container);
-  addTransientIfNeeded<SendMessageCommand>(SendMessageCommand, "SendMessageCommand", container);
-  addTransientIfNeeded<SaveConnectionCommand>(SaveConnectionCommand, "SaveConnectionCommand", container);
+  container.bindTo<AuthorizeCommand>(Symbol.for("AuthorizeCommand"));
+  container.bindTo<AuthorizeConnectionCommand>(Symbol.for("AuthorizeConnectionCommand"));
+  container.bindTo<DeleteConnectionCommand>(Symbol.for("DeleteConnectionCommand"));
+  container.bindTo<DeleteConnectionByUserIdCommand>(Symbol.for("DeleteConnectionByUserIdCommand"));
+  container.bindTo<GetConnectionByUserIdCommand>(Symbol.for("GetConnectionByUserIdCommand"));
+  container.bindTo<SendMessageCommand>(Symbol.for("SendMessageCommand"));
+  container.bindTo<SaveConnectionCommand>(Symbol.for("SaveConnectionCommand"));
 
-  addTransientIfNeeded<IMessageCommand>(PingMessageCommand, "PingMessageCommand", container);
+  container.bindTo<IMessageCommand>(Symbol.for("PingMessageCommand"));
 
   return container;
-}
-
-function addTransientIfNeeded<T>(constructor: any, id: string | symbol, container: Container) {
-  if (!container.isBound(id)) {
-    container.bind<T>(id).to(constructor);
-    // container.addTransient<T>(constructor, id);
-  }
 }
 
