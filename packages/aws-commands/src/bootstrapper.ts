@@ -52,9 +52,9 @@ export default function bootstrapper(container: Container) {
         }));
   }
 
-  container.bind<GetStoredObjectCommand>("GetStoredObjectCommand");
-  container.bind<PublishMessageCommand>("PublishMessageCommand");
-  container.bind<StartStepFunctionCommand>("StartStepFunctionCommand");
+  container.bindTo<GetStoredObjectCommand>("GetStoredObjectCommand");
+  container.bindTo<PublishMessageCommand>("PublishMessageCommand");
+  container.bindTo<StartStepFunctionCommand>("StartStepFunctionCommand");
 
   console.log('aws-commands bootstrapper done');
 

@@ -1,20 +1,15 @@
-import { Stack, StackProps, RemovalPolicy, CfnOutput } from 'aws-cdk-lib';
+import { Stack, StackProps, CfnOutput } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as cdk from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as targets from 'aws-cdk-lib/aws-route53-targets';
-import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
-import { WebSocketApi } from '@aws-cdk/aws-apigatewayv2-alpha';
-import { HttpOrigin } from 'aws-cdk-lib/aws-cloudfront-origins';
-import { AllowedMethods, CachePolicy, OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront';
-import { Table } from 'aws-cdk-lib/aws-dynamodb';
+import { OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior } from 'aws-cdk-lib/aws-cloudfront';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
-import { BlockPublicAccess, Bucket, HttpMethods } from 'aws-cdk-lib/aws-s3';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -38,8 +33,8 @@ export class InfrastructureStack extends Stack {
     const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
       logLevel: props?.logLevel!,
       connectionsTable: dataStores?.connectionsTable!,
-      gitHubClientId: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID,
-      gitHubClientSecret: process.env.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET
+      gitHubClientId: props?.gitHubClientId,
+      gitHubClientSecret: props?.gitHubClientSecret
     });
 
     const {
