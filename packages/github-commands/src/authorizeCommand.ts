@@ -1,8 +1,7 @@
-import { Inject, injectable } from 'inversify-props';
+import { Container, Inject, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import { ApiClient } from '@kylefinley.net/api-client/src';
 import { GetUserCommand } from './getUser';
-import { container } from 'inversify-props';
 
 export interface AuthorizeRequest {
   oauth: {
@@ -10,6 +9,7 @@ export interface AuthorizeRequest {
     clientSecret: string | undefined
   },
   code?: string;
+  container: Container;
 }
 
 export interface GitHubAuthData {
@@ -39,8 +39,8 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
     console.log('AuthorizeCommand');
     console.log(`code: ${params.code}`);
 
-    this.apiClient = container.get<ApiClient>(Symbol.for("ApiClient"));
-    this.getUserCommand = container.get<GetUserCommand>(Symbol.for("GetUserCommand"));
+    this.apiClient = params.container.get<ApiClient>(Symbol.for("ApiClient"));
+    this.getUserCommand = params.container.get<GetUserCommand>(Symbol.for("GetUserCommand"));
 
     console.log(this.apiClient);
     console.log(this.getUserCommand);
@@ -64,7 +64,8 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
     if (access_token) {
 
       let getUserResult = await this.getUserCommand.runAsync({
-        access_token
+        access_token,
+        container: params.container
       });
 
       return {
