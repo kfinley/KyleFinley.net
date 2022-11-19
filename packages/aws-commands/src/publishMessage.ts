@@ -22,6 +22,8 @@ export class PublishMessageCommand implements Command<PublishMessageRequest, Pub
 
     this.snsClient = params.container.get<SNSClient>("SNSClient");
 
+    console.log(`Publishing SNS Topic. Subject: ${params.subject} Message: ${params.message} Topic: ${params.topic}`);
+
     var sendParams = {
       Subject: params.subject,
       Message: params.message,

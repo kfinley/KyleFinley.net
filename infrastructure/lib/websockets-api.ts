@@ -142,6 +142,10 @@ export class WebSocketsApi extends Construct {
     authProcessedTopic.grantPublish(onConnectHandler);
     authProcessedTopic.addSubscription(new LambdaSubscription(startSendMessageNotification));
 
+    new CfnOutput(this, 'authProcessedTopic', {
+      value: `arn: ${authProcessedTopic.topicArn}`
+    });
+
     // SNS Topics & Subs end...
 
     // Step Functions...
