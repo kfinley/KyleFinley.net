@@ -1,5 +1,5 @@
 import { container } from './inversify.config';
-import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src";
+import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src/";
 
 export default function bootstrapper() {
 
