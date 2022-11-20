@@ -1,11 +1,12 @@
-import { Inject, injectable } from 'inversify-props';
+import { Container, Inject, injectable } from 'inversify-props';
 import { SFNClient, StartExecutionCommand, StartExecutionCommandInput, ListStateMachinesCommand, } from "@aws-sdk/client-sfn";
 import { Command } from '@kylefinley.net/commands/src';
 
 export interface StartStepFunctionRequest {
   stateMachineArn?: string,
   stateMachineName?: string,
-  input: string
+  input: string,
+  container: Container
 }
 
 export interface StartStepFunctionResponse {
@@ -16,10 +17,12 @@ export interface StartStepFunctionResponse {
 @injectable()
 export class StartStepFunctionCommand implements Command<StartStepFunctionRequest, StartStepFunctionResponse> {
 
-  @Inject("SFNClient")
+  // @Inject("SFNClient")
   private sfnClient!: SFNClient;
 
   async runAsync(params: StartStepFunctionRequest): Promise<StartStepFunctionResponse> {
+
+    this.sfnClient = params.container.get<SFNClient>("SFNClient");
 
     if (params.stateMachineArn === undefined && params.stateMachineName !== undefined) {
       const stateMachinesResult = await this.sfnClient.send(new ListStateMachinesCommand({}));
