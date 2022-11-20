@@ -11,12 +11,14 @@ import { WebSocketsModule } from "@/store/ws-module";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
+import { initializeModules } from "@/store";
+import bootstrapper from "@/bootstrapper";
 
 export const setupModules = (store: Store<any>): void => {
   store.registerModule("Articles", ArticlesModule);
   store.registerModule('WebSockets', WebSocketsModule);
   store.registerModule("Auth", AuthModule);
-  // initializeModules(store);
+  initializeModules(store);
 };
 
 export interface ClientPlugin extends PluginObject<ClientPluginOptions> {
@@ -34,6 +36,8 @@ const plugin = {
   install(vue: typeof Vue, options?: ClientPluginOptions) {
     if (options !== undefined && options.router && options.store) {
       const appName = options.appName ?? "KyleFinley.net";
+
+      bootstrapper();
 
       // setupValidation(extend);
       setupModules(options.store);

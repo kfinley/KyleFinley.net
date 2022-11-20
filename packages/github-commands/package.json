@@ -12,9 +12,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@types/node": "^14.14.31",
     "@kylefinley.net/commands": "^0.0.1",
     "@kylefinley.net/api-client": "^0.0.1",
+    "@types/node": "^14.14.31",
+    "@octokit/rest": "^19.0.5",
     "inversify-props": "^2.2.6",
     "tslib": "^2.4.0"
   }

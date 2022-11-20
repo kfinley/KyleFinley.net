@@ -1,6 +1,6 @@
 import { Container } from 'inversify-props';
 import { ApiClient, apiClient } from '@kylefinley.net/api-client/src';
-import { GetUserCommand } from './getUser';
+import { GetUserCommand, AuthorizeCommand, CreateBranch } from './';
 
 export default function bootstrapper(container: Container) {
 
@@ -8,6 +8,8 @@ export default function bootstrapper(container: Container) {
 
   container.bind<ApiClient>("ApiClient").to(apiClient);
   container.bind<GetUserCommand>("GetUserCommand").to(GetUserCommand);
+  container.bind<AuthorizeCommand>("AuthorizeCommand").to(AuthorizeCommand);
+  container.bind<CreateBranch>("CreateBranch").to(CreateBranch);
 
   console.log('github-commands bootstrapper done')
 }

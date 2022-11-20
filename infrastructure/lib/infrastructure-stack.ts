@@ -27,10 +27,12 @@ export class InfrastructureStack extends Stack {
 
     const domainName = this.node.tryGetContext('domainName');
 
+    //TODO: Bad names from previous setup. Have to remove the rsources in order to rename them.
     const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack', {
       domainName,
     });
 
+    //TODO: Bad names from previous setup. Have to remove the rsources in order to rename them.
     const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
       logLevel: props?.logLevel!,
       connectionsTable: dataStores?.connectionsTable!,

@@ -43,7 +43,6 @@ export default function bootstrapper() {
         }));
   }
 
-  container.bind<AuthorizeCommand>("AuthorizeCommand").to(AuthorizeCommand);
   container.bind<AuthorizeConnectionCommand>("AuthorizeConnectionCommand").to(AuthorizeConnectionCommand);
   container.bind<DeleteConnectionCommand>("DeleteConnectionCommand").to(DeleteConnectionCommand);
   container.bind<DeleteConnectionByUserIdCommand>("DeleteConnectionByUserIdCommand").to(DeleteConnectionByUserIdCommand);

@@ -125,6 +125,17 @@ export const createRouter = async () => {
         }
       ],
     },
+    {
+      path: '/manage-repo',
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: 'Manage-Repo',
+          component: () => import(/* webpackChunkName: "github" */ '../views/ManageRepo.vue'),
+        }
+      ]
+    }
   ];
 
   for (const article of Object.keys(Articles)) {

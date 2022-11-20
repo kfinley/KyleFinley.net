@@ -1,9 +1,11 @@
 import Vue from "vue";
 import Vuex, { Store } from "vuex";
-// import { getModule, VuexModule } from "vuex-module-decorators";
-// import { AuthModule } from './auth-module';
-// import { ArticlesModule } from './articles-module';
-// import { WebSocketsModule } from './ws-module';
+import { getModule, VuexModule } from "vuex-module-decorators";
+import { AuthModule } from './auth-module';
+import { ArticlesModule } from './articles-module';
+import { WebSocketsModule } from './ws-module';
+import { GitHubModule } from './github-module';
+
 // import BaseModule from './base-module';
 
 Vue.use(Vuex);
@@ -16,16 +18,18 @@ export * from './state'
 // export { getArticlesModule } from './articles-module'
 // export * from './ws-module';
 
-// let authModule: AuthModule;
-// let articlesModule: ArticlesModule;
-// let webSocketsModule: WebSocketsModule;
+let authModule: AuthModule;
+let articlesModule: ArticlesModule;
+let webSocketsModule: WebSocketsModule;
+let gitHubModule: GitHubModule;
 
-// export function initializeModules(store: Store<any>): void {
-//   // webSocketsModule = getModule(WebSocketsModule, store);
-//   // authModule = getModule(AuthModule, store);
-//   // articlesModule = getModule(ArticlesModule, store);
-// }
+export function initializeModules(store: Store<any>): void {
+  webSocketsModule = getModule(WebSocketsModule, store);
+  authModule = getModule(AuthModule, store);
+  articlesModule = getModule(ArticlesModule, store);
+  gitHubModule = getModule(GitHubModule, store);
+}
 
-// export { authModule, articlesModule, webSocketsModule }
+export { authModule, articlesModule, webSocketsModule, gitHubModule }
 
 

@@ -3,6 +3,7 @@
     <div v-if="authenticating()">Logging in</div>
    <router-link v-if="!authenticating() && !authenticated()" to="login">Login</router-link>
    <div v-if="authenticated()">Logged in</div>
+   <router-link v-if="authenticated()" to="manage-repo">Manage Repo</router-link>
   </div>
 
 </template>
