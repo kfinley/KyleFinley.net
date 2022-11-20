@@ -1,5 +1,6 @@
 import { Octokit } from '@octokit/rest';
 
+//TODO: convert to Command
 export const getCurrentCommit = async (
   github: Octokit,
   owner: string,

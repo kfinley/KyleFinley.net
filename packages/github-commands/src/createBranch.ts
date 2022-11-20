@@ -1,7 +1,7 @@
 import { Container, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import { Octokit } from '@octokit/rest';
-import { getCurrentCommit } from './utils';
+import { getCurrentCommit } from './getCurrentCommit';
 
 export interface CreateBranchRequest {
   access_token: string;
