@@ -22,9 +22,26 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
 
   async runAsync(params: SendMessageRequest): Promise<SendMessageResponse> {
 
+    const apigatewayManagementApi = new ApiGatewayManagementApi({
+      apiVersion: '2018-11-29',
+      endpoint: '6ii0i7gdbe.execute-api.us-east-1.amazonaws.com/v1'
+    });
+
+    try {
+      await apigatewayManagementApi.postToConnection({
+        ConnectionId: params.connectionId,
+        Data: Buffer.from(params.data, 'base64'),
+      });
+    }
+    catch (error) {
+      console.log(error)
+    }
+
     const { APIGW_ENDPOINT } = process.env; //TODO ???
 
     console.log(APIGW_ENDPOINT);
+    console.log('connectionId', params.connectionId);
+    console.log('data', params.data);
 
     const apigatewaymanagementapi = new ApiGatewayManagementApi({ apiVersion: '2018-11-29', endpoint: APIGW_ENDPOINT });
 
