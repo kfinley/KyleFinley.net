@@ -20,6 +20,5 @@ const infraStack = new InfrastructureStack(app, `KyleFinleyNet-Infrastructure`, 
   env: {
     account: process.env.AWS_ACCOUNT,
     region: process.env.AWS_REGION,
-
   },
 });

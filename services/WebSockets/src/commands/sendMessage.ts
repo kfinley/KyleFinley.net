@@ -44,7 +44,7 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
 
     // let output = {};
 
-    // await apigatewaymanagementapi.postToConnection({ ConnectionId: params.connectionId, Data: Buffer.from(params.data, 'base64') })
+    // await apigatewaymanagementapi.postToConnection({ ConnectionId: params.connectionId, Data: params.data as any })
     //   .then(out => {
     //     output = {
     //       statusCode: out.$metadata.httpStatusCode
@@ -79,7 +79,7 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
     return {
       statusCode: output.$metadata.httpStatusCode
     };
-    
+
     // return output;
 
   }
