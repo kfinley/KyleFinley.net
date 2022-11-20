@@ -1,4 +1,4 @@
-import { Stack, Duration, CfnOutput } from 'aws-cdk-lib';
+import { Stack, Duration, CfnOutput, RemovalPolicy } from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
@@ -11,9 +11,10 @@ import { NodejsFunction, NodejsFunctionProps, SourceMapMode } from 'aws-cdk-lib/
 import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { Topic } from 'aws-cdk-lib/aws-sns';
 import { LambdaSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
-import { Chain, Choice, Condition, Fail, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
+import { Chain, Choice, Condition, Fail, LogLevel, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
 import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
 import { Effect, IRole, Policy, PolicyStatement } from 'aws-cdk-lib/aws-iam';
+import { LogGroup, RetentionDays } from 'aws-cdk-lib/aws-logs';
 //import { StateMachine } from '@matthewbonig/state-machine';
 
 export interface WebSocketsApiProps {
@@ -156,9 +157,20 @@ export class WebSocketsApi extends Construct {
           .when(Condition.stringEquals('$.connectionId', ''), new Fail(this, "Fail", { error: "No ConnectionId Found" }))
           .otherwise(sendMessageInvocation));
 
+    const sfnLog = new LogGroup(this, "sfnLog", {
+      logGroupName: "sfnLogGroup",
+      removalPolicy: RemovalPolicy.DESTROY,
+      retention: RetentionDays.ONE_WEEK
+    })
+
     const stateMachine = new StateMachine(this, 'kylefinley.net-WebSockets-SendMessage', {
       stateMachineName: 'KyleFinleyNet-WebSockets-SendMessage',
-      definition: chain
+      definition: chain,
+      logs: {
+        destination: sfnLog,
+        includeExecutionData: true,
+        level: LogLevel.ALL
+      }
     });
 
     const sfnLambdaInvokePolicy = new Policy(this, 'sfnLambdaInvokePolicy');
