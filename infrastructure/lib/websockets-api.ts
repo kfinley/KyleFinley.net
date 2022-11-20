@@ -13,7 +13,7 @@ import { Topic } from 'aws-cdk-lib/aws-sns';
 import { LambdaSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
 import { Chain, Choice, Condition, Fail, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
 import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
-import { IRole } from 'aws-cdk-lib/aws-iam';
+import { Effect, IRole, Policy, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 //import { StateMachine } from '@matthewbonig/state-machine';
 
 export interface WebSocketsApiProps {
@@ -157,10 +157,40 @@ export class WebSocketsApi extends Construct {
           .otherwise(sendMessageInvocation));
 
     const stateMachine = new StateMachine(this, 'kylefinley.net-WebSockets-SendMessage', {
+      stateMachineName: 'KyleFinleyNet-WebSockets-SendMessage',
       definition: chain
     });
 
-    // stateMachine.grantExecution(startSendMessageNotification);
+    const sfnLambdaInvokePolicy = new Policy(this, 'sfnLambdaInvokePolicy');
+    sfnLambdaInvokePolicy.addStatements(
+      new PolicyStatement({
+        actions: [
+          "lambda:InvokeFunction"
+        ],
+        effect: Effect.ALLOW,
+        resources: [`${startSendMessageNotification.functionArn}:$LATEST`],
+        sid: "sfnLambdaInvokePolicy"
+      })
+    )
+    stateMachine.role.attachInlinePolicy(sfnLambdaInvokePolicy)
+
+    const lambdaSfnStatusUpdatePolicy = new Policy(this, 'lambdaSfnStatusUpdatePolicy');
+    lambdaSfnStatusUpdatePolicy.addStatements(
+      new PolicyStatement({
+        actions: [
+          "states:SendTaskSuccess",
+          "states:SendTaskFailure",
+          "states:ListStateMachines"
+        ],
+        effect: Effect.ALLOW,
+        resources: ['*'],     //TODO: tighten this up...
+        // resources: [`${stateMachine.stateMachineArn}:$LATEST`],
+        sid: "lambdaSfnStatusUpdatePolicy"
+      })
+    )
+    startSendMessageNotification.role?.attachInlinePolicy(lambdaSfnStatusUpdatePolicy)
+
+    // stateMachine.grantExecution(startSendMessageNotification.role as IRole);
 
     // Step Functions end...
 
