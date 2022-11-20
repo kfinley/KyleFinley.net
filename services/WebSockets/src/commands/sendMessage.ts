@@ -13,7 +13,6 @@ export interface SendMessageResponse {
   statusCode?: number
 }
 
-const { APIGW_ENDPOINT } = process.env; //TODO ???
 
 @injectable()
 export class SendMessageCommand implements Command<SendMessageRequest, SendMessageResponse> {
@@ -23,6 +22,9 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
 
   async runAsync(params: SendMessageRequest): Promise<SendMessageResponse> {
 
+    const { APIGW_ENDPOINT } = process.env; //TODO ???
+
+    console.log(APIGW_ENDPOINT);
 
     const apigatewaymanagementapi = new ApiGatewayManagementApi({ apiVersion: '2018-11-29', endpoint: APIGW_ENDPOINT });
 
@@ -49,7 +51,7 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
     //     this.dynamoDbClient.delete({ TableName: this.connectionsTableName, Key: { connectionData } });
     //   }
     // });
-    
+
     // this.client = container.get<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient");
     console.log('sendMessage', params.data);
 

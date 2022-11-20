@@ -160,7 +160,7 @@ export class WebSocketsApi extends Construct {
           .otherwise(sendMessageInvocation));
 
     const sfnLog = new LogGroup(this, "sfnLog", {
-      logGroupName: "sfnLogGroup",
+      logGroupName: "KyleFinleyNet-WebSockets-SendMessage-LogGroup",
       removalPolicy: RemovalPolicy.DESTROY,
       retention: RetentionDays.ONE_WEEK
     })
