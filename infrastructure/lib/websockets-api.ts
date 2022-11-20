@@ -234,8 +234,8 @@ export class WebSocketsApi extends Construct {
       autoDeploy: true,
     });
 
-    this.webSocketApi.grantManageConnections(onMessageHandler);
-    this.webSocketApi.grantManageConnections(sendMessage);
+    this.webSocketApi.grantManageConnections(onMessageHandler.role!);
+    this.webSocketApi.grantManageConnections(sendMessage.role!);
 
     new CfnOutput(this, 'webSocketApi.apiEndpoint', {
       value: `api endpoint: ${this.webSocketApi.apiEndpoint}`

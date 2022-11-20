@@ -8,6 +8,8 @@ import { AuthorizeCommand } from '@kylefinley.net/github-commands/src';
 import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src";
 import { PingMessageCommand } from './commands/pingMessage';
 
+const { APIGW_ENDPOINT } = process.env; //TODO ???
+
 export default function bootstrapper() {
 
   console.log('Bootstrapper', process.env.NODE_ENV);
@@ -32,7 +34,9 @@ export default function bootstrapper() {
     container.bind<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient")
       .toDynamicValue(() => process.env.NODE_ENV === 'production'
         ?
-        new ApiGatewayManagementApiClient({}) // Prod
+        new ApiGatewayManagementApiClient({
+          endpoint: `https://${APIGW_ENDPOINT}`
+        }) // Prod
         :
         new ApiGatewayManagementApiClient({ // Local Dev
           endpoint: "http://kylefinley.sls:3001"

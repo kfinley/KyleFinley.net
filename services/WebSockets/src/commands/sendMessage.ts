@@ -18,7 +18,7 @@ export interface SendMessageResponse {
 export class SendMessageCommand implements Command<SendMessageRequest, SendMessageResponse> {
 
   // @Inject("ApiGatewayManagementApiClient")
-  // private client!: ApiGatewayManagementApiClient;
+  private client!: ApiGatewayManagementApiClient;
 
   async runAsync(params: SendMessageRequest): Promise<SendMessageResponse> {
 
@@ -37,25 +37,22 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
     //   console.log(error)
     // }
 
-    const { APIGW_ENDPOINT } = process.env; //TODO ???
-
-    console.log(APIGW_ENDPOINT);
     console.log('connectionId', params.connectionId);
     console.log('data', params.data);
 
-    const apigatewaymanagementapi = new ApiGatewayManagementApi({ apiVersion: '2018-11-29', endpoint: `https://${APIGW_ENDPOINT}` });
+    // const apigatewaymanagementapi = new ApiGatewayManagementApi({ apiVersion: '2018-11-29', endpoint: `https://${APIGW_ENDPOINT}` });
 
-    let output = {};
+    // let output = {};
 
-    await apigatewaymanagementapi.postToConnection({ ConnectionId: params.connectionId, Data: Buffer.from(params.data, 'base64') })
-      .then(out => {
-        output = {
-          statusCode: out.$metadata.httpStatusCode
-        };
-      })
-      .catch(error => {
-        console.log('Error posting to connection', error);
-      });
+    // await apigatewaymanagementapi.postToConnection({ ConnectionId: params.connectionId, Data: Buffer.from(params.data, 'base64') })
+    //   .then(out => {
+    //     output = {
+    //       statusCode: out.$metadata.httpStatusCode
+    //     };
+    //   })
+    //   .catch(error => {
+    //     console.log('Error posting to connection', error);
+    //   });
 
     // .then(() => {
     //   // this.metrics.addMetric('messageDelivered', MetricUnits.Count, 1);
@@ -69,15 +66,21 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
     //   }
     // });
 
-    // this.client = container.get<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient");
+    this.client = container.get<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient");
+    // this.client.config.endpoint = `https://${APIGW_ENDPOINT}`;
+
     console.log('sendMessage', params.data);
 
-    // const output = await this.client.send(new PostToConnectionCommand({
-    //   ConnectionId: params.connectionId,
-    //   Data: params.data as any
-    // }));
+    const output = await this.client.send(new PostToConnectionCommand({
+      ConnectionId: params.connectionId,
+      Data: params.data as any
+    }));
 
-    return output;
+    return {
+      statusCode: output.$metadata.httpStatusCode
+    };
+    
+    // return output;
 
   }
 }
