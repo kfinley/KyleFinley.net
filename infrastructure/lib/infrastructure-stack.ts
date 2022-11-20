@@ -27,11 +27,11 @@ export class InfrastructureStack extends Stack {
 
     const domainName = this.node.tryGetContext('domainName');
 
-    const dataStores = new DataStores(this, 'KyleFinleyNet-DataStores', {
+    const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack', {
       domainName,
     });
 
-    const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSockets', {
+    const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
       logLevel: props?.logLevel!,
       connectionsTable: dataStores?.connectionsTable!,
       gitHubClientId: props!.gitHubClientId,
