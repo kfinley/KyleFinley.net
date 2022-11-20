@@ -33,8 +33,10 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
         output = {
           statusCode: out.$metadata.httpStatusCode
         };
+      })
+      .catch(error => {
+        console.log('Error posting to connection', error);
       });
-
 
     // .then(() => {
     //   // this.metrics.addMetric('messageDelivered', MetricUnits.Count, 1);
@@ -47,6 +49,7 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
     //     this.dynamoDbClient.delete({ TableName: this.connectionsTableName, Key: { connectionData } });
     //   }
     // });
+    
     // this.client = container.get<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient");
     console.log('sendMessage', params.data);
 

@@ -175,7 +175,7 @@ export class WebSocketsApi extends Construct {
       }
     });
 
-    new CfnOutput(this, 'stage.url', {
+    new CfnOutput(this, 'StateMachineArn', {
       value: `SendMessage StateMachine arn: ${stateMachine.stateMachineArn}`
     });
 
