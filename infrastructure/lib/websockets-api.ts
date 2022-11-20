@@ -192,7 +192,8 @@ export class WebSocketsApi extends Construct {
         actions: [
           "states:SendTaskSuccess",
           "states:SendTaskFailure",
-          "states:ListStateMachines"
+          "states:ListStateMachines",
+          "states:StartExecution"
         ],
         effect: Effect.ALLOW,
         resources: ['*'],     //TODO: tighten this up...
