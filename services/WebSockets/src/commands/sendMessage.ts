@@ -1,4 +1,4 @@
-import { ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagementapi';
+import { ApiGatewayManagementApi, ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagementapi';
 import { PostToConnectionCommand } from '@aws-sdk/client-apigatewaymanagementapi';
 import { Command } from '@kylefinley.net/commands/src';
 import { Inject, injectable } from 'inversify-props';
@@ -6,30 +6,56 @@ import { container } from '../inversify.config';
 
 export interface SendMessageRequest {
   connectionId: string;
-  data: string | Uint8Array | undefined;
+  data: string | undefined;
 }
 
 export interface SendMessageResponse {
   statusCode?: number
 }
 
+const { APIGW_ENDPOINT } = process.env; //TODO ???
+
 @injectable()
 export class SendMessageCommand implements Command<SendMessageRequest, SendMessageResponse> {
 
   // @Inject("ApiGatewayManagementApiClient")
-  private client!: ApiGatewayManagementApiClient;
+  // private client!: ApiGatewayManagementApiClient;
 
   async runAsync(params: SendMessageRequest): Promise<SendMessageResponse> {
 
-    this.client = container.get<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient");
 
-    const output = await this.client.send(new PostToConnectionCommand({
-      ConnectionId: params.connectionId,
-      Data: params.data as any
-    }));
+    const apigatewaymanagementapi = new ApiGatewayManagementApi({ apiVersion: '2018-11-29', endpoint: APIGW_ENDPOINT });
 
-    return {
-      statusCode: output.$metadata.httpStatusCode
-    }
+    let output = {};
+
+    await apigatewaymanagementapi.postToConnection({ ConnectionId: params.connectionId, Data: Buffer.from(params.data, 'base64') })
+      .then(out => {
+        output = {
+          statusCode: out.$metadata.httpStatusCode
+        };
+      });
+
+
+    // .then(() => {
+    //   // this.metrics.addMetric('messageDelivered', MetricUnits.Count, 1);
+    //   // this.logger.debug(`Message sent to connection ${connectionData.connectionId}`);
+    // })
+    // .catch((err: any) => {
+    //   this.logger.debug(`Error during message delivery: ${JSON.stringify(err)}`);
+    //   if (err.statusCode === 410) {
+    //     this.logger.debug(`Found stale connection, deleting ${connectionData.connectionId}`);
+    //     this.dynamoDbClient.delete({ TableName: this.connectionsTableName, Key: { connectionData } });
+    //   }
+    // });
+    // this.client = container.get<ApiGatewayManagementApiClient>("ApiGatewayManagementApiClient");
+    console.log('sendMessage', params.data);
+
+    // const output = await this.client.send(new PostToConnectionCommand({
+    //   ConnectionId: params.connectionId,
+    //   Data: params.data as any
+    // }));
+
+    return output;
+
   }
 }

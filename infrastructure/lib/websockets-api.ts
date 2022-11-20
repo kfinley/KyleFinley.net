@@ -116,7 +116,9 @@ export class WebSocketsApi extends Construct {
     });
     props?.connectionsTable.grantReadWriteData(getConnection);
 
-    const sendMessage = createLambda('SendMessage', 'functions/sendMessage.handler');
+    const sendMessage = createLambda('SendMessage', 'functions/sendMessage.handler', {
+      APIGW_ENDPOINT: '6ii0i7gdbe.execute-api.us-east-1.amazonaws.com/v1' //TODO: deal with this...
+    });
 
     const startSendMessageNotification = createLambda('StartSendMessageNotification', 'functions/startSendMessageNotification.handler')
 
@@ -171,6 +173,10 @@ export class WebSocketsApi extends Construct {
         includeExecutionData: true,
         level: LogLevel.ALL
       }
+    });
+
+    new CfnOutput(this, 'stage.url', {
+      value: `SendMessage StateMachine arn: ${stateMachine.stateMachineArn}`
     });
 
     const sfnLambdaInvokePolicy = new Policy(this, 'sfnLambdaInvokePolicy');
