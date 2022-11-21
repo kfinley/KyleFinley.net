@@ -1,24 +1,26 @@
-// Loaded once per application. Required for dependency injection
-import "reflect-metadata";
-
 import Vue, { PluginFunction, PluginObject } from "vue";
 import { Store } from "vuex";
 import router from "vue-router";
 // import VuexPersist from "vuex-persist";
+// import { initializeModules } from "@/store";
+import bootstrapper from "@/bootstrapper";
 import { ArticlesModule } from '../store/articles-module'
 import { AuthModule } from '../store/auth-module'
 import { WebSocketsModule } from "@/store/ws-module";
+import { GitHubModule } from "@/store/github-module";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
-import { initializeModules } from "@/store";
-import bootstrapper from "@/bootstrapper";
+// import { initializeModules } from "@/store";
 
 export const setupModules = (store: Store<any>): void => {
-  store.registerModule("Articles", ArticlesModule);
+  store.registerModule('Auth', AuthModule);
+  store.registerModule('Articles', ArticlesModule);
   store.registerModule('WebSockets', WebSocketsModule);
-  store.registerModule("Auth", AuthModule);
-  initializeModules(store);
+  store.registerModule("GitHub", GitHubModule);
+
+  //TODO: investigate. This blows things up...
+  // initializeModules(store);
 };
 
 export interface ClientPlugin extends PluginObject<ClientPluginOptions> {
@@ -34,13 +36,15 @@ export interface ClientPluginOptions {
 
 const plugin = {
   install(vue: typeof Vue, options?: ClientPluginOptions) {
+
     if (options !== undefined && options.router && options.store) {
+
       const appName = options.appName ?? "KyleFinley.net";
 
-      bootstrapper();
+      bootstrapper(options.store);
+      // setupModules(options.store);
 
       // setupValidation(extend);
-      setupModules(options.store);
 
       // router provided to add any plugin routes.
       // i.e. options.router.addRoutes(routes);

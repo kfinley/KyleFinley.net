@@ -4,7 +4,6 @@ import { ApiGatewayManagementApiClient } from '@aws-sdk/client-apigatewaymanagem
 import { bootstrapper as awsCommandsBootstrapper } from '@kylefinley.net/aws-commands/src';
 import { AuthorizeConnectionCommand, DeleteConnectionByUserIdCommand, DeleteConnectionCommand, GetConnectionByUserIdCommand, SaveConnectionCommand, SendMessageCommand } from './commands';
 import { IMessageCommand } from './commands/messageCommand';
-import { AuthorizeCommand } from '@kylefinley.net/github-commands/src';
 import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src";
 import { PingMessageCommand } from './commands/pingMessage';
 

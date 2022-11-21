@@ -10,8 +10,8 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { State } from 'vuex-class'
-import { AuthState, Status } from '../store'
-import { getAuthModule } from '../store/auth-module'
+import { AuthState, Status } from '../store';
+import { getAuthModule } from '../store/auth-module';
 
 @Component({})
 export default class GitHubLogin extends Vue {
@@ -21,9 +21,9 @@ export default class GitHubLogin extends Vue {
 
   mounted() {
 
-    const urlParams = new URLSearchParams(location.search)
+    // const urlParams = new URLSearchParams(location.search)
 
-    this.store.authWithCode({ code: urlParams.get('code') as string, vue: this })
+    // this.store.authWithCode({ code: urlParams.get('code') as string, vue: this })
   }
 
   authenticating() {

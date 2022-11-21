@@ -1,5 +1,5 @@
-import { getModule } from "vuex-module-decorators";
-import { Module, Action } from 'vuex-module-decorators';
+import Vue from "vue";
+import { Module, Action, getModule } from 'vuex-module-decorators';
 import BaseModule from './base-module'
 import { ArticlesState, Status } from './state'
 
@@ -33,10 +33,10 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
                 (state: ArticlesState) => {
                     state.articles = articleList
                 })
-            
+
             this.context.commit('mutate',
                 (state: ArticlesState) => state.status = Status.Loaded);
-                
+
         } catch (error) {
             this.context.commit('mutate',
                 (state: ArticlesState) => state.status = Status.Failed);
@@ -45,5 +45,4 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
         }
     }
 }
-
 export const getArticlesModule = (vue: Vue) => getModule(ArticlesModule, vue.$store);

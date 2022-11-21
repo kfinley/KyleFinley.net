@@ -1,6 +1,6 @@
 import { Container, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
-import { Octokit } from '@octokit/rest';
+import { Octokit } from 'octokit';
 import { getCurrentCommit } from './getCurrentCommit';
 
 export interface CreateBranchRequest {
@@ -22,8 +22,11 @@ export class CreateBranch implements Command<CreateBranchRequest, CreateBranchRe
   async runAsync(params: CreateBranchRequest): Promise<CreateBranchResponse> {
 
     console.log(params);
-    
+
     const octokit = new Octokit({
+      request: {
+        fetch: window.fetch
+      },
       log: console,
       // baseUrl,
       auth: params.access_token,

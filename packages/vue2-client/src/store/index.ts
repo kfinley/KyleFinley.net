@@ -1,35 +1,27 @@
 import Vue from "vue";
 import Vuex, { Store } from "vuex";
-import { getModule, VuexModule } from "vuex-module-decorators";
-import { AuthModule } from './auth-module';
-import { ArticlesModule } from './articles-module';
-import { WebSocketsModule } from './ws-module';
-import { GitHubModule } from './github-module';
-
-// import BaseModule from './base-module';
+import { getModule } from "vuex-module-decorators";
+import { ArticlesModule } from "./articles-module";
+import { AuthModule } from "./auth-module";
+import { GitHubModule } from "./github-module";
+import { WebSocketsModule } from "./ws-module";
 
 Vue.use(Vuex);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const store = new Vuex.Store<any>({});
 
-export default store
-export * from './state'
-// export { getArticlesModule } from './articles-module'
-// export * from './ws-module';
+export default store;
+export * from './state';
 
 let authModule: AuthModule;
 let articlesModule: ArticlesModule;
 let webSocketsModule: WebSocketsModule;
-let gitHubModule: GitHubModule;
+let gitHubModule: GitHubModule
 
 export function initializeModules(store: Store<any>): void {
-  webSocketsModule = getModule(WebSocketsModule, store);
-  authModule = getModule(AuthModule, store);
-  articlesModule = getModule(ArticlesModule, store);
-  gitHubModule = getModule(GitHubModule, store);
+  // authModule = getModule(AuthModule, store);
+  // webSocketsModule = getModule(WebSocketsModule, store);
+  // articlesModule = getModule(ArticlesModule, store);
+  // gitHubModule = getModule(GitHubModule, store);
 }
-
-export { authModule, articlesModule, webSocketsModule, gitHubModule }
-
-

@@ -11,8 +11,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import { ArticlesState, Status } from '../store/state'
+import { Component, Vue } from 'vue-property-decorator';
+import { ArticlesState, Status } from '../store';
 import { State } from 'vuex-class'
 import { getArticlesModule } from '../store/articles-module';
 

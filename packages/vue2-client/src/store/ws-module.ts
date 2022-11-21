@@ -1,5 +1,5 @@
-import { getModule } from "vuex-module-decorators";
-import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
+import Vue from "vue";
+import { Module, Action, getModule } from 'vuex-module-decorators';
 import { WebSocketsState, WebSocketsStatus } from './state';
 import Sockette from 'sockette';
 import { Socket } from '../types';

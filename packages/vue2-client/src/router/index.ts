@@ -126,45 +126,46 @@ export const createRouter = async () => {
       ],
     },
     {
-      path: '/manage-repo',
+      path: "/manage-repo",
       component: RouterLayout,
       children: [
         {
           path: '',
           name: 'Manage-Repo',
           component: () => import(/* webpackChunkName: "github" */ '../views/ManageRepo.vue'),
+          meta: { allowAnonymous: true }
         }
       ]
     }
   ];
 
-  for (const article of Object.keys(Articles)) {
-    try {
-      // console.log(article);
-      routes.push({
-        path: `/${article}`,
-        component: RouterLayout,
-        children: [
-          {
-            path: '',
-            component: LayoutArticle,
-            children: [
-              {
-                path: '',
-                name: article,
-                component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`)),
-                meta: viewsMeta[`../articles/${article}.json`] ? (await viewsMeta[`../articles/${article}.json`]() as any).default : { allowAnonymous: true }
-              }
-            ],
-          }
-        ],
-        // meta: { allowAnonymous: true },
-      })
-      // console.log(`Created route for article at path /${article}`)
-    } catch (e) {
-      console.log(e)
-    }
-  }
+  // for (const article of Object.keys(Articles)) {
+  //   try {
+  //     // console.log(article);
+  //     routes.push({
+  //       path: `/${article}`,
+  //       component: RouterLayout,
+  //       children: [
+  //         {
+  //           path: '',
+  //           component: LayoutArticle,
+  //           children: [
+  //             {
+  //               path: '',
+  //               name: article,
+  //               component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`)),
+  //               meta: viewsMeta[`../articles/${article}.json`] ? (await viewsMeta[`../articles/${article}.json`]() as any).default : { allowAnonymous: true }
+  //             }
+  //           ],
+  //         }
+  //       ],
+  //       // meta: { allowAnonymous: true },
+  //     })
+  //     // console.log(`Created route for article at path /${article}`)
+  //   } catch (e) {
+  //     console.log(e)
+  //   }
+  // }
 
   const router = new VueRouter({
     mode: "history",

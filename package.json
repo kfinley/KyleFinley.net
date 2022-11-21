@@ -18,7 +18,7 @@
     "dev:init": "./.devcontainer/scripts/dev-init.sh",
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
     "build": "npm run build:client && npm run build:lambdas",
-    "build:client": "lerna run build --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
+    "build:client": "lerna bootstrap --scope=@kylefinley.net/vue2-client && lerna run build --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
     "build:cdk": "lerna run build --stream --scope=@kylefinley.net/infrastructure",
     "build:lambdas": "lerna run build --stream --scope=@kylefinley.net/aws-websockets",
     "dev:client:docker": "lerna run dev:docker --stream --scope=@kylefinley.net/vue2-client",

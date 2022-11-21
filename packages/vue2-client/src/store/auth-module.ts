@@ -1,5 +1,5 @@
-import { getModule } from "vuex-module-decorators";
-import { Module, Action } from 'vuex-module-decorators';
+import Vue from "vue";
+import { Module, Action, getModule } from 'vuex-module-decorators';
 import BaseModule from './base-module'
 import { AuthState, Status } from './state'
 import { getWSModule } from "@/store/ws-module";
@@ -31,5 +31,4 @@ export class AuthModule extends BaseModule implements AuthState {
       });
   }
 }
-
 export const getAuthModule = (vue: Vue) => getModule(AuthModule, vue.$store);
