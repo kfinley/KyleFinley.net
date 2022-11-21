@@ -21,6 +21,8 @@ export class CreateBranch implements Command<CreateBranchRequest, CreateBranchRe
 
   async runAsync(params: CreateBranchRequest): Promise<CreateBranchResponse> {
 
+    console.log(params);
+    
     const octokit = new Octokit({
       log: console,
       // baseUrl,

@@ -18,7 +18,7 @@
     "dev:init": "./.devcontainer/scripts/dev-init.sh",
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
     "build": "npm run build:client && npm run build:lambdas",
-    "build:client": "lerna bootstrap --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/vue2-client && lerna run build --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
+    "build:client": "lerna run build --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
     "build:cdk": "lerna run build --stream --scope=@kylefinley.net/infrastructure",
     "build:lambdas": "lerna run build --stream --scope=@kylefinley.net/aws-websockets",
     "dev:client:docker": "lerna run dev:docker --stream --scope=@kylefinley.net/vue2-client",
@@ -32,7 +32,7 @@
     "sls:debug1": "export SLS_DEBUG=* && node --inspect-brk=5858 node_modules/serverless/bin/serverless offline start --skipCacheInvalidation",
     "sls:webpack": "serverless webpack",
     "i:prod": "npm i --production && npm run bootstrap:prod",
-    "clean-smoke": "npm run super-clean && npm run i:prod && npm run smoke",
+    "clean-smoke": "npm run super-clean && npm run bootstrap && npm run smoke",
     "smoke": "npm run build && npm run cdk synth",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
