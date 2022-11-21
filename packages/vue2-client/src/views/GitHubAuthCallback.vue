@@ -21,9 +21,9 @@ export default class GitHubLogin extends Vue {
 
   mounted() {
 
-    // const urlParams = new URLSearchParams(location.search)
+    const urlParams = new URLSearchParams(location.search)
 
-    // this.store.authWithCode({ code: urlParams.get('code') as string, vue: this })
+    this.store.authWithCode({ code: urlParams.get('code') as string, vue: this })
   }
 
   authenticating() {
