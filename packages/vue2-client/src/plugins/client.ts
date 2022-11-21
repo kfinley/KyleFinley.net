@@ -42,7 +42,7 @@ const plugin = {
       const appName = options.appName ?? "KyleFinley.net";
 
       bootstrapper(options.store);
-      // setupModules(options.store);
+      setupModules(options.store);
 
       // setupValidation(extend);
 
