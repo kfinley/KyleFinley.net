@@ -3,7 +3,7 @@ import { Module, Action, getModule } from 'vuex-module-decorators';
 import BaseModule from './base-module'
 import { GitHubState } from './state'
 import { container } from '@/inversify.config';
-// import { CreateBranch } from '@kylefinley.net/github-commands/src';
+import { CreateBranch } from '@kylefinley.net/github-commands/src';
 import { getAuthModule } from './auth-module'
 
 @Module({ namespaced: true, name: 'GitHub' })
@@ -15,16 +15,16 @@ export class GitHubModule extends BaseModule implements GitHubState {
 
     const authModule = getAuthModule(params.vue); // Hack...
 
-    // const response = container.get<CreateBranch>("CreateBranch").runAsync({
-    //   access_token: authModule.access_token,
-    //   container,
-    //   name: 'foo',
-    //   owner: 'kfinley',
-    //   parentBranch: 'main',
-    //   repo: 'KyleFinley.net'
-    // });
+    const response = container.get<CreateBranch>("CreateBranch").runAsync({
+      access_token: authModule.access_token,
+      container,
+      name: 'foo',
+      owner: 'kfinley',
+      parentBranch: 'main',
+      repo: 'KyleFinley.net'
+    });
 
-    // console.log('response', response);
+    console.log('response', response);
   }
 }
 
