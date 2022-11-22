@@ -1,6 +1,7 @@
 import { Container, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
-import { Octokit } from 'octokit';
+// import { Octokit } from 'octokit';
+import { Octokit } from "https://cdn.skypack.dev/octokit";
 import { getCurrentCommit } from './getCurrentCommit';
 
 export interface CreateBranchRequest {

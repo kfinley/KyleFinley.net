@@ -1,4 +1,5 @@
-import { Octokit } from 'octokit';
+//import { Octokit } from 'octokit';
+import { Octokit } from "https://cdn.skypack.dev/octokit";
 
 //TODO: convert to Command
 export const getCurrentCommit = async (
