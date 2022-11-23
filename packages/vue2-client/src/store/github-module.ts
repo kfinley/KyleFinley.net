@@ -11,20 +11,29 @@ export class GitHubModule extends BaseModule implements GitHubState {
 
   @Action
   async createBranch(params: { vue: Vue }) {
-    console.log('GetHubModule.createBranch', params);
 
-    const authModule = getAuthModule(params.vue); // Hack...
+    try {
 
-    const response = container.get<CreateBranch>("CreateBranch").runAsync({
-      access_token: authModule.access_token,
-      container,
-      name: 'foo',
-      owner: 'kfinley',
-      parentBranch: 'main',
-      repo: 'KyleFinley.net'
-    });
+      console.log('GetHubModule.createBranch', params);
+      console.log('container', container);
+      const authModule = getAuthModule(params.vue); // Hack...
 
-    console.log('response', response);
+      const cmd = container.get<CreateBranch>("CreateBranch");
+      console.log('cmd', cmd);
+
+      const response = cmd.runAsync({
+        access_token: authModule.access_token,
+        // container,
+        name: 'foo',
+        owner: 'kfinley',
+        parentBranch: 'main',
+        repo: 'KyleFinley.net'
+      });
+
+      console.log('response', response);
+    } catch (error) {
+      console.log('ERROR', error);
+    }
   }
 }
 

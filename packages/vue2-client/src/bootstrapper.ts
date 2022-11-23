@@ -8,7 +8,7 @@ export default function bootstrapper(store: Store<any>) {
 
   ghCommandsBootstrapper(container);
 
-  console.log("Bootstrapper Done");
+  console.log("Bootstrapper Done", container);
 
   return container;
 }

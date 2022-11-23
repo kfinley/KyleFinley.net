@@ -6,7 +6,7 @@ import { ApiResponse } from './types';
 export interface ApiClient {
   getAsync<T>(url: string, headers?: Record<string, unknown>): Promise<ApiResponse<T>>;
   getWithAsync<T>(url: string, params: any): Promise<ApiResponse<T>>;
-  postAsync<T>(url: string, data: unknown, headers?: Record<string, unknown>): Promise<ApiResponse<T>>;
+  postAsync<T>(url: URL | string, data?: unknown, headers?: Record<string, unknown>): Promise<ApiResponse<T>>;
 }
 
 const protocol = `${process.env.NODE_ENV === 'production' ? 'https://' : 'http://'}`;
@@ -32,7 +32,7 @@ export class apiClient implements ApiClient {
         ...authHelper.authHeader(),
       };
 
-      console.log(`api.request: ${cfg.method} ${cfg.url}`);
+      console.log(`api.request: ${cfg.method} ${cfg.url}`, requestConfig.headers);
     } catch (e) {
       const err = { message: 'Error creating request header', error: e };
       console.log(err.message);
@@ -40,8 +40,17 @@ export class apiClient implements ApiClient {
     }
 
     try {
+
+      console.log(axios);
+
       const instance = axios.create();
-      return await instance.request<T>(requestConfig);
+
+      console.log('axios', instance);
+
+      const response = await instance.request<T>(requestConfig);
+
+      console.log('response', response);
+      return response;
     } catch (e: any) {
       if (e.response) {
         // (5xx, 4xx)
@@ -62,9 +71,22 @@ export class apiClient implements ApiClient {
     }
   }
 
-  public async postAsync<T>(url: string, data: unknown, headers?: RawAxiosRequestHeaders): Promise<ApiResponse<T>> {
+  public async postAsync<T>(url: string | URL, data?: unknown, headers?: RawAxiosRequestHeaders): Promise<ApiResponse<T>> {
+
+    //console.log('url', url);
+    let uri: string;
+
+    if (((url as URL).host))
+      uri = url.toString();
+    else
+      uri = url as string;
+
+    // const uri = url === typeof(URL) ? url.toString() : url as string;
+
+    //console.log('uri', uri);
+
     return this.requestAsync<T>({
-      url: url.indexOf('https') > -1 ? url : `${protocol}${url}`,
+      url: uri.indexOf('https') > -1 ? uri : `${protocol}${uri}`,
       data,
       headers,
       method: 'POST',
@@ -79,6 +101,7 @@ export class apiClient implements ApiClient {
     });
   }
 
+  //TODO: rework
   public async getWithAsync<T>(url: string, params: any): Promise<ApiResponse<T>> {
     Object.entries(params).forEach(
       ([key, value]) => url = addUrlParam(url, key, value)

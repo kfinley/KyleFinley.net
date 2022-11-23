@@ -1,11 +1,11 @@
-import { Container, Inject, injectable } from 'inversify-props';
+import { injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import { ApiClient } from '@kylefinley.net/api-client/src';
 import { GitHubUser } from './types';
+import { container } from './bootstrapper';
 
 export interface GetUserRequest {
   access_token: string;
-  container: Container;
 }
 
 export interface GetUserResponse {
@@ -21,7 +21,7 @@ export class GetUserCommand implements Command<GetUserRequest, GetUserResponse> 
 
   async runAsync(params: GetUserRequest): Promise<GetUserResponse> {
 
-    this.apiClient = params.container.get<ApiClient>("ApiClient");
+    this.apiClient = container.get<ApiClient>("ApiClient");
     const api = new URL('/user', 'https://api.github.com');
 
     const { data } = await this.apiClient.getAsync<GitHubUser>(api.toString(), {

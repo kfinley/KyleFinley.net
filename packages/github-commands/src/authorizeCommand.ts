@@ -1,7 +1,8 @@
-import { Container, Inject, injectable } from 'inversify-props';
+import { Inject, injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
-import { ApiClient } from '@kylefinley.net/api-client/src';
 import { GetUserCommand } from './getUser';
+import GitHubCommand from './GitHubCommand';
+import { container } from './bootstrapper';
 
 export interface AuthorizeRequest {
   oauth: {
@@ -9,7 +10,6 @@ export interface AuthorizeRequest {
     clientSecret: string | undefined
   },
   code?: string;
-  container: Container;
 }
 
 export interface GitHubAuthData {
@@ -26,10 +26,10 @@ export interface AuthorizeResponse {
 }
 
 @injectable()
-export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResponse> {
+export class AuthorizeCommand extends GitHubCommand implements Command<AuthorizeRequest, AuthorizeResponse> {
 
   // @Inject("ApiClient")
-  private apiClient!: ApiClient;
+  //private apiClient!: ApiClient;
 
   // @Inject("GetUserCommand")
   private getUserCommand!: GetUserCommand;
@@ -38,13 +38,12 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
 
     console.log('AuthorizeCommand');
     console.log(`code: ${params.code}`);
-    console.log('container', params.container);
+    console.log('container', container);
 
-    this.apiClient = params.container.get<ApiClient>("ApiClient");
-    this.getUserCommand = params.container.get<GetUserCommand>("GetUserCommand");
+    this.getUserCommand = container.get<GetUserCommand>("GetUserCommand");
 
-    console.log(this.apiClient);
-    console.log(this.getUserCommand);
+    // console.log(this.apiClient);
+    // console.log(this.getUserCommand);
 
     const api = new URL('/login/oauth/access_token', 'https://github.com')
 
@@ -56,6 +55,8 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
 
     var response = await this.apiClient.postAsync(api.toString(), {})
 
+    // var response = await this.postAsync(api.toString())
+
     let { data } = response;
     let { access_token } = <GitHubAuthData>data;
 
@@ -64,8 +65,7 @@ export class AuthorizeCommand implements Command<AuthorizeRequest, AuthorizeResp
     if (access_token) {
 
       let getUserResult = await this.getUserCommand.runAsync({
-        access_token,
-        container: params.container
+        access_token
       });
 
       return {
