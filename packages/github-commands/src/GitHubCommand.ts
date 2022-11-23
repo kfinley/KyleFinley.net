@@ -30,7 +30,9 @@ export default abstract class GitHubCommand {
 
   protected async getAsync<T>(pathOrUrl: string | URL): Promise<ApiResponse<T>> {
 
-    return await this.apiClient.getAsync(pathOrUrl.toString());
+    const api = this.api(pathOrUrl.toString());
+    
+    return await this.apiClient.getAsync(api.toString());
   }
 
 }
