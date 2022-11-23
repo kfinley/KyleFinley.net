@@ -4,7 +4,7 @@ import { GetUserCommand, AuthorizeCommand, CreateBranch } from './';
 
 let moduleContainer: Container;
 
-export default function bootstrapper(container: Container) {
+export function bootstrapper(container: Container) {
 
   console.log('github-commands bootstrapper');
 
