@@ -4,6 +4,7 @@ import { Command } from '@kylefinley.net/commands/src';
 // import { getCurrentCommit } from './getCurrentCommit';
 import GitHubCommand from './GitHubCommand';
 import { GetCurrentCommit } from './getCurrentCommit';
+
 export interface CreateBranchRequest {
   access_token: string;
   owner: string;
