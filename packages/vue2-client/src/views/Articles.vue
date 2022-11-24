@@ -14,14 +14,17 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { ArticlesState, Status } from '../store';
 import { State } from 'vuex-class'
-import { getArticlesModule } from '../store/articles-module';
+import { ArticlesModule } from '../store/articles-module';
+import { container } from '../inversify.config';
 
 @Component({})
 export default class Articles extends Vue {
   @State('Articles') articlesState!: ArticlesState
 
+  store = container.get<ArticlesModule>("ArticlesModule")
+
   async created() {
-    await getArticlesModule(this).loadArticles();
+    await this.store.loadArticles();
   }
 
   loading() {

@@ -2,6 +2,7 @@ import { container } from './inversify.config';
 import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-commands/src/";
 import { AuthModule, getAuthModule } from "./store/auth-module";
 import { Store } from "vuex";
+import { ArticlesModule, getArticlesModule } from './store/articles-module';
 
 export default function bootstrapper(store: Store<any>) {
 
@@ -10,7 +11,7 @@ export default function bootstrapper(store: Store<any>) {
   ghCommandsBootstrapper(container);
 
   container.bind<AuthModule>("AuthModule").toDynamicValue(() => getAuthModule(store));
-
+  container.bind<ArticlesModule>("ArticlesModule").toDynamicValue(() => getArticlesModule(store));
   // console.log("Bootstrapper Done", container);
 
   return container;
