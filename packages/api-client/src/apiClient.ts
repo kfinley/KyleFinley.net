@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from 'axios';
+import axios, { AxiosRequestConfig, AxiosResponse, AxiosRequestHeaders } from 'axios';
 import { addUrlParam, authHelper, } from './helpers';
 import { injectable } from 'inversify-props';
 import { ApiResponse } from './types';
@@ -26,7 +26,7 @@ export class apiClient implements ApiClient {
         Accept: 'application/json',
       };
 
-      requestConfig.headers = {
+      (requestConfig.headers as any) = {
         ...configHeaders,
         ...cfg.headers,
         ...authHelper.authHeader(),
@@ -73,7 +73,7 @@ export class apiClient implements ApiClient {
     }
   }
 
-  public async postAsync<T>(url: string | URL, data?: unknown, headers?: RawAxiosRequestHeaders): Promise<ApiResponse<T>> {
+  public async postAsync<T>(url: string | URL, data?: unknown, headers?: AxiosRequestHeaders): Promise<ApiResponse<T>> {
 
     //console.log('url', url);
     let uri: string;
@@ -95,7 +95,7 @@ export class apiClient implements ApiClient {
     });
   }
 
-  public async getAsync<T>(url: string, headers?: RawAxiosRequestHeaders): Promise<ApiResponse<T>> {
+  public async getAsync<T>(url: string, headers?: AxiosRequestHeaders): Promise<ApiResponse<T>> {
     return this.requestAsync<T>({
       url: url.indexOf('https') > -1 ? url : `${protocol}${url}`,
       headers,
