@@ -6,7 +6,6 @@ export default abstract class GitHubCommand {
   protected apiClient!: ApiClient;
 
   constructor() {
-    console.log('GitHubCommand', container);
     this.apiClient = container.get<ApiClient>("ApiClient");
   }
 
@@ -16,15 +15,13 @@ export default abstract class GitHubCommand {
 
   protected async postAsync<T>(pathOrUrl: string | URL, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
 
-    console.log(typeof(pathOrUrl));
-
     if (((pathOrUrl as URL).host)) {
-      console.log('posting URL')
+      // console.log('posting URL')
       return await this.apiClient.postAsync(pathOrUrl)
     }
 
     const api = this.api(pathOrUrl as string);
-    console.log('posting string')
+    // console.log('posting string')
     return await this.apiClient.postAsync(api, {}, headers);
   }
 

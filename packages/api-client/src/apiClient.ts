@@ -108,7 +108,7 @@ export class apiClient implements ApiClient {
     Object.entries(params).forEach(
       ([key, value]) => url = addUrlParam(url, key, value)
     );
-    console.log(url);
+    // console.log(url);
     return this.requestAsync<T>({
       url: `${protocol}${url}`,
       method: 'GET',

@@ -29,6 +29,7 @@ export class GetCurrentCommit
     });
 
     const { data } = response;
+    
     console.log(data);
 
     return {

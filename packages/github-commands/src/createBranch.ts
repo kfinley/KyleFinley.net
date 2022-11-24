@@ -23,7 +23,7 @@ export class CreateBranch extends GitHubCommand implements Command<CreateBranchR
 
   async runAsync(params: CreateBranchRequest): Promise<CreateBranchResponse> {
 
-    console.log('CreateBranch', params);
+    //console.log('CreateBranch', params);
 
     var cmd = new GetCurrentCommit();
     cmd.runAsync({

@@ -17,7 +17,7 @@ export class GitHubModule extends BaseModule implements GitHubState {
 
     try {
 
-      console.log('GetHubModule.createBranch', params);
+      //console.log('GetHubModule.createBranch', params);
 
       const response = createBranchCommand.runAsync({
         access_token: authModule.access_token,
@@ -27,7 +27,7 @@ export class GitHubModule extends BaseModule implements GitHubState {
         repo: 'KyleFinley.net'
       });
 
-      console.log('response', response);
+      //console.log('response', response);
     } catch (error) {
       console.log('ERROR', error);
     }

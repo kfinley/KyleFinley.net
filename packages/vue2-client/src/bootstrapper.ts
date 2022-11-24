@@ -5,13 +5,13 @@ import { Store } from "vuex";
 
 export default function bootstrapper(store: Store<any>) {
 
-  console.log('Bootstrapper', process.env.NODE_ENV);
+  // console.log('Bootstrapper', process.env.NODE_ENV);
 
   ghCommandsBootstrapper(container);
 
   container.bind<AuthModule>("AuthModule").toDynamicValue(() => getAuthModule(store));
 
-  console.log("Bootstrapper Done", container);
+  // console.log("Bootstrapper Done", container);
 
   return container;
 }
