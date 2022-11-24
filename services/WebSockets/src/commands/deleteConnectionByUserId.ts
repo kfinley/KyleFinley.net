@@ -20,8 +20,12 @@ export class DeleteConnectionByUserIdCommand implements Command<DeleteConnection
 
     this.ddbClient = container.get<DynamoDBClient>("DynamoDBClient");
     this.getConnectionByUserId = container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
-    
+
+    console.log('ddbClient', this.ddbClient);
+    console.log('ddbClient.endpoint', (await this.ddbClient.config.endpoint()).hostname);
+
     console.log('DeleteConnectionByUserId', params);
+    console.log('CONNECTION_TABLE', CONNECTION_TABLE);
 
     let { userId } = params;
 
@@ -42,6 +46,7 @@ export class DeleteConnectionByUserIdCommand implements Command<DeleteConnection
             }
           }
         }));
+        console.log('response', response);
         if (response.$metadata.httpStatusCode !== 200) {
           throw new Error("Unexpected response in DeleteConnection");
         }

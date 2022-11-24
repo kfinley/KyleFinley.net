@@ -11,11 +11,13 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { State } from 'vuex-class'
 import { AuthState, Status } from '../store';
-import { getAuthModule } from '../store/auth-module';
+import { AuthModule } from '../store/auth-module';
+import { container } from '../inversify.config';
 
 @Component({})
 export default class GitHubLogin extends Vue {
-  store = getAuthModule(this)
+
+  store = container.get<AuthModule>("AuthModule")
 
   @State('Auth') authState!: AuthState
 

@@ -41,16 +41,18 @@ export class apiClient implements ApiClient {
 
     try {
 
-      console.log(axios);
+      // console.log('axios', axios);
 
       const instance = axios.create();
 
-      console.log('axios', instance);
+      // console.log('axios instance', instance);
 
       const response = await instance.request<T>(requestConfig);
 
       console.log('response', response);
+
       return response;
+
     } catch (e: any) {
       if (e.response) {
         // (5xx, 4xx)

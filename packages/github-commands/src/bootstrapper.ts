@@ -6,7 +6,7 @@ let moduleContainer: Container;
 
 export function bootstrapper(container: Container) {
 
-  console.log('github-commands bootstrapper');
+  // console.log('github-commands bootstrapper');
 
   moduleContainer = container;
   container.bind<ApiClient>("ApiClient").to(apiClient);
@@ -14,7 +14,7 @@ export function bootstrapper(container: Container) {
   container.bind<AuthorizeCommand>("AuthorizeCommand").to(AuthorizeCommand);
   container.bind<CreateBranch>("CreateBranch").to(CreateBranch);
 
-  console.log('github-commands bootstrapper done', moduleContainer)
+  // console.log('github-commands bootstrapper done', moduleContainer)
 }
 
 export { moduleContainer as container };

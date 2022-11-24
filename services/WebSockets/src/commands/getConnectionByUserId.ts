@@ -25,7 +25,7 @@ export class GetConnectionByUserIdCommand implements Command<GetConnectionReques
 
     this.ddbClient = container.get<DynamoDBClient>("DynamoDBClient");
 
-    console.log(`Getting connection for ${params.userId}`);
+    console.log(`Getting connection for ${params.userId} from ${CONNECTION_TABLE}`);
 
     const query = {
       TableName: CONNECTION_TABLE,

@@ -3,12 +3,13 @@ import { Module, Action, getModule } from 'vuex-module-decorators';
 import BaseModule from './base-module'
 import { AuthState, Status } from './state'
 import { getWSModule } from "@/store/ws-module";
+import { Store } from "vuex";
 
 @Module({ namespaced: true, name: 'Auth' })
 export class AuthModule extends BaseModule implements AuthState {
   status: Status = Status.None
-  user!: string;
-  access_token!: string
+  user: string = '';
+  access_token: string = '';
 
   @Action
   async authWithCode(params: { code: string, vue: Vue }) {
@@ -23,6 +24,7 @@ export class AuthModule extends BaseModule implements AuthState {
 
   @Action
   token(params: { access_token: string, userId: string }) {
+    console.log('token', params.access_token);
     this.context.commit('mutate',
       (state: AuthState) => {
         state.user = params.userId;
@@ -31,4 +33,4 @@ export class AuthModule extends BaseModule implements AuthState {
       });
   }
 }
-export const getAuthModule = (vue: Vue) => getModule(AuthModule, vue.$store);
+export const getAuthModule = (store: Store<any>) => getModule(AuthModule, store);

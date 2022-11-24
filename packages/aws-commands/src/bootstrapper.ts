@@ -10,7 +10,7 @@ import {
 
 export default function bootstrapper(container: Container) {
 
-  console.log('aws-commands bootstrapper');
+  // console.log('aws-commands bootstrapper');
 
   if (!container.isBound("SNSClient")) {
     container.bind<SNSClient>("SNSClient")
@@ -56,6 +56,6 @@ export default function bootstrapper(container: Container) {
   container.bind<PublishMessageCommand>("PublishMessageCommand").to(PublishMessageCommand);
   container.bind<StartStepFunctionCommand>("StartStepFunctionCommand").to(StartStepFunctionCommand);
 
-  console.log('aws-commands bootstrapper done');
+  // console.log('aws-commands bootstrapper done');
 
 }

@@ -31,7 +31,7 @@ export default class GitHubLogin extends Vue {
     const options = {
       client_id: import.meta.env.VITE_GITHUB_OAUTH_CLIENT_ID,
       redirect_uri: import.meta.env.VITE_GITHUB_OAUTH_REDIRECT_URL,
-      scope: 'user:email',
+      scope: 'user:email,repo',
       state: from,
     }
 

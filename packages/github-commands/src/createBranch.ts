@@ -25,15 +25,12 @@ export class CreateBranch extends GitHubCommand implements Command<CreateBranchR
 
     console.log('CreateBranch', params);
 
-    const owner = `kfinley` //TODO: fix this...
-    const repo = `kylefinley.net` //TODO: fix this...
-    const branch = 'heads/main'
-
     var cmd = new GetCurrentCommit();
     cmd.runAsync({
-      owner,
-      repo,
-      branch
+      owner: params.owner,
+      repo: params.repo,
+      branch: params.parentBranch,
+      access_token: params.access_token
     });
 
     // const octokit = new GitHub({

@@ -1,4 +1,4 @@
-${self:service}-SendMessage:
+KyleFinleyNet-${self:service}-SendMessage:
   definition:
     Comment: Send SNS message to client via APIGateway hosted WebSocket
     StartAt: GetConnection

@@ -4,7 +4,7 @@ import BaseModule from './base-module'
 import { GitHubState } from './state'
 import { container } from '@/inversify.config';
 import { CreateBranch } from '@kylefinley.net/github-commands/src';
-import { getAuthModule } from './auth-module'
+import { AuthModule } from './auth-module'
 
 @Module({ namespaced: true, name: 'GitHub' })
 export class GitHubModule extends BaseModule implements GitHubState {
@@ -12,21 +12,18 @@ export class GitHubModule extends BaseModule implements GitHubState {
   @Action
   async createBranch(params: { vue: Vue }) {
 
+    const authModule = container.get<AuthModule>("AuthModule");
+    const createBranchCommand = container.get<CreateBranch>("CreateBranch");
+
     try {
 
       console.log('GetHubModule.createBranch', params);
-      console.log('container', container);
-      const authModule = getAuthModule(params.vue); // Hack...
 
-      const cmd = container.get<CreateBranch>("CreateBranch");
-      console.log('cmd', cmd);
-
-      const response = cmd.runAsync({
+      const response = createBranchCommand.runAsync({
         access_token: authModule.access_token,
-        // container,
         name: 'foo',
         owner: 'kfinley',
-        parentBranch: 'main',
+        parentBranch: 'heads/main',
         repo: 'KyleFinley.net'
       });
 

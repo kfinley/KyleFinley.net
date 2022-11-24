@@ -14,7 +14,7 @@ export default abstract class GitHubCommand {
     return new URL(path, 'https://api.github.com');
   }
 
-  protected async postAsync<T>(pathOrUrl: string | URL): Promise<ApiResponse<T>> {
+  protected async postAsync<T>(pathOrUrl: string | URL, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
 
     console.log(typeof(pathOrUrl));
 
@@ -25,14 +25,14 @@ export default abstract class GitHubCommand {
 
     const api = this.api(pathOrUrl as string);
     console.log('posting string')
-    return await this.apiClient.postAsync(api, {});
+    return await this.apiClient.postAsync(api, {}, headers);
   }
 
-  protected async getAsync<T>(pathOrUrl: string | URL): Promise<ApiResponse<T>> {
+  protected async getAsync<T>(pathOrUrl: string | URL, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
 
     const api = this.api(pathOrUrl.toString());
-    
-    return await this.apiClient.getAsync(api.toString());
+
+    return await this.apiClient.getAsync(api.toString(), headers);
   }
 
 }
