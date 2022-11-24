@@ -22,7 +22,7 @@ export class DeleteConnectionByUserIdCommand implements Command<DeleteConnection
     this.getConnectionByUserId = container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 
     console.log('ddbClient', this.ddbClient);
-    console.log('ddbClient.endpoint', (await this.ddbClient.config.endpoint()).hostname);
+    // console.log('ddbClient.endpoint', (await this.ddbClient.config.endpoint()).hostname);
 
     console.log('DeleteConnectionByUserId', params);
     console.log('CONNECTION_TABLE', CONNECTION_TABLE);
