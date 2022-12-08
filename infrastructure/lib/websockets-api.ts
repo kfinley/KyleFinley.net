@@ -73,7 +73,7 @@ export class WebSocketsApi extends Construct {
           target: 'es2020', // target environment for the generated JavaScript code,
         },
         depsLockFilePath: join(__dirname, '../../services/WebSockets/package-lock.json'),
-        environment: { 
+        environment: {
           LOG_LEVEL: props?.logLevel!
         },
         handler: "handler",
@@ -137,16 +137,16 @@ export class WebSocketsApi extends Construct {
 
     // Step Functions...
 
-    const getConnectionInvocation = new LambdaInvoke(this, "GetConnectionInvocation", {
+    const getConnectionInvocation = new LambdaInvoke(this, "GetConnection", {
       lambdaFunction: getConnection,
       outputPath: '$.Payload',
     });
 
-    const sendMessageInvocation = new LambdaInvoke(this, "SendMessageInvocation", {
+    const sendMessageInvocation = new LambdaInvoke(this, "SendMessage", {
       lambdaFunction: sendMessage
     });
 
-    const isConnected = new Choice(this, 'Has ConnectionId?');
+    const isConnected = new Choice(this, 'HasConnectionId?');
 
     const chain = Chain
       .start(getConnectionInvocation)
@@ -161,6 +161,7 @@ export class WebSocketsApi extends Construct {
       retention: RetentionDays.ONE_WEEK
     })
 
+    // replace this with https://github.com/mbonig/state-machine or something similar
     const stateMachine = new StateMachine(this, 'kylefinley.net-WebSockets-SendMessage', {
       stateMachineName: 'KyleFinleyNet-WebSockets-SendMessage',
       definition: chain,
@@ -204,8 +205,6 @@ export class WebSocketsApi extends Construct {
       })
     )
     startSendMessageNotification.role?.attachInlinePolicy(lambdaSfnStatusUpdatePolicy)
-
-    // stateMachine.grantExecution(startSendMessageNotification.role as IRole);
 
     // Step Functions end...
 

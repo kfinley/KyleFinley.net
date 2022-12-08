@@ -12,9 +12,9 @@ KyleFinleyNet-${self:service}-SendMessage:
         Type: Choice
         Choices:
           - Variable: $.connectionId
-            StringGreaterThan: ""
-            Next: SendMessage
-        Default: Done
+            StringEquals: ""
+            Next: Fail
+        Default: SendMessage
       SendMessage:
         Type: Task
         Resource:
