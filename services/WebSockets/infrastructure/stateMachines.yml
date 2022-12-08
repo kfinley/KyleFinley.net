@@ -3,23 +3,23 @@ KyleFinleyNet-${self:service}-SendMessage:
     Comment: Send SNS message to client via APIGateway hosted WebSocket
     StartAt: GetConnection
     States:
-      GetConnection:
+      GetConnectionInvocation:
         Type: Task
         Resource:
           Fn::GetAtt: [GetConnection, Arn]
-        Next: IsConnected
-      IsConnected:
+        Next: HasConnectionId
+      HasConnectionId:
         Type: Choice
         Choices:
           - Variable: $.connectionId
             StringEquals: ""
             Next: Fail
         Default: SendMessage
-      SendMessage:
+      SendMessageInvocation:
         Type: Task
         Resource:
           Fn::GetAtt: [SendMessage, Arn]
         End: true
-      Done:
-          Type: Pass
+      Fail:
+          Type: Fail
           End: true

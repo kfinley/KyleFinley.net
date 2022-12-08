@@ -137,12 +137,12 @@ export class WebSocketsApi extends Construct {
 
     // Step Functions...
 
-    const getConnectionInvocation = new LambdaInvoke(this, "GetConnection", {
+    const getConnectionInvocation = new LambdaInvoke(this, "GetConnectionInvocation", {
       lambdaFunction: getConnection,
       outputPath: '$.Payload',
     });
 
-    const sendMessageInvocation = new LambdaInvoke(this, "SendMessage", {
+    const sendMessageInvocation = new LambdaInvoke(this, "SendMessageInvocation", {
       lambdaFunction: sendMessage
     });
 
