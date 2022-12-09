@@ -6,7 +6,7 @@ KyleFinleyNet-${self:service}-SendMessage:
       GetConnectionInvocation:
         Type: Task
         Resource:
-          Fn::GetAtt: [GetConnection, Arn]
+          Fn::GetAtt: [GetConnectionInvocation, Arn]
         Next: HasConnectionId
       HasConnectionId:
         Type: Choice
@@ -18,7 +18,7 @@ KyleFinleyNet-${self:service}-SendMessage:
       SendMessageInvocation:
         Type: Task
         Resource:
-          Fn::GetAtt: [SendMessage, Arn]
+          Fn::GetAtt: [SendMessageInvocation, Arn]
         End: true
       Fail:
           Type: Fail

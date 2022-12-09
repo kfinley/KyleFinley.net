@@ -52,8 +52,8 @@ custom:
     port: 8083
     region: us-east-1
     functions:
-      GetConnection: WebSockets-GetConnection
-      SendMessage: WebSockets-SendMessage
+      GetConnectionInvocation: WebSockets-GetConnection
+      SendMessageInvocation: WebSockets-SendMessage
       # StateMachineStateName: Lambda function name (service-function)
 
 provider:
