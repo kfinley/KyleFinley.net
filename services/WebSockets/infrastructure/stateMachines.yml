@@ -1,7 +1,7 @@
 KyleFinleyNet-${self:service}-SendMessage:
   definition:
     Comment: Send SNS message to client via APIGateway hosted WebSocket
-    StartAt: GetConnection
+    StartAt: GetConnectionInvocation
     States:
       GetConnectionInvocation:
         Type: Task
@@ -14,7 +14,7 @@ KyleFinleyNet-${self:service}-SendMessage:
           - Variable: $.connectionId
             StringEquals: ""
             Next: Fail
-        Default: SendMessage
+        Default: SendMessageInvocation
       SendMessageInvocation:
         Type: Task
         Resource:
@@ -22,4 +22,4 @@ KyleFinleyNet-${self:service}-SendMessage:
         End: true
       Fail:
           Type: Fail
-          End: true
+          Error: No ConnectionId Found

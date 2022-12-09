@@ -49,7 +49,7 @@
     "@aws-sdk/client-sns": "3.216.0",
     "@aws-sdk/util-dynamodb": "3.216.0",
     "@serverless/typescript": "^3.21.0",
-    "axios": "0.27.2",
+    "axios": "1.2.1",
     "dotenv": "^16.0.3",
     "inversify-props": "^2.2.6",
     "lerna": "^5.4.3",
