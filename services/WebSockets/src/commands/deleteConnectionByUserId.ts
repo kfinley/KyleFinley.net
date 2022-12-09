@@ -21,7 +21,7 @@ export class DeleteConnectionByUserIdCommand implements Command<DeleteConnection
     this.ddbClient = container.get<DynamoDBClient>("DynamoDBClient");
     this.getConnectionByUserId = container.get<GetConnectionByUserIdCommand>("GetConnectionByUserIdCommand");
 
-    console.log('ddbClient', this.ddbClient);
+    // console.log('ddbClient', this.ddbClient);
     // console.log('ddbClient.endpoint', (await this.ddbClient.config.endpoint()).hostname);
 
     console.log('DeleteConnectionByUserId', params);
