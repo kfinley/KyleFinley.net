@@ -1,6 +1,7 @@
 {
   "title": "Hiding Specific Parameters in a Reporting Services Report",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "How to hide a parameter on a Reporting Services Report while still being able to pass the report the parameter via the URL or Form Post."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/hiding-parameters-in-reporting-services-report"
+      "content": "https://KyleFinley.net/hiding-parameters-in-reporting-services-report"
     },
     {
       "property": "og:description",

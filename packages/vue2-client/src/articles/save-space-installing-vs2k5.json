@@ -1,6 +1,7 @@
 {
   "title": "Save Space Installing Visual Studio 2005 with SP1",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Steps for installing Visual Studio 2005 with SP1 (including the TFS Client) with minimal free hard drive space."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/save-space-installing-vs2k5"
+      "content": "https://KyleFinley.net/save-space-installing-vs2k5"
     },
     {
       "property": "og:description",

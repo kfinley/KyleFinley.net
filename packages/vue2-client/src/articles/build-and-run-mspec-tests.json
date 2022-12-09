@@ -1,6 +1,7 @@
 {
   "title": "Visual Studio Build + Run MSpec",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "How to setup Visual Studio to build your Solution and then run MSpec tests with the MSpec Runner. "
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/build-and-run-mspec-tests"
+      "content": "https://KyleFinley.net/build-and-run-mspec-tests"
     },
     {
       "property": "og:description",

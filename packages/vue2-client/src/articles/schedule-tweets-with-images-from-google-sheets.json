@@ -1,6 +1,7 @@
 {
   "title": "Twitter Scheduler with Images uploaded from Google Sheets",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Twitter Scheduler that supports Native Images using Google Sheets &amp; images stored in Google Drive via Apps Script and theTwitter API."
     },
@@ -34,7 +35,7 @@
     },
     {
       "name": "twitter:image:src",
-      "content": "http://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
+      "content": "https://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
     },
     {
       "property": "twitter:account_id",
@@ -50,11 +51,11 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/schedule-tweets-with-images-from-google-sheets"
+      "content": "https://KyleFinley.net/schedule-tweets-with-images-from-google-sheets"
     },
     {
       "property": "og:image",
-      "content": "http://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
+      "content": "https://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
     },
     {
       "property": "og:description",

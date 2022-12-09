@@ -1,6 +1,7 @@
 {
   "title": "Sheets to Tweets Apps Script Details",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Details on the Apps Script that runs behind the Sheets To Tweets Google Spreadsheet based Twitter Scheduler."
     },
@@ -34,7 +35,7 @@
     },
     {
       "name": "twitter:image:src",
-      "content": "http://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
+      "content": "https://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
     },
     {
       "property": "twitter:account_id",
@@ -50,11 +51,11 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/sheets-to-tweets-script"
+      "content": "https://KyleFinley.net/sheets-to-tweets-script"
     },
     {
       "property": "og:image",
-      "content": "http://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
+      "content": "https://KyleFinley.net/img/articles/Sheets-to-Tweets-Page-Image-KyleFinley.net.jpg"
     },
     {
       "property": "og:description",

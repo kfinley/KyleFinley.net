@@ -1,6 +1,7 @@
 {
   "title": "Kite the Coast - Chasing Wind in Fort Walton, FL : May 2008",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Journal Entry from the Florida Panhandle. Chasing wind and driving on closed beach roads with the guys from XLKites in Fort Walton, FL."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/kite-the-coast-fort-walton-fl"
+      "content": "https://KyleFinley.net/kite-the-coast-fort-walton-fl"
     },
     {
       "property": "og:description",

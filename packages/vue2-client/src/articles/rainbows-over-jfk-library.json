@@ -1,6 +1,7 @@
 {
   "title": "Rainbows over JFK Library in Boston",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Photos of rainbows over the JFK Library in Boston. Taken from my roof deck in South Boston overlooking Old Harbor (Boston Harbor)."
     },
@@ -34,7 +35,7 @@
     },
     {
       "name": "twitter:image:src",
-      "content": "http://KyleFinley.net/img/photos/rainbow-over-jfk-july-2014-2.jpg"
+      "content": "https://KyleFinley.net/img/photos/rainbow-over-jfk-july-2014-2.jpg"
     },
     {
       "property": "twitter:account_id",
@@ -50,11 +51,11 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/rainbows-over-jfk-library"
+      "content": "https://KyleFinley.net/rainbows-over-jfk-library"
     },
     {
       "property": "og:image",
-      "content": "http://KyleFinley.net/img/photos/rainbow-over-jfk-july-2014-2.jpg"
+      "content": "https://KyleFinley.net/img/photos/rainbow-over-jfk-july-2014-2.jpg"
     },
     {
       "property": "og:description",

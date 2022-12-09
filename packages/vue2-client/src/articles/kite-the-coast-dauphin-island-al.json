@@ -1,6 +1,7 @@
 {
   "title": "Kite the Coast - Kiteboarding Dauphin Island, AL : May 2008",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Journal Entry from Dauphin Island, AL. Private golf course kite launch plus kitesurfing with dolphins! Plus tales of sharks from the locals!!"
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/kite-the-coast-dauphin-island-al"
+      "content": "https://KyleFinley.net/kite-the-coast-dauphin-island-al"
     },
     {
       "property": "og:description",

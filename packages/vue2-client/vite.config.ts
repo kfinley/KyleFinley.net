@@ -5,6 +5,7 @@ import md2Vue2Plugin from 'vite-plugin-md2vue2'
 import emoji from 'markdown-it-emoji'
 
 // fails with TypeError: import_meta.glob is not a function
+// Possibly investigate this later but for now using a very simple bash script to handle generating a site map at deploy
 // import { sitemapPlugin } from './src/vite-plugins/sitemap-plugin';
 
 export default defineConfig(

@@ -1,6 +1,7 @@
 {
   "title": "Slipstream Visual Studio 2008 Service Pack 1",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Step by Step guide for how to slipstream Visual Studio 2008 Service Pack 1."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/slipstream-visual-studio-2008-service-pack-1"
+      "content": "https://KyleFinley.net/slipstream-visual-studio-2008-service-pack-1"
     },
     {
       "property": "og:description",

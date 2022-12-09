@@ -1,6 +1,7 @@
 {
   "title": "Convert Office Files to 2k7 Format - Explorer Context Menu",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Create a Windows Explorer Context Menu item for converting legacy Office documents to XML Format."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/convert-office-files-to-xml-format"
+      "content": "https://KyleFinley.net/convert-office-files-to-xml-format"
     },
     {
       "property": "og:description",

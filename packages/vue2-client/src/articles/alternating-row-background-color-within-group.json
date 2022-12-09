@@ -1,6 +1,7 @@
 {
   "title": "Alternate Row Background Color within a Group",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "How to create Background Color for Alternating Rows within a Group in Reporting Services"
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/alternating-row-background-color-within-group"
+      "content": "https://KyleFinley.net/alternating-row-background-color-within-group"
     },
     {
       "property": "og:description",

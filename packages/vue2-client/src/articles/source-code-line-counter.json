@@ -1,6 +1,7 @@
 {
   "title": "Simple ASP.NET Source Code Line Counter",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Here's a vbscript that will give you a line count for source code in a directory. This script allows you to count all the lines in a given system. "
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/source-code-line-counter"
+      "content": "https://KyleFinley.net/source-code-line-counter"
     },
     {
       "property": "og:description",

@@ -1,6 +1,7 @@
 {
   "title": "St. Lucia @ The Reef: Adjusting to Kitesurfing, Sand, & Sun",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "First writing from my two week stay in St. Lucia at The Reef Kitesurf Center and Beach Cafe with Guest Huts. Getting my sea legs back!"
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/adjusting-to-kitesurfing-sand-and-sun"
+      "content": "https://KyleFinley.net/adjusting-to-kitesurfing-sand-and-sun"
     },
     {
       "property": "og:description",

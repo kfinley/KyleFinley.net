@@ -1,6 +1,7 @@
 {
   "title": "Kite the Coast - Great Conditions in Gulfport, MS : May 2008",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Journal Entry from Gulfport MS. Perfect Sun, Sand, and Side-Shore wind conditions for kitesurfing the Mississippi Coast. Great locals too!"
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/kite-the-coast-gulfport-ms"
+      "content": "https://KyleFinley.net/kite-the-coast-gulfport-ms"
     },
     {
       "property": "og:description",

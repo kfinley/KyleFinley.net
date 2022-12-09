@@ -1,6 +1,7 @@
 {
   "title": "Generic Collection Class with Sorting Support in C# .NET",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Create a Generic Collection with Sorting Support using C# in .net 2.0. "
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/generic-collection-class-with-sorting-net-2"
+      "content": "https://KyleFinley.net/generic-collection-class-with-sorting-net-2"
     },
     {
       "property": "og:description",

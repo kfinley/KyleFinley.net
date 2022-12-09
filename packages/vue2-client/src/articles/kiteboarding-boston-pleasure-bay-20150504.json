@@ -1,6 +1,7 @@
 {
   "title": "Kiteboarding Boston's Pleasure Bay May 4th, 2015",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Local Boston kitesurfers enjoying a nice windy Spring day at one of New England's best kiteboarding spots, Pleasure Bay on May 4th, 2015"
     },
@@ -34,7 +35,7 @@
     },
     {
       "name": "twitter:image:src",
-      "content": "http://KyleFinley.net/img/copyrighted/%C2%A9_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3016.jpg"
+      "content": "https://KyleFinley.net/img/copyrighted/%C2%A9_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3016.jpg"
     },
     {
       "property": "twitter:account_id",
@@ -50,11 +51,11 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/kiteboarding-boston-pleasure-bay-20150504"
+      "content": "https://KyleFinley.net/kiteboarding-boston-pleasure-bay-20150504"
     },
     {
       "property": "og:image",
-      "content": "http://KyleFinley.net/img/copyrighted/%C2%A9_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3016.jpg"
+      "content": "https://KyleFinley.net/img/copyrighted/%C2%A9_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_3016.jpg"
     },
     {
       "property": "og:description",

@@ -1,6 +1,7 @@
 {
   "title": "Taking a Bit of a Break From Work",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "I decided to take a 4 Month Leave of Absence so I could Travel, Snowboard, Kiteboard, Camp, Photo, and explore the US coast along the Gulf and East coast."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/taking-my-first-big-break-from-work"
+      "content": "https://KyleFinley.net/taking-my-first-big-break-from-work"
     },
     {
       "property": "og:description",

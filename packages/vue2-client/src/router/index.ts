@@ -141,7 +141,7 @@ export const createRouter = async () => {
 
   for (const article of Object.keys(Articles)) {
     try {
-      // console.log(article);
+      console.log(article);
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
@@ -161,7 +161,7 @@ export const createRouter = async () => {
         ],
         // meta: { allowAnonymous: true },
       })
-      // console.log(`Created route for article at path /${article}`)
+      console.log(`Created route for article at path /${article}`)
     } catch (e) {
       console.log(e)
     }

@@ -1,6 +1,7 @@
 {
   "title": "Kite the Coast - Charleston, SC : May 31 to June 2nd, 2008",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Journal Entry: South Carolina 2008 road trip around the Gulf of Mexico and up the Eastern Coast. Kiteboarding, Camping, Couchsuring, &amp; new friends."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/kite-the-coast-charleston-sc"
+      "content": "https://KyleFinley.net/kite-the-coast-charleston-sc"
     },
     {
       "property": "og:description",

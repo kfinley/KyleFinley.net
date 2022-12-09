@@ -1,6 +1,7 @@
 {
   "title": "Kite the Coast - Arriving in Cape Hatteras, NC : June 2008",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Journal Entry from first day on Cape Hatteras, NC. Making my way onto the Outer Banks islands in North Carolina for 3 days of kiteboarding and camping."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/kite-the-coast-cape-hatteras-nc-arriving"
+      "content": "https://KyleFinley.net/kite-the-coast-cape-hatteras-nc-arriving"
     },
     {
       "property": "og:description",

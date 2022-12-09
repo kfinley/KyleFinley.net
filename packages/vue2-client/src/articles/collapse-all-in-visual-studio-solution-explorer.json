@@ -1,6 +1,7 @@
 {
   "title": "Collapse All Folders in VS Solution Explorer",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/collapse-all-in-visual-studio-solution-explorer"
+      "content": "https://KyleFinley.net/collapse-all-in-visual-studio-solution-explorer"
     },
     {
       "property": "og:description",

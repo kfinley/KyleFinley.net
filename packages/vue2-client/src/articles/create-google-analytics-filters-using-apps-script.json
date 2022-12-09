@@ -1,6 +1,7 @@
 {
   "title": "Create Google Analytics Filter using Apps Script",
-  "metaTags": [{
+  "metaTags": [
+    {
       "name": "description",
       "content": "Manage Google Analytics settings from Apps Script by creating View Filters programmatically. In this example I create Referrer Spam Filters."
     },
@@ -46,7 +47,7 @@
     },
     {
       "property": "og:url",
-      "content": "http://KyleFinley.net/create-google-analytics-filters-using-apps-script"
+      "content": "https://KyleFinley.net/create-google-analytics-filters-using-apps-script"
     },
     {
       "property": "og:description",
