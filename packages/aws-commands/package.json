@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@types/node": "^14.14.31",
-    "@aws-sdk/client-dynamodb": "^3.37.0",
-    "@aws-sdk/client-s3": "^3.37.0",
-    "@aws-sdk/client-sfn": "^3.37.0",
-    "@aws-sdk/client-sns": "^3.37.0",
-    "@aws-sdk/util-dynamodb": "^3.37.0",
+    "@aws-sdk/client-dynamodb": "3.216.0",
+    "@aws-sdk/client-s3": "3.216.0",
+    "@aws-sdk/client-sfn": "3.216.0",
+    "@aws-sdk/client-sns": "3.216.0",
+    "@aws-sdk/util-dynamodb": "3.216.0",
     "@kylefinley.net/commands": "^0.0.1",
     "inversify-props": "^2.2.6"
   }

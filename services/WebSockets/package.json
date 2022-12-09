@@ -13,9 +13,9 @@
     "test:unit": "jest"
   },
   "dependencies": {
-    "@aws-sdk/client-apigatewaymanagementapi": "^3.37.0",
-    "@aws-sdk/client-dynamodb": "^3.37.0",
-    "@aws-sdk/util-dynamodb": "^3.37.0",
+    "@aws-sdk/client-apigatewaymanagementapi": "3.216.0",
+    "@aws-sdk/client-dynamodb": "3.216.0",
+    "@aws-sdk/util-dynamodb": "3.216.0",
     "@kylefinley.net/commands": "^0.0.1",
     "@kylefinley.net/aws-commands": "^0.0.1",
     "@kylefinley.net/github-commands": "^0.0.1",

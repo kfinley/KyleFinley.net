@@ -11,9 +11,6 @@
     "build": "tsc --build --clean && tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "octokit": "^2.0.10"
-  },
   "dependencies": {
     "@kylefinley.net/commands": "^0.0.1",
     "@kylefinley.net/api-client": "^0.0.1",
