@@ -24,8 +24,7 @@ create_url() {
       last_mod=${parts[0]}
       last_mod=$(date -j -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
     else
-      date --help
-      last_mod=$(date -d "$last_mod" +"%s")
+      last_mod=$(date -d "$last_mod" +'%Y-%m-%d')
     fi
   fi
 
