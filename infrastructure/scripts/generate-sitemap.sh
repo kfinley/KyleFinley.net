@@ -22,7 +22,11 @@ create_url() {
   last_mod=${parts[0]}
 
   if [[ "$last_mod" == *"/"* ]]; then
-    last_mod=$(date -j -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
+    if [[ $OSTYPE == 'darwin'* ]]; then
+      last_mod=$(date -j -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
+    else
+      last_mod=$(date -d -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
+    fi
   fi
 
   local url=$(get_meta_tag "og:url" $2)
