@@ -12,15 +12,19 @@ create_url() {
     file="${2/json/vue}"
   fi
 
+  # Get the article:modified_time time if we have one
   local last_mod=$(get_meta_tag "article:modified_time" $2)
 
+  # if we don't set last modified to the file last modified date
   if [ "$last_mod" = "" ]; then
     last_mod=$(date -r $file "+%Y-%m-%d")
   fi
 
+  # Change the format
   if [[ "$last_mod" == *"/"* ]]; then
     if [[ $OSTYPE == 'darwin'* ]]; then
-      parts=($last_mod) # if the date string has time we just want the first segment which is the date
+      # we just want the first segment and not the time
+      parts=($last_mod)
       last_mod=${parts[0]}
       last_mod=$(date -j -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
     else
