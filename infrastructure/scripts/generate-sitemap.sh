@@ -18,13 +18,13 @@ create_url() {
     last_mod=$(date -r $file "+%Y-%m-%d")
   fi
 
-  parts=($last_mod) # if the date string has time we just want the first segment which is the date
-  last_mod=${parts[0]}
-
   if [[ "$last_mod" == *"/"* ]]; then
     if [[ $OSTYPE == 'darwin'* ]]; then
+      parts=($last_mod) # if the date string has time we just want the first segment which is the date
+      last_mod=${parts[0]}
       last_mod=$(date -j -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
     else
+      date --help
       last_mod=$(date -d -f '%m/%d/%Y' "$last_mod" +'%Y-%m-%d')
     fi
   fi
