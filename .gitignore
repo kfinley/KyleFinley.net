@@ -47,3 +47,5 @@ cdk.out.yaml
 registration.json
 
 .env
+
+sitemap.xml
