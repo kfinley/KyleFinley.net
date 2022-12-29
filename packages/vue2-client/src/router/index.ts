@@ -243,7 +243,7 @@ export const createRouter = async () => {
     const pathParts = file.split('/')
     switch (file) {
       case "Home":
-      case "Posts":
+      case "Articles":
         return (await import(`../views/${pathParts[0]}.json`)).default
       default: {
         if (pathParts.length === 1) {

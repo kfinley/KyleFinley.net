@@ -45,7 +45,8 @@
         "threadheap.serverless-ide-vscode",
         "ms-azuretools.vscode-docker",
         "joshbolduc.story-explorer",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "cschleiden.vscode-github-actions"
       ]
     }
   },
