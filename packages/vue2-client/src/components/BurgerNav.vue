@@ -70,7 +70,7 @@ export default class BurgerNav extends Vue {
 /*
 # Mobile Navigation
 */
-@media (max-width: 768px) {
+@media (max-width: 896px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -165,7 +165,7 @@ export default class BurgerNav extends Vue {
 # Desktop Navigation
 */
 
-@media (min-width: 768px) {
+@media (min-width: 896px) {
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
