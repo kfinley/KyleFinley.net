@@ -2,7 +2,7 @@ import 'reflect-metadata';
 
 import { APIGatewayProxyResult } from 'aws-lambda';
 import bootstrapper from "../../src/bootstrapper";
-import { handler as connect } from '../../src/functions/connect/function';
+import { handler as connect } from '../../src/functions/connect';
 import { SaveConnectionCommand } from '../../src/commands';
 
 import event from '../data/connect-event.json';

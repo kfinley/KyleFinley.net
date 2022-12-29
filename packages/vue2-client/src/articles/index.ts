@@ -1,4 +1,4 @@
-const metaFiles = import.meta.glob('../articles/*.json');
+const metaFiles = import.meta.glob('../articles/**/*.json');
 
 function buildArticles() {
 
@@ -7,7 +7,14 @@ function buildArticles() {
   const articles: Record<string, string> = {};
 
   for (let file in metaFiles) {
-    const article = file.split('/')[2].split('.')[0];
+    // console.log('file', file);
+    let article;
+    const fileSplit = file.split('/');
+    if (fileSplit.length == 3)
+      article = `${file.split('/')[2].split('.')[0]}`;
+    else
+      article = `${file.split('/')[2]}/${file.split('/')[3].split('.')[0]}`;
+
     articles[article] = file.replace('.json', '');
   }
 

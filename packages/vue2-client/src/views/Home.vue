@@ -50,7 +50,6 @@
               Nobody From Nashville in and around the Bay Area.
             </p>
           </div>
-
           <div class="col-md-4">
             <h2 class="text-center section-header">Photography</h2>
             <p>
@@ -114,12 +113,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Hero } from '../components/'
-@Component({
-  components: {
-    Hero,
-  },
-})
+@Component
 export default class Home extends Vue {}
 </script>
 

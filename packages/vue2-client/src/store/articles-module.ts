@@ -17,12 +17,13 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
 
     try {
 
-      const articlesMeta = import.meta.glob('../articles/*.json')
+      const articlesMeta = import.meta.glob('../articles/**/*.json')
 
       const articleList: Record<string, string> = {};
 
       for (let file in articlesMeta) {
-        const meta = file.split('/')[2]
+        const split = file.split('/');
+        const meta = `${split[2]}/${split[3]}`
         const article = meta.split('.')[0]
         const title = ((await articlesMeta[file]()) as any).default.title
         // console.log({ article, title })

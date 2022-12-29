@@ -141,7 +141,18 @@ export const createRouter = async () => {
 
   for (const article of Object.keys(Articles)) {
     try {
-      console.log(article);
+      // console.log(article);
+      const articlePathParts = article.split('/')
+      let articleComponent;
+      let articleJson = '';
+      if (articlePathParts.length === 1) {
+        articleJson = `../articles/${articlePathParts[0]}.json`;
+        articleComponent = defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${articlePathParts[0]}.md`))
+      }
+      if (articlePathParts.length === 2) {
+        articleJson = `../articles/${articlePathParts[0]}/${articlePathParts[1]}.json`
+        articleComponent = defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${articlePathParts[0]}/${articlePathParts[1]}.md`))
+      }
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
@@ -153,15 +164,15 @@ export const createRouter = async () => {
               {
                 path: '',
                 name: article,
-                component: defineAsyncComponent(() => import(/* @vite-ignore */ /* webpackChunkName: "[request]" */ `../articles/${article}.md`)),
-                meta: viewsMeta[`../articles/${article}.json`] ? (await viewsMeta[`../articles/${article}.json`]() as any).default : { allowAnonymous: true }
+                component: articleComponent,
+                meta: viewsMeta[articleJson] ? (await viewsMeta[articleJson]() as any).default : { allowAnonymous: true }
               }
             ],
           }
         ],
         // meta: { allowAnonymous: true },
       })
-      console.log(`Created route for article at path /${article}`)
+      // console.log(`Created route for article at path /${article}`)
     } catch (e) {
       console.log(e)
     }
@@ -171,6 +182,9 @@ export const createRouter = async () => {
     mode: "history",
     base: "/", // process.env.BASE_URL,
     routes,
+    scrollBehavior(to, from, savedPosition) {
+      return { x: 0, y: 0 };
+    }
   });
 
   // This callback runs before every route change, including on page load.
@@ -219,6 +233,72 @@ export const createRouter = async () => {
       .forEach((tag: any) => document.head.appendChild(tag));
 
     next();
+
+  });
+
+  const getMetaData = async (file: string) => {
+    // console.log(file)
+    // This is a shitty hack to make nested paths for dynamic imports work b/c of an issue in Vite
+    // https://github.com/vitejs/vite/issues/4945
+    const pathParts = file.split('/')
+    switch (file) {
+      case "Home":
+      case "Posts":
+        return (await import(`../views/${pathParts[0]}.json`)).default
+      default: {
+        if (pathParts.length === 1) {
+          return (await import(`../articles/${pathParts[0]}.json`)).default
+        }
+        if (pathParts.length === 2) {
+          return (await import(`../articles/${pathParts[0]}/${pathParts[1]}.json`)).default
+        }
+      }
+
+    }
+
+  }
+
+  router.afterEach((to, from) => {
+    setTimeout(() => {
+
+      getMetaData(to.name as string).then((meta) => {
+        document.title = meta.title
+
+        for (const tag of meta.metaTags) {
+          // console.log(tag)
+          const tagEl = document.createElement('meta')
+          tagEl.setAttribute(Object.values(tag as string)[0], Object.values(tag as string)[1])
+
+          // We use this to track which meta tags we create so we don't interfere with other ones.
+          tagEl.setAttribute('data-vue-router-controlled', '')
+          document.head.appendChild(tagEl)
+        }
+      })
+      document.querySelectorAll('img').forEach((i) => {
+        console.log(i)
+        i.src = i.src.replace('media', 'img/media')
+      })
+      Array.from(Array.from(document.getElementsByTagName('main'))[0].querySelectorAll('main a:not(a[href*="http"])')).map((link) => {
+        // console.log(link)
+        link.addEventListener(
+          'click',
+          function (e) {
+
+            e.preventDefault()
+            e.stopPropagation()
+            router.push({ path: (link as any).href.split(window.location.host)[1] })
+          },
+          false
+        )
+      })
+      Array.from(document.querySelectorAll('div > p')).map((p) => {
+        // Remove indent for any paragraphs that are 2 lines or less.
+        if (p.clientHeight <= 50) {
+          (p as any).style['text-indent'] = '0'
+        }
+      })
+    }, 200)
+
   });
 
   return router;
