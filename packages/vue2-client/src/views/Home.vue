@@ -127,4 +127,34 @@ export default class Home extends Vue {}
   padding-bottom: 5px;
   border-color: gray;
 }
+
+.container > div {
+  text-align: justify;
+  text-justify:auto;
+
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
+
+  -moz-hyphens: auto;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphenate-limit-lined: 2;
+  -moz-hyphenate-limit-last: always;
+  -moz-hyphenate-limit: 8%;
+
+  -ms-hyphens: auto;
+  -ms-hyphens-limit-chars: 6 3 3;
+  -ms-hyphens-limit-lines: 2;
+  -ms-hyphens-limit-last: always;
+  -ms-hyphens-limit-zone: 8%;
+
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lies: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
 </style>
