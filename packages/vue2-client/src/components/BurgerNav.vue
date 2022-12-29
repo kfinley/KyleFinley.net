@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component()
 export default class BurgerNav extends Vue {
@@ -117,7 +117,6 @@ export default class BurgerNav extends Vue {
   }
 }
 
-
 @media (min-width: 768px) {
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -179,21 +178,6 @@ export default class BurgerNav extends Vue {
   .navbar li:hover > a {
     color: #fff;
   }
-
-  // .navbar .dropdown ul,
-  // .navbar .dropdown .dropdown ul {
-  //   position: static;
-  //   display: none;
-  //   padding: 10px 0;
-  //   margin: 10px 20px;
-  //   transition: all 0.5s ease-in-out;
-  //   border: 1px solid #19335c;
-  // }
-
-  // .navbar .dropdown > .dropdown-active,
-  // .navbar .dropdown .dropdown > .dropdown-active {
-  //   display: block;
-  // }
 
   .mobile-nav-show {
     color: #fff;
