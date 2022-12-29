@@ -19,7 +19,7 @@
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
     "build": "npm run clean:js-files && lerna bootstrap --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/aws-commands --scope=@kylefinley.net/vue2-client --scope=@kylefinley.net/infrastructure && npm run build:client && npm run build:lambdas",
     "build:client": "npm run generate-sitemap && lerna run build --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
-    "build:lambdas": "lerna run build --stream --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/aws-commands --scope=@kylefinley.net/aws-websockets --scope=@kylefinley.net/infrastructure",
+    "build:lambdas": "lerna run build --stream --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/aws-commands --scope=@kylefinley.net/aws-websockets",
     "build:cdk": "lerna run build --stream --scope=@kylefinley.net/infrastructure",
     "dev:client:docker": "lerna run dev:docker --stream --scope=@kylefinley.net/vue2-client",
     "generate-sitemap": "./infrastructure/scripts/generate-sitemap.sh ./packages/vue2-client/public/sitemap.xml",
