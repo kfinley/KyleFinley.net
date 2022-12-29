@@ -6,7 +6,7 @@
 
 ---
 
-Here is a presentation I prepared for Leanbox executive team in early May 2016. At this point I had been working with Leanbox for about four months and had taken on the role of Team Lead and Scrum Master. I implemented a framework I had developed over the years which helped the team move past some process and tech troubles that had been preventing them from delivering features to production in a timely manor.
+Here's a presentation I prepared for the LeanBox executive team in early May 2016. At this point I had been working with Leanbox for about four months and had taken on the role of Team Lead and Scrum Master. I implemented a framework I had developed over the years which helped the team move past some process and tech troubles that had been preventing them from delivering features to production in a timely manor.
 
 This presentation lays out the Lean Scrum framework we used at LeanBox. The process includes Dan North's BDD style User Stories and uses Trello for managing story cards. I prepared this presentation in the early morning hours of May 16th after being <strike>told</strike> asked to deliver a presentation to the executives explaining how we were doing our work.
 

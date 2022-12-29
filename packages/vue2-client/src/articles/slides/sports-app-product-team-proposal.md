@@ -10,7 +10,7 @@ Here is a proposal for a Product Team setup I prepared for the owner and CEO, CT
 
 <p>
   <div class="responsive-google-slides">
-    <iframe src="https://docs.google.com/presentation/d/1BJo9I1uvY6txSYAZ8Jz9oi2kbGchtcCRV7nrY4KvGPQ/embed"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1st4Vbu8SlqWnsJtMErLIkjLqtdwpsoktsX5PwWtUl0k/embed"></iframe>
   </div>
 </p>
 

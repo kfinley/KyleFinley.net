@@ -1,17 +1,17 @@
 {
-  "title": "Scrum @ Leanbox",
+  "title": "Scrum @ LeanBox",
   "metaTags": [
     {
       "name": "description",
-      "content": "A presentation I prepared for Leanbox.com laying out the Lean Scrum process that would be used for all product development."
+      "content": "A presentation I prepared for LeanBox laying out the Lean Scrum process that would be used for all product development."
     },
     {
       "itemprop": "name",
-      "content": "Scrum @ Leanbox"
+      "content": "Scrum @ LeanBox"
     },
     {
       "itemprop": "description",
-      "content": "A presentation I prepared for Leanbox.com laying out the Lean Scrum process that would be used for all product development."
+      "content": "A presentation I prepared for LeanBox laying out the Lean Scrum process that would be used for all product development."
     },
     {
       "name": "twitter:card",
@@ -27,11 +27,11 @@
     },
     {
       "name": "twitter:title",
-      "content": "Scrum @ Leanbox"
+      "content": "Scrum @ LeanBox"
     },
     {
       "name": "twitter:description",
-      "content": "A presentation I prepared for Leanbox.com laying out the Lean Scrum process that would be used for all product development."
+      "content": "A presentation I prepared for LeanBox laying out the Lean Scrum process that would be used for all product development."
     },
     {
       "property": "twitter:account_id",
@@ -39,7 +39,7 @@
     },
     {
       "property": "og:title",
-      "content": "Scrum @ Leanbox"
+      "content": "Scrum @ LeanBox"
     },
     {
       "property": "og:type",
@@ -47,11 +47,11 @@
     },
     {
       "property": "og:url",
-      "content": "https://KyleFinley.net/slides/scrum-at-leanbox"
+      "content": "https://KyleFinley.net/slides/scrum-at-LeanBox"
     },
     {
       "property": "og:description",
-      "content": "A presentation I prepared for Leanbox.com laying out the Lean Scrum process that would be used for all product development."
+      "content": "A presentation I prepared for LeanBox laying out the Lean Scrum process that would be used for all product development."
     },
     {
       "property": "og:site_name",
