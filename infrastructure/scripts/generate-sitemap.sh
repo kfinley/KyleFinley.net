@@ -54,6 +54,10 @@ for file in packages/vue2-client/src/articles/*.json; do
   create_url $1 $file
 done
 
+for file in packages/vue2-client/src/articles/**/*.json; do
+  create_url $1 $file
+done
+
 cat >>$1 <<EOF
 </urlset>
 EOF

@@ -9,9 +9,10 @@ sudo chmod 777 /var/run/docker-host.sock
 
 # Run npm & lerna installs
 if ! [ -d './node_modules' ]; then
-    sudo apt install python2 -y
-    npm config set python python2
-    npm install
+    # Do we still need this????
+    # sudo apt install python2 -y
+    # npm config set python python2
+    npm i
     npm run bootstrap
 else
     echo 'Existing repo setup... skipping npm & lerna setup.'

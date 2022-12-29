@@ -1,0 +1,17 @@
+# Infrastructure as Code with AWS Cloud Developer Kit
+
+#### Overview of IaC and how it can be done using AWS CDK
+
+*<div class="article-meta-data"> by Kyle Finley</span> Published: <time itemprop="pubdate" datetime="12/28/2022">Thursday, Dec 28, 2022</time></div>*
+
+---
+
+Infrastructure as Code isn't new but it is a crucial part of the product puzzle if you want to compete in today's software world. This presentation gives an overview of what IaC is, why we do it, and how it can be done using Amazon's Cloud Developer Kit (CDK).
+
+I prepared and delivered this presentation to a company I worked with in January 2022.
+
+<p>
+  <div class="responsive-google-slides">
+    <iframe src="https://docs.google.com/presentation/d/1af5dNWZ1Hwm9ixOrDMwydpC3i5RM2C1auSxVFClneqI/embed"></iframe>
+  </div>
+</p>
