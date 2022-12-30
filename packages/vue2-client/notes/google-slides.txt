@@ -1,0 +1,5 @@
+Example of how to embed slides that shows a fullscreen option.
+
+https://www.k8oms.net/images/presentations
+
+From looking at the source it's all Google JSController library stuff that adds the overlay that shows the link to open a new tab 

@@ -10,7 +10,7 @@ Here is my presentation that lays out a simple Lean Scrum Framework I've develop
 
 <p>
   <div class="responsive-google-slides">
-    <iframe src="https://docs.google.com/presentation/d/1BJo9I1uvY6txSYAZ8Jz9oi2kbGchtcCRV7nrY4KvGPQ/embed"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS8ChSWDNUBMI2pSbS9xI-n6EdphvhcPaHuIwZHXp8Q_og0hX08EcAcr0MSiuZMU1rM9lFctGvHvhGO/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
   </div>
 </p>
 

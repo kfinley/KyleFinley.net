@@ -12,6 +12,6 @@ This is a presentation I gave to KarmaLoop CEO Gregg Selko in the summer of 2013
 
 <p>
   <div class="responsive-google-slides">
-    <iframe src="https://docs.google.com/presentation/d/1sKvB1R16q2Tmb2rNCeJ0BOovgAkRvZFAfF2hpyUEQGk/embed"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1sKvB1R16q2Tmb2rNCeJ0BOovgAkRvZFAfF2hpyUEQGk/embed?start=false&loop=falsedelayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
   </div>
 </p>
