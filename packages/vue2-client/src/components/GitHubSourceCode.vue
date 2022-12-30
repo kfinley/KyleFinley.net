@@ -1,7 +1,7 @@
 <template>
   <div>
     <pre>
-      <code class="language-html hljs">{{ sourceCode }}</code>
+      <code class="language-html language-javascript language-typescript hljs">{{ sourceCode }}</code>
     </pre>
   </div>
 </template>
@@ -27,16 +27,7 @@ export default class GitHubSourceCode extends Vue {
 
   async fetchSource() {
     const data = await (await fetch(this.path)).json();
-    this.sourceCode = atob(data.content)
-    // console.log(this.sourceCode);
-  }
-
-  getClass() {
-    // console.log('fuck', this.lang)
-    if (this.lang === null) {
-      return 'language-html hljs1'
-    }
-    return `language-${this.lang} hljs1`
+    this.sourceCode = atob(data.content) // console.log(this.sourceCode);
   }
 }
 </script>
