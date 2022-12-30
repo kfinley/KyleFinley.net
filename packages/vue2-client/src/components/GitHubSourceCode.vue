@@ -1,7 +1,7 @@
 <template>
   <div>
     <pre>
-      <code class="language-html language-javascript language-typescript hljs">{{ sourceCode }}</code>
+      <code class="language-html language-javascript language-typescript language-xml hljs">{{source}}</code>
     </pre>
   </div>
 </template>
@@ -19,15 +19,27 @@ export default class GitHubSourceCode extends Vue {
   @Prop()
   lang!: string
 
-  sourceCode: string = ''
+  sourceCode = 'Loading...';
 
   async mounted() {
-    await this.fetchSource();
+    //setTimeout(async () => {
+      await this.fetchSource()
+    // }, 1000)
   }
 
   async fetchSource() {
-    const data = await (await fetch(this.path)).json();
-    this.sourceCode = atob(data.content) // console.log(this.sourceCode);
+    const data = await (await fetch(this.path)).json()
+    this.source = atob(data.content)
+    // console.log(this.sourceCode);
+  }
+
+  get source() {
+    // console.log(this.sourceCode);
+    return this.sourceCode;
+  }
+  set source(val) {
+    this.sourceCode = val;
+    console.log('sourceCode set')
   }
 }
 </script>

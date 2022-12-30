@@ -29,7 +29,7 @@ export default class ArticleLayout extends Vue {
 
     Array.from(document.querySelectorAll('code')).map((code) => {
       Array.from(code.classList).map((c) => {
-        console.log(c)
+        // console.log(c)
         shouldHighlight =
           this.registerLanguageIfIncluded('vb', 'vbscript', vbscript, c) ||
           shouldHighlight
@@ -44,7 +44,7 @@ export default class ArticleLayout extends Vue {
         shouldHighlight =
           this.registerLanguageIfIncluded('html', 'html', html, c) || shouldHighlight
         shouldHighlight =
-          this.registerLanguageIfIncluded('html', 'html', xml, c) || shouldHighlight
+          this.registerLanguageIfIncluded('html', 'html', xml, c) || shouldHighlight // Hack
 
       })
     })
@@ -56,7 +56,7 @@ export default class ArticleLayout extends Vue {
 
   registerLanguageIfIncluded(langSlug, lang, langRef, c) {
     if (c.includes(langSlug)) {
-      console.log(`Registering ${lang} for ${c}`)
+      //console.log(`Registering ${lang} for ${c}`)
       hljs.registerLanguage(langSlug, langRef)
       return true
     }
