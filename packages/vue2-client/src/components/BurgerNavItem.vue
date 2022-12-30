@@ -9,8 +9,8 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-@Component()
-export default class BurgerNavItem {
+@Component
+export default class BurgerNavItem extends Vue {
   @Prop()
   route!: string
 

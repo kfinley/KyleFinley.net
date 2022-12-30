@@ -13,7 +13,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-@Component()
+@Component
 export default class BurgerNav extends Vue {
   mobileNavShow: element
   mobileNavHide: element

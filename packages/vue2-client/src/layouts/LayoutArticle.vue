@@ -12,15 +12,16 @@ import csharp from 'highlight.js/lib/languages/csharp'
 import javascript from 'highlight.js/lib/languages/javascript'
 import json from 'highlight.js/lib/languages/json'
 import html from 'highlight.js/lib/languages/vbscript-html'
-import { metaFiles } from '../articles'
-
+import { GSlides } from '../components'
 import 'highlight.js/styles/github-dark-dimmed.css'
 
-@Component()
+@Component({
+  components: {
+    GSlides
+  }
+})
 export default class ArticleLayout extends Vue {
-
   async mounted() {
-
     this.setTitleAndMetaTags()
     this.handleHighlight()
     this.handlePTags()
@@ -96,9 +97,9 @@ export default class ArticleLayout extends Vue {
 
   rewriteImagesForLocalDev() {
     //silly hack to be able to run local. Should compile this out...
-    document.querySelectorAll('img').forEach(i => {
-      i.src = i.src.replace('media', 'img/media');
-    });
+    document.querySelectorAll('img').forEach((i) => {
+      i.src = i.src.replace('media', 'img/media')
+    })
   }
 
   getMetaData = async (file: string) => (await import(`../articles/${file}.json`)).default
@@ -117,10 +118,9 @@ export default class ArticleLayout extends Vue {
 // p:not(:has(> img)) {
 
 .article-wrapper > div > p {
-
   text-indent: 15px;
   text-align: justify;
-  text-justify:auto;
+  text-justify: auto;
 
   -webkit-hyphens: auto;
   -webkit-hyphenate-limit-before: 3;
@@ -146,7 +146,6 @@ export default class ArticleLayout extends Vue {
   hyphenate-limit-lies: 2;
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
-
 }
 
 .article-wrapper > div > div > p > img {

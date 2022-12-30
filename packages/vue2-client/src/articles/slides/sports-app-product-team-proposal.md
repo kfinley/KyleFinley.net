@@ -8,15 +8,7 @@
 
 Here's a proposal for a Product Team setup I prepared for the CEO, CTO, and CPO of a sports app company I previously worked with.
 
-<p>
-  <a href="https://docs.google.com/presentation/d/1sKvB1R16q2Tmb2rNCeJ0BOovgAkRvZFAfF2hpyUEQGk/present" target="_blank">
-  <svg viewBox="0 0 24 24" focusable="false" class="slides-fullscreen"><path d="M0 0h24v24H0z" fill="none"></path> <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
-</svg>
-</a>
-  <div class="responsive-google-slides">
-    <iframe src="https://docs.google.com/presentation/d/1st4Vbu8SlqWnsJtMErLIkjLqtdwpsoktsX5PwWtUl0k/embed"></iframe>
-  </div>
-</p>
+<g-slides presentation-id="1st4Vbu8SlqWnsJtMErLIkjLqtdwpsoktsX5PwWtUl0k">[[Sports App Company Product Team Proposal Slides]]</g-slides>
 
 I joined the company with their expectation that I would (single-handedly... :roll_eyes:) rebuild their back-end infrastructure from an archaic legacy .NET monolith (single massive EC2 deployment... :unamused:) that was built on an extremely poorly designed and implemented custom database driven queuing system all riding on top of a failed Redis caching structure that contained insanely large json blobs for user data (I have many thoughts... none of them are good :cursing_face:). In reality the system was as they say in the housing business "a teardown." The decision was made to attempt to carve off systems and wholesale replace them as we went. This plan deserves it's own post/deck and may get one.
 
