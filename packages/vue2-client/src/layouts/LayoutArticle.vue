@@ -18,7 +18,6 @@ import 'highlight.js/styles/github-dark-dimmed.css'
 @Component
 export default class ArticleLayout extends Vue {
   async mounted() {
-    this.setTitleAndMetaTags()
     this.handleHighlight()
     this.handlePTags()
     this.rewriteImagesForLocalDev()
@@ -76,32 +75,12 @@ export default class ArticleLayout extends Vue {
     })
   }
 
-  setTitleAndMetaTags() {
-    // console.log(metaFiles)
-    this.getMetaData(this.$route.name).then((meta) => {
-      document.title = meta.title
-
-      for (const tag of meta.metaTags) {
-        // console.log(tag)
-
-        const tagEl = document.createElement('meta')
-        tagEl.setAttribute(Object.values(tag)[0], Object.values(tag)[1])
-
-        // We use this to track which meta tags we create so we don't interfere with other ones.
-        tagEl.setAttribute('data-vue-router-controlled', '')
-        document.head.appendChild(tagEl)
-      }
-    })
-  }
-
   rewriteImagesForLocalDev() {
     //silly hack to be able to run local. Should compile this out...
     document.querySelectorAll('img').forEach((i) => {
       i.src = i.src.replace('media', 'img/media')
     })
   }
-
-  getMetaData = async (file: string) => (await import(`../articles/${file}.json`)).default
 }
 </script>
 
