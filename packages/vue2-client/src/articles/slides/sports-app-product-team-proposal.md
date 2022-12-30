@@ -2,7 +2,7 @@
 
 #### Sports App Company Product Team Proposal
 
-*<div class="article-meta-data"> by Kyle Finley</span> Published: <time itemprop="pubdate" datetime="12/28/2022">Thursday, Dec 28, 2022</time></div>*
+*<div class="article-meta-data"> by Kyle Finley</span> Published: <time itemprop="pubdate" datetime="12/29/2022">Thursday, Dec 29, 2022</time></div>*
 
 ---
 

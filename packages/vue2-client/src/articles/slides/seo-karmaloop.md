@@ -3,7 +3,7 @@
 #### Overview of SEO improvements implemented at Karmaloop.com as SEO Manager
 
 _<div class="article-meta-data"> by Kyle Finley</span> Published:
-<time itemprop="pubdate" datetime="12/28/2022">Thursday, Dec 28, 2022</time></div>_
+<time itemprop="pubdate" datetime="12/29/2022">Thursday, Dec 29, 2022</time></div>_
 
 ---
 
