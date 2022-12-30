@@ -102,15 +102,15 @@ A quick look at the html source and I found this...
 </div>
 ```
 
-The jsname, jscontroller, jsaction attributes quickly jumped out at me. After another quick search I found Eric Xu's [answer on SO](https://stackoverflow.com/a/65461417) with Jimish Fotariya's comment that pointed me to [Google's JSAction Library](https://github.com/google/jsaction). From JSAction's GitHub Page
+I the ```allowfullscreen=""``` attribute on the iFrame is the most obvious thing. Unfortunately adding this attribute to the iFrame did nothing.
+
+The jsname, jscontroller, jsaction attributes also jumped out at me. After another quick search I found Eric Xu's [answer on SO](https://stackoverflow.com/a/65461417) with Jimish Fotariya's comment that pointed me to [Google's JSAction Library](https://github.com/google/jsaction). From JSAction's GitHub Page
 
 > "JsAction is a small event delegation library that decouples event binding from the code that can handle the event."
 
-Sounds cool. But this isn't all that helpful. After looking at the html code from k8oms.net I can see they're getting the overlay to work essentially the same way I would. Which is place an adjacent element before or after the iFrame then use style it to float over the slides player.
+Sounds cool. But this isn't really all that helpful. After looking at the html code from k8oms.net again I could see they're getting the overlay to work essentially the same way I would. Which is to place an adjacent element before or after the iFrame then style it to float over the slides player.
 
-I also noticed a few more attributes on the iFrame and most notably ```allowfullscreen=""```. Adding this attribute to the iFrame did nothing.
-
-From further inspection of the network traffic from calls to K8oms it looks like these are possibly Google Sites hosted pages which means there's some probably some Google library sugar making this all work. At any rate after 10 min digging into it I could see a simple solution for just rolling my own simple Google Slides VueJS component.
+After a little inspection of the network traffic for calls to K8oms it looks like these are possibly Google Sites hosted pages which means there's probably some internal Google library sugar making this all work. At any rate after 10 min digging into it I could see a simple solution for just rolling my own simple Google Slides VueJS component.
 
 First I needed to make a full-screen icon for the iFrame. After a little tweaking and borrowing the SVG paths from K8oms's output I came up this. It doesn't dynamically show the full-screen icon like the Google Sites embed does but it does show it on mobile which the Google Sites setup doesn't. :rocket:
 
@@ -134,9 +134,7 @@ First I needed to make a full-screen icon for the iFrame. After a little tweakin
 
 ```
 
-Cool. :partying_face: Now I just need to spin this into a VueJS component and I can have a nice reusable component to use anywhere I want.
-
-Here's what the new G-Slides component looks like. If ths source isn't showing above it can be found here: [GSlides](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GSlides.vue)
+Cool. :partying_face: Now I just need to spin this into a VueJS component and I can have a nice reusable tag that can be use anywhere I want. Here's what the new G-Slides component looks like. If ths source isn't showing above it can be found here: [GSlides](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GSlides.vue)
 <git-hub-source-code lang="html" path="https://api.github.com/repos/kfinley/KyleFinley.net/contents/packages/vue2-client/src/components/GSlides.vue"/>
 
 And finally here's how the new G-Slides Vue Component can be used. Pretty simple.

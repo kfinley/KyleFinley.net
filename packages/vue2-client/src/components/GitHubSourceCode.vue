@@ -22,9 +22,9 @@ export default class GitHubSourceCode extends Vue {
   sourceCode = 'Loading...';
 
   async mounted() {
-    //setTimeout(async () => {
+    setTimeout(async () => {
       await this.fetchSource()
-    // }, 1000)
+    }, 1000)
   }
 
   async fetchSource() {
@@ -39,7 +39,7 @@ export default class GitHubSourceCode extends Vue {
   }
   set source(val) {
     this.sourceCode = val;
-    console.log('sourceCode set')
+    // console.log('sourceCode set')
   }
 }
 </script>
