@@ -9,12 +9,12 @@
 Here is my presentation that lays out a simple Lean Scrum Framework I've developed over the years that uses Dan North's BDD style User Stories as well as the traditional Scrum team roles, artifacts, and rituals. This presentation shows the framework being used with Trello but it could be used with any board based system (including note cards on the wall). The majority of this presentation is an adaptation of a deck I prepared in the very early morning hours on May 16th for the executives of LeanBox explaining how we ran product development.
 
 <p>
-  <a href="https://docs.google.com/presentation/d/1sKvB1R16q2Tmb2rNCeJ0BOovgAkRvZFAfF2hpyUEQGk/present" target="_blank">
+  <a href="https://docs.google.com/presentation/d/1BJo9I1uvY6txSYAZ8Jz9oi2kbGchtcCRV7nrY4KvGPQ/present" target="_blank">
   <svg viewBox="0 0 24 24" focusable="false" class="slides-fullscreen"><path d="M0 0h24v24H0z" fill="none"></path> <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
 </svg>
 </a>
   <div class="responsive-google-slides">
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS8ChSWDNUBMI2pSbS9xI-n6EdphvhcPaHuIwZHXp8Q_og0hX08EcAcr0MSiuZMU1rM9lFctGvHvhGO/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1BJo9I1uvY6txSYAZ8Jz9oi2kbGchtcCRV7nrY4KvGPQ/embed"></iframe>
   </div>
 </p>
 
