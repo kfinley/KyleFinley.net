@@ -12,14 +12,9 @@ import csharp from 'highlight.js/lib/languages/csharp'
 import javascript from 'highlight.js/lib/languages/javascript'
 import json from 'highlight.js/lib/languages/json'
 import html from 'highlight.js/lib/languages/vbscript-html'
-import { GSlides } from '../components'
 import 'highlight.js/styles/github-dark-dimmed.css'
 
-@Component({
-  components: {
-    GSlides
-  }
-})
+@Component
 export default class ArticleLayout extends Vue {
   async mounted() {
     this.setTitleAndMetaTags()

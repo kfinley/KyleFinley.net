@@ -63,5 +63,4 @@ export default class GSlides extends Vue {
   height: 100% !important;
 }
 
-
 </style>
