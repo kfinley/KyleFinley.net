@@ -61,6 +61,7 @@ export default class LayoutDefault extends Vue {
     padding-bottom: 1em;
     border-top: 1px solid grey;
     text-align: center;
+    z-index: 100;
   }
 }
 </style>

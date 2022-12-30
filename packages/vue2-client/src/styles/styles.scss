@@ -40,10 +40,9 @@ body {
 }
 
 p:not(:has(> img)) {
-
   text-indent: 15px;
   text-align: justify;
-  text-justify:auto;
+  text-justify: auto;
 
   -webkit-hyphens: auto;
   -webkit-hyphenate-limit-before: 3;
@@ -69,7 +68,6 @@ p:not(:has(> img)) {
   hyphenate-limit-lies: 2;
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
-
 }
 
 p > img {
@@ -125,4 +123,12 @@ p > img {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+.slides-fullscreen {
+  position: absolute;
+  z-index: 10; // :puke: fix this....
+  fill: white;
+  height: 5%;
+  right: 35px;
 }
