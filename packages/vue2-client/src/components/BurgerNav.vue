@@ -127,7 +127,7 @@ export default class BurgerNav extends Vue {
 */
 @media (max-width: 768px) {
   .navbar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     right: -100%;
     width: 100%;
