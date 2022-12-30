@@ -13,4 +13,4 @@ is, why we do it, and how it can be done using Amazon's Cloud Developer Kit (CDK
 
 I prepared and delivered this presentation to a company I worked with in January 2022.
 
-<g-slides presentation-id="1af5dNWZ1Hwm9ixOrDMwydpC3i5RM2C1auSxVFClneqI"></g-slides>
+<g-slides presentation-id="1af5dNWZ1Hwm9ixOrDMwydpC3i5RM2C1auSxVFClneqI" label="IaC with CDK"></g-slides>

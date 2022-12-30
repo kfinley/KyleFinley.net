@@ -9,6 +9,8 @@
       </a>
       <div class="responsive">
         <iframe
+          frameborder="0"
+          :aria-label="label"
           :src="slideEmbedLink"></iframe>
       </div>
     </p>
@@ -21,7 +23,13 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 @Component
 export default class GSlides extends Vue {
 
+  // investigate these on the iframe. Seen on examples.
+  // sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals"
+
   name: "g-slides";
+  
+  @Prop()
+  label!: string;
 
   @Prop()
   presentationId!: string;
@@ -47,6 +55,7 @@ export default class GSlides extends Vue {
   opacity: 40%;
 }
 
+// ht: https://www.labnol.org/embed-google-slides-200615
 .responsive {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 Ratio */

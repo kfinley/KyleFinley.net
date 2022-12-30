@@ -7,7 +7,7 @@ import { ArticlesModule } from '../store/articles-module'
 import { AuthModule } from '../store/auth-module'
 import { WebSocketsModule } from "@/store/ws-module";
 import { GitHubModule } from "@/store/github-module";
-import { GSlides } from '@/components';
+import { GitHubSourceCode, GSlides } from '@/components';
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
 import { AuthState } from "@/store";
@@ -47,7 +47,8 @@ const plugin = {
 
       // Globally register the G-Slides component
       Vue.component("GSlides", GSlides);
-
+      Vue.component("GitHubSourceCode", GitHubSourceCode);
+      
       // router provided to add any plugin routes.
       // i.e. options.router.addRoutes(routes);
 

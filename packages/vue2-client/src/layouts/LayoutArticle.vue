@@ -147,4 +147,13 @@ export default class ArticleLayout extends Vue {
   max-width: 99%;
   border-radius: 6px;
 }
+
+blockquote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
 </style>
