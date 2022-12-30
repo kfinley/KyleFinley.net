@@ -136,11 +136,10 @@ First I needed to make a full-screen icon for the iFrame. After a little tweakin
 
 Cool. :partying_face: Now I just need to spin this into a VueJS component and I can have a nice reusable component to use anywhere I want.
 
-Here's what the new G-Slides component looks like:
+Here's what the new G-Slides component looks like. If ths source isn't showing above it can be found here: [GSlides](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GSlides.vue)
 <git-hub-source-code lang="html" path="https://api.github.com/repos/kfinley/KyleFinley.net/contents/packages/vue2-client/src/components/GSlides.vue"/>
-If ths source isn't showing above it can be found here: [GSlides](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GSlides.vue)
 
-Here's how it can be used. Pretty simple.
+And finally here's how the new G-Slides Vue Component can be used. Pretty simple.
 
 ```html
 
