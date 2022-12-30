@@ -1,17 +1,23 @@
 <template>
-  <div>
-    <pre>
-      <code class="language-html language-javascript language-typescript language-xml hljs">{{source}}</code>
-    </pre>
-  </div>
+  <pre>
+    <code class="language-html language-javascript language-typescript language-xml language-scss hljs">{{source}}</code>
+  </pre>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
+import { State } from 'vuex-class'
+import { GitHubState, Status } from '../store'
+import { getGitHubModule } from '../store/github-module'
 
 @Component
 export default class GitHubSourceCode extends Vue {
   name: 'git-hub-source-code'
+
+  @State('GitHub')
+  gitHubState!: GitHubState
+
+  ghStore = getGitHubModule(this)
 
   @Prop()
   path!: string
@@ -19,27 +25,17 @@ export default class GitHubSourceCode extends Vue {
   @Prop()
   lang!: string
 
-  sourceCode = 'Loading...';
-
-  async mounted() {
-    setTimeout(async () => {
-      await this.fetchSource()
-    }, 1000)
-  }
-
-  async fetchSource() {
-    const data = await (await fetch(this.path)).json()
-    this.source = atob(data.content)
-    // console.log(this.sourceCode);
+  created() {
+    this.ghStore.getSource({
+      path: this.path,
+    })
   }
 
   get source() {
-    // console.log(this.sourceCode);
-    return this.sourceCode;
-  }
-  set source(val) {
-    this.sourceCode = val;
-    // console.log('sourceCode set')
+    if (this.gitHubState.sources[this.path]) {
+      return window.atob(this.gitHubState.sources[this.path])
+    }
+    return 'Loading...'
   }
 }
 </script>

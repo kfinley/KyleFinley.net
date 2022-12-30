@@ -13,6 +13,9 @@ import javascript from 'highlight.js/lib/languages/javascript'
 import json from 'highlight.js/lib/languages/json'
 import html from 'highlight.js/lib/languages/vbscript-html'
 import xml from 'highlight.js/lib/languages/xml'
+import scss from 'highlight.js/lib/languages/scss'
+import css from 'highlight.js/lib/languages/css'
+
 import 'highlight.js/styles/github-dark-dimmed.css'
 
 @Component
@@ -43,8 +46,11 @@ export default class ArticleLayout extends Vue {
         shouldHighlight =
           this.registerLanguageIfIncluded('html', 'html', html, c) || shouldHighlight
         shouldHighlight =
-          this.registerLanguageIfIncluded('html', 'html', xml, c) || shouldHighlight // Hack
-
+          this.registerLanguageIfIncluded('xml', 'xml', xml, c) || shouldHighlight
+        shouldHighlight =
+          this.registerLanguageIfIncluded('scss', 'scss', scss, c) || shouldHighlight
+        shouldHighlight =
+          this.registerLanguageIfIncluded('css', 'css', css, c) || shouldHighlight
       })
     })
 
@@ -55,7 +61,7 @@ export default class ArticleLayout extends Vue {
 
   registerLanguageIfIncluded(langSlug, lang, langRef, c) {
     if (c.includes(langSlug)) {
-      //console.log(`Registering ${lang} for ${c}`)
+      // console.log(`Registering ${lang} for ${c}`)
       hljs.registerLanguage(langSlug, langRef)
       return true
     }
@@ -92,8 +98,6 @@ export default class ArticleLayout extends Vue {
 .article-wrapper {
   padding: 2em;
 }
-
-// p:not(:has(> img)) {
 
 .article-wrapper > div > p {
   text-indent: 15px;

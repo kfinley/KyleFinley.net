@@ -274,10 +274,15 @@ export const createRouter = async () => {
           document.head.appendChild(tagEl)
         }
       })
-      document.querySelectorAll('img').forEach((i) => {
-        console.log(i)
-        i.src = i.src.replace('media', 'img/media')
-      })
+      try {
+        document.querySelectorAll('img').forEach((i) => {
+          console.log(i)
+          i.src = i.src.replace('media', 'img/media')
+        })
+      }
+      catch (e) {
+        console.log(e);
+      }
       Array.from(Array.from(document.getElementsByTagName('main'))[0].querySelectorAll('main a:not(a[href*="http"])')).map((link) => {
         // console.log(link)
         link.addEventListener(

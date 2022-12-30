@@ -26,5 +26,6 @@ export interface WebSocketsState {
 }
 
 export interface GitHubState {
-  
+  sources: Record<string, string>;
+  status: Status;
 }
