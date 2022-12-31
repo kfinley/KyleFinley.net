@@ -102,7 +102,7 @@ A quick look at the html source and I found this...
 </div>
 ```
 
-I the ```allowfullscreen=""``` attribute on the iFrame is the most obvious thing. Unfortunately adding this attribute to the iFrame did nothing.
+Well that's fun... So what's interesting here? The ```allowfullscreen=""``` attribute on the iFrame is the most obvious thing. Unfortunately adding this attribute to the iFrame did nothing.
 
 The jsname, jscontroller, jsaction attributes also jumped out at me. After another quick search I found Eric Xu's [answer on SO](https://stackoverflow.com/a/65461417) with Jimish Fotariya's comment that pointed me to [Google's JSAction Library](https://github.com/google/jsaction). From JSAction's GitHub Page
 
