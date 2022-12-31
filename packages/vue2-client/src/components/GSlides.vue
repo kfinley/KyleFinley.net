@@ -22,10 +22,6 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component
 export default class GSlides extends Vue {
-
-  // investigate these on the iframe. Seen on examples.
-  // sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals"
-
   name: "g-slides";
   
   @Prop()
@@ -45,7 +41,6 @@ export default class GSlides extends Vue {
 </script>
 
 <style lang="scss" scoped>
-
 .fullscreen {
   position: absolute;
   z-index: 10; // :puke: fix this....
@@ -71,5 +66,4 @@ export default class GSlides extends Vue {
   width: 100% !important;
   height: 100% !important;
 }
-
 </style>
