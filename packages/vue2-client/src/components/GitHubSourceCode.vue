@@ -1,6 +1,6 @@
 <template>
   <pre>
-<code id="source" class="language-html language-javascript language-typescript language-xml language-scss hljs" >Loading...</code>
+    <code :id="getId()" :class="getClass()" >Loading...</code>
   </pre>
 </template>
 
@@ -14,18 +14,17 @@ import { GitHubModule } from '../store/github-module'
 
 @Component
 export default class GitHubSourceCode extends Vue {
-  name: 'git-hub-source-code'
-
-  @State('GitHub')
-  gitHubState!: GitHubState
-
-  ghStore = container.get<GitHubModule>('GitHubModule')
 
   @Prop()
   path!: string
 
   @Prop()
   lang!: string
+
+  @State('GitHub')
+  gitHubState!: GitHubState
+
+  ghStore = container.get<GitHubModule>('GitHubModule')
 
   async created() {
     await this.ghStore.getSource({
@@ -34,12 +33,36 @@ export default class GitHubSourceCode extends Vue {
   }
 
   mounted() {
+    this.setSource()
+  }
+
+  setSource() {
     setTimeout(() => {
-      document.getElementById('source').textContent = window.atob(
-        this.gitHubState.sources[this.path]
-      )
-      hljs.highlightAll()
+      if (this.gitHubState.sources[this.path]) {
+        const c = window.atob(this.gitHubState.sources[this.path]).replace('ï»¿', '') // remove strange garbage some .cs files contain for some reason
+        // console.log(c)
+        document.getElementById(this.getId()).textContent = c
+        hljs.highlightAll()
+      } else {
+        this.setSource()
+      }
     }, 500)
+  }
+  getId() {
+    return `source-${this.path
+      .split('')
+      .reduce((a, b) => ((a << 5) - a + b.charCodeAt(0)) | 0, 0)
+      .toString()}`
+  }
+
+  getClass() {
+    let classList = ''
+
+    this.lang.split(' ').map((s) => {
+      classList = `${classList} language-${s}`
+    })
+
+    return `${classList} hljs`
   }
 }
 </script>

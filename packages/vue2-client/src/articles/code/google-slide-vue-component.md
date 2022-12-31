@@ -145,7 +145,7 @@ I'm testing a new
 [GitHubSourceCode component](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GitHubSourceCode.vue)
 that I'll post about as soon as I use it some more and work out any remaining bugs.)
 
-<git-hub-source-code lang="html" path="https://api.github.com/repos/kfinley/KyleFinley.net/contents/packages/vue2-client/src/components/GSlides.vue"></git-hub-source-code>
+<git-hub-source-code lang="html javascript typescript xml scss" path="https://api.github.com/repos/kfinley/KyleFinley.net/contents/packages/vue2-client/src/components/GSlides.vue"></git-hub-source-code>
 
 And here's how the new G-Slides Vue Component can be used. Pretty simple.
 
