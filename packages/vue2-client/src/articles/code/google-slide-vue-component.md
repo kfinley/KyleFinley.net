@@ -104,7 +104,7 @@ First I needed to make a full-screen icon for the iFrame that I already had work
 
 Cool. :partying_face: Now I just need to spin this into a VueJS component and I can have a nice reusable slides player widget. I'm still using Vue 2.x (personal choice for this project... don't hate on me if your personal choices don't line up :pray:). As you can see I also use TypeScript (always :fist_raised:) and yes I'm still using vue-property-decorator. :sunglasses: I'll be moving many things to Vue3 in the new year so I'll update this when that happens.
 
-Without further adieu, here's what the new G-Slides component looks like. :tada: (If the source isn't showing it can be found here: [GSlides](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GSlides.vue) I'm testing a new [GitHubSourceCode component](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GitHubSourceCode.vue) that I'll post about as soon as I use it some more and work out any remaining bugs.)
+Without further adieu, here's what the new G-Slides component looks like. :tada: (If the source isn't showing it can be found here: [GSlides](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GSlides.vue). I'm testing a new [GitHubSourceCode component](https://github.com/kfinley/KyleFinley.net/blob/main/packages/vue2-client/src/components/GitHubSourceCode.vue) that I'll post about as soon as I use it some more and work out any remaining bugs.)
 
 <git-hub-source-code lang="html javascript typescript xml scss" path="https://api.github.com/repos/kfinley/KyleFinley.net/contents/packages/vue2-client/src/components/GSlides.vue"></git-hub-source-code>
 
