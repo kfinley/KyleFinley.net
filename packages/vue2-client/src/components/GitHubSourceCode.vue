@@ -1,10 +1,11 @@
 <template>
   <pre>
-    <code class="language-html language-javascript language-typescript language-xml language-scss hljs">{{source}}</code>
+    <code id="source" class="language-html language-javascript language-typescript language-xml language-scss hljs" >Loading...</code> 
   </pre>
 </template>
 
 <script lang="ts">
+import hljs from 'highlight.js/lib/core'
 import { Component, Vue, Prop } from 'vue-property-decorator'
 import { State } from 'vuex-class'
 import { container } from '../inversify.config'
@@ -26,45 +27,21 @@ export default class GitHubSourceCode extends Vue {
   @Prop()
   lang!: string
 
-  created() {
-    this.ghStore.getSource({
+  async created() {
+    await this.ghStore.getSource({
       path: this.path,
     })
   }
 
-  get source() {
-    if (this.gitHubState.sources[this.path]) {
-      return window.atob(this.gitHubState.sources[this.path])
-    }
-    return 'Loading...'
+  mounted() {
+    setTimeout(() => {
+      document.getElementById('source').textContent = window.atob(
+        this.gitHubState.sources[this.path]
+      )
+      hljs.highlightAll()
+    }, 500)
   }
 }
 </script>
 
-<style lang="scss" scoped>
-.fullscreen {
-  position: absolute;
-  z-index: 10; // :puke: fix this....
-  fill: white;
-  height: 5%;
-  right: 35px;
-  opacity: 40%;
-}
-
-// ht: https://www.labnol.org/embed-google-slides-200615
-.responsive {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 Ratio */
-  height: 0;
-  overflow: hidden;
-}
-
-.responsive iframe {
-  border: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-</style>
+<style lang="scss" scoped></style>

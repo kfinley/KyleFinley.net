@@ -49,11 +49,11 @@ export class GitHubModule extends BaseModule implements GitHubState {
       const data = await (await fetch(params.path)).json()
       this.context.commit('mutate',
         (state: GitHubState) => {
-          state.sources[params.path] = data.content
-        });
-      this.context.commit('mutate',
-        (state: GitHubState) => {
-          state.status = Status.Loaded
+          // alternative way to setting the value if it's never been set
+          // and we want to make sure everything is reactive (avoid Array setting issues)
+          // Vue.set(state.sources, params.path, data.content);
+          state.sources[params.path] = data.content;
+          state.status = Status.Loaded;
         });
     }
   }

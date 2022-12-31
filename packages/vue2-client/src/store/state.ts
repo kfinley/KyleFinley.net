@@ -1,9 +1,20 @@
 import { Socket } from "../types";
 
-export enum Status {
-  "None", "Loading", "Loaded", "Failed", "Authenticated", "Authenticating"
+export enum RegistrationStatus {
+  Unknown = 'Unknown',
+  Failed = 'Failed',
+  Registered = 'Registered',
+  Registering = 'Registering',
+  Success = 'Success'
 }
-
+export enum Status {
+  None = "None",
+  Loading = "Loading",
+  Loaded = "Loaded",
+  Failed = "Failed",
+  Authenticated = "Authenticated",
+  Authenticating = "Authenticating"
+}
 
 export interface ArticlesState {
   articles: Record<string, string>;
