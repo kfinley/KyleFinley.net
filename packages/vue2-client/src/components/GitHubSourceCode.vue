@@ -1,6 +1,6 @@
 <template>
   <pre>
-    <code id="source" class="language-html language-javascript language-typescript language-xml language-scss hljs" >Loading...</code> 
+<code id="source" class="language-html language-javascript language-typescript language-xml language-scss hljs" >Loading...</code>
   </pre>
 </template>
 

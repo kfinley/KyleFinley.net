@@ -22,8 +22,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component
 export default class GSlides extends Vue {
-  name: "g-slides";
-  
+
   @Prop()
   label!: string;
 
@@ -43,7 +42,7 @@ export default class GSlides extends Vue {
 <style lang="scss" scoped>
 .fullscreen {
   position: absolute;
-  z-index: 10; // :puke: fix this....
+  z-index: 10;
   fill: white;
   height: 5%;
   right: 35px;
