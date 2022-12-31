@@ -3,6 +3,7 @@ import { bootstrapper as ghCommandsBootstrapper } from "@kylefinley.net/github-c
 import { AuthModule, getAuthModule } from "./store/auth-module";
 import { Store } from "vuex";
 import { ArticlesModule, getArticlesModule } from './store/articles-module';
+import { GitHubModule, getGitHubModule } from './store/github-module';
 
 export default function bootstrapper(store: Store<any>) {
 
@@ -12,6 +13,7 @@ export default function bootstrapper(store: Store<any>) {
 
   container.bind<AuthModule>("AuthModule").toDynamicValue(() => getAuthModule(store));
   container.bind<ArticlesModule>("ArticlesModule").toDynamicValue(() => getArticlesModule(store));
+  container.bind<GitHubModule>("GitHubModule").toDynamicValue(() => getGitHubModule(store))
   // console.log("Bootstrapper Done", container);
 
   return container;

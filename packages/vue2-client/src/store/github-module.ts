@@ -5,11 +5,14 @@ import { GitHubState, Status } from './state'
 import { container } from '@/inversify.config';
 import { CreateBranch } from '@kylefinley.net/github-commands/src';
 import { AuthModule } from './auth-module'
+import { Store } from "vuex";
 
 @Module({ namespaced: true, name: 'GitHub' })
 export class GitHubModule extends BaseModule implements GitHubState {
+
   sources: Record<string, string> = {};
-  status: Status = Status.None
+  status: Status = Status.None;
+
   @Action
   async createBranch(params: { vue: Vue }) {
 
@@ -56,4 +59,4 @@ export class GitHubModule extends BaseModule implements GitHubState {
   }
 }
 
-export const getGitHubModule = (vue: Vue) => getModule(GitHubModule, vue.$store);
+export const getGitHubModule = (store: Store<any>) => getModule(GitHubModule, store);

@@ -7,8 +7,9 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 import { State } from 'vuex-class'
-import { GitHubState, Status } from '../store'
-import { getGitHubModule } from '../store/github-module'
+import { container } from '../inversify.config'
+import { GitHubState } from '../store'
+import { GitHubModule } from '../store/github-module'
 
 @Component
 export default class GitHubSourceCode extends Vue {
@@ -17,7 +18,7 @@ export default class GitHubSourceCode extends Vue {
   @State('GitHub')
   gitHubState!: GitHubState
 
-  ghStore = getGitHubModule(this)
+  ghStore = container.get<GitHubModule>('GitHubModule')
 
   @Prop()
   path!: string
