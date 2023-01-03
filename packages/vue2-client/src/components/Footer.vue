@@ -1,5 +1,5 @@
 <template>
-  <div>© 2022 kylefinley.net</div>
+  <div>© 2023 kylefinley.net</div>
 </template>
 
 <script lang="ts">
