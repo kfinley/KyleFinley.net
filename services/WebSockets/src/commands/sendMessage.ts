@@ -70,7 +70,8 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
     // this.client.config.endpoint = `https://${APIGW_ENDPOINT}`;
 
     console.log('sendMessage', params.data);
-
+    console.log('client.config.endpoint', await this.client.config.endpoint());
+    
     const output = await this.client.send(new PostToConnectionCommand({
       ConnectionId: params.connectionId,
       Data: params.data as any
