@@ -71,7 +71,19 @@ export class SendMessageCommand implements Command<SendMessageRequest, SendMessa
 
     console.log('sendMessage', params.data);
     console.log('client.config.endpoint', await this.client.config.endpoint());
-    
+
+    this.client.middlewareStack.add(
+      (next) =>
+        async (args) => {
+
+          console.log('args.input', args.input);
+          console.log('args.request', args.request);
+          
+          return await next(args);
+        },
+      { step: "build" },
+    );
+
     const output = await this.client.send(new PostToConnectionCommand({
       ConnectionId: params.connectionId,
       Data: params.data as any
