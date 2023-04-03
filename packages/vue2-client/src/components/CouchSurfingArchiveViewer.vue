@@ -13,7 +13,7 @@
       <p>{{ csData.user_data.profile.about_me }}</p>
       <p class="text-center fs-3">Messages</p>
       <div v-for="(message, key, index) in csData.messages.messages">
-        <p class="date">{{ new Date(message.created_at).toLocaleDateString("en-US") }}</p>
+        <p class="date">{{ new Date(message.created_at.replace(' UTC', '').split(' ')[0]).toLocaleDateString("en-US")  }}</p>
         <p v-for="(m, k, i) in message.messages">{{ m.body }}</p>
       </div>
     </div>
