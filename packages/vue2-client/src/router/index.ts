@@ -102,6 +102,18 @@ export const createRouter = async () => {
       ],
     },
     {
+      path: "/couchsurfing",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: RouteNames.Contact,
+          component: () => import(/* webpackChunkName: "contact" */ '../views/CouchSurfing.vue'),
+          meta: viewsMeta[`../views/CouchSurfing.json`] ? (await viewsMeta[`../views/CouchSurfing.json`]()).default : { allowAnonymous: true }
+        }
+      ],
+    },
+    {
       path: "/news",
       component: RouterLayout,
       children: [

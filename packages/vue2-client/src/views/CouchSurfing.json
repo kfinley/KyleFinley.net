@@ -1,0 +1,22 @@
+{
+  "title": "Couch Surfing Archive Viewer",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Couch Surfing Archive Viewer"
+    },
+    {
+      "itemprop": "name",
+      "content": "Couch Surfing Archive Viewer - KyleFinley.net"
+    },
+    {
+      "itemprop": "description",
+      "content": "Couch Surfing Archive Viewer"
+    },
+    {
+      "property": "og:url",
+      "content": "https://kylefinley.net/couchsurfing"
+    }
+  ]
+}
