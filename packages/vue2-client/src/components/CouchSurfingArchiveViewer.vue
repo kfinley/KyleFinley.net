@@ -3,7 +3,7 @@
     <form id="upload" @submit.prevent="submit">
       <div class="upload" v-if="!hasData">
         <p>
-          <label for="file">Upload CS Archive JSON file</label>
+          <label for="file">Upload CS Archive JSON file </label><br/>
           <input type="file" id="file" accept=".json" />
         </p>
         <button>Upload</button>
@@ -11,8 +11,9 @@
     </form>
     <div v-if="hasData">
       <p>{{ csData.user_data.profile.about_me }}</p>
+      <p class="text-center fs-3">Messages</p>
       <div v-for="(message, key, index) in csData.messages.messages">
-        <p>{{ new Date(message.created_at).toLocaleDateString("en-US") }}</p>
+        <p class="date">{{ new Date(message.created_at).toLocaleDateString("en-US") }}</p>
         <p v-for="(m, k, i) in message.messages">{{ m.body }}</p>
       </div>
     </div>
@@ -40,8 +41,8 @@ export default class CouchSurfingArchiveViewer extends Vue {
     this.csData = json;
 
     // console.log("string", str);
-    console.log("json", json);
-    console.log("csData", this.csData);
+    // console.log("json", json);
+    // console.log("csData", this.csData);
     this.hasData = true;
   }
 }
@@ -59,6 +60,7 @@ export default class CouchSurfingArchiveViewer extends Vue {
 */
 </script>
 <style>
-.upload {
+.date {
+  font-weight: bold;
 }
 </style>
