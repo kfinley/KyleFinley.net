@@ -1,0 +1,42 @@
+{
+  "title": "Music | Bands, Audio, Video, and Where I'm Playing Next | KyleFinley.net",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Where I'm playing, what bands I'm playing in, previous shows, and audio & videos"
+    },
+    {
+      "itemprop": "name",
+      "content": "Music | Bands, Audio, Video, and Where I'm Playing Next | KyleFinley.net"
+    },
+    {
+      "itemprop": "description",
+      "content": "Bands I'm playing in lately, audio, video, and upcoming shows"
+    },
+    {
+      "property": "og:title",
+      "content": "Music | Bands, Audio, Video, and Where I'm Playing Next | KyleFinley.net"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/"
+    },
+    {
+      "property": "og:image",
+      "content": "https://KyleFinley.net/img/KyleFinley.net-Luckys-Boston.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "Where I'm playing, what bands I'm playing in, previous shows, and audio & video"
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    }
+  ]
+}

@@ -4,12 +4,13 @@
       class="container-fluid container-xl d-flex align-items-center justify-content-between"
     >
       <router-link to="/" class="logo d-flex align-items-center">
-        <h1>{{ site }}</h1>
+        <h1></h1>
       </router-link>
 
       <burger-nav>
         <burger-nav-item :route="routes.Home">Home</burger-nav-item>
-        <burger-nav-item :route="routes.Articles">Articles</burger-nav-item>
+        <burger-nav-item :route="routes.Music">Music</burger-nav-item>
+        <burger-nav-item :route="routes.Articles">Writings</burger-nav-item>
         <burger-nav-item :route="routes.News">News</burger-nav-item>
         <burger-nav-item :route="routes.Contact">Contact</burger-nav-item>
       </burger-nav>

@@ -3,6 +3,11 @@
 # News Page
 </div>
 
+### May 23, 2023
+---
+
+Quick refresh of home page and added music page. More work to to do!
+
 ### Oct 1, 2022
 ---
 

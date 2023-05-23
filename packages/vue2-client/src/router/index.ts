@@ -114,6 +114,18 @@ export const createRouter = async () => {
       ],
     },
     {
+      path: "/music",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: RouteNames.Music,
+          component: () => import(/* webpackChunkName: "Music" */ '../views/Music.vue'),
+          meta: viewsMeta['../views/Music.json'] ? (await viewsMeta['../views/Music.json']()).default : { allowAnonymous: true },
+        }
+      ],
+    },
+    {
       path: "/news",
       component: RouterLayout,
       children: [
