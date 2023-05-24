@@ -14,7 +14,7 @@
         <a href="https://www.ulasf.com" target="new">Ula SF</a> in Union Sq. (I'm new to the rotation and playing a lot lately!)
       </li>
       <li><em>The Lucky Horseshoe Open Jazz Jam</em> - Every 3rd Wednesday of the Month 8-11pm</li>
-      <li><em>The Lucky Horseshoe Sunday Bluegrass Jam</em> Every Sunday 4-7pm</li>
+      <li><em>The Lucky Horseshoe Sunday Bluegrass Jam</em> - Every Sunday 4-7pm</li>
       <li>
         <em>The Lucky Horseshoe Showcase Bluegrass Jam</em> - 1st Sunday of the month from 8-9:30pm (currently in hiatus but hopefully back
         soon!)
@@ -31,8 +31,10 @@
       </li>
       <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
-        played together through the spring of 2023 before Daisy went back to being a world traveler.
+        played together through the spring of 2023 before Daisy went back to being a world traveler
       </li>
+      <li><em>Ocean Ale House Jazz Jam</em> - Weekly Jazz Jam on Wednesday Nights in Monterey Heights</li>
+      <li><em>Madrone Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar in Alamo Square </li>
     </ul>
 
     <h4 class="text-center">My Musical History</h4>
@@ -74,7 +76,7 @@
     <p>
       I landed in SF in the summer of 2019 and found the Lucky Horseshoe weekly bluegrass jam run by Frank Holmes my first week. I was the
       regular bass player for the Shoe Jam through the pandemic and into it's transition to a new leader. Now I still play the jam most
-      weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years these days I'm playing in a
+      weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years and these days I'm playing in a
       few groups around SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the month.
     </p>
     <p>

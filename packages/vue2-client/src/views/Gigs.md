@@ -172,7 +172,7 @@
 
 | June 18
 |-
-| Sunday B3 Session
+| Madrone Jazz Jam
 | Madrone Art Bar
 | Alamo Sq - SF, CA
 | 8 PM - Close
