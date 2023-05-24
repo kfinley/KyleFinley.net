@@ -107,6 +107,20 @@
 | Private Event
 | Mill Valley, CA
 
+| May 30
+|-
+| Hotel Utah Bluegrass Jam
+| The Hotel Utah Saloon
+| SOMA - SF, CA
+| 7 - 10 PM
+
+| May 31
+|-
+| Ocean Ale Jazz Jam
+| Ocean Ale House
+| Monterey Heights - SF, CA
+| 7 - 9 PM
+
 ## June 2023
 
 | June 1
