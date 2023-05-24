@@ -13,7 +13,7 @@
           I'm a jazz, bluegrass, rock, folk, and Americana musician. I primarily play upright bass. My ax is a 1980 Johannes Rubner upright.
           I also play guitar and I'm currently woodshedding trombone after a 20 year hiatus.
         </p>
-        <p>My <router-link to="/music">Music Page</router-link> has more info on past bands, shows, and upcoming gigs.</p>
+        <p>Check my <router-link to="/music">Music Page</router-link> for more info on bands I play with, past shows, and upcoming gigs.</p>
         <h2 class="text-center">Traveling</h2>
         <p>
           I'm a bit of a traveler although I don't travel as much as I used to. I was a weekly flying consultant for years, active in the

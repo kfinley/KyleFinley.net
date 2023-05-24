@@ -39,7 +39,7 @@
 
 | May 18
 |-
-| West Side Jazz Club
+| <a href="West Side Jazz Club" target="WSJC">West Side Jazz Club</a>
 | <a href="https://ulasf.com" target="Ula">Ula SF</a>
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
@@ -75,14 +75,14 @@
 
 | May 25
 |-
-| West Side Jazz Club
+| <a href="West Side Jazz Club" target="WSJC">West Side Jazz Club</a>
 | <a href="https://ulasf.com" target="Ula">Ula SF</a>
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
 
 | May 26
 |-
-| West Side Jazz Club
+| <a href="West Side Jazz Club" target="WSJC">West Side Jazz Club</a>
 | <a href="https://ulasf.com" target="Ula">Ula SF</a>
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
@@ -104,14 +104,14 @@
 
 | June 1
 |-
-| West Side Jazz Club
+| <a href="West Side Jazz Club" target="WSJC">West Side Jazz Club</a>
 | <a href="https://ulasf.com" target="Ula">Ula SF</a>
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
 
 | June 2
 |-
-| West Side Jazz Club
+| <a href="West Side Jazz Club" target="WSJC">West Side Jazz Club</a>
 | <a href="https://ulasf.com" target="Ula">Ula SF</a>
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
@@ -145,7 +145,7 @@
 
 | June 9
 |-
-| West Side Jazz Club
+| <a href="West Side Jazz Club" target="WSJC">West Side Jazz Club</a>
 | <a href="https://ulasf.com" target="Ula">Ula SF</a>
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
