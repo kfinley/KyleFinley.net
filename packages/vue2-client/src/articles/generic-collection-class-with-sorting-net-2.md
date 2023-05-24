@@ -1,10 +1,10 @@
 # Generic Collection Class with Sorting Support in C# .NET
+
 #### Create a Generic Collection with Sorting Support using C# in .net 2.0.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/8/2006 6:00:00 AM">Wednesday, February 8, 2006</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="2/8/2006 6:00:00 AM">Wednesday, February 8, 2006</time></div>_
 
 ---
-
 
 One of the coolest new features in .NET 2.0 is the introduction of Generics. For those of you that have been creating tons of strongly typed collections for your business objects I'm sure you had the same reaction I did when you heard about them. "Sweet!! Now I can stop generating and tweaking derived collection classes all over the place!!" (This is assuming you've all been using some sort of refactoring tool that can generate the collection classes for you, I hope you have.) OK, so now we know we can create strongly typed collections in our code. You might be wondering why I'm suggesting we still create a separate collection class and not just use the generic collections included in the System.Collections.Generic namespace. The idea is that we can create our own collections that support generics that provide us with specific needs that we might commonly use or need for a specific application. In this article I will present a simple collection class which both supports Generics as well as Sorting.
 
@@ -69,7 +69,9 @@ public class SortableCollection<T> : System.Collections.CollectionBase
 The SortableCollection class inherits from the BaseCollection abstract class. This provides us the basis for creating a custom collection. This is no different than how things were done in .NET 1.x when creating typed collections. Next all the basic methods and properties that are needed for basic operations for a the collection can be added to the SortableCollection class. The final step is to add the specific details that make the collection sortable based on an objects property name. Before this can be done a custom comparer class needs to be created that will be used for handling the details of sorting the collection member objects.
 
 ## Custom Comparer Class
+
 ---
+
 The Comparer class will provide the ability to specify which property will be used for sorting, as well as compare two objects based on that property value. Since the collection will be sorted based on object property values, reflection will used to provide access to the value of the property name specified by the caller. Below is the implementation of the comparer class.
 
 ```csharp
@@ -125,7 +127,9 @@ public enum SortDirection
 ```
 
 ## Adding the Sort Functionality
+
 ---
+
 Now that the Comparer class is complete the details around sorting can be added to the SortableCollection class. There are two sort methods that will be provided. One will accept a property name on which to sort the collection as well as the direction in which to sort. The other will simply take the property name and default to an ascending sort.
 
 ```csharp
@@ -154,7 +158,9 @@ public class  SortableCollection<T> : System.Collections.CollectionBase
 ```
 
 ## Sample Usage of the SortableCollection
+
 ---
+
 At this point all the code needed for the SortableCollection class is complete. In order to see the collection in use the following sections will create a simple Employee class which will then be used to populate a SortableCollection or that type. Finally a sample of the call made to the sort method is provided.
 
 ```csharp
@@ -220,7 +226,6 @@ public static SortableCollection<Employee> GetEmployees()
 
 This method can be called to return a SortableCollection object containing only Employee objects. Once this collection is returned the sort method can be called passing in the name of a property on the Employee object.
 
-
 ```csharp
 .
 .
@@ -236,18 +241,22 @@ allEmployees.Sort("Title", SortDirection.DESC) ;
 ```
 
 ## Conclusion
+
 ---
+
 As we can see the process of creating the class is not much different than what we did before with strongly typed collections in .NET 1.x. The difference now is we only have to write the collection once and reuse it all over the place! Also in this example we saw how to create a generic collection that is sortable based on property values. This collection will be used in future posts on the new ASP.NET GridView control. (I'm sure you're starting to see where the sorting feature might come in handy). As always feedback or suggestions are always welcome.
 
 -Kyle
 
-**Now Playing:*** *Ned's Atomic Dustbin* - God Fodder - Grey Cell Green
+**Now Playing:\*** _Ned's Atomic Dustbin_ - God Fodder - Grey Cell Green
 
 ### Comments (closed)
+
 ---
 
-## *re: Creating a Generic Collection Class with Sorting Support in .NET 2.0*
-*Thursday, May 18, 2006 2:32 AM by BennyXNO*
+## _re: Creating a Generic Collection Class with Sorting Support in .NET 2.0_
+
+_Thursday, May 18, 2006 2:32 AM by BennyXNO_
 
 Nice collection.
 
@@ -270,8 +279,9 @@ Is there a better way to Find/Lookup one object based on a property?
 
 ---
 
-## *re: Creating a Generic Collection Class with Sorting Support in .NET 2.0*
-*Wednesday, June 28, 2006 12:12 PM by Fernando Correia*
+## _re: Creating a Generic Collection Class with Sorting Support in .NET 2.0_
+
+_Wednesday, June 28, 2006 12:12 PM by Fernando Correia_
 
 Great article! Very useful.
 
@@ -279,15 +289,17 @@ I hope you can post the follow-up articles that you mentioned on this one...
 
 ---
 
-## *re: Creating a Generic Collection Class with Sorting Support in .NET 2.0*
-*Thursday, March 08, 2007 9:13 AM by Jason Hanford-Smith*
+## _re: Creating a Generic Collection Class with Sorting Support in .NET 2.0_
+
+_Thursday, March 08, 2007 9:13 AM by Jason Hanford-Smith_
 
 Isn't there a way to have the sort be type-safe? There seems to be a whole lot of boxing/unboxing going on, which, in the generic collection, somewhat defeats the point.
 
 ---
 
 ## re: Creating a Generic Collection Class with Sorting Support in .NET 2.0
-*Thursday, March 08, 2007 3:37 PM by foobar*
+
+_Thursday, March 08, 2007 3:37 PM by foobar_
 
 Yes, it can be typesafe, but it's actually pretty tricky. You need to create a type safe method dynamically. Here's all the hard work. I can't take any credit for this; I found it on a website somewhere that I have long forgotten about:
 
@@ -391,16 +403,18 @@ return (CompareDelegate)dm.CreateDelegate(typeof(CompareDelegate));
 ---
 
 ## re: Creating a Generic Collection Class with Sorting Support in .NET 2.0
-*Thursday, March 08, 2007 3:40 PM by foobar*
+
+_Thursday, March 08, 2007 3:40 PM by foobar_
 
 I should add that the above is quite performant; IIRC it's actually much quicker than the method in the post.
 
 ---
 
 ## re: Creating a Generic Collection Class with Sorting Support in .NET 2.0
-*Monday, March 12, 2007 4:38 PM by Kyle Finley*
 
-foobar, Good stuff. I don't even do this the same way anymore.  I just never got back to update it. I like what you added though. If I ever update this I might incorporate your method.
+_Monday, March 12, 2007 4:38 PM by Kyle Finley_
+
+foobar, Good stuff. I don't even do this the same way anymore. I just never got back to update it. I like what you added though. If I ever update this I might incorporate your method.
 
 Cheers,
 Kyle
@@ -408,7 +422,8 @@ Kyle
 ---
 
 ## re: Creating a Generic Collection Class with Sorting Support in .NET 2.0
-*Wednesday, August 29, 2007 3:43 AM by balu*
+
+_Wednesday, August 29, 2007 3:43 AM by balu_
 
 It is a good stuff to learn the Generic collection class.
 

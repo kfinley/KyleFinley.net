@@ -1,7 +1,7 @@
 # Alternate Row Background Color within a Group
 #### How to create Background Color for Alternating Rows within a Group in Reporting Services
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/6/2006 5:00:00 AM">Thursday, July 6, 2006</time></div>*
+*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="7/6/2006 5:00:00 AM">Thursday, July 6, 2006</time></div>*
 
 ---
 

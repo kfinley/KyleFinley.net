@@ -1,11 +1,13 @@
 # Twitter Scheduler with Images uploaded from Google Sheets
+
 #### Twitter Scheduler that supports Native Images using Google Sheets & images stored in Google Drive via Apps Script and theTwitter API.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/3/2015 6:40:00 PM">Friday, July 3, 2015</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="7/3/2015 6:40:00 PM">Friday, July 3, 2015</time></div>_
 
 ---
 
 ## Free Yourself from Twitter with a simple Twitter Scheduler!
+
 ---
 
 If you're serious about Social Media then you probably already use some type of scheduling to handle some of your status updates. For years I've used [Hootsuite](http://hootsuite.com/) for scheduling status updates but it doesn't really do what I want. What I'd rather have is a scheduling option based on Google Sheets so I can easily manage social media posts alongside my other Google Sheets based SEO and marketing tools and reports. Here are my requirements for what I'd like in a social media scheduler:
@@ -21,8 +23,10 @@ If you're serious about Social Media then you probably already use some type of 
 Since I couldn't find anything that met these requirements I built this Google Spreadsheet based Twitter Scheduler.
 
 ## Background
+
 ---
-It's hard pressed to find a free option that covers all that but I'm always keeping my eye open for for something that'll work, unfortunately I've never really found anything. If you know of something feel free to let me know at [@KFinley](https://twitter.com/kfinley). I've dabbled with a few programmatic options to handle this but I've never stuck with them to get them to work like I want and have relied on tools for scheduling. When I saw [Stefan Persson's](https://twitter.com/stefanpersson) post [100% Free Social Media Post Scheduling Growth Hack](https://instefinitely.wordpress.com/2015/04/07/build-a-social-media-post-scheduler-for-free-with-0-coding) I was intrigued. While it does cover most requirements it still has some issues. The biggest issue is it relies on [Yahoo Pipes which is shutting down this year](http://pipes.yqlblog.net/post/120705592639/pipes-end-of-life-announcement) and he uses Buffer which doesn't allow for RSS feeds with the free version. Bummer...
+
+It's hard pressed to find a free option that covers all that but I'm always keeping my eye open for for something that'll work, unfortunately I've never really found anything. If you know of something feel free to let me know. I've dabbled with a few programmatic options to handle this but I've never stuck with them to get them to work like I want and have relied on tools for scheduling. When I saw [Stefan Persson's](https://twitter.com/stefanpersson) post [100% Free Social Media Post Scheduling Growth Hack](https://instefinitely.wordpress.com/2015/04/07/build-a-social-media-post-scheduler-for-free-with-0-coding) I was intrigued. While it does cover most requirements it still has some issues. The biggest issue is it relies on [Yahoo Pipes which is shutting down this year](http://pipes.yqlblog.net/post/120705592639/pipes-end-of-life-announcement) and he uses Buffer which doesn't allow for RSS feeds with the free version. Bummer...
 
 This at least gave me a bit of a spark to push me to see if I could come up with another option that would work using Stefan's approach but removing Yahoo Pipes for the RSS feed generation. I decided to try using Google Sites and Apps Script to populate a page with Announcements using Time Based Triggers as the scheduling mechanism. When the trigger fires Tweets are pulled from the Google Sheet and posted to Twitter. While working on the setup I hit a snag with the Hootsuite RSS feed. Unfortunately unlike Buffer, Hootsuite doesn't allow you to flow the title through as the Tweet content and instead appends a shortened URL using Ow.ly (or one of their other shortner services that you select in the "URL shortener for links" option in the RRS setup).
 
@@ -53,7 +57,9 @@ When the script finds more than one tweet in a 15 min range instead of sending t
 And now enough talking and let's get to it! Here are the steps you need to get this working for yourself.
 
 ## Steps to Configure your own Twitter Scheduler in Google Sheets
+
 ---
+
 #### **Step 1 - Google Spreadsheet**
 
 Make a copy of [This Google Sheet](https://docs.google.com/spreadsheets/d/1HK_IWj2vBUuMk9V50PXZkSD4HLbqNQAi4AMsmHy_v7Y/copy) and save it somewhere on your Google Drive.
@@ -64,9 +70,9 @@ Note: You must have a phone number set on your account to create an app. You'll 
 
 Go to [apps.twitter.com](https://apps.twitter.com/) and create a new app. Name it what ever you want. Use your website for the Website setting and not mine! For the Callback URL use the following URL:
 
-```https://script.google.com/macros/d/<YOUR PROJECT KEY HERE>/usercallback```
+`https://script.google.com/macros/d/<YOUR PROJECT KEY HERE>/usercallback`
 
-Replacing ```<YOUR PROJECT KEY HERE>``` with the Script Project Key from the Setup Sheet in the Google Spreadsheet you copied in Step 1.
+Replacing `<YOUR PROJECT KEY HERE>` with the Script Project Key from the Setup Sheet in the Google Spreadsheet you copied in Step 1.
 
 <div style="text-align: center;">
 
@@ -106,7 +112,6 @@ The Apps Script code that runs you'll need to grant Authorization. Select "Autho
 </div>
 
 Then Click Accept on the list of things the Script will need to authorize.
-
 
 <div style="text-align: center;">
 
@@ -207,7 +212,7 @@ You can include up to 4 images for a Tweet. Each should be followed by a return 
 
 </div>
 
-*Additional Columns & Formulas*
+_Additional Columns & Formulas_
 
 The sheet has a few more column including 3 hidden ones.
 
@@ -241,9 +246,9 @@ You control the schedular by selecting Start or Stop Scheduler in the Schedular 
 
 </div>
 
-***Note on the scheduler:*** Keep in mind that status updates will not run for any dates in the past. So keep that in mind while adding new tweets to the list. If you add them at a time that's in the future but inside the current range that has run for the scheduler than your Tweets won't send. For instance if you have the scheduler set to run every 30 minutes and it runs at 3:30 and you're adding an item at 3:50 to go out at 3:55 then the message won't get picked up because the next trigger will run at 4:00. Basically always schedule something for at least as far in the future as you have your schedule configured to run at.
+**_Note on the scheduler:_** Keep in mind that status updates will not run for any dates in the past. So keep that in mind while adding new tweets to the list. If you add them at a time that's in the future but inside the current range that has run for the scheduler than your Tweets won't send. For instance if you have the scheduler set to run every 30 minutes and it runs at 3:30 and you're adding an item at 3:50 to go out at 3:55 then the message won't get picked up because the next trigger will run at 4:00. Basically always schedule something for at least as far in the future as you have your schedule configured to run at.
 
-***Time Zones*** The sheet is set to Eastern Time Zone. You'll need to change the Apps Script Properties and set your time zone to get the correct times scheduled.
+**_Time Zones_** The sheet is set to Eastern Time Zone. You'll need to change the Apps Script Properties and set your time zone to get the correct times scheduled.
 
 <div style="text-align: center;">
 
@@ -277,14 +282,16 @@ That's it!! You're all done!!
 Now schedule some Tweets and make sure the script works.
 
 ### **Summary**
+
 ---
+
 If you made it this far hopefully you're now setup with a Google Sheet that will send Images with updates to Twitter. If you'd like to see some more detail on the script code that drives the scheduler you can [read about it here](/sheets-to-tweets-script). I encourage you to take a look at the code and extend it to fit your needs. Learn Apps Script, it's worth it!
 
 In researching this I came across a few publicly maintained Twitter Bot sheets that I looked at to understand how they did things in order to write this solution. As you can imagine by now this code will allow you to create your own Twitter Bot but remember play nice or Twitter will boot you.
 
 As I'm sure you can imagine this code is really just the starting point of what you can do. You can build on this script or include it in your existing Sheets toolkit.
 
-I'd love to hear comments or thoughts so please feel free to comment by tweeting to me at [@KFinley](https://twitter.com/kfinley).
+I'd love to hear comments or thoughts so please feel free to reach out.
 
 - UPDATE: 7/6/2015 - Removed a few steps from the process to make this simpler. Now only 9 steps!
 - UPDATE: 8/4/2015 - Added support for shortening URLs using the Google Shortener service.

@@ -1,7 +1,8 @@
 # A Year Without Blogging
+
 #### I realized it's been almost a full year since my last blog post.I would say I'm disappointed in myself for not posting in the last year but I'm not.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/10/2009 6:40:00 PM">Tuesday, February 10, 2009</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="2/10/2009 6:40:00 PM">Tuesday, February 10, 2009</time></div>_
 
 ---
 
@@ -13,12 +14,12 @@ This realization sparked a [4-Hour Workweek](http://www.fourhourworkweek.com) st
 
 My original plan for the time off was simple but as all things plans change over time and what came to be was way beyond anything I could have come up with at first. My original plan was to take the majority of the ski season off and live and work in the mountains in Colorado teaching snowboarding and [snowkiting](http://en.wikipedia.org/wiki/Snowkiting) as much as possible. I began saving up as much money as I could with the intension of taking a 4 month leave of absence from work. As the calendar year of 2007 drew to a close I realized my project work was not going to wrap up as I had hoped in December and would run long into January. This combined with poor timing with my company annual review meetings was going to force me to delay the start of my trip until most likely February. As any good Agile thinker I adapted my schedule and plans to fit what I had to work with. Long story short here is the ultimate trip I came up with.
 
-* 1 Week driving from Boston to Colorado with a stop off in Chicago
-* 6 Weeks in Summit County, CO (Breckenridge / Keystone / Arapahoe Basin area)
-* 2 Weeks at [The Reef](http://www.slucia.com/windsurf/kitesurf.html) in St. Lucia
-* [Wind & Water Open](http://www.uswindandwateropen.com/Kiteboarding.html), Corpus Christie, TX
-* 6 Week Road from South Padre Island, TX around the Gulf coast, Florida, and up the East Coast back to Boston.
-What originally started out to be a snowboard / snowkite trip turned into the ultimate kiteboarding adventure. I realized I had the opportunity to attempt to kiteboard every state that touches ocean between Texas and Maine (18 states). To my understanding this has never been done, and still has not done, I'm missing 4 states, but will finish the journey as soon as the water warms up.
+- 1 Week driving from Boston to Colorado with a stop off in Chicago
+- 6 Weeks in Summit County, CO (Breckenridge / Keystone / Arapahoe Basin area)
+- 2 Weeks at [The Reef](http://www.slucia.com/windsurf/kitesurf.html) in St. Lucia
+- [Wind & Water Open](http://www.uswindandwateropen.com/Kiteboarding.html), Corpus Christie, TX
+- 6 Week Road from South Padre Island, TX around the Gulf coast, Florida, and up the East Coast back to Boston.
+  What originally started out to be a snowboard / snowkite trip turned into the ultimate kiteboarding adventure. I realized I had the opportunity to attempt to kiteboard every state that touches ocean between Texas and Maine (18 states). To my understanding this has never been done, and still has not done, I'm missing 4 states, but will finish the journey as soon as the water warms up.
 
 On the road trip I drove my (new to me) 2000 Jeep Wrangler and camped the majority of the coastal road trip. On the coastal part of the trip I made it to around 25 different beaches in 13 different states. Some of the highlights included South Padre Island (camping on the beach), [Couch Surfing](http://www.couchsurfing.com/) in Galveston (before Ike), Gulfport, MS (Katrina really F-d that place up), Charleston, SC (Very cool city and great kite spot), Outer Banks (kiting of course but also the random Jam Session I walked in on and played for a few hours), Washington D.C. (I kite-groundboarded the Washington Monument Park!!, Random downwinder in Myrtle Beach, 2 am breakfast in the Hilton Bayfront Parking Lot in St. Petersburg, FL (long story, man that french toast was good though), and of course every single day in St. Lucia at [The Reef](http://www.slucia.com/windsurf/kitesurf.html). There are so many great memories, too many to list here. I did blog about it (Personal note: migrate all bog posts then replace this) though if anyone is really that interested.
 

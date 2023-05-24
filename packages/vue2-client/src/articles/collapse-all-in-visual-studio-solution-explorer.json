@@ -14,30 +14,6 @@
       "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
     },
     {
-      "name": "twitter:card",
-      "content": "summary_large_image"
-    },
-    {
-      "name": "twitter:site",
-      "content": "@kfinley"
-    },
-    {
-      "name": "twitter:creator",
-      "content": "@kfinley"
-    },
-    {
-      "name": "twitter:title",
-      "content": "Collapse All Folders in VS Solution Explorer"
-    },
-    {
-      "name": "twitter:description",
-      "content": "This is a Macro for Visual Studio that will collapse all the folders in the solution explorer."
-    },
-    {
-      "property": "twitter:account_id",
-      "content": "1530436921"
-    },
-    {
       "property": "og:title",
       "content": "Collapse All Folders in VS Solution Explorer"
     },

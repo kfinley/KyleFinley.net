@@ -1,17 +1,18 @@
 # Managing Completed Tasks in Outlook
+
 #### Keep your tasks in Outlook organized. Here is a simple Macro for moving completed Outlook Tasks to a separate folder.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="9/30/2005 12:00:00 AM">Thursday, September 29, 2005</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="9/30/2005 12:00:00 AM">Thursday, September 29, 2005</time></div>_
 
 ---
 
 I know this is not .NET related but it's a helpful little macro I put together last week.
 
-I use Outlook to manage a lot of my tasks with work and my personal life.  I'm sure a lot of you out there do as well.  I've never been that impressed with how tasks work in Outlook, but I've also not found an better PIM tool to handle my daily tasks.  I've tried using a few Outlook Add-Ons to perform some more features but haven't really been happy with those or been willing to pay the money for them.
+I use Outlook to manage a lot of my tasks with work and my personal life. I'm sure a lot of you out there do as well. I've never been that impressed with how tasks work in Outlook, but I've also not found an better PIM tool to handle my daily tasks. I've tried using a few Outlook Add-Ons to perform some more features but haven't really been happy with those or been willing to pay the money for them.
 
-Last week I decided to fix my biggest complaints, which how to deal with Task Items that have been marked as complete.  I usually just delete the items but then I'm left with no real way of tracking Items I've completed.  I would rather move the items to a specific folder, but I don't want to do it by hand.  To fix the problem I created a macro that would move completed task items to a folder under a predefined 'Completed' folder with the same name as the category which is specified in the task item.  If no 'Completed' folder exists for the category, than one is created.  The macro doesn't do any recursion and must be run on each individual folder that has Task Items.  More details are mentioned in the comments.
+Last week I decided to fix my biggest complaints, which how to deal with Task Items that have been marked as complete. I usually just delete the items but then I'm left with no real way of tracking Items I've completed. I would rather move the items to a specific folder, but I don't want to do it by hand. To fix the problem I created a macro that would move completed task items to a folder under a predefined 'Completed' folder with the same name as the category which is specified in the task item. If no 'Completed' folder exists for the category, than one is created. The macro doesn't do any recursion and must be run on each individual folder that has Task Items. More details are mentioned in the comments.
 
-One thing I'm not happy with is that the macro must be run by hand.  I would prefer to hook into some type of event, such as a task item chaged event, but I haven't been able to do that.  If anyone knows how let me know and I'll update the macro.
+One thing I'm not happy with is that the macro must be run by hand. I would prefer to hook into some type of event, such as a task item chaged event, but I haven't been able to do that. If anyone knows how let me know and I'll update the macro.
 
 ```vb
 Sub Move_Completed_Tasks()

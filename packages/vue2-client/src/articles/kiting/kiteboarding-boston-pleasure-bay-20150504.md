@@ -1,7 +1,8 @@
 # Kiteboarding Boston's Pleasure Bay May 4th, 2015
+
 #### Local Boston kitesurfers enjoying a nice windy Spring day at one of New England's best kiteboarding spots, Pleasure Bay on May 4th, 2015
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="5/6/2015 5:16:54 PM">Wednesday, May 6, 2015</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="5/6/2015 5:16:54 PM">Wednesday, May 6, 2015</time></div>_
 
 ---
 
@@ -10,7 +11,6 @@ Monday was a really nice and warm day in Boston. First 80º day of the year! Got
 I hit the water with my old North 2008 9m and Naish Wakeskate. I'm still committing to the wakeskate this year and determined to get kickflips and hopefully grabbed airs this Season! I rode for a while and was fully powered and got to practicing kickflips but my ankles wore out pretty fast. It's going to take some riding to get used to the weight of the wakeskate. I did get lots of nice big shove-its as well as several solid Big Spins so I was happy with that. All in all a great day on the water and good seeing everyone back on kites for the season.
 
 Here are some pictures I got of the guys during a break from riding.
-
 
 <div style="text-align: center;">
 
@@ -50,22 +50,12 @@ Here are some pictures I got of the guys during a break from riding.
 
 ![Woo Sports Marketing Behind the Scenes](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2942.jpg)
 
-
-
-
-
-
-
 ![Woo Marketing Behind The Scenes](../../../../media/images/copyrighted/©_Kyle_Finley_2015.05.04-Kiteboarding_Pleasure_Bay-IMG_2963.jpg)
 
 </div>
-
-
 
 <div class="no-indent">
 All photographs taken and owned by Kyle Finley.<br>
 All rights reserved.<br>
 For usage please contact me via Twitter
 </div>
-
-[@KFinley](https://twitter.com/kfinley)

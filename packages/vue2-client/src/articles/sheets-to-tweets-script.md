@@ -1,7 +1,8 @@
 # Sheets to Tweets Apps Script Details
+
 #### Details on the Apps Script that runs behind the Sheets To Tweets Google Spreadsheet based Twitter Scheduler.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="7/3/2015 11:24:00 PM">Friday, July 3, 2015</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="7/3/2015 11:24:00 PM">Friday, July 3, 2015</time></div>_
 
 ---
 
@@ -38,13 +39,13 @@ This file contains overloads to the Twitter lib sendTweet and uploadMedia method
 This file contains the main logic of the script. There are 2 main methods in this script that I'll cover here.
 
 ```javascript
-getTwitterService()
+getTwitterService();
 ```
 
 This method setups up the Twitter API call based on the settings in the Settings sheet using Twitter Lib and returns a reference to the service.
 
 ```javascript
-processTweets()
+processTweets();
 ```
 
 This is the method that gets called when the scheduler runs. Here is the basic logic:

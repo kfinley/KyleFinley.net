@@ -14,30 +14,6 @@
       "content": "How to hide a parameter on a Reporting Services Report while still being able to pass the report the parameter via the URL or Form Post."
     },
     {
-      "name": "twitter:card",
-      "content": "summary_large_image"
-    },
-    {
-      "name": "twitter:site",
-      "content": "@kfinley"
-    },
-    {
-      "name": "twitter:creator",
-      "content": "@kfinley"
-    },
-    {
-      "name": "twitter:title",
-      "content": "Hiding Specific Parameters in a Reporting Services Report"
-    },
-    {
-      "name": "twitter:description",
-      "content": "How to hide a parameter on a Reporting Services Report while still being able to pass the report the parameter via the URL or Form Post."
-    },
-    {
-      "property": "twitter:account_id",
-      "content": "1530436921"
-    },
-    {
       "property": "og:title",
       "content": "Hiding Specific Parameters in a Reporting Services Report"
     },

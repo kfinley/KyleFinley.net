@@ -1,7 +1,8 @@
 # Enterprise Library for .NET Framework 2.0 Release
+
 #### Microsoft's Patterns & Practices group has released a new version of the Enterprise Library designed for the .NET Framework 2.0.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="1/23/2006 8:06:00 PM">Monday, January 23, 2006</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="1/23/2006 8:06:00 PM">Monday, January 23, 2006</time></div>_
 
 ---
 
@@ -45,4 +46,4 @@ For more information on changes in the library view [release info here](http://m
 
 If you are not familiar with the EntLib I highly recommend you give it a look. There is some pretty cool stuff inside if you are into picking apart code. Also this is a great source of sample code which follows development best practices, such as unit test classes for testing .NET code (NUnit & VS2006 compatible).
 
-**Now Playing**: *Jimmy Eat World* - Clarity - For Me This Is Heaven
+**Now Playing**: _Jimmy Eat World_ - Clarity - For Me This Is Heaven

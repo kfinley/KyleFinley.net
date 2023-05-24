@@ -1,7 +1,8 @@
 # Kite the Coast - Chasing Wind in Fort Walton, FL : May 2008
+
 #### Journal Entry from the Florida Panhandle. Chasing wind and driving on closed beach roads with the guys from XLKites in Fort Walton, FL.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="5/22/2008 5:00:00 AM">Thursday, May 22, 2008</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="5/22/2008 5:00:00 AM">Thursday, May 22, 2008</time></div>_
 
 Thursday I drove out of Gulf Shores, AL headed for the Pensacola / Fort Walton area. The drive was super short so I got there by mid day. I decided to head on to Fort Walton and hit up XLKites to find out where a good spot would be to ride for the day. The wind was predicted to be light so I knew I would be on my 16m if anything at all.
 

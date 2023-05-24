@@ -1,7 +1,8 @@
 # Kite the Coast - Kiteboarding Dauphin Island, AL : May 2008
+
 #### Journal Entry from Dauphin Island, AL. Private golf course kite launch plus kitesurfing with dolphins! Plus tales of sharks from the locals!!
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="5/21/2008 5:00:00 AM">Wednesday, May 21, 2008</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="5/21/2008 5:00:00 AM">Wednesday, May 21, 2008</time></div>_
 
 ---
 

@@ -1,7 +1,7 @@
 # Visual Studio Build + Run MSpec
 #### How to setup Visual Studio to build your Solution and then run MSpec tests with the MSpec Runner.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="10/6/2009 2:00:00 AM">Monday, October 5, 2009</time></div>*
+*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="10/6/2009 2:00:00 AM">Monday, October 5, 2009</time></div>*
 
 ---
 

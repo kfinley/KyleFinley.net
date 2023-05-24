@@ -1,17 +1,19 @@
 # Hiding Specific Parameters in a Reporting Services Report
+
 #### How to hide a parameter on a Reporting Services Report while still being able to pass the report the parameter via the URL or Form Post.
 
-*<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author"><a href="https://twitter.com/kfinley" target="_blank" title="kfinley on Twitter">Kyle Finley</a></span> Published: <time itemprop="pubdate" datetime="2/24/2006 4:03:00 PM">Friday, February 24, 2006</time></div>*
+_<div class="article-meta-data"> by <span class="article-meta-author" itemprop="author">Kyle Finley</span> Published: <time itemprop="pubdate" datetime="2/24/2006 4:03:00 PM">Friday, February 24, 2006</time></div>_
 
 ---
 
 Here's an interesting one we found today. We wanted to hide certain user parameters on a report while still being able to pass the report the parameter via the URL or Form POST value. This was not possible in Reporting Services 2000 pre SP1. SP1 addressed the issue but the steps required are not very intuitive and seem to go against what the SP1 Read Me states. Here is the statement from the read me file.
 
->### 4.3.1 Hiding Parameters in a Published Report
->In Report Manager, you can now set parameter properties in a way that allows you to achieve two objectives simultaneously:
+> ### 4.3.1 Hiding Parameters in a Published Report
+>
+> In Report Manager, you can now set parameter properties in a way that allows you to achieve two objectives simultaneously:
 
->* Hide the parameter fields in a published report.
->* Specify a parameter value at run time (for example, through a subscription that is used to trigger report execution and delivery).
+> - Hide the parameter fields in a published report.
+> - Specify a parameter value at run time (for example, through a subscription that is used to trigger report execution and delivery).
 
 Previously, the only way to hide a parameter value was to clear the Prompt User check box in the Parameters properties page. However, a side effect of clearing the check box was that you could no longer specify a parameter value for the report at run time. This limitation has been removed. In SP1, you can clear the Prompt User check box to hide the parameter fields and values in the report. Doing so does not introduce restrictions on how you subsequently set the parameter value externally at run time.
 
