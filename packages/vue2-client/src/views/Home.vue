@@ -10,32 +10,40 @@
       <div class="col-12 pt-2">
         <h2>Music</h2>
         <p>
-          My main ax is upright bass but I started playing trombone when I was 12. I picked up the guitar and bass shortly thereafter
-          playing lots of rock &amp; grunge. I moved from electric bass to upright in early high school and was pretty active through
-          college playing in big bands and jazz combos. Music took a backseat in my 20s and early 30s but I've been back at it more
-          seriously for more several years now and I've moved out of the woodshed and back onto the stage! I got my chops back playing
-          bluegrass with the Jamaica Plain jam in Boston (lately they play Sundays at the Turtle Creek Brewery or at the JP pond), then I
-          got back to jazz after moving to across the country to SF. Lately I play in a few groups and host a monthly Jazz Jam at The Lucky
-          Horseshoe in Bernal Heights. More info and upcoming shows can be found on my <router-link to="/Music">Music Page</router-link>
+          I'm a jazz, bluegrass, rock, folk, Americana, and orchestral musician in the Bay area. My main ax is upright bass but I also play
+          guitar and recently have gotten back to the horn. I started playing trombone when I was 12 and picked up guitar and bass shortly
+          thereafter. I moved from electric bass to upright as my primary in high school and was pretty active through college playing in
+          big bands, jazz combos, and marching band. Music took a backseat in my 20s and early 30s but I've been back at it more seriously
+          for several years now and I've moved out of the woodshed and back onto the stage! I got my chops back playing bluegrass with the
+          Jamaica Plain bluegrass jam in Boston (lately they play Sundays at the Turtle Creek Brewery or at the JP pond in the summer), then
+          I got back to jazz after moving to across the country to SF. These days I'm playing in a few groups around SF and host a monthly
+          Jazz Jam at The Lucky Horseshoe in Bernal Heights. More info and upcoming shows can be found on my
+          <router-link to="/music">Music Page</router-link>.
         </p>
         <h2>Traveling</h2>
         <p>
-          I've been a traveler for most of my adult life. I flew around the country as a consultant for 5 years out of college and found the
-          CouchSurfing community very early on. I've driven around most of the country in my Jeep Wrangler or more lately Gen 2 Subaru
-          Outback wagon. These days I do lots of driving between the west coast, Colorado, and my home state down south. I enjoy camping on
-          public land as much as possible and stand up paddleboarding as many remote places as I can (Horseshoe Springs, NV is a great
-          spot!).
+          I've been a traveler for most of my adult life. I flew around the country as a consultant for 5 years after college and I found
+          the Couch Surfing community very early on. I've driven around most of the country in my Jeep Wrangler or lately in a Gen 2 Subaru
+          Outback wagon named Su. These days I do lots of driving between the west coast, Colorado, and my home state down south. I enjoy
+          camping on public land as much as possible on my road trips and I stand up paddleboarding as many remote places as I can
+          (Horseshoe Springs, UT is a great spot!). Info about adventures in Subie Su can be found
+          <a href="https://acarnamedsu.com" target="Su">here</a>.
         </p>
         <h2>Software Development</h2>
         <p>
-          When I choose to work I'm a software developer. I started out with tech in high school and worked for my hometown school district
-          wiring old school buildings and installing servers. In college I was a TA for the programming courses in the business school and
-          moved from sysadmin work to building software for all sorts of things (help ticket systems, contact management systems, automated
-          workflows, etc.). After college I worked as a consultant with a major US based firm for about 5 years then I moved into the crazy
-          world of tech startups. I've worked for lots of crazy startups! I mostly enjoy building transaction based systems, financial
-          platforms, e-commerce systems, food order / delivery systems, web scrapping / data harvesting, sports community and coaching
-          systems, DevOps related stuff, and some data related things. I'm a recovering Agile Practitioner and prefer working with pure
-          Kanban in a Lean Software Process derived from the Toyota Product System principles.
+          When I choose to work I'm usually doing software and systems development. I've been in tech for a while and it's been a journey. I
+          started out working for my hometown school district right out of high school. Back then we were wiring old school buildings and
+          installing servers. I did the whole MCSE thing while still in college while working at a training center. Then I was a TA for the
+          programming courses in the business school at University of Colorado. There I took my first real programming gig working for the B
+          School building a custom contact management system and other web based stuff. After college I worked as a consultant with a big US
+          based firm for about 5 years doing mostly custom software and BI systems. Then I moved into the crazy world of tech startups where
+          I've been working off and on now for over 10 years. I've worked for lots of crazy startups that's for sure. I mostly done work
+          building transaction based systems, financial platforms, e-commerce systems, food order / delivery systems, web scrapping / data
+          harvesting, sports community and coaching systems, DevOps related stuff, and some data related things. I'm a recovering Agile
+          Practitioner and prefer working with pure Kanban in a Lean Software Process derived from the Toyota Product System principles. I
+          also spent some time as a technical growth hacker / SEO dude. I dig organic growth marketing but I've been off of social networks
+          for almost 10 years now so it's not something I focus on these days. I'm always working on something and these days it's mostly
+          personal projects. More info on the software I'm working on can be found <router-link to="/software" >here</router-link>.
         </p>
         <h2>Photography</h2>
         <p>
