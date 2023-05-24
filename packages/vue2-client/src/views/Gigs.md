@@ -4,7 +4,7 @@
 
 | May 7
 |-
-| Open Bluegrass Jam
+| Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
@@ -32,7 +32,7 @@
 
 | May 14
 |-
-| Open Bluegrass Jam
+| Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
@@ -61,7 +61,7 @@
 
 | May 21
 |-
-| Open Bluegrass Jam
+| Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
@@ -131,7 +131,7 @@
 
 | June 4
 |-
-| Open Bluegrass Jam
+| Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
