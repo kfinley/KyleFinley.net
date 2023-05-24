@@ -73,7 +73,7 @@
       in the summer.
     </p>
     <p>
-      I landed in SF in the summer of 2019 and found the Lucky Horseshoe weekly bluegrass jam run by Frank Holmes my first week. I was the
+      I landed in SF in the summer of 2019 and found The Lucky Horseshoe weekly bluegrass jam run by Frank Holmes my first week in town. I was the
       regular bass player for the Shoe Jam through the pandemic and into it's transition to a new leader. Now I still play the jam most
       weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years and these days I'm playing
       in a few groups around SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the month.
