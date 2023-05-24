@@ -66,7 +66,7 @@
       now out of the woodshed and back on the stage!
     </p>
     <p>
-      After a overpriced botched overhaul in 2012 of my bass I was so upset I couldn't even play it and it sadly sat in the corner for
+      After an overpriced botched overhaul in 2012 of my bass I was so upset I couldn't even play it and it sadly sat in the corner for
       another 6 years. (Don't ever use or trust Upton... just saying.) After randomly meeting a Berklee Comp kid while kiteboarding at the
       beach in Boston, he invited me to play bass at a bluegrass jam in Jamaica Plain. I thought it'd be a good place to get my chops back
       so I started playing with them weekly. They're a great crew and lately they play Sundays at the Turtle Creek Brewery or at the JP pond
