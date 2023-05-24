@@ -34,7 +34,7 @@
         played together through the spring of 2023 before Daisy went back to being a world traveler
       </li>
       <li><em>Ocean Ale House Jazz Jam</em> - Weekly Jazz Jam on Wednesday Nights in Monterey Heights</li>
-      <li><em>Madrone Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar in Alamo Square </li>
+      <li><em>Madrone Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar in Alamo Square</li>
     </ul>
 
     <h4 class="text-center">My Musical History</h4>
@@ -49,9 +49,8 @@
     <p>
       I started playing bass because of people like Cliff Burton, Les Claypool, and Flea. When I was about 13 I got a cheap electric bass
       guitar (and an even cheaper garage sale acoustic guitar). I started taking lessons from my friend and band director
-      <a href="https://jeffmadlock.com" target="Jeff">Jeff Madlock</a> and he started grooming me for high school jazz band. I continued
-      with guitar, and still play it a lot, but after moving to upright bass in early high school I've considered myself primarily a bass
-      player.
+      <a href="http://jeffmadlock.com" target="Jeff">Jeff Madlock</a> and he started grooming me for high school jazz band. I continued with
+      guitar, and still play it a lot, but after moving to upright bass in early high school I've considered myself primarily a bass player.
     </p>
     <p>
       In high school I was a 3 time All-State Jazz Band member from it's inaugural year through graduation. I also made All-State Orchestra
@@ -76,11 +75,12 @@
     <p>
       I landed in SF in the summer of 2019 and found the Lucky Horseshoe weekly bluegrass jam run by Frank Holmes my first week. I was the
       regular bass player for the Shoe Jam through the pandemic and into it's transition to a new leader. Now I still play the jam most
-      weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years and these days I'm playing in a
-      few groups around SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the month.
+      weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years and these days I'm playing
+      in a few groups around SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the month.
     </p>
     <p>
-      I'm available for hire and looking for players to form both a regular gigging jazz group and a progressive bluegrass / Americana group.
+      I'm available for hire and looking for players to form both a regular gigging jazz group and a progressive bluegrass / Americana
+      group. You can reach me directly at <a href="mailto:kyle@kylefinley.net">Kyle@KyleFinley.net</a>.
     </p>
   </div>
 </template>

@@ -25,7 +25,7 @@
 
 | May 14
 |-
-| <a href="https://goldengatejams.com" target="new">Community Music Hangout</a>
+| <a href="https://goldengatejams.com" target="NFN">Community Music Hangout</a>
 | Golden Gate Park
 | SF, CA
 | 12 AM - 3 PM
@@ -53,7 +53,7 @@
 
 | May 20
 |-
-| Nobody From Nashville
+| <a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="NFN">Nobody From Nashville</a>
 | Bluegrass Summer Concert Series
 | Bauhr Ranch - Chinese Camp, CA
 | 5:30 - 8 PM
@@ -96,14 +96,14 @@
 
 | May 27 or 28
 |-
-| <a href="https://goldengatejams.com" target="new">Community Music Hangout</a>
+| <a href="https://goldengatejams.com" target="NFN">Community Music Hangout</a>
 | Golden Gate Park
 | SF, CA
 | 11 AM - 2 PM
 
 | May 29
 |-
-| Nobody From Nashville
+| <a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="NFN">Nobody From Nashville</a>
 | Private Event
 | Mill Valley, CA
 
@@ -125,7 +125,7 @@
 
 | June 3
 |-
-| Nobody From Nashville
+| <a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="NFN">Nobody From Nashville</a>
 | Private Event
 | Bay Area, California
 

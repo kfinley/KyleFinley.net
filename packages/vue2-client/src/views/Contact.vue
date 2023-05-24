@@ -2,8 +2,7 @@
   <div>
     <h1 style="text-align: center;">Contact</h1>
     <p>
-      Text me if you've got my number. Email me if you have my email address. Hit me up on
-      Twitter and I may see it (I rarely log into it these days).
+      I'm open to both music and tech gigs. You can reach me via email me at <a href="mailto:Kyle@KyleFinley.net">Kyle@KyleFinley.net</a>
     </p>
   </div>
 </template>
@@ -16,8 +15,8 @@ import Component from 'vue-class-component'
 @Component({
     layout: 'default' // For layout to work here we have to use vue-class-component over vue-property-decorator
 })
-export default class Contact extends Vue { 
-   
+export default class Contact extends Vue {
+
 }
 
 </script>
