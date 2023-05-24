@@ -10,14 +10,14 @@
       <div class="col-12 pt-2">
         <h2>Music</h2>
         <p>
-          I'm a jazz, bluegrass, rock, folk, Americana, and orchestral musician in the Bay area. My main ax is upright bass but I also play
-          guitar and recently have gotten back to the horn. I started playing trombone when I was 12 and picked up guitar and bass shortly
-          thereafter. I moved from electric bass to upright as my primary in high school and was pretty active through college playing in
-          big bands, jazz combos, and marching band. Music took a backseat in my 20s and early 30s but I've been back at it more seriously
-          for several years now and I've moved out of the woodshed and back onto the stage! I got my chops back playing bluegrass with the
-          Jamaica Plain bluegrass jam in Boston (lately they play Sundays at the Turtle Creek Brewery or at the JP pond in the summer), then
-          I got back to jazz after moving to across the country to SF. These days I'm playing in a few groups around SF and host a monthly
-          Jazz Jam at The Lucky Horseshoe in Bernal Heights. More info and upcoming shows can be found on my
+          I'm a jazz, bluegrass, rock, folk, and Americana musician in the Bay area. My main ax is upright bass but I also play guitar and
+          recently have gotten back to trombone. I started playing trombone when I was 12 and picked up guitar and bass shortly thereafter.
+          I moved from electric bass to upright as my primary in high school and was pretty active through college playing in big bands,
+          jazz combos, and marching band. Music took a backseat in my 20s and early 30s but I've been back at it more seriously for several
+          years now and I've moved out of the woodshed and back onto the stage! I got my chops back playing bluegrass with the Jamaica Plain
+          bluegrass jam in Boston (lately they play Sundays at the Turtle Creek Brewery or at the JP pond in the summer), then I got back to
+          jazz after moving to across the country to SF. These days I'm playing in a few groups around SF and host a monthly Jazz Jam at The
+          Lucky Horseshoe in Bernal Heights. More info and upcoming shows can be found on my
           <router-link to="/music">Music Page</router-link>.
         </p>
         <h2>Traveling</h2>
@@ -43,7 +43,7 @@
           Practitioner and prefer working with pure Kanban in a Lean Software Process derived from the Toyota Product System principles. I
           also spent some time as a technical growth hacker / SEO dude. I dig organic growth marketing but I've been off of social networks
           for almost 10 years now so it's not something I focus on these days. I'm always working on something and these days it's mostly
-          personal projects. More info on the software I'm working on can be found <router-link to="/software" >here</router-link>.
+          personal projects. More info on the software I'm working on can be found <router-link to="/software">here</router-link>.
         </p>
         <h2>Photography</h2>
         <p>
