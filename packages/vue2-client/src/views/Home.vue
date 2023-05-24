@@ -44,7 +44,7 @@
           but I enjoy shooting outdoors, night cityscapes, low light cocktails &amp; bar scenes, live music shows, portraits, and
           action shots.
         </p>
-        <h2 class="text-center">Boarding<br />Skate | Kite | Snow | Standup-Paddle</h2>
+        <h2 class="text-center">Boarding<br />Skate | Kite | Snow | Standup Paddle</h2>
         <p>
           I'm a life long boarder. I started skating when I was about 6 and haven't stopped yet! I started snowboarding when I was 13 and
           I've been kiteboarding now for almost 20 years. I've kiteboarded almost every coastal state in the US and several of the inland

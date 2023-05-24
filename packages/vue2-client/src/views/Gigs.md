@@ -4,10 +4,17 @@
 
 | May 7
 |-
-| Shoe Open Bluegrass Jam
+| Open Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
+
+| May 10
+|-
+| Woody Lauer's Bluegrass Jam
+| Amado's
+| Mission District - SF, CA
+| 7 - 9 PM
 
 | May 12
 |-
@@ -25,7 +32,7 @@
 
 | May 14
 |-
-| Shoe Open Bluegrass Jam
+| Open Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
@@ -47,14 +54,14 @@
 | May 20
 |-
 | Nobody From Nashville
-| Bauhr Ranch
 | Bluegrass Summer Concert Series
+| Bauhr Ranch - Chinese Camp, CA
 | 5:30 - 8 PM
 | <a href="https://bauhrranch.com/event/nobody-from-nashville/" target="tickets" >Tickets</a>
 
 | May 21
 |-
-| Shoe Open Bluegrass Jam
+| Open Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
@@ -124,7 +131,7 @@
 
 | June 4
 |-
-| Shoe Open Bluegrass Jam
+| Open Bluegrass Jam
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 4 - 7 PM
