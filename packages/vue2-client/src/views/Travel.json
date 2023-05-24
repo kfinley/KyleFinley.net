@@ -1,18 +1,22 @@
 {
-  "title": "Latest News & Updates",
+  "title": "Kyle Finley's Travels",
   "allowAnonymous": true,
   "metaTags": [
     {
       "name": "description",
-      "content": "News and updates for the site. This page is ephemeral and not archived beyond source control versions."
+      "content": "Info on past trips, adventures, couch surfing, and random travel related stuff."
     },
     {
       "itemprop": "name",
-      "content": "Latest News & Updates - KyleFinley.net"
+      "content": "Kyle Finley's Travels"
+    },
+    {
+      "itemprop": "description",
+      "content": "Info on past trips, adventures, couch surfing, and random travel related stuff."
     },
     {
       "property": "og:title",
-      "content": "Latest News & Updates - KyleFinley.net"
+      "content": "Kyle Finley's Travels"
     },
     {
       "property": "og:type",
@@ -20,7 +24,7 @@
     },
     {
       "property": "og:url",
-      "content": "https://KyleFinley.net/news"
+      "content": "https://KyleFinley.net/travel"
     },
     {
       "property": "og:image",
@@ -28,7 +32,7 @@
     },
     {
       "property": "og:description",
-      "content": "News and updates for the site. This page is ephemeral and not archived beyond source control versions."
+      "content": "Info on past trips, adventures, couch surfing, and random travel related stuff."
     },
     {
       "property": "og:site_name",

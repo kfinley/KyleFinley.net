@@ -4,5 +4,6 @@ export enum RouteNames {
   Home = "Home",
   Music = "Music",
   News = "News",
-  Software = "Software"
+  Software = "Software",
+  Travel = "Travel"
 };

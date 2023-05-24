@@ -1,25 +1,110 @@
 <template>
   <div class="container">
-    <h1 class="text-center">Kyle Finley's Music Page</h1>
+    <h1 class="text-center">Kyle Finley - Musician</h1>
+    <p><i>Jazz, Bluegrass, and Americana bassist currently slappin' strings around the San Francisco Bay area.</i></p>
+    <Gigs class="text-center" />
+    <h4 class="text-center pt-4">Bands &amp; Jams</h4>
+    <ul class="bands">
+      <li>
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire! Four piece
+        featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro
+      </li>
+      <li>
+        <em><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a></em> - Thursday &amp; Friday nights at
+        <a href="https://www.ulasf.com" target="new">Ula SF</a> in Union Sq. (I'm new to the rotation and playing a lot lately!)
+      </li>
+      <li><em>The Lucky Horseshoe Open Jazz Jam</em> - Every 3rd Wednesday of the Month 8-11pm</li>
+      <li><em>The Lucky Horseshoe Sunday Bluegrass Jam</em> Every Sunday 4-7pm</li>
+      <li>
+        <em>The Lucky Horseshoe Showcase Bluegrass Jam</em> - 1st Sunday of the month from 8-9:30pm (currently in hiatus but hopefully back soon!)
+      </li>
+      <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
+      <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
+      <li>
+        <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park near
+        Stowe Lake on JFK
+      </li>
+      <li>
+        <em>Golden Gate Jazz Sextet w Guitar Scott</em> - I'm currently a fill in bassist when Scott needs a player. This group has been playing in
+        GG park on Friday's at the Conservatory of Flowers tunnel for several years
+      </li>
+      <li>
+        <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We played
+        together through the spring of 2023 before Daisy went back to being a world traveler.
+      </li>
+    </ul>
+
+    <h4 class="text-center">My Musical History</h4>
     <p>
-      Lately I'm playing in a few groups and jams around San Francisco including:
-      <ul>
-        <li><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a> - Band for hire! Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro</li>
-        <li><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a> - Thursday &amp; Friday nights at <a href="https://www.ulasf.com" target="new">Ula SF</a> in Union Sq. (I'm new to the rotation and lately playing a lot)</li>
-        <li>The Lucky Horseshoe Jazz Jam - Every 3rd Wednesday of the Month 8-11pm</li>
-        <li>The Lucky Horseshoe Sunday Bluegrass Jam 4-7pm</li>
-        <li>The Lucky Horseshoe Showcase Bluegrass Jam - 1st Sunday of the month from 8-9:30pm (currently in hiatus but hopefully back soon!)</li>
-        <li>The Hotel Utah Saloon Weekly Bluegrass Jam - Every Tuesday from 7pm 'til done</li>
-        <li>Woody Lauer's Bluegrass Jam @ Amado's - Every Wednesday from 7-10pm</li>
-        <li><a href="https://goldengatejams.com" target="new">Community Music Hangout</a> - Weekends from 11am-2pm in Golden Gate Park near Stowe Lake on JFK</li>
-      </ul>
+      I've been playing music now for over 30 years. I grew up as a typical band kid hiding out in the band hall with the other cool kids.
+      I'm lucky and come from a good stock of musical talent so playing music came pretty naturally for me. When I was 12 when I joined
+      beginner band at school and picked the trombone because that's what my dad played. He let me use his Bach Stradivarius he bought in
+      high school after he quit playing football after an injury. I played his horn through college, then it was almost lost in a house fire
+      so he asked for it back to hold for safe keeping. Luckily I now have my father's horn back and I'm actively chopping wood in Golden
+      Gate Park with the goal of playing my first public shows soon!
+    </p>
+    <p>
+      I started playing bass because of people like Cliff Burton, Les Claypool, and Flea. When I was about 13 I got a cheap electric bass
+      guitar (and an even cheaper garage sale acoustic guitar). I started taking lessons from my friend and band director Jeff Madlock and
+      he started grooming me for high school jazz band. I continued with guitar, and still play it a lot, but after moving to upright bass
+      in early high school I've considered myself primarily a bass player.
+    </p>
+    <p>
+      In high school I was an All-State Jazz Band member from it's inaugural year for 3 years. I was an All-State Orchestra Bassist my
+      senior year. I received both the John Philip Sousa Award and the Louis Armstrong Jazz Award my senior year. I took music pretty
+      seriously through the end of highs school was set to attend the University of North Florida on a full ride for jazz studies but for
+      various reasons decided to focus on tech stuff in college and ended up starting at the University of North Texas before bouncing
+      around and landing at the University of Colorado where I played in one of the CU Jazz Combos. Unfortunately I let music fall to the
+      back burner after school but I got serious about it again several years ago and I'm now out of the woodshed and back on the stage!
+    </p>
+    <p>
+      After a overpriced botched overhaul in 2012 of my bass I was so upset I couldn't even play it and it sadly sat in the corner for
+      another 6 years. (Don't ever use or trust Upton... just saying.) After randomly meeting a Berklee Comp kid while kiteboarding at the
+      beach in Boston, he invited me to play bass at a bluegrass jam in Jamaica Plain. I thought it'd be a good place to get my chops back
+      so I started playing with them weekly. They're a great crew and lately they play Sundays at the Turtle Creek Brewery or at the JP pond
+      in the summer. I started focusing on jazz more after moving to across the country to SF. These days I'm playing in a few groups around
+      SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the month.
     </p>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Gigs from "./Gigs.md";
 
-@Component
+@Component({
+  components: {
+    Gigs
+  }
+})
 export default class Music extends Vue {}
 </script>
+
+<style lang="scss">
+li > em {
+  font-weight: bold;
+}
+h2 {
+  padding-top: 10px;
+}
+
+table {
+  min-width: 250px;
+  display: inline-table;
+  margin-top: 12px;
+}
+
+th:nth-child(1) {
+  background: rgb(49, 119, 197);
+  border-radius: 5px;
+  color: white;
+}
+
+tr:nth-child(1) {
+  font-style: italic;
+  font-weight: bold;
+}
+tr:nth-last-child(1) {
+  font-style: italic;
+}
+</style>

@@ -30,7 +30,6 @@ export default defineConfig(
         markdownItPlugins: [emoji],
       }),
       createVuePlugin(),
-      // sitemapPlugin(),
     ],
     server: {
       port: 8080

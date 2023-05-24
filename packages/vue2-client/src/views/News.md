@@ -3,6 +3,11 @@
 # News Page
 </div>
 
+### May 24, 2023
+---
+
+Updates to music page. Added markdown based very basic gig schedule.
+
 ### May 23, 2023
 ---
 
