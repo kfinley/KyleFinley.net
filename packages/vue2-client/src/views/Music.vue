@@ -59,7 +59,7 @@
       was where I learned how to walk bass lines from Jamey Aebersold himself (the dude played everything).
     </p>
     <p>
-      I took music pretty seriously through the end of highs school was set to attend the University of North Florida with a full ride for
+      I took music pretty seriously through the end of high school was set to attend the University of North Florida with a full ride for
       jazz studies but for various reasons decided to focus on tech stuff in college and ended up starting at the University of North Texas.
       I bounced around schools a bit and landing at the University of Colorado where I played in one of the CU Jazz Combos under Chip
       Stephens. Unfortunately I let music fall to the back burner after school but I got serious about it again several years ago and I'm
