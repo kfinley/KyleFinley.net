@@ -3,5 +3,6 @@ export enum RouteNames {
   Contact = "Contact",
   Home = "Home",
   Music = "Music",
-  News = "News"
+  News = "News",
+  Software = "Software"
 };

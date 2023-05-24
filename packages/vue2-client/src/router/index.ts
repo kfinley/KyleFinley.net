@@ -138,6 +138,19 @@ export const createRouter = async () => {
       ],
     },
     {
+      path: "/software",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: RouteNames.Software,
+          component: () => import(/* webpackChunkName: "Software" */ '../views/Software.md'),
+          meta: viewsMeta['../views/News.json'] ? (await viewsMeta['../views/Software.json']()).default : { allowAnonymous: true },
+        }
+      ],
+    },
+
+    {
       path: "/articles",
       component: RouterLayout,
       children: [
