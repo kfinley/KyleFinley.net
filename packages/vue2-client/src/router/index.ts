@@ -107,9 +107,21 @@ export const createRouter = async () => {
       children: [
         {
           path: '',
-          name: RouteNames.Contact,
-          component: () => import(/* webpackChunkName: "contact" */ '../views/CouchSurfing.vue'),
+          name: "CoucheSurfing",
+          component: () => import(/* webpackChunkName: "CouchSurfing" */ '../views/CouchSurfing.vue'),
           meta: viewsMeta[`../views/CouchSurfing.json`] ? (await viewsMeta[`../views/CouchSurfing.json`]()).default : { allowAnonymous: true }
+        }
+      ],
+    },
+    {
+      path: "/media",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: RouteNames.Media,
+          component: () => import(/* webpackChunkName: "Media" */ '../views/Media.vue'),
+          meta: viewsMeta['../views/Media.json'] ? (await viewsMeta['../views/Media.json']()).default : { allowAnonymous: true },
         }
       ],
     },
@@ -285,13 +297,19 @@ export const createRouter = async () => {
   });
 
   const getMetaData = async (file: string) => {
-    // console.log(file)
+    //TODO: fix this dumb shit...
+    console.log(file)
     // This is a shitty hack to make nested paths for dynamic imports work b/c of an issue in Vite
     // https://github.com/vitejs/vite/issues/4945
     const pathParts = file.split('/')
     switch (file) {
       case "Home":
       case "Articles":
+      case "Media":
+      case "Music":
+      case "Travel":
+      case "News":
+      case "Contact":
         return (await import(`../views/${pathParts[0]}.json`)).default
       default: {
         if (pathParts.length === 1) {

@@ -1,0 +1,42 @@
+{
+  "title": "Audio and Videos from various shows - KyleFinley.net",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Audio and Videos from various shows. Some are me some are other folks."
+    },
+    {
+      "itemprop": "name",
+      "content": "Audio and Videos from various shows"
+    },
+    {
+      "itemprop": "description",
+      "content": "Audio and Videos from various shows. Some are me some are other folks."
+    },
+    {
+      "property": "og:title",
+      "content": "Audio and Videos from various shows - KyleFinley.net"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/media"
+    },
+    {
+      "property": "og:image",
+      "content": "https://kylefinley.net/assets/kyle-finley-wy.203deb16.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "Audio and Videos from various shows. Some are me some are other folks."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    }
+  ]
+}
