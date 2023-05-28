@@ -1,23 +1,26 @@
 <template>
-  <div class="container">
-    <div>
-      <h3>Cody Sisters @ Amado's SF - 5/24/2023</h3>
-      <audio controls="controls">
-        <source src="https://docs.google.com/uc?export=open&id=18Q_gKk0o6w5qShoOBK83kCQuLzx9a5oj" />
-        <p>Your browser does not support HTML5 audio :(</p>
-      </audio>
-    </div>
-    <div>
-      <h3>Pickin' in the Parklet @ The Lucky Horseshoe - Summer 2021</h3>
-      <iframe src="https://drive.google.com/file/d/1Uqsyw-AINSDmB_3N42slXi8F40uUYVh_/preview"></iframe>
-    </div>
+  <div class="container text-center">
+    <h2>Media Page</h2>
+    <p>Recordings of gigs, jams, and a few random shows.</p>
+    <p>Not professional recordings. They're made with an iPhone sitting somewhere near me using the Memo app.</p>
+    <audio-player name="West Side Jazz Club" location="Ula SF - Set 1" date="05/26/2023" g-id="1okP4LV1UKT10E-8liSmG-vIq-RPc2HkW" />
+    <audio-player name="West Side Jazz Club" location="Ula SF - Set 2" date="05/26/2023" g-id="1Qt_6oPJ6XeMwiXawXGmqDIWpCiReF0ab" />
+    <audio-player name="West Side Jazz Club" location="Ula SF - Set 3" date="05/26/2023" g-id="1wtpffXwRkWwSfB5dzXTlHDDOUSIiyEWb" />
+    <audio-player name="West Side Jazz Club" location="Ula SF - Set 4" date="05/26/2023" g-id="119up4SgyO2OpiZQ9c_w8jCp7Td0Kt8UL" />
+    <audio-player name="The Cody Sisters" location="Amado's SF" date="5/24/2023" g-id="18Q_gKk0o6w5qShoOBK83kCQuLzx9a5oj" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import AudioPlayer from "../components/AudioPlayer.vue";
 
-@Component
+@Component({
+  components: {
+    AudioPlayer
+  }
+})
 export default class Music extends Vue {}
 </script>
 
+<style lang="scss" scoped></style>
