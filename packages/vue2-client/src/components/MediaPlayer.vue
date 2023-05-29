@@ -53,6 +53,7 @@ export default class AudioPlayer extends Vue {
 <style lang="scss" scoped>
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 li {
