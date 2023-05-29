@@ -94,13 +94,6 @@
 | Union Square - SF, CA
 | 6:30 - 10:30 PM
 
-| May 27 or 28
-|-
-| <a href="https://goldengatejams.com" target="NFN">Community Music Hangout</a>
-| Golden Gate Park
-| SF, CA
-| 11 AM - 2 PM
-
 | May 29
 |-
 | <a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="NFN">Nobody From Nashville</a>
