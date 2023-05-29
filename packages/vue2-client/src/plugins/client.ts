@@ -48,7 +48,7 @@ const plugin = {
       // Globally register the G-Slides component
       Vue.component("GSlides", GSlides);
       Vue.component("GitHubSourceCode", GitHubSourceCode);
-      
+
       // router provided to add any plugin routes.
       // i.e. options.router.addRoutes(routes);
 

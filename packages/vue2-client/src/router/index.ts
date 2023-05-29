@@ -298,7 +298,7 @@ export const createRouter = async () => {
 
   const getMetaData = async (file: string) => {
     //TODO: fix this dumb shit...
-    console.log(file)
+    // console.log(file)
     // This is a shitty hack to make nested paths for dynamic imports work b/c of an issue in Vite
     // https://github.com/vitejs/vite/issues/4945
     const pathParts = file.split('/')

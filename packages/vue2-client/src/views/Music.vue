@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <h1 class="text-center">Kyle Finley - Musician</h1>
-    <p><i>Jazz, Bluegrass, and Americana upright bassist currently slappin' strings around the San Francisco Bay area.</i></p>
+    <p>
+      <i
+        >Jazz, Bluegrass, and Americana upright bassist currently slappin' strings around the San Francisco Bay area. Recordings can be
+        found on my <router-link to="/media">Media Page.</router-link></i
+      >
+    </p>
     <Gigs class="text-center" />
     <h4 class="text-center pt-4">Bands &amp; Jams</h4>
     <ul class="bands">
@@ -42,9 +47,9 @@
       I've been playing music now for over 30 years. I grew up as a typical band kid hiding out in the band hall with the other cool kids.
       I'm lucky and come from good stock of musical talent so playing music came pretty naturally for me. When I was 12 I joined beginner
       band at school and picked the trombone because that's what my dad played. He let me use his Bach Stradivarius he bought in high school
-      after he quit playing football due to game time an injury. I played his horn through college, then it was almost lost in a house fire
-      so he asked for it back to hold for safe keeping. Luckily I now have my father's horn back and I'm actively chopping wood in Golden
-      Gate Park with the goal of playing my first public shows soon!
+      after he quit playing football due to a serious game injury. I played his horn through high school and college, then it was almost
+      lost in a house fire so he asked for it back to hold for safe keeping. Luckily I now have my father's horn back and I'm actively
+      chopping wood in Golden Gate Park with the goal of playing my first public shows soon!
     </p>
     <p>
       I started playing bass because of people like Cliff Burton, Les Claypool, and Flea. When I was about 13 I got a cheap electric bass
@@ -73,10 +78,11 @@
       in the summer.
     </p>
     <p>
-      I landed in SF in the summer of 2019 and found The Lucky Horseshoe weekly bluegrass jam run by Frank Holmes my first week in town. I was the
-      regular bass player for the Shoe Jam through the pandemic and into it's transition to a new leader. Now I still play the jam most
-      weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years and these days I'm playing
-      in a few groups around SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the month.
+      I landed in SF in the summer of 2019 and found The Lucky Horseshoe weekly bluegrass jam run by Frank Holmes my first week in town. I
+      was the regular bass player for the Shoe Jam through the pandemic and into it's transition to a new leader. Now I still play the jam
+      most weeks but I don't play the full 3 hour gauntlet anymore! I started focusing on jazz in the last few years and these days I'm
+      playing in a few groups around SF and I host a monthly Jazz Jam at The Lucky Horseshoe in Bernal Heights every 3rd Wednesday of the
+      month.
     </p>
     <p>
       I'm available for hire and looking for players to form both a regular gigging jazz group and a progressive bluegrass / Americana
