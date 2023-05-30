@@ -6,7 +6,8 @@
     </p>
     <p class="font-weight-bold font-italic mb-0" v-else>
       Now Playing <br />{{ track.title }} <br />
-      @ {{ track.location }}
+      @ {{ track.location }} <br/>
+      {{ track.date }}
     </p>
     <div v-if="!isFailed">
       <audio ref="audioPlayer" :src="src" @loadedmetadata="getDuration" @timeupdate="updateTime"></audio>
