@@ -20,7 +20,7 @@
       <div class="time">{{ formattedTime(time) }}</div>
       <div class="duration">
         <input type="range" min="0" :max="duration" step="1" v-model="time" class="slider" @click="settingTime" @change="setTime" />
-        <div class="volume-control">
+        <div class="volume-control" v-if="!isIos">
           <button @click="toggleVolumeSlider"><i class="volume fa fa-volume-up"></i></button>
           <div class="volume-slider" :class="{ show: showVolumeSlider }">
             <input type="range" min="0" max="100" step="1" v-model="volume" class="slider" @change="setVolume" />
@@ -53,6 +53,11 @@ export default class AudioPlayer extends Vue {
 
   showPlayer: boolean = false;
 
+  get isIos() {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+  }
+
   get src() {
     return `https://docs.google.com/uc?export=open&id=${this.track.id}`;
   }
@@ -60,6 +65,7 @@ export default class AudioPlayer extends Vue {
   get downloadLink() {
     return `https://drive.google.com/uc?export=download&id=${this.track.id}`;
   }
+
 
   formattedTime(time: number) {
     const date = new Date(null);
