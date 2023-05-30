@@ -1,8 +1,8 @@
 <template>
   <div class="audio-player" v-if="track">
     <p class="font-weight-bold font-italic mb-0" v-if="isFailed">
-      The {{ track.title }} @ {{ track.location }} recording is too long to currently be played in the browser.
-      <a :href="downloadLink" target="download"> Download the mp3 file to listen</a>.
+      The {{ track.title }} @ {{ track.location }} recording is too long...
+      <a :href="downloadLink" target="_blank">Open the mp3 file in a new window to listen or download</a>.
     </p>
     <p class="font-weight-bold font-italic mb-0" v-else>
       Now Playing <br />{{ track.title }} <br />
