@@ -1,27 +1,33 @@
 <template>
   <div class="audio-player" v-if="track">
-    <p class="font-weight-bold font-italic mb-0">
+    <p class="font-weight-bold font-italic mb-0" v-if="isFailed">
+      The {{ track.title }} @ {{ track.location }} recording is too long to currently be played in the browser.
+      <a :href="downloadLink" target="download"> Download the mp3 file to listen</a>.
+    </p>
+    <p class="font-weight-bold font-italic mb-0" v-else>
       Now Playing <br />{{ track.title }} <br />
       @ {{ track.location }}
     </p>
-    <audio ref="audioPlayer" :src="src" @loadedmetadata="getDuration" @timeupdate="updateTime"></audio>
-    <div class="controls">
-      <button @click="togglePlay">
-        <i v-if="!isPlaying" class="fa fa-play"></i>
-        <i v-if="isPlaying" class="fa fa-pause"></i>
-      </button>
-      <button @click="stop" :disabled="isStopped"><i class="fa fa-stop"></i></button>
-    </div>
-    <div class="time">{{ formattedTime(time) }}</div>
-    <div class="duration">
-      <input type="range" min="0" :max="duration" step="1" v-model="time" class="slider" @click="settingTime" @change="setTime" />
-      <div class="volume-control">
-        <button @click="toggleVolumeSlider"><i class="volume fa fa-volume-up"></i></button>
-        <div class="volume-slider" :class="{ show: showVolumeSlider }">
-          <input type="range" min="0" max="100" step="1" v-model="volume" class="slider" @change="setVolume" />
-        </div>
+    <div v-if="!isFailed">
+      <audio ref="audioPlayer" :src="src" @loadedmetadata="getDuration" @timeupdate="updateTime"></audio>
+      <div class="controls">
+        <button @click="togglePlay">
+          <i v-if="!isPlaying" class="fa fa-play"></i>
+          <i v-if="isPlaying" class="fa fa-pause"></i>
+        </button>
+        <button @click="stop" :disabled="isStopped"><i class="fa fa-stop"></i></button>
       </div>
-      <div class="formatted-duration">{{ formattedTime(duration) }}</div>
+      <div class="time">{{ formattedTime(time) }}</div>
+      <div class="duration">
+        <input type="range" min="0" :max="duration" step="1" v-model="time" class="slider" @click="settingTime" @change="setTime" />
+        <div class="volume-control">
+          <button @click="toggleVolumeSlider"><i class="volume fa fa-volume-up"></i></button>
+          <div class="volume-slider" :class="{ show: showVolumeSlider }">
+            <input type="range" min="0" max="100" step="1" v-model="volume" class="slider" @change="setVolume" />
+          </div>
+        </div>
+        <div class="formatted-duration">{{ formattedTime(duration) }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -36,6 +42,7 @@ export default class AudioPlayer extends Vue {
   isPlaying = false;
   isPaused = false;
   isStopped = true;
+  isFailed = false;
 
   time = 0;
   duration = 0;
@@ -48,6 +55,10 @@ export default class AudioPlayer extends Vue {
 
   get src() {
     return `https://docs.google.com/uc?export=open&id=${this.track.id}`;
+  }
+
+  get downloadLink() {
+    return `https://drive.google.com/uc?export=download&id=${this.track.id}`;
   }
 
   formattedTime(time: number) {
@@ -78,11 +89,24 @@ export default class AudioPlayer extends Vue {
   }
 
   play() {
+    this.isFailed = false;
     this.time = 0;
     this.duration = 0;
     window.scrollTo(0, 0);
+    const _this = this;
     setTimeout(() => {
-      this.$refs.audioPlayer.play();
+      const playPromise = this.$refs.audioPlayer.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(function () {
+            // Automatic playback started!
+          })
+          .catch(function (error) {
+            console.log("error playing: ", error);
+            _this.isFailed = true;
+          });
+      }
+
       this.isPlaying = true;
       this.isPaused = false;
       this.isStopped = false;
