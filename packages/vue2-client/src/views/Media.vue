@@ -33,6 +33,7 @@ export default class Music extends Vue {
       { title: "West Side Jazz Club", location: "Ula SF - Set 3", date: "05/25/2023", id: "1BKpgkkGGxj-vO7K53EgLZHkZ_RR3haaq" },
       { title: "West Side Jazz Club", location: "Ula SF - Set 4", date: "05/25/2023", id: "1YvWkERAdpXE-iBQVzgp9YScwyYegtMAd" },
       { title: "The Cody Sisters", location: "Amado's SF", date: "5/24/2023", id: "18Q_gKk0o6w5qShoOBK83kCQuLzx9a5oj" },
+      { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "5/21/2023", id: "1K1zMjTtyyYtygLkR-Rw6jP3IP_5FF-NP" },
       {
         title: "Parklet Jam (featuring Daisy)",
         location: "The Lucky Horseshoe",
