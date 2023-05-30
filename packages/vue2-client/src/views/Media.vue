@@ -45,13 +45,14 @@ export default class Music extends Vue {
       {
         title: "John Henry - Daisy, Kyle, Eli, & Steve",
         location: "The Lucky Horseshoe",
-        date: "4/19/20",
+        date: "4/19/2023",
         id: "1j0J9bGo5vjsfe-HNYiNsouACf8-6Z6B8"
       },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "5/14/2023", id: "1l7PpTwKxERzTg7pNxrQ1Ai6zLwVLzeLF" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "5/7/2023", id: "1BSE5cycsJhEkpu2wTBokl43mtmvSW7nd" },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 1", date: "4/19/2023", id: "1aD6PFdnn_bLE4mHT2oTJ8bnVhJkA17xH" },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 2", date: "4/19/2023", id: "1qL-CwSJW_j0lT1vlfozhlk9f8bHSXBL1" },
+      { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "4/9/2023", id: "1hUGLWyNNH4H0L4ThmSXfmjqtN21Ft0gF" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/26/2023", id: "1O43chqAngKhfsXxk8V7dt9X0ZBpA6OGz" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/19/2023", id: "1gqb4IGXiRPx7X8nFM_X_L4R_W4XY4E0G" },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe", date: "3/15/2023", id: "1Ne6Qpm3hVcoquJWvT6X5S56j2wECxH7E" },
