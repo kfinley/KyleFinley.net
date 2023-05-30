@@ -1,22 +1,29 @@
 <template>
   <div class="audio-player">
-    <p class="font-weight-bold font-italic mb-0">Now Playing <br/>{{ title }} <br/> @ {{ location }}</p>
+    <p class="font-weight-bold font-italic mb-0">
+      Now Playing <br />{{ title }} <br />
+      @ {{ location }}
+    </p>
     <audio ref="audioPlayer" :src="src" @loadedmetadata="getDuration" @timeupdate="updateTime"></audio>
     <div class="controls">
-      <button @click="play" :disabled="isPlaying"><i class="fa fa-play"></i></button>
-      <button @click="pause" :disabled="isPaused"><i class="fa fa-pause"></i></button>
+      <button @click="togglePlay">
+        <i v-if="!isPlaying" class="fa fa-play"></i>
+        <i v-if="isPlaying" class="fa fa-pause"></i>
+      </button>
+      <!-- <button @click="play" :disabled="isPlaying"><i class="fa fa-play"></i></button>
+      <button @click="pause" :disabled="isPaused"><i class="fa fa-pause"></i></button> -->
       <button @click="stop" :disabled="isStopped"><i class="fa fa-stop"></i></button>
+    </div>
+    <div class="time">{{ formattedTime(time) }}</div>
+    <div class="duration">
+      <input type="range" min="0" :max="duration" step="1" v-model="time" class="slider" @click="settingTime" @change="setTime" />
       <div class="volume-control">
-        <button @click="toggleVolumeSlider"><i class="fa fa-volume-up"></i></button>
+        <button @click="toggleVolumeSlider"><i class="volume fa fa-volume-up"></i></button>
         <div class="volume-slider" :class="{ show: showVolumeSlider }">
-          <input type="range" min="0" max="100" step="1" v-model="volume" class="slider" />
+          <input type="range" min="0" max="100" step="1" v-model="volume" class="slider" @change="setVolume" />
         </div>
       </div>
-    </div>
-    <div class="time">{{ formattedTime }}</div>
-    <div class="duration">
-      <input type="range" min="0" :max="duration" step="1" v-model="time" class="slider" />
-      <div class="formatted-duration">{{ formattedDuration }}</div>
+      <div class="formatted-duration">{{ formattedTime(duration) }}</div>
     </div>
   </div>
 </template>
@@ -26,7 +33,6 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class AudioPlayer extends Vue {
-  // Audio source URL
   src = "";
 
   // Audio player state
@@ -37,51 +43,49 @@ export default class AudioPlayer extends Vue {
   // Audio player time
   time = 0;
   duration = 0;
+  isSettingTime: boolean = false;
 
   // Volume slider state
   showVolumeSlider = false;
   volume = 50;
 
   showPlayer: boolean = false;
-  title: string =  "";
+  title: string = "";
   location: string = "";
 
   // Computed properties for formatted time and duration
-  get formattedTime() {
+  formattedTime(time) {
     const date = new Date(null);
-    date.setSeconds(this.time);
+    date.setSeconds(time);
     const hours = date.getUTCHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
     const paddedMinutes = String(minutes).padStart(2, "0");
     const paddedSeconds = String(seconds).padStart(2, "0");
     if (hours > 0) {
-      const paddedHours = String(hours).padStart(2, "0");
+      const paddedHours = String(hours);
       return `${paddedHours}:${paddedMinutes}:${paddedSeconds}`;
     } else {
       return `${paddedMinutes}:${paddedSeconds}`;
     }
   }
 
-  get formattedDuration() {
-    const date = new Date(null);
-    date.setSeconds(this.duration);
-    const hours = date.getUTCHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
-    const paddedMinutes = String(minutes).padStart(2, "0");
-    const paddedSeconds = String(seconds).padStart(2, "0");
-    if (hours > 0) {
-      const paddedHours = String(hours).padStart(2, "0");
-      return `${paddedHours}:${paddedMinutes}:${paddedSeconds}`;
+  togglePlay() {
+    if (this.isPlaying) {
+      this.pause(); //this.$refs.audio.pause();
     } else {
-      return `${paddedMinutes}:${paddedSeconds}`;
+      this.$refs.audioPlayer.play();
+      this.isPlaying = true;
+      this.isPaused = false;
+      this.isStopped = false;
     }
   }
 
   // Methods for audio player control
   play() {
-    window.scrollTo(0,0);
+    this.time = 0;
+    this.duration = 0;
+    window.scrollTo(0, 0);
     setTimeout(() => {
       this.$refs.audioPlayer.play();
       this.isPlaying = true;
@@ -111,17 +115,33 @@ export default class AudioPlayer extends Vue {
   }
 
   updateTime() {
-    this.time = Math.floor(this.$refs.audioPlayer.currentTime);
+    if (!this.isSettingTime) {
+      this.time = Math.floor(this.$refs.audioPlayer.currentTime);
+    }
   }
 
-  // Methods for volume control
+  settingTime() {
+    this.isSettingTime = true;
+  }
+
+  setTime() {
+    this.isSettingTime = true;
+    this.$refs.audioPlayer.currentTime = this.time;
+    setTimeout(() => {
+      this.isSettingTime = false;
+      this.updateTime();
+    }, 200);
+  }
+
   toggleVolumeSlider() {
     this.showVolumeSlider = !this.showVolumeSlider;
   }
 
   setVolume() {
+    console.log("setting volume");
     const volume = this.volume / 100;
     this.$refs.audioPlayer.volume = volume;
+    setTimeout(() => this.toggleVolumeSlider(), 200);
   }
 }
 </script>
@@ -136,7 +156,6 @@ export default class AudioPlayer extends Vue {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 1rem; */
 }
 
 .controls button {
@@ -153,7 +172,10 @@ export default class AudioPlayer extends Vue {
 }
 
 .volume-control button {
-  margin-left: 1rem;
+  background-color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .volume-slider {
@@ -168,7 +190,6 @@ export default class AudioPlayer extends Vue {
   display: block;
 }
 
-/* Updated style for vertical volume slider */
 .volume-slider input[type="range"] {
   writing-mode: bt-lr;
   appearance: slider-vertical;
@@ -178,19 +199,16 @@ export default class AudioPlayer extends Vue {
 
 .time {
   font-size: 1.2rem;
-  /* margin-bottom: 1rem; */
 }
 
 .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 1rem; */
 }
 
 .duration input {
   flex-grow: 1;
-  /* margin: 0 1rem; */
 }
 
 .formatted-duration {
