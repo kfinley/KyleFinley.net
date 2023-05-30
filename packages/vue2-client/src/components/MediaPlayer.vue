@@ -1,8 +1,6 @@
 <template>
   <div>
     <div v-show="showPlayer">
-      <!-- <player simple ref="audio" :controls="showControls" v-bind:ended="onAudioEnded"></player> -->
-      <!-- <audio ref="audio" :controls="showControls" v-bind:ended="onAudioEnded"></audio> -->
       <audio-player ref="audio"></audio-player>
     </div>
     <ul>
@@ -19,8 +17,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import AudioPlayer from "./AudioPlayer3.vue";
-// import Player from "./Player.vue";
+import AudioPlayer from "./AudioPlayer.vue";
 
 @Component({
   components: {
@@ -40,11 +37,7 @@ export default class MediaPlayer extends Vue {
     this.showPlayer = true;
     this.audio = null;
     this.audio = this.$refs.audio as AudioPlayer;
-    const track = this.tracks[index];
-    this.audio.title = track.name;
-    this.audio.location = track.location;
-    const url: string = `https://docs.google.com/uc?export=open&id=${track.id}`;
-    this.audio.src = url;
+    this.audio.track = this.tracks[index];
     this.audio.play();
   }
 
@@ -53,9 +46,9 @@ export default class MediaPlayer extends Vue {
     this.showPlayer = false;
   }
 
-  listing(track: { name: string; location: string; date: string; id: string }) {
-    if (window.innerWidth > 640) return `${track.name} @ ${track.location}<br/>${track.date}`;
-    else return `${track.name}<br/>@ ${track.location}<br/>${track.date}`;
+  listing(track: { title: string; location: string; date: string; id: string }) {
+    if (window.innerWidth > 640) return `${track.title} @ ${track.location}<br/>${track.date}`;
+    else return `${track.title}<br/>@ ${track.location}<br/>${track.date}`;
   }
 }
 </script>
