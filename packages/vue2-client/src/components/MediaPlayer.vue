@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div :v-show="showControls">
-      <audio ref="audio" :controls="showControls" v-bind:ended="onAudioEnded"></audio>
+    <div v-show="showPlayer">
+      <!-- <player simple ref="audio" :controls="showControls" v-bind:ended="onAudioEnded"></player> -->
+      <!-- <audio ref="audio" :controls="showControls" v-bind:ended="onAudioEnded"></audio> -->
+      <audio-player ref="audio"></audio-player>
     </div>
     <ul>
       <li
@@ -17,30 +19,38 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
+import AudioPlayer from "./AudioPlayer3.vue";
+// import Player from "./Player.vue";
 
-@Component
-export default class AudioPlayer extends Vue {
+@Component({
+  components: {
+    AudioPlayer
+  }
+})
+export default class MediaPlayer extends Vue {
   @Prop({ required: true })
   tracks!: Array<{ name: string; location: string; date: string; id: string }>;
 
   selectedTrackIndex: number = -1;
-  showControls: boolean = false;
+  showPlayer: boolean = false;
+  audio: AudioPlayer = null;
 
   playTrack(index: number): void {
     this.selectedTrackIndex = index;
-    this.showControls = true;
-
-    setTimeout(() => {
-      const audio: HTMLAudioElement = this.$refs.audio as HTMLAudioElement;
-      const url: string = `https://docs.google.com/uc?export=open&id=${this.tracks[index].id}`;
-      audio.src = url;
-      audio.play();
-    }, 500);
+    this.showPlayer = true;
+    this.audio = null;
+    this.audio = this.$refs.audio as AudioPlayer;
+    const track = this.tracks[index];
+    this.audio.title = track.name;
+    this.audio.location = track.location;
+    const url: string = `https://docs.google.com/uc?export=open&id=${track.id}`;
+    this.audio.src = url;
+    this.audio.play();
   }
 
   onAudioEnded(): void {
     this.selectedTrackIndex = -1;
-    this.showControls = false;
+    this.showPlayer = false;
   }
 
   listing(track: { name: string; location: string; date: string; id: string }) {

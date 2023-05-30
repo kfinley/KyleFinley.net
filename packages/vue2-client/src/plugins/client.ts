@@ -12,6 +12,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
 import { AuthState } from "@/store";
 
+
 export const setupModules = (store: Store<any>): void => {
   store.registerModule('Auth', AuthModule);
   store.registerModule('Articles', ArticlesModule);
@@ -39,6 +40,7 @@ const plugin = {
     if (options !== undefined && options.router && options.store) {
 
       const appName = options.appName ?? "KyleFinley.net";
+
 
       setupModules(options.store);
       bootstrapper(options.store);

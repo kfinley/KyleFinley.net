@@ -9,12 +9,11 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import AudioPlayer from "../components/AudioPlayer.vue";
+// import AudioPlayer from "../components/AudioPlayer.vue";
 import MediaPlayer from "../components/MediaPlayer.vue";
 
 @Component({
   components: {
-    AudioPlayer,
     MediaPlayer
   }
 })
