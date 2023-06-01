@@ -72,19 +72,6 @@ export class InfrastructureStack extends Stack {
 
     const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket');
 
-    // allow CloudFront to write logs to s3
-    cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
-      actions: [
-        's3:PutObject'
-      ],
-      principals: [
-        new iam.ServicePrincipal('cloudfront.amazonaws.com')
-      ],
-      resources: [
-        cloudFrontLogsBucket.arnForObjects('access-logs/*')
-      ]
-    }));
-
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
@@ -135,9 +122,13 @@ export class InfrastructureStack extends Stack {
       logFilePrefix: 'access-logs'
     });
 
-
-
-
+    // // allow CloudFront to write logs to s3
+    cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
+      actions: ['s3:PutObject'],
+      effect: iam.Effect.ALLOW,
+      principals: [new iam.CanonicalUserPrincipal(cloudFrontDistribution.distributionId)],
+      resources: [cloudFrontLogsBucket.arnForObjects('access-logs/*')],
+    }));
 
     const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
       comment: `images.${domainName} Domain Hosting Environment`,
