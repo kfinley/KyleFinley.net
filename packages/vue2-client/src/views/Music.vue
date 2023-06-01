@@ -42,7 +42,7 @@
       <li><em>Madrone Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar in Alamo Square</li>
     </ul>
 
-    <h4 class="text-center">My Musical History</h4>
+    <h4 class="text-center">My Musical Journey</h4>
     <p>
       I've been playing music now for over 30 years. I grew up as a typical band kid hiding out in the band hall with the other cool kids.
       I'm lucky and come from good stock of musical talent so playing music came pretty naturally for me. When I was 12 I joined beginner
@@ -93,7 +93,8 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Gigs from "./Gigs.md";
+// import Gigs from "./Gigs.md";
+import Gigs from "./../components/Gigs.vue";
 
 @Component({
   components: {
