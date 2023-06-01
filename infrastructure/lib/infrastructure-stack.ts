@@ -10,7 +10,7 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior } from 'aws-cdk-lib/aws-cloudfront';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
-import { Bucket } from 'aws-cdk-lib/aws-s3';
+import { Bucket, BucketAccessControl } from 'aws-cdk-lib/aws-s3';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
@@ -70,7 +70,11 @@ export class InfrastructureStack extends Stack {
       queryStringBehavior: OriginRequestQueryStringBehavior.all(),
     });
 
-    const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket');
+    const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket', {
+      bucketName: 'KyleFinley.net-Access-Logs',
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      accessControl: BucketAccessControl.LOG_DELIVERY_WRITE
+    });
 
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
