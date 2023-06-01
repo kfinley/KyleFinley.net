@@ -1,16 +1,23 @@
-<template @keyup.left="leftArrowPressed" @keyup.right="rightArrowPressed">
-  <div class="audio-player" v-if="track">
+<template>
+  <div ref="player" class="audio-player" v-if="track">
     <p class="font-weight-bold font-italic mb-0" v-if="isFailed">
       The {{ track.title }} @ {{ track.location }} recording is too long...
       <a :href="downloadLink" target="_blank">Open the mp3 file in a new window to listen or download</a>.
     </p>
     <p class="font-weight-bold font-italic mb-0" v-else>
       Now Playing <br />{{ track.title }} <br />
-      @ {{ track.location }} <br/>
+      @ {{ track.location }} <br />
       {{ track.date }}
     </p>
     <div v-if="!isFailed">
-      <audio ref="audioPlayer" :src="src" @loadedmetadata="getDuration" @timeupdate="updateTime"></audio>
+      <audio
+        ref="audioPlayer"
+        :src="src"
+        @loadedmetadata="getDuration"
+        @timeupdate="updateTime"
+        @keyup.left="leftArrowPressed"
+        @keyup.right="rightArrowPressed"
+      ></audio>
       <div class="controls">
         <button @click="togglePlay">
           <i v-if="!isPlaying" class="fa fa-play"></i>
@@ -68,12 +75,11 @@ export default class AudioPlayer extends Vue {
   }
 
   leftArrowPressed() {
-    console.log('leftArrowPressed');
-
+    console.log("leftArrowPressed");
   }
 
   rightArrowPressed() {
-    console.log('rightArrowPressed')
+    console.log("rightArrowPressed");
   }
 
   formattedTime(time: number) {
@@ -108,13 +114,18 @@ export default class AudioPlayer extends Vue {
     this.time = 0;
     this.duration = 0;
     window.scrollTo(0, 0);
+
     const _this = this;
     setTimeout(() => {
       const playPromise = this.$refs.audioPlayer.play();
+
       if (playPromise !== undefined) {
         playPromise
           .then(function () {
             // Automatic playback started!
+            this.$nextTick(function () {
+              this.$refs["audioPlayer"].focus();
+            });
           })
           .catch(function (error) {
             console.log("error playing: ", error);
@@ -178,13 +189,8 @@ export default class AudioPlayer extends Vue {
   }
 }
 </script>
-<style scoped>
-.audio-player {
-  position: relative;
-  text-align: center;
-  margin: 1rem;
-}
 
+<style scoped>
 .controls {
   display: flex;
   justify-content: center;

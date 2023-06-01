@@ -131,8 +131,22 @@ export class InfrastructureStack extends Stack {
       actions: ['s3:PutObject'],
       effect: iam.Effect.ALLOW,
       principals: [new iam.CanonicalUserPrincipal(cloudFrontDistribution.distributionId)],
-      resources: [cloudFrontLogsBucket.arnForObjects('access-logs/*')],
+      resources: [cloudFrontLogsBucket.arnForObjects('*')],
     }));
+
+ // cloudFrontLogsBucket.grantWrite(cloudFrontDistribution, 's3.amazonaws.com/CloudFront');
+
+    // cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
+    //   actions: [
+    //     's3:PutObject'
+    //   ],
+    //   principals: [
+    //     new iam.ServicePrincipal('cloudfront.amazonaws.com')
+    //   ],
+    //   resources: [
+    //     cloudFrontLogsBucket.arnForObjects('access-logs/*')
+    //   ]
+    // }));
 
     const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
       comment: `images.${domainName} Domain Hosting Environment`,
