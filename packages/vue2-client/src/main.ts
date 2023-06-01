@@ -6,7 +6,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import ClientPlugin from "./plugins/client";
-import { createRouter} from "./router";
+import { createRouter } from "./router";
 import store from "./store";
 
 Vue.config.productionTip = false;

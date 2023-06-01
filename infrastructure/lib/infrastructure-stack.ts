@@ -10,6 +10,8 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior } from 'aws-cdk-lib/aws-cloudfront';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
+import { Bucket } from 'aws-cdk-lib/aws-s3';
+import * as iam from 'aws-cdk-lib/aws-iam';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -68,6 +70,8 @@ export class InfrastructureStack extends Stack {
       queryStringBehavior: OriginRequestQueryStringBehavior.all(),
     });
 
+    const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket');
+
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
@@ -113,7 +117,24 @@ export class InfrastructureStack extends Stack {
       httpVersion: cloudfront.HttpVersion.HTTP2,
       defaultRootObject: 'index.html',
       enableIpv6: true,
+      enableLogging: true,
+      logBucket: cloudFrontLogsBucket,
+      logFilePrefix: 'access-logs'
     });
+
+    // allow CloudFront to write logs to s3
+    cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
+      actions: [
+        's3:PutObject'
+      ],
+      principals: [
+        new iam.ServicePrincipal('cloudfront.amazonaws.com')
+      ],
+      resources: [
+        cloudFrontLogsBucket.arnForObjects('access-logs/*')
+      ]
+    }));
+
 
 
     const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
