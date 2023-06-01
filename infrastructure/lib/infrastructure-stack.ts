@@ -71,7 +71,7 @@ export class InfrastructureStack extends Stack {
     });
 
     const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket', {
-      bucketName: 'KyleFinley.net-Access-Logs',
+      bucketName: 'kylefinley.net-access-logs',
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       accessControl: BucketAccessControl.LOG_DELIVERY_WRITE
     });

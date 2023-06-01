@@ -1,4 +1,4 @@
-<template>
+<template @keyup.left="leftArrowPressed" @keyup.right="rightArrowPressed">
   <div class="audio-player" v-if="track">
     <p class="font-weight-bold font-italic mb-0" v-if="isFailed">
       The {{ track.title }} @ {{ track.location }} recording is too long...
@@ -67,6 +67,14 @@ export default class AudioPlayer extends Vue {
     return `https://drive.google.com/uc?export=download&id=${this.track.id}`;
   }
 
+  leftArrowPressed() {
+    console.log('leftArrowPressed');
+
+  }
+
+  rightArrowPressed() {
+    console.log('rightArrowPressed')
+  }
 
   formattedTime(time: number) {
     const date = new Date(null);
