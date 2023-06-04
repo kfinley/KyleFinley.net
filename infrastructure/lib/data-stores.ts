@@ -1,6 +1,6 @@
 import { RemovalPolicy } from 'aws-cdk-lib'
 import { AttributeType, BillingMode, Table, TableEncryption } from 'aws-cdk-lib/aws-dynamodb';
-import { BlockPublicAccess, Bucket, HttpMethods } from 'aws-cdk-lib/aws-s3';
+import { BlockPublicAccess, Bucket, HttpMethods, BucketAccessControl } from 'aws-cdk-lib/aws-s3';
 import { Construct } from 'constructs';
 
 export interface DataStoresProps {
@@ -12,6 +12,7 @@ export class DataStores extends Construct {
   readonly connectionsTable: Table;
   readonly frontEndBucket: Bucket;
   readonly mediaBucket: Bucket;
+  readonly logsBucket: Bucket;
 
   constructor(scope: Construct, id: string, props?: DataStoresProps) {
     super(scope, id);
@@ -48,6 +49,13 @@ export class DataStores extends Construct {
         },
       ],
     });
+
+    this.logsBucket = new Bucket(this, 'LogsBucket', {
+      bucketName: 'kylefinley.net-logs',
+      removalPolicy: RemovalPolicy.DESTROY,
+      accessControl: BucketAccessControl.LOG_DELIVERY_WRITE
+    });
+
 
   }
 

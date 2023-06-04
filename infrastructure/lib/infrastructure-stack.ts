@@ -10,13 +10,13 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior } from 'aws-cdk-lib/aws-cloudfront';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
-import { Bucket, BucketAccessControl } from 'aws-cdk-lib/aws-s3';
-import * as iam from 'aws-cdk-lib/aws-iam';
+import { Bucket } from 'aws-cdk-lib/aws-s3';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
 export interface InfraStackProps extends StackProps {
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
+  logsBucket: Bucket;
   gitHubClientId: string;
   gitHubClientSecret: string;
   node_env: string;
@@ -70,12 +70,6 @@ export class InfrastructureStack extends Stack {
       queryStringBehavior: OriginRequestQueryStringBehavior.all(),
     });
 
-    // const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket', {
-    //   bucketName: 'kylefinley.net-access-logs',
-    //   removalPolicy: cdk.RemovalPolicy.DESTROY,
-    //   accessControl: BucketAccessControl.LOG_DELIVERY_WRITE
-    // });
-
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
@@ -122,7 +116,7 @@ export class InfrastructureStack extends Stack {
       defaultRootObject: 'index.html',
       enableIpv6: true,
       enableLogging: true,
-      // logBucket: cloudFrontLogsBucket,
+      logBucket: props?.logsBucket,
       // logFilePrefix: 'access-logs'
     });
 
