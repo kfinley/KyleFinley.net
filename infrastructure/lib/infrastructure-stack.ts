@@ -180,7 +180,7 @@ export class InfrastructureStack extends Stack {
         },
       ],
       priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL,
-      enabled: true,
+      // enabled: true,
       // certificate: certificateManagerCertificate,
       minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2021,
       httpVersion: cloudfront.HttpVersion.HTTP2,
