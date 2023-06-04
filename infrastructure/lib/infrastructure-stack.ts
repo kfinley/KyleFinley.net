@@ -70,11 +70,11 @@ export class InfrastructureStack extends Stack {
       queryStringBehavior: OriginRequestQueryStringBehavior.all(),
     });
 
-    const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket', {
-      bucketName: 'kylefinley.net-access-logs',
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
-      accessControl: BucketAccessControl.LOG_DELIVERY_WRITE
-    });
+    // const cloudFrontLogsBucket = new Bucket(this, 'CloudFrontLogsBucket', {
+    //   bucketName: 'kylefinley.net-access-logs',
+    //   removalPolicy: cdk.RemovalPolicy.DESTROY,
+    //   accessControl: BucketAccessControl.LOG_DELIVERY_WRITE
+    // });
 
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
@@ -122,17 +122,17 @@ export class InfrastructureStack extends Stack {
       defaultRootObject: 'index.html',
       enableIpv6: true,
       enableLogging: true,
-      logBucket: cloudFrontLogsBucket,
-      logFilePrefix: 'access-logs'
+      // logBucket: cloudFrontLogsBucket,
+      // logFilePrefix: 'access-logs'
     });
 
     // // allow CloudFront to write logs to s3
-    cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
-      actions: ['s3:PutObject'],
-      effect: iam.Effect.ALLOW,
-      principals: [new iam.CanonicalUserPrincipal(cloudFrontDistribution.distributionId)],
-      resources: [cloudFrontLogsBucket.arnForObjects('*')],
-    }));
+    // cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
+    //   actions: ['s3:PutObject'],
+    //   effect: iam.Effect.ALLOW,
+    //   principals: [new iam.CanonicalUserPrincipal(cloudFrontDistribution.distributionId)],
+    //   resources: [cloudFrontLogsBucket.arnForObjects('*')],
+    // }));
 
  // cloudFrontLogsBucket.grantWrite(cloudFrontDistribution, 's3.amazonaws.com/CloudFront');
 
