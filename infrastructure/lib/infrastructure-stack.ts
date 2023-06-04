@@ -116,7 +116,7 @@ export class InfrastructureStack extends Stack {
       enableIpv6: true,
       enableLogging: true,
       logBucket: dataStores.logsBucket,
-      // logFilePrefix: 'access-logs'
+      logFilePrefix: 'cloudfront-web'
     });
 
     // // allow CloudFront to write logs to s3
