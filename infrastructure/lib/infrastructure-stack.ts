@@ -16,7 +16,6 @@ import { Bucket } from 'aws-cdk-lib/aws-s3';
 
 export interface InfraStackProps extends StackProps {
   logLevel: "DEBUG" | "INFO" | "WARN" | "ERROR";
-  logsBucket: Bucket;
   gitHubClientId: string;
   gitHubClientSecret: string;
   node_env: string;
@@ -116,7 +115,7 @@ export class InfrastructureStack extends Stack {
       defaultRootObject: 'index.html',
       enableIpv6: true,
       enableLogging: true,
-      logBucket: props?.logsBucket,
+      logBucket: dataStores.logsBucket,
       // logFilePrefix: 'access-logs'
     });
 

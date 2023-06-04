@@ -19,7 +19,12 @@ import MediaPlayer from "../components/MediaPlayer.vue";
 export default class Music extends Vue {
   get tracks() {
     return [
-      {
+            {
+        title: "Nobody From Nashville",
+        location: "Morgan Hill Birthday - Set 1",
+        date: "06/03/2023",
+        id: "1t58ThL5TqsxDLwxZv1KXG0ph8LaYFyhz"
+      },{
         title: "West Side Jazz Club",
         location: "Ula SF - Set 1",
         date: "06/01/2023",
