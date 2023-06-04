@@ -63,11 +63,11 @@ export class InfrastructureStack extends Stack {
       comment: `${domainName} Domain Hosting Environment`,
     });
 
-    const apiOriginPolicy = new OriginRequestPolicy(this, 'apiOriginPolicy', {
-      cookieBehavior: OriginRequestCookieBehavior.all(),
-      headerBehavior: OriginRequestHeaderBehavior.none(),
-      queryStringBehavior: OriginRequestQueryStringBehavior.all(),
-    });
+    // const apiOriginPolicy = new OriginRequestPolicy(this, 'apiOriginPolicy', {
+    //   cookieBehavior: OriginRequestCookieBehavior.all(),
+    //   headerBehavior: OriginRequestHeaderBehavior.none(),
+    //   queryStringBehavior: OriginRequestQueryStringBehavior.all(),
+    // });
 
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
@@ -118,28 +118,6 @@ export class InfrastructureStack extends Stack {
       logBucket: dataStores.logsBucket,
       logFilePrefix: 'cloudfront-web'
     });
-
-    // // allow CloudFront to write logs to s3
-    // cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
-    //   actions: ['s3:PutObject'],
-    //   effect: iam.Effect.ALLOW,
-    //   principals: [new iam.CanonicalUserPrincipal(cloudFrontDistribution.distributionId)],
-    //   resources: [cloudFrontLogsBucket.arnForObjects('*')],
-    // }));
-
- // cloudFrontLogsBucket.grantWrite(cloudFrontDistribution, 's3.amazonaws.com/CloudFront');
-
-    // cloudFrontLogsBucket.addToResourcePolicy(new iam.PolicyStatement({
-    //   actions: [
-    //     's3:PutObject'
-    //   ],
-    //   principals: [
-    //     new iam.ServicePrincipal('cloudfront.amazonaws.com')
-    //   ],
-    //   resources: [
-    //     cloudFrontLogsBucket.arnForObjects('access-logs/*')
-    //   ]
-    // }));
 
     const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
       comment: `images.${domainName} Domain Hosting Environment`,

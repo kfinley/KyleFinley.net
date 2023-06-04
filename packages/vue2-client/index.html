@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="public/icons/apple-icon-180x180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <!-- <link rel="canonical" href="http://kylefinley.net/" /> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- <script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script> -->
-</head>
+    <!-- <link rel="canonical" href="http://kylefinley.net/" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script> -->
+  </head>
 
-<body>
-  <noscript>
-    <strong>Sorry yo, this site doesn't work without JavaScript enabled. Please enable it to view.</strong>
-  </noscript>
-  <div id="app"></div>
-  <script>
-    /* Hack for global not defined in buffer.js error. */
-    if (global === undefined) {
-      var global = window;
-    }
-  </script>
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
+  <body>
+    <noscript>
+      <strong>Sorry yo, this site doesn't work without JavaScript enabled. Please enable it to view.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script>
+      /* Hack for global not defined in buffer.js error. */
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
