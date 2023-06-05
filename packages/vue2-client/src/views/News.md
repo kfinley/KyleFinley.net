@@ -3,6 +3,11 @@
 # News Page
 </div>
 
+### June 4, 2023
+---
+
+Enabled logging for cloudfront distribution.
+
 ### May 24, 2023
 ---
 
