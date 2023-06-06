@@ -1,0 +1,7 @@
+node_modules
+
+# lerna files
+lerna-debug.log
+package.json.lerna_backup
+
+.DS_Store

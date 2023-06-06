@@ -1,20 +1,17 @@
-import { Stack, Duration, CfnOutput, RemovalPolicy } from 'aws-cdk-lib';
-import * as lambda from 'aws-cdk-lib/aws-lambda';
+import { CfnOutput, RemovalPolicy } from 'aws-cdk-lib';
 import { WebSocketApi, WebSocketStage } from '@aws-cdk/aws-apigatewayv2-alpha';
 import { WebSocketLambdaAuthorizer } from '@aws-cdk/aws-apigatewayv2-authorizers-alpha';
 import { WebSocketLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integrations-alpha';
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
-import { join } from 'path';
-import { NodejsFunction, NodejsFunctionProps, SourceMapMode } from 'aws-cdk-lib/aws-lambda-nodejs';
-import { Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { Topic } from 'aws-cdk-lib/aws-sns';
 import { LambdaSubscription } from 'aws-cdk-lib/aws-sns-subscriptions';
-import { Chain, Choice, Condition, Fail, LogLevel, Pass, StateMachine, Succeed } from 'aws-cdk-lib/aws-stepfunctions';
+import { Chain, Choice, Condition, Fail, LogLevel, StateMachine } from 'aws-cdk-lib/aws-stepfunctions';
 import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
 import { Effect, IRole, Policy, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { LogGroup, RetentionDays } from 'aws-cdk-lib/aws-logs';
 
+import { createLambda } from "./";
 export interface WebSocketsApiProps {
   connectionsTable: Table;
   gitHubClientId: string;
@@ -30,93 +27,37 @@ export class WebSocketsApi extends Construct {
   constructor(scope: Construct, id: string, props?: WebSocketsApiProps) {
     super(scope, id);
 
-    const functionsPath = '../../services/WebSockets/dist';
-
-    const createLambda = (name: string, handler: string, env?: {
-      [key: string]: string;
-    } | undefined) => {
-
-      return new lambda.Function(this, name, {
-        runtime: lambda.Runtime.NODEJS_16_X,
-        memorySize: 1024,
-        timeout: Duration.seconds(5),
-        functionName: `KyleFinleyNet-Infrastructure-${name}`,
-        handler,
-        code: new lambda.AssetCode(join(__dirname, `${functionsPath}`)),
-        environment: {
-          REGION: Stack.of(this).region,
-          AVAILABILITY_ZONES: JSON.stringify(
-            Stack.of(this).availabilityZones,
-          ),
-          NODE_ENV: props!.node_env,
-          ...env
-        },
-      });
-    };
-
-    const createNodeJsFunction = (name: string, path: string) => {
-
-      const nodeJsFunctionProps: NodejsFunctionProps = {
-        functionName: `KyleFinleyNet-Infrastructure-${name}`,
-        projectRoot: join(__dirname, '../../services/WebSockets'),
-        entry: join(__dirname, `../../services/WebSockets/src/functions/${path}`),
-        bundling: {
-          // assetHash: 'my-custom-hash',
-          externalModules: [
-            'aws-sdk', // Use the 'aws-sdk' available in the Lambda runtime
-          ],
-          // preCompilation: true,
-          minify: true, // minify code, defaults to false
-          sourceMap: true, // include source map, defaults to false
-          sourceMapMode: SourceMapMode.INLINE, // defaults to SourceMapMode.DEFAULT
-          sourcesContent: false, // do not include original source into source map, defaults to true
-          target: 'es2020', // target environment for the generated JavaScript code,
-        },
-        depsLockFilePath: join(__dirname, '../../services/WebSockets/package-lock.json'),
-        environment: {
-          LOG_LEVEL: props?.logLevel!
-        },
-        handler: "handler",
-        allowAllOutbound: true,
-        runtime: Runtime.NODEJS_16_X,
-        tracing: Tracing.ACTIVE
-      }
-
-      return new NodejsFunction(this, name, {
-
-        ...nodeJsFunctionProps
-      });
-    }
+      const functionsPath = '../../services/WebSockets/dist/functions';
 
     // Lambda Functions....
 
-    const authorizerHandler = createLambda('AuthorizerHandler', 'functions/auth.handler', {
+    const authorizerHandler = createLambda(this, 'AuthorizerHandler', functionsPath, 'auth.handler', {
       WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: props!.gitHubClientId,
       WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: props!.gitHubClientSecret
-    });
+    }, props!.node_env);
 
-    const onConnectHandler = createLambda('OnConnectHandler', 'functions/connect.handler', {
+    const onConnectHandler = createLambda(this, 'OnConnectHandler', functionsPath, 'connect.handler', {
       WEBSOCKETS_CONNECTION_TABLE: props!.connectionsTable.tableName
-    });
+    }, props!.node_env);
     props?.connectionsTable.grantReadWriteData(onConnectHandler);
 
-    const onDisconnectHandler = createLambda('OnDisconnectHandler', 'functions/disconnect.handler', {
+    const onDisconnectHandler = createLambda(this, 'OnDisconnectHandler', functionsPath, 'disconnect.handler', {
       WEBSOCKETS_CONNECTION_TABLE: props!.connectionsTable.tableName
-    });
+    }, props!.node_env);
     props?.connectionsTable.grantReadWriteData(onDisconnectHandler);
 
-    const onMessageHandler = createLambda('OnMessageHandler', 'functions/default.handler',);
+    const onMessageHandler = createLambda(this, 'OnMessageHandler', functionsPath, 'default.handler', {}, props!.node_env);
 
-    const getConnection = createLambda('GetConnection', 'functions/getConnection.handler', {
+    const getConnection = createLambda(this, 'GetConnection', functionsPath, 'getConnection.handler', {
       WEBSOCKETS_CONNECTION_TABLE: props!.connectionsTable.tableName
-    });
+    }, props!.node_env);
     props?.connectionsTable.grantReadWriteData(getConnection);
 
-    const sendMessage = createLambda('SendMessage', 'functions/sendMessage.handler', {
+    const sendMessage = createLambda(this, 'SendMessage', functionsPath, 'sendMessage.handler', {
       APIGW_ENDPOINT: '6ii0i7gdbe.execute-api.us-east-1.amazonaws.com/v1' //TODO: deal with this...
-    });
+    }, props!.node_env);
 
-    const startSendMessageNotification = createLambda('StartSendMessageNotification', 'functions/startSendMessageNotification.handler')
+    const startSendMessageNotification = createLambda(this, 'StartSendMessageNotification', functionsPath, 'startSendMessageNotification.handler', {}, props!.node_env)
 
     // Lambda Functions end...
 

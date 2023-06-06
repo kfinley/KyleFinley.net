@@ -7,10 +7,9 @@ import * as targets from 'aws-cdk-lib/aws-route53-targets';
 import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
-import { OriginRequestCookieBehavior, OriginRequestHeaderBehavior, OriginRequestPolicy, OriginRequestQueryStringBehavior } from 'aws-cdk-lib/aws-cloudfront';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
-import { Bucket } from 'aws-cdk-lib/aws-s3';
+import { createLambda } from './';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -23,17 +22,19 @@ export interface InfraStackProps extends StackProps {
 
 export class InfrastructureStack extends Stack {
 
+  private functionsPath = '../../services/CloudFront/dist/functions';
+
   constructor(scope: Construct, id: string, props?: InfraStackProps) {
     super(scope, id, props);
 
     const domainName = this.node.tryGetContext('domainName');
 
-    //TODO: Bad names from previous setup. Have to remove the rsources in order to rename them.
+    //TODO: Bad names from previous setup. Have to remove the resources in order to rename them.
     const dataStores = new DataStores(this, 'KyleFinleyNet-DatabaseStack', {
       domainName,
     });
 
-    //TODO: Bad names from previous setup. Have to remove the rsources in order to rename them.
+    //TODO: Bad names from previous setup. Have to remove the resources in order to rename them.
     const webSocketsApi = new WebSocketsApi(this, 'KyleFinleyNet-WebSocketsStack', {
       logLevel: props?.logLevel!,
       connectionsTable: dataStores?.connectionsTable!,
@@ -69,12 +70,17 @@ export class InfrastructureStack extends Stack {
     //   queryStringBehavior: OriginRequestQueryStringBehavior.all(),
     // });
 
+    const origin = new origins.S3Origin(dataStores.frontEndBucket, {
+      originAccessIdentity: cloudFrontOAI
+    });
+
+    const redirectLambda = createLambda(this, 'Redirects', '../../services/CloudFront/dist/functions', 'redirect.handler', {
+    }, props!.node_env);
+
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
-        origin: new origins.S3Origin(dataStores.frontEndBucket, {
-          originAccessIdentity: cloudFrontOAI
-        }),
+        origin,
         compress: true,
         allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
         cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
@@ -93,6 +99,27 @@ export class InfrastructureStack extends Stack {
       //     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
       //   }
       // },
+      // Handling redirects with Additional Behaviors
+      additionalBehaviors: {
+        '/archive/2009/10/15/1339.aspx': {
+          origin,
+          functionAssociations: [
+            {
+              eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+              function: redirectLambda
+            },
+          ]
+        },
+        '/tweets-from-sheets': {
+          origin,
+          functionAssociations: [
+            {
+              eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+              function: redirectLambda
+            },
+          ],
+        },
+      },
       errorResponses: [
         {
           httpStatus: 403,
@@ -118,6 +145,7 @@ export class InfrastructureStack extends Stack {
       logBucket: dataStores.logsBucket,
       logFilePrefix: 'cloudfront-web'
     });
+
 
     const imagesCloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'Images-CloudFrontOriginAccessIdentity', {
       comment: `images.${domainName} Domain Hosting Environment`,
