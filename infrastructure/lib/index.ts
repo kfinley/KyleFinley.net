@@ -12,7 +12,7 @@ export const createLambdaEdge = (c: Construct, name: string, functionsPath: stri
 
   return new lambda.Function(c, name, {
     runtime: lambda.Runtime.NODEJS_16_X,
-    memorySize: 1024,
+    memorySize: 128,
     timeout: Duration.seconds(5),
     functionName: `KyleFinleyNet-${name}`,
     handler,
