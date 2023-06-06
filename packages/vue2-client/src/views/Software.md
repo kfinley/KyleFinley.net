@@ -34,10 +34,10 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2 class="text-center">Mid 2000's - Traveling Tech Consultant</h2>
+      <h2 class="text-center">Mid 2000's - Tech Traveler</h2>
       <h3>Hitachi Consulting</h3>
       <p>
-        After college I worked as a consultant with Hitachi Consulting for about 5 years doing mostly custom software and BI systems. I enjoyed the travel but didn't enjoy the company or most of the work. The region I worked in didn't focus on custom software and despite my best efforts to work in other markets I got pigeonholed into doing way too much BI and report conversion projects (if you ask me to convert a crystal report I may kick you!!). I eventually took a leave of absence and traveled the US kiteboarding, snowboarding, and camping before returning to the company to then be fired. I shouldn't have stayed there as long as I did but I still learned a lot of non-code related skills and by the end I ran teams, trained customer employees, and wrote my own statements of work.
+        After college I worked as a consultant with Hitachi Consulting for about 5 years doing mostly custom software and BI systems. I enjoyed the travel but didn't enjoy the company or most of the work. The region I worked in didn't focus on custom software and despite my best efforts to work in other markets I got pigeonholed into doing way too much BI and report conversion projects (if you ask me to convert a crystal report I may kick you!!). I eventually took a leave of absence and traveled the US kiteboarding, snowboarding, and camping before returning to the company to then be fired. I shouldn't have stayed there as long as I did but I still learned a lot of non-code related skills and by the end I ran teams, trained customer employees, and wrote my own statements of work. I also fell in love with traveling during this period.
       </p>
     </div>
   </div>
@@ -50,21 +50,21 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
         In the summer of 2009 I took a gig with DiningIn.com. They were one of the firsts in online food ordering. I learned a lot in the year or so I survived at the company (I left by choice I should mention). The environment was brutal with a single owner that fired most of the employees I saw. Best takeaways from this gig were really learning SEO and more importantly reducing paper waste from faxes by more than 750,000 pieces of paper annually. I did this redesigning the ordering system report that was generated after an online order and then electronically faxed to the restaurant (yes... faxes! We had two T1s dedicated for faxing restaurants. The food industry worked on faxes for way longer than you'd think).
       </p>
       <p>
-        DI was acquired by GrubHub.
+        DiningIn was acquired by GrubHub.com in 2015.
       </p>
       <h3>First Giving</h3>
       <p>
         To escape DI I took a senior dev gig at FirstGiving.com. There I helped a small team build a social fundraising platform. I worked with a few great people but unfortunately the leadership team wasn't honest with the company. A combination of excessive spending and unsuccessful secret projects with a remote team in SF led to a substantial company layoff event (which I was part of but then asked to remain onboard... which I shouldn't have).
       </p>
       <p>
-        FG was eventually acquired by FrontStream.com.
+        FirstGiving was eventually acquired by FrontStream.com.
       </p>
       <h3>KarmaLoop</h3>
       <p>
         From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Buy me a beer and I'll tell you some crazy stories. Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it's not legal we'll figure out how to make it legal."
       </p>
       <p>
-        KL was acquired by Shiekh Shoes (after going bankrupt with over 900M in debt).
+        KarmaLoop was acquired by Shiekh Shoes (after going bankrupt with over 900M in debt).
       </p>
     </div>
   </div>
