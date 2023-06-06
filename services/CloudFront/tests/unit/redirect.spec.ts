@@ -1,4 +1,4 @@
-import { handler as redirect } from '../../src/functions/redirect';
+import { handler as redirect } from '../../src/functions/redirects';
 
 interface Request {
   Records: Array<{

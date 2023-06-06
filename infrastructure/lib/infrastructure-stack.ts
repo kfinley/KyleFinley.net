@@ -9,7 +9,7 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
-import { createLambda } from './';
+import { createLambda, createLambdaEdge } from './';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -74,8 +74,7 @@ export class InfrastructureStack extends Stack {
       originAccessIdentity: cloudFrontOAI
     });
 
-    const redirectLambda = createLambda(this, 'Redirects', '../../services/CloudFront/dist/functions', 'redirect.handler', {
-    }, props!.node_env);
+    const redirectLambda = createLambdaEdge(this, 'Redirects', '../../services/CloudFront/dist/functions', 'redirects.handler');
 
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
@@ -103,19 +102,19 @@ export class InfrastructureStack extends Stack {
       additionalBehaviors: {
         '/archive/2009/10/15/1339.aspx': {
           origin,
-          functionAssociations: [
+          edgeLambdas: [
             {
-              eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
-              function: redirectLambda
-            },
+              eventType: cdk.aws_cloudfront.LambdaEdgeEventType.VIEWER_REQUEST,
+              functionVersion: redirectLambda.currentVersion
+            }
           ]
         },
         '/tweets-from-sheets': {
           origin,
-          functionAssociations: [
+          edgeLambdas: [
             {
-              eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
-              function: redirectLambda
+              eventType: cdk.aws_cloudfront.LambdaEdgeEventType.VIEWER_REQUEST,
+              functionVersion: redirectLambda.currentVersion
             },
           ],
         },

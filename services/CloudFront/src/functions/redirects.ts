@@ -16,9 +16,7 @@ const createResponse = (newPath: string, pathAndQuery: Array<string>) => {
 
 }
 export const handler: Handler = async (event) => {
-
-  const request = event.Records[0].cf.request;
-  const pathAndQuery = request.uri.split('?');
+  const pathAndQuery = event.Records[0].cf.request.uri.split('?');
 
   switch (pathAndQuery[0]) {
     case '/sheets-to-tweets':
@@ -27,6 +25,6 @@ export const handler: Handler = async (event) => {
       return createResponse('typemerger', pathAndQuery);
 
   };
-  return request;
+  return event.Records[0].cf.request;
 };
 
