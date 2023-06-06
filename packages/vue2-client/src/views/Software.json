@@ -1,18 +1,18 @@
 {
-  "title": "Latest News & Updates",
+  "title": "Software & Tech - KyleFinley.net",
   "allowAnonymous": true,
   "metaTags": [
     {
       "name": "description",
-      "content": "News and updates for the site. This page is ephemeral and not archived beyond source control versions."
+      "content": "Kyle Finley's history working with software and tech over the last 20+ years."
     },
     {
       "itemprop": "name",
-      "content": "Latest News & Updates - KyleFinley.net"
+      "content": "Software & Tech - KyleFinley.net"
     },
     {
       "property": "og:title",
-      "content": "Latest News & Updates - KyleFinley.net"
+      "content": "Software & Tech - KyleFinley.net"
     },
     {
       "property": "og:type",
@@ -20,7 +20,7 @@
     },
     {
       "property": "og:url",
-      "content": "https://KyleFinley.net/news"
+      "content": "https://KyleFinley.net/software"
     },
     {
       "property": "og:image",
@@ -28,7 +28,7 @@
     },
     {
       "property": "og:description",
-      "content": "News and updates for the site. This page is ephemeral and not archived beyond source control versions."
+      "content": "Kyle Finley's history working with software and tech over the last 20+ years."
     },
     {
       "property": "og:site_name",

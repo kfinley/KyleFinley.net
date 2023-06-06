@@ -9,7 +9,8 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import { WebSocketsApi } from './websockets-api';
 import { DataStores } from './data-stores';
-import { createLambda, createLambdaEdge } from './';
+import { createLambdaEdge } from './';
+import { createAdditionalBehaviorsForRedirects } from './redirects';
 
 // TODO: break this out  to /services/FrontEnd/Infrastructure?
 
@@ -75,6 +76,14 @@ export class InfrastructureStack extends Stack {
     });
 
     const redirectLambda = createLambdaEdge(this, 'Redirects', '../../services/CloudFront/dist/functions', 'redirects.handler');
+    const edgeLambdas = [
+      {
+        eventType: cdk.aws_cloudfront.LambdaEdgeEventType.VIEWER_REQUEST,
+        functionVersion: redirectLambda.currentVersion
+      }
+    ];
+
+    const additionalBehaviors = createAdditionalBehaviorsForRedirects(origin, edgeLambdas);
 
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
@@ -98,27 +107,9 @@ export class InfrastructureStack extends Stack {
       //     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS
       //   }
       // },
+
       // Handling redirects with Additional Behaviors
-      additionalBehaviors: {
-        '/archive/2009/10/15/1339.aspx': {
-          origin,
-          edgeLambdas: [
-            {
-              eventType: cdk.aws_cloudfront.LambdaEdgeEventType.VIEWER_REQUEST,
-              functionVersion: redirectLambda.currentVersion
-            }
-          ]
-        },
-        '/sheets-to-tweets': {
-          origin,
-          edgeLambdas: [
-            {
-              eventType: cdk.aws_cloudfront.LambdaEdgeEventType.VIEWER_REQUEST,
-              functionVersion: redirectLambda.currentVersion
-            },
-          ],
-        },
-      },
+      additionalBehaviors,
       errorResponses: [
         {
           httpStatus: 403,

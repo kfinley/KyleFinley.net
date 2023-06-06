@@ -17,12 +17,11 @@ I've used something similar to the following for several years. It's a simple CS
 
 ### Show me the code!!!
 
-
 Here's the JavaScript code to add to your site's JS file.
 
 ```javascript
 const styleString =
-    ".disabledElement{-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;cursor:default;background-position:top;pointer-events:none;}";
+  ".disabledElement{-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;cursor:default;background-position:top;pointer-events:none;}";
 
 // Helper function for adding style block to head tag
 function addCss(id, css) {
@@ -44,9 +43,7 @@ function addCss(id, css) {
 }
 
 function disableElement(element) {
-
   addCss("disabledElementStyles", styleString);
-
   element.classList.add("disabledElement");
 }
 
@@ -66,6 +63,7 @@ function enableElements(elementArray) {
 ```
 
 ### How do you use it?
+
 Using the code is very simple. At the beginning of some event that's triggered by an element you call the disableElement function. When your code is done and you want to let the user click the element again you call enableElement. If you have multiple elements you want to enable / disable there are functions that take an array of elements to enable or disable.
 
 Here's a sample using a function tied to a button click event. Here we disable the button, do some work, then enable the button it when we're done.
@@ -100,4 +98,5 @@ $("#someButton").click(function () {
 ```
 
 ### How does it work?
+
 So what's going on here? If you can't figure it out from reading the code (which if you can't you should seriously just stop developing websites because this isn't hard stuff... or you're just learning so that's OK), all that's happening here is we're adding some CSS to the page, adding a CSS class to the element, and removing the class to enable the element. That's it.

@@ -53,6 +53,7 @@
     "@vue/cli-service": "~5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/runtime-dom": "latest",
     "@vue/test-utils": "^1.0.3",
     "css-loader": "~3.6.0",
     "eslint": "^6.7.2",

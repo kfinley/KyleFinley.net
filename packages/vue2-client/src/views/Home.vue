@@ -1,9 +1,8 @@
 <template>
   <section>
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Kyle Finley</h1>
-        <p>Musician, Traveler, Software Developer, Photographer, Skate & Kiteboarder</p>
+      <div class="container pt-2">
+        <p>Musician, Traveler, Software Developer, Photographer, Skater & Kiteboarder</p>
       </div>
     </div>
     <div class="container justified-hyphenated">
@@ -14,6 +13,16 @@
           I also play guitar and I'm currently woodshedding trombone after a 20 year hiatus.
         </p>
         <p>Check my <router-link to="/music">Music Page</router-link> for more info on bands I play with, past shows, and upcoming gigs.</p>
+         <h2 class="text-center">Software Development</h2>
+        <p>
+          I've been a software developer now for over 20 years. It's been an adventure! I've watched the internet grow and industries form.
+          I've worked on lots of things and worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as a
+          songwriter friend once told me "Ya know the problem is, nobody really cares!" I don't track my page views here anymore so guess
+          I'll never know. :-)
+        </p>
+        <p>
+          More on my adventures in software &amp; info on my work can be found on my <router-link to="/software">Software Page</router-link>.
+        </p>
         <h2 class="text-center">Traveling</h2>
         <p>
           I'm a bit of a traveler although I don't travel as much as I used to. I was a weekly flying consultant for years, active in the
@@ -24,16 +33,6 @@
         <p>
           More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a> or on
           my <router-link to="/travel">Travel Page</router-link>.
-        </p>
-        <h2 class="text-center">Software Development</h2>
-        <p>
-          I've been a software developer now for over 20 years. It's been an adventure! I've watched the internet grow and industries form.
-          I've worked on lots of things and worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as a
-          songwriter friend once told me "Ya know the problem is, nobody really cares!" I don't track my page views here anymore so guess
-          I'll never know. :-)
-        </p>
-        <p>
-          Some of my thoughts on software &amp; info on my work can be found on my <router-link to="/software">Software Page</router-link>.
         </p>
         <h2 class="text-center">Photography</h2>
         <p>
@@ -77,6 +76,14 @@ section {
 
 .jumbotron > div > p {
   color: rgb(67, 64, 64);
+  font-weight: bold;
+}
+
+@media (min-width: 901px) {
+.jumbotron > div > p {
+   font-size: larger;
+
+  }
 }
 
 @media (max-width: 900px) {

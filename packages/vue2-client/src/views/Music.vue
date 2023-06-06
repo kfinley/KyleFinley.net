@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <h1 class="text-center">Kyle Finley - Musician</h1>
-    <p>
-      <i
-        >Jazz, Bluegrass, and Americana upright bassist currently slappin' strings around the San Francisco Bay area. Recordings can be
-        found on my <router-link to="/media">Media Page.</router-link></i
-      >
-    </p>
+    <h1 class="text-center">My Music</h1>
+    <div class="text-center">
+      <p>
+        <i>Jazz, Bluegrass, and Americana upright bassist currently slappin' strings around the San Francisco Bay area. </i>
+      </p>
+      <p>Recordings can be found on my <br/><router-link to="/media">Media Page</router-link></p>
+    </div>
     <Gigs class="text-center" />
     <h4 class="text-center pt-4">Bands &amp; Jams</h4>
     <ul class="bands">
@@ -93,7 +93,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-// import Gigs from "./Gigs.md";
 import Gigs from "./../components/Gigs.vue";
 
 @Component({
