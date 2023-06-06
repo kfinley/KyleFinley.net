@@ -13,7 +13,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2 class="text-center">Mid / Late 90's - Script kitty turned network admin</h2>
+      <h2 class="text-center">Mid / Late 90's - Script kiddie turned network admin</h2>
       <p>
         I started with an Apple PowerBook 190cs and spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back the gig was mostly wiring old school buildings with cat5 and fiber plus installing NT4 to replace a couple of even older Novel boxes that were running things. I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
       </p>
