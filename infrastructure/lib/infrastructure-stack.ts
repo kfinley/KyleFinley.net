@@ -109,7 +109,7 @@ export class InfrastructureStack extends Stack {
             }
           ]
         },
-        '/tweets-from-sheets': {
+        '/sheets-to-tweets': {
           origin,
           edgeLambdas: [
             {
