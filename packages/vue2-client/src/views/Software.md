@@ -37,7 +37,10 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">Mid 2000's - Tech Traveler</h2>
       <h3>Hitachi Consulting</h3>
       <p>
-        After college I worked as a consultant with Hitachi Consulting for about 5 years doing mostly custom software and BI systems. I enjoyed the travel but didn't enjoy the company or most of the work. The region I worked in didn't focus on custom software and despite my best efforts to work in other markets I got pigeonholed into doing way too much BI and report conversion projects (if you ask me to convert a crystal report I may kick you!!). I eventually took a leave of absence and traveled the US kiteboarding, snowboarding, and camping before returning to the company to then be fired. I shouldn't have stayed there as long as I did but I still learned a lot of non-code related skills and by the end I ran teams, trained customer employees, and wrote my own statements of work. I also fell in love with traveling during this period.
+        After college I worked as a consultant with Hitachi Consulting for about 5 years doing mostly custom software and BI systems. I enjoyed the travel but didn't enjoy the company or most of the work. The region I worked in didn't focus on custom software and despite my best efforts to work in other markets I got pigeonholed into doing way too much BI and report conversion projects (if you ask me to convert a crystal report I may kick you!!).
+      </p>
+      <p>
+        I eventually took a leave of absence and traveled the US kiteboarding, snowboarding, and camping before returning to the company to then be fired. I shouldn't have stayed there as long as I did but I still learned a lot of non-code related skills and by the end I ran teams, trained customer employees, and wrote my own statements of work. I also fell in love with traveling during this period.
       </p>
     </div>
   </div>
@@ -47,7 +50,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">Late 2000's / Early 2010's - Crazy Startups!!!</h2>
       <h3>Dining In</h3>
       <p>
-        In the summer of 2009 I took a gig with DiningIn.com. They were one of the firsts in online food ordering. I learned a lot in the year or so I survived at the company (I left by choice I should mention). The environment was brutal with a single owner that fired most of the employees I saw. Best takeaways from this gig were really learning SEO and more importantly reducing paper waste from faxes by more than 750,000 pieces of paper annually. I did this redesigning the ordering system report that was generated after an online order and then electronically faxed to the restaurant (yes... faxes! We had two T1s dedicated for faxing restaurants. The food industry worked on faxes for way longer than you'd think).
+        In the summer of 2009 I took a gig with DiningIn.com. They were one of the firsts in online food ordering. I learned a lot in the year or so I survived at the company (I left by choice I should mention). The environment was brutal with a single owner that fired most of the employees I saw. Best takeaways from this gig were really learning SEO and more importantly reducing paper waste from faxes by more than 750,000 pieces of paper annually. I did this by redesigning the ordering system report that was generated after an online order and then electronically faxed to the restaurant (yes... faxes! We had two T1s dedicated for faxing restaurants. The food industry worked on faxes for way longer than you'd think).
       </p>
       <p>
         DiningIn was acquired by GrubHub.com in 2015.
@@ -101,7 +104,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
         I attempted to meet with the CEO to discuss a plan for how I'd agree to continuing to work at the company but was fired the day before the meeting by the CTO (who was soon thereafter fired). You can see my <router-link to="/slides/sports-app-product-team-proposal">proposal presentation here</router-link>.
       </p>
       <p>
-        Of the many things I learned through this experience one of the big ones was that I will never again put myself through the hell of trying to help a company "learn Agile." If you find yourself in a company that has a broken software dev process caused by a handful of people (sometimes it can be just 1 person) that flat out refuse to follow basic Agile principals & practices then the best thing you can do is leave ASAP. People have been trying to teach Agile principles for over 20 years now. It's not that people have a heard time with it, it's that many of the people refuse to do it and will not change their ways. If you're working with someone that's been in the industry for over 10 years and they still fight against Agile principals then they aren't going to change and you aren't going to change them.
+        Of the many things I learned through this experience one of the big ones was that I will never again put myself through the hell of trying to help a company "learn Agile." If you find yourself in a company that has a broken software dev process caused by a handful of people (sometimes it can be just 1 person) that flat out refuse to follow basic Agile principles & practices then the best thing you can do is leave ASAP. People have been trying to teach Agile principles for over 20 years now. It's not that people have a heard time with it, it's that many of the people refuse to do it and will not change their ways. If you're working with someone that's been in the industry for over 10 years and they still fight against Agile principles then they aren't going to change and you aren't going to change them.
       </p>
     </div>
   </div>
