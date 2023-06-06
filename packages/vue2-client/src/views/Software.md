@@ -15,7 +15,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
     <div class="timeline-item-content">
       <h2 class="text-center">Mid / Late 90's - Script kiddie turned network admin</h2>
       <p>
-        I started with an Apple PowerBook 190cs and spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back the gig was mostly wiring old school buildings with cat5 and fiber plus installing NT4 to replace a couple of even older Novel boxes that were running things. I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
+        I started with an Apple PowerBook 190cs and spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then gig was mostly wiring old school buildings with cat5 and fiber and installing NT4 servers to replace a couple of even older Novel boxes that were running things. I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
       </p>
     </div>
   </div>
@@ -24,10 +24,10 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
     <div class="timeline-item-content">
       <h2 class="text-center">Early 2000's - From network admin to coder</h2>
       <p>
-        Through early college I continued working for my hometown school district where I designed and implemented a multi-campus single Win2k Active Directory domain using point-to-point tunneling VPN servers between 4 campuses and the admin building. This reduced the number of standalone domains in the district from around 10 to 1 and is still the foundation of the system today (20+ years later).
+        Through early college I continued working for my hometown school district. One summer I designed and implemented a multi-campus single Win2k Active Directory domain using point-to-point tunneling VPN servers (ISA boxes) between 4 campuses and the admin building. This reduced the number of standalone domains in the district from around 10 to 1 and let me work remote. This setup is still the foundation of the system today (20+ years later).
       </p>
       <p>
-        I worked my fair share of help desk as I bounced around colleges a little bit then ended up at the University of Colorado studying Business Information Systems. While at CU I was a TA for the programming courses in the business school for a couple of years and I also got my first real programming gig working for the Leeds School of Business building a custom contact management system and other web based stuff.
+        I worked my fair share of help desk jobs as I bounced around colleges before ending up at the University of Colorado studying Business Information Systems. While at CU I was a TA for the programming courses in the business school for a couple of years and I also got my first real programming gig working for the Leeds School of Business building a custom contact management system and other web based stuff.
       </p>
     </div>
   </div>
@@ -37,7 +37,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">Mid 2000's - Traveling Tech Consultant</h2>
       <h3>Hitachi Consulting</h3>
       <p>
-        After college I worked as a consultant with Hitachi Consulting for about 5 years doing mostly custom software and BI systems. I enjoyed the travel but didn't enjoy the company or most of the work. The region I worked in didn't focus on custom software and despite my best efforts to work in other markets I got pigeonholed into doing way too much BI and report conversion projects (if you ask me to convert a crystal report I may kick you!!). I eventually took a leave of absence and traveled the US kiteboarding, snowboarding, and camping before returning to the company to then be fired. I regret not leaving the company sooner.
+        After college I worked as a consultant with Hitachi Consulting for about 5 years doing mostly custom software and BI systems. I enjoyed the travel but didn't enjoy the company or most of the work. The region I worked in didn't focus on custom software and despite my best efforts to work in other markets I got pigeonholed into doing way too much BI and report conversion projects (if you ask me to convert a crystal report I may kick you!!). I eventually took a leave of absence and traveled the US kiteboarding, snowboarding, and camping before returning to the company to then be fired. I shouldn't have stayed there as long as I did but I still learned a lot of non-code related skills and by the end I ran teams, trained customer employees, and wrote my own statements of work.
       </p>
     </div>
   </div>
@@ -47,21 +47,21 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">Late 2000's / Early 2010's - Crazy Startups!!!</h2>
       <h3>Dining In</h3>
       <p>
-        In the summer of 2009 I took a gig with DiningIn.com. They were the first online food ordering company that moved from fax based order to online orders. I learned a lot in the year or so I survived at the company (I left by choice I should mention). The environment was brutal with a single owner that fired most of the employees I saw. Best takeaways from this gig were really learning SEO and reducing paper waste from faxes by 750,000 pieces of paper annually by redesigning the ordering system and what was sent to restaurants after an order was placed online (yes... faxes! The food industry worked on faxes for way longer than you'd think).
+        In the summer of 2009 I took a gig with DiningIn.com. They were one of the firsts in online food ordering. I learned a lot in the year or so I survived at the company (I left by choice I should mention). The environment was brutal with a single owner that fired most of the employees I saw. Best takeaways from this gig were really learning SEO and more importantly reducing paper waste from faxes by more than 750,000 pieces of paper annually. I did this redesigning the ordering system report that was generated after an online order and then electronically faxed to the restaurant (yes... faxes! We had two T1s dedicated for faxing restaurants. The food industry worked on faxes for way longer than you'd think).
       </p>
       <p>
         DI was acquired by GrubHub.
       </p>
       <h3>First Giving</h3>
       <p>
-        To escape DI I took a senior dev gig at FirstGiving.com where I helped a small team build a social fundraising platform. I worked with a few great people but unfortunately the leadership team wasn't honest with the company. A combination of excessive spending and secret projects with a secret in SF that never produced anything of value led to a massive company layoff event (which I was part of but then asked to remain onboard... which I shouldn't have).
+        To escape DI I took a senior dev gig at FirstGiving.com. There I helped a small team build a social fundraising platform. I worked with a few great people but unfortunately the leadership team wasn't honest with the company. A combination of excessive spending and unsuccessful secret projects with a remote team in SF led to a substantial company layoff event (which I was part of but then asked to remain onboard... which I shouldn't have).
       </p>
       <p>
         FG was eventually acquired by FrontStream.com.
       </p>
       <h3>KarmaLoop</h3>
       <p>
-        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Buy me a beer and I'll tell you some crazy stories.
+        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Buy me a beer and I'll tell you some crazy stories. Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it's not legal we'll figure out how to make it legal."
       </p>
       <p>
         KL was acquired by Shiekh Shoes (after going bankrupt with over 900M in debt).
@@ -74,14 +74,14 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">Mid 2010's - Self Service Food Kiosks & Banking</h2>
       <h3>LeanBox</h3>
       <p>
-        Around 2015 I found myself back in the food industry but with a twist. I started working for LeanBox.com helping them rebuild the backend and tablet based self service kiosks that ran their in office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. The managers and owners of this place were pretty unethical and after being asked to create a fraudulent reporting system and refusing to do so I was fired .
+        Around 2015 I found myself back in the food industry with an IoT flare to it. I joined LeanBox.com to help them adopt Agile and rebuild the backend and tablet based self service kiosks that ran their in-office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. The managers and owners of the place were pretty unethical and I was gone pretty soon after I reported to them that they were overcharging customers (which they ignored) and had already been asked to create a fraudulent reporting system (which I refused to do).
       </p>
       <p>
         LeanBox was acquired by garten in 2021.
       </p>
       <h3>Bend Financial</h3>
       <p>
-        After my time back in food land I joined some former colleagues that had hooked up with an angel funded startup in the financial industry building an HSA Platform. I joined the group too late to have much impact on the platform architecture working with a group that had no real interest in what I had to say, but I stuck around for a while before moving across the country and working remote. My biggest takeaways from this gig were using Vue with TypeScript was great, there are advantages to being a polyglot (especially in a cloud environment, but only with teams that agree w this), only fools roll their own CloudFormation, and if your deployment takes 45m to an hour you're 100% doing it wrong.
+        After my fun time back in food land I joined some former colleagues that had hooked up with an angel funded startup in the financial industry building an HSA Platform. I joined the group far too late to have much impact on the platform architecture and found myself working with a group that had no real interest in what I had to say, but I stuck around for a while before moving across the country and working remote. My biggest takeaways from this gig were that using Vue with TypeScript was great, there are advantages to being a polyglot (especially in a cloud environment as it relates to speed & cost, but only with teams that agree on this), only fools roll their own CloudFormation, and if your deployment takes 45m to an hour from commit to production then you're 100% doing it wrong!
       </p>
       <p>Bend Financial was acquired by HSA Bank in 2022.</p>
     </div>
@@ -95,9 +95,14 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       </p>
       <h3>SwingU</h3>
         <p>
-          In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer! :laugh:) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance to a more modern cloud stack that could scale. There were many challenges and the typical toxic people problem but sadly along the way the product manager died in front of the company while presenting at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around until it got worse.
+          In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer?!?!) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance running mostly legacy .NET Framework 4.7 to a more modern cloud stack that could scale. There were many challenges, and the TTPP (typical toxic people problem), but sadly along the way the product manager died in front of the company while presenting at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around until it got worse.
       </p>
-      <p>I attempted to meet with the CEO to discuss a plan for how I'd agree to continuing to work at the company but was fired the day before the meeting by the CTO (who was soon thereafter fired by the CEO). You can see my <router-link to="/slides/sports-app-product-team-proposal">proposal presentation here</router-link>.</p>
+      <p>
+        I attempted to meet with the CEO to discuss a plan for how I'd agree to continuing to work at the company but was fired the day before the meeting by the CTO (who was soon thereafter fired). You can see my <router-link to="/slides/sports-app-product-team-proposal">proposal presentation here</router-link>.
+      </p>
+      <p>
+        Of the many things I learned through this experience one of the big ones was that I will never again put myself through the hell of trying to help a company "learn Agile." If you find yourself in a company that has a broken software dev process caused by a handful of people (sometimes it can be just 1 person) that flat out refuse to follow basic Agile principals & practices then the best thing you can do is leave ASAP. People have been trying to teach Agile principles for over 20 years now. It's not that people have a heard time with it, it's that many of the people refuse to do it and will not change their ways. If you're working with someone that's been in the industry for over 10 years and they still fight against Agile principals then they aren't going to change and you aren't going to change them.
+      </p>
     </div>
   </div>
 
@@ -108,10 +113,10 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <p>
        In the spring 2022 I started trying to work with my father and brother on what I hoped would be the foundation of a company the three of us could work on together. The plan was to create a collection of apps targeting a variety of sports that would assist with tracking typical statistics as they relate to each sport as well as health data while performing. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing from the health data tracked while performing their individual sports. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at.
       </p>
-      <p>Unfortunately my father passed away in late June only a month or so after we started working on things. I took a lot of time off at this point and got back to working on the ideas alone in late 2022.</p>
+      <p>Unfortunately my father passed away in late June only a month or so after we started working on things. I took a lot of time off at that point and got back to working on the ideas alone in late 2022.</p>
       <h3>Holeshot BMX</h3>
       <p>
-        In January of 2023 I joined my brother at the Silver Dollar National USA BMX Race in Las Vegas, NV. I raced my first race since October of 1988 and made it to mains coming home with hardware. My goal was to not finish last and I did that!
+        In January of 2023 I joined my brother at the USA BMX Silver Dollar Nationals race in Las Vegas, NV. This was my first race since October of 1988 and made it to mains and came home with hardware! My goal was to not finish last and I did that!
       </p>
       <p>
         While in Las Vegas I showed my brother what I'd been working on and after the weekend continued working on the platform. I'm still working on things and we're accepting sign ups for the wait list now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
@@ -125,10 +130,10 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
         I've been talking with my partner for a while now about building her a system that helps her track her sewing projects. She's currently using a Google sheet and needs something better. We have some great ideas and there's an opportunity for a real product there but I'm just starting to get into working on this and will update with links when I have something to share.
       </p>
       <h2>Open Source Projects</h2>
-      <p>I actively maintain a few open source projects and these as well as more of my software work can be found on <a href="https://github.com/kfinley" target="new">my GitHub account</a>.</p>
+      <p>I actively maintain a few open source projects. These as well as more of my previous software work can be found on <a href="https://github.com/kfinley" target="new">my GitHub account</a>.</p>
       <h3>TypeMerger</h3>
       <p>
-        <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a very small OSS project I've maintained for over 10 years now. TypeMerger is a simple convention-based object merger for .NET Core. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit.
+        <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a very small project I've maintained for over 10 years now. TypeMerger is a simple convention-based object merger for .NET Core. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit. More info can be found on the <a href="http://github.com/kfinley/typemerger" target="new">project page</a>.
       </p>
       <p>
         Over 100,000 downloads via NuGet in the last 5 years.
