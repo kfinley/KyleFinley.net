@@ -6,7 +6,7 @@
 
 <div class="text-center pb-2">
 
-I've worked in tech for over 20 years now and it's been a ride. Here you'll find info on what I'm currently working as well details on my journey in working in software and product development.
+I've worked in tech for over 20 years now and it's been a ride. Here you'll find info on what I'm currently working on and details on my journey working in software and product development.
 
 </div>
 
@@ -15,7 +15,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
   <div class="timeline-item">
     <div class="timeline-item-content"  style="width: 100%;">
       <h2>2022 &#8594; Current</h2>
-      <p>Over the last couple of years I've focused a lot of my time and energy on getting back to playing <router-link to="/music">music</router-link> seriously. But I'm always working on software things. I have several exploratory reference architectures and other projects on <a href="https://github.com/kfinley" target="new">GitHub account</a>. The source for this website is there as well. </p>
+      <p>Over the last couple of years I've focused a lot of my time and energy on playing <router-link to="/music">music</router-link> but I'm always working on software things. I have several exploratory reference architectures and other projects on my <a href="https://github.com/kfinley" target="new">GitHub account</a>. The source for this website is there as well. </p>
     </div>
   </div>
 
@@ -23,9 +23,9 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
     <div class="timeline-item-content">
       <h3>Sports Tracker & Coaching Platform</h3>
       <p>
-       In the spring of 2022 I started trying to work with my father and brother on what I hoped would be a company the three of us could work on together. The plan was to create a platform and collection of apps targeting a variety of sports that would assist with tracking typical statistics for each sport as well as health data while performing those sports. My brother would run product for the bike apps, I'd run product for board sports as wel as code everything, and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by using health data tracked both while performing  individual sports and at rest for analysis. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement from 40 years as a doctor and medical professional.
+       In the spring of 2022 I started trying to work with my father and brother on what I hoped would be a company that the three of us could work on together. The plan was to create a platform and collection of apps targeting a variety of sports that would assist with tracking typical stats for each sport as well as health data while performing those sports. My brother would run product for the bike apps, I'd run product for board sports as well as code everything, and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by analysing health data tracked both while performing  individual sports and while at rest. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement after 40 years as a doctor and medical professional.
       </p>
-      <p>Unfortunately my father passed away unexpectedly in late June. I was able to demo the the design system I'd built for the project the week before he passed and he sent me a message saying "It's amazing what you can do with a computer." That meant a lot. I took a lot of time off at that point and then got back to working on the ideas alone in late 2022.</p>
+      <p>Unfortunately my father passed away unexpectedly in late June. I was able to demo the the design system I'd built for the project a week or so before he passed and he sent me a message saying "It's amazing what you can do with a computer." That meant a lot. I took a lot of time off at that point and then got back to working on things alone in late 2022.</p>
         </div>
   </div>
 
@@ -36,7 +36,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
         In January of 2023 I joined my brother at the USA BMX Silver Dollar Nationals race in Las Vegas, NV. This was my first race since October of 1988 and made it to mains and came home with hardware! My goal was to not finish last and I did that!
       </p>
       <p>
-        While in Las Vegas I showed my brother what I'd been working on and after the weekend continued working on the platform. I'm still working on things but we're accepting wait list & invite sign ups now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
+        While in Las Vegas I showed my brother what I'd been working on. I continued working on it for a while and I'm still working on things. We're accepting wait list & invite sign-ups now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
       </p>
     </div>
   </div>
@@ -141,7 +141,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
       <h2>Mid / Late 90s</h2>
       <h3>Script kiddie &#8594; network admin</h3>
       <p>
-        I started taking computers seriously when I got an Apple PowerBook 190cs in high school. I was quickly spending most my nights on #macfilez reading anything I could get my hands on or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 or Novel boxes that were running things.
+        I started taking computers seriously when I got an Apple PowerBook 190cs in high school. I was quickly spending most my nights on #macfilez reading anything I could get my hands on and started making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 or Novel boxes that were running things.
       </p>
       <p>I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
       </p>
