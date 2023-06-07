@@ -66,7 +66,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       </p>
       <h3>KarmaLoop</h3>
       <p>
-        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Buy me a beer and I'll tell you some crazy stories. Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it's not legal we'll figure out how to make it legal."
+        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it's not legal we'll figure out how to make it legal." Buy me a beer and I'll tell you some crazy stories.
       </p>
       <p>
         KarmaLoop was acquired by Shiekh Shoes (after going bankrupt with over 900M in debt).
@@ -89,7 +89,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
         After my fun time back in food land I joined some former colleagues that had hooked up with an angel funded startup in the financial industry. I joined the group helping build an HSA Platform. Unfortunately I joined far too late to have much impact on the platform architecture and quickly found myself working with a group that had no real interest in what I had to say, but I stuck around for a while before moving across the country and working remote.
       </p>
       <p>
-        My biggest takeaways from this gig were that using Vue with TypeScript was pretty great, there ere advantages to having a polyglot architecture (especially in a cloud environment when it relates to speed & cost), only fools roll their own CloudFormation, and if your deployment takes 45m to an hour from commit to production then you're 100% doing it wrong!
+        My biggest takeaways from this gig were that using Vue with TypeScript was pretty great, there are many advantages to having a polyglot architecture (especially in a cloud environment when it relates to speed & cost), only fools roll their own CloudFormation, and if your deployment takes 45m to an hour from commit to production then you're 100% doing it wrong!
       </p>
       <p>Bend Financial was acquired by HSA Bank in 2022.</p>
     </div>
