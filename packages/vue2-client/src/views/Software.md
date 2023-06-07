@@ -13,9 +13,11 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2 class="text-center">Mid / Late 90's - Script kiddie turned network admin</h2>
+      <h2 class="text-center">Mid / Late 90's - Script kiddie &#8594; network admin</h2>
       <p>
-        I started with an Apple PowerBook 190cs spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 servers or Novel boxes that were running things. I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
+        I started with an Apple PowerBook 190cs spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 servers or Novel boxes that were running things.
+      </p>
+      <p>I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
       </p>
     </div>
   </div>
@@ -77,14 +79,17 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">Mid 2010's - Self Service Food Kiosks & Banking</h2>
       <h3>LeanBox</h3>
       <p>
-        Around 2015 I found myself back in the food industry with an IoT flare to it. I joined LeanBox.com to help them adopt Agile and rebuild the backend and tablet based self service kiosks that ran their in-office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. Unfortunately the managers and owners of the place were pretty unethical. I was gone pretty soon after I was asked to create a fraudulent reporting system (which I refused to do) and informed them that they were overcharging customers (which they ignored).
+        By the mid-2010's I found myself back in the food industry but this time with an IoT flare to it. I joined LeanBox.com to help them adopt Agile and rebuild the backend and tablet based self service kiosks that ran their in-office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. Unfortunately the managers and owners of the place were pretty unethical. I was gone pretty soon after I was asked to create a fraudulent reporting system (which I refused to do) and informed them that they were overcharging customers (which they ignored).
       </p>
       <p>
         LeanBox was acquired by garten in 2021.
       </p>
       <h3>Bend Financial</h3>
       <p>
-        After my fun time back in food land I joined some former colleagues that had hooked up with an angel funded startup in the financial industry. I joined the group helping build an HSA Platform. Unfortunately I joined far too late to have much impact on the platform architecture and quickly found myself working with a group that had no real interest in what I had to say, but I stuck around for a while before moving across the country and working remote. My biggest takeaways from this gig were that using Vue with TypeScript was pretty great, there're advantages to having a polyglot architecture (especially in a cloud environment as it relates to speed & cost, but only with teams that agree on this), only fools roll their own CloudFormation, and if your deployment takes 45m to an hour from commit to production then you're 100% doing it wrong!
+        After my fun time back in food land I joined some former colleagues that had hooked up with an angel funded startup in the financial industry. I joined the group helping build an HSA Platform. Unfortunately I joined far too late to have much impact on the platform architecture and quickly found myself working with a group that had no real interest in what I had to say, but I stuck around for a while before moving across the country and working remote.
+      </p>
+      <p>
+        My biggest takeaways from this gig were that using Vue with TypeScript was pretty great, there ere advantages to having a polyglot architecture (especially in a cloud environment when it relates to speed & cost), only fools roll their own CloudFormation, and if your deployment takes 45m to an hour from commit to production then you're 100% doing it wrong!
       </p>
       <p>Bend Financial was acquired by HSA Bank in 2022.</p>
     </div>
@@ -98,7 +103,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       </p>
       <h3>SwingU</h3>
         <p>
-          In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer?!?!) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance running mostly legacy .NET Framework 4.7 to a more modern cloud stack that could scale. There were many challenges, and the TTPP (typical toxic people problem), but sadly along the way the product manager died in front of the company while presenting at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around.
+          In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer?!?!) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance running mostly legacy .NET Framework 4.7 to a more modern cloud stack that could scale. There were many challenges, and TTPP (typical toxic people problems), but sadly along the way the product manager died in front of the company while presenting at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around.
       </p>
       <p>
         After several months I scheduled a meeting the CEO and CTO to discuss a plan for how I'd agree to continuing to work at the company but was fired by the CTO the day before the meeting (the CTO was soon thereafter gone from the company as well). You can see my <router-link to="/slides/sports-app-product-team-proposal">proposal presentation here</router-link>.
@@ -136,10 +141,10 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <p>I actively maintain a few open source projects. These as well as more of my previous software work can be found on <a href="https://github.com/kfinley" target="new">my GitHub account</a>.</p>
       <h3>TypeMerger</h3>
       <p>
-        <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a very small project I've maintained for over 10 years now. TypeMerger is a simple convention-based object merger for .NET Core. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit. More info can be found on the <a href="http://github.com/kfinley/typemerger" target="new">project page</a>.
+        <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a very small project I've maintained for over 10 years now but don't use anymore. It's a simple convention-based object merger for .NET. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit. More info can be found on the <a href="http://github.com/kfinley/typemerger" target="new">project page</a>.
       </p>
       <p>
-        Over 100,000 downloads via NuGet in the last 5 years.
+        100k+ downloads via NuGet in the last 5 years.
       </p>
       <h3>EFContinuousMigrations</h3>
       <p>
