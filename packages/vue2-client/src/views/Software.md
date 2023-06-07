@@ -15,7 +15,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
     <div class="timeline-item-content">
       <h2 class="text-center">Mid / Late 90's - Script kiddie turned network admin</h2>
       <p>
-        I started with an Apple PowerBook 190cs spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then gig was mostly wiring old school buildings with cat5 and fiber and installing NT4 servers to replace a couple of even older Novel boxes that were running things. I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
+        I started with an Apple PowerBook 190cs spending most my nights on #macfilez or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 servers or Novel boxes that were running things. I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
       </p>
     </div>
   </div>
@@ -94,7 +94,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
     <div class="timeline-item-content">
       <h2 class="text-center">Early 2020's - Pandemic & Golf</h2>
       <p>
-        After leaving Bend I took some time off. It was a super toxic place to work so I wanted some time to recover and enjoy living in San Francisco. Unfortunately only a couple of months into my mini-retirement the pandemic hit. Since I'd been working remote off and on for many years I knew the world was in for a wild ride. I decided to not worry about work for a bit and bought a couple of old Subarues, learned how to work on them, and traveled a lot. In 2020 I spent ~50 nights in a tent between June and November mostly in the US Southwest states.
+        After leaving Bend I took some time off. It was a super toxic place to work so I wanted some time to recover and enjoy living in San Francisco. Unfortunately only a couple of months into my mini-retirement the pandemic hit. Since I'd been working remote off and on for many years I knew the world was in for a wild ride. I decided to not worry about work for a bit and bought a couple of old Subarus, learned how to work on them, and traveled a lot. In 2020 I spent ~50 nights in a tent between June and November mostly in the US Southwest states.
       </p>
       <h3>SwingU</h3>
         <p>
