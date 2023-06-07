@@ -138,7 +138,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Mid / Late 90's</h2>
+      <h2>Mid / Late 90s</h2>
       <h3>Script kiddie &#8594; network admin</h3>
       <p>
         I started taking computers seriously when I got an Apple PowerBook 190cs in high school. I was quickly spending most my nights on #macfilez reading anything I could get my hands on or making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 or Novel boxes that were running things.
@@ -150,7 +150,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Early 2000's</h2>
+      <h2>Early 2000s</h2>
       <h3>From network admin to coder</h3>
       <p>
         Through early college I continued working for my hometown school district. One summer I designed and implemented a multi-campus single Win2k Active Directory domain using point-to-point tunneling VPN servers (ISA boxes) between 4 campuses and the admin building. This reduced the number of standalone domains in the district from around 10 to 1 and let me work remote. This setup is still the foundation of the system today (20+ years later).
@@ -163,7 +163,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Mid 2000's</h2>
+      <h2>Mid 2000s</h2>
       <h3>Tech Traveler</h3>
     </div>
   </div>
@@ -182,7 +182,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Late 2000's / Early 2010's</h2>
+      <h2>Late 2000s / Early 2010s</h2>
       <h3>Crazy Startups!!!</h3>
     </div>
   </div>
@@ -225,7 +225,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Mid / Late 2010's</h2>
+      <h2>Mid / Late 2010s</h2>
       <h3>Self Service Food Kiosks & Financial Industry</h3>
     </div>
   </div>
@@ -234,7 +234,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
     <div class="timeline-item-content">
       <h3>LeanBox</h3>
       <p>
-        By the mid-2010's I found myself back in the food industry but this time with an IoT flare to it. I joined LeanBox.com to help them adopt Agile and rebuild the backend and tablet based self service kiosks that ran their in-office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. Unfortunately the managers and owners of the place were pretty unethical. I was gone pretty soon after I was asked to create a fraudulent reporting system (which I refused to do) and informed them that they were overcharging customers (which they ignored).
+        By the mid-2010s I found myself back in the food industry but this time with an IoT flare to it. I joined LeanBox.com to help them adopt Agile and rebuild the backend and tablet based self service kiosks that ran their in-office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. Unfortunately the managers and owners of the place were pretty unethical. I was gone pretty soon after I was asked to create a fraudulent reporting system (which I refused to do) and informed them that they were overcharging customers (which they ignored).
       </p>
       <p class="no-indent">
         LeanBox was acquired by garten in 2021.
@@ -257,7 +257,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Early 2020's</h2>
+      <h2>Early 2020s</h2>
       <h3>Pandemic & Golf</h3>
       <p>
         After leaving Bend I took some time off. It was a super toxic place to work so I wanted some time to recover and enjoy living in San Francisco. Unfortunately only a couple of months into my mini-retirement the pandemic hit. Since I'd been working remote off and on for many years I knew the world was in for a wild ride. I decided to not worry about work for a bit and bought a couple of old Subarus, learned how to work on them, and traveled a lot. In 2020 I spent ~50 nights in a tent between June and November mostly in the US Southwest states.
