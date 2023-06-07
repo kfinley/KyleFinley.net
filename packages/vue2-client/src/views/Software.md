@@ -65,7 +65,7 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
   <div class="timeline-item">
     <div class="timeline-item-content">
       <h2>Open Source Projects</h2>
-      <p>I actively maintain a few open source projects. These can be found, with more of my previous software work, on my <a href="https://github.com/kfinley" target="new">GitHub account</a>.</p>
+      <p>I actively maintain a few open source projects. These can be found, with more of my software work, on my <a href="https://github.com/kfinley" target="new">GitHub account</a>.</p>
     </div>
   </div>
 
@@ -225,7 +225,8 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2>Mid / Late 2010'sSelf Service Food Kiosks & Financial Industry</h2>
+      <h2>Mid / Late 2010's</h2>
+      <h3>Self Service Food Kiosks & Financial Industry</h3>
     </div>
   </div>
 
