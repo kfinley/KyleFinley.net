@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="jumbotron jumbotron-fluid">
-      <div class="container pt-2">
+      <!-- <div class="container pt-2">
         <p>Musician, Traveler, Software Developer, Photographer, Skater & Kiteboarder</p>
-      </div>
+      </div> -->
     </div>
     <div class="container justified-hyphenated">
       <div class="col-12 pt-2">
