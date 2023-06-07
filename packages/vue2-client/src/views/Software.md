@@ -215,7 +215,7 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
     <div class="timeline-item-content">
       <h3>KarmaLoop</h3>
       <p>
-        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it's not legal we'll figure out how to make it legal." Buy me a beer and I'll tell you some crazy stories.
+        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it isn't legal we'll figure out how to make it legal." Buy me a beer and I'll tell you some crazy stories.
       </p>
       <p class="no-indent">
         KarmaLoop was acquired by Shiekh Shoes (after going bankrupt with over 900M in debt).
