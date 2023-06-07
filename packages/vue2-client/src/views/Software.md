@@ -6,8 +6,7 @@
 
 <div class="text-center pb-2">
 
-I've worked in tech for over 20 years now and it's been a ride. Here you'll find info on what I'm currently working on and details on my journey working in software and product development.
-
+I've worked in tech now for over 20 years now and it's been a ride. Here you'll find info on what kind of software and product development stuff I'm up to and my previous work.
 </div>
 
 <div class="timeline">
@@ -15,7 +14,8 @@ I've worked in tech for over 20 years now and it's been a ride. Here you'll find
   <div class="timeline-item">
     <div class="timeline-item-content"  style="width: 100%;">
       <h2>2022 &#8594; Current</h2>
-      <p>Over the last couple of years I've focused a lot of my time and energy on playing <router-link to="/music">music</router-link> but I'm always working on software things. I have several exploratory reference architectures and other projects on my <a href="https://github.com/kfinley" target="new">GitHub account</a>. The source for this website is there as well. </p>
+      <p>Over the last couple of years I've focused a lot of my time and energy on playing <router-link to="/music">music</router-link> but I'm always working on software things. I have several exploratory reference architectures and other projects on my <a href="https://github.com/kfinley" target="new">GitHub account</a>. Including the <a href="https://github.com/kfinley/kylefinley.net" target="new">source for this website</a>.
+      </p>
     </div>
   </div>
 
