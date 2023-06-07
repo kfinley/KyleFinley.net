@@ -168,6 +168,7 @@ p > img {
   border: 2px solid #ddd;
   border-radius: 5px;
   position: relative;
+  width: 100%;
 }
 
 .timeline-item-content h2 {
@@ -176,6 +177,11 @@ p > img {
 
 .timeline-item-content h3 {
   margin-top: 5px;
+}
+
+.timeline-item-content h2:first-child,
+.timeline-item-content h3:first-of-type {
+  text-align: center !important;
 }
 
 .timeline-item-content p {
@@ -209,4 +215,9 @@ p > img {
   hyphenate-limit-lies: 2;
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
+
+}
+
+.no-indent {
+  text-indent: 0 !important;
 }

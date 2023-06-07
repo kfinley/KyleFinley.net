@@ -91,9 +91,6 @@ export default class ArticleLayout extends Vue {
 </script>
 
 <style lang="scss">
-.no-indent {
-  text-indent: 0;
-}
 
 .article-wrapper {
   padding: 2em;
