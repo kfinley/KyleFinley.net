@@ -76,7 +76,7 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h2 class="text-center">Mid 2010's - Self Service Food Kiosks & Banking</h2>
+      <h2 class="text-center">Mid / Late 2010's - Self Service Food Kiosks & Banking</h2>
       <h3>LeanBox</h3>
       <p>
         By the mid-2010's I found myself back in the food industry but this time with an IoT flare to it. I joined LeanBox.com to help them adopt Agile and rebuild the backend and tablet based self service kiosks that ran their in-office refrigerator based vending machines. The concept was pretty cool but the existing implementation was pretty rough. Unfortunately the managers and owners of the place were pretty unethical. I was gone pretty soon after I was asked to create a fraudulent reporting system (which I refused to do) and informed them that they were overcharging customers (which they ignored).
@@ -119,23 +119,23 @@ I've worked in tech for over 20 years now and it's been a journey.... :zany_face
       <h2 class="text-center">2022 to Current</h2>
       <h3>Sports Tracker & Coaching Platform</h3>
       <p>
-       In the spring 2022 I started trying to work with my father and brother on what I hoped would be a company the three of us could work on together. The plan was to create a collection of apps targeting a variety of sports that would assist with tracking typical statistics as they relate to each sport as well as health data while performing. My brother would run product for the bike division and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by using health data tracked both while performing their individual sports and at rest. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement from 40 years ad a Doctor and medical professional.
+       In the spring 2022 I started trying to work with my father and brother on what I hoped would be a company the three of us could work on together. The plan was to create a platform and collection of apps targeting a variety of sports that would assist with tracking typical statistics for each sport as well as health data while performing those sports. My brother would run product for the bike apps, I'd run product for board sports as wel as code everything, and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by using health data tracked both while performing  individual sports and at rest for analysis. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement from 40 years as a doctor and medical professional.
       </p>
-      <p>Unfortunately my father unexpectedly passed away in late June only a month or so after we started working on things. I took a lot of time off at that point and then got back to working on the ideas alone in late 2022.</p>
+      <p>Unfortunately my father passed away unexpectedly in late June. I was able to demo the the design system for the project the week before he passed and he sent me a message saying "It's amazing what you can do with a computer." I took a lot of time off at that point and then got back to working on the ideas alone in late 2022. I've focused more on playing <router-link to="/music">music</router-link> in 2023 but I'm still slowly working on things.</p>
       <h3>Holeshot BMX</h3>
       <p>
         In January of 2023 I joined my brother at the USA BMX Silver Dollar Nationals race in Las Vegas, NV. This was my first race since October of 1988 and made it to mains and came home with hardware! My goal was to not finish last and I did that!
       </p>
       <p>
-        While in Las Vegas I showed my brother what I'd been working on and after the weekend continued working on the platform. I'm still working on things and we're accepting sign ups for the wait list now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
+        While in Las Vegas I showed my brother what I'd been working on and after the weekend continued working on the platform. I'm still working on things but we're accepting wait list & invite sign ups now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
       </p>
       <h3>Longboard / Skate Tracker</h3>
       <p>
-        I'm working on a combination standalone WatchOS and web app that will track longboard sessions and health data and will add updates when I'm ready to share.
+        I'm working on a combination standalone WatchOS and web app that will track longboard sessions and health data. I'll add updates when I'm ready to share.
       </p>
       <h3>Sewing Project & Materials Tracker</h3>
       <p>
-        I've been talking with my partner for a while now about building her a system that helps her track her sewing projects. She's currently using a Google sheet and needs something better. We have some great ideas and there's an opportunity for a real product there but I'm just starting to get into working on this and will update with links when I have something to share.
+        I've been talking with my partner for a while now about building her a system that helps her track her sewing projects. She's currently using a G sheet and needs something better. We have some great ideas and there's an opportunity for a real product there but I'm just starting to get into working on this and will update with links when I have something to share.
       </p>
       <h2>Open Source Projects</h2>
       <p>I actively maintain a few open source projects. These as well as more of my previous software work can be found on <a href="https://github.com/kfinley" target="new">my GitHub account</a>.</p>
