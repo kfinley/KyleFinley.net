@@ -15,7 +15,7 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
   <div class="timeline-item">
     <div class="timeline-item-content"  style="width: 100%;">
       <h2>2022 &#8594; Current</h2>
-      <p>Over the last couple of years I've focused a lot of my time and energy on playing <router-link to="/music">music</router-link> but I'm always working on software things. I have several exploratory reference architectures and other projects on my <a href="https://github.com/kfinley" target="new">GitHub account</a>. Including the <a href="https://github.com/kfinley/kylefinley.net" target="new">source for this website</a>.
+      <p>Over the last yearor so I've focused a lot of my time and energy on playing <router-link to="/music">music</router-link> but I'm always working on software things. I have several exploratory reference architectures and other projects on my <a href="https://github.com/kfinley" target="new">GitHub account</a>. Including the <a href="https://github.com/kfinley/kylefinley.net" target="new">source for this website</a>.
       </p>
     </div>
   </div>
