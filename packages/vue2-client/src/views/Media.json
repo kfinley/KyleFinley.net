@@ -1,22 +1,22 @@
 {
-  "title": "Audio and Videos from various shows - KyleFinley.net",
+  "title": "Recordings of various shows - KyleFinley.net",
   "allowAnonymous": true,
   "metaTags": [
     {
       "name": "description",
-      "content": "Audio and Videos from various shows. Some are me some are other folks."
+      "content": "Recordings of various shows. Some are me some are other folks."
     },
     {
       "itemprop": "name",
-      "content": "Audio and Videos from various shows"
+      "content": "Recordings of various shows"
     },
     {
       "itemprop": "description",
-      "content": "Audio and Videos from various shows. Some are me some are other folks."
+      "content": "Recordings of various shows. Some are me some are other folks."
     },
     {
       "property": "og:title",
-      "content": "Audio and Videos from various shows - KyleFinley.net"
+      "content": "Recordings of various shows - KyleFinley.net"
     },
     {
       "property": "og:type",
@@ -32,7 +32,7 @@
     },
     {
       "property": "og:description",
-      "content": "Audio and Videos from various shows. Some are me some are other folks."
+      "content": "Recordings of various shows. Some are me some are other folks."
     },
     {
       "property": "og:site_name",

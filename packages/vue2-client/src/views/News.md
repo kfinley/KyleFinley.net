@@ -3,6 +3,11 @@
 # News Page
 </div>
 
+### June 7, 2023
+---
+
+Updated software page. GDrive based audio player stable now. Continuing to fix content and redirects.
+
 ### June 4, 2023
 ---
 

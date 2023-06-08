@@ -5,7 +5,7 @@
       <p>
         <i>Jazz, Bluegrass, and Americana upright bassist currently slappin' strings around the San Francisco Bay area. </i>
       </p>
-      <p>Recordings can be found on my <br/><router-link to="/media">Media Page</router-link></p>
+      <p>Recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     </div>
     <Gigs class="text-center" />
     <h4 class="text-center pt-4">Bands &amp; Jams</h4>
@@ -17,6 +17,10 @@
       <li>
         <em><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a></em> - Thursday &amp; Friday nights at
         <a href="https://www.ulasf.com" target="new">Ula SF</a> in Union Sq. (I'm new to the rotation and playing a lot lately!)
+      </li>
+      <li>
+        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
+        privileged to fill in on bass with Aaron & Richard playing originals and classic Americana/Bluegrass
       </li>
       <li><em>The Lucky Horseshoe Open Jazz Jam</em> - Every 3rd Wednesday of the Month 8-11pm</li>
       <li><em>The Lucky Horseshoe Sunday Bluegrass Jam</em> - Every Sunday 4-7pm</li>

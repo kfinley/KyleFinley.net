@@ -1,5 +1,5 @@
 import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
+import VueRouter, { RawLocation, Route, RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Articles from "../articles";
 import { createRouterLayout } from 'vue-router-layout'
@@ -16,6 +16,27 @@ const LayoutArticle = createRouterLayout(layout => {
 });
 
 Vue.use(VueRouter);
+
+const originalPush = VueRouter.prototype.push;
+VueRouter.prototype.push = function push(location: RawLocation): Promise<Route> {
+  return new Promise((resolve, reject) => {
+    originalPush.call(this, location, () => {
+      // on complete
+
+      resolve(this.currentRoute);
+    }, (error) => {
+      // on abort
+
+      // only ignore NavigationDuplicated error
+      if (error.name === 'NavigationDuplicated' ||
+        error.message.startsWith('Navigation cancelled')) {
+        resolve(this.currentRoute);
+      } else {
+        reject(error);
+      }
+    });
+  });
+};
 
 const viewsMeta = import.meta.glob('../views/*.json')
 
@@ -307,6 +328,7 @@ export const createRouter = async () => {
       case "Articles":
       case "Media":
       case "Music":
+      case "Software":
       case "Travel":
       case "News":
       case "Contact":

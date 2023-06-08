@@ -57,5 +57,5 @@ Here are some pictures I got of the guys during a break from riding.
 <div class="no-indent">
 All photographs taken and owned by Kyle Finley.<br>
 All rights reserved.<br>
-For usage please contact me via Twitter
+For usage please contact me
 </div>

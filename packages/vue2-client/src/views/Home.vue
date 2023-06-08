@@ -1,16 +1,15 @@
 <template>
   <section>
-    <div class="jumbotron jumbotron-fluid">
-    </div>
+    <div class="jumbotron jumbotron-fluid"></div>
     <div class="container justified-hyphenated">
       <div class="col-12 pt-2">
         <h2 class="text-center">Music</h2>
         <p>
-          I'm a jazz, bluegrass, rock, folk, and Americana musician. I primarily play upright bass. My ax is a 1980 Johannes Rubner upright.
-          I also play guitar and I'm currently woodshedding trombone after a 20 year hiatus.
+          I'm a jazz, bluegrass, rock, folk, and Americana musician. I primarily play upright bass. My ax is a 1980 Johannes Rubner upright
+          I've had since early college. I also play guitar and I'm currently woodshedding trombone after a 20 year hiatus.
         </p>
         <p>
-          My <router-link to="/music">msic page</router-link> has more info on bands I'm playing with, past shows, recordings, and upcoming
+          My <router-link to="/music">music page</router-link> has more info on groups I'm playing with, past shows, recordings, and upcoming
           gigs.
         </p>
         <h2 class="text-center">Software Development</h2>
