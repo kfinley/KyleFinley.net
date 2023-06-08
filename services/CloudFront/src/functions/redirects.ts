@@ -23,7 +23,8 @@ export const handler: Handler = async (event) => {
       return createResponse('schedule-tweets-with-images-from-google-sheets', pathAndQuery);
     case '/archive/2009/10/15/1339.aspx':
       return createResponse('typemerger', pathAndQuery);
-
+    case '/archive/2006/06/20/173.aspx':
+      return createResponse('', pathAndQuery);
   };
   return event.Records[0].cf.request;
 };
