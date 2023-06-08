@@ -1,0 +1,49 @@
+{
+  "title": "Ignore DS_Store and Icon files in GIT on Mac OSX",
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Just a simple trick to ignore DS_Store and Icon system files globally for GIT repositories on Mac OSX."
+    },
+    {
+      "itemprop": "name",
+      "content": "Ignore DS_Store and Icon files in GIT on Mac OSX"
+    },
+    {
+      "itemprop": "description",
+      "content": "Just a simple trick to ignore DS_Store and Icon system files globally for GIT repositories on Mac OSX.."
+    },
+    {
+      "property": "og:title",
+      "content": "Ignore DS_Store and Icon files in GIT on Mac OSX"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/ignore_ds_store_and_icon_files_with_git_for_mac"
+    },
+    {
+      "property": "og:description",
+      "content": "Just a simple trick to ignore DS_Store and Icon system files globally for GIT repositories on Mac OSX."
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net"
+    },
+    {
+      "property": "article:published_time",
+      "content": "12/26/2015 10:03:00 AM"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "12/26/2015 12:00:00 AM"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}

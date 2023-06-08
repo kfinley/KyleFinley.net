@@ -9,6 +9,8 @@ export const createAdditionalBehaviorsForRedirects = (redirect: {
   return {
     '/archive/2009/10/15/1339.aspx': redirect,
     '/sheets-to-tweets': redirect,
-    '/archive/2006/06/20/173.aspx': redirect
+    '/archive/2006/06/20/173.aspx': redirect,
+    '/archive/2005/09/29/16.aspx': redirect,
+    '/photographs-of-boston-statues-in-the-snow': redirect
   }
 };
