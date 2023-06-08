@@ -7,6 +7,7 @@
 <div class="text-center pb-2">
 
 I've worked in tech now for over 20 years now and it's been a ride. Here you'll find info on what kind of software and product development stuff I'm up to and my previous work.
+
 </div>
 
 <div class="timeline">
@@ -23,9 +24,11 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
     <div class="timeline-item-content">
       <h3>Sports Tracker & Coaching Platform</h3>
       <p>
-       In the spring of 2022 I started trying to work with my father and brother on what I hoped would be a company that the three of us could work on together. The plan was to create a platform and collection of apps targeting a variety of sports that would assist with tracking typical stats for each sport as well as health data while performing those sports. My brother would run product for the bike apps, I'd run product for board sports as well as code everything, and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by analysing health data tracked both while performing  individual sports and while at rest. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement after 40 years as a doctor and medical professional.
+        In the spring of 2022 I started trying to work with my father and brother on what I hoped would be a company that the three of us could work on together. The plan was to create a platform and collection of apps targeting a variety of sports that would assist with tracking typical stats for each sport as well as health data while performing those sports. My brother would run product for the bike apps, I'd run product for board sports as well as code everything, and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by analysing health data tracked both while performing  individual sports and while at rest. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement after 40 years as a doctor and medical professional.
       </p>
-      <p>Unfortunately my father passed away unexpectedly in late June. I was able to demo the the design system I'd built for the project a week or so before he passed and he sent me a message saying "It's amazing what you can do with a computer." That meant a lot. I took a lot of time off at that point and then got back to working on things alone in late 2022.</p>
+      <p>
+        Unfortunately my father passed away unexpectedly in late June. I was able to demo the the design system I'd built for the project a week or so before he passed and he sent me a message saying "It's amazing what you can do with a computer." That meant a lot. I took a lot of time off at that point and then got back to working on things alone in late 2022.
+      </p>
         </div>
   </div>
 
@@ -143,7 +146,8 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
       <p>
         I started taking computers seriously when I got an Apple PowerBook 190cs in high school. I was quickly spending most my nights on #macfilez reading anything I could get my hands on and started making very basic websites. I started working for my hometown school district pretty soon after they caught me hacking into the high school dial-in unix box. Back then the gig was mostly wiring old school buildings with cat5 and fiber and maintaining NT4 or Novel boxes that were running things.
       </p>
-      <p>I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
+      <p>
+        I did the whole certification thing and got A+, Network+, and MCSE certified while working at a tech training center as an assistant network admin & lab assistant. I also bought stock in Apple in 1997... that was one of my better ideas!!
       </p>
     </div>
   </div>
@@ -215,7 +219,7 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
     <div class="timeline-item-content">
       <h3>KarmaLoop</h3>
       <p>
-        From there I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it isn't legal we'll figure out how to make it legal." Buy me a beer and I'll tell you some crazy stories.
+        From FirstGiving I moved into eCommerce working with KarmaLoop.com. This place was totally nuts! Fun but just crazy town on almost a daily basis. The potential was huge here and I learned a lot while working as a senior dev and then as their Search & Social Optimization Manager leading the social marketing team within the marketing department. Straddling the Tech and Marketing department while reporting to both the CTO and the director of marketing was an adventure to say the least! Probably one of the most insane thing I ever heard from a C level was at this company... "Start with the profitable. If it isn't legal we'll figure out how to make it legal." Buy me a beer and I'll tell you some crazy stories.
       </p>
       <p class="no-indent">
         KarmaLoop was acquired by Shiekh Shoes (after going bankrupt with over 900M in debt).

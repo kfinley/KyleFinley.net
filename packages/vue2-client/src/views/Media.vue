@@ -3,17 +3,20 @@
     <h2>Media Page</h2>
     <p>Recordings of gigs, jams, and a few random shows.</p>
     <p>Not professional recordings. They're made with an iPhone sitting somewhere near me using the Memo app.</p>
-    <media-player :tracks="tracks"></media-player>
+   <iframe-player :tracks="tracks"></iframe-player>
+    <!-- <media-player :tracks="tracks"></media-player> -->
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import MediaPlayer from "../components/MediaPlayer.vue";
+// import MediaPlayer from "../components/MediaPlayer.vue";
+import iFramePlayer from "../components/iFramePlayer.vue";
 
 @Component({
   components: {
-    MediaPlayer
+    'iframe-player': iFramePlayer,
+    // MediaPlayer
   }
 })
 export default class Music extends Vue {
