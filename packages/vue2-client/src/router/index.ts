@@ -17,6 +17,7 @@ const LayoutArticle = createRouterLayout(layout => {
 
 Vue.use(VueRouter);
 
+// ht: https://stackoverflow.com/a/67102038
 const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location: RawLocation): Promise<Route> {
   return new Promise((resolve, reject) => {

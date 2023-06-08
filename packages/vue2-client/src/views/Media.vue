@@ -66,10 +66,22 @@ export default class Music extends Vue {
       { title: "The Cody Sisters", location: "Amado's SF", date: "5/24/2023", id: "18Q_gKk0o6w5qShoOBK83kCQuLzx9a5oj" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "5/21/2023", id: "1K1zMjTtyyYtygLkR-Rw6jP3IP_5FF-NP" },
       {
-        title: "Parklet Jam (featuring Daisy)",
+        title: "Parklet Jam (featuring Daisy) - Full Set",
         location: "The Lucky Horseshoe",
         date: "5/23/2023",
         id: "12IlH5Qowx5ZD3Rblp0zyFlT6uk7YOPXu"
+      },
+      {
+        title: "Daisy & Friends - They're Red Hot",
+        location: "The Lucky Horseshoe Parklet",
+        date: "5/23/2023",
+        id: "1lxUYS0FjQDNzOsxRZX9N8sTTfl9V-coS"
+      },
+      {
+        title: "Daisy & Friends - San Francisco Bay Blues",
+        location: "The Lucky Horseshoe Parklet",
+        date: "5/23/2023",
+        id: "1FGfj1PeRhzOanu-EY2cZ7JtJ46OIe0tU"
       },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 1", date: "5/17/2023", id: "1YSrIZaYuH0Dufo1wm84YlTIghtuurTxX" },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 2", date: "5/17/2023", id: "1JYubC-BTwk4jkYARl54D46Gez-Wd_hT3" },
@@ -84,6 +96,36 @@ export default class Music extends Vue {
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 1", date: "4/19/2023", id: "1aD6PFdnn_bLE4mHT2oTJ8bnVhJkA17xH" },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 2", date: "4/19/2023", id: "1qL-CwSJW_j0lT1vlfozhlk9f8bHSXBL1" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "4/9/2023", id: "1hUGLWyNNH4H0L4ThmSXfmjqtN21Ft0gF" },
+      {
+        title: "DKE - Coffee Stains (Daisy Original)",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "132G2xcyEln3pbNJ0G_-fdOLpcY5m6Na-"
+      },
+      {
+        title: "DKE - Coffee Stains (Daisy Original)'",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1qXgu2LLOKWxv4RMcKRPc0sJ-rddR_oCN"
+      },
+      {
+        title: "DKE - How'm I Doin'",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1HiEQNwhJ7gCC0_ObID6_8fPtTDx6RscW"
+      },
+      {
+        title: "DKE - She Lived Down By The Firehouse",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1A-8ruiLp4OVULfWVZDarD9FiK-rZz2AA"
+      },
+      {
+        title: "DKE - Railroad Bill",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1VrotkPOOWl9d_lcuUuiJQlH3OoN2A72E"
+      },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/26/2023", id: "1O43chqAngKhfsXxk8V7dt9X0ZBpA6OGz" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/19/2023", id: "1gqb4IGXiRPx7X8nFM_X_L4R_W4XY4E0G" },
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe", date: "3/15/2023", id: "1Ne6Qpm3hVcoquJWvT6X5S56j2wECxH7E" },
