@@ -83,8 +83,6 @@ export class InfrastructureStack extends Stack {
       }
     ];
 
-    const additionalBehaviors = createAdditionalBehaviorsForRedirects(origin, edgeLambdas);
-
     const cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
       domainNames: [domainName],
       defaultBehavior: {
@@ -109,7 +107,7 @@ export class InfrastructureStack extends Stack {
       // },
 
       // Handling redirects with Additional Behaviors
-      additionalBehaviors,
+      additionalBehaviors: createAdditionalBehaviorsForRedirects({ origin, edgeLambdas }),
       errorResponses: [
         {
           httpStatus: 403,
