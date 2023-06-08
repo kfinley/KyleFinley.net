@@ -5,7 +5,7 @@
       @ {{ track.location }} <br />
       {{ track.date }}
     </p>
-    <iframe ref="player" frameborder="0" width="500" height="100" :src="src"></iframe>
+    <iframe ref="player" frameborder="0" width="100%" height="100" :src="src"></iframe>
   </div>
 </template>
 
