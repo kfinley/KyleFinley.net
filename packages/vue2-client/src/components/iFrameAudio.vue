@@ -5,7 +5,9 @@
       @ {{ track.location }} <br />
       {{ track.date }}
     </p>
-    <iframe ref="player" frameborder="0" width="100%" height="100" :src="src"></iframe>
+    <div class="player-container">
+      <iframe ref="iframe" frameborder="0" width="100%" height="200" :src="src"></iframe>
+    </div>
   </div>
 </template>
 
@@ -14,10 +16,12 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class iFrameAudio extends Vue {
-  track: { name: string; location: string; date: string; id: string } = null;
+  track: { name: string; title: string; location: string; date: string; id: string } | null = null;
+
+  mounted() {}
 
   get src() {
-    return `https://drive.google.com/file/d/${this.track.id}/preview `;
+    return `https://drive.google.com/file/d/${this.track!.id}/preview `;
   }
 
   play() {
@@ -25,3 +29,11 @@ export default class iFrameAudio extends Vue {
   }
 }
 </script>
+
+<style>
+.player-container {
+  height: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+</style>

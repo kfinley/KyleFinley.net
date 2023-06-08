@@ -26,24 +26,16 @@ import iFrameAudio from "./iFrameAudio.vue";
 })
 export default class iFramePlayer extends Vue {
   @Prop({ required: true })
-  tracks!: Array<{ name: string; location: string; date: string; id: string }>;
+  tracks!: Array<{ name: string; title: string; location: string; date: string; id: string }>;
 
   selectedTrackIndex: number = -1;
   showPlayer: boolean = false;
-  audio: iFrameAudio = null;
 
   playTrack(index: number): void {
     this.selectedTrackIndex = index;
     this.showPlayer = true;
-    this.audio = null;
-    this.audio = this.$refs.audio as iFrameAudio;
-    this.audio.track = this.tracks[index];
-    this.audio.play();
-  }
-
-  onAudioEnded(): void {
-    this.selectedTrackIndex = -1;
-    this.showPlayer = false;
+    (<iFrameAudio>this.$refs!.audio!).track = this.tracks[index];
+    (<iFrameAudio>this.$refs!.audio!).play();
   }
 
   listing(track: { title: string; location: string; date: string; id: string }) {

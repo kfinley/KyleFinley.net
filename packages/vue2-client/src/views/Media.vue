@@ -3,51 +3,53 @@
     <h2>Media Page</h2>
     <p>Recordings of gigs, jams, and a few random shows.</p>
     <p>Not professional recordings. They're made with an iPhone sitting somewhere near me using the Memo app.</p>
-   <iframe-player :tracks="tracks"></iframe-player>
-    <!-- <media-player :tracks="tracks"></media-player> -->
+    <media-player :tracks="tracks"></media-player>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-// import MediaPlayer from "../components/MediaPlayer.vue";
-import iFramePlayer from "../components/iFramePlayer.vue";
+import MediaPlayer from "../components/MediaPlayer.vue";
 
 @Component({
   components: {
-    'iframe-player': iFramePlayer,
-    // MediaPlayer
+    MediaPlayer
   }
 })
 export default class Music extends Vue {
   get tracks() {
     return [
-            {
+      {
         title: "Nobody From Nashville",
         location: "Morgan Hill Birthday - Set 1",
         date: "06/03/2023",
         id: "1t58ThL5TqsxDLwxZv1KXG0ph8LaYFyhz"
-      },{
+      },
+      {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 1",
         date: "06/01/2023",
         id: "1hSf9NWxZ2VsoJwh1zu-GDestvLevQYR1"
-      },{
+      },
+      {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 2",
         date: "06/01/2023",
         id: "177tMViSyOtiN1WAPKGZoJrDzBdM4l-1K"
-      },{
+      },
+      {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 3",
         date: "06/01/2023",
         id: "15-ZrEU4sqGqofUC1QIHf2tsUPoa0Xx-U"
-      },{
+      },
+      {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 4",
         date: "06/01/2023",
         id: "10vaABQN0EePFVyvBhUiQyIPMf7y8k2JW"
-      },{
+      },
+      {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 1",
         date: "05/26/2023",

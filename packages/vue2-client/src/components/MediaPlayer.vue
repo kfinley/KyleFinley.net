@@ -26,7 +26,7 @@ import AudioPlayer from "./AudioPlayer.vue";
 })
 export default class MediaPlayer extends Vue {
   @Prop({ required: true })
-  tracks!: Array<{ name: string; location: string; date: string; id: string }>;
+  tracks!: Array<{ name: string; title: string; location: string; date: string; id: string }>;
 
   selectedTrackIndex: number = -1;
   showPlayer: boolean = false;

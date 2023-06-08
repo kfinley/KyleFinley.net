@@ -1,9 +1,18 @@
 <template>
   <div ref="player" class="audio-player" v-if="track">
-    <p class="font-weight-bold font-italic mb-0" v-if="isFailed">
-      The {{ track.title }} @ {{ track.location }} recording is too long...
-      <a :href="downloadLink" target="_blank">Open the mp3 file in a new window to listen or download</a>.
-    </p>
+    <div v-if="isFailed">
+      <p class="font-weight-bold font-italic mb-0" >
+        Now Playing <br />{{ track.title }} <br />
+        @ {{ track.location }} <br />
+        {{ track.date }}
+      </p>
+      <p>
+        (Unable to stream. iFrame player is being used.)
+      </p>
+      <div class="player-container">
+        <iframe ref="iframe" frameborder="0" width="600" height="200" :src="iframeSrc"></iframe>
+      </div>
+    </div>
     <p class="font-weight-bold font-italic mb-0" v-else>
       Now Playing <br />{{ track.title }} <br />
       @ {{ track.location }} <br />
@@ -45,7 +54,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class AudioPlayer extends Vue {
-  track: { name: string; location: string; date: string; id: string } = null;
+  track: { name: string; title: string; location: string; date: string; id: string } | null = null;
 
   isPlaying = false;
   isPaused = false;
@@ -68,6 +77,9 @@ export default class AudioPlayer extends Vue {
 
   get src() {
     return `https://docs.google.com/uc?export=open&id=${this.track.id}`;
+  }
+  get iframeSrc() {
+    return `https://drive.google.com/file/d/${this.track!.id}/preview`;
   }
 
   get downloadLink() {
@@ -123,8 +135,8 @@ export default class AudioPlayer extends Vue {
         playPromise
           .then(function () {
             // Automatic playback started!
-            this.$nextTick(function () {
-              this.$refs["audioPlayer"].focus();
+            _this.$nextTick(function () {
+              _this.$refs["audioPlayer"].focus();
             });
           })
           .catch(function (error) {
@@ -252,5 +264,11 @@ export default class AudioPlayer extends Vue {
 
 .formatted-duration {
   font-size: 0.8rem;
+}
+
+.player-container {
+  height: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 </style>
