@@ -35,7 +35,13 @@
     "i:prod": "npm i --production && npm run bootstrap:prod",
     "clean-smoke": "npm run super-clean && npm run i:prod && npm run smoke",
     "smoke": "npm run build && npm run cdk synth",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "node scripts/compileTypeScript.js && node scripts/precommit.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
   },
   "author": {
     "name": "Kyle Finley",
@@ -52,8 +58,10 @@
     "@serverless/typescript": "^3.21.0",
     "axios": "1.2.1",
     "dotenv": "^16.0.3",
+    "husky": "^7.0.0",
     "inversify-props": "^2.2.6",
     "lerna": "^5.4.3",
+    "pre-commit": "^1.2.2",
     "reflect-metadata": "^0.1.13",
     "serverless": "^2.72.3",
     "serverless-dynamodb-local": "^0.2.40",
