@@ -97,13 +97,13 @@ export default class Music extends Vue {
       { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 2", date: "4/19/2023", id: "1qL-CwSJW_j0lT1vlfozhlk9f8bHSXBL1" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "4/9/2023", id: "1hUGLWyNNH4H0L4ThmSXfmjqtN21Ft0gF" },
       {
-        title: "DKE - Coffee Stains (Daisy Original)",
+        title: "DKE - Bill Bailey",
         location: "Golden Gate Park",
         date: "4/1/2023",
         id: "132G2xcyEln3pbNJ0G_-fdOLpcY5m6Na-"
       },
       {
-        title: "DKE - Coffee Stains (Daisy Original)'",
+        title: "DKE - Coffee Stains (Daisy Original)",
         location: "Golden Gate Park",
         date: "4/1/2023",
         id: "1qXgu2LLOKWxv4RMcKRPc0sJ-rddR_oCN"
