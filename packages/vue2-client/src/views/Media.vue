@@ -21,11 +21,60 @@ export default class Music extends Vue {
   get tracks() {
     return [
       {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 1",
+        date: "06/09/2023",
+        id: "12NU6WDzq9MbcBWvamAGD_Aj3CIFTJc9S"
+      },
+      {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 2",
+        date: "06/09/2023",
+        id: "1QdGDHn-Z-NYn-eAy_JAly2iVwbvshZ5c"
+      },
+      {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 3",
+        date: "06/09/2023",
+        id: "1u7txq6LIDRxur_w9jf4Mjl8KE1wKLsKm"
+      },
+      {
         title: "Nobody From Nashville",
         location: "Morgan Hill Birthday - Set 1",
         date: "06/03/2023",
         id: "1t58ThL5TqsxDLwxZv1KXG0ph8LaYFyhz"
       },
+      {
+        title: "Nobody From Nashville",
+        location: "Morgan Hill Birthday - Set 2",
+        date: "06/03/2023",
+        id: "1zPlx3ooaluX90hYm4V282XfVeA4Qtjm1"
+      },
+      {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 1",
+        date: "06/02/2023",
+        id: "1IBiKf_IhJEDO8Lp-1boseWEg7XJsH1s4"
+      },
+      {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 2",
+        date: "06/02/2023",
+        id: "1JM_BKd2s2Cr-ULQCdHJonZXrtRJ_qpOo"
+      },
+      {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 3",
+        date: "06/02/2023",
+        id: "1OV01BPNcqfVnMbmNZarAT2y3Vocr1hQS"
+      },
+      {
+        title: "West Side Jazz Club",
+        location: "Ula SF - Set 4",
+        date: "06/02/2023",
+        id: "1_uEOZUDf8FdmN3bYRtnSO8YkL1MYf4x-"
+      },
+
       {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 1",
