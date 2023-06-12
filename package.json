@@ -36,11 +36,12 @@
     "clean-smoke": "npm run super-clean && npm run i:prod && npm run smoke",
     "smoke": "npm run build && npm run cdk synth",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "node scripts/compileTypeScript.js && node scripts/precommit.js"
+    "pre-commit": "node scripts/compileTypeScript.js && node scripts/precommit.js",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "npm run pre-commit"
     }
   },
   "author": {
