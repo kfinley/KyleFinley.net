@@ -39,11 +39,6 @@
     "pre-commit": "node scripts/compileTypeScript.js && node scripts/precommit.js",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run pre-commit"
-    }
-  },
   "author": {
     "name": "Kyle Finley",
     "email": "kyle@kylefinley.net"
