@@ -20,6 +20,7 @@ export const handler: Handler = async (event) => {
 
   switch (pathAndQuery[0]) {
     case '/sheets-to-tweets':
+    case '/sheets-to-tweets-schedule-tweets-with-images':
       return createResponse('schedule-tweets-with-images-from-google-sheets', pathAndQuery);
     case '/archive/2009/10/15/1339.aspx':
       return createResponse('typemerger', pathAndQuery);
