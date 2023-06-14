@@ -21,6 +21,18 @@ export default class Music extends Vue {
   get tracks() {
     return [
       {
+        title: "June MusicLuck - Bangers",
+        location: "The Mission SF, CA",
+        date: "06/14/2023",
+        id: "11f0VXqVZO9osBK39hqr8C9CWJ8kTy50l"
+      },
+      {
+        title: "June MusicLuck - Ballads",
+        location: "The Mission SF, CA",
+        date: "06/14/2023",
+        id: "162XA7oEBatYdUMfC6yjmTTcHohM8SMjE"
+      },
+      {
         title: "West Side Jazz Club",
         location: "Ula SF - Set 1",
         date: "06/09/2023",
