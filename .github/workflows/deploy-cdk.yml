@@ -25,8 +25,7 @@ jobs:
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
         run: |
-          npm run lerna --version
-          npm run i:prod && cd ./packages/vue2-client
+          npm run i:prod && npm run lerna --version && cd ./packages/vue2-client
           echo 'VITE_GITHUB_OAUTH_CLIENT_ID=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}' > .env
           echo 'VITE_GITHUB_OAUTH_CLIENT_SECRET=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}' >> .env
           echo 'VITE_GITHUB_OAUTH_REDIRECT_URL=https://kylefinley.net/github_auth_callback' >> .env
