@@ -15,18 +15,29 @@
         Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro
       </li>
       <li>
-        <em><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a></em> - Thursday &amp; Friday nights at
-        <a href="https://www.ulasf.com" target="new">Ula SF</a> in Union Sq. (I'm new to the rotation and playing a lot lately!)
+        <em>The Dirty Works Jazz Band</em> - This is a new and evolving jazz group I'm forming. We have an upcoming gig at the Lucky
+        Horseshoe on September 23rd
+      </li>
+      <li>
+        <em>The Standards Trio</em> - Jazz Trio featuring myself on Bass, Zack Sandars on Guitar, and Eli Kemp on Drums. You can check out
+        <a href="https://zacksanders.bandcamp.com/album/standards-trio-live-in-sf" target="live"
+          >our live album recorded at Le Petit Paris 75</a
+        >
+        for a sample of our sound
+      </li>
+      <li>
+        <em><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on
+        Tenor Sax and Vocals. Gigs around the Bay Area
       </li>
       <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
         privileged to fill in on bass with Aaron & Richard playing originals and classic Americana/Bluegrass
       </li>
-      <li><em>The Lucky Horseshoe Open Jazz Jam</em> - Every 3rd Wednesday of the Month 8-11pm</li>
-      <li><em>The Lucky Horseshoe Sunday Bluegrass Jam</em> - Every Sunday 4-7pm</li>
+      <li><em>Open Jazz Jam @ The Lucky Horseshoe</em> - Every 3rd Wednesday of the Month 8-11pm</li>
+      <li><em>Sunday Bluegrass Jam @ The Lucky Horseshoe</em> - Every Sunday 4-7pm</li>
       <li>
-        <em>The Lucky Horseshoe Showcase Bluegrass Jam</em> - 1st Sunday of the month from 8-9:30pm (currently in hiatus but hopefully back
-        soon!)
+        <em>Showcase Bluegrass Jam @ The Lucky Horseshoe</em> - 1st Sunday of the month from 8-9:30pm (currently in hiatus but hopefully
+        back soon!)
       </li>
       <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
       <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
@@ -35,8 +46,8 @@
         near Stowe Lake on JFK
       </li>
       <li>
-        <em>Golden Gate Jazz Sextet w Guitar Scott</em> - I'm currently a fill in bassist when Scott needs a player. This group has been
-        playing in GG park on Friday's at the Conservatory of Flowers tunnel for several years
+        <em>Scott's Golden Gate Jazz Sextet</em> - We play jazz standards for the community and tourists in the park at the Conservatory of
+        Flowers Tunnel. This group has been playing in GG park for several years
       </li>
       <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
