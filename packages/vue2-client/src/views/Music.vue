@@ -15,15 +15,16 @@
         Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro
       </li>
       <li>
-        <em>The Dirty Works Jazz Band</em> - This is a new and evolving jazz group I'm forming. We have an upcoming gig at the Lucky
-        Horseshoe on September 23rd
+        <em>Dirty Works Jazz Band</em> - This is a group I run that's rooted around the Lucky Horseshoe jazz jam core players. We're
+        anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano, Stu on Guitar, Dan on alto sax, and Peter
+        on trumpet. We play ar range of classic standards including ballads, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
-        <em>The Standards Trio</em> - Jazz Trio featuring myself on Bass, Zack Sandars on Guitar, and Eli Kemp on Drums. You can check out
+        <em>The Standards Trio</em> - Jazz Trio featuring Zack Sandars on Guitar, Eli Kemp on Drums, and me on bass. You can check out
         <a href="https://zacksanders.bandcamp.com/album/standards-trio-live-in-sf" target="live"
           >our live album recorded at Le Petit Paris 75</a
         >
-        for a sample of our sound
+        for a sample of our songs
       </li>
       <li>
         <em><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on
@@ -46,8 +47,8 @@
         near Stowe Lake on JFK
       </li>
       <li>
-        <em>Scott's Golden Gate Jazz Sextet</em> - We play jazz standards for the community and tourists in the park at the Conservatory of
-        Flowers Tunnel. This group has been playing in GG park for several years
+        <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
+        This group has been playing in GG park for several years
       </li>
       <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
