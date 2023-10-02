@@ -6,7 +6,9 @@
 
 <div class="text-center pb-2">
 
-I've worked in tech now for over 20 years now and it's been a ride. Here you'll find info on what kind of software and product development stuff I'm up to and my previous work.
+I've worked in tech now for over 20 years. I started out doing tech work at the end of high school when I was pulling cables and setting up networks and servers for the public school district in my hometown. In college I moved into writing software. After college I consulted for a large US based tech firm working with large clients all over the US. After leaving consulting I started working in the startup world on the east coast.
+
+I'm always working on several projects. Below you'll find info on what kind of software related things I'm up to as well as some details on my previous work.
 
 </div>
 
@@ -24,22 +26,19 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
     <div class="timeline-item-content">
       <h3>Sports Tracker & Coaching Platform</h3>
       <p>
-        In the spring of 2022 I started trying to work with my father and brother on what I hoped would be a company that the three of us could work on together. The plan was to create a platform and collection of apps targeting a variety of sports that would assist with tracking typical stats for each sport as well as health data while performing those sports. My brother would run product for the bike apps, I'd run product for board sports as well as code everything, and my dad would be our medical advisor / CMO. I wanted to borrow from my dad's concept of "Is my patient OK?" and build into the platform the ability for individuals to gain insights into their general health and wellbeing. We'd do this by analysing health data tracked both while performing  individual sports and while at rest. I thought these concepts combined with a coaching marketplace would be a solid business to throw my time at for a while and it would give me the opportunity to work close with my dad as he transitioned into retirement after 40 years as a doctor and medical professional.
+        I spent the majority of late Spring and early Summer of 2022 working on a startup idea I had with some family members. The plan was to create a collection of progressive web apps that all use a common back end platform. Thes apps would be targeted at sprcific sports and would provide scheduling, tracking (stats as well as health data), coaching, and more. The project got derailed after a loss in the family but I still have hopes to continue working on it.
       </p>
-      <p>
-        Unfortunately my father passed away unexpectedly in late June. I was able to demo the the design system I'd built for the project a week or so before he passed and he sent me a message saying "It's amazing what you can do with a computer." That meant a lot. I took a lot of time off at that point and then got back to working on things alone in late 2022.
-      </p>
-        </div>
+    </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-item-content">
       <h3>Holeshot BMX</h3>
       <p>
-        In January of 2023 I joined my brother at the USA BMX Silver Dollar Nationals race in Las Vegas, NV. This was my first race since October of 1988 and made it to mains and came home with hardware! My goal was to not finish last and I did that!
+        In January of 2023 I joined my brother at the USA BMX Silver Dollar Nationals race in Las Vegas, NV. This was my first race since October of 1988. I manged to make it to mains on the first day and came home with hardware! My goal was to not finish last and I did that so I was pretty happy!
       </p>
       <p>
-        While in Las Vegas I showed my brother what I'd been working on. I continued working on it for a while and I'm still working on things. We're accepting wait list & invite sign-ups now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
+        While in Las Vegas I showed my brother what I'd been working on. At this point what I've built is a BMX race scheduler. Using the publicly posted race schedules you can create your own schedule to track the races you're racing at. Once you've completed an event you can add a log with additional details about the race to help with training. I continued working on this project for a while and I'm still working on things now and then. We're accepting wait list & invite sign-ups now at <a href="https://holeshot-bmx.com" target="new">holeshot-bmx.com</a>.
       </p>
     </div>
   </div>
@@ -48,7 +47,7 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
     <div class="timeline-item-content">
       <h3>Longboard / Skate Tracker</h3>
       <p>
-        I'm working on a combination standalone WatchOS and web app that will track longboard sessions and health data. I'll add updates when I'm ready to share.
+        I'm slowly working on a combination standalone WatchOS and web app that will track longboard sessions and health data. I'll add updates when I'm ready to share.
       </p>
     </div>
   </div>
@@ -79,7 +78,7 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
         <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a small project I've maintained for over 10 years. I don't use it anymore but people still find it handy. It's a simple convention-based object merger for .NET. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit. More info can be found on the <a href="http://github.com/kfinley/typemerger" target="new">project page</a>.
       </p>
       <p class="no-indent">
-        100k+ downloads via NuGet in the last 5 years.
+        150k+ downloads via NuGet in the last 5 years.
       </p>
    </div>
   </div>
@@ -187,7 +186,7 @@ I've worked in tech now for over 20 years now and it's been a ride. Here you'll 
   <div class="timeline-item">
     <div class="timeline-item-content">
       <h2>Late 2000s / Early 2010s</h2>
-      <h3>Crazy Startups!!!</h3>
+      <h3>Startups Life (a.k.a. Crazytown)</h3>
     </div>
   </div>
 
