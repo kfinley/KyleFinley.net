@@ -186,7 +186,7 @@ I'm always working on several projects. Below you'll find info on what kind of s
   <div class="timeline-item">
     <div class="timeline-item-content">
       <h2>Late 2000s / Early 2010s</h2>
-      <h3>Startups Life (a.k.a. Crazytown)</h3>
+      <h3>Adventures in Startups</h3>
     </div>
   </div>
 
@@ -204,7 +204,7 @@ I'm always working on several projects. Below you'll find info on what kind of s
 
   <div class="timeline-item">
     <div class="timeline-item-content">
-      <h3>First Giving</h3>
+      <h3>FirstGiving</h3>
       <p>
         To escape DI I took a senior dev gig at FirstGiving.com. There I helped a small team build a social fundraising platform. I worked with a few great people but unfortunately the leadership team wasn't honest with the company. A combination of excessive spending and unsuccessful secret projects with a remote team in SF led to a substantial company layoff event (which I was part of but then asked to remain onboard... which I shouldn't have).
       </p>
@@ -272,13 +272,10 @@ I'm always working on several projects. Below you'll find info on what kind of s
     <div class="timeline-item-content">
       <h3>SwingU</h3>
         <p>
-          In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer?!?!) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance running mostly legacy .NET Framework 4.7 to a more modern cloud stack that could scale. There were many challenges, and TTPP (typical toxic people problems), but sadly along the way the product manager died in front of the company while presenting at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around.
+          In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer?!?!) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance running mostly legacy .NET Framework 4.7 to a more modern cloud stack that could scale. Sadly along the way the product manager died while presenting in front of the company at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around.
       </p>
       <p>
-        After several months I scheduled a meeting the CEO and CTO to discuss a plan for how I'd agree to continuing to work at the company but was fired by the CTO the day before the meeting (the CTO was soon thereafter gone from the company as well). You can see my <router-link to="/slides/sports-app-product-team-proposal">proposal presentation here</router-link>.
-      </p>
-      <p>
-        Of the many things I learned through this experience one of the big ones was that I will never again put myself through the hell of trying to help a company "learn Agile." If you find yourself in a company that has a broken product development process and it's caused by a handful of people (sometimes it can be just 1 person) that just flat out refuse to follow agreed upon basic Agile principles & practices then the best thing you can do is leave ASAP. People have been trying to teach Agile principles for over 20 years now. It's not that people have a heard time with learning these concepts, it's that many folks refuse to do so and will not change their ways. If you're working with someone that's been in the industry for over 10 years and they still fight against all of it then they aren't going to change and you aren't going to change them.
+        I learned a lot while working at this company. I also watched a train wreck from the inside. I tried speaking to the CTO and prepared a presentation on a better way to structure the resources in order to get the most out of the team. You can see my <router-link to="/slides/sports-app-product-team-proposal"> presentation here</router-link>.
       </p>
     </div>
   </div>
