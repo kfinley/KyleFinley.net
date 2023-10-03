@@ -275,7 +275,7 @@ I'm always working on several projects. Below you'll find info on what kind of s
           In 2021 I joined an established startup in the golf app market. (yeah... I know... me as a golfer?!?!) The company was running on some pretty old tech so the goal was to help move them off of a single EC2 instance running mostly legacy .NET Framework 4.7 to a more modern cloud stack that could scale. Sadly along the way the product manager died while presenting in front of the company at the first all-hands meeting back in the office since the start of the pandemic. I should have walked at this point but I stuck around.
       </p>
       <p>
-        I learned a lot while working at this company. I also watched a train wreck from the inside. I tried speaking to the CTO and prepared a presentation on a better way to structure the resources in order to get the most out of the team. You can see my <router-link to="/slides/sports-app-product-team-proposal"> presentation here</router-link>.
+        I learned a lot while working with this company. I also watched a train wreck from the inside. I tried recommending an approach for how to structure the existing team in a way that lined up with the reality of how the product worked but I wasn't able to deliver it to the CEO as intented. I shared the presentation with him after the fact and you can <router-link to="/slides/sports-app-product-team-proposal"> see it here</router-link>.
       </p>
     </div>
   </div>
