@@ -11,10 +11,6 @@
     <h4 class="text-center pt-4">Bands &amp; Jams</h4>
     <ul class="bands">
       <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
-        Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro
-      </li>
-      <li>
         <em>Dirty Works Jazz Band</em> - This is a group I run that's rooted around the Lucky Horseshoe jazz jam core players. We're
         anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano,
         <a href="https://http://instagram.com/zacktheguitar" target="zack">Zack</a> on guitar, Dan on alto sax, and Peter on trumpet. We
@@ -30,6 +26,18 @@
       <li>
         <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on Tenor
         Sax and Vocals. Gigs around the Bay Area
+      </li>
+      <li>
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
+        Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro
+      </li>
+      <li>
+        <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
+        This group has been playing in GG park for several years. We also play other gigs when we can get them.
+      </li>
+      <li>
+        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Now and then I'll fill in with this SF based
+        jazz group run by Simon Donovan. You can catch this group at Ivory & Vine on Friday nights.
       </li>
       <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
@@ -53,10 +61,6 @@
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park
         near Stowe Lake on JFK
-      </li>
-      <li>
-        <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
-        This group has been playing in GG park for several years. We also play other gigs when we can get them.
       </li>
       <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
