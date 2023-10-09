@@ -98,17 +98,17 @@
       In high school I was a 3 time All-State Jazz Band member, from it's inaugural year through graduation. I also made All-State Orchestra
       on Bass my senior year without ever playing in an orchestra before and performed in both the Jazz and Orchestra bands the same
       weekend. I received both the John Philip Sousa and Louis Armstrong Jazz Award my senior year. I attended the Jamey Aebersold Jazz Camp
-      in 1995 which was where I learned how to walk bass lines from Jamey Aebersold himself (the dude played everything). I also attended
-      Arkansas Governors School in the Music Area in 1997. Governors School was a great experience for me. I learned a lot! It's a real
-      shame that Ava Hutchinson felt compelled to destroy the program for no good reason other than blind ignorant christian conservatism.
-      The destruction of program was a true loss for the Arkansas education system and more importantly took away a learning opportunity for
-      smart kids and gifted artists in the state.
+      in 1995 where I learned how to walk bass lines from Jamey Aebersold himself (the dude played everything). I attended Arkansas
+      Governors School in the Music Area in 1997. Governors School was a great experience for me. I learned a lot! It's a real shame that
+      Ava Hutchinson felt compelled to destroy the program for no good reason other than blind ignorant christian conservatism. The
+      destruction of the program was a true loss for the Arkansas education system and more importantly it took away an amazing learning
+      opportunity for smart kids and gifted artists in the state.
     </p>
     <p>
       I took music pretty seriously through the end of high school was set to attend the University of North Florida with a full ride for
       jazz studies but for various reasons decided to focus on tech stuff in college and ended up starting at the University of North Texas.
-      I bounced around schools a bit and landing at the University of Colorado where I played in one of the CU Jazz Combos under Chip
-      Stephens.
+      UNT wasn't the place or me and I bounced around schools a bit before landing at the University of Colorado where I played in one of
+      the CU Jazz Combos under Chip Stephens.
     </p>
     <p>
       Unfortunately I let music fall to the back burner after school while I was working as a traveling consultant. I tried to get back to
@@ -122,8 +122,7 @@
     <p>
       In the summery of 2019 I moved across the country and landed in SF. I found The Lucky Horseshoe weekly bluegrass jam run by Frank
       Holmes my first week in town. I was the regular bass player for the Shoe Jam for almost 4 years, from July 2019 through the pandemic
-      and into it's transition to a new leader (roughly May 2023). I still drop by and play at the jam most weeks but I don't play the full
-      3 hour gauntlet anymore!
+      and into it's transition to a new leader (roughly May 2023). I don't play in this jam anymore for reasons mentioned above.
     </p>
     <p>
       I started focusing on jazz again as my primary genre a few years back and these days I'm playing around SF with a few groups. I host a
