@@ -16,26 +16,34 @@
       </li>
       <li>
         <em>Dirty Works Jazz Band</em> - This is a group I run that's rooted around the Lucky Horseshoe jazz jam core players. We're
-        anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano, Stu on Guitar, Dan on alto sax, and Peter
-        on trumpet. We play ar range of classic standards including ballads, bop, soul, funk, swing, latin, and more!
+        anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano,
+        <a href="https://http://instagram.com/zacktheguitar" target="zack">Zack</a> on guitar, Dan on alto sax, and Peter on trumpet. We
+        play ar range of classic standards including ballads, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
         <em>The Standards Trio</em> - Jazz Trio featuring Zack Sandars on Guitar, Eli Kemp on Drums, and me on bass. You can check out
         <a href="https://zacksanders.bandcamp.com/album/standards-trio-live-in-sf" target="live"
           >our live album recorded at Le Petit Paris 75</a
         >
-        for a sample of our songs
+        for a sample of our sound
       </li>
       <li>
-        <em><a href="http://westsidejazzclub.com/" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on
-        Tenor Sax and Vocals. Gigs around the Bay Area
+        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on Tenor
+        Sax and Vocals. Gigs around the Bay Area
       </li>
       <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
         privileged to fill in on bass with Aaron & Richard playing originals and classic Americana/Bluegrass
       </li>
       <li><em>Open Jazz Jam @ The Lucky Horseshoe</em> - Every 3rd Wednesday of the Month 8-11pm</li>
-      <li><em>Sunday Bluegrass Jam @ The Lucky Horseshoe</em> - Every Sunday 4-7pm</li>
+      <li>
+        <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
+        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go anymore due to
+        the attitudes and comments made by some of the current players while on stage. I'm often told by younger musicians I meet around
+        town about the negative experiences they've had at this jam. It's a real shame because this is one of the longest running jams in SF
+        and it used to be a great way to spend Sunday evenings with some of the best players in bay area. Unfortunately those days are long
+        gone. Now many of the older top notch players won't come anymore since the new leader took over.
+      </li>
       <li>
         <em>Showcase Bluegrass Jam @ The Lucky Horseshoe</em> - 1st Sunday of the month from 8-9:30pm (currently in hiatus but hopefully
         back soon!)
@@ -48,7 +56,7 @@
       </li>
       <li>
         <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
-        This group has been playing in GG park for several years
+        This group has been playing in GG park for several years. We also play other gigs when we can get them.
       </li>
       <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
@@ -109,10 +117,10 @@
     <p>
       I started focusing on jazz again as my primary genre a few years back and these days I'm playing around SF with a few groups. I host a
       monthly Open Jazz Jam at <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a> every 3rd Wednesday of
-      the month. Sometimes we have impromptu "Overtime" jazz jams at the Shoe after the Bluegrass Jam on Sunday nights if we have jazz heads
-      there. You can also catch me there on random Monday or Tuesdays with a guitar player or other instruments playing jazz. I've been
-      working with the bartenders to turn the Shoe into a solid low key jazz room and we're starting to get some real traction! Feel free to
-      hit me up if you have a jazz group and want to book at night at the Shoe.
+      the month. Sometimes we have impromptu "Overtime" jazz jams at the Shoe after the Bluegrass Jam on Sunday nights. You can also catch
+      me there on random Tuesdays with a guitar player playing jazz. I've been working with the bartenders to turn the Shoe into a solid low
+      key jazz room and we're starting to get some real traction! Feel free to hit me up if you have a jazz group and want to book at night
+      at the Shoe and I can sync you up with the head bartender or owner.
     </p>
     <p>
       I'm available for hire and looking for players to form both a regular gigging jazz group and a progressive bluegrass / Americana
