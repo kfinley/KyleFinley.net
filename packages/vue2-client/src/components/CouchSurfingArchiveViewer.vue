@@ -12,9 +12,9 @@
     <div v-if="hasData">
       <p>{{ csData.user_data.profile.about_me }}</p>
       <p class="text-center fs-3">Messages</p>
-      <div v-for="(message, key, index) in csData.messages.messages">
+      <div v-for="(message, key, index) in csData.messages.messages" :key="index">
         <p class="date">{{ new Date(message.created_at.replace(" UTC", "").split(" ")[0]).toLocaleDateString("en-US") }}</p>
-        <p v-for="(m, k, i) in message.messages">{{ m.body }}</p>
+        <p v-for="(m, k, i) in message.messages" :key="i">{{ clean(m.body) }}</p>
       </div>
     </div>
   </div>
@@ -45,19 +45,15 @@ export default class CouchSurfingArchiveViewer extends Vue {
     // console.log("csData", this.csData);
     this.hasData = true;
   }
+
+  clean(text: string) {
+    return text?.replaceAll('_____________________________________________________', '')
+      .replaceAll('__________________________________________________________________________________________________', '')
+      .replaceAll('�', '')
+      .replaceAll('_____________________________________________', '')
+  }
 }
 
-/*
-{ "user_ids_concatenated": "347246,648853",
-"created_at": "2008-05-08 12:11:48 UTC", "updated_at": "2008-05-08 12:11:48 UTC",
-"messages": [
-  { "id": 21197106, "system_message": {},
-  "message_thread_id": 21197106,
-  "author_id": 347246,
-  "body": "SUBJECT: Welcome to the Couchsurfing project!\n\nHey Adam !\nI saw that you are a new member, so being an ambassador\nI would like to welcome you to the world of\ncouchsurfing.\n\nThere are different ways to personalize your profile.\nIf you want, you can add a picture of yourself.\nBesides that, you can add as much information about\nyourself and your couch as you�re comfortable with.\nThe information is very valuable to other members,\nbecause it gives them an impression of you if you�ve\nasked them to host you.\n\nI wish you a lot of fun using couchsurfing !\n:)\n\nWho knows, maybe I�ll see you one day as you crash my\ncouch!\n\nCheers,\n\nMassimo",
-  "deleted_at": null,
-  "created_at": "2008-05-08 12:11:48 UTC", "updated_at": "2010-05-13 02:13:47 UTC" } ] }
-*/
 </script>
 <style>
 .date {
