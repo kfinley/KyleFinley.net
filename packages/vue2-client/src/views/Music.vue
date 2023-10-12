@@ -48,17 +48,13 @@
         played together through the spring of 2023 before Daisy went back to being a world traveler.
       </li>
       <li>
-        <em>Open Jazz Jam @ The Lucky Horseshoe</em> - I run this jam at the Shoe ever 3rd Wednesday of the Month 8-11pm. We aim to have
-        this as the chillest jam in town. The Dirty Works trio is the core house band and we always have great group of players come
-        through.
+        <em>Open Jazz Jam @ The Lucky Horseshoe</em> - I run this jam at the Shoe ever 3rd Wednesday of the Month 8-11pm. We try to make
+        this the chillest jam in town. The Dirty Works trio is the core house band and we always have great group of players come through.
       </li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go anymore due to
-        the attitudes and comments made by some of the current players while on stage. I'm often told by younger musicians I meet around
-        town about the negative experiences they've had at this jam. It's a real shame because this is one of the longest running jams in SF
-        and it used to be a great way to spend Sunday evenings with some of the best players in bay area. Unfortunately those days are long
-        gone. Now many of the older top notch players won't come anymore since the new leader took over.
+        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go
+        anymore because it's no longer any fun. Music is like food... it's supposed to be fun!
       </li>
       <li>
         <em>Showcase Bluegrass Jam @ The Lucky Horseshoe</em> - 1st Sunday of the month from 8-9:30pm. Currently in hiatus but hopefully
@@ -74,6 +70,12 @@
       <li>
         <em>Madrone Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar in Alamo Square. I don't go to this one very often
         and prefer having overtime jazz at the Shoe on Sundays if possible.
+      </li>
+      <li>
+        <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
+        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. The negative attitudes and
+        comments made by some of the current players while on stage combined with how the current leader runs the jam as his own personal
+        show is why I don't go anymore.
       </li>
     </ul>
 
