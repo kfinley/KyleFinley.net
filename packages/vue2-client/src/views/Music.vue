@@ -17,7 +17,7 @@
         play ar range of classic standards including ballads, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
-        <em>The Standards Trio</em> - Jazz Trio featuring Zack Sandars on Guitar, Eli Kemp on Drums, and me on bass. You can check out
+        <em>The Standards Jazz Trio</em> - Jazz Trio featuring Zack Sandars on Guitar, Eli Kemp on Drums, and me on bass. You can check out
         <a href="https://zacksanders.bandcamp.com/album/standards-trio-live-in-sf" target="live"
           >our live album recorded at Le Petit Paris 75</a
         >
