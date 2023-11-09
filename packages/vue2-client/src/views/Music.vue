@@ -29,7 +29,7 @@
       </li>
       <li>
         <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on Tenor
-        Sax and Vocals. Gigs around the Bay Area.
+        Sax and Vocals. We gig around the Bay Area.
       </li>
       <li>
         <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
@@ -73,9 +73,7 @@
       </li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. The negative attitudes and
-        comments made by some of the current players while on stage combined with how the current leader runs the jam as his own personal
-        show is why I don't go anymore.
+        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go to this jam anymore.
       </li>
     </ul>
 
