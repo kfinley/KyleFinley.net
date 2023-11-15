@@ -21,104 +21,110 @@ export default class Music extends Vue {
   get tracks() {
     return [
       {
-        title: "Monday Jazz Jam - Set 1",
-        location: "Waystone - SF, CA",
+        title: "Monday Jazz Jam",
+        location: "Waystone SF - Set 1 ",
         date: "11/13/2023",
         id: "1ImnGsPQnFrSpi_0_Ono-qhCuR1Me2gQN"
       },
       {
-        title: "Monday Jazz Jam - Set 2",
-        location: "Waystone - SF, CA",
+        title: "Monday Jazz Jam",
+        location: "Waystone SF - Set 2",
         date: "11/13/2023",
         id: "1nwq0Mjq5pMjCKyJ4-00Me5hGsYvFBcX9"
       },
       {
-        title: "Monday Jazz Jam - Set 1",
-        location: "Waystone - SF, CA",
+        title: "Monday Jazz Jam",
+        location: "Waystone SF - Set 1",
         date: "11/6/2023",
         id: "1uQ7cqch4nwfdTHuwwffpT3DeYKOOHN7J"
       },
       {
-        title: "Monday Jazz Jam - Set 2",
-        location: "Waystone - SF, CA",
+        title: "Monday Jazz Jam",
+        location: "Waystone SF - Set 2",
         date: "11/6/2023",
         id: "1YQAHS_ZJ_FflcIH5YteQoJJsuACS4oRQ"
       },
       {
-        title: "Monday Jazz Jam - Set 3",
-        location: "Waystone - SF, CA",
+        title: "Monday Jazz Jam",
+        location: "Waystone SF - Set 3",
         date: "11/6/2023",
         id: "1YYROim7F_p6VqDLz2Rj6HQ69bmgFedKn"
       },
       {
-        title: "Fake Melody Trio - Set 1",
-        location: "Ivory & Vine - SF, CA",
+        title: "Nobody From Nashville",
+        location: "Helmann Ranch",
+        date: "11/4/2023",
+        id: "1KkINQZ0BawNwzeTmeLF1oRyIs8vHsQ-7"
+      },
+      {
+        title: "Fake Melody Trio",
+        location: "Ivory & Vine SF - Set 1",
         date: "10/27/2023",
         id: "1aYzatGfhjB43e7t7pOHfZGjX7jbvwJAF"
       },
       {
-        title: "Fake Melody Trio - Set 2",
-        location: "Ivory & Vine - SF, CA",
+        title: "Fake Melody Trio",
+        location: "Ivory & Vine SF - Set 2",
         date: "10/27/2023",
         id: "1fSXoGfCnCVQrIJRNqUGm2jocr90oS6fK"
       },
       {
-        title: "Shoe Jam - Set 1",
-        location: "The Lucky Horseshoe - SF, CA",
+        title: "Shoe Jam",
+        location: "The Lucky Horseshoe SF - Set 1",
         date: "9/20/2023",
         id: "1WtrgM1AGpNquvnkzCr1LQm1rcyTu3IbO"
       },
       {
-        title: "Shoe Jam - Set 2",
-        location: "The Lucky Horseshoe - SF, CA",
+        title: "Shoe Jam",
+        location: "The Lucky Horseshoe SF - Set 2",
         date: "9/20/2023",
         id: "11yqPLaw0q_hxRDkJAqEs9JivzOrY7CMQ"
       },
       {
-        title: "Overtime Jazz Jam - Set 1",
-        location: "The Lucky Horseshoe - SF, CA",
+        title: "Overtime Jazz Jam",
+        location: "The Lucky Horseshoe SF - Set 1",
         date: "7/9/2023",
         id: "1MRZatxHFzORqq2OErVsmVl35XnS90S4g"
       },
       {
-        title: "Overtime Jazz Jam - Set 2",
-        location: "The Lucky Horseshoe - SF, CA",
+        title: "Overtime Jazz Jam",
+        location: "The Lucky Horseshoe SF - Set 2",
         date: "7/9/2023",
         id: "1LneWfZku7cGuFXsGSB4JSVThwgfA4DD3"
       },
       {
-        title: "Zack & Kyle - Set 1",
-        location: "Waystone - SF, CA",
+        title: "Zack & Kyle",
+        location: "Waystone SF - Set 1",
         date: "7/1/2023",
         id: "1Ckuzpowl2RlvEDUsoyXmrP9_dfgiflwk"
       },
       {
-        title: "Zack & Kyle - Set 2",
-        location: "Waystone - SF, CA",
+        title: "Zack & Kyle",
+        location: "Waystone SF - Set 2",
         date: "7/1/2023",
         id: "1I72tGe3DjT24W2zeikKZu_msC42vMPP7"
       },
       {
-        title: "Shoe Jam - Set 1",
-        location: "The Lucky Horseshoe - SF, CA",
+        title: "Shoe Jam",
+        location: "The Lucky Horseshoe SF - Set 1",
         date: "6/21/2023",
         id: "1X34fVUm6WNwMFvsJaEfXJmdRAOrEH7Gm"
       },
       {
-        title: "Shoe Jam - Set 2",
-        location: "The Lucky Horseshoe",
+        title: "Shoe Jam",
+        location: "The Lucky Horseshoe SF - Set 2",
         date: "6/21/2023",
         id: "1-6xPClYO2JRSAQ6_zg5BphGiWorhO8J5"
       },
       {
         title: "June MusicLuck - Bangers",
-        location: "The Mission SF, CA",
+        location: "The Mission SF",
         date: "6/14/2023",
         id: "11f0VXqVZO9osBK39hqr8C9CWJ8kTy50l"
       },
       {
         title: "June MusicLuck - Ballads",
-        location: "The Mission SF, CA",
+        location: "The Mission SF",
         date: "6/14/2023",
         id: "162XA7oEBatYdUMfC6yjmTTcHohM8SMjE"
       },
