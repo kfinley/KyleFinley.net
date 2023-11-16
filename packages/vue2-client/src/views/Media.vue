@@ -21,8 +21,20 @@ export default class Music extends Vue {
   get tracks() {
     return [
       {
+        title: "Shoe Jazz Jam",
+        location: "Lucky Horseshoe SF - Set 1 ",
+        date: "11/15/2023",
+        id: "17kN9rNXWzTiPI4uJtxuD3FGVPi0hzfE2"
+      },
+      {
+        title: "Shoe Jazz Jam",
+        location: "The Lucky Horseshoe SF - Set 2 ",
+        date: "11/15/2023",
+        id: "1yZlmM4TpmANuMksyYGZypMOXKuc-gzfV"
+      },
+      {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1 ",
+        location: "The Lucky Horseshoe SF - Set 1 ",
         date: "11/13/2023",
         id: "1ImnGsPQnFrSpi_0_Ono-qhCuR1Me2gQN"
       },
