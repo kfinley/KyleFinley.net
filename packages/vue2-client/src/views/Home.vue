@@ -5,12 +5,12 @@
       <div class="col-12 pt-2">
         <h2 class="text-center">Music</h2>
         <p>
-          I'm a jazz, bluegrass, rock, folk, and Americana musician. I primarily play upright bass. My ax is a 1980 Johannes Rubner upright
-          I've had since early college. I also play guitar and I'm currently woodshedding trombone after a 20 year hiatus.
+          I'm a Jazz & Americana musician. I primarily play upright bass but I also play trombone and sometimes guitar. My main ax is a 1980
+          Johannes Rubner upright I've had since my early 20s. My main horn is a 1965 Bach Stradivarius 42.
         </p>
         <p>
-          My <router-link to="/music">music page</router-link> has more info on groups I'm playing with, past shows, recordings, and upcoming
-          gigs.
+          I'm actively gigging around San Francisco and the bay area 3 to 5 days a week. I host a few jazz jams as well. My
+          <router-link to="/music">music page</router-link> has more info on who I'm playing with and where.
         </p>
         <h2 class="text-center">Software Development</h2>
         <p>
@@ -19,10 +19,7 @@
           songwriter friend once told me "Ya know the problem is, nobody really cares!" I don't track my page views here anymore so guess
           I'll never know. :-)
         </p>
-        <p>
-          More on my adventures in software &amp; info on what I'm working on lately can be found on my
-          <router-link to="/software">software page</router-link>.
-        </p>
+        <p>To find out what I'm working on lately check out my<router-link to="/software">software page</router-link>.</p>
         <h2 class="text-center">Traveling</h2>
         <p>
           I enjoy traveling a lot but I don't travel as much as I used to. I was a weekly flying consultant for years, active in the Couch
@@ -31,8 +28,7 @@
           wagon named Su.
         </p>
         <p>
-          More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a> or on
-          my <router-link to="/travel">travel page</router-link>.
+          More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a>.
         </p>
         <h2 class="text-center">Photography</h2>
         <p>

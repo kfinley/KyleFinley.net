@@ -61,12 +61,6 @@
         house band and we always have great group of players come through.
       </li>
       <li>
-        <em>Showcase Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - This used
-        to be every 1st Sunday of the month from 8-9:30pm but it hasn't been running for a while now.
-      </li>
-      <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
-      <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
-      <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park
         near Stowe Lake on JFK run by Dan Dectis.
       </li>
@@ -75,6 +69,12 @@
         <em><a href="http://madroneartbar.com/" target="new">Madrone</a> Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar
         in Alamo Square. I don't go to this one very often and prefer having overtime jazz at the Shoe on Sundays if possible.
       </li>
+      <li>
+        <em>Showcase Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - This used
+        to be every 1st Sunday of the month from 8-9:30pm but it hasn't been running for a while now.
+      </li>
+      <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
+      <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
         - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go anymore.
