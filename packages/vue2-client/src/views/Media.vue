@@ -81,6 +81,18 @@ export default class Music extends Vue {
         id: "11yqPLaw0q_hxRDkJAqEs9JivzOrY7CMQ"
       },
       {
+        title: "Shoe Jam",
+        location: "The Lucky Horseshoe SF - Set 1",
+        date: "8/16/2023",
+        id: "1xbVh1oAb1vkB9aBJBhinxd3bkKX5PwZt"
+      },
+      {
+        title: "Shoe Jam",
+        location: "The Lucky Horseshoe SF - Set 2",
+        date: "8/16/2023",
+        id: "1ao0nJJdz3n2KcfNGnRt7G2laVmJTPuW6"
+      },
+      {
         title: "Overtime Jazz Jam",
         location: "The Lucky Horseshoe SF - Set 1",
         date: "7/9/2023",
