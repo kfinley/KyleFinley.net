@@ -30,6 +30,7 @@
         <p>
           More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a>.
         </p>
+
         <h2 class="text-center">Photography</h2>
         <p>
           I've enjoyed photography and have been into it since I was a kid. Some of my earliest memories of shooting photos was running

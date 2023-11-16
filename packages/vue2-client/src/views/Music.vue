@@ -57,8 +57,8 @@
       </li>
       <li>
         <em>Open Jazz Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - I run this jam at
-        the Shoe ever 3rd Wednesday of the Month 8-11pm. We try to make this the chillest jam in town. The Dirty Works trio is the core
-        house band and we always have great group of players come through.
+        the Shoe ever 3rd Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every era.
+        The Dirty Works trio is the core house band and we always have great group of players come through.
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park
