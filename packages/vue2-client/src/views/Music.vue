@@ -8,13 +8,13 @@
       <p>Recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     </div>
     <Gigs class="text-center" />
-    <h4 class="text-center pt-4">Bands &amp; Jams</h4>
-    <ul class="bands">
+    <h4 class="text-center pt-4">Bands</h4>
+    <ul>
       <li>
         <em>Dirty Works Jazz Band</em> - This is a group I run that's rooted around the Lucky Horseshoe jazz jam core players. We're
         anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano,
-        <a href="https://http://instagram.com/zacktheguitar" target="zack">Zack</a> on guitar, Dan on alto sax, and Peter on trumpet. We
-        play ar range of classic standards including ballads, bop, soul, funk, swing, latin, and more!
+        <a href="https://goldengatejams.com" target="new">Dan Dectis</a> on alto sax, and Peter on trumpet. We play ar range of classic
+        standards including ballads, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
         <em>The Standards Jazz Trio</em> - Jazz Trio featuring Zack Sandars on Guitar, Eli Kemp on Drums, and me on bass. You can check out
@@ -47,36 +47,39 @@
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
         played together through the spring of 2023 before Daisy went back to being a world traveler.
       </li>
+    </ul>
+    <h4 class="text-center pt-4">Jams</h4>
+    <ul>
       <li>
-        <em>Open Jazz Jam @ The Lucky Horseshoe</em> - I run this jam at the Shoe ever 3rd Wednesday of the Month 8-11pm. We try to make
-        this the chillest jam in town. The Dirty Works trio is the core house band and we always have great group of players come through.
+        <em>Monday Jazz Jam @ <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em> - I host a jazz jam every Monday night at
+        the Waystone wine bar in North Beach SF. The house band is myself on bass, Dan Dectis on sax, Richard Caceres on keys. Currently our
+        drummer a hi-hat that I stomp on... we've named him H.H. Yardman.
       </li>
       <li>
-        <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go
-        anymore because it's no longer any fun. Music is like food... it's supposed to be fun!
+        <em>Open Jazz Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - I run this jam at
+        the Shoe ever 3rd Wednesday of the Month 8-11pm. We try to make this the chillest jam in town. The Dirty Works trio is the core
+        house band and we always have great group of players come through.
       </li>
       <li>
-        <em>Showcase Bluegrass Jam @ The Lucky Horseshoe</em> - 1st Sunday of the month from 8-9:30pm. Currently in hiatus but hopefully
-        back soon!
+        <em>Showcase Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - This used
+        to be every 1st Sunday of the month from 8-9:30pm but it hasn't been running for a while now.
       </li>
       <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
       <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park
-        near Stowe Lake on JFK.
+        near Stowe Lake on JFK run by Dan Dectis.
       </li>
       <li><em>Ocean Ale House Jazz Jam</em> - Weekly Jazz Jam on Wednesday Nights in Monterey Heights</li>
       <li>
-        <em>Madrone Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar in Alamo Square. I don't go to this one very often
-        and prefer having overtime jazz at the Shoe on Sundays if possible.
+        <em><a href="http://madroneartbar.com/" target="new">Madrone</a> Jazz Jam</em> - Weekly Jazz Jam on Sunday nights at Madrone Art Bar
+        in Alamo Square. I don't go to this one very often and prefer having overtime jazz at the Shoe on Sundays if possible.
       </li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go to this jam anymore.
+        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go anymore.
       </li>
     </ul>
-
     <h4 class="text-center">My Musical Journey</h4>
     <p>
       I've been playing music now for over 30 years. I grew up hiding out in the band hall with the other cool kids playing lots of stuff.
