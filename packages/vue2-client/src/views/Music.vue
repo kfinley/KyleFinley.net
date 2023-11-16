@@ -32,20 +32,20 @@
         Sax and Vocals. We gig around the Bay Area.
       </li>
       <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
-        Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro.
-      </li>
-      <li>
         <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Now and then I'll fill in with this SF based
         jazz group run by Simon Donovan. You can catch this group at Ivory & Vine on Friday nights.
       </li>
       <li>
-        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
-        privileged to fill in on bass with Aaron & Richard playing originals and classic Americana/Bluegrass.
-      </li>
-      <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
         played together through the spring of 2023 before Daisy went back to being a world traveler.
+      </li>
+      <li>
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
+        Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro.
+      </li>
+      <li>
+        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
+        privileged to fill in on bass with Aaron & Richard playing originals and classic Americana/Bluegrass.
       </li>
     </ul>
     <h4 class="text-center pt-4">Jams</h4>
