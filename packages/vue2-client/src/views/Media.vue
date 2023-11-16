@@ -22,7 +22,7 @@ export default class Music extends Vue {
     return [
       {
         title: "Shoe Jazz Jam",
-        location: "Lucky Horseshoe SF - Set 1 ",
+        location: "The Lucky Horseshoe SF - Set 1 ",
         date: "11/15/2023",
         id: "17kN9rNXWzTiPI4uJtxuD3FGVPi0hzfE2"
       },
