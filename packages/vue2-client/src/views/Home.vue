@@ -9,17 +9,17 @@
           Johannes Rubner upright I've had since my early 20s. My main horn is a 1965 Bach Stradivarius 42.
         </p>
         <p>
-          I'm actively gigging around San Francisco and the bay area 3 to 5 days a week. I host a few jazz jams as well. My
+          I'm actively gigging around San Francisco and the bay area 3 to 5 days a week. I also run a few jazz jams around town. My
           <router-link to="/music">music page</router-link> has more info on who I'm playing with and where.
         </p>
-        <h2 class="text-center">Software Development</h2>
+        <h2 class="text-center">Software</h2>
         <p>
           I've been a software developer now for over 20 years. It's been an adventure! I've watched the internet grow and industries form.
           I've worked on lots of things and worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as a
           songwriter friend once told me "Ya know the problem is, nobody really cares!" I don't track my page views here anymore so guess
           I'll never know. :-)
         </p>
-        <p>To find out what I'm working on lately check out my<router-link to="/software">software page</router-link>.</p>
+        <p>To find out what I'm working on lately check out my <router-link to="/software">software page</router-link>.</p>
         <h2 class="text-center">Traveling</h2>
         <p>
           I enjoy traveling a lot but I don't travel as much as I used to. I was a weekly flying consultant for years, active in the Couch
@@ -27,11 +27,9 @@
           coast in a Jeep Wrangler while kiteboarding every state. Lately I've been exploring the West and SW in my Gen 2 Subaru Outback
           wagon named Su.
         </p>
-        <p>
-          More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a>.
-        </p>
+        <p>More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a>.</p>
 
-        <h2 class="text-center">Photography</h2>
+        <!-- <h2 class="text-center">Photography</h2>
         <p>
           I've enjoyed photography and have been into it since I was a kid. Some of my earliest memories of shooting photos was running
           around my family's lake house shooting pictures with a small "spy" camera I got when I was probably 7. I learned how to develop
@@ -39,7 +37,7 @@
           I eventually got a DSLR in 2011 and started to relearn how to really use a camera. I'm a casual photographer and rarely do paid
           gigs but I enjoy shooting outdoors, night cityscapes, low light cocktails &amp; bar scenes, live music shows, portraits, and
           action shots.
-        </p>
+        </p> -->
         <h2 class="text-center">Boarding<br />Skate | Kite | Snow | Standup Paddle</h2>
         <p>
           I'm a life long boarder. I started skating when I was about 6 and haven't stopped yet! I started snowboarding when I was 13 and

@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <h1 class="text-center">My Music</h1>
+    <h1 class="text-center">Kyle Finley's Music</h1>
     <div class="text-center">
       <p>
-        <i>Jazz, Bluegrass, and Americana upright bassist currently slappin' strings around the San Francisco Bay area! </i>
+        <i>Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area!!! </i>
       </p>
       <p>Recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     </div>
@@ -81,7 +81,7 @@
       </li>
     </ul>
     <div class="text-center">
-      <p>More info on my journey as a musician can be found on my <br /><router-link to="/music/history">history page</router-link></p>
+      <p>Details on my musical journey can be found on my <router-link to="/music/history">music history page</router-link></p>
     </div>
   </div>
 </template>
