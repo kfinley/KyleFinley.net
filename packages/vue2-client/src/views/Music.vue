@@ -13,11 +13,11 @@
       <li>
         <em>Dirty Works Jazz Band</em> - This is a group I run that's rooted around the Lucky Horseshoe jazz jam core players. We're
         anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano,
-        <a href="https://goldengatejams.com" target="new">Dan Dectis</a> on alto sax, and Peter on trumpet. We play ar range of classic
-        standards including ballads, bop, soul, funk, swing, latin, and more!
+        <a href="https://goldengatejams.com" target="new">Dan Dectis</a> on alto sax, and Peter on trumpet. We play a wide range of classic
+        standards including ballads, blues, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
-        <em>The Standards Jazz Trio</em> - Jazz Trio featuring Zack Sandars on Guitar, Eli Kemp on Drums, and me on bass. You can check out
+        <em>The Standards Jazz Trio</em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass. You can check out
         <a href="https://zacksanders.bandcamp.com/album/standards-trio-live-in-sf" target="live"
           >our live album recorded at Le Petit Paris 75</a
         >
@@ -77,11 +77,11 @@
       <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This was a great jam when Frank Holmes ran it and I enjoyed playing there every week for several years. I don't go anymore.
+        - This was a great jam when Frank Holmes ran it. I enjoyed playing there every week for several years. I don't go anymore.
       </li>
     </ul>
     <div class="text-center">
-      <p>Details on my musical journey can be found on my <router-link to="/music/history">music history page</router-link></p>
+      <p>Details on background and musical journey can be found on my <router-link to="/music/history">history page</router-link></p>
     </div>
   </div>
 </template>
