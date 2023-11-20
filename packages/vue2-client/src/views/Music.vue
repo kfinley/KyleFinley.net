@@ -36,6 +36,9 @@
         jazz group run by Simon Donovan. You can catch this group at Ivory & Vine on Friday nights.
       </li>
       <li>
+        <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys.
+      </li>
+      <li>
         <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
         played together through the spring of 2023 before Daisy went back to being a world traveler.
       </li>
