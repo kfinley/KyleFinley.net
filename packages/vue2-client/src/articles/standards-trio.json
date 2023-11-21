@@ -1,0 +1,53 @@
+{
+  "title": "The Standards Trio",
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "The The Standards Trio is a Jazz combo featuring guitar, bass, and drums"
+    },
+    {
+      "itemprop": "name",
+      "content": "The Standards Trio"
+    },
+    {
+      "itemprop": "description",
+      "content": "The The Standards Trio is a Hard Bop & Soul Jazz combo featuring guitar, bass, and drums"
+    },
+    {
+      "property": "og:title",
+      "content": "The Standards Trio"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/standards-trio"
+    },
+    {
+      "property": "og:image",
+      "content": "https://kylefinley.net/assets/kyle-finley-wy.203deb16.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "The The Standards Trio is a Hard Bop & Soul Jazz combo featuring guitar, bass, and drums"
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net - The Standards Trio"
+    },
+    {
+      "property": "article:published_time",
+      "content": "11/21/2023"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "11/21/202"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}

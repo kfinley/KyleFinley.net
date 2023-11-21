@@ -14,11 +14,7 @@
         <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is a group I play gigs and jams with. We play a wide range of classic standards including ballads, blues, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
-        <em>The Standards Jazz Trio</em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass. You can check out
-        <a href="https://zacksanders.bandcamp.com/album/standards-trio-live-in-sf" target="live"
-          >our live album recorded at Le Petit Paris 75</a
-        >
-        for a sample of our sound.
+        <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass.
       </li>
       <li>
         <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
