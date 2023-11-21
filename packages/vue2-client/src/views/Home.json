@@ -1,22 +1,22 @@
 {
-  "title": "KyleFinley.net - Music | Software | Kiteboarding | Photography",
+  "title": "Kyle Finley - Jazz Bassist & Software Dude",
   "allowAnonymous": true,
   "metaTags": [
     {
       "name": "description",
-      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+      "content": ""
     },
     {
       "itemprop": "name",
-      "content": "KyleFinley.net - Music | Software | Kiteboarding | Photography"
+      "content": "Kyle Finley - Jazz Bassist & Software Dude"
     },
     {
       "itemprop": "description",
-      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+      "content": "The personal website for Kyle Finley - Jazz bassist, traveler, photographer and technologist."
     },
     {
       "property": "og:title",
-      "content": "KyleFinley.net - Music | Software | Kiteboarding | Photography"
+      "content": "Kyle Finley - Jazz Bassist & Software Dude"
     },
     {
       "property": "og:type",
@@ -32,11 +32,11 @@
     },
     {
       "property": "og:description",
-      "content": "Thoughts on software development, music, photographs, cocktails, kiteboarding, traveling, and other random stuff."
+      "content": "The personal website for Kyle Finley - Jazz bassist, traveler, photographer and technologist."
     },
     {
       "property": "og:site_name",
-      "content": "KyleFinley.net"
+      "content": "Kyle Finley - Musician & Technologist"
     }
   ]
 }

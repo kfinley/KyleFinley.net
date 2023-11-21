@@ -3,24 +3,25 @@
     <div class="jumbotron jumbotron-fluid"></div>
     <div class="container justified-hyphenated">
       <div class="col-12 pt-2">
-        <h2 class="text-center">Music</h2>
+        <h2 class="text-center"><router-link to="/music">Music</router-link></h2>
         <p>
-          I'm a Jazz & Americana musician. I primarily play upright bass but I also play trombone and sometimes guitar. My main ax is a 1980
-          Johannes Rubner upright I've had since my early 20s. My main horn is a 1965 Bach Stradivarius 42.
+          I'm a Jazz & Americana musician actively gigging around the San Francisco bay area. I play with several groups and I run a few
+          jazz jams. My <router-link to="/music">music page</router-link> has more info on bands, jams, and gigs.
         </p>
         <p>
-          I'm actively gigging around San Francisco and the bay area 3 to 5 days a week. I also run a few jazz jams around town. My
-          <router-link to="/music">music page</router-link> has more info on who I'm playing with and where.
+          I primarily play upright bass but I also play trombone and sometimes guitar. My main ax is a 1980 Johannes Rubner I've owned since
+          my early 20s. Recently I picked up a 2006 Andreas Eastman VB-200GR to be my daily gigging bass. My horn is a 1965 Bach
+          Stradivarius Model 42 that's been in my family over 50 years.
         </p>
-        <h2 class="text-center">Software</h2>
+        <p></p>
+        <h2 class="text-center"><router-link to="/software">Software</router-link></h2>
         <p>
           I've been a software developer now for over 20 years. It's been an adventure! I've watched the internet grow and industries form.
-          I've worked on lots of things and worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as a
-          songwriter friend once told me "Ya know the problem is, nobody really cares!" I don't track my page views here anymore so guess
-          I'll never know. :-)
+          I've worked on lots of things and have worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as
+          a songwriter friend told me once "Ya know the problem is, nobody really cares!" Good point....
         </p>
         <p>To find out what I'm working on lately check out my <router-link to="/software">software page</router-link>.</p>
-        <h2 class="text-center">Traveling</h2>
+        <h2 class="text-center"><a href="https://acarnamedsu.com" target="Su">Traveling</a></h2>
         <p>
           I enjoy traveling a lot but I don't travel as much as I used to. I was a weekly flying consultant for years, active in the Couch
           Surfing scene for a bit, and I've driven around most of the country. I've road tripped around the Gulf of Mexico and up the east
@@ -38,13 +39,12 @@
           gigs but I enjoy shooting outdoors, night cityscapes, low light cocktails &amp; bar scenes, live music shows, portraits, and
           action shots.
         </p> -->
-        <h2 class="text-center">Boarding<br />Skate | Kite | Snow | Standup Paddle</h2>
+        <h2 class="text-center">Boarding<br /><i>Skate | Kite | Snow | Standup Paddle</i></h2>
         <p>
           I'm a life long boarder. I started skating when I was about 6 and haven't stopped yet! I started snowboarding when I was 13 and
           I've been kiteboarding now for almost 20 years. I've kiteboarded almost every coastal state in the US and several of the inland
-          states as well. I don't kite as much as I used to but it's something I still enjoy and have been known to teach students now and
-          then. I try to longboard every day and can honestly say I'm on a board 3-5 days a week regularly. I don't ride an electric and
-          tend to do 3-5 miles of pushing when I go for a good skate.
+          states. I don't kite as much as I used to but it's something I still enjoy and have been known to teach students now and then. I
+          try to longboard every day and can honestly say I'm on a board 3-5 days a week regularly. No, I don't ride an electric board.
         </p>
       </div>
     </div>
