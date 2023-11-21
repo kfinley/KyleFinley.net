@@ -2,8 +2,8 @@
   <div class="container text-center">
     <h2>Media Page</h2>
     <p>Recordings of gigs, jams, and a few random shows.</p>
-    <p>Not professional recordings. They're made with an iPhone sitting somewhere near me using the Memo app.</p>
-    <p><router-link to="/music">Gigs & Shows Calendar</router-link></p>
+    <p>Not professional recordings. These are made with an iPhone sitting somewhere near me using the Memo app and unedited.</p>
+    <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
     <media-player :tracks="tracks"></media-player>
   </div>
 </template>
