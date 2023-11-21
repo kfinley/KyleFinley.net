@@ -22,25 +22,25 @@ export default class Music extends Vue {
     return [
       {
         title: "Monday Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
+        location: "Waystone SF - Set 1",
         date: "11/20/2023",
         id: "1OIsfanxKMcrdLngi1i0Xom9LHK5JtGPg"
       },
       {
         title: "Monday Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
+        location: "Waystone SF - Set 2",
         date: "11/20/2023",
         id: "1HhMBZBW7p9H6nitZ2CWa-V3gSpYHvDbg"
       },
             {
         title: "Monday Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 3",
+        location: "Waystone SF - Set 3",
         date: "11/20/2023",
         id: "1Wp5VkdTMe2iiwaq3aTJiDNi8VBKoURyy"
       },
                   {
         title: "Monday Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 4",
+        location: "Waystone SF - Set 4",
         date: "11/20/2023",
         id: "1nwB_ACicLzqeD-bXYRh9Hrbd9Er4uKhD"
       },
