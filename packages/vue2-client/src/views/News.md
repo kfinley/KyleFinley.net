@@ -3,6 +3,10 @@
 # News Page
 </div>
 
+### November 2023
+---
+Reworked music page. Started splitting out bands and jams onto their own pages.
+
 ### June 7, 2023
 ---
 
