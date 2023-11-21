@@ -1,0 +1,53 @@
+{
+  "title": "Dirty Works Jazz Band",
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "The Dirty Works Jazz Band is a Hard Bop & Soul Jazz combo featuring a slammin rhythm section and killer horns!"
+    },
+    {
+      "itemprop": "name",
+      "content": "Dirty Works Jazz Band"
+    },
+    {
+      "itemprop": "description",
+      "content": "The Dirty Works Jazz Band is a Hard Bop & Soul Jazz combo featuring a slammin rhythm section and killer horns!"
+    },
+    {
+      "property": "og:title",
+      "content": "Dirty Works Jazz Band"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/dirty-works"
+    },
+    {
+      "property": "og:image",
+      "content": "https://kylefinley.net/assets/kyle-finley-wy.203deb16.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "The Dirty Works Jazz Band is a Hard Bop & Soul Jazz combo featuring a slammin rhythm section and killer horns!"
+    },
+    {
+      "property": "og:site_name",
+      "content": "KyleFinley.net - Dirty Works Jazz Band"
+    },
+    {
+      "property": "article:published_time",
+      "content": "11/21/2023"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "11/21/202"
+    },
+    {
+      "property": "article:author",
+      "content": "Kyle Finley"
+    }
+  ]
+}

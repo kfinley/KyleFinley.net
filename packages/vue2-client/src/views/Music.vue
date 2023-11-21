@@ -11,10 +11,7 @@
     <h4 class="text-center pt-4">Bands</h4>
     <ul>
       <li>
-        <em>Dirty Works Jazz Band</em> - This is a group I run that's rooted around the Lucky Horseshoe jazz jam core players. We're
-        anything from a trio to a quintet featuring me on bass, Eli on drums, Jonathan on piano,
-        <a href="https://goldengatejams.com" target="new">Dan Dectis</a> on alto sax, and Peter on trumpet. We play a wide range of classic
-        standards including ballads, blues, bop, soul, funk, swing, latin, and more!
+        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is a group I play gigs and jams with. We play a wide range of classic standards including ballads, blues, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
         <em>The Standards Jazz Trio</em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass. You can check out
