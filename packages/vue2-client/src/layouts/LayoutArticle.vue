@@ -128,10 +128,7 @@ export default class ArticleLayout extends Vue {
   rewriteImagesForLocalDev() {
     //silly hack to be able to run local. Should compile this out...
     document.querySelectorAll("img").forEach(i => {
-      // i.src = i.src.replace('media', 'img/media')
       i.src = i.src.replace("media", "@fs/vite-client/media");
-      //../../../../media/images/heros/kyle-finley-wy.jpg
-      //http://localhost:8080/@fs/vite-client/media/images/heros/kyle-finley-wy.jpg
     });
   }
 }

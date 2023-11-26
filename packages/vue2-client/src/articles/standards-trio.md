@@ -1,4 +1,6 @@
-# The Standards Trio
+<div class="container text-center">
+  <h2>The Standards Trio</h2>
+</div>
 
 Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass.
 

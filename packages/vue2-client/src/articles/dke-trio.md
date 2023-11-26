@@ -39,9 +39,9 @@ Sample songs:
 
 
 <div class="container text-center">
-  <h2>Sample Recordings</h2>
-  <p>Here are a few sample tunes with Daisy and Kyle jamming with some bluegrass players at the Lucky Horseshoe Parklet.</p>
-  <p>Not professional recordings. These are made with an iPhone sitting on the table.</p>
+  <h2>Recordings</h2>
+  <p>Here are a few live recordings for a sample of our sound.</p>
+  <p>Not professional recordings. These are made with an iPhone sitting somewhere nearby.</p>
 
   <media-player :tracks="this.$parent.dke_tracks"></media-player>
 </div>
