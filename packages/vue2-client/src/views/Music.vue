@@ -11,32 +11,30 @@
     <h4 class="text-center pt-4">Bands</h4>
     <ul>
       <li>
-        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is a group I play gigs and jams with. We play a wide range of classic standards including ballads, blues, bop, soul, funk, swing, latin, and more!
+        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - We play a wide range of classic standards including ballads, blues, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
         <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass.
       </li>
       <li>
         <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
-        This group has been playing in GG park for several years. We also play other gigs when we can get them.
+        This group has been playing in GG park for several years.
       </li>
       <li>
-        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - This group is run by Scott Silverberg on Tenor
+        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor
         Sax and Vocals. We gig around the Bay Area.
       </li>
       <li>
-        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Now and then I'll fill in with this SF based
-        jazz group run by Simon Donovan. You can catch this group at Ivory & Vine on Friday nights.
+        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Run by Simon Donovan holding down Friday nights at Ivory & Vine. I sub with this group when they need me.
       </li>
       <li>
-        <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys.
+        <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys. I also sub with this group when needed.
       </li>
       <li>
-        <em><router-link to="/dke-trio">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring songs selected by guitarist and singer Daisy Dresner backed by Eli Kemp on drums and me on bass.
+        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and singer Daisy Dresner backed by Eli Kemp on drums and me on bass.
       </li>
       <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
-        Four piece featuring Joan Wilson Rueter on fiddle, Ian Epstein on guitar, and Steve Owen on dobro.
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em>Americana and Bluegrass group led by Ian Epstein on guitar and featuring Joan Wilson Rueter on fiddle, Steve Owen on dobro, and myself on bass.
       </li>
       <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
@@ -47,8 +45,7 @@
     <ul>
       <li>
         <em>Monday Jazz Jam @ <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em> - I host a jazz jam every Monday night at
-        the Waystone wine bar in North Beach SF. The house band is myself on bass, Dan Dectis on sax, Richard Caceres on keys. Currently our
-        drummer a hi-hat that I stomp on... we've named him H.H. Yardman.
+        the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard Caceres on keys, and I'm on bass.
       </li>
       <li>
         <em>Open Jazz Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - I run this jam at
