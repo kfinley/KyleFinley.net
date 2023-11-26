@@ -3,14 +3,16 @@
   <h2>The DKE Trio</h2>
 </div>
 
-The DKE Trio is a pre-40's jazz, blues, and popular music trio with front man singer & guitarist Daisy Dresner, bassist Kyle Finley, & drummer Eli Kemp. Daisy's fun vibe and collection of classic early 20th century popular standards always leaves the crowd with a smile on their face and a bounce in their step!.
+The DKE Trio is a pre-40's jazz, blues, and popular music trio with front man singer & guitarist Daisy Dresner, bassist Kyle Finley, & drummer Eli Kemp.
+
+Daisy's fun vibe and collection of classic early 20th century popular standards always leaves the crowd with a smile on their face and a bounce in their step!.
 
 <div class="container text-center">
   <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
 
-![Daisy in Golden Gate Park](../../../../media/images/articles/Daisy-in-GG-Park.jpeg)
+  ![Daisy in Golden Gate Park](../../../../media/images/articles/Daisy-in-GG-Park.jpeg)
 
-![DKE in Golden Gate Park](../../../../media/images/articles/DKE-Trio.jpeg)
+  ![DKE in Golden Gate Park](../../../../media/images/articles/DKE-Trio.jpeg)
 
 </div>
 
@@ -36,7 +38,6 @@ Sample songs:
 - They're Red Hot
 - Today's Teardrops
 - Walk Right In
-
 
 <div class="container text-center">
   <h2>Recordings</h2>

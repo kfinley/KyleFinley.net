@@ -30,6 +30,30 @@ export default class ArticleLayout extends Vue {
     return [
       {
         title: "Dirty Works",
+        location: "Ivory & Vine - Set 1",
+        date: "10/14/2023",
+        id: "1VV_UhiuHj-ShCjOJrVGVJXdjOI-OLoVG"
+      },
+      {
+        title: "Dirty Works",
+        location: "Ivory & Vine - Set 2",
+        date: "10/14/2023",
+        id: "1nzp4D_U8fLrJrCV2GRjpjZmBNYS5PYXG"
+      },
+      {
+        title: "Dirty Works",
+        location: "The Lucky Horseshoe - Set 1",
+        date: "10/12/2023",
+        id: "1Ho5bZ6MhXAmqkpz8qekHtvS7sdIYTun5"
+      },
+      {
+        title: "Dirty Works",
+        location: "The Lucky Horseshoe - Set 2",
+        date: "10/12/2023",
+        id: "1E_wTZ8RcqC6vIPQ45CwVwNZwj8tyuUxs"
+      },
+      {
+        title: "Dirty Works",
         location: "The Lucky Horseshoe - Set 1",
         date: "9/23/2023",
         id: "1P0mmbzvHFGQOLphkQTGGDfwgi10VcLQ6"
