@@ -26,6 +26,23 @@ export default class ArticleLayout extends Vue {
     this.rewriteImagesForLocalDev();
   }
 
+  get dw_tracks() {
+    return [
+      {
+        title: "Dirty Works",
+        location: "The Lucky Horseshoe - Set 1",
+        date: "9/23/2023",
+        id: "1P0mmbzvHFGQOLphkQTGGDfwgi10VcLQ6"
+      },
+      {
+        title: "Dirty Works",
+        location: "The Lucky Horseshoe - Set 2",
+        date: "9/23/2023",
+        id: "1orkYH4ApeDu6rrXdEJ8k6din3EmxC6oj"
+      }
+    ];
+  }
+
   get dke_tracks() {
     return [
       {
@@ -34,7 +51,6 @@ export default class ArticleLayout extends Vue {
         date: "4/1/2023",
         id: "132G2xcyEln3pbNJ0G_-fdOLpcY5m6Na-"
       },
-
       {
         title: "DKE - How'm I Doin'",
         location: "Golden Gate Park",
@@ -65,7 +81,6 @@ export default class ArticleLayout extends Vue {
         date: "5/23/2023",
         id: "1FGfj1PeRhzOanu-EY2cZ7JtJ46OIe0tU"
       },
-
       {
         title: "Parklet Jam (featuring Daisy) - Full Set",
         location: "The Lucky Horseshoe",
