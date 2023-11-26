@@ -7,7 +7,6 @@
       </p>
       <p>Recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     </div>
-    <Gigs class="text-center" />
     <h4 class="text-center pt-4">Bands</h4>
     <ul>
       <li>
@@ -17,30 +16,29 @@
         <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass.
       </li>
       <li>
-        <em>Angel Island</em> - We play jazz standards for the community and tourists in the park at the Conservatory of Flowers Tunnel.
-        This group has been playing in GG park for several years.
+        <em>Angel Island</em> - Jazz septet with sax, trumpet, flute, guitar, bass, and drums.
       </li>
       <li>
         <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor
-        Sax and Vocals. We gig around the Bay Area.
+        Sax and Vocals backed by bass, guitar, and drums.
       </li>
       <li>
-        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Run by Simon Donovan holding down Friday nights at Ivory & Vine. I sub with this group when they need me.
+        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan holding down Friday nights at Ivory & Vine. I sub with this group when needed.
       </li>
       <li>
-        <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys. I also sub with this group when needed.
+        <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys. I sub with this group when needed.
       </li>
       <li>
-        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and singer Daisy Dresner backed by Eli Kemp on drums and me on bass.
+        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and singer Daisy Dresner backed by drums and bass.
       </li>
       <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em>Americana and Bluegrass group led by Ian Epstein on guitar and featuring Joan Wilson Rueter on fiddle, Steve Owen on dobro, and myself on bass.
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em>Americana and Bluegrass four piece playing events and private shows around the Bay Area.
       </li>
       <li>
-        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Once in a blue moon I'm
-        privileged to fill in on bass with Aaron & Richard playing originals and classic Americana/Bluegrass.
+        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing classic Americana and Bluegrass. I sub with this group when needed.
       </li>
     </ul>
+    <Gigs class="text-center" />
     <h4 class="text-center pt-4">Jams</h4>
     <ul>
       <li>
