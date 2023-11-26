@@ -5,93 +5,139 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import hljs from 'highlight.js/lib/core'
-import vbscript from 'highlight.js/lib/languages/vbscript'
-import csharp from 'highlight.js/lib/languages/csharp'
-import javascript from 'highlight.js/lib/languages/javascript'
-import json from 'highlight.js/lib/languages/json'
-import html from 'highlight.js/lib/languages/vbscript-html'
-import xml from 'highlight.js/lib/languages/xml'
-import scss from 'highlight.js/lib/languages/scss'
-import css from 'highlight.js/lib/languages/css'
+import { Component, Vue } from "vue-property-decorator";
+import hljs from "highlight.js/lib/core";
+import vbscript from "highlight.js/lib/languages/vbscript";
+import csharp from "highlight.js/lib/languages/csharp";
+import javascript from "highlight.js/lib/languages/javascript";
+import json from "highlight.js/lib/languages/json";
+import html from "highlight.js/lib/languages/vbscript-html";
+import xml from "highlight.js/lib/languages/xml";
+import scss from "highlight.js/lib/languages/scss";
+import css from "highlight.js/lib/languages/css";
 
-import 'highlight.js/styles/github-dark-dimmed.css'
+import "highlight.js/styles/github-dark-dimmed.css";
 
 @Component
 export default class ArticleLayout extends Vue {
   async mounted() {
-    this.handleHighlight()
-    this.handlePTags()
-    this.rewriteImagesForLocalDev()
+    this.handleHighlight();
+    this.handlePTags();
+    this.rewriteImagesForLocalDev();
+  }
+
+  get dke_tracks() {
+    return [
+      {
+        title: "DKE - Bill Bailey",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "132G2xcyEln3pbNJ0G_-fdOLpcY5m6Na-"
+      },
+
+      {
+        title: "DKE - How'm I Doin'",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1HiEQNwhJ7gCC0_ObID6_8fPtTDx6RscW"
+      },
+      {
+        title: "DKE - She Lived Down By The Firehouse",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1A-8ruiLp4OVULfWVZDarD9FiK-rZz2AA"
+      },
+      {
+        title: "DKE - Railroad Bill",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1VrotkPOOWl9d_lcuUuiJQlH3OoN2A72E"
+      },
+      {
+        title: "Daisy & Friends - They're Red Hot",
+        location: "The Lucky Horseshoe Parklet",
+        date: "5/23/2023",
+        id: "1lxUYS0FjQDNzOsxRZX9N8sTTfl9V-coS"
+      },
+      {
+        title: "Daisy & Friends - San Francisco Bay Blues",
+        location: "The Lucky Horseshoe Parklet",
+        date: "5/23/2023",
+        id: "1FGfj1PeRhzOanu-EY2cZ7JtJ46OIe0tU"
+      },
+
+      {
+        title: "Parklet Jam (featuring Daisy) - Full Set",
+        location: "The Lucky Horseshoe",
+        date: "5/23/2023",
+        id: "12IlH5Qowx5ZD3Rblp0zyFlT6uk7YOPXu"
+      },
+      {
+        title: "DKE - Coffee Stains (Daisy Original)",
+        location: "Golden Gate Park",
+        date: "4/1/2023",
+        id: "1qXgu2LLOKWxv4RMcKRPc0sJ-rddR_oCN"
+      }
+    ];
   }
 
   handleHighlight() {
-    let shouldHighlight: boolean = false
+    let shouldHighlight: boolean = false;
 
-    Array.from(document.querySelectorAll('code')).map((code) => {
-      Array.from(code.classList).map((c) => {
+    Array.from(document.querySelectorAll("code")).map(code => {
+      Array.from(code.classList).map(c => {
         // console.log(c)
-        shouldHighlight =
-          this.registerLanguageIfIncluded('vb', 'vbscript', vbscript, c) ||
-          shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('csharp', 'csharp', csharp, c) ||
-          shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('javascript', 'javascript', javascript, c) ||
-          shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('json', 'json', json, c) || shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('html', 'html', html, c) || shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('xml', 'xml', xml, c) || shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('scss', 'scss', scss, c) || shouldHighlight
-        shouldHighlight =
-          this.registerLanguageIfIncluded('css', 'css', css, c) || shouldHighlight
-      })
-    })
+        shouldHighlight = this.registerLanguageIfIncluded("vb", "vbscript", vbscript, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("csharp", "csharp", csharp, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("javascript", "javascript", javascript, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("json", "json", json, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("html", "html", html, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("xml", "xml", xml, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("scss", "scss", scss, c) || shouldHighlight;
+        shouldHighlight = this.registerLanguageIfIncluded("css", "css", css, c) || shouldHighlight;
+      });
+    });
 
     if (shouldHighlight) {
-      hljs.highlightAll()
+      hljs.highlightAll();
     }
   }
 
   registerLanguageIfIncluded(langSlug, lang, langRef, c) {
     if (c.includes(langSlug)) {
       // console.log(`Registering ${lang} for ${c}`)
-      hljs.registerLanguage(langSlug, langRef)
-      return true
+      hljs.registerLanguage(langSlug, langRef);
+      return true;
     }
-    return false
+    return false;
   }
 
   handlePTags() {
-    Array.from(document.querySelectorAll('.article-wrapper > div > p')).map((p) => {
+    Array.from(document.querySelectorAll(".article-wrapper > div > p")).map(p => {
       // Remove indent for any paragraphs that are 2 lines or less.
       if (p.clientHeight <= 50) {
-        p.style['text-indent'] = '0'
+        p.style["text-indent"] = "0";
       }
       // Remove indent for any images
-      if (p.children.length == 1 && p.children[0].localName == 'img') {
-        p.style['text-indent'] = '0'
+      if (p.children.length == 1 && p.children[0].localName == "img") {
+        p.style["text-indent"] = "0";
       }
-    })
+    });
   }
 
   rewriteImagesForLocalDev() {
     //silly hack to be able to run local. Should compile this out...
-    document.querySelectorAll('img').forEach((i) => {
-      i.src = i.src.replace('media', 'img/media')
-    })
+    document.querySelectorAll("img").forEach(i => {
+      // i.src = i.src.replace('media', 'img/media')
+      i.src = i.src.replace("media", "@fs/vite-client/media");
+      //../../../../media/images/heros/kyle-finley-wy.jpg
+      //http://localhost:8080/@fs/vite-client/media/images/heros/kyle-finley-wy.jpg
+    });
   }
 }
 </script>
 
 <style lang="scss">
-
 .article-wrapper {
   padding: 2em;
 }

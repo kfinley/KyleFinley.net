@@ -1,14 +1,12 @@
 <template>
   <div ref="player" class="audio-player" v-if="track">
     <div v-if="isFailed">
-      <p class="font-weight-bold font-italic mb-0" >
+      <p class="font-weight-bold font-italic mb-0">
         Now Playing <br />{{ track.title }} <br />
         @ {{ track.location }} <br />
         {{ track.date }}
       </p>
-      <p>
-        (Unable to stream. iFrame player is being used.)
-      </p>
+      <p>(Unable to stream. iFrame player is being used.)</p>
       <div class="player-container">
         <iframe ref="iframe" frameborder="0" width="600" height="200" :src="iframeSrc"></iframe>
       </div>
@@ -125,10 +123,11 @@ export default class AudioPlayer extends Vue {
     this.isFailed = false;
     this.time = 0;
     this.duration = 0;
-    window.scrollTo(0, 0);
 
     const _this = this;
     setTimeout(() => {
+      this.$refs.player.scrollIntoView();
+
       const playPromise = this.$refs.audioPlayer.play();
 
       if (playPromise !== undefined) {
@@ -203,6 +202,10 @@ export default class AudioPlayer extends Vue {
 </script>
 
 <style scoped>
+.audio-player {
+  scroll-margin-top: 50px; /* fudged value for header that's 30 on scroll */
+}
+
 .controls {
   display: flex;
   justify-content: center;

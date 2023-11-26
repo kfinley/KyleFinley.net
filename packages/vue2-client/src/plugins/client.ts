@@ -11,6 +11,7 @@ import { GitHubSourceCode, GSlides } from '@/components';
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
 import { AuthState } from "@/store";
+import MediaPlayer from "../components/MediaPlayer.vue";
 
 
 export const setupModules = (store: Store<any>): void => {
@@ -50,6 +51,7 @@ const plugin = {
       // Globally register the G-Slides component
       Vue.component("GSlides", GSlides);
       Vue.component("GitHubSourceCode", GitHubSourceCode);
+      Vue.component("MediaPlayer", MediaPlayer);
 
       // router provided to add any plugin routes.
       // i.e. options.router.addRoutes(routes);

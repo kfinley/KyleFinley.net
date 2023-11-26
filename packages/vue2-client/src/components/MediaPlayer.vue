@@ -28,6 +28,9 @@ export default class MediaPlayer extends Vue {
   @Prop({ required: true })
   tracks!: Array<{ name: string; title: string; location: string; date: string; id: string }>;
 
+  // @Prop({ required: false, default: true})
+  // scrollToTopOnPlay!: boolean;
+
   selectedTrackIndex: number = -1;
   showPlayer: boolean = false;
   audio: AudioPlayer = null;
@@ -38,6 +41,9 @@ export default class MediaPlayer extends Vue {
     this.audio = null;
     this.audio = this.$refs.audio as AudioPlayer;
     this.audio.track = this.tracks[index];
+    // console.log(this.audio.$el);
+//    console.log(;
+
     this.audio.play();
   }
 

@@ -10,13 +10,8 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import MediaPlayer from "../components/MediaPlayer.vue";
 
-@Component({
-  components: {
-    MediaPlayer
-  }
-})
+@Component
 export default class Music extends Vue {
   get tracks() {
     return [

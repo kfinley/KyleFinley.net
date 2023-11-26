@@ -3,7 +3,13 @@
 # News Page
 </div>
 
-### November 2023
+### November 26, 2023
+---
+Added DKE page.
+Updated media player so it can be used on article pages.
+Updated media player scroll to.
+
+### November 21, 2023
 ---
 Reworked music page. Started splitting out bands and jams onto their own pages.
 

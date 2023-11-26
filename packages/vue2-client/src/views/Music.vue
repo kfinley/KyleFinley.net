@@ -32,8 +32,7 @@
         <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys.
       </li>
       <li>
-        <em>DKE</em> - Daisy, Kyle, &amp; Eli. Old school jazzy folky funky fun with Daisy on guitar, Eli on drums, &amp; me on bass. We
-        played together through the spring of 2023 before Daisy went back to being a world traveler.
+        <em><router-link to="/dke-trio">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring songs selected by guitarist and singer Daisy Dresner backed by Eli Kemp on drums and me on bass.
       </li>
       <li>
         <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Band for hire!
