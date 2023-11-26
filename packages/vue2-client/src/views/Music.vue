@@ -5,7 +5,6 @@
       <p>
         <i>Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area!!! </i>
       </p>
-      <p>Recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     </div>
     <h4 class="text-center pt-4">Bands</h4>
     <ul>
@@ -38,6 +37,7 @@
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing classic Americana and Bluegrass. I sub with this group when needed.
       </li>
     </ul>
+    <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     <Gigs class="text-center" />
     <h4 class="text-center pt-4">Jams</h4>
     <ul>
