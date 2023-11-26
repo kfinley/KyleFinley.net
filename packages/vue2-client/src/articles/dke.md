@@ -41,7 +41,7 @@ Sample songs:
 <div class="container text-center">
   <h2>Recordings</h2>
   <p>Here are a few live recordings for a sample of our sound.</p>
-  <p>Not professional recordings. These are made with an iPhone sitting somewhere nearby.</p>
+  <p>Not professional recordings. Made with an iPhone sitting somewhere nearby.</p>
 
   <media-player :tracks="this.$parent.dke_tracks"></media-player>
 </div>
