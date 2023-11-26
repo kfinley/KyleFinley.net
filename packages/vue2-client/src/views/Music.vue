@@ -31,7 +31,7 @@
         <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and singer Daisy Dresner backed by drums and bass.
       </li>
       <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em>Americana and Bluegrass four piece playing events and private shows around the Bay Area.
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and Bluegrass four piece playing events and private shows around the Bay Area.
       </li>
       <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing classic Americana and Bluegrass. I sub with this group when needed.
