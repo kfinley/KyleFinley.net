@@ -325,7 +325,7 @@ export const createRouter = async () => {
     // If nearest with meta not found then load it from corresponding meta json file
     if (!nearestWithMeta) {
 
-      getMetaData(to.name as string).then((meta) => {
+      let meta = getMetaData(to.name as string).then((meta) => {
         document.title = meta.title
 
         for (const tag of meta.metaTags) {
@@ -337,59 +337,58 @@ export const createRouter = async () => {
           tagEl.setAttribute('data-vue-router-controlled', '')
           document.head.appendChild(tagEl)
         }
+        return next();
       })
-      try {
-        document.querySelectorAll('img').forEach((i) => {
-          console.log(i)
-          i.src = i.src.replace('media', 'img/media')
-        })
-      }
-      catch (e) {
-        console.log(e);
-      }
-      return next();
     }
+    else {
+      // Turn the meta tag definitions into actual elements in the head.
+      nearestWithMeta.meta.metaTags.map((tagDef: any) => {
+        const tag = document.createElement('meta');
 
+        Object.keys(tagDef).forEach(key => {
+          tag.setAttribute(key, tagDef[key]);
+        });
 
-    // Turn the meta tag definitions into actual elements in the head.
-    nearestWithMeta.meta.metaTags.map((tagDef: any) => {
-      const tag = document.createElement('meta');
+        // We use this to track which meta tags we create so we don't interfere with other ones.
+        tag.setAttribute('data-vue-router-controlled', '');
 
-      Object.keys(tagDef).forEach(key => {
-        tag.setAttribute(key, tagDef[key]);
-      });
+        return tag;
+      })
+        // Add the meta tags to the document head.
+        .forEach((tag: any) => document.head.appendChild(tag));
 
-      // We use this to track which meta tags we create so we don't interfere with other ones.
-      tag.setAttribute('data-vue-router-controlled', '');
-
-      return tag;
-    })
-      // Add the meta tags to the document head.
-      .forEach((tag: any) => document.head.appendChild(tag));
-
-    next();
-
+      next();
+    }
   });
-
-
 
   router.afterEach((to, from) => {
     setTimeout(() => {
-
-      Array.from(Array.from(document.getElementsByTagName('main'))[0].querySelectorAll('main a:not(a[href*="http"])')).map((link) => {
-        // console.log(link)
-        link.addEventListener(
-          'click',
-          function (e) {
-
-            e.preventDefault()
-            e.stopPropagation()
-            router.push({ path: (link as any).href.split(window.location.host)[1] })
-          },
-          false
-        )
-      })
       try {
+        try {
+          // Do we still need this???
+          document.querySelectorAll('img').forEach((i) => {
+            console.log(i)
+            i.src = i.src.replace('media', 'img/media')
+          })
+        }
+        catch (e) {
+          console.log(e);
+        }
+
+        Array.from(Array.from(document.getElementsByTagName('main'))[0].querySelectorAll('main a:not(a[href*="http"])')).map((link) => {
+          // console.log(link)
+          link.addEventListener(
+            'click',
+            function (e) {
+
+              e.preventDefault()
+              e.stopPropagation()
+              router.push({ path: (link as any).href.split(window.location.host)[1] })
+            },
+            false
+          )
+        })
+
         Array.from(document.querySelectorAll('div > p')).map((p) => {
           // Remove indent for any paragraphs that are 2 lines or less.
           if (p.clientHeight <= 50) {
