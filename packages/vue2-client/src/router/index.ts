@@ -297,68 +297,33 @@ export const createRouter = async () => {
   }
 
   // This callback runs before every route change, including on page load.
-  router.beforeEach((to, from, next) => {
-    // This goes through the matched routes from last to first, finding the closest route with a title.
-    // e.g., if we have `/some/deep/nested/route` and `/some`, `/deep`, and `/nested` have titles,
-    // `/nested`'s will be chosen.
-    const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title);
+  router.beforeEach(async (to, from, next) => {
+    // console.log('router.beforeEach', to, from);
 
-    // Find the nearest route element with meta tags.
-    const nearestWithMeta = to.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
+    const meta = await getMetaData(to.name as string);
 
-    const previousNearestWithMeta = from.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
+    // console.log('setting tags', meta.metaTags.length)
+    document.title = meta.title
 
-    // If a route with a title was found, set the document (page) title to that value.
-    if (nearestWithTitle) {
-      document.title = nearestWithTitle.meta.title;
-    } else if (previousNearestWithMeta) {
-      document.title = previousNearestWithMeta.meta.title;
-    }
-
-    // Remove any stale meta tags from the document using the key attribute we set below.
     Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => {
       if (el.parentNode) {
+        // console.log('removing meta tag', el);
         el.parentNode.removeChild(el)
       }
     });
 
-    // If nearest with meta not found then load it from corresponding meta json file
-    if (!nearestWithMeta) {
+    meta.metaTags.map((tagDef: any) => {
 
-      let meta = getMetaData(to.name as string).then((meta) => {
-        document.title = meta.title
+      const tagEl = document.createElement('meta')
+      tagEl.setAttribute(Object.values(tagDef as string)[0], Object.values(tagDef as string)[1])
 
-        for (const tag of meta.metaTags) {
-          // console.log(tag)
-          const tagEl = document.createElement('meta')
-          tagEl.setAttribute(Object.values(tag as string)[0], Object.values(tag as string)[1])
+      // We use this to track which meta tags we create so we don't interfere with other ones.
+      tagEl.setAttribute('data-vue-router-controlled', '')
+      document.head.appendChild(tagEl)
+    });
+    // console.log('done w article metas');
+    next();
 
-          // We use this to track which meta tags we create so we don't interfere with other ones.
-          tagEl.setAttribute('data-vue-router-controlled', '')
-          document.head.appendChild(tagEl)
-        }
-        return next();
-      })
-    }
-    else {
-      // Turn the meta tag definitions into actual elements in the head.
-      nearestWithMeta.meta.metaTags.map((tagDef: any) => {
-        const tag = document.createElement('meta');
-
-        Object.keys(tagDef).forEach(key => {
-          tag.setAttribute(key, tagDef[key]);
-        });
-
-        // We use this to track which meta tags we create so we don't interfere with other ones.
-        tag.setAttribute('data-vue-router-controlled', '');
-
-        return tag;
-      })
-        // Add the meta tags to the document head.
-        .forEach((tag: any) => document.head.appendChild(tag));
-
-      next();
-    }
   });
 
   router.afterEach((to, from) => {
@@ -376,7 +341,7 @@ export const createRouter = async () => {
         }
 
         Array.from(Array.from(document.getElementsByTagName('main'))[0].querySelectorAll('main a:not(a[href*="http"])')).map((link) => {
-          // console.log(link)
+          //console.log('adding link', link);
           link.addEventListener(
             'click',
             function (e) {
