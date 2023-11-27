@@ -2,7 +2,7 @@
   <div class="container">
     <div class="text-center">
       <p>
-        <i>I'm a Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area. I'm in a few bands and ru a couple of jams. My gig schedule can be found below.</i>
+        <i>I'm a Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area. I'm in a few bands and run a couple of jazz jams. My gig schedule can be found below.</i>
       </p>
     </div>
     <h4 class="text-center pt-4">Bands</h4>
