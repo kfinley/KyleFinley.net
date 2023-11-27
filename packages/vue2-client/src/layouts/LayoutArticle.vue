@@ -124,61 +124,61 @@ export default class ArticleLayout extends Vue {
     return [
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1 ",
+        location: "The Lucky Horseshoe - Set 1 ",
         date: "11/15/2023",
         id: "17kN9rNXWzTiPI4uJtxuD3FGVPi0hzfE2"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2 ",
+        location: "The Lucky Horseshoe - Set 2 ",
         date: "11/15/2023",
         id: "1yZlmM4TpmANuMksyYGZypMOXKuc-gzfV"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
+        location: "The Lucky Horseshoe - Set 1",
         date: "9/20/2023",
         id: "1WtrgM1AGpNquvnkzCr1LQm1rcyTu3IbO"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
+        location: "The Lucky Horseshoe - Set 2",
         date: "9/20/2023",
         id: "11yqPLaw0q_hxRDkJAqEs9JivzOrY7CMQ"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
+        location: "The Lucky Horseshoe - Set 1",
         date: "8/16/2023",
         id: "1xbVh1oAb1vkB9aBJBhinxd3bkKX5PwZt"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
+        location: "The Lucky Horseshoe - Set 2",
         date: "8/16/2023",
         id: "1ao0nJJdz3n2KcfNGnRt7G2laVmJTPuW6"
       },
       {
         title: "Overtime Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
+        location: "The Lucky Horseshoe - Set 1",
         date: "7/9/2023",
         id: "1MRZatxHFzORqq2OErVsmVl35XnS90S4g"
       },
       {
         title: "Overtime Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
+        location: "The Lucky Horseshoe - Set 2",
         date: "7/9/2023",
         id: "1LneWfZku7cGuFXsGSB4JSVThwgfA4DD3"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
+        location: "The Lucky Horseshoe - Set 1",
         date: "6/21/2023",
         id: "1X34fVUm6WNwMFvsJaEfXJmdRAOrEH7Gm"
       },
       {
         title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
+        location: "The Lucky Horseshoe - Set 2",
         date: "6/21/2023",
         id: "1-6xPClYO2JRSAQ6_zg5BphGiWorhO8J5"
       },
@@ -194,55 +194,55 @@ export default class ArticleLayout extends Vue {
     return [
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1",
+        location: "Waystone - Set 1",
         date: "11/20/2023",
         id: "1OIsfanxKMcrdLngi1i0Xom9LHK5JtGPg"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 2",
+        location: "Waystone - Set 2",
         date: "11/20/2023",
         id: "1HhMBZBW7p9H6nitZ2CWa-V3gSpYHvDbg"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 3",
+        location: "Waystone - Set 3",
         date: "11/20/2023",
         id: "1Wp5VkdTMe2iiwaq3aTJiDNi8VBKoURyy"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 4",
+        location: "Waystone - Set 4",
         date: "11/20/2023",
         id: "1nwB_ACicLzqeD-bXYRh9Hrbd9Er4uKhD"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1 ",
+        location: "Waystone - Set 1 ",
         date: "11/13/2023",
         id: "1ImnGsPQnFrSpi_0_Ono-qhCuR1Me2gQN"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 2",
+        location: "Waystone - Set 2",
         date: "11/13/2023",
         id: "1nwq0Mjq5pMjCKyJ4-00Me5hGsYvFBcX9"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1",
+        location: "Waystone - Set 1",
         date: "11/6/2023",
         id: "1uQ7cqch4nwfdTHuwwffpT3DeYKOOHN7J"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 2",
+        location: "Waystone - Set 2",
         date: "11/6/2023",
         id: "1YQAHS_ZJ_FflcIH5YteQoJJsuACS4oRQ"
       },
       {
         title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 3",
+        location: "Waystone - Set 3",
         date: "11/6/2023",
         id: "1YYROim7F_p6VqDLz2Rj6HQ69bmgFedKn"
       }
