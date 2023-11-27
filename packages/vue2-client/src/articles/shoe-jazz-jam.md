@@ -6,7 +6,7 @@ This jam is every 3rd Wednesday of the month from 8 - 11pm. I've been hosting th
 
 We're open to all instruments and singers. If you're going to sing please know what key you want us to play in and have confidence that you can sing with a group on stage (this isn't karaoke or speak-singing session).
 
-The house band is usually the <router-link to="/dirty-works">Dirty Works Jazz Band</router-link> and there will always be drums and a guitar amp on the set so no need to bring those. Keys are usually there as well. Contact me if you have any questions about equipment.
+The house band is usually the <router-link to="/dirty-works">Dirty Works Jazz Band</router-link> and there will always be drums and a guitar amp on the set so no need to bring those. Keys are usually there as well. <a href="mailto:kyle@kylefinley.net">Contact me</a> if you have any questions about equipment.
 
 <div class="container text-center">
 
