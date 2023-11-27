@@ -269,6 +269,33 @@ export const createRouter = async () => {
     }
   });
 
+  const getMetaData = async (file: string) => {
+    //TODO: fix this dumb shit...
+    // console.log(file)
+    // This is a shitty hack to make nested paths for dynamic imports work b/c of an issue in Vite
+    // https://github.com/vitejs/vite/issues/4945
+    const pathParts = file.split('/')
+    switch (file) {
+      case "Home":
+      case "Articles":
+      case "Media":
+      case "Music":
+      case "Software":
+      case "Travel":
+      case "News":
+      case "Contact":
+        return (await import(`../views/${pathParts[0]}.json`)).default
+      default: {
+        if (pathParts.length === 1) {
+          return (await import(`../articles/${pathParts[0]}.json`)).default
+        }
+        if (pathParts.length === 2) {
+          return (await import(`../articles/${pathParts[0]}/${pathParts[1]}.json`)).default
+        }
+      }
+    }
+  }
+
   // This callback runs before every route change, including on page load.
   router.beforeEach((to, from, next) => {
     // This goes through the matched routes from last to first, finding the closest route with a title.
@@ -295,60 +322,8 @@ export const createRouter = async () => {
       }
     });
 
-    // Skip rendering meta tags if there are none.
-    if (!nearestWithMeta) return next();
-
-    // Turn the meta tag definitions into actual elements in the head.
-    nearestWithMeta.meta.metaTags.map((tagDef: any) => {
-      const tag = document.createElement('meta');
-
-      Object.keys(tagDef).forEach(key => {
-        tag.setAttribute(key, tagDef[key]);
-      });
-
-      // We use this to track which meta tags we create so we don't interfere with other ones.
-      tag.setAttribute('data-vue-router-controlled', '');
-
-      return tag;
-    })
-      // Add the meta tags to the document head.
-      .forEach((tag: any) => document.head.appendChild(tag));
-
-    next();
-
-  });
-
-  const getMetaData = async (file: string) => {
-    //TODO: fix this dumb shit...
-    // console.log(file)
-    // This is a shitty hack to make nested paths for dynamic imports work b/c of an issue in Vite
-    // https://github.com/vitejs/vite/issues/4945
-    const pathParts = file.split('/')
-    switch (file) {
-      case "Home":
-      case "Articles":
-      case "Media":
-      case "Music":
-      case "Software":
-      case "Travel":
-      case "News":
-      case "Contact":
-        return (await import(`../views/${pathParts[0]}.json`)).default
-      default: {
-        if (pathParts.length === 1) {
-          return (await import(`../articles/${pathParts[0]}.json`)).default
-        }
-        if (pathParts.length === 2) {
-          return (await import(`../articles/${pathParts[0]}/${pathParts[1]}.json`)).default
-        }
-      }
-
-    }
-
-  }
-
-  router.afterEach((to, from) => {
-    setTimeout(() => {
+    // If nearest with meta not found then load it from corresponding meta json file
+    if (!nearestWithMeta) {
 
       getMetaData(to.name as string).then((meta) => {
         document.title = meta.title
@@ -372,6 +347,35 @@ export const createRouter = async () => {
       catch (e) {
         console.log(e);
       }
+      return next();
+    }
+
+
+    // Turn the meta tag definitions into actual elements in the head.
+    nearestWithMeta.meta.metaTags.map((tagDef: any) => {
+      const tag = document.createElement('meta');
+
+      Object.keys(tagDef).forEach(key => {
+        tag.setAttribute(key, tagDef[key]);
+      });
+
+      // We use this to track which meta tags we create so we don't interfere with other ones.
+      tag.setAttribute('data-vue-router-controlled', '');
+
+      return tag;
+    })
+      // Add the meta tags to the document head.
+      .forEach((tag: any) => document.head.appendChild(tag));
+
+    next();
+
+  });
+
+
+
+  router.afterEach((to, from) => {
+    setTimeout(() => {
+
       Array.from(Array.from(document.getElementsByTagName('main'))[0].querySelectorAll('main a:not(a[href*="http"])')).map((link) => {
         // console.log(link)
         link.addEventListener(
@@ -395,7 +399,7 @@ export const createRouter = async () => {
       } catch (e) {
         console.log(e);
       }
-    }, 100)
+    }, 50)
 
   });
 
