@@ -238,17 +238,16 @@ export const createRouter = async () => {
       routes.push({
         path: `/${article}`,
         component: RouterLayout,
-        meta: viewsMeta[articleJson] ? (await viewsMeta[articleJson]() as any).default : { allowAnonymous: true },
         children: [
           {
             path: '',
             component: LayoutArticle,
+            meta: viewsMeta[articleJson] ? (await viewsMeta[articleJson]() as any).default : { allowAnonymous: true },
             children: [
               {
                 path: '',
                 name: article,
                 component: articleComponent,
-
               }
             ],
           }
@@ -396,7 +395,7 @@ export const createRouter = async () => {
       } catch (e) {
         console.log(e);
       }
-    }, 200)
+    }, 100)
 
   });
 
