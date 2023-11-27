@@ -46,9 +46,9 @@
         the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard Caceres on keys, and I'm on bass.
       </li>
       <li>
-        <em>Open Jazz Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - I run this jam at
-        the Shoe ever 3rd Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every era.
-        The Dirty Works trio is the core house band and we always have great group of players come through.
+        <em><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - I run this jam ever
+        3rd Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every era. The Dirty Works trio is the core house band and we always have great
+        players come through this jam.
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park

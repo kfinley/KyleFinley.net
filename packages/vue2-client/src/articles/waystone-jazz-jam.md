@@ -2,13 +2,23 @@
   <h2>Waystone Jazz Jam</h2>
 </div>
 
-Monday nights from 6-9pm I host a jazz jam in North Beach at the <a href="waystonesf.com" target="waystone">Waystone Wine Bar</a>. This is a very casual jam usually featuring Dan Dectis on Sax, Richard Cacares on keys, Peter Ilf on Trumpet, Eli Kemp on drums, and myself on bass. We play classic jazz standards and usually have a handful of players show up through the night.
+Monday nights from 6-9pm I host a jazz jam at the <a href="https://waystonesf.com" target="waystone">Waystone Wine Bar</a> in the North Beach neighborhood of SF. This is a very casual jam usually featuring Dan Dectis on alto sax, Richard Cacares on keys, Peter Ilf on trumpet, Eli Kemp on drums, and myself on bass.
 
-This is a pretty fresh jam that started the first week of Nov 2023. We're just getting started and so far it's been a blast. Big thanks to Tom from WaystoneSF for letting us bring jazz into the bar every Monday!! We're always open to more players and singers are very welcome. I run a pretty loose jam that allows for everyone who wants to play to play. We don't have a hard set list or break out people into groups (other than the rhythm section players for obvious reasons). If you're a horn player then just let us know when you want to jump in. Singers just let us know what key you like. We play jazz standards from the books. Books and iRealPro on hand if needed.
+We play classic jazz standards and usually have a handful of players show up through the night. This is a pretty fresh jam that started the first week of Nov 2023. We're just getting started and so far it's been a blast!!
+
+Big thanks to Tom from <a href="https://waystonesf.com" target="waystone">WaystoneSF</a> for letting us bring jazz into the bar every Monday night!! We're always open to more players and singers are very welcome.
 
 <div class="container text-center">
 
-  <p><h5>$1 off drinks for all players!</h5></p>
+  <p>
+  <h5>Next Jam - November 27th</h5>
+  The house band will be featuring Daisy Dresden with his renditions of pre-40's jazz & blues.
+  </p>
+
+  <p>
+  <h5>$1 off drinks for all players!</h5>
+  Just let the bartender, Matt, know you're playing in the jam when you order
+  </p>
 
   <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
 

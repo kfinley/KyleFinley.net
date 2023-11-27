@@ -15,19 +15,7 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Music extends Vue {
   get tracks() {
     return [
-     
-      {
-        title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1 ",
-        date: "11/15/2023",
-        id: "17kN9rNXWzTiPI4uJtxuD3FGVPi0hzfE2"
-      },
-      {
-        title: "Shoe Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2 ",
-        date: "11/15/2023",
-        id: "1yZlmM4TpmANuMksyYGZypMOXKuc-gzfV"
-      },
+
 
       {
         title: "Nobody From Nashville",
@@ -47,42 +35,7 @@ export default class Music extends Vue {
         date: "10/27/2023",
         id: "1fSXoGfCnCVQrIJRNqUGm2jocr90oS6fK"
       },
-      {
-        title: "Shoe Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
-        date: "9/20/2023",
-        id: "1WtrgM1AGpNquvnkzCr1LQm1rcyTu3IbO"
-      },
-      {
-        title: "Shoe Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
-        date: "9/20/2023",
-        id: "11yqPLaw0q_hxRDkJAqEs9JivzOrY7CMQ"
-      },
-      {
-        title: "Shoe Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
-        date: "8/16/2023",
-        id: "1xbVh1oAb1vkB9aBJBhinxd3bkKX5PwZt"
-      },
-      {
-        title: "Shoe Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
-        date: "8/16/2023",
-        id: "1ao0nJJdz3n2KcfNGnRt7G2laVmJTPuW6"
-      },
-      {
-        title: "Overtime Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
-        date: "7/9/2023",
-        id: "1MRZatxHFzORqq2OErVsmVl35XnS90S4g"
-      },
-      {
-        title: "Overtime Jazz Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
-        date: "7/9/2023",
-        id: "1LneWfZku7cGuFXsGSB4JSVThwgfA4DD3"
-      },
+
       {
         title: "Zack & Kyle",
         location: "Waystone SF - Set 1",
@@ -95,18 +48,7 @@ export default class Music extends Vue {
         date: "7/1/2023",
         id: "1I72tGe3DjT24W2zeikKZu_msC42vMPP7"
       },
-      {
-        title: "Shoe Jam",
-        location: "The Lucky Horseshoe SF - Set 1",
-        date: "6/21/2023",
-        id: "1X34fVUm6WNwMFvsJaEfXJmdRAOrEH7Gm"
-      },
-      {
-        title: "Shoe Jam",
-        location: "The Lucky Horseshoe SF - Set 2",
-        date: "6/21/2023",
-        id: "1-6xPClYO2JRSAQ6_zg5BphGiWorhO8J5"
-      },
+
       {
         title: "June MusicLuck - Bangers",
         location: "The Mission SF",
@@ -230,8 +172,6 @@ export default class Music extends Vue {
         date: "5/23/2023",
         id: "1FGfj1PeRhzOanu-EY2cZ7JtJ46OIe0tU"
       },
-      { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 1", date: "5/17/2023", id: "1YSrIZaYuH0Dufo1wm84YlTIghtuurTxX" },
-      { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 2", date: "5/17/2023", id: "1JYubC-BTwk4jkYARl54D46Gez-Wd_hT3" },
       {
         title: "John Henry - Daisy, Kyle, Eli, & Steve",
         location: "The Lucky Horseshoe",
@@ -240,8 +180,6 @@ export default class Music extends Vue {
       },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "5/14/2023", id: "1l7PpTwKxERzTg7pNxrQ1Ai6zLwVLzeLF" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "5/7/2023", id: "1BSE5cycsJhEkpu2wTBokl43mtmvSW7nd" },
-      { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 1", date: "4/19/2023", id: "1aD6PFdnn_bLE4mHT2oTJ8bnVhJkA17xH" },
-      { title: "Open Jazz Jam", location: "The Lucky Horseshoe - Set 2", date: "4/19/2023", id: "1qL-CwSJW_j0lT1vlfozhlk9f8bHSXBL1" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "4/9/2023", id: "1hUGLWyNNH4H0L4ThmSXfmjqtN21Ft0gF" },
       {
         title: "DKE - Bill Bailey",
@@ -275,7 +213,6 @@ export default class Music extends Vue {
       },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/26/2023", id: "1O43chqAngKhfsXxk8V7dt9X0ZBpA6OGz" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/19/2023", id: "1gqb4IGXiRPx7X8nFM_X_L4R_W4XY4E0G" },
-      { title: "Open Jazz Jam", location: "The Lucky Horseshoe", date: "3/15/2023", id: "1Ne6Qpm3hVcoquJWvT6X5S56j2wECxH7E" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/12/2023", id: "1idpNKZvPhTmyWxaDnLqTpCqLb_Uhe1JV" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "3/5/2023", id: "1eZSKWkTAUHweG3tchVo3JKIF1CT3IrhE" },
       { title: "Sunday Bluegrass Jam", location: "The Lucky Horseshoe", date: "2/26/2023", id: "1Dcx0nJOImF4jAriFAXKtYUYKs-Ovf86H" },
