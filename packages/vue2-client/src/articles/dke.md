@@ -1,4 +1,3 @@
-
 <div class="container text-center">
   <h2>The DKE Trio</h2>
 </div>

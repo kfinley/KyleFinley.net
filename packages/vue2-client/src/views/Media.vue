@@ -15,30 +15,7 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Music extends Vue {
   get tracks() {
     return [
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1",
-        date: "11/20/2023",
-        id: "1OIsfanxKMcrdLngi1i0Xom9LHK5JtGPg"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 2",
-        date: "11/20/2023",
-        id: "1HhMBZBW7p9H6nitZ2CWa-V3gSpYHvDbg"
-      },
-            {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 3",
-        date: "11/20/2023",
-        id: "1Wp5VkdTMe2iiwaq3aTJiDNi8VBKoURyy"
-      },
-                  {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 4",
-        date: "11/20/2023",
-        id: "1nwB_ACicLzqeD-bXYRh9Hrbd9Er4uKhD"
-      },
+     
       {
         title: "Shoe Jazz Jam",
         location: "The Lucky Horseshoe SF - Set 1 ",
@@ -51,36 +28,7 @@ export default class Music extends Vue {
         date: "11/15/2023",
         id: "1yZlmM4TpmANuMksyYGZypMOXKuc-gzfV"
       },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1 ",
-        date: "11/13/2023",
-        id: "1ImnGsPQnFrSpi_0_Ono-qhCuR1Me2gQN"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 2",
-        date: "11/13/2023",
-        id: "1nwq0Mjq5pMjCKyJ4-00Me5hGsYvFBcX9"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 1",
-        date: "11/6/2023",
-        id: "1uQ7cqch4nwfdTHuwwffpT3DeYKOOHN7J"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 2",
-        date: "11/6/2023",
-        id: "1YQAHS_ZJ_FflcIH5YteQoJJsuACS4oRQ"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone SF - Set 3",
-        date: "11/6/2023",
-        id: "1YYROim7F_p6VqDLz2Rj6HQ69bmgFedKn"
-      },
+
       {
         title: "Nobody From Nashville",
         location: "Helmann Ranch",

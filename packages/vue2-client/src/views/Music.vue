@@ -42,7 +42,7 @@
     <h4 class="text-center pt-4">Jams</h4>
     <ul>
       <li>
-        <em>Monday Jazz Jam @ <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em> - I host a jazz jam every Monday night at
+        <em><router-link to="/waystone-jazz-jam">Monday Jazz Jam</router-link> @ <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em> - I host a jazz jam every Monday night at
         the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard Caceres on keys, and I'm on bass.
       </li>
       <li>
