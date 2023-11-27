@@ -300,6 +300,7 @@ export const createRouter = async () => {
   // This callback runs before every route change, including on page load.
   router.beforeEach((to, from, next) => {
     try {
+      // Get meta info for the route
       getMetaData(to.name as string).then((meta) => {
         document.title = meta.title
 
@@ -316,7 +317,6 @@ export const createRouter = async () => {
           });
 
         });
-        console.log('done w article metas');
         next();
       });
     } catch (e) {

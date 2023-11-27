@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-    <h1 class="text-center">Kyle Finley's Music</h1>
     <div class="text-center">
       <p>
-        <i>Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area!!! </i>
+        <i>I'm a Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area. I'm in a few bands and ru a couple of jams. My gig schedule can be found below.</i>
       </p>
     </div>
     <h4 class="text-center pt-4">Bands</h4>
