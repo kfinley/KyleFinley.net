@@ -12,7 +12,7 @@ Big thanks to Tom from <a href="https://waystonesf.com" target="waystone">Waysto
 
   <p>
   <h5>Next Jam <br/> November 27th</h5>
-  The house band will be featuring Daisy Dresden on guitar and vocals with his renditions of pre-40's jazz & blues.
+  The house band will be featuring <router-link to="/dke">Daisy Dresden</router-link> on guitar and vocals with his renditions of pre-40's jazz & blues.
   </p>
 
   <p>
