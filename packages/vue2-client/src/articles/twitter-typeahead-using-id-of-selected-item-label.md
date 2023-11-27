@@ -8,7 +8,7 @@ _<div class="article-meta-data"> by <span class="article-meta-author" itemprop="
 
 ## Simple Way to Store the Typeahead ID Value
 
-While working on my startup project I've been using the [Typeahead.js](http://twitter.github.io/typeahead.js) library for handling autocomplete for form elements using AJAX calls to populate the list. It's a great little framework from [Twitter](http://twitter.com/) that is simple to use and works like a champ! If you're not using it and looking for an autocomplete solution check it out.
+While working on my startup project I've been using the [Typeahead.js](http://twitter.github.io/typeahead.js) library for handling autocomplete for form elements using AJAX calls to populate the list. It's a great little framework from Twitter that is simple to use and works like a champ! If you're not using it and looking for an autocomplete solution check it out.
 
 While working on a page I ran into a situation where I wanted to show a list of text for users to select from but wanted to store the ID related to that item so I could use it later. A quick search led me to a common solution of using arrays as a lookup map for the selected value. I thought this was a bit of overkill and there was a better solution and came up with this.
 

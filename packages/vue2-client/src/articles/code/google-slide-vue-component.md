@@ -15,7 +15,7 @@ As part of my ongoing rebuild of my little personal slice of the web I've decide
 ></iframe>
 ```
 
-This works but I quickly realized I needed the iFrame to be responsive. Another quick search and I found [Amit Agarwal's](https://twitter.com/labnol) _[How to Embed Google Slides Like a Pro!](https://www.labnol.org/embed-google-slides-200615)_ article. Check out Amit's article for more details but with his recommended CSS we can make the slide player responsive by wrapping the iFrame like so.
+This works but I quickly realized I needed the iFrame to be responsive. Another quick search and I found Amit Agarwal's _[How to Embed Google Slides Like a Pro!](https://www.labnol.org/embed-google-slides-200615)_ article. Check out Amit's article for more details but with his recommended CSS we can make the slide player responsive by wrapping the iFrame like so.
 
 ```html
 <div class="responsive">
