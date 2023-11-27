@@ -9,12 +9,6 @@ We play classic jazz standards and usually have a handful of players show up thr
 Big thanks to Tom from <a href="https://waystonesf.com" target="waystone">WaystoneSF</a> for letting us bring jazz into the bar every Monday night!! We're always open to more players and singers are very welcome. If you have any questions feel free to reach out via <a href="mailto:kyle@kylefinley.net">email</a>.
 
 <div class="container text-center">
-
-  <p>
-  <h5>Next Jam <br/> November 27th</h5>
-  The house band will be featuring <router-link to="/dke">Daisy Dresden</router-link> on guitar and vocals with his renditions of pre-40's jazz & blues.
-  </p>
-
   <p>
   <h5>$1 off drinks for all players!</h5>
   Just let Matt, the bartender, know you're playing in the jam when you order
