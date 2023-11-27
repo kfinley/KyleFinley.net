@@ -318,11 +318,11 @@ export const createRouter = async () => {
     }
 
     // Remove any stale meta tags from the document using the key attribute we set below.
-    Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => {
-      if (el.parentNode) {
-        el.parentNode.removeChild(el)
-      }
-    });
+    // Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => {
+    //   if (el.parentNode) {
+    //     el.parentNode.removeChild(el)
+    //   }
+    // });
 
     // If nearest with meta not found then load it from corresponding meta json file
     if (nearestWithMeta == undefined) {
@@ -333,12 +333,21 @@ export const createRouter = async () => {
         document.title = meta.title
 
         meta.metaTags.map((tagDef: any) => {
-          const tagEl = document.createElement('meta')
-          tagEl.setAttribute(Object.values(tagDef as string)[0], Object.values(tagDef as string)[1])
+          let tag = document.querySelector((`meta[${Object.keys(tagDef)[0]}='${tagDef[Object.keys(tagDef)[0]]}']`))
+          console.log(`meta[${Object.keys(tagDef)[0]}='${tagDef[Object.keys(tagDef)[0]]}']`, tag);
+
+          if (!tag) {
+            tag = document.createElement('meta');
+            document.head.appendChild(tag)
+          }
+
+          Object.keys(tagDef).forEach(key => {
+            tag.setAttribute(key, tagDef[key]);
+          });
 
           // We use this to track which meta tags we create so we don't interfere with other ones.
-          tagEl.setAttribute('data-vue-router-controlled', '')
-          document.head.appendChild(tagEl)
+          //tag.setAttribute('data-vue-router-controlled', '')
+
         });
         console.log('done w article metas');
         next();
@@ -350,19 +359,26 @@ export const createRouter = async () => {
 
       // Turn the meta tag definitions into actual elements in the head.
       nearestWithMeta.meta.metaTags.map((tagDef: any) => {
-        const tag = document.createElement('meta');
+        let tag = document.querySelector((`meta[${Object.keys(tagDef)[0]}='${tagDef[Object.keys(tagDef)[0]]}']`))
+        console.log(`meta[${Object.keys(tagDef)[0]}='${tagDef[Object.keys(tagDef)[0]]}']`, tag);
+
+        if (!tag) {
+          tag = document.createElement('meta');
+          document.head.appendChild(tag)
+        }
 
         Object.keys(tagDef).forEach(key => {
           tag.setAttribute(key, tagDef[key]);
         });
 
         // We use this to track which meta tags we create so we don't interfere with other ones.
-        tag.setAttribute('data-vue-router-controlled', '');
+        //tag.setAttribute('data-vue-router-controlled', '');
 
-        return tag;
+        // return tag;
       })
-        // Add the meta tags to the document head.
-        .forEach((tag: any) => document.head.appendChild(tag));
+      // Add the meta tags to the document head.
+      // .forEach((tag: any) => document.head.appendChild(tag));
+      console.log('calling next');
       next();
     }
 
