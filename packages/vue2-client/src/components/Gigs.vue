@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Where am I playing?</h3>
+    <h3>Where I'm playing</h3>
     <component :is="thisMonth" />
     <component :is="nextMonth" />
   </div>
