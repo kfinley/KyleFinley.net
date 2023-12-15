@@ -2,38 +2,46 @@
   <div class="container">
     <div class="text-center">
       <p>
-        <i>I'm a Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area. I'm in a few bands and run a couple of jazz jams. My gig schedule can be found below.</i>
+        <i
+          >I'm a Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area. I'm in a few bands and run
+          a couple of jazz jams. My gig schedule can be found below.</i
+        >
       </p>
     </div>
     <h4 class="text-center pt-4">Bands</h4>
     <ul>
       <li>
-        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - We play a wide range of classic standards including ballads, blues, bop, soul, funk, swing, latin, and more!
+        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - We play a wide range of classic standards including
+        ballads, blues, bop, soul, funk, swing, latin, and more!
       </li>
       <li>
-        <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli Kemp on Drums, and me on bass.
+        <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli
+        Kemp on Drums, and me on bass.
+      </li>
+      <li><em>Angel Island</em> - Jazz septet with sax, trumpet, flute, guitar, bass, and drums.</li>
+      <li>
+        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
+        backed by bass, guitar, and drums.
       </li>
       <li>
-        <em>Angel Island</em> - Jazz septet with sax, trumpet, flute, guitar, bass, and drums.
+        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan holding down
+        Friday nights at Ivory & Vine. I sub with this group when needed.
+      </li>
+      <li><em>Midnite Flyte</em> - Small jazz combo led by Syd Williams on keys. I sub with this group when needed.</li>
+      <li>
+        <em><a href="http://www.trikonautband.com" target="trickonaut">Trikonaut</a></em> - Jazz, Latin, Blues, and More!
       </li>
       <li>
-        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor
-        Sax and Vocals backed by bass, guitar, and drums.
+        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and
+        singer Daisy Dresner backed by drums and bass.
       </li>
       <li>
-        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan holding down Friday nights at Ivory & Vine. I sub with this group when needed.
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and
+        Bluegrass four piece playing events and private shows around the Bay Area.
       </li>
       <li>
-        <em>Midnite Flyte</a></em> - Small jazz combo led by Syd Williams on keys. I sub with this group when needed.
-      </li>
-      <li>
-        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and singer Daisy Dresner backed by drums and bass.
-      </li>
-      <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and Bluegrass four piece playing events and private shows around the Bay Area.
-      </li>
-      <li>
-        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing classic Americana and Bluegrass. I sub with this group when needed.
+        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing
+        classic Americana and Bluegrass. I sub with this group when needed.
       </li>
     </ul>
     <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
@@ -41,13 +49,20 @@
     <h4 class="text-center pt-4">Jams</h4>
     <ul>
       <li>
-        <em><router-link to="/waystone-jazz-jam">Monday Jazz Jam</router-link> @ <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em> - I host a jazz jam every Monday night at
-        the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard Caceres on keys, and I'm on bass.
+        <em
+          ><router-link to="/waystone-jazz-jam">Monday Jazz Jam</router-link> @
+          <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em
+        >
+        - I host a jazz jam every Monday night at the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard
+        Caceres on keys, and I'm on bass.
       </li>
       <li>
-        <em><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - I run this jam ever
-        3rd Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every era. The Dirty Works trio is the core house band and we always have great
-        players come through this jam.
+        <em
+          ><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
+          <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em
+        >
+        - I run this jam ever 3rd Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every
+        era. The Dirty Works trio is the core house band and we always have great players come through this jam.
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park
