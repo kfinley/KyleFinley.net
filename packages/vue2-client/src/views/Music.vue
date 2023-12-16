@@ -78,7 +78,6 @@
         to be every 1st Sunday of the month from 8-9:30pm but it hasn't been running for a while now.
       </li>
       <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
-      <li><em>Woody Lauer's Bluegrass Jam @ Amado's</em> - Every Wednesday from 7-10pm</li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
         - This was a great jam when Frank Holmes ran it. I enjoyed playing there every week for several years. I don't go anymore.
