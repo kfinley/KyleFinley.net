@@ -26,7 +26,7 @@ I'm always working on several projects. Below you'll find info on my previous wo
     <div class="timeline-item-content">
       <h3>Sports Tracker & Coaching Platform</h3>
       <p>
-        I spent the majority of late Spring and early Summer of 2022 working on a startup idea I had with some family members. The plan was to create a collection of progressive web apps that all use a common back end platform. These apps would be targeted at specific sports and would provide tools for scheduling, tracking (stats as well as health data), coaching, and more. The project got derailed after a loss in the family but I still have hopes to continue working on it more.
+        I spent the majority of late Spring / Summer 2022 and then some time in the Spring of 2023 working on a startup idea I had hoped to work on with some family members. I started building a common back-end platform and a collection of progressive web apps that would use it. These apps targeted specific sports providing tools for scheduling, tracking metrics (stats as well as health data), coaching, and more. The project was derailed after a loss in the family in 2022. Despite attempts to continue working on things the remaining family member involved never committed time to the project. As of now I've shelved the project. The source code can be found on my <a href="https://github.com/kfinley/holeshot" target="GH">GitHub</a>.
       </p>
     </div>
   </div>
@@ -113,7 +113,7 @@ I'm always working on several projects. Below you'll find info on my previous wo
 <div class="timeline">
 
   <div class="timeline-item">
-    <div class="timeline-item-content"">
+    <div class="timeline-item-content">
       <h2>How I got here...</h2>
     </div>
   </div>
