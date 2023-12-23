@@ -5,8 +5,8 @@
       <div class="col-12 pt-2">
         <h2 class="text-center"><router-link to="/music">Music</router-link></h2>
         <p>
-          I'm a Jazz & Americana musician actively gigging around the San Francisco bay area. I play with several groups and I run a few
-          jazz jams. My <router-link to="/music">music page</router-link> has more info on bands, jams, and gigs.
+          I'm a Jazz &amp; Americana musician actively gigging around the San Francisco bay area. I play with several groups and I run a few
+          jazz jams. My <router-link :to="{ name: routes.Music }">music page</router-link> has more info on bands, jams, and gigs.
         </p>
         <p>
           I primarily play upright bass but I also play trombone and sometimes guitar. My main ax is a 1980 Johannes Rubner I've owned since
@@ -14,13 +14,13 @@
           Stradivarius Model 42 that's been in my family over 50 years.
         </p>
         <p></p>
-        <h2 class="text-center"><router-link to="/software">Software</router-link></h2>
+        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software</router-link></h2>
         <p>
           I've been a software developer now for over 20 years. It's been an adventure! I've watched the internet grow and industries form.
           I've worked on lots of things and have worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as
           a songwriter friend told me once "Ya know the problem is, nobody really cares!" Good point....
         </p>
-        <p>To find out what I'm working on lately check out my <router-link to="/software">software page</router-link>.</p>
+        <p>To find out what I'm working on lately check out my <router-link :to="{ name: routes.Software }">software page</router-link>.</p>
         <h2 class="text-center"><a href="https://acarnamedsu.com" target="Su">Traveling</a></h2>
         <p>
           I enjoy traveling a lot but I don't travel as much as I used to. I was a weekly flying consultant for years, active in the Couch
@@ -53,8 +53,12 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { RouteNames } from '../router/RouteNames';
+
 @Component
-export default class Home extends Vue {}
+export default class Home extends Vue {
+    routes = RouteNames;
+}
 </script>
 
 <style lang="scss">
