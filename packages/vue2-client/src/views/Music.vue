@@ -40,6 +40,10 @@
         Bluegrass four piece playing events and private shows around the Bay Area.
       </li>
       <li>
+        <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
+        or so I play with fellow bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF.
+      </li>
+      <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing
         classic Americana and Bluegrass. I sub with this group when needed.
       </li>
