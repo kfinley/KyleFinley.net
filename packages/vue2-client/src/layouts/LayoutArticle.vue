@@ -82,19 +82,19 @@ export default class ArticleLayout extends Vue {
   get dw_tracks() {
     return [
       {
-        title: "Dirty Trio (Kyle, Dan, & Richard)",
+        title: "Dirty Works Trio (Kyle, Dan, & Richard)",
         location: "Waystone - Set 1",
         date: "1/7/2024",
         id: "1DcdgLm-LRMtA_DMjmr-r9fQDiGh1gxJn"
       },
       {
-        title: "Dirty Trio (Kyle, Dan, & Richard)",
+        title: "Dirty Works Trio (Kyle, Dan, & Richard)",
         location: "Waystone - Set 2",
         date: "1/7/2024",
         id: "1vp-GRqPQLrmNv2hlq1wWXAMWNd_0FHhu"
       },
       {
-        title: "Dirty Trio (Kyle, Dan, & Richard)",
+        title: "Dirty Works Trio (Kyle, Dan, & Richard)",
         location: "Waystone - Set 3",
         date: "1/7/2024",
         id: "111zf3bgjB23h5lZzY8poReoxSBCQF4ao"
