@@ -97,7 +97,7 @@ export default class ArticleLayout extends Vue {
         title: "Dirty Trio (Kyle, Dan, & Richard)",
         location: "Waystone - Set 3",
         date: "1/7/2024",
-        id: "1vp-GRqPQLrmNv2hlq1wWXAMWNd_0FHhu"
+        id: "111zf3bgjB23h5lZzY8poReoxSBCQF4ao"
       },
       {
         title: "Dirty Works",
