@@ -2,7 +2,7 @@
   <h2>Waystone Monday Night Jazz Jam</h2>
 </div>
 
-Monday nights from 6-9pm the <router-link to="/dirty-works">Dirty Works Jazz Band</router-link> host a jazz jam with with at the <a href="https://waystonesf.com" target="waystone">Waystone Wine Bar</a> in the SF North Beach neighborhood. This is a very casual jam usually featuring Dan Dectis on alto sax, Richard Caceres on keys, Peter Ild on trumpet, Eli Kemp on drums, and myself on bass.
+Monday nights from 6-9pm the <router-link to="/dirty-works">Dirty Works Jazz Band</router-link> hosts a jazz jam with at the <a href="https://waystonesf.com" target="waystone">Waystone Wine Bar</a> in the SF North Beach neighborhood. This is a very casual jam usually featuring Dan Dectis on alto sax, Richard Caceres on keys, Peter Ild on trumpet, Eli Kemp on drums, and myself on bass.
 
 We play classic jazz standards and usually have a handful of players show up through the night. This is a pretty fresh jam that started the first week of Nov 2023. We're just getting started and so far it's been a blast!!
 
