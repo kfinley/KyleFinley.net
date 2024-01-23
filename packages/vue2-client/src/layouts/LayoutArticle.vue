@@ -213,6 +213,24 @@ export default class ArticleLayout extends Vue {
       {
         title: "Monday Jazz Jam",
         location: "Waystone - Set 1",
+        date: "1/22/2024",
+        id: "1hFP3yzz5znoRzTlPhEMqtDhEPFajn1j1"
+      },
+      {
+        title: "Monday Jazz Jam",
+        location: "Waystone - Set 2",
+        date: "1/22/2024",
+        id: "1aa6KmBGQ09NYwZzXdP7wRQjOqP3fhLZe"
+      },
+      {
+        title: "Monday Jazz Jam",
+        location: "Waystone - Set 3",
+        date: "1/22/2024",
+        id: "1XP_FNKam4hBx7XL1hGKj3nBc-hi1STHO"
+      },
+      {
+        title: "Monday Jazz Jam",
+        location: "Waystone - Set 1",
         date: "11/20/2023",
         id: "1OIsfanxKMcrdLngi1i0Xom9LHK5JtGPg"
       },
