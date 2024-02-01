@@ -9,7 +9,7 @@ export default abstract class SheetsCommand {
 
   protected api(id: string, sheet: string, range?: string) {
 
-    const key = 'AIzaSyC3Zd9-LCS6YWSkvA8mfpc-bo03o8UsHzA'; //TODO: process.env.SHEETS_API_KEY as string;
+    const key = process.env.GOOGLE_SHEETS_API_KEY as string; //TODO: move this to a config class
 
     let rangeSlug = '';
 
