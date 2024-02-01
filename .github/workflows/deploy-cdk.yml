@@ -24,6 +24,7 @@ jobs:
         env:
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}
           WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET: ${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_SECRET }}
+          GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
         run: |
           npm install -g lerna@6.6.2
           npm run lerna --version
