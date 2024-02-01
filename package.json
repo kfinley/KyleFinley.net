@@ -17,7 +17,7 @@
     "super-clean": "rm -rf node_modules && rm -rf package-lock.json && npm run clean && lerna exec -- rm package-lock.json || true && rm -rf .webpack && rm -rf services/WebSockets/dist && rm -rf infrastructure/cdk.out && npm run clean:js-files",
     "dev:init": "./.devcontainer/scripts/dev-init.sh",
     "dev:client": "lerna run dev --stream --scope=@kylefinley.net/vue2-client",
-    "build": "npm run clean:js-files && lerna bootstrap --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/aws-commands --scope=@kylefinley.net/vue2-client --scope=@kylefinley.net/infrastructure && npm run build:client && npm run build:lambdas",
+    "build": "npm run clean:js-files && lerna bootstrap --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/songbook --scope=@kylefinley.net/aws-commands --scope=@kylefinley.net/vue2-client --scope=@kylefinley.net/infrastructure && npm run build:client && npm run build:lambdas",
     "build:client": "npm run generate-sitemap && lerna run build --scope=@kylefinley.net/vue2-client && npm run post-build:fix-img-paths",
     "build:lambdas": "lerna run build --stream --scope=@kylefinley.net/api-client --scope=@kylefinley.net/commands --scope=@kylefinley.net/github-commands --scope=@kylefinley.net/aws-commands --scope=@kylefinley.net/aws-websockets --scope=@kylefinley.net/aws-cloudfront",
     "build:cdk": "lerna run build --stream --scope=@kylefinley.net/infrastructure",
