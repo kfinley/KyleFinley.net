@@ -1,0 +1,42 @@
+{
+  "title": "Kyle Finley - Song Book",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "This is my interactive Song Book. These are songs I've either played with groups or open to playing with groups. They're mostly jazz songs but there's some other stuff mixed in."
+    },
+    {
+      "itemprop": "name",
+      "content": "Kyle Finley - Song Book"
+    },
+    {
+      "itemprop": "description",
+      "content": "This is my interactive Song Book. These are songs I've either played with groups or open to playing with groups. They're mostly jazz songs but there's some other stuff mixed in."
+    },
+    {
+      "property": "og:title",
+      "content": "Kyle Finley - Song Book"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://KyleFinley.net/songbook"
+    },
+    {
+      "property": "og:image",
+      "content": "https://kylefinley.net/assets/kyle-finley-wy.203deb16.jpg"
+    },
+    {
+      "property": "og:description",
+      "content": "This is my interactive Song Book. These are songs I've either played with groups or open to playing with groups. They're mostly jazz songs but there's some other stuff mixed in."
+    },
+    {
+      "property": "og:site_name",
+      "content": "Kyle Finley - Musician & Technologist"
+    }
+  ]
+}

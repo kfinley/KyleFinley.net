@@ -7,10 +7,11 @@ import { ArticlesModule } from '../store/articles-module'
 import { AuthModule } from '../store/auth-module'
 import { WebSocketsModule } from "@/store/ws-module";
 import { GitHubModule } from "@/store/github-module";
+import { SongBookModule } from "@/store/songBook-module";
 import { GitHubSourceCode, GSlides } from '@/components';
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/styles.scss";
-import { AuthState } from "@/store";
+import { AuthState, SongBookState } from "@/store";
 import MediaPlayer from "../components/MediaPlayer.vue";
 
 
@@ -19,7 +20,7 @@ export const setupModules = (store: Store<any>): void => {
   store.registerModule('Articles', ArticlesModule);
   store.registerModule('WebSockets', WebSocketsModule);
   store.registerModule("GitHub", GitHubModule);
-
+  store.registerModule('SongBook', SongBookModule);
   //TODO: investigate. This blows things up...
   // initializeModules(store);
 };
@@ -42,7 +43,6 @@ const plugin = {
 
       const appName = options.appName ?? "KyleFinley.net";
 
-
       setupModules(options.store);
       bootstrapper(options.store);
 
@@ -60,12 +60,15 @@ const plugin = {
         key: appName, // The key to store the state on in the storage provider.
         storage: window.localStorage, // or window.sessionStorage or localForage
         // Function that passes the state and returns the state with only the objects you want to store.
-        reducer: (state: { Auth: AuthState }) => ({
+        reducer: (state: { Auth: AuthState, SongBook: SongBookState }) => ({
           Auth: {
             user: state.Auth.user,
             access_token: state.Auth.access_token,
             status: state.Auth.status
-          }
+          },
+          SongBook: {
+            songs: state.SongBook.songs
+          },
         }),
         // Function that passes a mutation and lets you decide if it should update the state in localStorage.
         // filter: (mutation) => true

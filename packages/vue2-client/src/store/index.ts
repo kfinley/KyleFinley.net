@@ -13,15 +13,17 @@ const store = new Vuex.Store<any>({});
 
 export default store;
 export * from './state';
+export * from "./initialize-modules";
 
-let authModule: AuthModule;
-let articlesModule: ArticlesModule;
-let webSocketsModule: WebSocketsModule;
-let gitHubModule: GitHubModule
+// ? deal with this....
+// let authModule: AuthModule;
+// let articlesModule: ArticlesModule;
+// let webSocketsModule: WebSocketsModule;
+// let gitHubModule: GitHubModule
 
-export function initializeModules(store: Store<any>): void {
-  // authModule = getModule(AuthModule, store);
-  // webSocketsModule = getModule(WebSocketsModule, store);
-  // articlesModule = getModule(ArticlesModule, store);
-  // gitHubModule = getModule(GitHubModule, store);
-}
+// export function initializeModules(store: Store<any>): void {
+//   // authModule = getModule(AuthModule, store);
+//   // webSocketsModule = getModule(WebSocketsModule, store);
+//   // articlesModule = getModule(ArticlesModule, store);
+//   // gitHubModule = getModule(GitHubModule, store);
+// }

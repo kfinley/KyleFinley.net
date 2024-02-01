@@ -17,7 +17,8 @@ export class ArticlesModule extends BaseModule implements ArticlesState {
 
     try {
 
-      const articlesMeta = import.meta.glob('../articles/**/*.json')
+      //TODO: this has got to go asap
+      const articlesMeta = import.meta.glob('../articles/**/*.json');
 
       const articleList: Record<string, string> = {};
 

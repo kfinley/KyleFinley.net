@@ -6,5 +6,6 @@ export enum RouteNames {
   Music = "Music",
   News = "News",
   Software = "Software",
+  SongBook = "SongBook",
   Travel = "Travel"
 };

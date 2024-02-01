@@ -1,7 +1,7 @@
 import { injectable } from 'inversify-props';
 import { Command } from '@kylefinley.net/commands/src';
 import SheetsCommand from './sheetsCommand';
-import { SheetsData } from './types';
+import { SheetsData } from '../types';
 
 export interface GetSheetDataRequest {
   id: string;
@@ -21,8 +21,8 @@ export class GetSheetData
   async runAsync(params: GetSheetDataRequest): Promise<GetSheetDataResponse> {
 
     const result = await this.getAsync(params.id, params.sheet, params.range);
-    
-    // console.log(data);
+
+    console.log(JSON.stringify(result.data));
 
     return { data: result.data as SheetsData };
   }

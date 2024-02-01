@@ -1,9 +1,9 @@
 import 'reflect-metadata'; 
+import { describe, expect, it, beforeAll } from '@jest/globals'; 
 
 import { container } from '../../src/inversify.config';
-import { GetSheetData } from '../../src/getSheetData';
+import { GetSheetData } from '../../src/commands/getSheetData';
 import { bootstrapper } from "../../src/bootstrapper";
-
 
 describe('GetSheetDataCommand', () => {
 

@@ -1,12 +1,10 @@
 import { ApiClient, ApiResponse } from '@kylefinley.net/api-client/src';
-import { container } from './bootstrapper';
+import { container } from '../';
 
 export default abstract class SheetsCommand {
 
-  protected apiClient!: ApiClient;
-
-  constructor() {
-    this.apiClient = container.get<ApiClient>("ApiClient");
+  protected apiClient = ()  => {
+    return container.get<ApiClient>("ApiClient");
   }
 
   protected api(id: string, sheet: string, range?: string) {
@@ -25,14 +23,14 @@ export default abstract class SheetsCommand {
   protected async postAsync<T>(id: string, sheet: string, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
 
     const api = this.api(id, sheet);
-    return await this.apiClient.postAsync(api, {}, headers);
+    return await this.apiClient().postAsync(api, {}, headers);
   }
 
   protected async getAsync<T>(id: string, sheet: string, range?: string, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
 
     const api = this.api(id, sheet, range);
 
-    return await this.apiClient.getAsync(api.toString(), headers);
+    return await this.apiClient().getAsync(api.toString(), headers);
   }
 
 }

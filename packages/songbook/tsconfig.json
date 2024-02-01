@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "experimentalDecorators": true
   },
-  "exclude": ["node_modules", "./*.ts", "tests"]
+  "exclude": ["node_modules", "tests"]
 }

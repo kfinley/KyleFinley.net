@@ -1,4 +1,5 @@
 import { Socket } from "../types";
+import { Song } from "@kylefinley.net/songbook/src/types";
 
 export enum RegistrationStatus {
   Unknown = 'Unknown',
@@ -7,13 +8,17 @@ export enum RegistrationStatus {
   Registering = 'Registering',
   Success = 'Success'
 }
+
+export enum AuthStatus {
+  Authenticated = "Authenticated",
+  Authenticating = "Authenticating"
+}
+
 export enum Status {
   None = "None",
   Loading = "Loading",
   Loaded = "Loaded",
   Failed = "Failed",
-  Authenticated = "Authenticated",
-  Authenticating = "Authenticating"
 }
 
 export interface ArticlesState {
@@ -22,7 +27,7 @@ export interface ArticlesState {
 }
 
 export interface AuthState {
-  status: Status;
+  status: AuthStatus | Status;
   user: string;
   access_token: string;
 }
@@ -38,5 +43,13 @@ export interface WebSocketsState {
 
 export interface GitHubState {
   sources: Record<string, string>;
+  status: Status;
+}
+
+export enum SongBookStatus {
+}
+
+export interface SongBookState {
+  songs: Song[] | null;
   status: Status;
 }

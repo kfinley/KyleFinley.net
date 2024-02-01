@@ -90,6 +90,17 @@ export const createRouter = async () => {
       ],
     },
     {
+      path: "/songbook",
+      component: RouterLayout,
+      children: [
+        {
+          path: '',
+          name: RouteNames.SongBook,
+          component: () => import(/* webpackChunkName: "Music" */ '../views/SongBook.vue'),
+        }
+      ],
+    },
+    {
       path: "/login",
       component: RouterLayout,
       children: [
@@ -281,6 +292,7 @@ export const createRouter = async () => {
       case "Media":
       case "Music":
       case "Software":
+      case "SongBook":
       case "Travel":
       case "News":
       case "Contact":

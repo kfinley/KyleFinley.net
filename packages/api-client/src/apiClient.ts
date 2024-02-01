@@ -32,7 +32,7 @@ export class apiClient implements ApiClient {
         ...authHelper.authHeader(),
       };
 
-      console.log(`api.request: ${cfg.method} ${cfg.url}`, requestConfig.headers);
+      // console.log(`api.request: ${cfg.method} ${cfg.url}`, requestConfig.headers);
     } catch (e) {
       const err = { message: 'Error creating request header', error: e };
       console.log(err.message);
@@ -49,7 +49,7 @@ export class apiClient implements ApiClient {
 
       const response = await instance.request<T>(requestConfig);
 
-      console.log('response', response);
+      // console.log('response', response);
 
       return response;
 
