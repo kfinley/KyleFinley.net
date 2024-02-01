@@ -1,16 +1,17 @@
 <template>
 <div>
+    <vue-pdf-embed v-if="showLeadSheet" :source="leadSheetPdf" @loaded="pdfSourceLoaded" :width="pdfWidth" class="pdf"/>
     <div v-if="isLoading">Loading...</div>
     <div v-else>
       <div v-for="(song, key, index) in Songs" :key="index">
         <div v-if="song.leadSheetUrl !== undefined">
-          <a :href="song.leadSheetUrl" :target="song.name">{{ song.name }}</a>
+          <a :href="song.leadSheetUrl" :target="song.name" @click.prevent="setActive(song)">{{ song.name }}</a>
         </div>
         <div v-else>
           {{ song.name }}
         </div>
       </div>
-      </div>
+    </div>
 </div>
 </template>
 
@@ -20,12 +21,19 @@ import { Status, SongBookState } from "../store";
 import { SongBookModule } from "../store/songBook-module";
 import { container } from '../inversify.config';
 import { State } from "vuex-class";
+import { Song } from "@kylefinley.net/songbook/src/types";
+import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
 
-@Component
+@Component({
+  components: {
+    VuePdfEmbed
+  }
+})
 export default class SongBook extends Vue {
   @State("SongBook") songBook!: SongBookState;
 
   store = container.get<SongBookModule>("SongBookModule");
+  pdfIsLoading = false; //TODO: move to state
 
   async mounted() {
     this.store.getSongs();
@@ -35,9 +43,38 @@ export default class SongBook extends Vue {
   }
 
   get isLoading() {
-    return this.songBook.status === Status.Loading;
+    return this.songBook.status === Status.Loading || this.pdfIsLoading;
   }
+
+  get showLeadSheet() {
+    return this.songBook.activeSong !== null;
+  }
+
+  setActive(song: Song) {
+    this.store.setActive(song);
+    this.pdfIsLoading = true;
+    window.scrollTo(0, 0);
+  }
+
+  get leadSheetPdf() {
+    return this.songBook.activeSongPdfUrl;
+  }
+
+  get pdfWidth() {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  }
+
+  pdfSourceLoaded() {
+    this.pdfIsLoading = false;
+  }
+
 }
 </script>
 
-<style></style> 
+<style>
+.pdf {
+  max-width: 100%;
+  position: relative;
+  left: -32px;
+}
+</style>

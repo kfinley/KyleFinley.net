@@ -6,7 +6,7 @@ import { GetSheetData, GetSheetDataRequest } from './getSheetData';
 import { SheetsToSongs } from './sheetsToSongs';
 
 export interface GetSongsRequest {
-  retryCount: number;
+  retryCount?: number;
 }
 
 export interface GetSongsResponse {
@@ -22,6 +22,10 @@ export class GetSongs
 
   async runAsync(params: GetSongsRequest): Promise<GetSongsResponse> {
 
+    if (!params.retryCount) {
+      params.retryCount = 0;
+    }
+    
     const getSheetData = container.get<GetSheetData>("GetSheetData");
 
     const data = (await getSheetData.runAsync(GetSongs.DefaultGetSheetDataRequest)).data;

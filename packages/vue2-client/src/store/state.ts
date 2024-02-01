@@ -52,4 +52,6 @@ export enum SongBookStatus {
 export interface SongBookState {
   songs: Song[] | null;
   status: Status;
+  activeSong: Song | null;
+  activeSongPdfUrl: string | null;
 }

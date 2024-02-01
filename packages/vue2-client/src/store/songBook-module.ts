@@ -12,23 +12,38 @@ export class SongBookModule extends BaseModule implements SongBookState {
 
   songs: Song[] | null = null;
   status: Status = Status.None;
+  activeSong: Song | null = null;
+  activeSongPdfUrl: string | null = null;
 
   @Action
   async getSongs(): Promise<void> {
 
     this.context.commit('mutate',
-      (state: SongBookState) => state.status = Status.Loading);
+      (state: SongBookState) => {
+        state.status = Status.Loading;
+        state.activeSong = null;
+        state.activeSongPdfUrl = null;
+      });
       
     const getSongs = container.get<GetSongs>("GetSongs");    
 
     const songs = (await getSongs.runAsync({})).songs;
 
     this.context.commit('mutate',
-      (state: SongBookState) => state.songs = songs);
+      (state: SongBookState) => {
+        state.songs = songs;
+        state.status = Status.Loaded;
+      });
 
-    this.context.commit('mutate',
-      (state: SongBookState) => state.status = Status.Loaded);
+  }
 
+  @Action
+  setActive(song: Song) {
+    const fileId = song.leadSheetUrl.split('/')[5];
+    this.context.commit('mutate', (state: SongBookState) => {
+      state.activeSong = song;
+      state.activeSongPdfUrl = `https://www.googleapis.com/drive/v3/files/${fileId}?key=${process.env.GOOGLE_SHEETS_API_KEY}&alt=media`;
+    });
   }
 
 

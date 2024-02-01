@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>© 2023 kylefinley.net</div>
+    <div>© 2024 kylefinley.net</div>
     <div>Built by me. <a href="https://github.com/kfinley/kylefinley.net" target="new">Source Code</a></div>
   </div>
 </template>
