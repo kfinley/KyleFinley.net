@@ -1,6 +1,6 @@
 <template>
 <div>
-    <vue-pdf-embed v-if="showLeadSheet" :source="leadSheetPdf" @loaded="pdfSourceLoaded" :width="pdfWidth" class="pdf"/>
+    <vue-pdf-embed v-if="showLeadSheet" :source="leadSheetPdf" @loaded="pdfSourceLoaded" :width="pdfWidth" class="pdf" @progress="progress" :annotationLayer="true" :textLayer="true"/>
     <div v-if="isLoading">Loading...</div>
     <div v-else>
       <div v-for="(song, key, index) in Songs" :key="index">
@@ -65,9 +65,14 @@ export default class SongBook extends Vue {
   }
 
   pdfSourceLoaded() {
+    console.log('loaded');
     this.pdfIsLoading = false;
+    window.scrollTo(0, 0);
   }
 
+  progress(p) {
+    console.log('progress', p)
+  }
 }
 </script>
 
