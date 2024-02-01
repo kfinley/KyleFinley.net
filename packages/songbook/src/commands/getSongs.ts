@@ -6,9 +6,11 @@ import { GetSheetData, GetSheetDataRequest } from './getSheetData';
 import { SheetsToSongs } from './sheetsToSongs';
 
 export interface GetSongsRequest {
+  retryCount: number;
 }
 
 export interface GetSongsResponse {
+  error?: string;
   songs: Song[];
 }
 
@@ -24,9 +26,21 @@ export class GetSongs
 
     const data = (await getSheetData.runAsync(GetSongs.DefaultGetSheetDataRequest)).data;
 
+    // Sometimes the get link sheets app script function doesn't finish running and all the leadSheetUrl values are 'Loading...'
+    // so we need to check for that. If that's the case call the api again and it should be good. 
     const sheetsToSongs = container.get<SheetsToSongs>("SheetsToSongs");
 
     const songs = (await sheetsToSongs.runAsync({ data })).songs;
+
+    if (params.retryCount <= 3 && songs.findIndex(arr => arr.leadSheetUrl == 'Loading...')) {
+      params.retryCount++;
+      return (await this.runAsync(params));
+    } else if (params.retryCount > 3) {
+      return {
+        songs,
+        error: 'Failed to load link sheet URLs'
+      }
+    }
 
     return {
       songs

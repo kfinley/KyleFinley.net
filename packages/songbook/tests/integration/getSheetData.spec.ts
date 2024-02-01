@@ -1,5 +1,5 @@
 import 'reflect-metadata'; 
-import { describe, expect, it, beforeAll } from '@jest/globals'; 
+import { describe, expect, it } from '@jest/globals'; 
 
 import { container } from '../../src/inversify.config';
 import { GetSheetData } from '../../src/commands/getSheetData';

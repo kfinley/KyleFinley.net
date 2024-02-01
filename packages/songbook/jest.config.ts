@@ -2,6 +2,7 @@ import type { JestConfigWithTsJest } from "ts-jest";
 
 const config: JestConfigWithTsJest = {
   verbose: true,
+  setupFiles: ['dotenv/config'],
   transform: {
     "^.+\\.ts?$": [
       "ts-jest",
