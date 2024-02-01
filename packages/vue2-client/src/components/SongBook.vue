@@ -3,7 +3,10 @@
     <div v-if="isLoading">Loading...</div>
     <div v-else>
       <div v-for="(song, key, index) in Songs" :key="index">
-        <div>
+        <div v-if="song.leadSheetUrl !== undefined">
+          <a :href="song.leadSheetUrl" :target="song.name">{{ song.name }}</a>
+        </div>
+        <div v-else>
           {{ song.name }}
         </div>
       </div>
