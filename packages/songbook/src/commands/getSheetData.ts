@@ -22,7 +22,7 @@ export class GetSheetData
 
     const result = await this.getAsync(params.id, params.sheet, params.range);
 
-    console.log(JSON.stringify(result.data));
+    // console.log(JSON.stringify(result.data));
 
     return { data: result.data as SheetsData };
   }

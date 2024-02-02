@@ -18,14 +18,15 @@ export class SongBookModule extends BaseModule implements SongBookState {
   @Action
   async getSongs(): Promise<void> {
 
+
     this.context.commit('mutate',
       (state: SongBookState) => {
         state.status = Status.Loading;
         state.activeSong = null;
         state.activeSongPdfUrl = null;
       });
-      
-    const getSongs = container.get<GetSongs>("GetSongs");    
+
+    const getSongs = container.get<GetSongs>("GetSongs");
 
     const songs = (await getSongs.runAsync({})).songs;
 
@@ -35,6 +36,19 @@ export class SongBookModule extends BaseModule implements SongBookState {
         state.status = Status.Loaded;
       });
 
+    /*  For testing so we don't call the API. TODO: Make this load from local storage and offer a refresh list option.
+
+    if (this.songs == null) {
+      const getSongs = container.get<GetSongs>("GetSongs");
+
+      const songs = (await getSongs.runAsync({})).songs;
+      this.context.commit('mutate', (state: SongBookState) => state.songs = songs);
+
+    }
+
+    this.context.commit('mutate', (state: SongBookState) => state.status = Status.Loaded);
+
+    */
   }
 
   @Action
