@@ -1,20 +1,19 @@
 <template>
   <div class="">
-    <div v-if="isLoading" class="text-center">Loading<span v-if="showLeadSheet"> Lead Sheet</span>...</div>
+    <div v-if="isLoading" class="text-center">Loading<span v-if="showLeadSheet"> Lead Sheets</span>...</div>
 
-    <vue-pdf-embed
-      v-if="showLeadSheet"
-      :source="leadSheetPdf"
-      @loaded="pdfSourceLoaded"
-      :width="pdfWidth"
-      class="pdf"
-      @progress="progress"
-      :annotationLayer="true"
-      :textLayer="true"
-    />
-
+    <div v-if="showLeadSheet">
+      <vue-pdf-embed
+        :source="leadSheetPdf"
+        @loaded="pdfSourceLoaded"
+        :width="pdfWidth"
+        class="pdf"
+        @progress="progress"
+      />
+      <div class="text-center"> Problems loading? <a :href="activeSong.leadSheetUrl" :target="activeSong.name">View PDF</a></div>
+    </div>
     <div v-if="!isLoading || showLeadSheet">
-      <div class="text-center">Jazz Song Book</div>
+      <div class="text-center h4">Jazz Song Book</div>
       <ul v-for="(song, key, index) in Songs" :key="index">
         <li v-if="song.leadSheetUrl !== undefined">
           <a :href="song.leadSheetUrl" :target="song.name" @click.prevent="setActive(song)">{{ song.name }}</a>
@@ -66,6 +65,10 @@ export default class SongBook extends Vue {
     this.store.setActive(song);
     this.pdfIsLoading = true;
     window.scrollTo(0, 0);
+  }
+
+  get activeSong() {
+    return this.songBook.activeSong;
   }
 
   get leadSheetPdf() {
