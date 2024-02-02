@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div v-if="isLoading" class="text-center">Loading...</div>
+    <div v-if="isLoading" class="text-center">Loading<span v-if="showLeadSheet"> Lead Sheet</span>...</div>
 
     <vue-pdf-embed
       v-if="showLeadSheet"
@@ -13,7 +13,7 @@
       :textLayer="true"
     />
 
-    <div>
+    <div v-if="!isLoading || showLeadSheet">
       <div class="text-center">Jazz Song Book</div>
       <ul v-for="(song, key, index) in Songs" :key="index">
         <li v-if="song.leadSheetUrl !== undefined">
