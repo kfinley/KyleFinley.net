@@ -1,7 +1,7 @@
 <template>
   <div>
-    <span style="float: right; padding-right: 10px;"><a href="https://github.com/kfinley/kylefinley.net" target="new">Source Code</a></span>
-    <span style="float: left; padding-left: 10px;">© 2024 kylefinley.net</span>
+    <span style="float: right; padding-right: 15px;"><a href="https://github.com/kfinley/kylefinley.net" target="new">Source Code</a></span>
+    <span style="float: left; padding-left: 15px;">© 2024 kylefinley.net</span>
   </div>
 </template>
 
