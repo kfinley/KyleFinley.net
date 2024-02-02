@@ -27,11 +27,8 @@ export class GetSongs
     }
 
     const getSheetData = container.get<GetSheetData>("GetSheetData");
-
     const data = (await getSheetData.runAsync(GetSongs.DefaultGetSheetDataRequest)).data;
 
-    // Sometimes the get link sheets app script function doesn't finish running and all the leadSheetUrl values are 'Loading...'
-    // so we need to check for that. If that's the case call the api again and it should be good.
     const sheetsToSongs = container.get<SheetsToSongs>("SheetsToSongs");
     const songs = (await sheetsToSongs.runAsync({ data })).songs;
 
@@ -45,7 +42,7 @@ export class GetSongs
       return (await this.runAsync(params));
     } else if (params.retryCount > 3) {
       console.log(songs.findIndex(arr => arr.leadSheetUrl == 'Loading...'));
-      
+
       return {
         songs,
         error: 'Failed to load link sheet URLs'
