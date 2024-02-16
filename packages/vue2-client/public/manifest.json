@@ -1,0 +1,9 @@
+{
+  "name": "KyleFinley.net",
+  "short_name": "KyleFinley.net",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "display": "standalone",
+  "start_url": "/?utm_source=standalone&utm_medium=1.0.0",
+  "scope": "/"
+}
