@@ -31,15 +31,6 @@ I'm always working on several projects. Below you'll find info on my previous wo
     </div>
   </div>
 
-  <div class="timeline-item">
-    <div class="timeline-item-content">
-      <h3>Sewing Project & Materials Tracker</h3>
-      <p>
-        I've been talking with my partner for a while now about building her a system that helps her track her sewing projects. She's currently using a G sheet and needs something better. We have some great ideas and there's an opportunity for a real product there but I'm just starting to get into working on this and will update with links when I have something to share.
-      </p>
-    </div>
-  </div>
-
 </div>
 
 <div class="timeline">
@@ -58,7 +49,9 @@ I'm always working on several projects. Below you'll find info on my previous wo
         <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a small project I've maintained for over 10 years. I don't use it anymore but people still find it handy. It's a simple convention-based object merger for .NET. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit. More info can be found on the <a href="http://github.com/kfinley/typemerger" target="new">project page</a>.
       </p>
       <p class="no-indent">
-        ~100 daily package downloads.
+        77 stars on GitHub<br/>
+        240k+ downloads<br/>
+        ~125 daily package downloads
       </p>
    </div>
   </div>
