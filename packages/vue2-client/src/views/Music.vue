@@ -12,13 +12,13 @@
     <ul>
       <li>
         <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - We play a wide range of classic standards including
-        ballads, blues, bop, soul, funk, swing, latin, and more!
+        bop, blues, ballads, soul, funk, swing, latin, and more!
       </li>
       <li>
         <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli
         Kemp on Drums, and me on bass.
       </li>
-      <li><em>Angel Island</em> - Jazz septet with sax, trumpet, flute, guitar, bass, and drums.</li>
+      <li><em>Angel Island</em> - Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.</li>
       <li>
         <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
         backed by bass, guitar, and drums.
@@ -50,7 +50,7 @@
     </ul>
     <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
     <Gigs class="text-center" />
-    <h4 class="text-center pt-4">Jams</h4>
+    <h4 class="text-center pt-4">Regular Gigs & Jams</h4>
     <ul>
       <li>
         <em
@@ -62,14 +62,21 @@
       </li>
       <li>
         <em
+          ><router-link to="/waystone-jazz-jam">Dirty Works</router-link> @
+          <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em
+        >
+        - Every Tuesday night we play at Waystone as the Dirty Works Jazz Band featuring various lead players from our Monday night jam.
+      </li>
+      <li>
+        <em
           ><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em
         >
-        - I run this jam ever 3rd Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every
+        - I run this jam ever 3rd & 4th Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every
         era. The Dirty Works trio is the core house band and we always have great players come through this jam.
       </li>
       <li>
-        <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-2pm in Golden Gate Park
+        <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm in Golden Gate Park
         near Stowe Lake on JFK run by Dan Dectis.
       </li>
       <li><em>Ocean Ale House Jazz Jam</em> - Weekly Jazz Jam on Wednesday Nights in Monterey Heights</li>
