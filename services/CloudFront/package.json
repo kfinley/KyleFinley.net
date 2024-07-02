@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@types/aws-lambda": "^8.10.140",
-    "@types/node": "^14.17.27"
+    "@types/node": "^16.0.0"
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.0",
