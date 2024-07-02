@@ -98,6 +98,33 @@ My next steps are to get this bass in the shop and address the scroll and any ot
 
 ![Pegbox G Side Repair](../../../../../media/images/articles/old-flatback/32-Pegbox_G_Side_Repair.jpg)
 
-
-More pictures to come...
 ![Looking Through The Hole](../../../../../media/images/articles/old-flatback/33-Looking_Through_The_Hole.jpg)
+
+![Inside F Hole E Side](../../../../../media/images/articles/old-flatback/34-Inside_F_Hole_E_Side.jpg)
+
+![Inside F Hole G Side](../../../../../media/images/articles/old-flatback/35-Inside_F_Hole_G_Side.jpg)
+
+![Karl Munson Stamp](../../../../../media/images/articles/old-flatback/36-Karl_Munson_Stamp.jpg)
+
+![SWI-III Marking](../../../../../media/images/articles/old-flatback/37-SWI-III_Marking.jpg)
+
+![E_Side_Lower_Bout_Ribs](../../../../../media/images/articles/old-flatback/38-E_Side_Lower_Bout_Ribs.jpg)
+
+![Close_Up_Of_Tape](../../../../../media/images/articles/old-flatback/39-Close_Up_Of_Tape.jpg)
+
+![Bridge Area Patch](../../../../../media/images/articles/old-flatback/40-Bridge_Area_Patch.jpg)
+
+![G_SideLower Bout Crack Cleats](../../../../../media/images/articles/old-flatback/41-G_Side_Lower_Bout_Crack_Cleats.jpg)
+
+![Cleat Close Up](../../../../../media/images/articles/old-flatback/42-Cleat_Close_Up.jpg)
+
+![E Side Lower Bout Crack Cleats and Top Graft](../../../../../media/images/articles/old-flatback/43-E_Side_Lower_Bout_Crack_Cleats_and_Top_Graft.jpg)
+
+![E Side Lower Bout Top Graft](../../../../../media/images/articles/old-flatback/44-E_Side_Lower_Bout_Top_Graft.jpg)
+
+![Back Repairs](../../../../../media/images/articles/old-flatback/45-Back_Repairs.jpg)
+
+<center>There is one crack/seam that is opening up that has no repair on it. This is the center seam above the saddle.
+</center>
+
+![Top Center Seam Above Saddle](../../../../../media/images/articles/old-flatback/46-Top_Center_Seam_Above_Saddle.jpg)
