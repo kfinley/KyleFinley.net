@@ -14,8 +14,9 @@ Unfortunately along the way the scroll took a major whack and broke off at the b
 
 The bass has the following measurements:
 
-- Body Front: (Block to bottom of Saddle): 43 7/8"
+- Body Front: (Block to bottom of saddle): 43 7/8"
 - Body Back: 44 7/8"
+- Scroll to Saddle: 75"
 - Upper Bouts Back: 20"
 - Upper Bouts Front: 19.5"
 - Lower Bouts Back: 26"
@@ -25,10 +26,10 @@ The bass has the following measurements:
 - C Bout Height: 9.5"
 - String Length (this is a guess): 43"
 - Fingerboard:  27 3/8"
-- Neck (Block to Scroll): 16"
+- Neck (Block to scroll): 16"
 - Body Depth @ Block: 6"
 - Body Depth: 8.5"
-- Block Depth (back lip to fingerboard): 7 1/8"
+- Block Depth (Back lip to fingerboard): 7 1/8"
 - Scroll Heel to Fingerboard: 3.5"
 - Scroll Height: 12.5"
 
