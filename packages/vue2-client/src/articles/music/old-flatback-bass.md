@@ -51,7 +51,7 @@ My next steps are to get this bass in the shop and address the scroll and any ot
 
 ![GLower Bout_Edge](../../../../../media/images/articles/old-flatback/08-G_Lower_Bout_Edge.jpg)
 
-![Lower Front Edge.](../../../../../media/images/articles/old-flatback/09-Lower_Front_Edge.heic)
+![Lower Front Edge.](../../../../../media/images/articles/old-flatback/09-Lower_Front_Edge.jpg)
 
 ![E Lower Bout Front Edge](../../../../../media/images/articles/old-flatback/10-E_Lower_Bout_Front_Edge.jpg)
 
@@ -79,53 +79,55 @@ My next steps are to get this bass in the shop and address the scroll and any ot
 
 ![Neck Crack](../../../../../media/images/articles/old-flatback/22-Neck_Crack.jpg)
 
-![E Side Block Repair](../../../../../media/images/articles/old-flatback/23-E_Side_Block_Repair.jpg)
+![Block Heel](../../../../../media/images/articles/old-flatback/23-Block_Heel.jpg)
 
-![G Side Block Repair](../../../../../media/images/articles/old-flatback/24-G_Side_Block_Repair.jpg)
+![E Side Block Repair](../../../../../media/images/articles/old-flatback/24-E_Side_Block_Repair.jpg)
 
-![Scroll E Side](../../../../../media/images/articles/old-flatback/25-Scroll_E_Side.jpg)
+![G Side Block Repair](../../../../../media/images/articles/old-flatback/25-G_Side_Block_Repair.jpg)
 
-![Scroll G Side](../../../../../media/images/articles/old-flatback/26-Scroll_G_Side.jpg)
+![Scroll E Side](../../../../../media/images/articles/old-flatback/26-Scroll_E_Side.jpg)
 
-![Scroll Back](../../../../../media/images/articles/old-flatback/27-Scroll_Back.jpg)
+![Scroll G Side](../../../../../media/images/articles/old-flatback/27-Scroll_G_Side.jpg)
 
-![Scroll Heel](../../../../../media/images/articles/old-flatback/28-Scroll_Heel.jpg)
+![Scroll Back](../../../../../media/images/articles/old-flatback/28-Scroll_Back.jpg)
 
-![Scroll E Side Crack_](../../../../../media/images/articles/old-flatback/29-Scroll_E_Side_Crack_.jpg)
+![Scroll Heel](../../../../../media/images/articles/old-flatback/29-Scroll_Heel.jpg)
 
-![Pegbox Repair](../../../../../media/images/articles/old-flatback/30-Pegbox_Repair.jpg)
+![Scroll E Side Crack](../../../../../media/images/articles/old-flatback/30-Scroll_E_Side_Crack.jpg)
 
-![Pegbox E Side Repair](../../../../../media/images/articles/old-flatback/31-Pegbox_E_Side_Repair.jpg)
+![Pegbox Repair](../../../../../media/images/articles/old-flatback/31-Pegbox_Repair.jpg)
 
-![Pegbox G Side Repair](../../../../../media/images/articles/old-flatback/32-Pegbox_G_Side_Repair.jpg)
+![Pegbox E Side Repair](../../../../../media/images/articles/old-flatback/32-Pegbox_E_Side_Repair.jpg)
 
-![Looking Through The Hole](../../../../../media/images/articles/old-flatback/33-Looking_Through_The_Hole.jpg)
+![Pegbox G Side Repair](../../../../../media/images/articles/old-flatback/33-Pegbox_G_Side_Repair.jpg)
 
-![Inside F Hole E Side](../../../../../media/images/articles/old-flatback/34-Inside_F_Hole_E_Side.jpg)
+![Looking Through The Hole](../../../../../media/images/articles/old-flatback/34-Looking_Through_The_Hole.jpg)
 
-![Inside F Hole G Side](../../../../../media/images/articles/old-flatback/35-Inside_F_Hole_G_Side.jpg)
+![Inside F Hole E Side](../../../../../media/images/articles/old-flatback/35-Inside_F_Hole_E_Side.jpg)
 
-![Karl Munson Stamp](../../../../../media/images/articles/old-flatback/36-Karl_Munson_Stamp.jpg)
+![Inside F Hole G Side](../../../../../media/images/articles/old-flatback/36-Inside_F_Hole_G_Side.jpg)
 
-![SWI-III Marking](../../../../../media/images/articles/old-flatback/37-SWI-III_Marking.jpg)
+![Karl Munson Stamp](../../../../../media/images/articles/old-flatback/37-Karl_Munson_Stamp.jpg)
 
-![E_Side_Lower_Bout_Ribs](../../../../../media/images/articles/old-flatback/38-E_Side_Lower_Bout_Ribs.jpg)
+![SWI-III Marking](../../../../../media/images/articles/old-flatback/38-SWI-III_Marking.jpg)
 
-![Close_Up_Of_Tape](../../../../../media/images/articles/old-flatback/39-Close_Up_Of_Tape.jpg)
+![E_Side_Lower_Bout_Ribs](../../../../../media/images/articles/old-flatback/39-E_Side_Lower_Bout_Ribs.jpg)
 
-![Bridge Area Patch](../../../../../media/images/articles/old-flatback/40-Bridge_Area_Patch.jpg)
+![Close_Up_Of_Tape](../../../../../media/images/articles/old-flatback/40-Close_Up_Of_Tape.jpg)
 
-![G_SideLower Bout Crack Cleats](../../../../../media/images/articles/old-flatback/41-G_Side_Lower_Bout_Crack_Cleats.jpg)
+![Bridge Area Patch](../../../../../media/images/articles/old-flatback/41-Bridge_Area_Patch.jpg)
 
-![Cleat Close Up](../../../../../media/images/articles/old-flatback/42-Cleat_Close_Up.jpg)
+![G_SideLower Bout Crack Cleats](../../../../../media/images/articles/old-flatback/42-G_Side_Lower_Bout_Crack_Cleats.jpg)
 
-![E Side Lower Bout Crack Cleats and Top Graft](../../../../../media/images/articles/old-flatback/43-E_Side_Lower_Bout_Crack_Cleats_and_Top_Graft.jpg)
+![Cleat Close Up](../../../../../media/images/articles/old-flatback/43-Cleat_Close_Up.jpg)
 
-![E Side Lower Bout Top Graft](../../../../../media/images/articles/old-flatback/44-E_Side_Lower_Bout_Top_Graft.jpg)
+![E Side Lower Bout Crack Cleats and Top Graft](../../../../../media/images/articles/old-flatback/44-E_Side_Lower_Bout_Crack_Cleats_and_Top_Graft.jpg)
 
-![Back Repairs](../../../../../media/images/articles/old-flatback/45-Back_Repairs.jpg)
+![E Side Lower Bout Top Graft](../../../../../media/images/articles/old-flatback/45-E_Side_Lower_Bout_Top_Graft.jpg)
+
+![Back Repairs](../../../../../media/images/articles/old-flatback/46-Back_Repairs.jpg)
 
 <center>There is one crack/seam that is opening up that has no repair on it. This is the center seam above the saddle.
 </center>
 
-![Top Center Seam Above Saddle](../../../../../media/images/articles/old-flatback/46-Top_Center_Seam_Above_Saddle.jpg)
+![Top Center Seam Above Saddle](../../../../../media/images/articles/old-flatback/47-Top_Center_Seam_Above_Saddle.jpg)
