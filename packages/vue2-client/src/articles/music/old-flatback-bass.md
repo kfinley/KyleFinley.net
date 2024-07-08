@@ -8,7 +8,7 @@ _<div class="article-meta-data"> by <span class="article-meta-author" itemprop="
 
 I recently purchased this old flatback bass. There is no maker label or obvious markings. I suspect it's a 19th century German, Bohemian, or possible Tyrolean but I'll have to see what others say. It has had a previous major resotration done by Karl A. Munson of Monmouth, IL. This restoration was done in 1953 (written inside in multiple places next to his stamp). There's also what looks like marked with a paint brush either S-WI-III, S-UI-III (the S could be a 5).
 
-It looks like the 1953 restoration included a lot of work including many cleats, top grafts, edge replacements, installation of new ribs on the lower bouts, and (I suspect) neck block and crack repair. The slope of the block looks like it's different than what it once was, which would make the back a little longer than originally. There's what looks like a plug on the heel of the block shown in the pictures. The crack repair looks ok. Some of the smaller cracks are only glued and taped so they may have been repaired by someone else. There seems to be only one crack that has no repairs (center seam extending up from saddle).
+It looks like the 1953 restoration included a lot of work including many cleats, top grafts, edge replacements, installation of new ribs on the lower bout, and (I suspect) neck block and crack repair. The slope of the block looks like it's different than what it once was, which would make the back a little longer than originally. There's what looks like a plug on the heel of the block shown in the pictures. The crack repair looks ok. Some of the smaller cracks are only glued and taped so they may have been repaired by someone else. There seems to be only one crack that has no repairs (center seam extending up from saddle).
 
 Unfortunately along the way the scroll took a major whack and broke off at the base of the pegbox. It's been glued back on but the repair is subpar so this needs addressed. It has Hat Peg Machines that look like old Rubners. The nut was missing but the bass did come with the tailpiece, Spirocore strings (mediums with life left), an old Realist Copperhead pickup, and a nice old massive rolling bag (which needs some repair). The fingerboard is in great shape and feels really nice.
 
@@ -17,12 +17,12 @@ The bass has the following measurements:
 - Body Front: (Block to bottom of saddle): 43 7/8"
 - Body Back: 44 7/8"
 - Scroll to Saddle: 75"
-- Upper Bouts Back: 20"
-- Upper Bouts Front: 19.5"
-- Lower Bouts Back: 26"
-- Lower Bouts Front: 25.5"
-- C Bouts Back: 14 1/8"
-- C Bouts Front: 14"
+- Upper Bout Back: 20"
+- Upper Bout Front: 19.5"
+- Lower Bout Back: 26"
+- Lower Bout Front: 25.5"
+- C Bout Back: 14 1/8"
+- C Bout Front: 14"
 - C Bout Height: 9.5"
 - String Length (this is a guess): 43"
 - Fingerboard:  27 3/8"
@@ -88,6 +88,8 @@ My next steps are to get this bass in the shop and address the scroll and any ot
 ![Scroll E Side](../../../../../media/images/articles/old-flatback/26-Scroll_E_Side.jpg)
 
 ![Scroll G Side](../../../../../media/images/articles/old-flatback/27-Scroll_G_Side.jpg)
+
+![Scroll Front](../../../../../media/images/articles/old-flatback/27-Scroll_Front.jpg)
 
 ![Scroll Back](../../../../../media/images/articles/old-flatback/28-Scroll_Back.jpg)
 
