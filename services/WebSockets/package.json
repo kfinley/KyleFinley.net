@@ -20,7 +20,7 @@
     "@kylefinley.net/aws-commands": "^0.0.1",
     "@kylefinley.net/github-commands": "^0.0.1",
     "@kylefinley.net/api-client": "^0.0.1",
-    "@types/aws-lambda": "^8.10.72",
+    "@types/aws-lambda": "^8.10.145",
     "@types/node": "^16.0.0",
     "inversify-props": "^2.2.6",
     "reflect-metadata": "^0.1.13"
