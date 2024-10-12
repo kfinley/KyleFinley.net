@@ -17,7 +17,7 @@ RUN su node -c "source /usr/local/share/nvm/nvm.sh && \
   npm install -g \
   npm@7.24.1 \
   aws-cdk \
-  lerna \
+  lerna@6.6.2 \
   @vue/cli \
   wscat \
   typescript \
