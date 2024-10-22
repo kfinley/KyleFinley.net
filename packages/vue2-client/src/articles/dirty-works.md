@@ -13,35 +13,35 @@ When I'm out of town I'm grateful to have Paul Yago or Connor Law fill in on bas
 <div class="container text-center">
   <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_01-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_01-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_02-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_02-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_03-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_03-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_04-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_04-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_05-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_05-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_06-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_06-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_07-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_07-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_08-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_08-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_09-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_09-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_10-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_10-Shoe_Jam.jpg)
 
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media//images//articles/dirty-works/2024.10.16_11-Shoe_Jam.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images//articles/dirty-works/2024.10.16_11-Shoe_Jam.jpg)
 
-![Dirty Works @ Waystone Oct 14th 2024](../../../../media//images//articles/dirty-works/2024.10.14_01-Waystone.jpg)
+![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images//articles/dirty-works/2024.10.14_01-Waystone.jpg)
 
-![Dirty Works @ Waystone Oct 14th 2024](../../../../media//images//articles/dirty-works/2024.10.14_02-Waystone.jpg)
+![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images//articles/dirty-works/2024.10.14_02-Waystone.jpg)
 
-![Dirty Works @ Waystone Oct 14th 2024](../../../../media//images//articles/dirty-works/2024.10.14_03-Waystone.jpg)
+![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images//articles/dirty-works/2024.10.14_03-Waystone.jpg)
 
-![Dirty Works @ Waystone Oct 14th 2024](../../../../media//images//articles/dirty-works/2024.10.14_04-Waystone.jpg)
+![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images//articles/dirty-works/2024.10.14_04-Waystone.jpg)
 
 ![Dirty Works @ Waystone Oct 2024 Kyle, Ruben, & Diego](../../../../media/images/articles/dirty-works/2024.10.06_04-Persona.jpg)
 
