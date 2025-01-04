@@ -54,7 +54,7 @@
     <ul>
       <li>
         <em
-          ><router-link to="/waystone-jazz-jam">Monday Jazz Jam</router-link> @
+          ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
           <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em
         >
         - I host a jazz jam every Monday night at the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard
@@ -62,10 +62,10 @@
       </li>
       <li>
         <em
-          ><router-link to="/waystone-jazz-jam">Dirty Works</router-link> @
+          ><router-link to="/waystone-jazz-jam">Dirty Works Trio & Friends</router-link> @
           <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em
         >
-        - Every Tuesday night we play at Waystone as the Dirty Works Jazz Band featuring various lead players from our Monday night jam.
+        - Once a month or so we play at Waystone on a Tuesday night as the Dirty Works Jazz Trio featuring various lead players from our Monday night jam.
       </li>
       <li>
         <em
@@ -74,6 +74,14 @@
         >
         - I run this jam ever 3rd & 4th Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every
         era. The Dirty Works trio is the core house band and we always have great players come through this jam.
+      </li>
+      <li>
+        <em
+          >Dirty Works Jazz Jam @
+          <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em
+        >
+        - Every Thursday night the Dirty Works Quartet plays at Persona in downtown SF from 8 to 11pm. After this we scale down to the Dirty Works Trio 
+        bringing in Zack Sanders on guitar and open up the set as a jam session from 11:30 to 1:30am.
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm in Golden Gate Park
