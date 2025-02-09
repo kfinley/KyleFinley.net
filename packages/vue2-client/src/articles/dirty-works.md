@@ -50,61 +50,47 @@ We have several regular gigs & jams in San Francisco including...
 </div>
 
 <div class="container text-center">
-  <p><h3><router-link to="/music">Gigs & Jams Calendar</router-link></h3></p>
+  <p>
+    <h3>
+      <router-link to="/music">Gigs & Jams Calendar</router-link></h3>
+  </p>
 
-Most photos by Kyle Finley
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_01-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_02-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_03-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_04-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_05-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_06-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_07-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_08-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_09-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_10-Shoe_Jam.jpg)
-
-![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_11-Shoe_Jam.jpg)
+<p>
+Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I enjoy shooting phtos now and then when I have another bass player to jump on stage. Below are some photos from the jams. Most photos taken by Kyle Finley and are not authorized for use. 
+</p>
+</p>
+Please contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> to inquire about use of all photos.
+</p>
 
 ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_01-Waystone.jpg)
 
-![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_02-Waystone.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_11-Shoe_Jam.jpg)
 
-![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_03-Waystone.jpg)
+![Dirty Works @ The Lucky Horseshoe November 2023](../../../../media/images/articles/dirty-works/2023.11.16_01-Shoe_Jam.jpg)
 
 ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_04-Waystone.jpg)
 
-![Dirty Works @ Waystone Oct 2024 Kyle, Ruben, & Diego](../../../../media/images/articles/dirty-works/2024.10.06_04-Persona.jpg)
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_01-Shoe_Jam.jpg)
+
+![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_02-Waystone.jpg)
+
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_04-Shoe_Jam.jpg)
+
+![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_03-Waystone.jpg)
+
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_07-Shoe_Jam.jpg)
+
+![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_10-Shoe_Jam.jpg)
 
 ![Dirty Works @ Waystone Oct 2024 Noah & Omer](../../../../media/images/articles/dirty-works/2024.10.06_03-Persona.jpg)
 
 ![Dirty Works @ Waystone October 2024 Richard wrapping up](../../../../media/images/articles/dirty-works/2024.10.06_02-Persona.jpg)
-
-![Dirty Works @ Waystone October 2024 Richard watching Richard](../../../../media/images/articles/dirty-works/2024.10.06_01-Persona.jpg)
-
-![Dirty Works @ Waystone Aug 2024](../../../../media/images/articles/dirty-works/2024.08.29_02-Persona.jpg)
 
 ![Dirty Works @ Waystone Aug 2024](../../../../media/images/articles/dirty-works/2024.08.29_01-Persona.jpg)
 
 ![Dirty Works @ Waystone March 2024](../../../../media/images/articles/dirty-works/2024.03-Waystone.jpg)
 
 ![Dirty Works @ Waystone December 2023 Dan The Man](../../../../media/images/articles/dirty-works/2023.12.18_02-Waystone.jpg)
-
-![Dirty Works @ Waystone December 2023](../../../../media/images/articles/dirty-works/2023.12.18_01-Waystone.jpg)
-
-![Dirty Works @ The Lucky Horseshoe November 2023](../../../../media/images/articles/dirty-works/2023.11-Dirty_Works@The_Shoe.jpg)
-
-![Dirty Works @ The Lucky Horseshoe November 2023](../../../../media/images/articles/dirty-works/2023.11.16_01-Shoe_Jam.jpg)
 
 </div>
 
