@@ -57,11 +57,14 @@ Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, fu
 <div class="container text-center">
   <p>
     <h3>
-      <router-link to="/music">View more Gigs & Jams on the Calendar Page</router-link></h3>
+      <router-link to="/music">View Gigs & Jams Calendar</router-link></h3>
   </p>
 
 <p>
-Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I enjoy shooting phtos now and then when I have another bass player to jump on stage. Below are some photos from the jams. Most photos taken by Kyle Finley and are not authorized for use. More photos can be found on the  <router-link to="/photos/jazz-jams">Jam Photos Page.
+Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I enjoy shooting phtos now and then when I have another bass player to jump on stage. Below are some photos from the jams. Most photos taken by Kyle Finley and are not authorized for use. 
+</p>
+<p>
+More photos can be found on the  <router-link to="/photos/jazz-jams">Jam Photos Page.
 </p>
 </p>
 Please contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> to inquire about use of all photos.
