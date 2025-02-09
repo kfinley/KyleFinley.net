@@ -8,28 +8,15 @@
         >
       </p>
     </div>
-    <h4 class="text-center pt-4">Bands</h4>
+    <h4 class="text-center pt-4">Active Bands</h4>
     <ul>
       <li>
-        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - We play a wide range of classic standards including
-        bop, blues, ballads, soul, funk, swing, latin, and more!
+        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use this group for jams as well as 
+        gigs. We play a wide range of classic standards including bop, blues, ballads, soul, funk, swing, latin, and more!
       </li>
       <li>
         <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli
         Kemp on Drums, and me on bass.
-      </li>
-      <li><em>Angel Island</em> - Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.</li>
-      <li>
-        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
-        backed by bass, guitar, and drums.
-      </li>
-      <li>
-        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan holding down
-        Friday nights at Ivory & Vine. I sub with this group when needed.
-      </li>
-      <li><em>Midnite Flyte</em> - Small jazz combo led by Syd Williams on keys. I sub with this group when needed.</li>
-      <li>
-        <em><a href="http://www.trikonautband.com" target="trickonaut">Trikonaut</a></em> - Jazz, Latin, Blues, and More!
       </li>
       <li>
         <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and
@@ -43,12 +30,29 @@
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
         or so I play with fellow bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF.
       </li>
+      
+    </ul>
+    <h4 class="text-center pt-4">Groups I've Played with</h4>
+    <ul>
+      <li>
+        <em>Angel Island - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.</em
+      </li>
+      <li>
+        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan.
+      </li>
+      <li><em>Midnite Flyte</em> - Small jazz combo led by Syd Williams on keys.</li>
       <li>
         <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing
-        classic Americana and Bluegrass. I sub with this group when needed.
+        classic Americana and Bluegrass.
       </li>
-    </ul>
-    <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p>
+      <li>
+        <em><a href="http://www.trikonautband.com" target="trickonaut">Trikonaut</a></em> - Jazz, Latin, Blues, and More!
+      </li>
+      <li>
+        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
+        backed by bass, guitar, and drums.
+      </li>
+    <!-- <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p> -->
     <Gigs class="text-center" />
     <h4 class="text-center pt-4">Regular Gigs & Jams</h4>
     <ul>

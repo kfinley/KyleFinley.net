@@ -2,13 +2,46 @@
   <h2>The Dirty Works Jazz Band</h2>
 </div>
 
-This is a group I run that includes a mix of SF and Bay Area players. We play a wide mix of swing, bop, soul, funk, latin, etc. We perform in several configurations but often as a trio or quartet.
+This is a group I run that includes Bay area players. We play a wide mix of swing, bop, soul, funk, latin, etc. We perform in several configurations but often as a trio or quartet.
 
-We're currently playing gigs and host jams in San Francisco. Every Monday and Tuesday nights we're at Waystone. Monday is an open jam and Tuesday night is a small group. Thursday nights we're in Union Square at Persona for an 8-11 invite jam followed by an open jam from 11:30 to 1:30am. We're also in Bernal Heights every 3rd, 4th, and (sometimes) 5th Wednesday nights at the Lucky Horseshoe from 8-11. This is an open jam and also our longest running jam.
+We have several regular gigs & host several jams in San Francisco.
 
-The core players in this group are myself on bass and depending on the gig and player availability on keys, Jonathan Venker or Richard Caceres. On horn, Dan Dectis or Richard Batelaan on sax / Peter Ild or Austin Paton on Trumpet. On drums, Eric Jacobson, Eli Kemp, Théo Auclair, Diego Kiner, or Tim Shea. And Daniel Dickison or Zack Sanders on guitar.
+| Monday Night
+|-
+| Dirty Works Jazz Jam
+| <a href="https://www.waystonesf.com" target="new">Waystone</a>
+| North Beach - SF, CA
+| 6 - 9 PM
 
-When I'm out of town I'm grateful to have Paul Yago or Connor Law fill in on bass. We're also fortunate to have a long list of great musicians we can pull from to fill gigs or mix things up. We've met most of these players at our weekly jams. This not only helps with booking gigs but it lets us give younger and new players on the scene a chance to get out and play.
+| First Tuesday
+|-
+| Dirty Works Keys & Bass
+| <a href="https://www.waystonesf.com" target="new">Waystone</a>
+| North Beach - SF, CA
+| 6 - 9 PM
+
+| Thursday - Early Show
+|-
+| Dirty Works & Friends
+| Invite Jam
+| <a href="https://www.persona-sf.com" target="new">Persona</a>
+| SF, CA
+| 8 - 11 PM
+
+| Thursday - Late Show
+|-
+| Dirty Works w/ Zack Sanders
+| & late night open jam!
+| <a href="https://www.persona-sf.com" target="new">Persona</a>
+| SF, CA
+| 11:30 - 1:30 AM
+
+| 3rd, 4th, & 5th Wed.
+|-
+| Dirty Works Jazz Jam
+| <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
+| Bernal Heights - SF, CA
+| 8 - 11 PM
 
 <div class="container text-center">
   <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
