@@ -5,7 +5,12 @@
   <div class="container">
     <div class="text-center">
 
-Dirty Works is a jazz group I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters in the group to keep it fresh or handle things when someone is out of pocket. Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, funk, latin, etc. Often we play as a trio or quartet but expand or shrink to fit the gig.
+<p>
+Dirty Works is a jazz group I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters in the group to keep it fresh or handle things when someone is out of pocket.
+</p>
+<p>
+Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, funk, latin, etc. Often we play as a trio or quartet but expand or shrink to fit the gig.
+</p>
 
 <h3>Regular Gigs & Jams</h3>
 
@@ -52,11 +57,11 @@ Dirty Works is a jazz group I formed a few years ago when I started running jazz
 <div class="container text-center">
   <p>
     <h3>
-      <router-link to="/music">Gigs & Jams Calendar</router-link></h3>
+      <router-link to="/music">View more Gigs & Jams on the Calendar Page</router-link></h3>
   </p>
 
 <p>
-Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I enjoy shooting phtos now and then when I have another bass player to jump on stage. Below are some photos from the jams. Most photos taken by Kyle Finley and are not authorized for use. More photos can be found on the  <router-link to="/photos/">Jam Photos Page
+Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I enjoy shooting phtos now and then when I have another bass player to jump on stage. Below are some photos from the jams. Most photos taken by Kyle Finley and are not authorized for use. More photos can be found on the  <router-link to="/photos/jazz-jams">Jam Photos Page.
 </p>
 </p>
 Please contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> to inquire about use of all photos.
