@@ -30,30 +30,9 @@
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
         or so I play with fellow bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF.
       </li>
-      
     </ul>
-    <h4 class="text-center pt-4">Groups I've Played with</h4>
-    <ul>
-      <li>
-        <em>Angel Island - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.</em
-      </li>
-      <li>
-        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan.
-      </li>
-      <li><em>Midnite Flyte</em> - Small jazz combo led by Syd Williams on keys.</li>
-      <li>
-        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing
-        classic Americana and Bluegrass.
-      </li>
-      <li>
-        <em><a href="http://www.trikonautband.com" target="trickonaut">Trikonaut</a></em> - Jazz, Latin, Blues, and More!
-      </li>
-      <li>
-        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
-        backed by bass, guitar, and drums.
-      </li>
     <!-- <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p> -->
-    <Gigs id="gig-calendar" class="text-center" />
+    <Gigs id="calendar" class="text-center" />
     <h4 class="text-center pt-4">Regular Gigs & Jams</h4>
     <ul>
       <li>
@@ -104,6 +83,27 @@
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
         - This was a great jam when Frank Holmes ran it. I enjoyed playing there every week for several years. I don't go anymore.
+      </li>
+    </ul>
+     <h4 class="text-center pt-4">Groups I've Played with</h4>
+    <ul>
+      <li>
+        <em>Angel Island - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.</em
+      </li>
+      <li>
+        <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan.
+      </li>
+      <li><em>Midnite Flyte</em> - Small jazz combo led by Syd Williams on keys.</li>
+      <li>
+        <em><a href="https://www.gigsalad.com/mission_hill_san_francisco" target="new">Mission Hill</a></em> - Aaron & Richard playing
+        classic Americana and Bluegrass.
+      </li>
+      <li>
+        <em><a href="http://www.trikonautband.com" target="trickonaut">Trikonaut</a></em> - Jazz, Latin, Blues, and More!
+      </li>
+      <li>
+        <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
+        backed by bass, guitar, and drums.
       </li>
     </ul>
     <div class="text-center">
