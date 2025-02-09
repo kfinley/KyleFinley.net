@@ -53,7 +53,7 @@
         backed by bass, guitar, and drums.
       </li>
     <!-- <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p> -->
-    <Gigs class="text-center" />
+    <Gigs id="gig-calendar" class="text-center" />
     <h4 class="text-center pt-4">Regular Gigs & Jams</h4>
     <ul>
       <li>

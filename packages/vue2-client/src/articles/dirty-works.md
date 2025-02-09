@@ -57,7 +57,7 @@ Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, fu
 <div class="container text-center">
   <p>
     <h3>
-      <router-link to="/music">View Gigs & Jams Calendar</router-link></h3>
+      <router-link to="/music#gig-calendar">View Gigs & Jams Calendar</router-link></h3>
   </p>
 
 <p>
