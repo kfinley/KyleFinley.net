@@ -2,6 +2,9 @@
   <h2>The Dirty Works Jazz Band</h2>
 </div>
 
+  <div class="container">
+    <div class="text-center">
+
 This is a group I run that includes Bay area players. We play a wide mix of swing, bop, soul, funk, latin, etc. We perform in several configurations but often as a trio or quartet.
 
 We have several regular gigs & host several jams in San Francisco.
@@ -42,6 +45,8 @@ We have several regular gigs & host several jams in San Francisco.
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 8 - 11 PM
+
+</div>
 
 <div class="container text-center">
   <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
