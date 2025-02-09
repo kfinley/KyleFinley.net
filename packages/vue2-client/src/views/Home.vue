@@ -5,13 +5,10 @@
       <div class="col-12 pt-2">
         <h2 class="text-center"><router-link to="/music">Music</router-link></h2>
         <p>
-          I'm a Jazz &amp; Americana musician actively gigging around the San Francisco bay area. I play with several groups and I run a few
-          jazz jams. My <router-link :to="{ name: routes.Music }">music page</router-link> has more info on bands, jams, and gigs.
+          I'm a Jazz &amp; Americana Bassist actively gigging around the San Francisco Bay Area. I play with several groups and I run the Dirty Works Jazz Band hosting a few jazz jams a week. My <router-link :to="{ name: routes.Music }">music page</router-link> has more info on bands, jams, and gigs.
         </p>
         <p>
-          I primarily play upright bass but I also play trombone and sometimes guitar. My main ax is a 1980 Johannes Rubner I've owned since
-          my early 20s. Recently I picked up a 2006 Andreas Eastman VB-200GR to be my daily gigging bass. My horn is a 1965 Bach
-          Stradivarius Model 42 that's been in my family over 50 years.
+          I primarily play upright bass but I play trombone and guitar as well. I also teach bass &amp; jazz lessons.
         </p>
         <p></p>
         <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software</router-link></h2>
