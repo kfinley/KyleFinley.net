@@ -50,7 +50,7 @@ We have several regular gigs & jams in San Francisco including...
 </div>
 
 <div class="container text-center">
-  <p><router-link to="/music">Gigs & Jams Calendar</router-link></p>
+  <p><h3><router-link to="/music">Gigs & Jams Calendar</router-link></h3></p>
 
 Most photos by Kyle Finley
 
