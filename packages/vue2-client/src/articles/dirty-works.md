@@ -5,25 +5,25 @@
   <div class="container">
     <div class="text-center">
 
-This is a group I run that includes Bay area players. We play a wide mix of swing, bop, soul, funk, latin, etc. We perform in several configurations but often as a trio or quartet.
+Dirty Works is a jazz group I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We play a wide mix of swing, bop, soul, funk, latin, etc. Often we play as a trio or quartet but expand or shrink to fit the gig.
 
-We have several regular gigs & host several jams in San Francisco.
+We have several regular gigs & jams in San Francisco including...
 
-| Monday Night
+| Every Monday Night
 |-
-| Dirty Works Jazz Jam
+| Dirty Works Open Jazz Jam
 | <a href="https://www.waystonesf.com" target="new">Waystone</a>
 | North Beach - SF, CA
 | 6 - 9 PM
 
 | First Tuesday
 |-
-| Dirty Works Keys & Bass
+| Dirty Works
 | <a href="https://www.waystonesf.com" target="new">Waystone</a>
 | North Beach - SF, CA
 | 6 - 9 PM
 
-| Thursday - Early Show
+| Every Thursday - Early Show
 |-
 | Dirty Works & Friends
 | Invite Jam
@@ -31,10 +31,10 @@ We have several regular gigs & host several jams in San Francisco.
 | SF, CA
 | 8 - 11 PM
 
-| Thursday - Late Show
+| Every Thursday - Late Show
 |-
 | Dirty Works w/ Zack Sanders
-| & late night open jam!
+| Open Jam - Advanced Players
 | <a href="https://www.persona-sf.com" target="new">Persona</a>
 | SF, CA
 | 11:30 - 1:30 AM
@@ -42,6 +42,7 @@ We have several regular gigs & host several jams in San Francisco.
 | 3rd, 4th, & 5th Wed.
 |-
 | Dirty Works Jazz Jam
+| Open Jam - All Levels
 | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
 | Bernal Heights - SF, CA
 | 8 - 11 PM
