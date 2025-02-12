@@ -62,22 +62,32 @@ Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, fu
 
 <h2>What is a Dirty Works Jazz Jam?</h2>
 <p>
-For those not familiar with the traditions of jazz jams here's the low down on how I run things. At a Dirty Works Jam there will always be a rhythym section with bass, keys or guitar, and drums. Depending on the jam we might have a horn player or two out in front of the rhythym section. Sometimes we run without a set drummer and just have drums for someone to sit in. If we have a guitar and no keys then we have a keyboard on set so keyboard playing jammers can play. At the jam the Dirty Works Jazz Band is the House Band, the bass player is in charge, and we welcome jammers to join us.
+For those not familiar with the traditions of jazz jams here's the low down on how I run things. 
+</p>
+There's a rhythym section with bass, keys/guitar, drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
 </p>
 <p>
-Our jams have on average a dozen players & singers. We try to keep it pretty loose and have a good time. I don't make people sign up on any lists or divide up players into pre-defined groups and assign a song for them to play. That's not how we roll at all. What we do is after a song or two (not a whole set) we invite players that are there for the jam to join us. 
+We strive to sound good & have fun... in that order. :sunglasses:
 </p>
 <p>
-I try to keep no more than three horn players per song. The expectation is if you jump up then you should know the tune or you have a chart and/or changes ready to read for soloing. We all solo during songs. Call tunes on the fly, take requests from the crowd, and swap out players all night. I make sure every player that comes to a jam gets in on the action for at least one song. We typically go for 3 hours with breaks and finish with a big closer featuring anyone that wants to join in.
+Dirty Works jams have on average a dozen players & singers. People don't have to sign up on any lists. I don't divide folks into groups and assign songs. That's not how we roll. 
 </p>
 <p>
-We have close to 100 local players come through our jams each month and we play hundreds of jazz standards. New faces are always showing up and have a great crew of regulars. I enjoy shooting phtos now and then when there's another bass player to jump on for me. Below are some photos from the jams. Most photos taken by me, Kyle Finley, and are not authorized for use. More photos can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a>
+What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly, take requests from the crowd, and swap out players as we go. Jams usually run 3 hours with short breaks and finish with a big closer featuring anyone that wants to join in.
 </p>
 <p>
-More photos can be found on the  <router-link to="/photos/jazz-jams">Jam Photos Page.
+I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song then you should know the tune or have a chart and/or changes ready to read for soloing. We all solo during songs. My jams are chart/changes friendly but best if singers know the words.
+</p>
+<p>
+We have around 100 local players come through our jams each month and we play hundreds of jazz standards. New faces are always showing up and have a great crew of regulars!! 
+</p>
+<p>I enjoy shooting phtos when there's another bass player to jump on for me. Below are some photos from recent jams. Most photos taken by me, Kyle Finley, and are not authorized for use.
+</p>
+<p>
+More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 </p>
 </p>
-Please contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> to inquire about use of all photos.
+Interested in booking the Dirty Works Jazz band for a show? Please reach out via email to <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a>. Inquire via email for use of any photos.
 </p>
 
 ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_01-Waystone.jpg)
