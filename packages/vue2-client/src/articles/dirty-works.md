@@ -71,7 +71,9 @@
   </p>
 </div>
 
+<div class="container text-center">
 We strive to sound good & have fun... in that order. :sunglasses:
+</div>
 
 <div class="container text-center">
   <p>
