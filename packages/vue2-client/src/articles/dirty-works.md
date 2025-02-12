@@ -60,8 +60,15 @@ Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, fu
       <router-link to="/music#calendar">View Gigs & Jams Calendar</router-link></h3>
   </p>
 
+<h2>What is a Dirty Works Jazz Jam?</h2>
 <p>
-Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I enjoy shooting phtos now and then when I have another bass player to jump on stage. Below are some photos from the jams. Most photos taken by Kyle Finley and are not authorized for use. 
+For those not familiar with the traditions of jazz jams here's the low down on how I run things. At a Dirty Works Jam there will always be a rhythym section with bass, keys or guitar, and drums. Depending on the jam we might have a horn player on top of that. Sometimes we run without a set drummer and just have drums on set for someone to sit in. If we have a guitar and no keys then we have a keyboard on set so keyboard playing jammers can play. At the jam the Dirty Works Jazz Band is the House Band, the bass player is in charge, and we welcome jammers to join us.
+</p>
+<p>
+Our jams have on average a dozen players and singers. We try to keep it pretty loose and have a good time. I don't make people sign up on any lists or divide up players into pre-defined groups and assign a song for them to play. That's not how we roll at all. What we do is after a song or two (not a whole set) we invite players that are there for the jam to join us. I try to keep no more than 3 horn players per tune. The expectation is if you jump up, you know the tune, or you have a chart and/or changes to read for soloing. We all solo during songs and call tunes on the fly. We take requests from the crowd and swap out players all night. I make sure every player that came to the jam gets in on the action for at least one song. We typically go for 3 hours with breaks and finish with a big closer featuring anyone that wants to join in.
+</p>
+<p>
+We have dozens of players come through our jam each month. We welcome new faces and have a great crew of regulars. I enjoy shooting phtos now and then when there's another bass player to jump on for me. Below are some photos from the jams. Most photos taken by me, Kyle Finley, and are not authorized for use. More photos can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a>
 </p>
 <p>
 More photos can be found on the  <router-link to="/photos/jazz-jams">Jam Photos Page.
