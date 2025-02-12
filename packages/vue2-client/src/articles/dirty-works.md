@@ -66,7 +66,7 @@ For those not familiar with the traditions of jazz jams, here's the low down on 
 </p>
 A Dirty Works Jam always has a rhythym section with bass, keys/guitar, & drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
 </p>
-We strive to sound good & have fun... in that order. :)
+We strive to sound good & have fun... in that order. :sunglasses:
 <p>
 A Dirty Works Jams has on average a dozen players & singers. People don't have to sign up on any lists. I don't divide folks into groups and assign songs. That's not how we roll. 
 </p>
@@ -74,12 +74,12 @@ A Dirty Works Jams has on average a dozen players & singers. People don't have t
 What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly, take requests from the crowd, and swap out players as we go. Jams usually run 3 hours with short breaks and finish with a big closer featuring anyone that wants to join in.
 </p>
 <p>
-I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song then you should know the tune or have a chart and/or changes ready to read for soloing. We all solo during songs. My jams are chart/changes friendly but best if singers know the words.
+I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart and/or changes ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes friendly but it's best if singers know the words. 
 </p>
 <p>
-We have around 100 local players come through our jams each month and we play hundreds of jazz standards. New faces are always showing up and have a great crew of regulars!! 
+We have around 100 local players come through our jams each month and we play hundreds of jazz standards. New faces are always showing up and we have a great crew of regulars!!
 </p>
-<p>I enjoy shooting phtos when there's another bass player to jump on for me. Below are some photos from recent jams. Most photos taken by me, Kyle Finley, and are not authorized for use.
+<p>When there's another bass player to jump on for me, I enjoy shooting phtos. Below are some photos from recent jams. Most photos taken by me, Kyle Finley, and are not authorized for use.
 </p>
 <p>
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
