@@ -64,10 +64,12 @@ Dirty Works plays mix of songs in different styles. We're rooted in swing & bebo
 <p>
 For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs things. 
 </p>
+<p>
 A Dirty Works Jam always has a rhythym section with bass, keys/guitar, & drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
 </p>
 We strive to sound good & have fun... in that order. :sunglasses:
 <p>
+
 A Dirty Works Jams has on average a dozen players & singers. People don't have to sign up on any lists. I don't divide folks into groups and assign songs. That's not how we roll. 
 </p>
 <p>
@@ -84,7 +86,7 @@ We have around 100 local players come through our jams each month and we play hu
 <p>
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 </p>
-</p>
+<p>
 Interested in booking the Dirty Works Jazz band for a show? Please reach out via email to <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a>. Inquire via email for use of any photos.
 </p>
 
