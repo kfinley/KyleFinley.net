@@ -6,10 +6,10 @@
     <div class="text-center">
 
 <p>
-Dirty Works is a jazz group I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters in the group to keep it fresh or handle things when someone is out of pocket.
+Dirty Works is a jazz group I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters to keep the group fresh or handle things when someone is out.
 </p>
 <p>
-Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, funk, latin, etc. Often we play as a trio or quartet but expand or shrink to fit the gig.
+Dirty Works plays mix of songs in different styles. We're rooted in swing & bebop but mix it up moving in and out of hard-bop, soul, funk, groove, latin, and other jazz vibes all night.
 </p>
 
 <h3>Regular Gigs & Jams</h3>
@@ -62,15 +62,15 @@ Dirty Works plays a wide mix of songs rooted in swing, bebop, hard-bop, soul, fu
 
 <h2>What is a Dirty Works Jazz Jam?</h2>
 <p>
-For those not familiar with the traditions of jazz jams here's the low down on how I run things. 
+For those not familiar with the traditions of jazz jams here's the low down on how Dirty Works runs things. 
 </p>
-There's a rhythym section with bass, keys/guitar, drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
+At our jams there's always a rhythym section with bass, keys/guitar, & drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
 </p>
 <p>
 We strive to sound good & have fun... in that order. :sunglasses:
 </p>
 <p>
-Dirty Works jams have on average a dozen players & singers. People don't have to sign up on any lists. I don't divide folks into groups and assign songs. That's not how we roll. 
+A Dirty Works Jams has on average a dozen players & singers. People don't have to sign up on any lists. I don't divide folks into groups and assign songs. That's not how we roll. 
 </p>
 <p>
 What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly, take requests from the crowd, and swap out players as we go. Jams usually run 3 hours with short breaks and finish with a big closer featuring anyone that wants to join in.
