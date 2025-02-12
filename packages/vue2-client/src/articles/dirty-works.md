@@ -61,10 +61,10 @@
       <router-link to="/music#calendar">View Gigs & Jams Calendar</router-link>
     </h3>
   </p>
-
   <h2>What is a Dirty Works Jazz Jam?</h2>
 </div>
-For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs things. 
+
+For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs our jams. 
 
 A Dirty Works Jam always has a rhythym section with bass, keys/guitar, & drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
 
@@ -82,7 +82,9 @@ When there's another bass player to jump on for me, I enjoy shooting phtos. Belo
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
-Interested in booking the Dirty Works Jazz band for a show? Please reach out via email to <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a>. Inquire via email for use of any photos.
+Interested in booking the Dirty Works Jazz band for a show? Please reach out via email to <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a>. 
+
+Inquire via email for use of any photos.
 
 <div class="container text-center">
 
