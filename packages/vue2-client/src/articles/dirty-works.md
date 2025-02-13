@@ -66,7 +66,7 @@
 
 For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs our jams. 
 
-A Dirty Works Jam always has a rhythym section with bass, keys :musical_keyboard: and/or guitar :guitar:, & drums :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. Depending on the jam we may run it without a keys/drums but :drum: and :musical_keyboard: will be on set for jammers.
+A Dirty Works Jam always has a rhythym section with bass, keys :musical_keyboard: and/or guitar :guitar:, & drums :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. Depending on the jam we may run it without keys/drums but :drum: and :musical_keyboard: will be on set for jammers.
 
 We strive to sound good & have fun... in that order. :sunglasses: :skateboard: :kite: :notes:
 
