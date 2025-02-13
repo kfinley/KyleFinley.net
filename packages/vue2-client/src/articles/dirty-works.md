@@ -70,19 +70,19 @@ A Dirty Works Jam always has a rhythym section with bass, :musical_keyboard:/:gu
 
 We strive to sound good & have fun... in that order. :sunglasses: :skateboard: :kite: :notes:
 
-Our jams have on average a dozen players & singers. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. 
+Our jams have on average a dozen players & singers. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. :sushi: :newspaper_roll: :dash:
 
-What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly, take requests from the crowd, and swap out players as we go. Jams usually run 3 hours with short breaks. We finish with a big closer featuring anyone that wants to join in.
+What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks. :clock9: We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
 I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart/changes ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes :musical_score: friendly but it's best if singers know the words. :singer: 
 
-We have around 100 local players come through our jams each month and we play hundreds of jazz standards. New faces are always showing up and we have a great crew of regulars!!
+We have around :100: local players come through our jams each month and we play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
 
-When there's another bass player to jump on for me, I enjoy shooting phtos. :camera: Below are some recent shots. Most photos taken by me, Kyle Finley, and are not authorized for use.
+When there's another bass player to jump on for me, I enjoy shooting phtos :camera:. Below are some recent shots. Most photos taken by me, Kyle Finley, and are not authorized for use. :crystal_ball:
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
-Interested in booking the Dirty Works Jazz band for a show? Please reach out via email to <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a>. 
+Interested in booking the Dirty Works Jazz band for a show? Please reach out via :email: to <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a>. 
 
 Inquire via email for use of any photos.
 
