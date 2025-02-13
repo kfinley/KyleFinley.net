@@ -70,7 +70,7 @@ A Dirty Works Jam always has a rhythym section with bass, keys :musical_keyboard
 
 We strive to sound good & have fun... in that order. :sunglasses:
 
-Our jams have on average a dozen players & singers. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. :sushi:
+Our jams have on average a dozen players & singers :microphone:. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. :sushi:
 
 What we do is this: after a song or two (not a whole set), we invite any players to join us. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
