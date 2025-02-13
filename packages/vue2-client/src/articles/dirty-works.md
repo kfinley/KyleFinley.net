@@ -7,7 +7,7 @@
 <div class="text-center">
 
   <p>
-  We're a straight ahead, swing, bop, & soul jazz group based in the Bay Area. I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters to keep the group fresh, size up or down to the gig, or handle things when someone's out.
+  We're a straight ahead, swing, bop, & soul jazz group based in the Bay Area. Dirty Works was formed a few years ago when I started running jazz jams. The group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters to keep the group fresh, size up or down to the gig, or handle things when someone's out.
   </p>
   <p>
   Dirty Works plays mix of songs in various styles. We're rooted in swing & bebop but mix it up moving in and out of hard-bop, soul, funk, groove, latin, and other jazz vibes all night.
@@ -68,13 +68,13 @@ For those not familiar with the traditions of jazz jams, here's the low down on 
 
 A Dirty Works Jam always has a rhythym section with bass, keys :musical_keyboard: and/or guitar :guitar:, & drums :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. Depending on the jam we may run it without keys/drums but :drum: and :musical_keyboard: will be on set for jammers.
 
-We strive to sound good & have fun... in that order. :sunglasses: :skateboard: :kite: :notes:
+We strive to sound good & have fun... in that order. :sunglasses:
 
-Our jams have on average a dozen players & singers. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. :sushi: :newspaper_roll: :dash:
+Our jams have on average a dozen players & singers. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. :sushi:
 
-What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks. :clock9: We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
+What we do is this: after a song or two (not a whole set), we invite any players to join us. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
-I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song :notes:, then you should know the tune or have a chart/changes :musical_score: ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes :musical_note: friendly but it's best if singers know the words. :singer:
+I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song :notes:, then you should know the tune or have a chart/changes :musical_score: ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic :vertical_traffic_light:. Dirty Works jams are chart/changes :musical_note: friendly but it's best if singers know the words. :singer:
 
 We have around :100: local players come through our jams each month :calendar: and we play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
 
