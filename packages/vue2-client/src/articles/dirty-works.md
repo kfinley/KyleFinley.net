@@ -66,7 +66,7 @@
 
 For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs our jams. 
 
-A Dirty Works Jam always has a rhythym section with bass, :musical_keyboard:/:guitar:, & :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. Depending on the jam we may run it without a keys/drums but :drum: and :musical_keyboard: will be on set for jammers.
+A Dirty Works Jam always has a rhythym section with bass, keys :musical_keyboard: and/or guitar :guitar:, & drums :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. Depending on the jam we may run it without a keys/drums but :drum: and :musical_keyboard: will be on set for jammers.
 
 We strive to sound good & have fun... in that order. :sunglasses: :skateboard: :kite: :notes:
 
@@ -74,9 +74,9 @@ Our jams have on average a dozen players & singers. We run open jams and invite 
 
 What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks. :clock9: We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
-I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart/changes ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes :musical_score: friendly but it's best if singers know the words. :singer: 
+I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song :notes:, then you should know the tune or have a chart/changes :musical_score: ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes :musical_note: friendly but it's best if singers know the words. :singer:
 
-We have around :100: local players come through our jams each month and we play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
+We have around :100: local players come through our jams each month :calendar: and we play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
 
 When there's another bass player to jump on for me, I enjoy shooting phtos :camera:. Below are some recent shots. Most photos taken by me, Kyle Finley, and are not authorized for use. :crystal_ball:
 
