@@ -7,10 +7,10 @@
 <div class="text-center">
 
   <p>
-  Dirty Works is a jazz group I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters to keep the group fresh or handle things when someone is out.
+  We're a straight ahead, swing, bop, & soul jazz group based in the Bay Area. I formed a few years ago when I started running jazz jams. This group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters to keep the group fresh, size up or down to the gig, or handle things when someone's out.
   </p>
   <p>
-  Dirty Works plays mix of songs in different styles. We're rooted in swing & bebop but mix it up moving in and out of hard-bop, soul, funk, groove, latin, and other jazz vibes all night.
+  Dirty Works plays mix of songs in various styles. We're rooted in swing & bebop but mix it up moving in and out of hard-bop, soul, funk, groove, latin, and other jazz vibes all night.
   </p>
 
   <h3>Regular Gigs & Jams</h3>
@@ -66,7 +66,7 @@
 
 For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs our jams. 
 
-A Dirty Works Jam always has a rhythym section with bass, keys/guitar, & drums. Sometimes we have a horn or two out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a drumset and keyboard on set for jammers.
+A Dirty Works Jam always has a rhythym section with bass, :musical_keyboard:/:guitar:, & :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what we call the "House Band", the bass player is in charge, and we welcome local players to join us. Depending on the jam we may run without a drummer/keys but will have a :drum: and :musical_keyboard: on set for jammers.
 
 We strive to sound good & have fun... in that order. :sunglasses:
 
@@ -74,11 +74,11 @@ A Dirty Works Jams has on average a dozen players & singers. People don't have t
 
 What we do is this, after a song or two, not a whole set, we invite any players to join us. We call tunes on the fly, take requests from the crowd, and swap out players as we go. Jams usually run 3 hours with short breaks and finish with a big closer featuring anyone that wants to join in.
 
-I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart and/or changes ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes friendly but it's best if singers know the words. 
+I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart and/or changes ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic. Dirty Works jams are chart/changes :musical_score: friendly but it's best if singers know the words. :singer: 
 
 We have around 100 local players come through our jams each month and we play hundreds of jazz standards. New faces are always showing up and we have a great crew of regulars!!
 
-When there's another bass player to jump on for me, I enjoy shooting phtos. Below are some photos from recent jams. Most photos taken by me, Kyle Finley, and are not authorized for use.
+When there's another bass player to jump on for me, I enjoy shooting phtos. :camera: Below are some photos from recent jams. Most photos taken by me, Kyle Finley, and are not authorized for use.
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
