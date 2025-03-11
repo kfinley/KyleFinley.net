@@ -15,12 +15,19 @@
 
   <h3>Regular Gigs & Jams</h3>
 
-  | Every Monday Night
+  | Every Monday Early Night 
   |-
   | Dirty Works Open Jazz Jam
   | <a href="https://www.waystonesf.com" target="new">Waystone</a>
   | North Beach - SF, CA
   | 6 - 9 PM
+
+  | Every Monday Late Night 
+  |-
+  | Dirty Works Open Jazz Jam
+  | Trad'r Sam
+  | Outer Richmond - SF, CA
+  | 10:30 PM 'Til Done
 
   | First Tuesday
   |-
@@ -34,7 +41,7 @@
   | Dirty Works & Friends
   | Invite Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
-  | SF, CA
+  | Nob Hill - SF, CA
   | 8 - 11 PM
 
   | Every Thursday - Late Show
@@ -42,7 +49,7 @@
   | Dirty Works w/ Zack Sanders
   | Open Jam - Advanced Players
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
-  | SF, CA
+  | Nob Hill - SF, CA
   | 11:30 - 1:30 AM
 
   | 3rd, 4th, & 5th Wed.
@@ -52,6 +59,13 @@
   | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
   | 8 - 11 PM
+
+  | Every Friday 
+  |-
+  | Dirty Works Duet Jam
+  | <a href="https://hopoast.com" target="new">Hop Oast</a>
+  | Mission / Bernal Heights - SF, CA
+  | 6 - 8:30 PM
 
 </div>
 
