@@ -22,11 +22,11 @@
   | North Beach - SF, CA
   | 6 - 9 PM
 
-  | Every Monday Late Night 
+  | Monday Late Nights 
   |-
-  | Dirty Works Open Jazz Jam
-  | Trad'r Sam
-  | Outer Richmond - SF, CA
+  | Biscuits & Whiskey Jam
+  | TBD
+  | SF, CA
   | 10:30 PM 'Til Done
 
   | First Tuesday
