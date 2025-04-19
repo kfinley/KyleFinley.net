@@ -3,28 +3,16 @@
     <div class="text-center">
       <p>
         <i
-          >I'm a Jazz and Americana upright bassist currently slappin' strings around the San Francisco Bay area. I'm in a few bands and run
-          a couple of jazz jams. My gig schedule can be found below.</i
+          >I'm Kyle... The Bass Dude. I'm a Jazz upright bassist. I play with a few groups, fill in with groups when needed, and I run
+          a half a dozen jazz jams around San Francisco. My schedule can be found below.</i
         >
       </p>
     </div>
-    <h4 class="text-center pt-4">Active Bands</h4>
+    <h4 class="text-center pt-4">Active Groups</h4>
     <ul>
       <li>
         <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use this group for jams as well as 
-        gigs. We play a wide range of classic standards including bop, blues, ballads, soul, funk, swing, latin, and more!
-      </li>
-      <li>
-        <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli
-        Kemp on Drums, and me on bass.
-      </li>
-      <li>
-        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and
-        singer Daisy Dresner backed by drums and bass.
-      </li>
-      <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and
-        Bluegrass four piece playing events and private shows around the Bay Area.
+        gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-65). Swing, Bop, & Soul Jazz are our focus.
       </li>
       <li>
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
@@ -38,33 +26,38 @@
       <li>
         <em
           ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
-          <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em
+          <a href="https://waystonesf.com/" target="Waystone">Waystone</a></em
         >
-        - I host a jazz jam every Monday night at the Waystone wine bar in North Beach SF. The house band is Dan Dectis on sax, Richard
-        Caceres on keys, and I'm on bass.
+        - Weekly Monday night jam at the Waystone wine bar in North Beach from 6-9pm. Open Jam. Players welcome from the start. 
       </li>
       <li>
         <em
-          ><router-link to="/waystone-jazz-jam">Dirty Works Trio & Friends</router-link> @
-          <a href="https://waystonesf.com/" target="Shoe">Waystone</a></em
+          ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
+          <a href="https://theliberties.com/" target="Liberties">The Liberties</a></em
         >
-        - Once a month or so we play at Waystone on a Tuesday night as the Dirty Works Jazz Trio featuring various lead players from our Monday night jam.
+        - Weekly Tuesday night jam at The Liberties in The Mission from 6-9pm. Open Jam. Players welcome from the start.
       </li>
       <li>
         <em
           ><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em
         >
-        - I run this jam ever 3rd & 4th Wednesday of the month. We try to make this the chillest jam in town. We play classic standards from every
-        era. The Dirty Works trio is the core house band and we always have great players come through this jam.
+        - Open Jazz Jam every 3rd, 4th, & 5th Wednesday of the month from 8-12. We try to make this the chillest jam in town! We play classic standards from every
+        era. 
       </li>
       <li>
         <em
           >Dirty Works Jazz Jam @
           <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em
         >
-        - Every Thursday night the Dirty Works Quartet plays at Persona in downtown SF from 8 to 11pm. After this we scale down to the Dirty Works Trio 
-        bringing in Zack Sanders on guitar and open up the set as a jam session from 11:30 to 1:30am.
+        - Every Thursday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. The night starts with a Bass & Horn duo for the first hour. 
+        After that we scale up to a Quartet until Midnight. After Midnight we run with whoever wants to play until 1:30. Jammers are welcome to join us all night long!
+      </li>
+      <li>
+        <em
+          >Dirty Works Jazz Jam @ Progressive Grounds</em
+        >
+        - Open jam every 1st & 3rd Sunday from 3-6pm. 
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm in Golden Gate Park
@@ -88,7 +81,11 @@
      <h4 class="text-center pt-4">Groups I've Played with</h4>
     <ul>
       <li>
-        <em>Angel Island - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.</em
+        <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli
+        Kemp on Drums, and Kyle on bass.
+      </li>
+      <li>
+        <em>Angel Island</em - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.
       </li>
       <li>
         <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan.
@@ -105,10 +102,18 @@
         <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
         backed by bass, guitar, and drums.
       </li>
+      <li>
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and
+        Bluegrass four piece playing events and private shows around the Bay Area.
+      </li>
     </ul>
     <div class="text-center">
       <p>Details on background and musical journey can be found on my <router-link to="/music/history">history page</router-link></p>
     </div>
+    <li>
+        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and
+        singer Daisy Dresner backed by drums and bass.
+    </li>
   </div>
 </template>
 
