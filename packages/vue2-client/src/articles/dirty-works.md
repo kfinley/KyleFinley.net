@@ -7,10 +7,9 @@
 <div class="text-center">
 
   <p>
-  We're a straight ahead, swing, bop, & soul jazz group based in the Bay Area. Dirty Works was formed a few years ago when I started running jazz jams. The group includes an ongoing mix of Bay Area players. We have some standing members and keep a rolling cast of characters to keep the group fresh, size up or down to the gig, or handle things when someone's out.
-  </p>
-  <p>
-  Dirty Works plays mix of songs in various styles. We're rooted in swing & bebop but mix it up moving in and out of hard-bop, soul, funk, groove, latin, and other jazz vibes all night.
+  The Dirty Works Jazz Band is led by Kyle Finley. We play straight ahead classic jazz. The days of Riverside, Impulse, Blue Note are where we're at... ya feel me?
+  
+  We play gigs and we run jams. The first Dirty Works Jam started up in 2023 at the Lucky Horseshoe and since then we've expanded to half a dozen jams we run. The group includes an ongoing mix of Bay Area players. We have some standing members and a rolling cast of characters to keep the group fresh & size up or down to the gig. We play private events and parties as well. Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
   </p>
 
   <h3>Regular Gigs & Jams</h3>
@@ -34,10 +33,9 @@
   | Every Thursday
   |-
   | Dirty Works Jazz Night
-  | 3 shows
-  | Duet - Bass & Horn/Vocals
-  | Main Act - Trio or Quartet
-  | Late Jam - Open Jam
+  | Opener - Bass & Horn/Vocals
+  | Main Act - Trio or Quartet + Invite Jam
+  | Late Night - Open Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
   | 8 - 1:30 PM
@@ -53,6 +51,7 @@
   | Every Friday 
   |-
   | Dirty Works Acoustic Jam
+  | Solo Double Bass plus small jam
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | Mission / Bernal Heights - SF, CA
@@ -60,8 +59,8 @@
 
   | 1st & 3rd
   |-
-  | Dirty Works Acoustic Jam
-  | All Ages
+  | Dirty Works Jazz Jam
+  | All Ages - All Levels
   | Progressive Grounds Cafe 
   | Bernal Heights - SF, CA
   | 3 - 6 PM
@@ -78,21 +77,21 @@
   <h2>What is a Dirty Works Jazz Jam?</h2>
 </div>
 
-For those not familiar with the traditions of jazz jams, here's the low down on how Dirty Works runs our jams. 
+For those not familiar with the traditions of jazz jams, here's the skinny on how Dirty Works runs a jam. 
 
-A Dirty Works Jam always has a rhythym section with bass, keys :musical_keyboard: and/or guitar :guitar:, & drums :drum:. Sometimes we have a :trumpet: or :saxophone: out front but not always. The Dirty Works Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. Depending on the jam we may run it without keys/drums but :drum: and :musical_keyboard: will be on set for jammers.
+A Dirty Works Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes we have a :trumpet: and/or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us.
 
-We strive to sound good & have fun... in that order. :sunglasses:
+This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. We strive to sound good & have fun... in that order. :sunglasses:
 
-Our jams have on average a dozen players & singers :microphone:. We run open jams and invite jams. No sign up is needed. I don't divide folks into groups and assign songs. That's not how we roll. :sushi:
+We have on average a dozen players & singers :microphone:. We run both open jams and invite jams. No sign up is needed, just let us know you want to play or sing. I don't divide folks into groups and assign songs or anything. That's not how we roll. :sushi:
 
-What we do is this: after a song or two (not a whole set), we invite any players to join us. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
+What we do is this, sometimes we kick off the first set with just the house band but we invite any players to join us mostly from the start. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
-I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song :notes:, then you should know the tune or have a chart/changes :musical_score: ready to read for soloing. We all solo during songs. The bass player or lead player direct traffic :vertical_traffic_light:. Dirty Works jams are chart/changes :musical_note: friendly but it's best if singers know the words. :singer:
+I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart/changes ready to read for soloing. We all solo during songs. :musical_score: :notes: The bass player or lead player direct traffic :vertical_traffic_light:. Dirty Works Jams are chart/changes :musical_note: friendly but it's best if singers know the words. :singer:
 
 We have around :100: local players come through our jams each month :calendar: and we play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
 
-When there's another bass player to jump on for me, I enjoy shooting phtos :camera:. Below are some recent shots. Most photos taken by me, Kyle Finley, and are not authorized for use. :crystal_ball:
+When there's another bass player to jump on for me I grab my trombone and join in with the jammers. I also enjoy shooting phtos :camera:. Below are some recent shots from varoius jams. Most photos taken by me, Kyle Finley, and are not authorized for use. :crystal_ball:
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
