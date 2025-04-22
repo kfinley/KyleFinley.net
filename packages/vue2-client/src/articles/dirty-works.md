@@ -15,44 +15,34 @@
 
   <h3>Regular Gigs & Jams</h3>
 
-  | Every Monday Early Night 
+  | Every Monday Night 
   |-
   | Dirty Works Open Jazz Jam
+  | All Ages
   | <a href="https://www.waystonesf.com" target="new">Waystone</a>
   | North Beach - SF, CA
   | 6 - 9 PM
 
-  | Monday Late Nights 
+  | Every Tuesday Night 
   |-
-  | Biscuits & Whiskey Jam
-  | TBD
-  | SF, CA
-  | 10:30 PM 'Til Done
-
-  | First Tuesday
-  |-
-  | Dirty Works
-  | <a href="https://www.waystonesf.com" target="new">Waystone</a>
-  | North Beach - SF, CA
+  | Dirty Works Open Jazz Jam
+  | All Ages
+  | <a href="https://www.theliberties.com" target="new">The Liberties</a>
+  | The Mission - SF, CA
   | 6 - 9 PM
 
-  | Every Thursday - Early Show
+  | Every Thursday
   |-
-  | Dirty Works & Friends
-  | Invite Jam
+  | Dirty Works Jazz Night
+  | 3 shows
+  | Duet - Bass & Horn/Vocals
+  | Main Act - Trio or Quartet
+  | Late Jam - Open Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
-  | 8 - 11 PM
+  | 8 - 1:30 PM
 
-  | Every Thursday - Late Show
-  |-
-  | Dirty Works w/ Zack Sanders
-  | Open Jam - Advanced Players
-  | <a href="https://www.persona-sf.com" target="new">Persona</a>
-  | Nob Hill - SF, CA
-  | 11:30 - 1:30 AM
-
-  | 3rd, 4th, & 5th Wed.
+  | 3rd, 4th, & 5th Wednesday
   |-
   | Dirty Works Jazz Jam
   | Open Jam - All Levels
@@ -62,10 +52,20 @@
 
   | Every Friday 
   |-
-  | Dirty Works Duet Jam
+  | Dirty Works Acoustic Jam
+  | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | Mission / Bernal Heights - SF, CA
   | 6 - 8:30 PM
+
+  | 1st & 3rd
+  |-
+  | Dirty Works Acoustic Jam
+  | All Ages
+  | Progressive Grounds Cafe 
+  | Bernal Heights - SF, CA
+  | 3 - 6 PM
+
 
 </div>
 
