@@ -33,6 +33,14 @@
   | The Mission - SF, CA
   | 6 - 9 PM
 
+  | 3rd, 4th, & 5th Wednesday
+  |-
+  | Dirty Works Jazz Jam
+  | Open Jam - All Levels
+  | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
+  | Bernal Heights - SF, CA
+  | 8 - 11 PM
+
   | Every Thursday
   |-
   | Dirty Works Jazz Night
@@ -43,14 +51,6 @@
   | Nob Hill - SF, CA
   | 8 - 1:30 PM
 
-  | 3rd, 4th, & 5th Wednesday
-  |-
-  | Dirty Works Jazz Jam
-  | Open Jam - All Levels
-  | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
-  | Bernal Heights - SF, CA
-  | 8 - 11 PM
-
   | Every Friday 
   |-
   | Dirty Works Acoustic Jam
@@ -60,7 +60,7 @@
   | Mission / Bernal Heights - SF, CA
   | 6 - 8:30 PM
 
-  | 1st & 3rd
+  | 1st & 3rd Sundays
   |-
   | Dirty Works Jazz Jam
   | All Ages - All Levels
