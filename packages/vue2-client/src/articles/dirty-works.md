@@ -17,7 +17,7 @@
 
   <h3>Regular Gigs & Jams</h3>
 
-  | Every Monday Night 
+  | Every Monday
   |-
   | Dirty Works Open Jazz Jam
   | All Ages
@@ -25,7 +25,7 @@
   | North Beach - SF, CA
   | 6 - 9 PM
 
-  | Every Tuesday Night 
+  | Every Tuesday
   |-
   | Dirty Works Open Jazz Jam
   | All Ages
@@ -51,7 +51,7 @@
   | Nob Hill - SF, CA
   | 8 - 1:30 PM
 
-  | Every Friday 
+  | Every Friday
   |-
   | Dirty Works Acoustic Jam
   | Solo Double Bass plus small jam
@@ -60,7 +60,7 @@
   | Mission / Bernal Heights - SF, CA
   | 6 - 8:30 PM
 
-  | 1st & 3rd Sundays
+  | 1st & 3rd Sunday
   |-
   | Dirty Works Jazz Jam
   | All Ages - All Levels
@@ -82,19 +82,17 @@
 
 For those not familiar with the traditions of jazz jams, here's the skinny on how Dirty Works runs a jam. 
 
-A Dirty Works Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes we have a :trumpet: and/or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us.
+A Dirty Works Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes we have a :trumpet: and/or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. We have on average a dozen players & singers :microphone:. We run both open jams and invite jams. No sign up is needed, just let us know you want to play or sing and we'll fit you in.
 
 This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. We strive to sound good & have fun... in that order. :sunglasses:
 
-We have on average a dozen players & singers :microphone:. We run both open jams and invite jams. No sign up is needed, just let us know you want to play or sing. I don't divide folks into groups and assign songs or anything. That's not how we roll. :sushi:
+What we do is this, sometimes we kick off a few songs with just the house band but we invite players to join us pretty much from the start. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
-What we do is this, sometimes we kick off the first set with just the house band but we invite any players to join us mostly from the start. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
+We try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart/changes ready to read for soloing. We all solo during songs. :musical_score: :notes: The bass player or lead player directs traffic :vertical_traffic_light:. Dirty Works Jams are chart/changes :musical_note: friendly but it's best if singers know the words and don't read off their phones. :singer:
 
-I try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart/changes ready to read for soloing. We all solo during songs. :musical_score: :notes: The bass player or lead player direct traffic :vertical_traffic_light:. Dirty Works Jams are chart/changes :musical_note: friendly but it's best if singers know the words. :singer:
+We have around :100: local players come through our jams each month :calendar: and play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
 
-We have around :100: local players come through our jams each month :calendar: and we play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
-
-When there's another bass player to jump on for me I grab my trombone and join in with the jammers. I also enjoy shooting phtos :camera:. Below are some recent shots from varoius jams. Most photos taken by me, Kyle Finley, and are not authorized for use. :crystal_ball:
+Below are some recent shots from varoius jams. Most photos taken by Kyle Finley and are not authorized for use. :crystal_ball:
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
