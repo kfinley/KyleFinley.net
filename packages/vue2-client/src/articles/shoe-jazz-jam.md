@@ -2,7 +2,7 @@
   <h2>Shoe Jazz Jam</h2>
 </div>
 
-This jam is every 3rd Wednesday of the month from 8 - 11pm. I've been hosting the <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">Lucky Horseshoe</a> Jazz Jam since March 2023. This is an open jam where we pack the stage with as many players as we can and play a wide range jazz standards.
+This jam is every 3rd Wednesday of the month from 8 - 11pm. I've been hosting the <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">Lucky Horseshoe</a> Jazz Jam since March 2023. We pack the stage with as many players as we can and play a wide range classic jazz standards.
 
 We're open to all instruments and singers. If you're going to sing please know what key you want us to play in and have confidence that you can sing with a group on stage (this isn't karaoke or s speak-singing session).
 

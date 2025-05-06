@@ -19,7 +19,7 @@
 
   | Every Monday
   |-
-  | Dirty Works Open Jazz Jam
+  | Dirty Works Jazz Jam
   | All Ages
   | <a href="https://www.waystonesf.com" target="new">Waystone</a>
   | North Beach - SF, CA
@@ -27,7 +27,7 @@
 
   | Every Tuesday
   |-
-  | Dirty Works Open Jazz Jam
+  | Dirty Works Small Jazz Jam
   | All Ages
   | <a href="https://www.theliberties.com" target="new">The Liberties</a>
   | The Mission - SF, CA
@@ -36,7 +36,6 @@
   | 3rd, 4th, & 5th Wednesday
   |-
   | Dirty Works Jazz Jam
-  | Open Jam - All Levels
   | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
   | 8 - 11 PM
@@ -46,7 +45,6 @@
   | Dirty Works Jazz Night
   | Opener - Bass & Horn/Vocals
   | Main Act - Trio or Quartet + Invite Jam
-  | Late Night - Open Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
   | 8 - 1:30 PM
@@ -54,7 +52,7 @@
   | Every Friday
   |-
   | Dirty Works Acoustic Jam
-  | Solo Double Bass plus small jam
+  | Solo Double Bass Plus Small Jam
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | Mission / Bernal Heights - SF, CA
@@ -82,17 +80,13 @@
 
 For those not familiar with the traditions of jazz jams, here's the skinny on how Dirty Works runs a jam. 
 
-A Dirty Works Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes we have a :trumpet: and/or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player is in charge, and we welcome local jazz players to join us. We have on average a dozen players & singers :microphone:. We run both open jams and invite jams. No sign up is needed, just let us know you want to play or sing and we'll fit you in.
+A Dirty Works Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes we have a :trumpet: and/or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player is in charge, and we invite local jazz players to join us. We have on average a dozen players & singers :microphone:.
 
 This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. We strive to sound good & have fun... in that order. :sunglasses:
 
 What we do is this, sometimes we kick off a few songs with just the house band but we invite players to join us pretty much from the start. We call tunes on the fly :airplane:, take requests from the crowd :couple: :dancers: :man_dancing:, and swap out players as we go. Jams usually run 3 hours with short breaks :clock9:. We finish with a big closer featuring anyone that wants to join in. :partying_face: :ghost: :alien: :smiley_cat: :beers:
 
-We try to keep no more than three horn players playing per song. The expectation is if you jump up for a song, then you should know the tune or have a chart/changes ready to read for soloing. We all solo during songs. :musical_score: :notes: The bass player or lead player directs traffic :vertical_traffic_light:. Dirty Works Jams are chart/changes :musical_note: friendly but it's best if singers know the words and don't read off their phones. :singer:
-
-We have around :100: local players come through our jams each month :calendar: and play hundreds of jazz standards. New faces :zany_face: are always showing up and we have a great crew of regulars!!
-
-Below are some recent shots from varoius jams. Most photos taken by Kyle Finley and are not authorized for use. :crystal_ball:
+Below are some recent photos from varoius jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 

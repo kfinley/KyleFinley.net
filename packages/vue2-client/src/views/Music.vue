@@ -28,22 +28,21 @@
           ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
           <a href="https://waystonesf.com/" target="Waystone">Waystone</a></em
         >
-        - Weekly Monday night jam at the Waystone wine bar in North Beach from 6-9pm. Open Jam. Players welcome from the start. 
+        - Weekly Monday night jam at the Waystone wine bar in North Beach from 6-9pm. Invite Jam. 
       </li>
       <li>
         <em
           ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
           <a href="https://theliberties.com/" target="Liberties">The Liberties</a></em
         >
-        - Weekly Tuesday night jam at The Liberties in The Mission from 6-9pm. Open Jam. Players welcome from the start.
+        - Weekly Tuesday night jam at The Liberties in The Mission from 6-9pm. Invite Jam. Players welcome from the start.
       </li>
       <li>
         <em
           ><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em
         >
-        - Open Jazz Jam every 3rd, 4th, & 5th Wednesday of the month from 8-12. We try to make this the chillest jam in town! We play classic standards from every
-        era. 
+        - Jazz Jam every 3rd, 4th, & 5th Wednesday of the month from 8-12.  We play classic jazz standards. 
       </li>
       <li>
         <em
@@ -57,7 +56,7 @@
         <em
           >Dirty Works Jazz Jam @ Progressive Grounds</em
         >
-        - Open jam every 1st & 3rd Sunday from 3-6pm. 
+        - Jazz jam every 1st & 3rd Sunday from 3-6pm. 
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm in Golden Gate Park
