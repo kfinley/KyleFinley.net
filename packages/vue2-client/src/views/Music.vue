@@ -12,7 +12,13 @@
     <ul>
       <li>
         <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use this group for jams as well as 
-        gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-65). Swing, Bop, & Soul Jazz are our focus.
+        gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-65). Swing, Harb-Bop, & Soul Jazz are our focus.
+      </li>
+      <li>
+        <em>Viajó de la Musica Quartet</em> - When needed I join Tom Renner with his group playing gigs around SF.
+      </li>
+      <li>
+        <em>Kyle Tom Jazz Trio</em> - When I can I join Kyle Tom with his trio at the Cordial Cellar and Lounge in Castro Valley.
       </li>
       <li>
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
