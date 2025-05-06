@@ -84,6 +84,10 @@
         Kemp on Drums, and Kyle on bass.
       </li>
       <li>
+        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and
+        singer Daisy Dresner backed by drums and bass.
+      </li>
+      <li>
         <em>Angel Island</em - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.
       </li>
       <li>
@@ -109,10 +113,7 @@
     <div class="text-center">
       <p>Details on background and musical journey can be found on my <router-link to="/music/history">history page</router-link></p>
     </div>
-    <li>
-        <em><router-link to="/dke">The DKE Trio</router-link></em> - Pre-40's jazz, blues, and popular music trio featuring guitarist and
-        singer Daisy Dresner backed by drums and bass.
-    </li>
+    
   </div>
 </template>
 
