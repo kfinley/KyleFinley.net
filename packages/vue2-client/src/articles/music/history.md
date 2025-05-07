@@ -53,14 +53,6 @@
   and friend that enjoys, and knows, bluegrass much more than I do.
 </p>
 <p>
-  I started focusing on jazz again as my primary genre a few years back and these days I'm playing around SF with a few groups. I host multiple
-  jazz jams around town including the Open Jazz Jam at <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a> 
-  every 3rd, 4th, & 5th Wednesday of the month, the Open Jazz Jam every Monday at <a href="https://www.waystone-sf.com/" target="Waystone">Waystone</a> 
-  in North Beach, and an invite jam every Thrusday <a href="https://www.persona-sf.com/" target="Persona">Persona</a>. You can also catch me at 
-  Wayston on Tuesdays with a trio plus occasional drop-ins. I also play around town with a handful of other groups. My full schedule can be found 
-  on my <router-link to="/music">Music Page</router-link>
-</p>
-<p>
   I'm available for hire and looking for players to form both a regular gigging jazz group and a progressive bluegrass / Americana
   group. You can reach me directly at <a href="mailto:kyle@kylefinley.net">Kyle@KyleFinley.net</a>.
 </p>

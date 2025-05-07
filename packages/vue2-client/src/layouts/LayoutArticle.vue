@@ -80,25 +80,6 @@ export default class ArticleLayout extends Vue {
   }
 
   get dw_tracks() {
-    return [
-      {
-        title: "Dirty Works Trio (Kyle, Dan, & Richard)",
-        location: "Waystone - Set 1",
-        date: "1/7/2024",
-        id: "1DcdgLm-LRMtA_DMjmr-r9fQDiGh1gxJn"
-      },
-      {
-        title: "Dirty Works Trio (Kyle, Dan, & Richard)",
-        location: "Waystone - Set 2",
-        date: "1/7/2024",
-        id: "1vp-GRqPQLrmNv2hlq1wWXAMWNd_0FHhu"
-      },
-      {
-        title: "Dirty Works Trio (Kyle, Dan, & Richard)",
-        location: "Waystone - Set 3",
-        date: "1/7/2024",
-        id: "111zf3bgjB23h5lZzY8poReoxSBCQF4ao"
-      },
       {
         title: "Dirty Works",
         location: "Ivory & Vine - Set 1",
@@ -208,82 +189,6 @@ export default class ArticleLayout extends Vue {
     ];
   }
 
-  get waystone_tracks() {
-    return [
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 1",
-        date: "1/22/2024",
-        id: "1hFP3yzz5znoRzTlPhEMqtDhEPFajn1j1"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 2",
-        date: "1/22/2024",
-        id: "1aa6KmBGQ09NYwZzXdP7wRQjOqP3fhLZe"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 3",
-        date: "1/22/2024",
-        id: "1XP_FNKam4hBx7XL1hGKj3nBc-hi1STHO"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 1",
-        date: "11/20/2023",
-        id: "1OIsfanxKMcrdLngi1i0Xom9LHK5JtGPg"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 2",
-        date: "11/20/2023",
-        id: "1HhMBZBW7p9H6nitZ2CWa-V3gSpYHvDbg"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 3",
-        date: "11/20/2023",
-        id: "1Wp5VkdTMe2iiwaq3aTJiDNi8VBKoURyy"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 4",
-        date: "11/20/2023",
-        id: "1nwB_ACicLzqeD-bXYRh9Hrbd9Er4uKhD"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 1 ",
-        date: "11/13/2023",
-        id: "1ImnGsPQnFrSpi_0_Ono-qhCuR1Me2gQN"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 2",
-        date: "11/13/2023",
-        id: "1nwq0Mjq5pMjCKyJ4-00Me5hGsYvFBcX9"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 1",
-        date: "11/6/2023",
-        id: "1uQ7cqch4nwfdTHuwwffpT3DeYKOOHN7J"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 2",
-        date: "11/6/2023",
-        id: "1YQAHS_ZJ_FflcIH5YteQoJJsuACS4oRQ"
-      },
-      {
-        title: "Monday Jazz Jam",
-        location: "Waystone - Set 3",
-        date: "11/6/2023",
-        id: "1YYROim7F_p6VqDLz2Rj6HQ69bmgFedKn"
-      }
-    ];
-  }
 
   handleHighlight() {
     let shouldHighlight: boolean = false;

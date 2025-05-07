@@ -31,14 +31,7 @@
     <ul>
       <li>
         <em
-          ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
-          <a href="https://waystonesf.com/" target="Waystone">Waystone</a></em
-        >
-        - Weekly Monday night jam at the Waystone wine bar in North Beach from 6-9pm. Invite Jam. 
-      </li>
-      <li>
-        <em
-          ><router-link to="/waystone-jazz-jam">Dirty Works Jazz Jam</router-link> @
+          >Dirty Works Jazz Jam @
           <a href="https://theliberties.com/" target="Liberties">The Liberties</a></em
         >
         - Weekly Tuesday night jam at The Liberties in The Mission from 6-9pm. Invite Jam. Players welcome from the start.

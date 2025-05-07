@@ -37,19 +37,6 @@ export default class Music extends Vue {
       },
 
       {
-        title: "Zack & Kyle",
-        location: "Waystone SF - Set 1",
-        date: "7/1/2023",
-        id: "1Ckuzpowl2RlvEDUsoyXmrP9_dfgiflwk"
-      },
-      {
-        title: "Zack & Kyle",
-        location: "Waystone SF - Set 2",
-        date: "7/1/2023",
-        id: "1I72tGe3DjT24W2zeikKZu_msC42vMPP7"
-      },
-
-      {
         title: "June MusicLuck - Bangers",
         location: "The Mission SF",
         date: "6/14/2023",

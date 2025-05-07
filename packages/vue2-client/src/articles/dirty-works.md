@@ -17,14 +17,6 @@
 
   <h3>Regular Gigs & Jams</h3>
 
-  | Every Monday
-  |-
-  | Dirty Works Jazz Jam
-  | All Ages
-  | <a href="https://www.waystonesf.com" target="new">Waystone</a>
-  | North Beach - SF, CA
-  | 6 - 9 PM
-
   | Every Tuesday
   |-
   | Dirty Works Small Jazz Jam
@@ -96,35 +88,17 @@ Inquire via email for use of any photos.
 
 <div class="container text-center">
 
-  ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_01-Waystone.jpg)
-
   ![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_11-Shoe_Jam.jpg)
 
   ![Dirty Works @ The Lucky Horseshoe November 2023](../../../../media/images/articles/dirty-works/2023.11.16_01-Shoe_Jam.jpg)
 
-  ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_04-Waystone.jpg)
-
   ![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_01-Shoe_Jam.jpg)
 
-  ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_02-Waystone.jpg)
-
   ![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_04-Shoe_Jam.jpg)
-
-  ![Dirty Works @ Waystone Oct 14th 2024](../../../../media/images/articles/dirty-works/2024.10.14_03-Waystone.jpg)
 
   ![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_07-Shoe_Jam.jpg)
 
   ![Dirty Works @ Shoe Jam Oct 16th 2024](../../../../media/images/articles/dirty-works/2024.10.16_10-Shoe_Jam.jpg)
-
-  ![Dirty Works @ Waystone Oct 2024 Noah & Omer](../../../../media/images/articles/dirty-works/2024.10.06_03-Persona.jpg)
-
-  ![Dirty Works @ Waystone October 2024 Richard wrapping up](../../../../media/images/articles/dirty-works/2024.10.06_02-Persona.jpg)
-
-  ![Dirty Works @ Waystone Aug 2024](../../../../media/images/articles/dirty-works/2024.08.29_01-Persona.jpg)
-
-  ![Dirty Works @ Waystone March 2024](../../../../media/images/articles/dirty-works/2024.03-Waystone.jpg)
-
-  ![Dirty Works @ Waystone December 2023 Dan The Man](../../../../media/images/articles/dirty-works/2023.12.18_02-Waystone.jpg)
 
 </div>
 
