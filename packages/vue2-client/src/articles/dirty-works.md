@@ -9,7 +9,7 @@
   <p>
   The Dirty Works Jazz Band is led by Kyle Finley. We play straight ahead classic jazz. The days of Riverside, Impulse, & Blue Note are where we're at... ya feel me?
   
-  We play gigs and we run jams. The first Dirty Works Jam started up in March 2023 at the Lucky Horseshoe and since then we've expanded to half a dozen jams around SF. The group includes an ongoing mix of Bay Area players. We have some standing members and a rolling cast of characters to keep the group fresh & size up or down to the gig. We play private events and parties as well. 
+  We play gigs and we run jams. The first Dirty Works Jam started up in March 2023 at the Lucky Horseshoe and since then added more jams around SF. The group includes an ongoing mix of Bay Area players. We have some standing members and a rolling cast of characters to keep the group fresh & size up or down to the gig. We play private events and parties as well. 
   </p>
   <p>
   Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
@@ -57,7 +57,6 @@
   | Progressive Grounds Cafe 
   | Bernal Heights - SF, CA
   | 3 - 6 PM
-
 
 </div>
 

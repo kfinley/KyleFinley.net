@@ -80,6 +80,7 @@ export default class ArticleLayout extends Vue {
   }
 
   get dw_tracks() {
+    [
       {
         title: "Dirty Works",
         location: "Ivory & Vine - Set 1",
