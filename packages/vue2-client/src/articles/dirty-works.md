@@ -7,9 +7,9 @@
 <div class="text-center">
 
   <p>
-  The Dirty Works Jazz Band & Jams are led by upright bassist Kyle Finley. The group plays straight ahead classic jazz. This means tunes from the days of Riverside, Impulse, & Blue Note is where it's at... ya feel me?
+  The Dirty Works Jazz Band & Jams are led by upright bassist Kyle Finley. The group plays straight ahead classic jazz. This means tunes from the days of Riverside, Impulse, & Blue Note are where it's at... ya feel me?
   
-  The group plays gigs as varioius configurations and runs several jams around San Francisco. The first Dirty Works Jazz Jam started in March 2023 at the Lucky Horseshoe. There are some standing members of the group plus a rolling cast of Bay Area players to keep things fresh & size up or down for the gig. The group also plays private events and parties. 
+  The group plays gigs as various configurations and runs several jams around San Francisco. The first Dirty Works Jazz Jam started in March 2023 at the Lucky Horseshoe. There are some standing members in the group plus a rolling cast of Bay Area players to keep things fresh & size up or down for the gig. The group also plays private events and parties. 
   </p>
   <p>
   Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
@@ -43,7 +43,7 @@
   |-
   | Dirty Works Jazz Jam
   | New Players Can Sign Up
-  | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
+  | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
   | 8 - 11 PM
 
@@ -84,15 +84,15 @@
   <h2>What is a Dirty Works Jazz Jam?</h2>
 </div>
 
-For those not familiar with the traditions of jazz jams, here's the skinny on how The Dirty Works Jazz Jams are run. 
+For those not familiar with the traditions of jazz jams, here's the skinny on how the Dirty Works Jazz Jams are run. 
 
-A Dirty Works Jazz Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes there's a :trumpet: or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player, Kyle Finley, is in charge. Local jazz players are invited to join the group. 
+A Dirty Works Jazz Jam always has a rhythm section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes there's a :trumpet: or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", and the bass player, Kyle Finley, is in charge. Local jazz players are invited to join the group throughout the night. 
 
-Typically Dirty Works Jams have on average a dozen players & singers. :microphone: Some jams are invite only and some are open for new players to join. Singups need to provide name, instrument or voice, song, & key before playing unless they've been referred by an existing jammer. 
+On average, Dirty Works Jazz Jams have a dozen players & singers. :microphone: Some jams are invite only and some are open for new players to join. Signups need to provide name, instrument or voice, song, & key before playing unless they've been referred by an existing jammer. 
 
-This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Dirty Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
+These are not a casual jam circle kinda thing... These are 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Dirty Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
 
-Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs and players are invited to join in after the first or second song. Tunes are called on the fly :airplane: and swap out players as the goes. Jams usually run 3 hours with short breaks :clock9:. 
+Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs and players are invited to join in after the first or second song. Tunes are called on the fly :airplane: and players are swapped out as the night goes. Jams usually run 3 hours with short breaks :clock9:. 
 
 Below are some recent photos from varoius jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
 
