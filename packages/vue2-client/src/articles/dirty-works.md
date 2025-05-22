@@ -9,7 +9,7 @@
   <p>
   The Dirty Works Jazz Band & Jams are led by upright bassist Kyle Finley. The group plays straight ahead classic jazz. This means tunes from the days of Riverside, Impulse, & Blue Note is where it's at... ya feel me?
   
-  The group plays gigs as varioius configurations and runs several jams around San Francisco. The first Dirty Works Jazz Jam started in March 2023 at the Lucky Horseshoe. There are some standing members of the group plus a rolling cast of Bay Area players to keep the group fresh & size up or down for the gig. The group also plays private events and parties. 
+  The group plays gigs as varioius configurations and runs several jams around San Francisco. The first Dirty Works Jazz Jam started in March 2023 at the Lucky Horseshoe. There are some standing members of the group plus a rolling cast of Bay Area players to keep things fresh & size up or down for the gig. The group also plays private events and parties. 
   </p>
   <p>
   Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
