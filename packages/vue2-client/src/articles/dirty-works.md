@@ -19,14 +19,15 @@
 
   | Every Monday
   |-
-  | Dirty Works Invite Jazz Jam
+  | Dirty Works Jazz Jam
+  | Invite & Referrals
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
   | 9 - 12 AM
 
   | Every Tuesday
   |-
-  | Dirty Works Jazz Trio & Friends
+  | Dirty Works Jazz Trio & Guests
   | <a href="https://www.theliberties.com" target="new">The Liberties</a>
   | The Mission - SF, CA
   | 6 - 9 PM
@@ -41,6 +42,7 @@
   | 3rd, 4th, & 5th Wednesday
   |-
   | Dirty Works Jazz Jam
+  | New Players Can Sign Up
   | <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
   | 8 - 11 PM
@@ -48,11 +50,11 @@
   | Every Thursday
   |-
   | Dirty Works Jazz Night
-  | Opener - Bass & Horn/Vocals
+  | Opener - Duet with Bass & Horn
   | Main Act - Trio or Quartet + Invite Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
-  | 8 - 1:30 PM
+  | 8 - 1:30 AM
 
   | Every Friday
   |-
@@ -60,7 +62,7 @@
   | Solo Double Bass Plus Small Jam
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
-  | Mission / Bernal Heights - SF, CA
+  | The Mission / Bernal Heights - SF, CA
   | 6 - 8:30 PM
 
   | 1st & 3rd Sunday
@@ -88,7 +90,7 @@ A Dirty Works Jazz Jam always has a rhythym section with upright bass, keys :mus
 
 This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Diryt Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
 
-Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs but and players are invited up to join after the first or second song. Tunes are called on the fly :airplane: and swap out players as the goes. Jams usually run 3 hours with short breaks :clock9:. 
+Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs and players are invited to join in after the first or second song. Tunes are called on the fly :airplane: and swap out players as the goes. Jams usually run 3 hours with short breaks :clock9:. 
 
 Below are some recent photos from varoius jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
 
