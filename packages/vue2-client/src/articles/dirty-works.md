@@ -94,7 +94,7 @@ These are not a casual jam circle kinda thing... These are 100% a performance fo
 
 Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs and players are invited to join in after the first or second song. Tunes are called on the fly :airplane: and players are swapped out as the night goes. Jams usually run 3 hours with short breaks :clock9:. 
 
-Below are some recent photos from varoius jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
+Below are some recent photos from recent jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
