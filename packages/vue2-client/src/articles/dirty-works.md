@@ -86,7 +86,9 @@
 
 For those not familiar with the traditions of jazz jams, here's the skinny on how The Dirty Works Jazz Jams are run. 
 
-A Dirty Works Jazz Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes there's a :trumpet: or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player, Kyle Finley, is in charge, and local jazz players are invited to join the group throughout the night. The jams have on average a dozen players & singers :microphone: at each jam.
+A Dirty Works Jazz Jam always has a rhythym section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes there's a :trumpet: or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", the bass player, Kyle Finley, is in charge. Local jazz players are invited to join the group. 
+
+Typically Dirty Works Jams have on average a dozen players & singers. :microphone: Some jams are invite only and some are open for new players to join. Singups need to provide name, instrument or voice, song, & key before playing unless they've been referred by an existing jammer. 
 
 This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Diryt Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
 
