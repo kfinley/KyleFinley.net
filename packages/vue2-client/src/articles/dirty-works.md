@@ -90,7 +90,7 @@ A Dirty Works Jazz Jam always has a rhythym section with upright bass, keys :mus
 
 Typically Dirty Works Jams have on average a dozen players & singers. :microphone: Some jams are invite only and some are open for new players to join. Singups need to provide name, instrument or voice, song, & key before playing unless they've been referred by an existing jammer. 
 
-This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Diryt Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
+This is not a casual jam circle kinda thing... This is 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Dirty Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
 
 Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs and players are invited to join in after the first or second song. Tunes are called on the fly :airplane: and swap out players as the goes. Jams usually run 3 hours with short breaks :clock9:. 
 
