@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>Regular Gigs & Jams</h3>
     <component :is="regularGigs" />
   </div>
 </template>
