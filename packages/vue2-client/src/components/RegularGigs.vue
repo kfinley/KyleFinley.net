@@ -10,7 +10,7 @@ import { Component, Vue } from "vue-property-decorator";
 import { defineAsyncComponent } from "vue";
 
 @Component
-export default class Gigs extends Vue {
+export default class RegularGigs extends Vue {
 
 
   get regularGigs() {
