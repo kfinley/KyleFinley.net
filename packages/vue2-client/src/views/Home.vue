@@ -11,6 +11,7 @@
           Kyle is primarily an upright bassist focusing on classic jazz, bebop, and hard bop but is known to venture out into other genres now and then. He also plays trombone and guitar as well as teaches bass &amp; jazz theory lessons.
         </p>
         <p>
+         <RegularGigs id="regularGigs" class="text-center" />
         </p>  
         <!--
         <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software</router-link></h2>
@@ -55,6 +56,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { RouteNames } from '../router/RouteNames';
+import RegularGigs from "./../components/RegularGigs.vue";
 
 @Component
 export default class Home extends Vue {
