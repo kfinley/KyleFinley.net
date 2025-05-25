@@ -11,13 +11,13 @@
           Kyle is primarily an upright bassist focusing on classic jazz, mostly bebop, hard bop, and soul jazz, but he's known to venture out into other genres now and then. While bass is his primary, Kyle plays trombone and guitar as well. He also teaches lessons for bass, guitar, and general jazz fundamentals.
         </p>
         <p>
-          For booking or lessons contact via <a href="mailto:Kyle@KyleFinley.net">email</a>.
+          For booking or lessons contact Kyle via <a href="mailto:Kyle@KyleFinley.net">email</a>.
         </p>
         <p>
          <RegularGigs id="regularGigs" class="text-center" />
         </p>  
         <p>
-        <h3>
+        <h3 class="text-center">
           <router-link to="/music#calendar">View Full Calendar</router-link>
         </h3>
       </p>
