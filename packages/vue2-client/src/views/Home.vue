@@ -11,28 +11,7 @@
           Kyle is primarily an upright bassist focusing on classic jazz, bebop, and hard bop but is known to venture out into other genres now and then. He also plays trombone and guitar as well as teaches bass &amp; jazz theory lessons.
         </p>
         <p>
-        <h3>Regular Gigs &amp; Jams</h3>
-  <table>
-  <thead>
-  <tr>
-    <th>Every Monday</th>
-  </tr></thead>
-  <tbody><tr><td>Dirty Works Jazz Jam</td></tr> <tr><td>Invite &amp; Referrals</td></tr> 
-  <tr><td><a href="https://1920bar.square.site" target="new">1920 Bar</a></td></tr> <tr><td>The Richmond - SF, CA</td></tr> <tr><td>9 - 12 AM</td></tr></tbody>
-  </table>
-  <table><thead><tr><th>Every Tuesday</th></tr></thead> <tbody><tr><td>Dirty Works Jazz Trio &amp; Guests</td></tr> <tr><td><a href="https://www.theliberties.com" target="new">The Liberties</a></td></tr> <tr><td>The Mission - SF, CA</td></tr> <tr><td>6 - 9 PM</td></tr></tbody>
-  </table>
-  <table><thead><tr><th>Every Tuesday</th></tr></thead> <tbody><tr><td>Dirty Works Jazz Trio</td></tr> <tr><td><a href="https://1920bar.square.site" target="new">1920 Bar</a></td></tr> <tr><td>The Richmond - SF, CA</td></tr> <tr><td>10:30 - 1 AM</td></tr></tbody>
-  </table>
-  <table><thead><tr><th>3rd, 4th, &amp; 5th Wednesday</th></tr></thead> <tbody><tr><td>Dirty Works Jazz Jam</td></tr> <tr><td>New Players Can Sign Up</td></tr> <tr><td><a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a></td></tr> <tr><td>Bernal Heights - SF, CA</td></tr> <tr><td>8 - 11 PM</td></tr></tbody>
-  </table>
-  <table><thead><tr><th>Every Thursday</th></tr></thead> <tbody><tr><td>Dirty Works Jazz Night</td></tr> <tr><td>Opener - Duet with Bass &amp; Horn</td></tr> <tr><td>Main Act - Trio or Quartet + Invite Jam</td></tr> <tr><td><a href="https://www.persona-sf.com" target="new">Persona</a></td></tr> <tr><td>Nob Hill - SF, CA</td></tr> <tr><td>8 - 1:30 AM</td></tr></tbody>
-  </table>
-  <table><thead><tr><th>Every Friday</th></tr></thead> <tbody><tr><td>Dirty Works Acoustic Jam</td></tr> <tr><td>Solo Double Bass Plus Small Jam</td></tr> <tr><td>All Ages</td></tr> <tr><td><a href="https://hopoast.com" target="new">Hop Oast</a></td></tr> <tr><td>The Mission / Bernal Heights - SF, CA</td></tr> <tr><td>6 - 8:30 PM</td></tr></tbody>
-  </table>
-  <table><thead><tr><th>1st &amp; 3rd Sunday</th></tr></thead> <tbody><tr><td>Dirty Works Jazz Jam</td></tr> <tr><td>All Ages - All Levels</td></tr> <tr><td>Progressive Grounds Cafe</td></tr> <tr><td>Bernal Heights - SF, CA</td></tr> <tr><td>3 - 6 PM</td></tr></tbody>
-  </table>
-  </p>  
+        </p>  
         <!--
         <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software</router-link></h2>
         
