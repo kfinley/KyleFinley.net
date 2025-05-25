@@ -3,7 +3,7 @@
     <div class="jumbotron jumbotron-fluid"></div>
     <div class="container justified-hyphenated">
       <div class="col-12 pt-2">
-        <h2 class="text-center"><router-link to="/music">Music</router-link></h2>
+        <!--<h2 class="text-center"><router-link to="/music">Music</router-link></h2>-->
         <p>
           Kyle Finley is a Jazz &amp; Bassist actively gigging around the San Francisco Bay Area. Kyle plays with several groups and runs the Dirty Works Jazz Band hosting a several jazz jams a week. Details on the bands, jams, and gigs he's actively working with can be found on his <router-link :to="{ name: routes.Music }">Music Page</router-link>.
         </p>
@@ -13,6 +13,11 @@
         <p>
          <RegularGigs id="regularGigs" class="text-center" />
         </p>  
+        <p>
+        <h3>
+          <router-link to="/music#calendar">View Full Calendar</router-link>
+        </h3>
+      </p>
         <!--
         <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software</router-link></h2>
         
