@@ -22,7 +22,7 @@
       </li>
       <li>
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
-        or so I play with some bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF. Even after late night gigs this morning show always feels good.
+        or so I volunteer to play with some bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF. Even after late night gigs this morning show always feels good.
       </li>
     </ul>
     <!-- <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p> -->
