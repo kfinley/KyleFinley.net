@@ -5,7 +5,7 @@
       <div class="col-12 pt-2">
         <!--<h2 class="text-center"><router-link to="/music">Music</router-link></h2>-->
         <p>
-          Kyle Finley is a Jazz Bassist actively gigging around the San Francisco Bay Area. Kyle plays with several groups and runs the Dirty Works Jazz Band playing giss and hosting several jazz jams a week. Details on bands and jams as well as his full schedule can be found on the <router-link :to="{ name: routes.Music }">Music Page</router-link>.
+          Kyle Finley is a Jazz Bassist actively gigging around the San Francisco Bay Area. Kyle plays with several groups and runs the Dirty Works Jazz Band playing gigs and hosting several jazz jams a week. Details on bands and jams as well as his full schedule can be found on the <router-link :to="{ name: routes.Music }">Music Page</router-link>.
         </p>
         <p>
           Kyle is primarily an upright bassist focusing on classic jazz, mostly bebop, hard bop, and soul jazz, but he's known to venture out into other genres now and then. While bass is his primary, Kyle plays trombone and guitar as well. He also teaches lessons for bass, guitar, and general jazz fundamentals.
