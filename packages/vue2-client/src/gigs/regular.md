@@ -49,6 +49,14 @@
   | The Mission / Bernal Heights - SF, CA
   | 6 - 8:30 PM
 
+  | 1st Saturday
+  |-
+  | Dirty Works Jazz
+  | Trio & Friends
+  | <a href="https://vinorosso-sf.com" target="new">Vinorosso</a> 
+  | Bernal Heights - SF, CA
+  | 5 - 7 PM
+
   | 1st & 3rd Sunday
   |-
   | Dirty Works Jazz Jam
