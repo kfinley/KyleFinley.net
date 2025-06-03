@@ -17,13 +17,13 @@
 
   <h3>Regular Gigs & Jams</h3>
 
-  | Every Monday
+| Every Monday
   |-
   | Dirty Works Jazz Jam
   | Invite & Referrals
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 9 - 12 AM
+  | 9:30 - 11:30 AM
 
   | Every Tuesday
   |-
@@ -37,7 +37,7 @@
   | Dirty Works Jazz Trio
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 10:30 - 1 AM
+  | 10:30 - 12:30 AM
 
   | 3rd, 4th, & 5th Wednesday
   |-
@@ -45,7 +45,7 @@
   | New Players Can Sign Up
   | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
-  | 8 - 11 PM
+  | 8:30 - 12 PM
 
   | Every Thursday
   |-
@@ -79,8 +79,8 @@
   | All Ages - All Levels
   | Progressive Grounds Cafe 
   | Bernal Heights - SF, CA
-  | 3 - 6 PM
-
+  | 2 - 5 PM
+  
 </div>
 
 <div class="container text-center">
