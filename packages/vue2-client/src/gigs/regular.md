@@ -34,7 +34,7 @@
   |-
   | Dirty Works Jazz Night
   | Opener - Duet with Bass & Horn
-  | Main Act - Trio | Quartet + Jam
+  | Main Act - Trio \| Quartet + Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
   | 8 - 1:30 AM
