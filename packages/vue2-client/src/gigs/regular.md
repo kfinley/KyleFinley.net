@@ -3,7 +3,7 @@
 
   | Every Monday
   |-
-  | Dirty Works Small Jazz Jam
+  | Dirty Works Small Jam
   | Singers & Horns Welcome
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
@@ -34,7 +34,7 @@
   |-
   | Dirty Works Jazz Night
   | Opener - Duet with Bass & Horn
-  | Main Act - Trio or Quartet + Jam
+  | Main Act - Trio | Quartet + Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
   | 8 - 1:30 AM
@@ -42,7 +42,7 @@
   | Every Friday
   |-
   | Dirty Works Acoustic Jam
-  | Solo Double Bass Plus Small Jam
+  | Solo Double Bass + Small Jam
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | The Mission / Bernal Heights - SF, CA
