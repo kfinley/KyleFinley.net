@@ -3,30 +3,29 @@
 
   | Every Monday
   |-
-  | Dirty Works Jazz Jam
-  | Invite & Referrals
+  | Dirty Works Small Jazz Jam
+  | Singers & Horns Welcome
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 9:30 - 11:30 AM
+  | 9 - 11 PM
 
   | Every Tuesday
   |-
-  | Dirty Works Jazz Trio & Guests
+  | Dirty Works & Friends
   | <a href="https://www.theliberties.com" target="new">The Liberties</a>
   | The Mission - SF, CA
   | 6 - 9 PM
 
   | Every Tuesday
   |-
-  | Dirty Works Jazz Trio
+  | Dirty Works & Guests
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 10:30 - 12:30 AM
+  | 10 - 12 AM
 
   | 3rd, 4th, & 5th Wednesday
   |-
   | Dirty Works Jazz Jam
-  | New Players Can Sign Up
   | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
   | 8:30 - 12 PM
@@ -35,7 +34,7 @@
   |-
   | Dirty Works Jazz Night
   | Opener - Duet with Bass & Horn
-  | Main Act - Trio or Quartet + Invite Jam
+  | Main Act - Trio or Quartet + Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
   | 8 - 1:30 AM
@@ -51,9 +50,8 @@
 
   | 1st Saturday
   |-
-  | Dirty Works Jazz
-  | Trio & Friends
-  | <a href="https://vinorosso-sf.com" target="new">Vinorosso</a> 
+  | Dirty Works Trio & Friends
+  | <a href="https://vinorosso-sf.com" target="new">Vinorosso</a>
   | Bernal Heights - SF, CA
   | 5 - 7 PM
 
@@ -61,7 +59,7 @@
   |-
   | Dirty Works Jazz Jam
   | All Ages - All Levels
-  | Progressive Grounds Cafe 
+  | Progressive Grounds Cafe
   | Bernal Heights - SF, CA
   | 2 - 5 PM
 </div>
