@@ -11,13 +11,6 @@
 
   | Every Tuesday
   |-
-  | Dirty Works & Friends
-  | <a href="https://www.theliberties.com" target="new">The Liberties</a>
-  | The Mission - SF, CA
-  | 6 - 9 PM
-
-  | Every Tuesday
-  |-
   | Dirty Works & Guests
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
