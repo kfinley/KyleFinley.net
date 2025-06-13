@@ -15,6 +15,9 @@
         gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-65). Swing, Harb-Bop, & Soul Jazz are our focus.
       </li>
       <li>
+        <em>The Monk & Atonal Funk Trio</em> - A collaboration between Kyle Finley & Steve Dukes exploring the works of Theloneous Monk and Steve's own compositions. The group plays acoustically and comprises guitar, bass flute, and double bass. 
+      </li>
+      <li>
         <em>Viajó de la Musica Quartet</em> - When needed I join Tom Renner with his group playing gigs around SF.
       </li>
       <li>
@@ -30,32 +33,42 @@
     <h4 class="text-center pt-4">Regular Gigs & Jams</h4>
     <ul>
       <li>
-        <em
-          >Dirty Works Jazz Jam @
-          <a href="https://theliberties.com/" target="Liberties">The Liberties</a></em
+        <em>Dirty Works Small Jam @ 
+          <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em
         >
-        - Weekly Tuesday night jam at The Liberties in The Mission from 6-9pm. Invite Jam. Players welcome from the start.
+        - Monday night Dirty Works hosts a small jam focused on singer and one or two other voices at a time. No drums at this jam.
+      </li>
+      <li>
+        <em>Dirty Works & Friends @ 
+          <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em
+        >
+        - Tuesday night Dirty Works plays as a trio or quartet. We invite friends to join us.
       </li>
       <li>
         <em
           ><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em
         >
-        - Jazz Jam every 3rd, 4th, & 5th Wednesday of the month from 8-12.  We play classic jazz standards. 
+        - Jazz Jam every 3rd, 4th, & 5th Wednesday of the month  We play classic jazz standards. June & July we will also be there on the 2nd Wednesdays.
       </li>
       <li>
         <em
           >Dirty Works Jazz Jam @
           <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em
         >
-        - Every Thursday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. The night starts with a Bass & Horn duo for the first hour. 
-        After that we scale up to a Quartet until Midnight. After Midnight we run with whoever wants to play until 1:30. Jammers are welcome to join us all night long!
+        - Every Thursday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. Jammers are welcome to join us all night long!
+      </li>
+      <li>
+        <em
+          >Dirty Works & Friends @ <a href="https://vinorosso-sf.com/" target="vinorosso">Vinorosso></a></em
+        >
+        - The first Saturday of the month Dirty Works Jazz Band plays at the Vinorosso wine bar in Bernal Heights from 5-7pm. Players are invited to join the band.
       </li>
       <li>
         <em
           >Dirty Works Jazz Jam @ Progressive Grounds</em
         >
-        - Jazz jam every 1st & 3rd Sunday from 3-6pm. 
+        - Jazz jam every 1st & 3rd Sunday from 2-5pm. 
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm in Golden Gate Park
