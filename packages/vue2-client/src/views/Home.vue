@@ -21,9 +21,9 @@
           <router-link to="/music#calendar">View Full Calendar</router-link>
         </h3>
       </p>
-        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Technology, Product Development, & Growth Marketing</router-link></h2>
+        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software Products</router-link></h2>
         <p>
-          Kyle has been working in tech for over 25 years. Starting in networking then moving to software Kyle has worked on many software product systems. He's worn many hats and has worked heads down designing and building product as well as hand in hand with customers as a consultant and contractor. Having experience in several industries including online food, clothing, fund raising, sports, dating, to name a few Kyle has been able to apply fundamentals of using a well defined product development system in order to build quality systems at breakneck speed. Kyle has many thoughts and opinions on software product development, online organic marketing, and technology in general but these days tries to keep them to himself...
+          Before turning focus back to music Kyle has been working in and out of tech for over 25 years. He started working in networking then moved to software where he worked as a consultant and then into startup land helping build many software product systems. He's worn many hats and has worked heads down designing and building product as well as hand in hand with clients as a consultant or contractor. Having worked in several industries he has a wide breadth of knowledge and experience using technology to solve problems. Some of these industries include: online food ordering & delivery, clothing retail, fundraising, sports software, online-dating. Kyle has been able to apply fundamentals of using a well defined product development system with software product development principles in order to build quality systems at breakneck speed. Currently music and his music related businesses are Kyle's main focus but software is always there in some capacity.
         </p>
         <p>To find out what Kyle is working on check out his <router-link :to="{ name: routes.Software }">software page</router-link>.</p>
         <!--
@@ -51,7 +51,7 @@
         <p>
           Kyle is a life long boarder. He started skating when he was about 6, learning from guys at the local bike tracks. He started snowboarding at 13 and
           has been kiteboarding 20 years. He's kiteboarded almost every coastal state in the US and several of the inland
-          states. Kyle has taught kiteboarding both privately and with a few kite schools on the east and west coast. 
+          states. Kyle has taught kiteboarding both privately and with a few kite schools on the east and west coast.
         </p>
       </div>
     </div>
