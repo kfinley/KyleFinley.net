@@ -21,7 +21,7 @@
           <router-link to="/music#calendar">View Full Calendar</router-link>
         </h3>
       </p>
-        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software Products</router-link></h2>
+        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software & Tech</router-link></h2>
         <p>
           Before turning focus back to music Kyle has been working in and out of tech for over 25 years. He started working in networking then moved to software where he worked as a consultant and then into startup land helping build many software product systems. He's worn many hats and has worked heads down designing and building product as well as hand in hand with clients as a consultant or contractor. Having worked in several industries he has a wide breadth of knowledge and experience using technology to solve problems. Some of these industries include: online food ordering & delivery, clothing retail, fundraising, sports software, online-dating. Kyle has been able to apply fundamentals of using a well defined product development system with software product development principles in order to build quality systems at breakneck speed. Currently music and his music related businesses are Kyle's main focus but software is always there in some capacity.
         </p>
