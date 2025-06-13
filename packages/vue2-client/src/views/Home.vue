@@ -3,7 +3,7 @@
     <div class="jumbotron jumbotron-fluid"></div>
     <div class="container justified-hyphenated">
       <div class="col-12 pt-2">
-        <!--<h2 class="text-center"><router-link to="/music">Music</router-link></h2>-->
+        <h2 class="text-center"><router-link to="/music">Music</router-link></h2>
         <p>
           Kyle Finley is an upright jazz bassist. Originally from Hope, AR and now splits his time between Hot Springs, AR and San Francisco. You can catch him playing gig and running jazz jams in the San Francisco area. Kyle's been a bassist for over 30 years, guitar for the same, and trombone even longer. After too many years keeping music playing only at home and putting away the uprightKyle plays with several groups and runs The Dirty Works Jazz Band playing gigs and hosting several jazz jams a week. Details on bands and jams as well as his full schedule can be found on the <router-link :to="{ name: routes.Music }">Music Page</router-link>.
         </p>
@@ -21,15 +21,12 @@
           <router-link to="/music#calendar">View Full Calendar</router-link>
         </h3>
       </p>
-        <!--
-        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software</router-link></h2>
-
+        <h2 class="text-center"><router-link :to="{ name: routes.Software }">Technology, Product Development, & Growth Marketing</router-link></h2>
         <p>
-          I've been a software developer now for over 20 years. It's been an adventure! I've watched the internet grow and industries form.
-          I've worked on lots of things and have worn many hats. I have lots of ideas and many opinions. Sometimes I write them down but as
-          a songwriter friend told me once "Ya know the problem is, nobody really cares!" Good point....
+          Kyle has been working in tech for over 25 years. Starting in networking then moving to software Kyle has worked on many software product systems. He's worn many hats and has worked heads down designing and building product as well as hand in hand with customers as a consultant and contractor. Having experience in several industries including online food, clothing, fund raising, sports, dating, to name a few Kyle has been able to apply fundamentals of using a well defined product development system in order to build quality systems at breakneck speed. Kyle has many thoughts and opinions on software product development, online organic marketing, and technology in general but these days tries to keep them to himself...
         </p>
-        <p>To find out what I'm working on lately check out my <router-link :to="{ name: routes.Software }">software page</router-link>.</p>
+        <p>To find out what Kyle is working on check out his <router-link :to="{ name: routes.Software }">software page</router-link>.</p>
+        <!--
         <h2 class="text-center"><a href="https://acarnamedsu.com" target="Su">Traveling</a></h2>
         <p>
           I enjoy traveling a lot but I don't travel as much as I used to. I was a weekly flying consultant for years, active in the Couch
@@ -37,6 +34,7 @@
           coast in a Jeep Wrangler while kiteboarding every state. Lately I've been exploring the West and SW in my Gen 2 Subaru Outback
           wagon named Su.
         </p>
+
         <p>More info about our adventures in Subie Su can be found at <a href="https://acarnamedsu.com" target="Su">ACarNamedSu.com</a>.</p>
 
         <h2 class="text-center">Photography</h2>
@@ -48,14 +46,13 @@
           gigs but I enjoy shooting outdoors, night cityscapes, low light cocktails &amp; bar scenes, live music shows, portraits, and
           action shots.
         </p>
-        <h2 class="text-center">Boarding<br /><i>Skate | Kite | Snow | Standup Paddle</i></h2>
+      -->
+        <h2 class="text-center">Board Sports<br /><i>Skate | Kite | Snow | Standup Paddle</i></h2>
         <p>
-          I'm a life long boarder. I started skating when I was about 6 and haven't stopped yet! I started snowboarding when I was 13 and
-          I've been kiteboarding now for almost 20 years. I've kiteboarded almost every coastal state in the US and several of the inland
-          states. I don't kite as much as I used to but it's something I still enjoy and have been known to teach students now and then. I
-          try to longboard every day and can honestly say I'm on a board 3-5 days a week regularly. No, I don't ride an electric board.
+          Kyle is a life long boarder. He started skating when he was about 6, learning from guys at the local bike tracks. He started snowboarding at 13 and
+          has been kiteboarding 20 years. He's kiteboarded almost every coastal state in the US and several of the inland
+          states. Kyle has taught kiteboarding both privately and with a few kite schools on the east and west coast. 
         </p>
-        -->
       </div>
     </div>
   </section>
