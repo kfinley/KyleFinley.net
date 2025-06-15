@@ -5,10 +5,10 @@
       <div class="col-12 pt-2">
         <h2 class="text-center"><router-link to="/music">Music</router-link></h2>
         <p>
-          Kyle Finley is an upright jazz bassist. Originally from Hope, AR, he now splits his time between Hot Springs, AR and San Francisco. You can catch him playing gigs and running jazz jams in the San Francisco area. Kyle's been a bassist for over 30 years, guitar for the same, and trombone even longer. After too many years keeping music playing only at home and putting away the upright, Kyle plays with several groups and runs The Dirty Works Jazz Band playing gigs and hosting several jazz jams a week. Details on bands and jams as well as his full schedule can be found on the <router-link :to="{ name: routes.Music }">Music Page</router-link>.
+          Kyle Finley is an upright jazz bassist. Originally from Hope, AR, he now splits his time between Hot Springs, AR and San Francisco. You can catch him playing gigs and running jazz jams in the San Francisco area. Kyle's been a bassist for over 30 years, guitar for the same, and trombone even longer. After too many years keeping music playing only at home and putting away the upright, Kyle now plays with several groups and runs The Dirty Works Jazz Band playing gigs and hosting several jazz jams a week. Details on bands and jams as well as his full schedule can be found on the <router-link :to="{ name: routes.Music }">Music Page</router-link>.
         </p>
         <p>
-          Kyle is primarily an upright bassist focusing on classic jazz, mostly bebop, hard bop, and soul jazz, but he's known to venture out into other genres now and then. While bass is his primary, Kyle plays trombone and guitar as well. He also teaches lessons for bass, guitar, and general jazz fundamentals.
+          Kyle is primarily an upright bassist focusing on classic jazz, mostly bebop, hard bop, and soul jazz, but he's known to venture out into other genres now and then. While bass is his primary, Kyle plays trombone and guitar as well. He also teaches lessons for bass, guitar, general music theory, and jazz fundamentals.
         </p>
         <p>
           For booking or lessons contact Kyle via <a href="mailto:Kyle@KyleFinley.net">email</a>.
@@ -23,7 +23,7 @@
       </p>
         <h2 class="text-center"><router-link :to="{ name: routes.Software }">Software & Tech</router-link></h2>
         <p>
-          Before turning focus back to music, Kyle has been working in and out of tech for over 25 years. He started working in networking then moved to software where he worked as a consultant and then into startup land helping build many software product systems. He's worn many hats and has worked heads down designing and building product as well as hand in hand with clients as a consultant or contractor. Having worked in several industries he has a wide breadth of knowledge and experience using technology to solve problems. Some of these industries include: online food ordering & delivery, clothing retail, fundraising, sports software, online-dating. Kyle has been able to apply fundamentals of using a well defined product development system with software product development principles in order to build quality systems at breakneck speed. Currently music and his music related businesses are Kyle's main focus but software is always there in some capacity.
+          Kyle has been working in and out of tech for over 25 years. He started working in networking then moved to software where he worked as a consultant and then went into startup land helping build many software product systems. He's worn many hats and has worked heads down designing and building product as well as hand in hand with clients as a consultant or contractor. Having worked in several industries he has a wide breadth of knowledge and experience using technology to solve problems. Some of these industries include: online food ordering & delivery, clothing retail, fundraising, sports software, online-dating. Kyle has been able to apply fundamentals of using a well defined product development system with software product development principles in order to build quality systems at breakneck speed. Currently music and his music related businesses are Kyle's main focus but software is always there in some capacity.
         </p>
         <p>To find out what Kyle is working on check out his <router-link :to="{ name: routes.Software }">software page</router-link>.</p>
         <!--
@@ -50,8 +50,7 @@
         <h2 class="text-center">Board Sports<br /><i>Skate | Kite | Snow | Standup Paddle</i></h2>
         <p>
           Kyle is a life long boarder. He started skating when he was about 6, learning from guys at the local bike tracks. He started snowboarding at 13 and
-          has been kiteboarding 20 years. He's kiteboarded almost every coastal state in the US and several of the inland
-          states. Kyle has taught kiteboarding both privately and with a few kite schools on the east and west coast.
+          has been kiteboarding for almost 20 years. Kyle has completed IKO kite instructor training and has taught lessons from time to time. If you're interested in a lesson feel free to reach out via <a href="mailto:Kyle@KyleFinley.net">email</a>.
         </p>
       </div>
     </div>
