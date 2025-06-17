@@ -50,8 +50,8 @@ I'm always working on several projects. Below you'll find info on my previous wo
       </p>
       <p class="no-indent">
         77 stars on GitHub<br/>
-        240k+ downloads<br/>
-        ~125 daily package downloads
+        400k+ downloads<br/>
+        ~200 daily package downloads
       </p>
    </div>
   </div>
