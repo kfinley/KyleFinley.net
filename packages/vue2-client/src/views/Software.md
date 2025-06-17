@@ -49,7 +49,7 @@ I'm always working on several projects. Below you'll find info on my previous wo
         <a href="https://www.nuget.org/packages/TypeMerger" target="new">TypeMerger</a> is a small project I've maintained for over 10 years. I don't use it anymore but people still find it handy. It's a simple convention-based object merger for .NET. It allows two objects of any type to be merged into a new Type. Object properties can be ignored and any collisions can be resolved using a fluent api. The object returned is a new Type that is dynamically generated and loaded using System.Reflection.Emit. More info can be found on the <a href="http://github.com/kfinley/typemerger" target="new">project page</a>.
       </p>
       <p class="no-indent">
-        77 stars on GitHub<br/>
+        83 stars on GitHub<br/>
         400k+ downloads<br/>
         ~200 daily package downloads
       </p>
