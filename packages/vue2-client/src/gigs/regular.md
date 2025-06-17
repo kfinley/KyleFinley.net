@@ -5,16 +5,18 @@
   |-
   | Dirty Works Small Jam
   | Singers & Horns Welcome
+  | All Ages
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 9 - 11 PM
+  | 7:30 - 10 PM
 
   | Every Tuesday
   |-
   | Dirty Works & Guests
+  | All Ages
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 10 - 12 AM
+  | 6:30 - 10 PM
 
   | 3rd, 4th, & 5th Wednesday
   |-
@@ -30,7 +32,7 @@
   | Main Act - Trio \| Quartet + Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
-  | 8 - 1:30 AM
+  | 8 - 1 AM
 
   | Every Friday
   |-
@@ -39,11 +41,12 @@
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | The Mission / Bernal Heights - SF, CA
-  | 6 - 8:30 PM
+  | 5 - 7:30 PM
 
   | 1st Saturday
   |-
   | Dirty Works Trio & Friends
+  | All Ages
   | <a href="https://vinorosso-sf.com" target="new">Vinorosso</a>
   | Bernal Heights - SF, CA
   | 5 - 7 PM

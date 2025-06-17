@@ -24,21 +24,14 @@ The group plays gigs as various configurations and runs several jams around San 
 | Singers & Horns Welcome                                         |
 | <a href="https://1920bar.square.site" target="new">1920 Bar</a> |
 | The Richmond - SF, CA                                           |
-| 9 - 11 PM                                                       |
-
-| Every Tuesday                                                         |
-| --------------------------------------------------------------------- |
-| Dirty Works & Friends                                                 |
-| <a href="https://www.theliberties.com" target="new">The Liberties</a> |
-| The Mission - SF, CA                                                  |
-| 6 - 9 PM                                                              |
+| 7:30 - 10 PM                                                       |
 
 | Every Tuesday                                                   |
 | --------------------------------------------------------------- |
 | Dirty Works & Guests                                            |
 | <a href="https://1920bar.square.site" target="new">1920 Bar</a> |
 | The Richmond - SF, CA                                           |
-| 10 - 12 AM                                                      |
+| 6:30 - 10 PM                                                      |
 
 | 3rd, 4th, & 5th Wednesday                                                            |
 | ------------------------------------------------------------------------------------ |
@@ -54,7 +47,7 @@ The group plays gigs as various configurations and runs several jams around San 
 | Main Act - Trio \| Quartet + Jam                              |
 | <a href="https://www.persona-sf.com" target="new">Persona</a> |
 | Nob Hill - SF, CA                                             |
-| 8 - 1:30 AM                                                   |
+| 8 - 1 AM                                                   |
 
 | Every Friday                                            |
 | ------------------------------------------------------- |
