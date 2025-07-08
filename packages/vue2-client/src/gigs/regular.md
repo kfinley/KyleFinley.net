@@ -40,7 +40,7 @@
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | The Mission / Bernal Heights - SF, CA
-  | 5 - 7:30 PM
+  | 5:30 - 7:30 PM
 
   | 1st Saturday
   |-

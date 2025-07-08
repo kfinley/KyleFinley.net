@@ -16,17 +16,16 @@ The group plays gigs as various configurations and runs several jams around San 
   Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
   </p>
 
-  <RegularGigs id="regularGigs" class="text-center" />
-
-  <!-- <h3>Regular Gigs & Jams</h3>
+  <h3>Regular Gigs & Jams</h3>
 
 | Every Monday                                                    |
 | --------------------------------------------------------------- |
-| Dirty Works Small Jam                                      |
-| Singers & Horns Welcome                                         |
-| <a href="https://1920bar.square.site" target="new">1920 Bar</a> |
-| The Richmond - SF, CA                                           |
-| 7:30 - 10 PM                                                       |
+| Dirty Works Jazz Night                                        |
+| Opener - Duet with Bass & Horn                                |
+| Main Act - Trio \| Quartet + Jam                              |
+| <a href="https://www.persona-sf.com" target="new">Persona</a> |
+| Nob Hill - SF, CA                                             |
+| 8 - 1:30 AM                                                   |
 
 | Every Tuesday                                                   |
 | --------------------------------------------------------------- |
@@ -40,25 +39,15 @@ The group plays gigs as various configurations and runs several jams around San 
 | Dirty Works Jazz Jam                                                                 |
 | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a> |
 | Bernal Heights - SF, CA                                                              |
-| 8:30 - 12 PM                                                                         |
-
-| Every Thursday                                                |
-| ------------------------------------------------------------- |
-| Dirty Works Jazz Night                                        |
-| Opener - Duet with Bass & Horn                                |
-| Main Act - Trio \| Quartet + Jam                              |
-| <a href="https://www.persona-sf.com" target="new">Persona</a> |
-| Nob Hill - SF, CA                                             |
-| 8 - 1 AM                                                   |
+| 8:30 - 12 AM                                                                         |
 
 | Every Friday                                            |
 | ------------------------------------------------------- |
-| Dirty Works Acoustic Jam                                |
-| Solo Double Bass + Small Jam                         |
+| Dirty Works Acoustic Jam                                |                         |
 | All Ages                                                |
 | <a href="https://hopoast.com" target="new">Hop Oast</a> |
 | The Mission / Bernal Heights - SF, CA                   |
-| 5 - 7:30 PM                                             |
+| 5:30 - 7:30 PM                                             |
 
 | 1st Saturday                                                  |
 | ------------------------------------------------------------- |
@@ -73,7 +62,7 @@ The group plays gigs as various configurations and runs several jams around San 
 | All Ages - All Levels    |
 | Progressive Grounds Cafe |
 | Bernal Heights - SF, CA  |
-| 2 - 5 PM                 | -->
+| 2 - 5 PM                 |
 
 </div>
 
