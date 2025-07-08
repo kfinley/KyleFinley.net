@@ -3,12 +3,12 @@
 
   | Every Monday
   |-
-  | Dirty Works Small Jam
-  | Singers & Horns Welcome
-  | All Ages
-  | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
-  | The Richmond - SF, CA
-  | 7:30 - 10 PM
+  | Dirty Works Jazz Night
+  | Opener - Duet with Bass & Horn
+  | Main Act - Trio \| Quartet + Jam
+  | <a href="https://www.persona-sf.com" target="new">Persona</a>
+  | Nob Hill - SF, CA
+  | 8 - 1 AM
 
   | Every Tuesday
   |-
@@ -18,21 +18,20 @@
   | The Richmond - SF, CA
   | 6:30 - 10 PM
 
+  | 1st Wednesday
+  |-
+  | Viajó de la Musica Quartet
+  | w/ Renner on Tenor
+  | <a href="https://lppsf.com" target="Le Petit">Le Petit Paris 75</a>
+  | SF, CA
+  | 7:30 - 10:30 PM
+
   | 3rd, 4th, & 5th Wednesday
   |-
   | Dirty Works Jazz Jam
   | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
   | 8:30 - 12 PM
-
-  | Every Thursday
-  |-
-  | Dirty Works Jazz Night
-  | Opener - Duet with Bass & Horn
-  | Main Act - Trio \| Quartet + Jam
-  | <a href="https://www.persona-sf.com" target="new">Persona</a>
-  | Nob Hill - SF, CA
-  | 8 - 1 AM
 
   | Every Friday
   |-

@@ -16,7 +16,9 @@ The group plays gigs as various configurations and runs several jams around San 
   Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
   </p>
 
-  <h3>Regular Gigs & Jams</h3>
+  <RegularGigs id="regularGigs" class="text-center" />
+
+  <!-- <h3>Regular Gigs & Jams</h3>
 
 | Every Monday                                                    |
 | --------------------------------------------------------------- |
@@ -71,7 +73,7 @@ The group plays gigs as various configurations and runs several jams around San 
 | All Ages - All Levels    |
 | Progressive Grounds Cafe |
 | Bernal Heights - SF, CA  |
-| 2 - 5 PM                 |
+| 2 - 5 PM                 | -->
 
 </div>
 

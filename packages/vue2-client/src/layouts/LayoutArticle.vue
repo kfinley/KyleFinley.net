@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import RegularGigs from "./../components/RegularGigs.vue";
 import hljs from "highlight.js/lib/core";
 import vbscript from "highlight.js/lib/languages/vbscript";
 import csharp from "highlight.js/lib/languages/csharp";

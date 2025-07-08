@@ -33,16 +33,17 @@
     <h4 class="text-center pt-4">Regular Gigs & Jams</h4>
     <ul>
       <li>
-        <em>Dirty Works Small Jam @ 
-          <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em
+        <em
+          >Dirty Works Jazz Jam @
+          <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em
         >
-        - Monday night Dirty Works hosts a small jam focused on singer and one or two other voices at a time. No drums at this jam.
+        - Every Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. This was formally a Thursday gig but we've moved to Monday nights as of July 2025. Jammers are welcome to join us all night long!
       </li>
       <li>
         <em>Dirty Works & Friends @ 
           <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em
         >
-        - Tuesday night Dirty Works plays as a trio or quartet. We invite friends to join us.
+        - Tuesday nights Dirty Works hosts the only jazz night in San Francisco's Richmond District at 1920 Bar on Clement. Often Steve Dukes joins Kyle and plays tunes from their trio Monk & Atonal Funk. We always jam out starting around 7:30.
       </li>
       <li>
         <em
@@ -51,13 +52,7 @@
         >
         - Jazz Jam every 3rd, 4th, & 5th Wednesday of the month  We play classic jazz standards. June & July we will also be there on the 2nd Wednesdays.
       </li>
-      <li>
-        <em
-          >Dirty Works Jazz Jam @
-          <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em
-        >
-        - Every Thursday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. Jammers are welcome to join us all night long!
-      </li>
+
       <li>
         <em
           >Dirty Works & Friends @ <a href="https://vinorosso-sf.com/" target="vinorosso">Vinorosso></a></em
@@ -80,13 +75,16 @@
         in Alamo Square. I don't go to this one very often and prefer having overtime jazz at the Shoe on Sundays if possible.
       </li>
       <li>
-        <em>Showcase Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - This used
-        to be every 1st Sunday of the month from 8-9:30pm but it hasn't been running for a while now.
+        <em>Open Mic Sundays @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em> - After the bluegrass jam on Sundays the stage is open for musicians and other performers to jump up and share. All styles welcome.
       </li>
       <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This was a great jam when Frank Holmes ran it. I enjoyed playing there every week for several years. I don't go anymore.
+        - This is the longest running bluegrass jam in San Francisco. This jam is run by a great crew and Mr. Frank Holmes is back leading the band as often as he can. This jam is back on track and kickin just about as strong as ever! 
+      </li>
+      <li>
+        <em>Thursday Bluegrass Jam @ <a href="https://www.theliberties.com" target="Liberties">The Liberties</a></em>
+        - Thursday nights you can find a small group of pickers in the parklet or some other area of the bar followed by a showcase group of local bluegrass and folk players. 
       </li>
     </ul>
      <h4 class="text-center pt-4">Groups I've Played with</h4>
@@ -100,7 +98,7 @@
         singer Daisy Dresner backed by drums and bass.
       </li>
       <li>
-        <em>Angel Island</em - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.
+        <em>Angel Island</em> - Golden Gate Park Jazz septet with saxes, trumpet, flute, guitar, bass, and drums.
       </li>
       <li>
         <em><a href="https://www.fakemelody.com" target="fakemelody">Fake Melody</a></em> - Jazz combo run by Simon Donovan.
