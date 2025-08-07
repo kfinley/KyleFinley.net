@@ -8,7 +8,7 @@
   | Main Act - Trio \| Quartet + Jam
   | <a href="https://www.persona-sf.com" target="new">Persona</a>
   | Nob Hill - SF, CA
-  | 8 - 1 AM
+  | 8 - 1:30 AM
 
   | Every Tuesday
   |-
@@ -16,7 +16,7 @@
   | All Ages
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
-  | 6:30 - 10 PM
+  | 7 - 10 PM
 
   | 1st Wednesday
   |-
@@ -40,7 +40,7 @@
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | The Mission / Bernal Heights - SF, CA
-  | 5:30 - 7:30 PM
+  | 5 - 7 PM
 
   | 1st Saturday
   |-
