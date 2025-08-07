@@ -15,10 +15,7 @@
         gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-65). Swing, Harb-Bop, & Soul Jazz are our focus.
       </li>
       <li>
-        <em>The Monk & Atonal Funk Trio</em> - A collaboration between Kyle Finley & Steve Dukes exploring the works of Theloneous Monk and Steve's own compositions. The group plays acoustically and comprises guitar, bass flute, and double bass. 
-      </li>
-      <li>
-        <em>Viajó de la Musica Quartet</em> - When needed I join Tom Renner with his group playing gigs around SF.
+        <em>Viajó de la Musica Quartet</em> - Tom Renner's Quartet playing at Paris 75 & Scope Divino.
       </li>
       <li>
         <em>Kyle Tom Jazz Trio</em> - When I can I join Kyle Tom with his trio at the Cordial Cellar and Lounge in Castro Valley.
@@ -27,6 +24,10 @@
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
         or so I volunteer to play with some bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF. Even after late night gigs this morning show always feels good.
       </li>
+      <li>
+        <em>Atonal Funk Trio</em> - Explorations in the avant garde music of Steve Dukes (John Cage's last student). The group plays acoustically and comprises of guitar, bass flute, and double bass. 
+      </li>
+      
     </ul>
     <!-- <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p> -->
     <Gigs id="calendar" class="text-center" />
@@ -43,14 +44,14 @@
         <em>Dirty Works & Friends @ 
           <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em
         >
-        - Tuesday nights Dirty Works hosts the only jazz night in San Francisco's Richmond District at 1920 Bar on Clement. Often Steve Dukes joins Kyle and plays tunes from their trio Monk & Atonal Funk. We always jam out starting around 7:30.
+        - Tuesday nights Dirty Works hosts the only weekly jazz night in San Francisco's Richmond District at 1920 Bar on Clement. Jam starts around 7.
       </li>
       <li>
         <em
           ><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em
         >
-        - Jazz Jam every 3rd, 4th, & 5th Wednesday of the month  We play classic jazz standards. June & July we will also be there on the 2nd Wednesdays.
+        - Jazz Jam every 3rd, 4th, & 5th Wednesday of the month  We play classic jazz standards. Jam runs from 8:30 to midnight.
       </li>
 
       <li>
@@ -64,6 +65,12 @@
           >Dirty Works Jazz Jam @ Progressive Grounds</em
         >
         - Jazz jam every 1st & 3rd Sunday from 2-5pm. 
+      </li>
+        <li>
+        <em
+          >Dirty Works Acoustic Jazz Jam @ Hop Oast</em
+        >
+        - Every Friday there's a small acoustic jam at the Hop Oast brewery. This is a very casual jam and runs from 5 to 7.
       </li>
       <li>
         <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm in Golden Gate Park
@@ -81,10 +88,6 @@
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
         - This is the longest running bluegrass jam in San Francisco. This jam is run by a great crew and Mr. Frank Holmes is back leading the band as often as he can. This jam is back on track and kickin just about as strong as ever! 
-      </li>
-      <li>
-        <em>Thursday Bluegrass Jam @ <a href="https://www.theliberties.com" target="Liberties">The Liberties</a></em>
-        - Thursday nights you can find a small group of pickers in the parklet or some other area of the bar followed by a showcase group of local bluegrass and folk players. 
       </li>
     </ul>
      <h4 class="text-center pt-4">Groups I've Played with</h4>
