@@ -32,7 +32,7 @@ The group plays gigs as various configurations and runs several jams around San 
 | Dirty Works & Guests                                            |
 | <a href="https://1920bar.square.site" target="new">1920 Bar</a> |
 | The Richmond - SF, CA                                           |
-| 6:30 - 10 PM                                                      |
+| 7 - 10 PM                                                      |
 
 | 3rd, 4th, & 5th Wednesday                                                            |
 | ------------------------------------------------------------------------------------ |
@@ -47,7 +47,7 @@ The group plays gigs as various configurations and runs several jams around San 
 | All Ages                                                |
 | <a href="https://hopoast.com" target="new">Hop Oast</a> |
 | The Mission / Bernal Heights - SF, CA                   |
-| 5:30 - 7:30 PM                                             |
+| 5 - 7 PM                                             |
 
 | 1st Saturday                                                  |
 | ------------------------------------------------------------- |
