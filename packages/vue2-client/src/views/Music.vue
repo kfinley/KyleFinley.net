@@ -11,7 +11,7 @@
     <h4 class="text-center pt-4">Active Groups</h4>
     <ul>
       <li>
-        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use this group for jams as well as 
+        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use this group for jams as well as
         gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-65). Swing, Harb-Bop, & Soul Jazz are our focus.
       </li>
       <li>
@@ -24,10 +24,7 @@
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
         or so I volunteer to play with some bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF. Even after late night gigs this morning show always feels good.
       </li>
-      <li>
-        <em>Atonal Funk Trio</em> - Explorations in the avant garde music of Steve Dukes (John Cage's last student). The group plays acoustically and comprises of guitar, bass flute, and double bass. 
-      </li>
-      
+
     </ul>
     <!-- <p class="text-center">Additional recordings can be found on my <br /><router-link to="/media">Media Page</router-link></p> -->
     <Gigs id="calendar" class="text-center" />
@@ -41,7 +38,7 @@
         - Every Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. This was formally a Thursday gig but we've moved to Monday nights as of July 2025. Jammers are welcome to join us all night long!
       </li>
       <li>
-        <em>Dirty Works & Friends @ 
+        <em>Dirty Works & Friends @
           <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em
         >
         - Tuesday nights Dirty Works hosts the only weekly jazz night in San Francisco's Richmond District at 1920 Bar on Clement. Jam starts around 7.
@@ -64,7 +61,7 @@
         <em
           >Dirty Works Jazz Jam @ Progressive Grounds</em
         >
-        - Jazz jam every 1st & 3rd Sunday from 2-5pm. 
+        - Jazz jam every 1st & 3rd Sunday from 2-5pm.
       </li>
         <li>
         <em
@@ -87,11 +84,18 @@
       <li><em>The Hotel Utah Saloon Weekly Bluegrass Jam</em> - Every Tuesday from 7pm 'til done</li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - This is the longest running bluegrass jam in San Francisco. This jam is run by a great crew and Mr. Frank Holmes is back leading the band as often as he can. This jam is back on track and kickin just about as strong as ever! 
+        - This is the longest running bluegrass jam in San Francisco. This jam is run by a great crew and Mr. Frank Holmes is back leading the band as often as he can. This jam is back on track and kickin just about as strong as ever!
       </li>
     </ul>
      <h4 class="text-center pt-4">Groups I've Played with</h4>
     <ul>
+      <li>
+        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and
+        Bluegrass four piece playing events and private shows around the Bay Area.
+      </li>
+      <li>
+        <em>Atonal Funk Trio</em> - Explorations in the avant garde music of Steve Dukes (John Cage's last student). The group plays acoustically and comprises of guitar, bass flute, and double bass.
+      </li>
       <li>
         <em><router-link to="/standards-trio">The Standards Jazz Trio</router-link></em> - Jazz Trio featuring Zack Sanders on Guitar, Eli
         Kemp on Drums, and Kyle on bass.
@@ -118,15 +122,11 @@
         <em><a href="http://westsidejazzclub.com" target="new">West Side Jazz Club</a></em> - Scott Silverberg on Tenor Sax and Vocals
         backed by bass, guitar, and drums.
       </li>
-      <li>
-        <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em> - Americana and
-        Bluegrass four piece playing events and private shows around the Bay Area.
-      </li>
     </ul>
     <div class="text-center">
       <p>Details on background and musical journey can be found on my <router-link to="/music/history">history page</router-link></p>
     </div>
-    
+
   </div>
 </template>
 
