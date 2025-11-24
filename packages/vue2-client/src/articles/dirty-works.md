@@ -20,9 +20,7 @@ The group plays gigs as various configurations and runs several jams around San 
 
 | Every Monday                                                    |
 | --------------------------------------------------------------- |
-| Dirty Works Jazz Night                                        |
-| Opener - Duet with Bass & Horn                                |
-| Main Act - Trio \| Quartet + Jam                              |
+| Dirty Works Jazz Night & Jam                                        |
 | <a href="https://www.persona-sf.com" target="new">Persona</a> |
 | Nob Hill - SF, CA                                             |
 | 8 - 1:30 AM                                                   |
@@ -34,7 +32,7 @@ The group plays gigs as various configurations and runs several jams around San 
 | The Richmond - SF, CA                                           |
 | 7 - 10 PM                                                      |
 
-| 3rd, 4th, & 5th Wednesday                                                            |
+| 2nd, 3rd, 4th, & 5th Wednesday                                                       |
 | ------------------------------------------------------------------------------------ |
 | Dirty Works Jazz Jam                                                                 |
 | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a> |
@@ -48,21 +46,6 @@ The group plays gigs as various configurations and runs several jams around San 
 | <a href="https://hopoast.com" target="new">Hop Oast</a> |
 | The Mission / Bernal Heights - SF, CA                   |
 | 5 - 7 PM                                             |
-
-| 1st Saturday                                                  |
-| ------------------------------------------------------------- |
-| Dirty Works Trio & Friends                                             |
-| <a href="https://vinorosso-sf.com" target="new">Vinorosso</a> |
-| Bernal Heights - SF, CA                                       |
-| 5 - 7 PM                                                      |
-
-| 1st & 3rd Sunday         |
-| ------------------------ |
-| Dirty Works Jazz Jam     |
-| All Ages - All Levels    |
-| Progressive Grounds Cafe |
-| Bernal Heights - SF, CA  |
-| 2 - 5 PM                 |
 
 </div>
 

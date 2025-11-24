@@ -41,20 +41,4 @@
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | The Mission / Bernal Heights - SF, CA
   | 5 - 7 PM
-
-  | 1st Saturday
-  |-
-  | Dirty Works Trio & Friends
-  | All Ages
-  | <a href="https://vinorosso-sf.com" target="new">Vinorosso</a>
-  | Bernal Heights - SF, CA
-  | 5 - 7 PM
-
-  | 1st & 3rd Sunday
-  |-
-  | Dirty Works Jazz Jam
-  | All Ages - All Levels
-  | Progressive Grounds Cafe
-  | Bernal Heights - SF, CA
-  | 2 - 5 PM
 </div>
