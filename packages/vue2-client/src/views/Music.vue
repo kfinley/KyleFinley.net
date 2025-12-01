@@ -12,8 +12,8 @@
       <li>
         <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use
         this group for jams as well as
-        gigs. We're a straight ahead jazz group focusing on the classic era of Jazz (1950-60's). Bebob, Harb-Bop, & Soul
-        Jazz are our focus.
+        gigs. We're a modern straight ahead jazz group focusing on the classic era of Jazz (1950-60's). Bebob, Harb-Bop, & Soul
+        Jazz are our roots.
       </li>
       <li>
         <em>Viajó de la Musica Quartet</em> - Sometimes I sit in with the group at Scope Divino on Thursdays.
@@ -41,37 +41,35 @@
       <li>
         <em>Dirty Works Jazz Jam @
           <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em>
-        - Every Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. This was formally a
+        - Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. This was formally a
         Thursday gig but we've moved to Monday nights as of July 2025. Jammers are welcome to join us all night long!
       </li>
       <li>
         <em>Dirty Works & Friends @
           <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em>
         - Tuesday nights Dirty Works hosts the only weekly jazz night in San Francisco's Richmond District at 1920 Bar
-        on Clement. Jam starts around 7.
+        on Clement. Jam starts around 7. <b>Currently on hold because the owner won't pay for the music. 
+        If you'd like to see us back at 1920 tell Frank to pay the band.</b>
       </li>
       <li>
         <em><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - Jazz Jam every 2nd, 3rd, 4th, & 5th Wednesday of the month We play classic jazz standards. Jam runs from 8:30
-        to midnight.
+        - Jazz Jam every 2nd, 3rd, 4th, & 5th Wednesdays of the month We play classic jazz standards. The jam typically runs from 8 to
+        to after 11PM.
       </li>
       <li>
         <em>Dirty Works Acoustic Jazz Jam @ Hop Oast</em>
-        - Every Friday there's a small acoustic jam at the Hop Oast brewery. This is a very casual jam and runs from 5
-        to 7.
+        - Fridays there's a small acoustic jam at the Hop Oast brewery. This is a very casual jam and runs from 5
+        to 7. Currently not every Friday... Check with me if we're going to be jamming or not.
       </li>
       <li><em>Ocean Ale House Jazz Jam</em> - Weekly Jazz Jam on Wednesday Nights in Monterey Heights</li>
       <li>
         <em><a href="http://madroneartbar.com/" target="new">Madrone</a> Jazz Jam</em> - Weekly Jazz Jam on Sunday
-        nights at Madrone Art Bar
-        in Alamo Square. I don't go to this one very often and prefer having overtime jazz at the Shoe on Sundays if
-        possible.
+        nights at Madrone Art Bar in Alamo Square. This is known as "The" jam in town and you can find most the younger players here doing their thing.
       </li>
       <li>
-        <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from 11am-3pm
-        in Golden Gate Park
-        near Stowe Lake on JFK run by Dan Dectis.
+        <em><a href="https://goldengatejams.com" target="new">Community Music Hangout</a></em> - Weekends from Noon-3pm
+        in Golden Gate Park near Stowe Lake on JFK run by Dan Dectis.
       </li>
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky

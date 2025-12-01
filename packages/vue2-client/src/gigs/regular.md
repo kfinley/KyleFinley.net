@@ -13,27 +13,27 @@
   | Every Tuesday
   |-
   | Dirty Works & Guests
-  | All Ages
+  | <b>On Hold. Owner won't pay me for my time...</b>
   | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
   | The Richmond - SF, CA
   | 7 - 10 PM
 
   | 1st Wednesday
   |-
-  | Viajó de la Musica Quartet
+  | Renner Quartet
   | w/ Renner on Tenor
   | <a href="https://lppsf.com" target="Le Petit">Le Petit Paris 75</a>
   | SF, CA
   | 7:30 - 10:30 PM
 
-  | 3rd, 4th, & 5th Wednesday
+  | 2nd, 3rd, 4th, & 5th Wednesday
   |-
   | Dirty Works Jazz Jam
   | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a>
   | Bernal Heights - SF, CA
-  | 8:30 - 12 PM
+  | 8 - 11+ PM
 
-  | Every Friday
+  | Fridays
   |-
   | Dirty Works Acoustic Jam
   | Solo Double Bass + Small Jam

@@ -7,45 +7,42 @@
 <div class="text-center">
 
   <p>
-  The Dirty Works Jazz Band & Jams are led by upright bassist Kyle Finley. The group plays straight ahead classic jazz. This means tunes from the days of Riverside, Impulse, & Blue Note are where it's at... ya feel me?
-
-The group plays gigs as various configurations and runs several jams around San Francisco. The first Dirty Works Jazz Jam started in March 2023 at the Lucky Horseshoe. There are some standing members in the group plus a rolling cast of Bay Area players to keep things fresh & size up or down for the gig. The group also plays private events and parties.
+The Dirty Works Jazz Band is a San Francisco bassed modern jazz group that plays gigs and runs weekly jams around town. Led by upright bassist Kyle Finley and featuring a mix of bay area musicians. What you can expect from shows is a mix of straight ahead classic jazz, bebop, hard bop, heavy swing, latin, and modern jazz. Expect to hear songs from the days of Riverside, Impulse, & Blue Note (1945 - 1965) and a mix of songs from recent times.
 
   </p>
-  <p>
-  Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
+The group is available for private parties, events, restaurants, and venue gigs. Contact <a href="mailto:Kyle@KyleFinley.net">Kyle Finley</a> for booking info.
   </p>
 
   <h3>Regular Gigs & Jams</h3>
 
-| Every Monday                                                    |
-| --------------------------------------------------------------- |
-| Dirty Works Jazz Night & Jam                                        |
+| Mondays                                                       |
+| ------------------------------------------------------------- |
+| Dirty Works Jazz Night & Jam                                  |
 | <a href="https://www.persona-sf.com" target="new">Persona</a> |
 | Nob Hill - SF, CA                                             |
 | 8 - 1:30 AM                                                   |
 
-| Every Tuesday                                                   |
-| --------------------------------------------------------------- |
-| Dirty Works & Guests                                            |
-| <a href="https://1920bar.square.site" target="new">1920 Bar</a> |
-| The Richmond - SF, CA                                           |
-| 7 - 10 PM                                                      |
+| Tuesdays <b>(Currently on hold... Owner won't pay for our time)</b> |
+| --------------------------------------------------------------------- |
+| Dirty Works & Guests                                                  |
+| <a href="https://1920bar.square.site" target="new">1920 Bar</a>       |
+| The Richmond - SF, CA                                                 |
+| 7 - 10 PM                                                             |
 
-| 2nd, 3rd, 4th, & 5th Wednesday                                                       |
+| 2nd, 3rd, 4th, & 5th Wednesdays                                                      |
 | ------------------------------------------------------------------------------------ |
 | Dirty Works Jazz Jam                                                                 |
 | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a> |
 | Bernal Heights - SF, CA                                                              |
 | 8:30 - 12 AM                                                                         |
 
-| Every Friday                                            |
+| Fridays                                                 |
 | ------------------------------------------------------- |
-| Dirty Works Acoustic Jam                                |                         |
+| Dirty Works Acoustic Jam                                |
 | All Ages                                                |
 | <a href="https://hopoast.com" target="new">Hop Oast</a> |
 | The Mission / Bernal Heights - SF, CA                   |
-| 5 - 7 PM                                             |
+| 5 - 7 PM                                                |
 
 </div>
 
@@ -58,17 +55,15 @@ The group plays gigs as various configurations and runs several jams around San 
   <h2>What is a Dirty Works Jazz Jam?</h2>
 </div>
 
-For those not familiar with the traditions of jazz jams, here's the skinny on how the Dirty Works Jazz Jams are run.
+For those not familiar with the traditions of jazz jams, here's the skinny on how Dirty Works Jazz does it...
 
-A Dirty Works Jazz Jam always has a rhythm section with upright bass, keys :musical_keyboard: and/or guitar :guitar:, plus drums :drum:. Sometimes there's a :trumpet: or :saxophone: out front. The Dirty Works Jazz Band is what's called the "House Band", and the bass player, Kyle Finley, is in charge. Local jazz players are invited to join the group throughout the night.
+A Dirty Works Jazz Jam always has house band with a solid rhythm section that includes Kyle Finley on upright bass, keys :musical_keyboard: and/or guitar :guitar:, and usually drums :drum:. Sometimes there's a :trumpet: or :saxophone: out front. Local jazz players are invited to join the group throughout the night.
 
-On average, Dirty Works Jazz Jams have a dozen players & singers. :microphone: Some jams are invite only and some are open for new players to join. Signups need to provide name, instrument or voice, song, & key before playing unless they've been referred by an existing jammer.
+These are not a casual jam circle kinda thing... These are 100% a performance for the audience to enjoy and also a chance for players to do their thing. With the Dirty Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
 
-These are not a casual jam circle kinda thing... These are 100% a performance for the audience to enjoy and also to give players a chance to do their thing. With the Dirty Works Jazz Band, the focus is to sound good & have fun... in that order. :sunglasses:
+Dirty Works Jazz Jams are run in this way, the house band will kick off the first few songs and players are invited to join after that. Tunes are called on the fly :airplane: and players are swapped out as the night goes. Jams usually run 3 hours with short breaks :clock9:.
 
-Dirty Works Jazz Jams are run in this way, the house band will kick off the first set with a few songs and players are invited to join in after the first or second song. Tunes are called on the fly :airplane: and players are swapped out as the night goes. Jams usually run 3 hours with short breaks :clock9:.
-
-Below are some recent photos from recent jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
+Below are some recent photos from jams. Most shots taken by Kyle Finley and are not authorized for use. :crystal_ball:
 
 More photos of jams can be found on the <a href="https://pixelfed.social/i/web/profile/791341701221125553" target="pixelfed">Dirty Works Jazz PixelFed</a> and the <router-link to="/photos/jazz-jams">Jam Photos Page</router-link>.
 
