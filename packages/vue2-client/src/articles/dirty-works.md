@@ -22,13 +22,6 @@ The group is available for private parties, events, restaurants, and venue gigs.
 | Nob Hill - SF, CA                                             |
 | 8 - 1:30 AM                                                   |
 
-| Tuesdays <b>(Currently on hold... Owner won't pay for our time)</b> |
-| --------------------------------------------------------------------- |
-| Dirty Works & Guests                                                  |
-| <a href="https://1920bar.square.site" target="new">1920 Bar</a>       |
-| The Richmond - SF, CA                                                 |
-| 7 - 10 PM                                                             |
-
 | 2nd, 3rd, 4th, & 5th Wednesdays                                                      |
 | ------------------------------------------------------------------------------------ |
 | Dirty Works Jazz Jam                                                                 |

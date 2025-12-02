@@ -10,14 +10,6 @@
   | Nob Hill - SF, CA
   | 8 - 1:30 AM
 
-  | Every Tuesday
-  |-
-  | Dirty Works & Guests
-  | <b>On Hold. Owner won't pay me for my time...</b>
-  | <a href="https://1920bar.square.site" target="new">1920 Bar</a>
-  | The Richmond - SF, CA
-  | 7 - 10 PM
-
   | 1st Wednesday
   |-
   | Renner Quartet

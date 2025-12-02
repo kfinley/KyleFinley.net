@@ -2,28 +2,25 @@
   <div class="container">
     <div class="text-center">
       <p>
-        <i>I'm Kyle... The Bass Dude. I'm a Jazz upright bassist. I play with a few groups, fill in with groups when
-          needed, and I run
-          a half a dozen jazz jams around San Francisco. My schedule can be found below.</i>
+        <i>I'm Kyle... The Bass Dude. I'm a primarily a jazz upright bassist and also play trombone, guitar, and sometimes drums. I play with a few groups, sub when needed, and run jazz jams around San Francisco. My schedule can be found below.</i>
       </p>
     </div>
     <h4 class="text-center pt-4">Active Groups</h4>
     <ul>
       <li>
         <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use
-        this group for jams as well as
-        gigs. We're a modern straight ahead jazz group focusing on the classic era of Jazz (1950-60's). Bebob, Harb-Bop, & Soul
-        Jazz are our roots.
+        this group for my jams as well as gigs. We're a modern straight ahead jazz group focusing on the classic era of Jazz (40's to 60's). Bebob, Harb-Bop, & Soul
+        Jazz are our roots. We swing harder than a tree in a storm.
       </li>
       <li>
         <em>Viajó de la Musica Quartet</em> - Sometimes I sit in with the group at Scope Divino on Thursdays.
       </li>
       <li>
-        <em>Renner Quartet</em> - The 1st Wednesday of the month you can find me at Paris 75 with Renner on Tenor and
+        <em>Renner Quartet</em> - The 1st Wednesday of the month you can find me at Paris 75 in SF's historic North Beach with Renner on Tenor and
         his Quartet.
       </li>
       <li>
-        <em>Kyle Tom Jazz Trio</em> - When I can I join Kyle Tom with his trio at the Cordial Cellar and Lounge in
+        <em>Kyle Tom Jazz Trio</em> - When I can, I join Kyle Tom with his trio at the Cordial Cellar and Lounge in
         Castro Valley.
       </li>
       <li>
@@ -41,20 +38,18 @@
       <li>
         <em>Dirty Works Jazz Jam @
           <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em>
-        - Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. This was formally a
-        Thursday gig but we've moved to Monday nights as of July 2025. Jammers are welcome to join us all night long!
+        - Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. Persona is a great basement cocktail bar with lots of room and a good vibe. Jammers are welcome to join us all night long!
       </li>
       <li>
         <em>Dirty Works & Friends @
           <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em>
-        - Tuesday nights Dirty Works hosts the only weekly jazz night in San Francisco's Richmond District at 1920 Bar
-        on Clement. Jam starts around 7. <b>Currently on hold because the owner won't pay for the music. 
-        If you'd like to see us back at 1920 tell Frank to pay the band.</b>
+        - Dirty Works hosts a beginner friendly jazz jam in San Francisco's Richmond District at 1920 Bar
+        on Clement. Jam starts around 8. 
       </li>
       <li>
-        <em><router-link to="/shoe-jazz-jam">Shoe Jazz Jam</router-link> @
+        <em><router-link to="/shoe-jazz-jam">The Shoe Jazz Jam</router-link> @
           <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky Horseshoe</a></em>
-        - Jazz Jam every 2nd, 3rd, 4th, & 5th Wednesdays of the month We play classic jazz standards. The jam typically runs from 8 to
+        - Jazz Jam every 2nd, 3rd, 4th, & 5th Wednesdays of the month. If you know the Shoe then you know what the vibe is. The jam typically runs from 8 to
         to after 11PM.
       </li>
       <li>
