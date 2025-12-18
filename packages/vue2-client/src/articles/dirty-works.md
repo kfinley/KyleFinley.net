@@ -29,7 +29,14 @@ The group is available for private parties, events, restaurants, and venue gigs.
 | Bernal Heights - SF, CA                                                              |
 | 8:30 - 12 AM                                                                         |
 
-| Fridays                                                 |
+| 1st Thursdays                                                 |
+| ------------------------------------------------------------- |
+| Dirty Works Jazz Band & Friends                               |
+| <a href="https://lppsf.com" target="paris75">Paris 75</a>     |
+| North Beach - SF, CA                                          |
+| 8 - 11 PM                                                     |
+
+| Some Fridays                                            |
 | ------------------------------------------------------- |
 | Dirty Works Acoustic Jam                                |
 | All Ages                                                |

@@ -38,13 +38,7 @@
       <li>
         <em>Dirty Works Jazz Jam @
           <a href="https://www.persona-sf.com/" target="Persona">Persona</a></em>
-        - Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. Persona is a great basement cocktail bar with lots of room and a good vibe. Jammers are welcome to join us all night long!
-      </li>
-      <li>
-        <em>Dirty Works & Friends @
-          <a href="https://1920bar.square.site" target="1920">1920 Bar</a></em>
-        - Dirty Works hosts a beginner friendly jazz jam in San Francisco's Richmond District at 1920 Bar
-        on Clement. Jam starts around 8. 
+        - Monday night the Dirty Works hosts Jazz at Persona in downtown SF from 8 to 1:30am. Persona is a great basement cocktail bar with lots of room and a good vibe. We showcase singers at this jam and instrumentalists are welcome to join us all night long!!
       </li>
       <li>
         <em><router-link to="/shoe-jazz-jam">The Shoe Jazz Jam</router-link> @
@@ -53,8 +47,17 @@
         to after 11PM.
       </li>
       <li>
+        <em>Renner Quartet @ <a href="https://lppsf.com" target="Le Petit">Le Petit Paris 75</a></em>
+        - Tom Renner leads his quartet at the classic North Beach bar Paris 75 on the 1st Wednesday of the month.
+      </li>
+      <li>
+        <em>Dirty Works & Friends @ 
+          <a href="https://lppsf.com" target="Le Petit">Le Petit Paris 75</a></em>
+        - The 1st Thursdays of the month the Diryt Works Jazz band takes over Paris 75 for an open jazz jam. We feature our regular players plus guests & sometimes dancers! Come check it out for a classic North Beach good time!!
+      </li>
+      <li>
         <em>Dirty Works Acoustic Jazz Jam @ Hop Oast</em>
-        - Fridays there's a small acoustic jam at the Hop Oast brewery. This is a very casual jam and runs from 5
+        - Some Fridays there's a small acoustic jam at the Hop Oast brewery. This is a very casual jam and runs from 5
         to 7. Currently not every Friday... Check with me if we're going to be jamming or not.
       </li>
       <li><em>Ocean Ale House Jazz Jam</em> - Weekly Jazz Jam on Wednesday Nights in Monterey Heights</li>
@@ -69,7 +72,7 @@
       <li>
         <em>Sunday Bluegrass Jam @ <a href="https://www.theluckyhorseshoebar.com/" target="Shoe">The Lucky
             Horseshoe</a></em>
-        - This is the longest running bluegrass jam in San Francisco. This jam is run by a great crew and Mr. Frank
+        - This is the longest running bluegrass jam in San Francisco. The jam is run by a great crew and Mr. Frank
         Holmes is back leading the band as often as he can. This jam is back on track and kickin just about as strong as
         ever!
       </li>
