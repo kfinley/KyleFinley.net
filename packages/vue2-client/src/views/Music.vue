@@ -53,7 +53,7 @@
       <li>
         <em>Dirty Works & Friends @ 
           <a href="https://lppsf.com" target="Le Petit">Le Petit Paris 75</a></em>
-        - The 1st Thursdays of the month the Diryt Works Jazz band takes over Paris 75 for an open jazz jam. We feature our regular players plus guests & sometimes dancers! Come check it out for a classic North Beach good time!!
+        - The 1st & 3rd Thursdays of the month the Diryt Works Jazz band takes over Paris 75 for an open jazz jam. We feature our regular players plus guests & sometimes dancers! Come check it out for a classic North Beach good time!!
       </li>
       <li>
         <em>Dirty Works Acoustic Jazz Jam @ Hop Oast</em>

@@ -25,7 +25,7 @@
   | Bernal Heights - SF, CA
   | 8 - 11+ PM
 
-  | 1st Thursdays
+  | 1st & 3rd Thursdays
   |-
   | Dirty Works Jazz Jam
   | with Guests

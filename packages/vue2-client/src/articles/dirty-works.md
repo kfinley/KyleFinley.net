@@ -27,9 +27,9 @@ The group is available for private parties, events, restaurants, and venue gigs.
 | Dirty Works Jazz Jam                                                                 |
 | <a href="https://www.theluckyhorseshoebar.com" target="Shoe">The Lucky Horseshoe</a> |
 | Bernal Heights - SF, CA                                                              |
-| 8:30 - 12 AM                                                                         |
+| 8 - 11 PM                                                                         |
 
-| 1st Thursdays                                                 |
+| 1st & 3rd Thursdays                                                 |
 | ------------------------------------------------------------- |
 | Dirty Works Jazz Band & Friends                               |
 | <a href="https://lppsf.com" target="paris75">Paris 75</a>     |
