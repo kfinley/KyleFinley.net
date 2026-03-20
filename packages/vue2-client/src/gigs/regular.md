@@ -34,7 +34,7 @@
 
   | 2nd & 4th Fridays
   |-
-  | <a href="https://dirtyworksjazz.com/hop-oast-acoustic-jazz-jam" targert="DirtyWorks">Dirty Works Acoustic Jam</a>
+  | <a href="https://dirtyworksjazz.com/hop-oast-acoustic-jazz-jam" target="DirtyWorks">Dirty Works Acoustic Jam</a>
   | All Ages
   | <a href="https://hopoast.com" target="new">Hop Oast</a>
   | The Mission / Bernal Heights - SF, CA
