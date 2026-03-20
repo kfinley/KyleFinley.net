@@ -6,7 +6,7 @@ services:
       context: ./
       dockerfile: ./.devcontainer/Dockerfile
     environment:
-      DOCKER_HOST: unix:///var/run/docker-host.sock
+      DOCKER_HOST: unix:///var/run/docker.sock
       AWS_REGION: us-east-1
       AWS_ACCESS_KEY_ID: S3RVER
       AWS_SECRET_ACCESS_KEY: S3RVER
