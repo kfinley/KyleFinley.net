@@ -38,7 +38,7 @@ const context = {
   succeed: () => { }
 };
 
-const createRequest = (uri): Request => {
+const createRequest = (uri, domain = ''): Request => {
   return {
     Records: [
       {
@@ -85,4 +85,20 @@ describe('Lambda@Edge Redirect', () => {
       },
     });
   });
+
+  it('should 301 /dirty-works to dirtyworksjazz.com', async () => {
+
+    const result = await redirect(createRequest('/dirty-works'), context, () => { });
+
+    expect(result).toEqual({
+      status: '301',
+      statusDescription: 'Moved Permanently',
+      headers: {
+        location: [{
+          key: 'Location',
+          value: 'https://dirtyworksjazz.com/',
+        }],
+      },
+    });
+  })
 });

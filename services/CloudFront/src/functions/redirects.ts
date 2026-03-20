@@ -1,6 +1,6 @@
 import { Handler } from 'aws-lambda';
 
-const createResponse = (newPath: string, pathAndQuery: Array<string>) => {
+const createResponse = (newPath: string, pathAndQuery: Array<string>, domain: string = 'kylefinley.net') => {
 
   const newPathAndQuery = newPath + (pathAndQuery.length === 1 ? '' : `?${pathAndQuery[1]}`)
   return {
@@ -9,7 +9,7 @@ const createResponse = (newPath: string, pathAndQuery: Array<string>) => {
     headers: {
       location: [{
         key: 'Location',
-        value: `https://kylefinley.net/${newPathAndQuery}`,
+        value: `https://${domain}/${newPathAndQuery}`,
       }],
     },
   };
@@ -19,6 +19,8 @@ export const handler: Handler = async (event) => {
   const pathAndQuery = event.Records[0].cf.request.uri.split('?');
 
   switch (pathAndQuery[0]) {
+    case '/dirty-works':
+      return createResponse('', pathAndQuery, 'dirtyworksjazz.com');
     case '/sheets-to-tweets':
     case '/sheets-to-tweets-schedule-tweets-with-images':
       return createResponse('schedule-tweets-with-images-from-google-sheets', pathAndQuery);
