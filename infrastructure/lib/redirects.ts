@@ -7,6 +7,7 @@ export const createAdditionalBehaviorsForRedirects = (redirect: {
   }[]
 }) => {
   return {
+    '/dirty-works': redirect,
     '/archive/2009/10/15/1339.aspx': redirect,
     '/sheets-to-tweets': redirect,
     '/sheets-to-tweets-schedule-tweets-with-images': redirect,
