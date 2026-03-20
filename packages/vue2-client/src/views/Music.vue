@@ -8,7 +8,7 @@
     <h4 class="text-center pt-4">Active Groups</h4>
     <ul>
       <li>
-        <em><router-link to="/dirty-works">Dirty Works Jazz Band</router-link></em> - This is the group I run. I use
+        <em><a href="https://dirtyworksjazz.com" target="DirtyWorks">Dirty Works Jazz Band</a></em> - This is the group I run. I use
         this group for my jams as well as gigs. We're a modern straight ahead jazz group focusing on the classic era of Jazz (40's to 60's). Bebob, Harb-Bop, & Soul
         Jazz are our roots. We swing harder than a tree in a storm.
       </li>
@@ -51,7 +51,7 @@
         - Tom Renner leads his quartet at the classic North Beach bar Paris 75 on the 1st Wednesday of the month.
       </li>
       <li>
-        <em>Dirty Works & Friends @ 
+        <em>Dirty Works & Friends @
           <a href="https://lppsf.com" target="Le Petit">Le Petit Paris 75</a></em>
         - The 1st & 3rd Thursdays of the month the Diryt Works Jazz band takes over Paris 75 for an open jazz jam. We feature our regular players plus guests & sometimes dancers! Come check it out for a classic North Beach good time!!
       </li>
