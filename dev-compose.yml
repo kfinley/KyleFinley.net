@@ -82,7 +82,7 @@ services:
 
   kylefinley.web:
     container_name: kylefinley.web
-    image: node:14
+    image: node:22
     ports:
       - "8080:8080"
     working_dir: /vite-client

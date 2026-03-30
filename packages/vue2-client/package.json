@@ -63,7 +63,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "highlight.js": "^11.6.0",
     "markdown-it-emoji": "2.0.2",
-    "node-sass": "~6.0",
     "prettier": "^2.2.1",
     "sass": "^1.35.1",
     "typescript": "^5.1.6",
