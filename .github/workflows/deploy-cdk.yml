@@ -28,6 +28,7 @@ jobs:
         run: |
           npm install -g lerna@6.6.2
           node --version
+          npm ls -g typescript
           npm run lerna --version
           npm run i:prod && cd ./packages/vue2-client
           echo 'VITE_GITHUB_OAUTH_CLIENT_ID=${{ secrets.WEBSOCKETS_GITHUB_OAUTH_CLIENT_ID }}' > .env

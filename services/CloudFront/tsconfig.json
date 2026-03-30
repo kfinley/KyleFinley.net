@@ -4,6 +4,7 @@
     "experimentalDecorators": true,
     "sourceMap": false,
     "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "outDir": "./dist",
