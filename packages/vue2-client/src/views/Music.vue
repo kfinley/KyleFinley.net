@@ -3,8 +3,8 @@
     <div class="text-center">
       <p>
         <i
-          >I'm Kyle... The Bass Dude. I'm a primarily a jazz upright bassist and also play trombone, guitar, and sometimes drums. I play
-          with a few groups, sub when needed, and run jazz jams around San Francisco. My schedule can be found below.</i
+          >I'm Kyle... The Bass Dude. I'm primarily a jazz upright bassist and I also play trombone, guitar, and sometimes drums. I play
+          with a few groups, sub when needed, and run jazz jams around San Francisco. I also teach guitar and bass lessons. My schedule can be found below.</i
         >
       </p>
     </div>
@@ -20,7 +20,6 @@
         <em>Renner Quartet</em> - The 1st Wednesday of the month you can find me at Paris 75 in SF's historic North Beach with Renner on
         Tenor and his Quartet.
       </li>
-      <li><em>Kyle Tom Jazz Trio</em> - When I can, I join Kyle Tom with his trio at the Cordial Cellar and Lounge in Castro Valley.</li>
       <li>
         <em><a href="https://californiabluegrass.org" target="CBA">California Bluegrass Association</a> Volunteer Band</em> - Once a month
         or so I volunteer to play with some bluegrass players at the Pomeroy Rec &amp; Rehab Center in SF. Even after late night gigs this
@@ -82,6 +81,7 @@
     </ul>
     <h4 class="text-center pt-4">Groups I've Played with</h4>
     <ul>
+      <li><em>Kyle Tom Jazz Trio</em> - When I can, I join Kyle Tom with his trio at the Cordial Cellar and Lounge in Castro Valley.</li>
       <li>
         <em><a href="https://www.thebash.com/bluegrass/nobodyfromnashville" target="new">Nobody From Nashville</a></em>
         - Americana & Bluegrass four piece playing events and private shows around the Bay Area.
